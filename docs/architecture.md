@@ -10,7 +10,8 @@ still needs to be selected.
 | Cursor | PAW3950 optical X/Y tracking |
 | Supplementary motion | ICM-42688-P lift/orientation experiments; not the cursor source |
 | Buttons | Left, middle, right; magnetic position sensing without switch contacts |
-| Button feedback | Bidirectional voice-coil force with position and current feedback |
+| Button return | Elastic paddle/flexure supplies passive return with coil current off |
+| Button feedback | Custom moving magnet and stationary wound coil; transient bidirectional effects with position/current feedback |
 | Scroll | MA735 absolute angle, programmable BLDC detents/torque |
 | Host connection | USB 2.0 Full-Speed HID, target 1 ms report interval |
 | Power | 5 V USB-C, source-aware limits; intended 3 A advertised source for full effects |
@@ -29,14 +30,31 @@ flowchart TD
     IMU[ICM-42688-P] --> MCU
     Hall[Three TMAG5253 sensors] --> ADC[ADS7038]
     ADC --> MCU
-    MCU --> VCA[Three DRV8874 drivers and voice coils]
-    VCA -->|Current feedback| ADC
+    MCU --> Buttons[Three DRV8231A drivers and custom wound coils]
+    Buttons -->|Current feedback| ADC
+    Buttons -->|Magnetic force| Paddles[Elastic paddles with actuator magnets]
+    Paddles -->|Separate sensing magnets| Hall
     MCU --> Wheel[DRV8316R and GB1806]
     Angle[MA735 wheel angle] --> MCU
-    Power --> VCA
+    Power --> Buttons
     Power --> Wheel
     CC[Type-C current detection, part TBD] --> MCU
 ```
+
+The button direction was revised on 2026-09-08: custom moving-magnet actuators
+replace the industrial linear actuators, and elastic paddles provide return
+instead of an active holding force or a dedicated magnetic return arrangement.
+Each paddle carries separate sensing and actuator magnets. The stationary wound
+coil adds bounded press/release effects; it is not required to support the paddle
+continuously. Zero commanded coil current is the normal resting/held state after
+an effect ends; driver and sensing electronics still consume power.
+
+Retain bidirectional DRV8231A drive for resistance and brief assistance during
+snap-through. A single-transistor driver, vibration exciter, and LRA are not the
+selected V1 implementation. The smaller dimensions and 0.2-0.4 N actuator-force
+target in the [button plan](../mechanical/button-mechanisms/README.md) are
+unvalidated prototype targets. Measure force versus position and current before
+freezing the coil, magnetic circuit, current limits, or PCB placement.
 
 The mouse is a USB device. An external powered hub is a separate accessory, not
 an assumption that every powered downstream port provides 3 A. A custom adapter

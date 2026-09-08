@@ -1,0 +1,1972 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "c4e12a49-213e-5b91-8148-9c9d65161df0")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - 04_Sensing")
+    (date "2026-09-08")
+    (rev "0.1 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols
+    (symbol "MagMouse:TMAG5253BA2IQDMRR"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 10.620000000000001 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Value" "TMAG5253BA2IQDMRR"
+        (at 0 13.620000000000001 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Footprint" "Package_SON:Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmag5253.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (symbol "TMAG5253BA2IQDMRR_0_1"
+        (rectangle
+          (start -7.62 7.62)
+          (end 7.62 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TMAG5253BA2IQDMRR_1_1"
+        (pin power_in line
+          (at 0 10.16 270)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at 0 -10.16 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -10.16 2.54 0)
+          (length 2.54)
+          (name "EN"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin output line
+          (at 10.16 2.54 180)
+          (length 2.54)
+          (name "OUT"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at 2.54 -10.16 90)
+          (length 2.54)
+          (name "EP"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "5"
+            (effects
+              (font
+                (size 1.0 1.0)))))))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "MagMouse:ADS7038IRTER"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 18.240000000000002 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Value" "ADS7038IRTER"
+        (at 0 21.240000000000002 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Footprint" "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ads7038.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (symbol "ADS7038IRTER_0_1"
+        (rectangle
+          (start -10.16 15.24)
+          (end 10.16 -15.24)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "ADS7038IRTER_1_1"
+        (pin input line
+          (at -12.7 10.16 0)
+          (length 2.54)
+          (name "AIN0"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "15"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 7.62 0)
+          (length 2.54)
+          (name "AIN1"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "16"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 5.08 0)
+          (length 2.54)
+          (name "AIN2"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 2.54 0)
+          (length 2.54)
+          (name "AIN3"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 0.0 0)
+          (length 2.54)
+          (name "AIN4"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 -2.539999999999999 0)
+          (length 2.54)
+          (name "AIN5"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 -5.08 0)
+          (length 2.54)
+          (name "AIN6"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "5"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -12.7 -7.620000000000001 0)
+          (length 2.54)
+          (name "AIN7"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "6"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at -2.54 17.78 270)
+          (length 2.54)
+          (name "AVDD"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "7"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at 2.54 17.78 270)
+          (length 2.54)
+          (name "DVDD"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "10"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at -2.54 -17.78 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "9"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at 2.54 -17.78 90)
+          (length 2.54)
+          (name "EP"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "17"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at 12.7 -10.16 180)
+          (length 2.54)
+          (name "DECAP"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "8"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at 12.7 10.16 180)
+          (length 2.54)
+          (name "~{CS}"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "11"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at 12.7 7.62 180)
+          (length 2.54)
+          (name "SCLK"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "13"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at 12.7 5.08 180)
+          (length 2.54)
+          (name "SDI"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "14"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin tri_state line
+          (at 12.7 2.54 180)
+          (length 2.54)
+          (name "SDO"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "12"
+            (effects
+              (font
+                (size 1.0 1.0))))))))
+  (text "04 / Hall position and current acquisition"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 2.5 2.5))
+      (justify left top))
+    (uuid "0315143d-034f-55ea-82e7-f0accd519b5c"))
+  (text "DRAFT 0.1 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+    (at 20 24 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "8000d3ac-bb6e-5187-8b5a-0e64f33736bb"))
+  (symbol
+    (lib_id "MagMouse:TMAG5253BA2IQDMRR")
+    (at 53.34 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9b2503b9-c792-576a-8944-eb347952754b")
+    (property "Reference" "U7"
+      (at 58.34 46.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TMAG5253BA2IQDMRR"
+      (at 58.34 48.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_SON:Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmag5253.pdf"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TMAG5253BA2IQDMRR"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "U7")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 53.34 53.34)
+      (xy 53.34 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fc67784b-872f-5438-8694-e393505d9330"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 53.34 48.26 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "50be887a-35d3-5f8f-a259-fda624c6cbfe"))
+  (wire
+    (pts
+      (xy 53.34 73.66)
+      (xy 53.34 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b38130ef-8db5-5712-a8a5-05da6e15b4dc"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 53.34 78.74 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2bbd7662-a8a4-51b4-b918-70c093b8f713"))
+  (wire
+    (pts
+      (xy 43.18 60.96)
+      (xy 38.1 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e95fd29b-01ee-5126-8d96-c22d75ef322b"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 38.1 60.96 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "bacaeb6d-710e-5723-8081-acc786db3cc5"))
+  (wire
+    (pts
+      (xy 63.5 60.96)
+      (xy 68.58 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a785f6f5-b21e-5851-8369-38a58b355a7e"))
+  (global_label "HALL_L"
+    (shape bidirectional)
+    (at 68.58 60.96 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "4409ff03-fa43-5080-a3b0-0341c1659dc5"))
+  (wire
+    (pts
+      (xy 55.88 73.66)
+      (xy 55.88 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ddd14c7b-82bb-5df2-9eb8-f1fc95c41fa7"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 55.88 78.74 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "6c1d60ec-9642-56cb-9d97-c79680394644"))
+  (symbol
+    (lib_id "Device:C")
+    (at 53.34 111.76 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "dfff6bc3-6b8c-57d0-8f53-bf451cb8e012")
+    (property "Reference" "C16"
+      (at 57.34 110.26 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 57.34 112.76 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C14663"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C14663"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "C16")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 53.34 107.95)
+      (xy 53.34 102.87))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6091ce75-4220-5af2-8be2-d0c29a33f2f3"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 53.34 102.87 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "0e1942ff-34ab-54e9-b21a-41c66a29eb5b"))
+  (wire
+    (pts
+      (xy 53.34 115.57)
+      (xy 53.34 120.65))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fc4a5dbe-179b-5080-a3eb-b210509009a9"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 53.34 120.65 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "8feefe98-7fdc-52ff-b5ea-e0d54291e11b"))
+  (symbol
+    (lib_id "MagMouse:TMAG5253BA2IQDMRR")
+    (at 162.56 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "360079fc-78e5-5418-b105-9dc67472bd1f")
+    (property "Reference" "U8"
+      (at 167.56 46.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TMAG5253BA2IQDMRR"
+      (at 167.56 48.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_SON:Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmag5253.pdf"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TMAG5253BA2IQDMRR"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "U8")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 162.56 53.34)
+      (xy 162.56 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4b56dc14-5043-5aa7-bf24-5c6b3a999dd5"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 162.56 48.26 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "eb94ee6d-6ef4-5550-a87e-afdb175fc580"))
+  (wire
+    (pts
+      (xy 162.56 73.66)
+      (xy 162.56 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "00a20a5a-c744-50c4-ab45-a5debd896f4a"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 162.56 78.74 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "d4f6afe0-a821-5f58-8fd7-7b9d719cb740"))
+  (wire
+    (pts
+      (xy 152.4 60.96)
+      (xy 147.32 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "80fef162-3ce5-57e1-b0a0-44681ec06887"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 147.32 60.96 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "296cda6e-4571-52df-8b55-5b25804f66d2"))
+  (wire
+    (pts
+      (xy 172.72 60.96)
+      (xy 177.8 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "81fe6105-5e51-561a-929a-0dc455df1d8b"))
+  (global_label "HALL_M"
+    (shape bidirectional)
+    (at 177.8 60.96 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "a8154b59-def9-5557-ac8b-0e6a74d1d58e"))
+  (wire
+    (pts
+      (xy 165.1 73.66)
+      (xy 165.1 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2218e2d4-29f2-59b4-8c0a-cc896b90eeea"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 165.1 78.74 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "038fab94-811a-54e1-90dc-be29c979d480"))
+  (symbol
+    (lib_id "Device:C")
+    (at 162.56 111.76 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b80627e7-e71d-5404-a7a0-22e79f5a50dd")
+    (property "Reference" "C17"
+      (at 166.56 110.26 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 166.56 112.76 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C14663"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C14663"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "C17")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 162.56 107.95)
+      (xy 162.56 102.87))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2eae104e-ff02-54df-9244-29da1a75091a"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 162.56 102.87 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "533d6a98-c87b-584c-9d9f-c3fc5229e179"))
+  (wire
+    (pts
+      (xy 162.56 115.57)
+      (xy 162.56 120.65))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cc34b55c-609a-58de-987e-82b4344da1ff"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 162.56 120.65 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "df98c534-f959-565a-8858-b44cf71d117d"))
+  (symbol
+    (lib_id "MagMouse:TMAG5253BA2IQDMRR")
+    (at 271.78 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7cc4131f-238d-5231-bd68-8e08f9e5d4e5")
+    (property "Reference" "U9"
+      (at 276.78 46.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TMAG5253BA2IQDMRR"
+      (at 276.78 48.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_SON:Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmag5253.pdf"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TMAG5253BA2IQDMRR"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "U9")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 271.78 53.34)
+      (xy 271.78 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "07475820-f93d-5df6-aa23-4dfdb9491359"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 271.78 48.26 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "54595861-ef5d-5c23-8fc5-4b7b2d4b5db7"))
+  (wire
+    (pts
+      (xy 271.78 73.66)
+      (xy 271.78 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "53120bd1-f1b6-5427-9cfd-8df089316b51"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 271.78 78.74 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "f3716bcb-0e0e-5055-b888-a50bc0cfeebd"))
+  (wire
+    (pts
+      (xy 261.62 60.96)
+      (xy 256.54 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "64263d65-eb3c-5e86-a6bb-41516fece1d8"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 256.54 60.96 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "c6ba865b-c894-5c2b-be90-adb32c6f9c65"))
+  (wire
+    (pts
+      (xy 281.94 60.96)
+      (xy 287.02 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "15420277-c21e-5a72-873c-5fc1ec3355fa"))
+  (global_label "HALL_R"
+    (shape bidirectional)
+    (at 287.02 60.96 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "9a2d018f-cf73-5469-9b3c-3cdd230cc3c3"))
+  (wire
+    (pts
+      (xy 274.32 73.66)
+      (xy 274.32 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b504faed-4d96-5562-a461-71645cb6fcbd"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 274.32 78.74 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "477a5450-570c-53da-b0a1-8c3b119a34e8"))
+  (symbol
+    (lib_id "Device:C")
+    (at 271.78 111.76 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5c31f8cf-23f0-5895-8f66-137694c71e3d")
+    (property "Reference" "C18"
+      (at 275.78 110.26 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 275.78 112.76 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C14663"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C14663"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "C18")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 271.78 107.95)
+      (xy 271.78 102.87))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fb13d925-4bbe-58d3-a02a-abfdb18e5f36"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 271.78 102.87 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "4d72de81-fc91-57b0-8eea-2f64863e8cc5"))
+  (wire
+    (pts
+      (xy 271.78 115.57)
+      (xy 271.78 120.65))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6bd00b4a-f7c3-5435-a7e2-5808b0adb81c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 271.78 120.65 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "4dbb22c5-42ae-58ab-9712-4d47bdbcafb6"))
+  (symbol
+    (lib_id "MagMouse:ADS7038IRTER")
+    (at 114.3 185.42 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d0794796-d83d-5351-9711-297d3d68f46e")
+    (property "Reference" "U10"
+      (at 119.3 160.64 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "ADS7038IRTER"
+      (at 119.3 163.14 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ads7038.pdf"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "ADS7038IRTER"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "U10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 101.6 175.26)
+      (xy 96.52 175.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0eb9b0f6-098d-5e31-a403-18097f0c8d83"))
+  (global_label "HALL_L"
+    (shape bidirectional)
+    (at 96.52 175.26 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "e706b403-6151-5973-8b80-d58ed72adcc2"))
+  (wire
+    (pts
+      (xy 101.6 177.8)
+      (xy 96.52 177.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "be9299fb-3609-55c5-9fd0-8733670cb31f"))
+  (global_label "HALL_M"
+    (shape bidirectional)
+    (at 96.52 177.8 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "8ef84f98-b2e9-5271-8a0c-ae25d48deb5e"))
+  (wire
+    (pts
+      (xy 101.6 180.34)
+      (xy 96.52 180.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "daaa06d4-2242-5cb9-8d6c-d45256bc72ca"))
+  (global_label "HALL_R"
+    (shape bidirectional)
+    (at 96.52 180.34 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "7b36a473-9cab-5c61-bc0f-ce1393fcf425"))
+  (wire
+    (pts
+      (xy 101.6 182.88)
+      (xy 96.52 182.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fc211b61-1a67-5f5e-925e-adff66f516bb"))
+  (global_label "BTN_L_ISENSE"
+    (shape bidirectional)
+    (at 96.52 182.88 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "ecda34d5-527b-5348-8ebd-6728ada29336"))
+  (wire
+    (pts
+      (xy 101.6 185.42)
+      (xy 96.52 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e4a5c92d-a5c0-57d2-8e38-6ceeaa051c61"))
+  (global_label "BTN_M_ISENSE"
+    (shape bidirectional)
+    (at 96.52 185.42 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "f5650ba6-39d6-508d-8b8c-1bffcbffbb5e"))
+  (wire
+    (pts
+      (xy 101.6 187.96)
+      (xy 96.52 187.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4e6a8107-5d05-5260-8133-1c062b1ce897"))
+  (global_label "BTN_R_ISENSE"
+    (shape bidirectional)
+    (at 96.52 187.96 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "d7390a6e-67ae-53b7-8877-99dee79a748f"))
+  (no_connect
+    (at 101.6 190.5)
+    (uuid "95c986bf-c4f9-5212-9e62-3524d4d915bc"))
+  (no_connect
+    (at 101.6 193.04)
+    (uuid "8127ec88-0ff6-51e0-8ae5-7a01059d237c"))
+  (wire
+    (pts
+      (xy 111.76 167.64)
+      (xy 111.76 162.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6cd4d51c-6b66-5148-bc54-9e10f74f5aa8"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 111.76 162.56 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ebe6ba73-56e5-56c5-acce-da4c7c187cfc"))
+  (wire
+    (pts
+      (xy 116.84 167.64)
+      (xy 116.84 162.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7716d162-9a56-521e-8766-14371c8c85ec"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 116.84 162.56 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "15409e42-e9c6-5730-82c8-773eaa3301cb"))
+  (wire
+    (pts
+      (xy 111.76 203.2)
+      (xy 111.76 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7230f96b-1a21-5b12-824f-55dc005870bb"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 111.76 208.28 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2aa4fdfd-7fc0-5504-8519-88725fe7f802"))
+  (wire
+    (pts
+      (xy 116.84 203.2)
+      (xy 116.84 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c146603b-cd83-5f55-8eff-96ac5d45550c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 116.84 208.28 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "57fecf24-8005-5b0c-b1a9-df5fe99310a4"))
+  (wire
+    (pts
+      (xy 127.0 195.58)
+      (xy 132.08 195.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9ed8bdf9-4918-54b4-b659-f5cfff92b087"))
+  (global_label "ADC_DECAP"
+    (shape bidirectional)
+    (at 132.08 195.58 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "956f3f81-722f-5039-9b97-929d1219e6c9"))
+  (wire
+    (pts
+      (xy 127.0 175.26)
+      (xy 132.08 175.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "09624f2e-d992-53fe-a2ac-576ef9e7a337"))
+  (global_label "ADC_CS"
+    (shape bidirectional)
+    (at 132.08 175.26 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "2dabccd2-5db1-5687-ac58-e4b7676b258d"))
+  (wire
+    (pts
+      (xy 127.0 177.8)
+      (xy 132.08 177.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8696d4fa-28bb-5b03-941b-f6eb381e4d3c"))
+  (global_label "SPI_SCLK"
+    (shape bidirectional)
+    (at 132.08 177.8 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "de3f0e0b-c757-51b5-a68d-4ee198099fde"))
+  (wire
+    (pts
+      (xy 127.0 180.34)
+      (xy 132.08 180.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3df020b1-7ed6-59d2-b38b-c84650e7f33f"))
+  (global_label "SPI_MOSI"
+    (shape bidirectional)
+    (at 132.08 180.34 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "1018df32-4c8d-5d9b-9938-846289f2accd"))
+  (wire
+    (pts
+      (xy 127.0 182.88)
+      (xy 132.08 182.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "615837ff-39de-534d-ae39-2cee7b3c0c95"))
+  (global_label "SPI_MISO"
+    (shape bidirectional)
+    (at 132.08 182.88 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "8a8251b7-8912-5195-8bad-a1ab8a0f9233"))
+  (symbol
+    (lib_id "Device:C")
+    (at 215.9 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c7d72c76-24da-5a50-8112-3a971df0d546")
+    (property "Reference" "C19"
+      (at 219.9 173.76 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/16V"
+      (at 219.9 176.26 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "C19")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 215.9 171.45)
+      (xy 215.9 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d363e5bc-04a2-5edf-8bbf-b947bcf3a33d"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 215.9 166.37 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "657f1e08-552e-54c2-96e1-3cdd7c72273c"))
+  (wire
+    (pts
+      (xy 215.9 179.07)
+      (xy 215.9 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b0832d45-0576-587b-91a8-ac6850b4a030"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 215.9 184.15 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "7db65ada-226b-54f6-b680-c4f270459e24"))
+  (symbol
+    (lib_id "Device:C")
+    (at 266.7 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "10ac45e8-c8fa-57b7-b021-f8021b306d23")
+    (property "Reference" "C20"
+      (at 270.7 173.76 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/16V"
+      (at 270.7 176.26 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "C20")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 266.7 171.45)
+      (xy 266.7 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2e871571-b685-5ec2-a2a9-dd6d16157c48"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 266.7 166.37 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "e58aab83-1164-5b56-be74-6b8b42dc8a8a"))
+  (wire
+    (pts
+      (xy 266.7 179.07)
+      (xy 266.7 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "50e587e5-6846-5df4-a14b-0d67efb6e5b6"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 266.7 184.15 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "d392392c-54f1-54d2-b745-d8f6b4623060"))
+  (symbol
+    (lib_id "Device:C")
+    (at 317.5 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "34d5a363-ae74-5ed3-9c2c-a8b4dbdc1d11")
+    (property "Reference" "C21"
+      (at 321.5 173.76 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/16V"
+      (at 321.5 176.26 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "TBD - not orderable"
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
+          (reference "C21")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 317.5 171.45)
+      (xy 317.5 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a4d939a4-e043-5032-976c-236df707d2f4"))
+  (global_label "ADC_DECAP"
+    (shape bidirectional)
+    (at 317.5 166.37 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "85556aab-78e0-52ca-9a0f-f95656ff6d38"))
+  (wire
+    (pts
+      (xy 317.5 179.07)
+      (xy 317.5 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f93f0361-abcd-51a1-ace7-6559e1573c44"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 317.5 184.15 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "01cfa09a-0bc8-55e4-a4dc-626284ba2217"))
+  (text "AIN0-2: Hall position. AIN3-5: driver current feedback. AIN6/7 unused in this draft.\nWheel phase-current acquisition remains open; do not assume two spare channels solve PWM sampling.\nHall sensors share the ADC analog supply/reference. Verify magnet gaps and interference under drive.\nADC/Hall MPNs and pin maps are selected; JLC sourcing and footprint sign-off remain pending."
+    (at 20 243 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "2cf73e49-aae6-5fbc-93ea-2be8c2205b74"))
+  (embedded_fonts no))

@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "filename": "MagMouse.kicad_pro",
+    "version": 3
+  },
+  "text_variables": {
+    "STATUS": "DRAFT - NOT FOR FABRICATION"
+  },
+  "schematic": {
+    "meta": {
+      "version": 1
+    }
+  }
+}

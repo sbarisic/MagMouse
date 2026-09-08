@@ -7,9 +7,11 @@ Status: requirements only; no CAD models or dimensioned manufacturing drawings.
 - [button-mechanisms](button-mechanisms/README.md): three contactless haptic buttons.
 
 Choose an editable CAD format and document its tool/version when modeling begins.
-Validate magnet separation with motor and voice-coil fields active, including
+Validate magnet separation with wheel and custom button-coil fields active, including
 temperature and full travel. Preserve physical stops and passive return behavior
 so loss of power does not depend on actuator control to constrain the mechanism.
+The elastic button paddles provide passive return; validate their material,
+geometry, print process, creep and fatigue as functional springs.
 
 License: CERN-OHL-S-2.0; see [LICENSE](LICENSE).
 Source location: <https://github.com/sbarisic/MagMouse>.

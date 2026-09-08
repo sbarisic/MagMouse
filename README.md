@@ -1,18 +1,21 @@
 # MagMouse
 
 An open-source wired mouse exploring contactless magnetic buttons, programmable
-voice-coil click feedback, and a motorized haptic scroll wheel.
+electromagnetic click feedback, and a motorized haptic scroll wheel.
 
-**Status: architecture and repository setup.** There are no fabrication-ready
-schematics, CAD models, or runnable firmware yet. Contactless sensing removes
+**Status: architecture and initial KiCad schematic.** Open the
+[five-sheet KiCad draft](hardware/kicad/README.md) for the editable circuit and
+JLCPCB/LCSC sourcing fields. There are no fabrication-ready schematics, CAD
+models, or runnable firmware yet. Contactless sensing removes
 electrical switch contacts; it does not eliminate mechanical wear or other failures.
 
 ## V1 concept
 
 - ESP32-S3 with native USB Full-Speed HID; target report interval: 1 ms.
 - PAW3950 optical sensor for cursor movement; ICM-42688-P for supplementary motion.
-- Three TMAG5253 Hall sensors and LVCM-013-008-02 voice coils for left, middle,
-  and right buttons, with ADS7038 feedback and three DRV8874 drivers.
+- Three elastic button paddles provide passive return. Each uses a TMAG5253
+  position sensor with its own magnet, plus a custom moving-magnet actuator with
+  a stationary wound coil, ADS7038 feedback, and a DRV8231A bidirectional driver.
 - MA735 angle sensing and a GB1806 motor driven by DRV8316R for scroll haptics.
 - One USB-C cable for data and 5 V power, with force limits based on detected
   source capability. A powered Type-C hub/adapter is the intended full-power source.
@@ -28,7 +31,8 @@ electrical switch contacts; it does not eliminate mechanical wear or other failu
 | [docs](docs/README.md) | Requirements, interfaces, power and roadmap |
 
 Start with the [architecture](docs/architecture.md), [interface plan](docs/interfaces.md),
-and [roadmap](docs/roadmap.md). [ideas.md](ideas.md) preserves the original
+and [button prototype plan](mechanical/button-mechanisms/README.md), then the
+[roadmap](docs/roadmap.md). [ideas.md](ideas.md) preserves the original
 brainstorming notes; the organized documents distinguish selected directions from
 open engineering questions.
 
