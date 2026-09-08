@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - MagMouse")
     (date "2026-09-08")
-    (rev "0.1 DRAFT")
+    (rev "0.2 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols)
@@ -17,7 +17,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "3f36e4f1-a069-5d5f-b81a-7a0e91da7ced"))
-  (text "DRAFT 0.1 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -131,7 +131,7 @@
         (size 1.5 1.5))
       (justify left top))
     (uuid "326f7c0d-a7a5-59c3-9eba-3ad84bff635f"))
-  (text "JLCPCB: inspect MPN, LCSC and Sourcing Status fields in Symbol Properties.\nBlank sourcing fields and unassigned footprints are tracked in SOURCING.md.\nNo board layout, Gerbers or component-placement file exists yet.\nGlobal net labels connect across these sheets. Unused MCU pins are NC only for this draft."
+  (text "JLCPCB: inspect MPN, LCSC and Sourcing Status fields in Symbol Properties.\nAll present BOM components have catalog IDs and footprints; see SOURCING.md.\nNo board layout, Gerbers or component-placement file exists yet.\nGlobal net labels connect across these sheets. Unused MCU pins are NC only for this draft."
     (at 25 225 0)
     (effects
       (font

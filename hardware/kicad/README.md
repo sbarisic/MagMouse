@@ -1,6 +1,6 @@
 # KiCad starter schematic
 
-Revision 0.1, 2026-09-08. Created and exported with KiCad 10.0.6.
+Revision 0.2, 2026-09-08. Created and exported with KiCad 10.0.6.
 This is an editable circuit-development draft, **not a working or order-ready
 mouse design**. No PCB layout exists yet.
 
@@ -52,7 +52,8 @@ accuracy, required force, pulse duration and coil heating are unverified.
   path for regenerated energy. Input pulldowns alone do not provide a timeout.
 - Add PAW3950 reference circuitry, IMU, wheel driver/encoder/current feedback
   and RGB indicator. Validate the optical parts and initialization first.
-- Select the remaining parts and footprints listed in [SOURCING.md](SOURCING.md).
+- Refresh stock and review the selected parts, ratings and footprints in
+  [SOURCING.md](SOURCING.md) when the complete design is ready.
 - Prototype one button, then review power, ADC settling, current sensing,
   thermal limits, magnetic interference and the complete pin allocation.
 - Review every symbol-to-package mapping and clear ERC before board layout.
@@ -72,21 +73,24 @@ to `build/kicad-review/`: five SVG sheets, XML netlist, ERC JSON, grouped
 The BOM includes unresolved rows so they cannot silently disappear from review.
 Its column names include Comment, Designator, Footprint and LCSC Part #.
 
-The initial draft has 60 BOM components, 43 with verified LCSC catalog numbers,
-17 without numbers and six without footprints. Nine copper test pads and two
-ERC power flags are excluded from the BOM. Catalog identity does not establish
-current JLC assembly stock, price or assembly eligibility.
+The current draft has 60 BOM components, all with verified catalog numbers,
+manufacturer part numbers and footprints. Revision 0.2 resolved the initial
+17 missing catalog numbers and six missing footprints. Nine copper test pads
+and two ERC power flags are excluded from the BOM. Catalog identity does not
+reserve assembly stock or establish the eventual order price.
 
 Initial ERC: **two errors** for the unsourced logic/actuator 5 V inputs and
 **two warnings** for the dangling CC1/CC2 connections. These have not been
 waived. Ground and the buck output have power flags; the unfinished input rails
 do not. The script returns exit code 2 while ERC or BOM gaps remain; this is
-expected for revision 0.1. Even a future successful export is not fabrication
+expected for revision 0.2 because the power circuit is still incomplete. Even a
+future successful export is not fabrication
 approval: ERC cannot validate analog behavior or missing subsystems.
 
-Initial review also checked 56 critical pin-to-net assignments and confirmed
-that all 63 assigned footprints (including test pads) exist in the installed
-libraries and contain the required pin numbers. All five rendered sheets were
+Revision 0.2 review checked 56 critical pin-to-net assignments and confirmed
+that all 69 assigned footprints (including test pads) exist in the installed
+libraries and contain the required pin numbers. Net connectivity is unchanged
+from revision 0.1. All five rendered sheets were
 visually inspected. These checks do not replace a full circuit/package review.
 
 After schematic and layout review, generate Gerbers, drill files and a PCB

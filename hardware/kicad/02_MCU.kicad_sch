@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 02_MCU")
     (date "2026-09-08")
-    (rev "0.1 DRAFT")
+    (rev "0.2 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -1237,7 +1237,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "74fb1197-bd17-5e54-9f49-17a52c310dd5"))
-  (text "DRAFT 0.1 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -2290,7 +2290,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "1uF/16V"
+    (property "Value" "1uF/50V"
       (at 222.44 87.36 0)
       (effects
         (font
@@ -2310,42 +2310,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 218.44 86.36 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "CL10A105KB8NNNC"
       (at 218.44 86.36 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C15849"
       (at 218.44 86.36 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C15849"
       (at 218.44 86.36 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 218.44 86.36 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 218.44 86.36 0)
       (hide yes)
       (effects
@@ -2356,7 +2356,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
           (reference "C4")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 218.44 90.17)
@@ -2670,56 +2684,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "XUNPU"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "TS-1088-AR02016"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C720477"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C720477"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - select JLC tactile switch and footprint"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 218.44 121.92 0)
       (hide yes)
       (effects
@@ -2730,7 +2744,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
           (reference "SW1")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 213.36 121.92)
@@ -2783,56 +2811,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "XUNPU"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "TS-1088-AR02016"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C720477"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C720477"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - select JLC tactile switch and footprint"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 289.56 121.92 0)
       (hide yes)
       (effects
@@ -2843,7 +2871,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
           (reference "SW2")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 284.48 121.92)

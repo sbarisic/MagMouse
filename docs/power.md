@@ -22,8 +22,11 @@ applicable USB/Type-C rules during electrical design using the specifications in
 ## Rails
 
 - Protected VBUS feeds wheel and custom button-coil drivers and the logic converter.
-- A candidate TLV62569 or TPS62A0569 generates 3.3 V; choose one after checking
-  transient load, headroom, thermals, and external components.
+- The starter selects TLV62569DBVR with SWPA4020S2R2MT (2.2 uH), a
+  100 kOhm / 22.1 kOhm divider and 20 uF nominal output capacitance for 3.315 V.
+  Use a provisional 1 A continuous logic-rail target pending thermal tests;
+  the inductor's tabulated heat-rating current is 1.85 A. Review transient load,
+  headroom, capacitor bias and fault current; see [sourcing review](../hardware/kicad/SOURCING.md).
 - A local TLV74318 supplies the proposed optical 1.8 V rail, following the exact
   PAW3950 reference design and sequencing requirements.
 - Size decoupling and bulk capacitance after inrush/transient analysis. Define

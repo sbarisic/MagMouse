@@ -12,6 +12,9 @@
 
 - [x] Start a KiCad 10.0.6 schematic with MCU, buck, button drivers, Hall/ADC
   circuits and catalog sourcing fields; see [the draft](../hardware/kicad/README.md).
+- [x] Resolve the starter's 17 missing catalog selections and six missing
+  footprints; all 60 present BOM components now have MPNs, catalog IDs and
+  footprints (revision 0.2; stock refresh and final circuit review remain).
 - [ ] Obtain exact datasheets/reference circuits and confirm part availability.
 - [ ] Validate PAW3950 optics, circuit, initialization and redistribution rights.
 - [ ] Choose Type-C detection and complete input-power/protection design.

@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 03_Buttons")
     (date "2026-09-08")
-    (rev "0.1 DRAFT")
+    (rev "0.2 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -505,7 +505,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "d29e0230-12e7-5143-8fae-07d8b95a0f08"))
-  (text "DRAFT 0.1 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -1720,56 +1720,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "B2B-PH-SM4-TBT(LF)(SN)"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C265003"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C265003"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - select 2-pin coil connector after mechanism/current validation"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
@@ -1780,7 +1780,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/584f5e2a-40d4-5188-83de-a1357f3244b0"
           (reference "J2")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"
+      (at 368.3 53.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 368.3 53.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 363.22 53.34)
@@ -3021,56 +3035,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "B2B-PH-SM4-TBT(LF)(SN)"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C265003"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C265003"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - select 2-pin coil connector after mechanism/current validation"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
@@ -3081,7 +3095,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/584f5e2a-40d4-5188-83de-a1357f3244b0"
           (reference "J3")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"
+      (at 368.3 124.46000000000001 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 368.3 124.46000000000001 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 363.22 124.46)
@@ -4322,56 +4350,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "B2B-PH-SM4-TBT(LF)(SN)"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C265003"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C265003"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - select 2-pin coil connector after mechanism/current validation"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
@@ -4382,7 +4410,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/584f5e2a-40d4-5188-83de-a1357f3244b0"
           (reference "J4")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"
+      (at 368.3 195.57999999999998 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 368.3 195.57999999999998 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 363.22 195.58)

@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 04_Sensing")
     (date "2026-09-08")
-    (rev "0.1 DRAFT")
+    (rev "0.2 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -446,7 +446,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "0315143d-034f-55ea-82e7-f0accd519b5c"))
-  (text "DRAFT 0.1 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -501,28 +501,28 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C35414983"
       (at 53.34 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C35414983"
       (at 53.34 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 53.34 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 53.34 63.5 0)
       (hide yes)
       (effects
@@ -533,7 +533,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "U7")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/37141530-TMAG5253BA2IQDMRR/C35414983"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 53.34 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 53.34 53.34)
@@ -782,28 +796,28 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C35414983"
       (at 162.56 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C35414983"
       (at 162.56 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 162.56 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 162.56 63.5 0)
       (hide yes)
       (effects
@@ -814,7 +828,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "U8")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/37141530-TMAG5253BA2IQDMRR/C35414983"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 162.56 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 162.56 53.34)
@@ -1063,28 +1091,28 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C35414983"
       (at 271.78 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C35414983"
       (at 271.78 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 271.78 63.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 271.78 63.5 0)
       (hide yes)
       (effects
@@ -1095,7 +1123,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "U9")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/37141530-TMAG5253BA2IQDMRR/C35414983"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 271.78 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 271.78 53.34)
@@ -1344,28 +1386,28 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C2871580"
       (at 114.3 185.42 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C2871580"
       (at 114.3 185.42 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 114.3 185.42 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 114.3 185.42 0)
       (hide yes)
       (effects
@@ -1376,7 +1418,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "U10")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C2871580"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 114.3 185.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 101.6 175.26)
@@ -1637,7 +1693,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "1uF/16V"
+    (property "Value" "1uF/50V"
       (at 219.9 176.26 0)
       (effects
         (font
@@ -1657,42 +1713,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "CL10A105KB8NNNC"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C15849"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C15849"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
@@ -1703,7 +1759,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C19")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 215.9 171.45)
@@ -1750,7 +1820,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "1uF/16V"
+    (property "Value" "1uF/50V"
       (at 270.7 176.26 0)
       (effects
         (font
@@ -1770,42 +1840,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "CL10A105KB8NNNC"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C15849"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C15849"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
@@ -1816,7 +1886,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C20")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 266.7 171.45)
@@ -1863,7 +1947,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "1uF/16V"
+    (property "Value" "1uF/50V"
       (at 321.5 176.26 0)
       (effects
         (font
@@ -1883,42 +1967,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "CL10A105KB8NNNC"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C15849"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C15849"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
@@ -1929,7 +2013,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C21")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 317.5 171.45)
@@ -1962,7 +2060,7 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "01cfa09a-0bc8-55e4-a4dc-626284ba2217"))
-  (text "AIN0-2: Hall position. AIN3-5: driver current feedback. AIN6/7 unused in this draft.\nWheel phase-current acquisition remains open; do not assume two spare channels solve PWM sampling.\nHall sensors share the ADC analog supply/reference. Verify magnet gaps and interference under drive.\nADC/Hall MPNs and pin maps are selected; JLC sourcing and footprint sign-off remain pending."
+  (text "AIN0-2: Hall position. AIN3-5: driver current feedback. AIN6/7 unused in this draft.\nWheel phase-current acquisition remains open; do not assume two spare channels solve PWM sampling.\nHall sensors share the ADC analog supply/reference. Verify magnet gaps and interference under drive.\nADC/Hall JLC catalog IDs assigned. Final layout/stencil and magnetic placement need review."
     (at 20 243 0)
     (effects
       (font

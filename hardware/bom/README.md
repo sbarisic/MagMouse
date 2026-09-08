@@ -5,6 +5,11 @@ on 2026-09-08; not a purchasing or assembly BOM. `ideas.md` is historical.
 Quantities are per mouse; alternatives are not additive. Confirm exact orderable
 parts, packages, footprints, ratings and availability before procurement.
 
+The [KiCad starter BOM](../kicad/README.md) is the source of truth for circuits
+already drawn: revision 0.2 has 60 component instances with complete MPN,
+catalog ID and footprint fields. The broader inventory below also includes
+subsystems that have not been implemented. See [sourcing evidence](../kicad/SOURCING.md).
+
 | Qty | Candidate | Purpose / unresolved detail |
 | --- | --- | --- |
 | 1 | ESP32-S3-MINI-1-N8 | MCU module; verify exposed pins and resource budget |
@@ -20,29 +25,30 @@ parts, packages, footprints, ratings and availability before procurement.
 | 3 | Printed coil former/mount | Stationary coil support; integrated or separate bobbin TBD |
 | 0-3 | Soft-steel yoke/back iron, experimental | Optional magnetic-circuit trial; geometry and effect on passive return TBD |
 | 3 | Elastic paddle/flexure assembly | Passive return, mechanical stops and magnet mounts; replaceable-part design target |
-| 3 | DRV8231A | Bidirectional coil drivers with current feedback/regulation; exact package/orderable suffix TBD |
+| 3 | DRV8231ADSGR | Bidirectional coil drivers with current feedback/regulation; C5139865 |
 | 1 | MA735 | Absolute wheel-angle sensor |
 | 1 | Diametric magnet, TBD | Dedicated coaxial encoder magnet |
 | 1 | SteadyWin/TSL GB1806 (PM1806), no encoder | Scroll motor; verify exact winding and variant |
 | 1 | DRV8316R | SPI-configurable BLDC driver; PWM mode TBD |
 | 1 | 2020/0606 RGB LED, TBD | Status/profile indication |
 | 3 | LED resistors, TBD | Values depend on LED and drive circuit |
-| 1 | TLV62569 or TPS62A0569 | Candidate 5 V to 3.3 V buck; select one |
-| 1 | USB-C receptacle, TBD | Data and VBUS |
+| 1 | TLV62569DBVR | Selected 5 V to 3.3 V buck; C141836 |
+| 1 | TYPE-C-31-M-12 | Data and VBUS; C165948 |
 | 2* | 5.1 kohm CC Rd resistors | Coordinate with chosen sink detector; may be integrated |
 | TBD | Type-C sink/current detector | Required for advertised-current awareness; part/interface open |
-| 1 | TPD2EUSB30 | Proposed USB data ESD protection |
-| 2 | 22-33 ohm USB series resistors | Final value per ESP32 implementation |
-| 1 | Reset/EN button | Recovery |
-| 1 | Boot button | Download-mode recovery |
+| 1 | TPD2EUSB30DRTR | USB data ESD protection; C97502 |
+| 2 | 33 ohm USB series resistors | Draft value per ESP32 implementation |
+| 1 | TS-1088-AR02016 reset/EN button | Recovery; C720477 |
+| 1 | TS-1088-AR02016 boot button | Download-mode recovery; C720477 |
 | 1 set | Programming/test pads | 3V3, GND, EN, GPIO0, UART and measurements |
 | TBD | Decoupling and bulk capacitors | Device-specific, logic and driver transients |
 | TBD | Pull-ups/pull-downs | Boot, control and fault states |
-| TBD | Buck inductor/feedback parts | Selected regulator reference circuit |
+| 1 set | SWPA4020S2R2MT and 100 kOhm / 22.1 kOhm divider | Selected buck filter and feedback; see KiCad BOM |
 | TBD | Optical passives | Exact PAW3950 reference circuit |
 | TBD | Current-setting/scaling/filter components | DRV8231A IPROPI/VREF and wheel feedback |
 | TBD | Input protection and power monitoring | Inrush, current limits, reverse current and VBUS sensing |
-| TBD | Connectors and mounting hardware | Wheel motor, three wound coils, mechanical assembly |
+| 3 | B2B-PH-SM4-TBT(LF)(SN) | Two-pin SMT coil headers; C265003; harnesses separate |
+| TBD | Other connectors and mounting hardware | Wheel motor and mechanical assembly |
 | TBD | Hardware actuator timeout/disable circuit | Safe stop on stale control; button drivers have no dedicated fault output |
 
 The external powered hub/adapter is not included in this mouse BOM. Do not fit

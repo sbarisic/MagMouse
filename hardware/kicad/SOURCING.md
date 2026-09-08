@@ -1,9 +1,11 @@
 # Draft sourcing and symbol review
 
-Checked 2026-09-08. Identifiers below were matched to catalog manufacturer part
-numbers. Only the driver and regulator were also verified on direct JLCPCB
-catalog pages; other entries were checked at LCSC. Recheck JLCPCB assembly stock,
-package, price and service eligibility before freezing the BOM. No stock is reserved.
+Revision 0.2, checked 2026-09-08. All 60 components in the present schematic
+now have manufacturer part numbers, catalog identifiers and assigned footprints.
+The 17 previously unresolved instances were matched to direct JLCPCB listings.
+The original selections below retain their recorded JLCPCB or LCSC evidence.
+Recheck assembly stock, prices and service eligibility before ordering; no stock
+is reserved. This covers the starter schematic, not the absent mouse subsystems.
 
 | References | Manufacturer part number | Catalog |
 | --- | --- | --- |
@@ -23,22 +25,65 @@ Use the schematic fields as the editable source of truth. `LCSC` and
 Do not substitute parts by value alone: voltage, tolerance, capacitor bias,
 inductor saturation, package and pin mapping matter.
 
-## Unresolved sourcing
+## Resolved selections in revision 0.2
 
-| References | Selection still required |
-| --- | --- |
-| U1 | TPD2EUSB30DRTR sourcing; SOT-3 candidate footprint assigned |
-| U7-U9 | TMAG5253BA2IQDMRR sourcing; tiny X2SON assembly/package review |
-| U10 | ADS7038IRTER sourcing; WQFN assembly/package review |
-| C4, C19-C21 | Exact 1 uF / 16 V 0603 capacitors and bias/tolerance review |
-| R1, R2 | Exact 100 kOhm and 22.1 kOhm 0603 resistors |
-| L1 | 2.2 uH shielded power inductor; saturation, DCR, thermal rating and footprint |
-| SW1, SW2 | Tactile switches and matching footprints |
-| J2-J4 | Coil connector family, current rating, orientation and footprints |
+| References | Selected manufacturer part number | JLCPCB catalog | Library type |
+| --- | --- | --- | --- |
+| U1 | TI TPD2EUSB30DRTR | [C97502](https://jlcpcb.com/partdetail/TexasInstruments-TPD2EUSB30DRTR/C97502) | Extended |
+| U7-U9 | TI TMAG5253BA2IQDMRR | [C35414983](https://jlcpcb.com/partdetail/37141530-TMAG5253BA2IQDMRR/C35414983) | Extended |
+| U10 | TI ADS7038IRTER | [C2871580](https://jlcpcb.com/partdetail/C2871580) | Extended |
+| C4, C19-C21 | Samsung CL10A105KB8NNNC, 1 uF / 50 V, X5R, 10%, 0603 | [C15849](https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849) | Basic |
+| R1 | UNI-ROYAL 0603WAF1003T5E, 100 kOhm, 1%, 0603 | [C25803](https://jlcpcb.com/partdetail/C25803) | Basic |
+| R2 | UNI-ROYAL 0603WAF2212T5E, 22.1 kOhm, 1%, 0603 | [C25961](https://jlcpcb.com/partdetail/26704-0603WAF2212T5E/C25961) | Extended |
+| L1 | Sunlord SWPA4020S2R2MT, 2.2 uH, 20% | [C83423](https://jlcpcb.com/partdetail/Sunlord-SWPA4020S2R2MT/C83423) | Extended |
+| SW1, SW2 | XUNPU TS-1088-AR02016 | [C720477](https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477) | Basic |
+| J2-J4 | JST B2B-PH-SM4-TBT(LF)(SN) | [C265003](https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003) | Extended |
 
-These 17 component instances have no LCSC number. L1, SW1/SW2 and J2-J4 also
-have no footprint. Subsystems absent from the schematic are additional future
-BOM items. This partial BOM is not a total mouse electronics cost estimate.
+The Hall and ADC listings were verified in the live browser because indexed
+searches did not expose the exact entries. The Hall sensor and its pinout stay
+unchanged. Capacitor values now show their selected 50 V rating instead of the
+earlier 16 V minimum. No signal connections or resistor ratios changed.
+
+## Newly assigned footprints
+
+All six assignments use installed KiCad 10 libraries. No downloaded EasyEDA
+footprint is required.
+
+| References | KiCad footprint | Drawing comparison |
+| --- | --- | --- |
+| L1 | `Inductor_SMD:L_Sunlord_SWPA4020S` | 4 x 4 x 2 mm body; pads 1.1 x 3.7 mm at x = +/-1.5 mm; 1.9 mm inner gap |
+| SW1, SW2 | `Button_Switch_SMD:SW_SPST_TS-1088-xR020` | 3.9 x 3 x 2 mm body; two 1.05 x 2 mm pads at x = +/-2.225 mm; 3.4 mm inner gap, 5.5 mm outer span |
+| J2-J4 | `Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical` | Two contacts on 2 mm pitch, 1 x 5.5 mm pads; two mechanical retention lands, 1.6 x 3 mm |
+
+L1 was checked against the [Sunlord SWPA datasheet, revision 2021/05/15](https://atta.szlcsc.com/upload/public/pdf/source/20210916/AC798BA7E846B7D0B6818F45CD84DB0B.pdf),
+dimensions on page 2, ratings on page 7 and definitions on page 16. The tabulated
+values are 52 mOhm maximum DCR, 3.4 A saturation current (3.7 A typical) and
+1.85 A heat-rating current (2.8 A typical). Saturation means approximately 30%
+inductance reduction; heat rating uses a 40 C rise from 20 C ambient. These are
+distinct limits. Use a provisional **1 A continuous logic-rail target** pending
+thermal validation; the regulator's 2 A capability is not board-level acceptance.
+At 5 V input, 3.315 V output, 2.2 uH and typical 1.5 MHz switching, calculated
+ripple is approximately 0.34 A peak-to-peak and peak current approximately 1.17 A
+at 1 A load. Temperature, tolerances, transients and fault current still need review.
+
+SW1/SW2 were checked against [XUNPU TS-1088-AR drawing, revision A](https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477).
+The drawing specifies the two-terminal normally-open circuit and 50 mA / 12 V
+contact rating. These switches only provide reset/boot recovery. Their rating
+exceeds the roughly 0.33 mA through the 10 kOhm pull-up at 3.3 V.
+
+J2-J4 were compared with the [JST PH series drawing](https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743),
+pages 1 and 3 (no revision printed). The SMT body is 7.95 mm wide and 6.6 mm
+high, approximately 8.6 mm when mated. Reserve space above it for wire exit.
+The series rating is 2 A with AWG24 wire; select contact/wire combinations for
+the eventual harness rather than applying that rating to every wire gauge.
+The mating housing is PHR-2 with compatible PH crimp contacts. Harnesses remain
+separate assembly items. Pin 1 is COIL_P and pin 2 COIL_N; neither is ground.
+Both retention pads marked MP are mechanical and intentionally have no signal net.
+
+The 1 uF capacitor has the same 0603 outline as the draft and a higher voltage
+rating. Effective capacitance at operating bias, tolerance and temperature still
+needs checking during ADC/power validation. Catalog selections are complete for
+this draft; live stock checks, circuit, stencil and enclosure sign-off remain separate.
 
 ## Symbol and package provenance
 

@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 01_Power_USB")
     (date "2026-09-08")
-    (rev "0.1 DRAFT")
+    (rev "0.2 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -1417,7 +1417,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "988c298f-9ee1-58b9-b10f-b957eb1b842e"))
-  (text "DRAFT 0.1 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -1710,28 +1710,28 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C97502"
       (at 137.16 73.66 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C97502"
       (at 137.16 73.66 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 137.16 73.66 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 137.16 73.66 0)
       (hide yes)
       (effects
@@ -1742,7 +1742,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/f98db9d6-39f0-56d0-b006-a308a0af27b1"
           (reference "U1")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/TexasInstruments-TPD2EUSB30DRTR/C97502"
+      (at 137.16 73.66 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 137.16 73.66 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 127.0 73.66)
@@ -1980,62 +1994,62 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "2.2uH - Isat TBD"
+    (property "Value" "2.2uH"
       (at 291.02 54.34 0)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4020S"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210916/AC798BA7E846B7D0B6818F45CD84DB0B.pdf"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Sunlord"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "SWPA4020S2R2MT"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C83423"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C83423"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - select shielded power inductor and verified footprint"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 287.02 53.34 0)
       (hide yes)
       (effects
@@ -2046,7 +2060,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/f98db9d6-39f0-56d0-b006-a308a0af27b1"
           (reference "L1")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/Sunlord-SWPA4020S2R2MT/C83423"
+      (at 287.02 53.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 287.02 53.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 283.21 53.34)
@@ -2473,42 +2501,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "UNI-ROYAL"
       (at 274.32 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1003T5E"
       (at 274.32 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C25803"
       (at 274.32 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C25803"
       (at 274.32 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 274.32 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 274.32 101.6 0)
       (hide yes)
       (effects
@@ -2519,7 +2547,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/f98db9d6-39f0-56d0-b006-a308a0af27b1"
           (reference "R1")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C25803"
+      (at 274.32 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 274.32 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 274.32 97.79)
@@ -2570,42 +2612,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "UNI-ROYAL"
       (at 274.32 134.62 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF2212T5E"
       (at 274.32 134.62 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" ""
+    (property "LCSC" "C25961"
       (at 274.32 134.62 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" ""
+    (property "JLCPCB Part #" "C25961"
       (at 274.32 134.62 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "TBD - not orderable"
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
       (at 274.32 134.62 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" ""
+    (property "Checked" "2026-09-08"
       (at 274.32 134.62 0)
       (hide yes)
       (effects
@@ -2616,7 +2658,21 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/f98db9d6-39f0-56d0-b006-a308a0af27b1"
           (reference "R2")
-          (unit 1)))))
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/26704-0603WAF2212T5E/C25961"
+      (at 274.32 134.62 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Extended"
+      (at 274.32 134.62 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
   (wire
     (pts
       (xy 274.32 138.43)
@@ -2670,7 +2726,7 @@
     (diameter 0)
     (color 0 0 0 0)
     (uuid "a747e47e-f657-5e6b-8dab-17bf24b34e5e"))
-  (text "Nominal output: 0.6 V x (1 + 100k / 22.1k) = 3.315 V.\n2.2 uH / 20 uF is a starting filter; verify bias, stability and thermals.\nDivider tolerance and full-load regulation still require review.\nPWR_5V_PENDING and ACT_5V_PENDING have no source in this draft."
+  (text "Nominal output: 0.6 V x (1 + 100k / 22.1k) = 3.315 V.\nSWPA4020S2R2MT / 20 uF filter; verify bias, stability and thermals.\nProvisional logic-rail target: <=1 A continuous pending thermal tests.\nPWR_5V_PENDING and ACT_5V_PENDING have no source in this draft."
     (at 190 163 0)
     (effects
       (font
