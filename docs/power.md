@@ -153,8 +153,9 @@ VACT = VADC × 122.1 / 22.1; nominal filter time constant 1.81 ms.
 D4 shunts residual monitor voltage to the ADC supply during power loss.
 The 100 kOhm resistor limits this alternate path to about 100 uA at a 10.3 V
 rail. Verify ADC pin voltage/injection and logic discharge on unplug/regeneration.
-These are supervisory signals; wheel phase-current acquisition still needs a
-separate path. All eight ADS7038 channels are allocated.
+These are supervisory signals. All eight ADC1 channels are allocated. A second
+ADS7038 and dedicated SPI3 are now reserved for wheel-current acquisition; its
+front-end circuit and sampling validation remain open. See [interfaces](interfaces.md).
 
 ## Regeneration and validation before layout
 

@@ -3,7 +3,7 @@
 Status: preliminary architecture with an editable KiCad 10 starter schematic.
 The schematic is incomplete; no PCB layout exists yet.
 
-- [KiCad project](kicad/README.md): nine-sheet draft with connected USB-C power control, sourcing fields and review exports.
+- [KiCad project](kicad/README.md): ten-sheet draft with connected USB-C power control, sourcing fields and review exports.
 
 - [schematics](schematics/README.md): circuit partition and review requirements.
 - [pcb](pcb/README.md): layout and release requirements.

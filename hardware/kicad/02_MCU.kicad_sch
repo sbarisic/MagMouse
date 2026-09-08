@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 02_MCU")
     (date "2026-09-08")
-    (rev "0.3 DRAFT")
+    (rev "0.4 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -1237,7 +1237,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "74fb1197-bd17-5e54-9f49-17a52c310dd5"))
-  (text "DRAFT 0.3 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -1380,12 +1380,6 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "d94a7e45-95a0-53f7-9509-da317d586068"))
-  (no_connect
-    (at 99.06 81.28)
-    (uuid "7fc8e8ab-c7ab-503d-8c41-36ef2102aba8"))
-  (no_connect
-    (at 99.06 83.82)
-    (uuid "6a476bdd-1e26-5931-b4fa-15489a0186b2"))
   (wire
     (pts
       (xy 99.06 86.36)
@@ -1578,48 +1572,6 @@
         (size 1.0 1.0))
       (justify left))
     (uuid "a9bbae28-2a3c-5106-9fc6-9eb1ff5ac53f"))
-  (no_connect
-    (at 129.54 83.82)
-    (uuid "c8d150e8-61a7-57e1-8d7a-8ba364c14814"))
-  (no_connect
-    (at 129.54 86.36)
-    (uuid "8b4e6105-e69b-5b0d-9bd3-482ea2e171bd"))
-  (no_connect
-    (at 129.54 119.38)
-    (uuid "3c21c9da-d7bc-519c-adb1-1e507029049d"))
-  (no_connect
-    (at 129.54 88.9)
-    (uuid "7a450a8b-d65d-5baa-9c6c-dc718370d309"))
-  (no_connect
-    (at 129.54 91.44)
-    (uuid "96c32ad3-c829-57d7-a9b4-9ea5cf32388d"))
-  (no_connect
-    (at 129.54 121.92)
-    (uuid "5a6a330d-9041-59d4-ad84-e2dd447640f0"))
-  (no_connect
-    (at 129.54 93.98)
-    (uuid "867037cc-15ee-59ae-87ab-e7ec769a1a58"))
-  (no_connect
-    (at 129.54 96.52)
-    (uuid "4b975850-4699-5103-8da1-488b89e13238"))
-  (no_connect
-    (at 129.54 99.06)
-    (uuid "2be70d29-10a5-5fda-bbf4-d6c802ecfa8c"))
-  (no_connect
-    (at 129.54 101.6)
-    (uuid "fac7bd87-b393-5011-a42f-472cee0d7a81"))
-  (no_connect
-    (at 129.54 104.14)
-    (uuid "026aad7b-f05f-5a0d-ac2b-62f6cec83c2c"))
-  (no_connect
-    (at 129.54 106.68)
-    (uuid "5e7b7fd9-c5a8-58c6-a4dd-9d41a3358036"))
-  (no_connect
-    (at 129.54 109.22)
-    (uuid "ae1a93f8-bffa-57e2-bf7d-8e077123404b"))
-  (no_connect
-    (at 129.54 111.76)
-    (uuid "19953283-1301-5992-98c6-1016da645482"))
   (wire
     (pts
       (xy 129.54 71.12)
@@ -1652,12 +1604,6 @@
         (size 1.0 1.0))
       (justify left))
     (uuid "ad1ce844-8078-52ba-b005-8fdb4823e020"))
-  (no_connect
-    (at 129.54 114.3)
-    (uuid "0ed48660-8f42-5e3d-a073-105c4c86e4cb"))
-  (no_connect
-    (at 129.54 116.84)
-    (uuid "a961bf83-4e0a-5431-acc2-4961a7150647"))
   (wire
     (pts
       (xy 99.06 71.12)
@@ -3482,7 +3428,7 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "3aeb606d-b780-5fbf-8d0f-ea2831628cbb"))
-  (text "GPIO4-9: button CMD signals through hardware AND gates. GPIO10-13: shared ADC SPI.\nGPIO1: VBUS_PRESENT_N; GPIO14/15: CC status; GPIO16/17: arm/heartbeat; GPIO18: sensors enable.\nUSB remains GPIO19/20. Full wheel/optical/IMU/RGB pin and PWM budget still needs review."
+  (text "GPIO allocation: 38 assigned + GPIO46 boot-low spare. Exact module: ESP32-S3-MINI-1-N8 (no PSRAM).\nSPI2: ADC1 / optical / IMU / angle / driver config. SPI3: dedicated ADC2. See sheet 09 and gpio-allocation.json.\nMCPWM0: wheel 3-PWM; MCPWM1: six independent button commands. RMT: one-wire RGB.\nGPIO3 wheel request and GPIO45 RGB have external pulldowns. GPIO26 is unavailable on N4R2. UART recovery retained."
     (at 20 245 0)
     (effects
       (font
@@ -3585,4 +3531,292 @@
       (font
         (size 1.0 1.0))
       (justify right))
-    (uuid "4fc616a4-22c0-5cb6-a024-1b04828f8482")))
+    (uuid "4fc616a4-22c0-5cb6-a024-1b04828f8482"))
+  (wire
+    (pts
+      (xy 99.06 81.28)
+      (xy 93.98 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "70c405ea-2838-5af2-8c50-644b56a0b772"))
+  (global_label "CS_PAW"
+    (shape bidirectional)
+    (at 93.98 81.28 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a7ae61e2-3d39-5d5c-a5ef-046257ae226e"))
+  (wire
+    (pts
+      (xy 99.06 83.82)
+      (xy 93.98 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3b4f18ba-b0bf-52c1-9538-a9c0ecdc77a0"))
+  (global_label "WHEEL_RUN_REQ"
+    (shape bidirectional)
+    (at 93.98 83.82 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b7dc097a-e724-57a1-95fc-e9d8a67a50a1"))
+  (wire
+    (pts
+      (xy 129.54 83.82)
+      (xy 134.62 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7b8304c3-3f26-5665-af94-94320195b249"))
+  (global_label "CS_IMU"
+    (shape bidirectional)
+    (at 134.62 83.82 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "352a7071-d2bb-512e-bfd1-d6e480d28c5c"))
+  (wire
+    (pts
+      (xy 129.54 86.36)
+      (xy 134.62 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f624414-8728-55d0-8bed-9baaa7a60feb"))
+  (global_label "OPT_CTRL"
+    (shape bidirectional)
+    (at 134.62 86.36 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ba7a6fee-8445-5b79-acdf-6a276760efab"))
+  (wire
+    (pts
+      (xy 129.54 88.89999999999999)
+      (xy 134.62 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "724c872f-c454-53f3-9062-417caa465d0a"))
+  (global_label "MOTOR_SPI_MOSI"
+    (shape bidirectional)
+    (at 134.62 88.9 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "3827d515-470a-592d-b082-d8ddc24225fe"))
+  (wire
+    (pts
+      (xy 129.54 91.44)
+      (xy 134.62 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ff0af348-3ba1-5f14-85e7-c93f626ee725"))
+  (global_label "MOTOR_SPI_SCLK"
+    (shape bidirectional)
+    (at 134.62 91.44 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "9ae2cde0-fe19-5d32-8eed-b48368d83964"))
+  (wire
+    (pts
+      (xy 129.54 93.97999999999999)
+      (xy 134.62 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cdfd701e-633f-50d7-8376-5d3588b711f4"))
+  (global_label "MOTOR_SPI_MISO"
+    (shape bidirectional)
+    (at 134.62 93.98 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "28a0f50b-98d3-5806-b6c7-ead1805b68c7"))
+  (wire
+    (pts
+      (xy 129.54 96.52)
+      (xy 134.62 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c50ea93-c22d-57f8-92d7-508a2877a8a7"))
+  (global_label "CS_ADC2"
+    (shape bidirectional)
+    (at 134.62 96.52 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "2a85d03f-13d3-5a6a-9e7d-06341f836f3b"))
+  (wire
+    (pts
+      (xy 129.54 99.06)
+      (xy 134.62 99.06))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "28d79504-f228-5a84-866a-207c352fc1cb"))
+  (global_label "CS_MA735"
+    (shape bidirectional)
+    (at 134.62 99.06 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "2a4f4c0b-6dec-5402-89ea-19602fecab1f"))
+  (wire
+    (pts
+      (xy 129.54 101.6)
+      (xy 134.62 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f1da7ad-6669-5d6c-9faf-62d13a15ee3c"))
+  (global_label "CS_DRV8316"
+    (shape bidirectional)
+    (at 134.62 101.6 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "13e7e835-c238-5ac4-8c0e-a4d690da04fb"))
+  (wire
+    (pts
+      (xy 129.54 104.14)
+      (xy 134.62 104.14))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a4a33acd-7c36-53fe-b22c-4b9a8a32b050"))
+  (global_label "PAW_MOTION_N"
+    (shape bidirectional)
+    (at 134.62 104.14 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "f6cb12ef-3122-5c97-b250-8e26c9e8d4ba"))
+  (wire
+    (pts
+      (xy 129.54 106.67999999999999)
+      (xy 134.62 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "26d6d3b4-7498-5b0a-95f4-9d10c41a5124"))
+  (global_label "IMU_INT1"
+    (shape bidirectional)
+    (at 134.62 106.68 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "c249bde9-4278-535a-879a-a70e5088e464"))
+  (wire
+    (pts
+      (xy 129.54 109.22)
+      (xy 134.62 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f5a480c3-7ef4-5440-b1f9-b5f08da107bf"))
+  (global_label "DRV_FAULT_N"
+    (shape bidirectional)
+    (at 134.62 109.22 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "b88cfce6-3bfc-5e6d-83b8-5e41cc907d58"))
+  (wire
+    (pts
+      (xy 129.54 111.75999999999999)
+      (xy 134.62 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "37b869d4-87e1-58ed-8f9e-47ee3d466a95"))
+  (global_label "WHEEL_PWM_A"
+    (shape bidirectional)
+    (at 134.62 111.76 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "0c9fdde0-5703-5d23-a5e1-8eada33a1dc7"))
+  (wire
+    (pts
+      (xy 129.54 114.3)
+      (xy 134.62 114.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "911d4f83-09ef-5d99-a368-f3bb3a0115ce"))
+  (global_label "RGB_DATA"
+    (shape bidirectional)
+    (at 134.62 114.3 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "081d8420-bd3d-5592-a5da-46937871b44b"))
+  (wire
+    (pts
+      (xy 129.54 116.84)
+      (xy 134.62 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3cabfa27-5422-5e56-8381-ac67a51627d5"))
+  (global_label "BOOT_SAFE_SPARE"
+    (shape bidirectional)
+    (at 134.62 116.84 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "271fd13c-3782-517e-bc90-b8707e8a36a2"))
+  (wire
+    (pts
+      (xy 129.54 119.38)
+      (xy 134.62 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "12730bd7-419f-53dc-869f-6162ee442cde"))
+  (global_label "WHEEL_PWM_B"
+    (shape bidirectional)
+    (at 134.62 119.38 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "3f768373-7940-5717-93ab-8db1e680739c"))
+  (wire
+    (pts
+      (xy 129.54 121.91999999999999)
+      (xy 134.62 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ed50f22d-9215-5367-b709-25030df56873"))
+  (global_label "WHEEL_PWM_C"
+    (shape bidirectional)
+    (at 134.62 121.92 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "c61e9de4-1898-546b-9b34-82473171a795")))

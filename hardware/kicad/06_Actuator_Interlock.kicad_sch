@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 06_Actuator_Interlock")
     (date "2026-09-08")
-    (rev "0.3 DRAFT")
+    (rev "0.4 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -543,7 +543,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "14532eca-6d41-5eec-8886-81ecf3300efa"))
-  (text "DRAFT 0.3 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font

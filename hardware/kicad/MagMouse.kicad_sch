@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - MagMouse")
     (date "2026-09-08")
-    (rev "0.3 DRAFT")
+    (rev "0.4 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols)
@@ -17,7 +17,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "3f36e4f1-a069-5d5f-b81a-7a0e91da7ced"))
-  (text "DRAFT 0.3 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -224,7 +224,7 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "9")))))
-  (text "USB-C power control is connected: detected current modes, protected logic and actuator rails, input telemetry,\nheartbeat interlock, six gated button inputs, rail discharge and transient/regen clamps.\nOPEN: firmware USB-state budgets and suspend/resume; bench electrical/thermal/fault validation; PCB layout.\nOPEN: PAW3950/optics, IMU, MA735/DRV8316 wheel, RGB and final GPIO/resource allocation."
+  (text "Power control and full MCU GPIO allocation are connected; sheet 09 exposes reserved interfaces.\nSPI2 = five shared devices; SPI3 = wheel ADC only; wheel 3-PWM + separate button MCPWM group.\nOPEN: draw wheel/ADC2/encoder, optical, IMU, RGB; implement hardware wheel disable and regeneration brake.\nOPEN: firmware timing/USB-state budgets; measured electrical, mechanical and thermal validation; PCB layout."
     (at 20 220 0)
     (effects
       (font
@@ -241,4 +241,29 @@
   (sheet_instances
     (path "/"
       (page "1")))
-  (embedded_fonts no))
+  (embedded_fonts no)
+  (sheet
+    (at 280 156)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "56122003-a52d-598a-a125-cd0e2f54c82a")
+    (property "Sheetname" "09_Interface_Reservations"
+      (at 280 154.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "09_Interface_Reservations.kicad_sch"
+      (at 280 179.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "10"))))))

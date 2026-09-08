@@ -1,12 +1,17 @@
 # Draft sourcing and symbol review
 
-Revision 0.3, checked 2026-09-08. All 141 components in the present schematic
+Revision 0.4, checked 2026-09-08. All 150 components in the present schematic
 have manufacturer part numbers, catalog identifiers and assigned footprints.
 New USB-C power parts, changed regulator/inductor, package evidence and assembly
 constraints are documented in [POWER_REVIEW.md](POWER_REVIEW.md). The historical
 revision 0.2 selections below identify retained parts and superseded decisions.
 Recheck assembly stock, prices and service eligibility before ordering; none is
 reserved. This does not cover absent optical/wheel/IMU/RGB subsystems.
+
+Revision 0.4 adds R72-R80 using the existing 10 kOhm C25804 selection and
+TP16-TP33 as copper test pads, excluded from the assembly BOM. The second ADC
+and addressable RGB are allocated interfaces; no new IC or LED is represented
+as sourced or implemented by this change.
 
 | References | Manufacturer part number | Catalog |
 | --- | --- | --- |
@@ -35,7 +40,7 @@ TLV62569 calculations are historical, not the current regulator design.
 | References | Selected manufacturer part number | JLCPCB catalog | Library type |
 | --- | --- | --- | --- |
 | U1 | TI TPD2EUSB30DRTR | [C97502](https://jlcpcb.com/partdetail/TexasInstruments-TPD2EUSB30DRTR/C97502) | Extended |
-| U7-U9 | TI TMAG5253BA2IQDMRR | [C35414983](https://jlcpcb.com/partdetail/37141530-TMAG5253BA2IQDMRR/C35414983) | Extended |
+| U7-U9 | TI TMAG5253BA2IQDMRR | [C35414983](https://jlcpcb.com/partdetail/37150530-TMAG5253BA2IQDMRR/C35414983) | Extended |
 | U10 | TI ADS7038IRTER | [C2871580](https://jlcpcb.com/partdetail/C2871580) | Extended |
 | C4, C19-C21 | Samsung CL10A105KB8NNNC, 1 uF / 50 V, X5R, 10%, 0603 | [C15849](https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849) | Basic |
 | R1 | UNI-ROYAL 0603WAF1003T5E, 100 kOhm, 1%, 0603 | [C25803](https://jlcpcb.com/partdetail/C25803) | Basic |

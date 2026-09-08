@@ -1,0 +1,548 @@
+{
+  "revision": "0.4",
+  "module": "ESP32-S3-MINI-1-N8",
+  "module_ref": "U3",
+  "scope": "GPIO and peripheral allocation; timing targets are not measured acceptance.",
+  "gpio": [
+    {
+      "gpio": 0,
+      "module_pad": 4,
+      "net": "BOOT",
+      "direction": "recovery",
+      "peripheral": "boot",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 1,
+      "module_pad": 5,
+      "net": "VBUS_PRESENT_N",
+      "direction": "input",
+      "peripheral": "power",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 2,
+      "module_pad": 6,
+      "net": "CS_PAW",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP16",
+      "bias": {
+        "ref": "R72",
+        "direction": "up",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 3,
+      "module_pad": 7,
+      "net": "WHEEL_RUN_REQ",
+      "direction": "output",
+      "peripheral": "wheel",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP17",
+      "bias": {
+        "ref": "R77",
+        "direction": "down",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 4,
+      "module_pad": 8,
+      "net": "BTN_L_CMD1",
+      "direction": "output",
+      "peripheral": "MCPWM1",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 5,
+      "module_pad": 9,
+      "net": "BTN_L_CMD2",
+      "direction": "output",
+      "peripheral": "MCPWM1",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 6,
+      "module_pad": 10,
+      "net": "BTN_M_CMD1",
+      "direction": "output",
+      "peripheral": "MCPWM1",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 7,
+      "module_pad": 11,
+      "net": "BTN_M_CMD2",
+      "direction": "output",
+      "peripheral": "MCPWM1",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 8,
+      "module_pad": 12,
+      "net": "BTN_R_CMD1",
+      "direction": "output",
+      "peripheral": "MCPWM1",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 9,
+      "module_pad": 13,
+      "net": "BTN_R_CMD2",
+      "direction": "output",
+      "peripheral": "MCPWM1",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 10,
+      "module_pad": 14,
+      "net": "ADC_CS",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 11,
+      "module_pad": 15,
+      "net": "SPI_MOSI",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 12,
+      "module_pad": 16,
+      "net": "SPI_SCLK",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 13,
+      "module_pad": 17,
+      "net": "SPI_MISO",
+      "direction": "input",
+      "peripheral": "SPI2",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 14,
+      "module_pad": 18,
+      "net": "CC_OUT1",
+      "direction": "input",
+      "peripheral": "power",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 15,
+      "module_pad": 19,
+      "net": "CC_OUT2",
+      "direction": "input",
+      "peripheral": "power",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 16,
+      "module_pad": 20,
+      "net": "ACT_REQ",
+      "direction": "output",
+      "peripheral": "power",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 17,
+      "module_pad": 21,
+      "net": "ACT_HEARTBEAT",
+      "direction": "output",
+      "peripheral": "software",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 18,
+      "module_pad": 22,
+      "net": "SENS_REQ",
+      "direction": "output",
+      "peripheral": "power",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 19,
+      "module_pad": 23,
+      "net": "MCU_USB_DM",
+      "direction": "bidirectional",
+      "peripheral": "USB_OTG",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 20,
+      "module_pad": 24,
+      "net": "MCU_USB_DP",
+      "direction": "bidirectional",
+      "peripheral": "USB_OTG",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 21,
+      "module_pad": 25,
+      "net": "CS_IMU",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP18",
+      "bias": {
+        "ref": "R73",
+        "direction": "up",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 26,
+      "module_pad": 26,
+      "net": "OPT_CTRL",
+      "direction": "output",
+      "peripheral": "optical",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP19",
+      "bias": {
+        "ref": "R79",
+        "direction": "down",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 33,
+      "module_pad": 28,
+      "net": "MOTOR_SPI_MOSI",
+      "direction": "output",
+      "peripheral": "SPI3",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP20"
+    },
+    {
+      "gpio": 34,
+      "module_pad": 29,
+      "net": "MOTOR_SPI_SCLK",
+      "direction": "output",
+      "peripheral": "SPI3",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP21"
+    },
+    {
+      "gpio": 35,
+      "module_pad": 31,
+      "net": "MOTOR_SPI_MISO",
+      "direction": "input",
+      "peripheral": "SPI3",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP22"
+    },
+    {
+      "gpio": 36,
+      "module_pad": 32,
+      "net": "CS_ADC2",
+      "direction": "output",
+      "peripheral": "SPI3",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP23",
+      "bias": {
+        "ref": "R74",
+        "direction": "up",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 37,
+      "module_pad": 33,
+      "net": "CS_MA735",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP24",
+      "bias": {
+        "ref": "R75",
+        "direction": "up",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 38,
+      "module_pad": 34,
+      "net": "CS_DRV8316",
+      "direction": "output",
+      "peripheral": "SPI2",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP25",
+      "bias": {
+        "ref": "R76",
+        "direction": "up",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 39,
+      "module_pad": 35,
+      "net": "PAW_MOTION_N",
+      "direction": "input",
+      "peripheral": "interrupt",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP26"
+    },
+    {
+      "gpio": 40,
+      "module_pad": 36,
+      "net": "IMU_INT1",
+      "direction": "input",
+      "peripheral": "interrupt",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP27"
+    },
+    {
+      "gpio": 41,
+      "module_pad": 37,
+      "net": "DRV_FAULT_N",
+      "direction": "input",
+      "peripheral": "MCPWM0_fault",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP28"
+    },
+    {
+      "gpio": 42,
+      "module_pad": 38,
+      "net": "WHEEL_PWM_A",
+      "direction": "output",
+      "peripheral": "MCPWM0",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP29"
+    },
+    {
+      "gpio": 43,
+      "module_pad": 39,
+      "net": "UART_TX",
+      "direction": "output",
+      "peripheral": "UART0",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 44,
+      "module_pad": 40,
+      "net": "UART_RX",
+      "direction": "input",
+      "peripheral": "UART0",
+      "consumer_status": "connected"
+    },
+    {
+      "gpio": 45,
+      "module_pad": 41,
+      "net": "RGB_DATA",
+      "direction": "output",
+      "peripheral": "RMT",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP30",
+      "bias": {
+        "ref": "R78",
+        "direction": "down",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 46,
+      "module_pad": 44,
+      "net": "BOOT_SAFE_SPARE",
+      "direction": "reserved",
+      "peripheral": "none",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP31",
+      "bias": {
+        "ref": "R80",
+        "direction": "down",
+        "ohms": 10000
+      }
+    },
+    {
+      "gpio": 47,
+      "module_pad": 27,
+      "net": "WHEEL_PWM_B",
+      "direction": "output",
+      "peripheral": "MCPWM0",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP32"
+    },
+    {
+      "gpio": 48,
+      "module_pad": 30,
+      "net": "WHEEL_PWM_C",
+      "direction": "output",
+      "peripheral": "MCPWM0",
+      "consumer_status": "reserved_interface",
+      "testpoint": "TP33"
+    }
+  ],
+  "spi": [
+    {
+      "host": "SPI2",
+      "sclk": "SPI_SCLK",
+      "mosi": "SPI_MOSI",
+      "miso": "SPI_MISO",
+      "hardware_cs_capacity": 6,
+      "devices": [
+        {
+          "name": "ADS7038_1",
+          "cs": "ADC_CS",
+          "purpose": "buttons and system",
+          "frame_bits": 16,
+          "clock_target_hz": 20000000,
+          "spi_mode": 0
+        },
+        {
+          "name": "PAW3950",
+          "cs": "CS_PAW",
+          "purpose": "optical; exact interface timing and voltage unresolved",
+          "clock_target_hz": null,
+          "spi_mode": null
+        },
+        {
+          "name": "ICM42688P",
+          "cs": "CS_IMU",
+          "clock_target_hz": 10000000,
+          "spi_mode": null
+        },
+        {
+          "name": "MA735",
+          "cs": "CS_MA735",
+          "clock_target_hz": 10000000,
+          "spi_mode": 3
+        },
+        {
+          "name": "DRV8316R",
+          "cs": "CS_DRV8316",
+          "clock_target_hz": 5000000,
+          "spi_mode": 1
+        }
+      ]
+    },
+    {
+      "host": "SPI3",
+      "sclk": "MOTOR_SPI_SCLK",
+      "mosi": "MOTOR_SPI_MOSI",
+      "miso": "MOTOR_SPI_MISO",
+      "hardware_cs_capacity": 3,
+      "devices": [
+        {
+          "name": "ADS7038_2",
+          "cs": "CS_ADC2",
+          "purpose": "wheel current only",
+          "frame_bits": 16,
+          "clock_target_hz": 20000000,
+          "spi_mode": 0
+        }
+      ]
+    }
+  ],
+  "pwm": {
+    "wheel": {
+      "group": 0,
+      "timer": 0,
+      "operators": [
+        0,
+        1,
+        2
+      ],
+      "generators": [
+        "A",
+        "A",
+        "A"
+      ],
+      "nets": [
+        "WHEEL_PWM_A",
+        "WHEEL_PWM_B",
+        "WHEEL_PWM_C"
+      ],
+      "carrier_target_hz": 20000,
+      "mode": "3-PWM, PWM_MODE=10b; analog SOx enabled",
+      "fault_net": "DRV_FAULT_N"
+    },
+    "buttons": {
+      "group": 1,
+      "timer": 0,
+      "operators": [
+        0,
+        1,
+        2
+      ],
+      "generators": [
+        "A",
+        "B"
+      ],
+      "nets": [
+        "BTN_L_CMD1",
+        "BTN_L_CMD2",
+        "BTN_M_CMD1",
+        "BTN_M_CMD2",
+        "BTN_R_CMD1",
+        "BTN_R_CMD2"
+      ],
+      "carrier_target_hz": 20000,
+      "paired_outputs": "independent; not complementary"
+    }
+  },
+  "rgb": {
+    "type": "single-data-pin addressable RGB; exact MPN and interface circuit pending",
+    "peripheral": "RMT",
+    "tx_channels": 1,
+    "net": "RGB_DATA"
+  },
+  "adc_channels": {
+    "ADS7038_1": [
+      "HALL_L",
+      "HALL_M",
+      "HALL_R",
+      "BTN_L_ISENSE",
+      "BTN_M_ISENSE",
+      "BTN_R_ISENSE",
+      "USB_IMON_ADC",
+      "ACT_VMON"
+    ],
+    "ADS7038_2": [
+      "WHEEL_I_A",
+      "WHEEL_I_B",
+      "WHEEL_I_C",
+      "WHEEL_BUS_CURRENT_OR_SPARE",
+      "SPARE4",
+      "SPARE5",
+      "SPARE6",
+      "SPARE7"
+    ]
+  },
+  "wheel_timing_targets": {
+    "status": "unmeasured feasibility targets",
+    "control_hz": 5000,
+    "pwm_hz": 20000,
+    "sclk_hz": 20000000,
+    "frame_bits": 16,
+    "cs_setup_clocks": 1,
+    "cs_hold_clocks": 1,
+    "cs_high_ns": 700,
+    "frames_per_triplet_including_pipeline_flush": 4,
+    "burst_budget_us": 8,
+    "launch_jitter_budget_us": 1,
+    "settling_guard_budget_us": 2,
+    "common_low_side_window_us": 12
+  },
+  "optional_interfaces": {
+    "MA735_ABZ_PWM": "not connected in V1; use SPI absolute angle",
+    "IMU_INT2_FSYNC_CLKIN": "not assigned; internal clock, INT1 only",
+    "OPT_CTRL": "one output reserved for optical reset/power sequencing; circuit pending exact reference",
+    "brake_chopper": "must clamp independently of MCU/reset; no MCU GPIO required by the allocation",
+    "GPIO46": "boot-low spare only; no external pull-up or independently driven interrupt at reset"
+  },
+  "power_domains": {
+    "MA735_and_RGB_enable": "HALL_EN; reuse sensor enable, with power-off data isolation in future circuits",
+    "optical_control": "OPT_CTRL; exact sequencing circuit pending reference",
+    "driver_wake": "ACT_DRIVE_EN through safe default-low nSLEEP circuit",
+    "driver_run": "WHEEL_RUN_REQ AND ACT_DRIVE_EN through external gates and DRVOFF",
+    "brake": "autonomous local rail comparator; no MCU GPIO"
+  }
+}

@@ -2,21 +2,29 @@
 
 Target: ESP32-S3. Status: subsystem plan only; no build, flash command, device
 drivers or USB implementation yet. Framework/toolchain selection is pending the
-pin and timing feasibility work. Do not interpret this directory as runnable firmware.
+timing feasibility work. The revision 0.4 [GPIO/peripheral allocation](../docs/interfaces.md)
+is checked against the schematic; runtime deadlines remain unproven.
+Do not interpret this directory as runnable firmware.
 
 ## Planned responsibilities
 
 | Subsystem | Responsibility |
 | --- | --- |
 | Board support | Validated pin map, rails, safe boot and recovery |
-| Device drivers | PAW3950, ICM-42688-P, ADS7038, MA735, DRV8231A and DRV8316R |
+| Device drivers | PAW3950, ICM-42688-P, two ADS7038 devices, MA735, DRV8231A and DRV8316R |
 | Input processing | Optical reports, calibrated Hall thresholds/hysteresis and wheel movement |
 | Button control | Position/current feedback and bounded bidirectional click/release pulses; elastic paddle supplies passive return |
 | Wheel control | Encoder calibration, commutation/FOC and bounded detent torque |
 | Power/fault manager | Source capability, total budget, hardware faults and stale-sample shutdown |
 | USB HID | Three buttons, relative X/Y and wheel; target 1 ms report interval |
 | Configuration | Versioned profiles, validation and persistence |
-| Status | RGB indication for operating state and faults |
+| Status | Single-data-pin addressable RGB through RMT; exact LED protocol pending |
+
+Reserve MCPWM group 0 for wheel 3-PWM and group 1 for six independent button
+commands. SPI2 owns five shared devices; SPI3 serves only the wheel ADC.
+Use one bounded owner per bus. Generic per-sample SPI API calls are not proof
+of the required motor-current acquisition timing; measure the complete path.
+Do not let a motor/LED library silently reallocate these resources.
 
 Bring up USB and sensing with actuators disabled first. Add one current-limited
 coil, then the wheel, then combined power allocation. Firmware must enforce

@@ -28,7 +28,13 @@
 - [ ] Characterize the wheel motor at 5 V and validate its feedback acquisition.
 - [ ] Demonstrate bounded button pulses and driver-off reset/timeout on development
   hardware before freezing the button schematic and magnetic placement.
-- [ ] Assign every GPIO and confirm SPI, ADC, PWM and interrupt resources/timing.
+- [x] Allocate all V1 GPIOs and static SPI/PWM/interrupt resources (revision 0.4):
+  3-PWM wheel, dedicated second-ADC SPI and one-data-pin RGB; see [interfaces](interfaces.md).
+- [ ] Prove PWM-to-ADC timing, valid low-side sampling windows, angle age and
+  concurrent USB/button/optical operation on the selected firmware path.
+- [ ] Draw DRV8316 + ADC2 + MA735 + GB1806, hardware output-disable and the
+  measured-energy brake circuit; see [wheel control](wheel-control.md).
+- [ ] Draw the exact PAW3950 reference, then ICM-42688-P and addressable RGB.
 - [x] Select KiCad and add a reproducible schematic review-export workflow.
 - [ ] Choose firmware tools and document versions and reproducible workflows.
 - [ ] Complete rail, connector, current-sense and fault-control schematics.

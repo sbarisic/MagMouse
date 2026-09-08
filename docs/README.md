@@ -2,6 +2,7 @@
 
 - [Architecture and requirements](architecture.md)
 - [Electrical interfaces](interfaces.md)
+- [Wheel driver, acquisition and brake implementation contract](wheel-control.md)
 - [Power and actuator constraints](power.md)
 - [Custom button mechanism and prototype targets](../mechanical/button-mechanisms/README.md)
 - [Development roadmap](roadmap.md)

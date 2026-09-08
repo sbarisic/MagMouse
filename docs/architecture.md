@@ -3,7 +3,7 @@
 V1 is a wired USB mouse with three independently sensed, actively haptic buttons
 and a motorized scroll wheel. Wireless operation and additional functional ICs
 are outside the current feature scope; supporting power/protection circuitry
-still needs to be selected.
+is drawn; remaining peripheral circuitry and physical validation are open.
 
 | Requirement | Target / interpretation |
 | --- | --- |
@@ -28,7 +28,7 @@ flowchart TD
     Logic --> Optical[PAW3950 and local 1.8 V regulator]
     Optical -->|X/Y| MCU
     IMU[ICM-42688-P] --> MCU
-    Hall[Three TMAG5253 sensors] --> ADC[ADS7038]
+    Hall[Three TMAG5253 sensors] --> ADC[ADS7038 #1]
     ADC --> MCU
     MCU --> Buttons[Three DRV8231A drivers and custom wound coils]
     Buttons -->|Current feedback| ADC
@@ -36,6 +36,8 @@ flowchart TD
     Paddles -->|Separate sensing magnets| Hall
     MCU --> Wheel[DRV8316R and GB1806]
     Angle[MA735 wheel angle] --> MCU
+    Wheel -->|Phase current| ADC2[ADS7038 #2, dedicated SPI3]
+    ADC2 --> MCU
     Power --> Buttons
     Power --> Wheel
     CC[TUSB320 Type-C current detection] --> MCU
@@ -61,10 +63,12 @@ an assumption that every powered downstream port provides 3 A. A custom adapter
 is optional future work; its controller, power switch, and Type-C source behavior
 need their own design. USB2512B in the notes is only a candidate.
 
-SPI sharing is provisional. Validate transaction latency, device modes and
-tri-state behavior before deciding whether the ADC or encoder needs a separate
-bus. Pin numbers, loop rates, current limits, USB identifiers, CAD tools, firmware
-framework, and the host configuration protocol have not been frozen.
+The [GPIO/resource allocation](interfaces.md) uses SPI2 for buttons/system ADC,
+optical, IMU, angle and driver configuration; SPI3 is dedicated to the second
+wheel ADC. Wheel control uses 3-PWM and RGB uses one RMT data pin. Validate
+transaction latency, signal levels and sampling windows before routing. Loop
+rates, current limits, USB identifiers, firmware framework and host protocol
+still require implementation decisions and measurement.
 
 Actuators must remain disabled until power capability, calibration, fault handling,
 and limits are valid. Optical tracking and ordinary HID operation should remain

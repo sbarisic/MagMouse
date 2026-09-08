@@ -121,7 +121,7 @@ and electronic design use the repository's CERN-OHL-S-2.0 license.
 ## Reproducible checks
 
 Run export_review.py followed by verify_power.py from the repository root.
-The first generates all nine sheets, netlist, ERC and review BOM. The second
+The first generates the current sheets, netlist, ERC and review BOM. The second
 checks that no sheet components disappeared during export, checks symbol pins
 against footprint pads, verifies critical connections and evaluates 4,096
 combinations of source, reset, arm, sensor request, permit and six commands.
