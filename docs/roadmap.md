@@ -44,6 +44,9 @@ that the actuators can operate within the intended power and thermal envelope.
 
 ## 2. Mechanical and PCB prototype
 
+- [x] Start an editable motherboard PCB with the existing schematic footprints,
+  provisional outline, four copper layers and subsystem reservations;
+  see [placement draft](../hardware/pcb/README.md). Routing remains open.
 - [ ] Model optical height, button travel/stops and actuator mounting.
 - [ ] Validate separate sensing/actuator magnets and separation from wheel/coil fields.
 - [ ] Select flexure material/print process and measure creep, fatigue and stop loads.

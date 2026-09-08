@@ -10,5 +10,94 @@
     "meta": {
       "version": 1
     }
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.127,
+        "min_track_width": 0.15,
+        "min_via_diameter": 0.6,
+        "min_through_hole_diameter": 0.3,
+        "min_via_annular_width": 0.15,
+        "min_copper_edge_clearance": 0.3,
+        "min_hole_clearance": 0.25
+      },
+      "track_widths": [
+        0,
+        0.2,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
+      "drc_exclusions": []
+    }
+  },
+  "net_settings": {
+    "meta": {
+      "version": 5
+    },
+    "classes": [
+      {
+        "clearance": 0.15,
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.2,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6,
+        "bus_width": 12,
+        "line_style": 0,
+        "priority": 2147483647,
+        "name": "Default"
+      },
+      {
+        "clearance": 0.15,
+        "track_width": 0.75,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.2,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6,
+        "bus_width": 12,
+        "line_style": 0,
+        "priority": 0,
+        "name": "Power"
+      }
+    ],
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VBUS_USB"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "PWR_5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "ACT_5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3V3"
+      }
+    ]
   }
 }

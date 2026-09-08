@@ -1,8 +1,9 @@
-# KiCad schematic
+# KiCad electronics
 
 Revision 0.4, 2026-09-08, KiCad 10.0.6. USB-C power control and the full MCU GPIO allocation are connected.
-This is an editable development draft; **no PCB layout or order-ready mouse
-design exists yet**. Firmware, measurements and absent subsystems remain open.
+An [initial motherboard placement](../pcb/README.md) is available as of
+2026-09-09. Both schematic and PCB are editable development drafts; **the PCB
+is unrouted and not order-ready**. Firmware, measurements and absent subsystems remain open.
 
 ## Open and edit
 
@@ -10,6 +11,8 @@ design exists yet**. Firmware, measurements and absent subsystems remain open.
 2. Open [MagMouse.kicad_sch](MagMouse.kicad_sch).
 3. Enter a sheet and press **E** on a component to inspect its MPN, footprint,
    LCSC number and sourcing status.
+4. Open [MagMouse.kicad_pcb](MagMouse.kicad_pcb) in PCB Editor for the initial
+   layout. Enable Dwgs.User for reservations and F.Fab/B.Fab for references.
 
 Use the standard KiCad 10 libraries. The local symbol and footprint libraries
 are registered by [sym-lib-table](sym-lib-table) and [fp-lib-table](fp-lib-table).
@@ -62,7 +65,9 @@ Analog timing, firmware deadlines, thermal behavior and USB compliance are not s
 
 Catalog identity does not reserve stock. U11's current JLCPCB listing requires
 Standard PCBA; refresh service eligibility and pricing before placing an order.
-No board-placement file or manufacturing release is produced by these tools.
+These schematic tools do not produce manufacturing files. Use
+`python hardware/kicad/export_pcb_review.py` for the separate PCB placement/DRC
+review; see [board setup and remaining layout work](../pcb/README.md).
 
 ## Work before full-board freeze
 

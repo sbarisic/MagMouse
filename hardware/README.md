@@ -1,7 +1,7 @@
 # Electronics
 
-Status: preliminary architecture with an editable KiCad 10 starter schematic.
-The schematic is incomplete; no PCB layout exists yet.
+Status: editable KiCad 10 schematic and initial motherboard component placement.
+The schematic is incomplete and the PCB is unrouted; both are development drafts.
 
 - [KiCad project](kicad/README.md): ten-sheet draft with connected USB-C power control, sourcing fields and review exports.
 
