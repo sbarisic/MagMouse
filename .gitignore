@@ -1,0 +1,31 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Local secrets and environments
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Generated builds
+build/
+dist/
+.pio/
+managed_components/
+sdkconfig.old
+
+# CAD temporary files; editable sources and release exports stay tracked
+*.lck
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+*.FCStd1
