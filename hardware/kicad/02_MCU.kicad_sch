@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 02_MCU")
     (date "2026-09-08")
-    (rev "0.2 DRAFT")
+    (rev "0.3 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -1237,7 +1237,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "74fb1197-bd17-5e54-9f49-17a52c310dd5"))
-  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.3 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -1381,9 +1381,6 @@
       (justify right))
     (uuid "d94a7e45-95a0-53f7-9509-da317d586068"))
   (no_connect
-    (at 99.06 78.74)
-    (uuid "0b5d8d2b-57fc-5ece-b1e1-ee59c75e0ec2"))
-  (no_connect
     (at 99.06 81.28)
     (uuid "7fc8e8ab-c7ab-503d-8c41-36ef2102aba8"))
   (no_connect
@@ -1397,7 +1394,7 @@
       (width 0)
       (type default))
     (uuid "99e33ed9-1810-5c1f-bed9-a684ee7f5571"))
-  (global_label "BTN_L_IN1"
+  (global_label "BTN_L_CMD1"
     (shape bidirectional)
     (at 93.98 86.36 180)
     (effects
@@ -1413,7 +1410,7 @@
       (width 0)
       (type default))
     (uuid "3a346d96-0f53-533c-a375-5bfb031fe0c5"))
-  (global_label "BTN_L_IN2"
+  (global_label "BTN_L_CMD2"
     (shape bidirectional)
     (at 93.98 88.9 180)
     (effects
@@ -1429,7 +1426,7 @@
       (width 0)
       (type default))
     (uuid "068cd8ca-a765-5ab4-91ad-7339d706159a"))
-  (global_label "BTN_M_IN1"
+  (global_label "BTN_M_CMD1"
     (shape bidirectional)
     (at 93.98 91.44 180)
     (effects
@@ -1445,7 +1442,7 @@
       (width 0)
       (type default))
     (uuid "2b6fe4e5-fb21-5b71-a655-e2ead68cabf3"))
-  (global_label "BTN_M_IN2"
+  (global_label "BTN_M_CMD2"
     (shape bidirectional)
     (at 93.98 93.98 180)
     (effects
@@ -1461,7 +1458,7 @@
       (width 0)
       (type default))
     (uuid "58d42167-0f79-5e13-94d7-5b0fcda41b56"))
-  (global_label "BTN_R_IN1"
+  (global_label "BTN_R_CMD1"
     (shape bidirectional)
     (at 93.98 96.52 180)
     (effects
@@ -1477,7 +1474,7 @@
       (width 0)
       (type default))
     (uuid "c4bbd45f-9d08-5df8-b787-f2533d728e4f"))
-  (global_label "BTN_R_IN2"
+  (global_label "BTN_R_CMD2"
     (shape bidirectional)
     (at 93.98 99.06 180)
     (effects
@@ -1549,21 +1546,6 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "54100b08-bedc-55ec-b65b-5b421fdfb54e"))
-  (no_connect
-    (at 99.06 111.76)
-    (uuid "82726ac6-928d-5bad-84ca-7f0e9b4367b6"))
-  (no_connect
-    (at 99.06 114.3)
-    (uuid "e4dbbd3d-7a05-501e-8532-25d3b87cbdac"))
-  (no_connect
-    (at 99.06 116.84)
-    (uuid "86bb5410-2b16-51f7-9e27-ccd0ce44f07e"))
-  (no_connect
-    (at 99.06 119.38)
-    (uuid "4ab01b0c-c0a6-5d12-ae34-da26699a6c08"))
-  (no_connect
-    (at 99.06 121.92)
-    (uuid "8ed129dd-4dc8-5959-bd67-7b4c2f4a964c"))
   (wire
     (pts
       (xy 129.54 78.74)
@@ -3500,11 +3482,107 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "3aeb606d-b780-5fbf-8d0f-ea2831628cbb"))
-  (text "GPIO4-9: draft button controls. GPIO10-13: ADC CS / MOSI / SCLK / MISO.\nUSB uses GPIO19/20. Final full-system pin/PWM timing budget remains open.\nNC marks on other MCU pins mean unused in this starter, not permanently unavailable."
+  (text "GPIO4-9: button CMD signals through hardware AND gates. GPIO10-13: shared ADC SPI.\nGPIO1: VBUS_PRESENT_N; GPIO14/15: CC status; GPIO16/17: arm/heartbeat; GPIO18: sensors enable.\nUSB remains GPIO19/20. Full wheel/optical/IMU/RGB pin and PWM budget still needs review."
     (at 20 245 0)
     (effects
       (font
         (size 1.3 1.3))
       (justify left top))
     (uuid "2e53d954-1d15-5b79-80d6-86f1be0b2f2d"))
-  (embedded_fonts no))
+  (embedded_fonts no)
+  (wire
+    (pts
+      (xy 99.06 78.74)
+      (xy 93.98 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b82627ce-5e3b-5d7b-a6c4-c23fd436fe7a"))
+  (global_label "VBUS_PRESENT_N"
+    (shape bidirectional)
+    (at 93.98 78.74 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3aa08572-35ae-55b2-b8a7-4c9b0dc8d154"))
+  (wire
+    (pts
+      (xy 99.06 111.75999999999999)
+      (xy 93.98 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b2c75252-48e6-5870-8c0f-4e3123f081da"))
+  (global_label "CC_OUT1"
+    (shape bidirectional)
+    (at 93.98 111.76 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "e70c44e1-58af-5199-9079-d6a8c60691f6"))
+  (wire
+    (pts
+      (xy 99.06 114.3)
+      (xy 93.98 114.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f3dd2cb9-b1ec-53dc-84d7-fc163670814e"))
+  (global_label "CC_OUT2"
+    (shape bidirectional)
+    (at 93.98 114.3 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b6c5545a-6f84-5ddf-9e0b-bbeec4c7516b"))
+  (wire
+    (pts
+      (xy 99.06 116.84)
+      (xy 93.98 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "92030718-d010-5075-8bef-048a8f7609a7"))
+  (global_label "ACT_REQ"
+    (shape bidirectional)
+    (at 93.98 116.84 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "078e5506-ed29-53a1-b03a-b1a8f628e26d"))
+  (wire
+    (pts
+      (xy 99.06 119.38)
+      (xy 93.98 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "edb905e7-b3d4-50a1-a02d-3325a477ac30"))
+  (global_label "ACT_HEARTBEAT"
+    (shape bidirectional)
+    (at 93.98 119.38 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "fa534d04-bb32-5640-a4ed-f8232966c1b2"))
+  (wire
+    (pts
+      (xy 99.06 121.91999999999999)
+      (xy 93.98 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "951f906c-a3c0-5bf3-a168-10aa72a5081c"))
+  (global_label "SENS_REQ"
+    (shape bidirectional)
+    (at 93.98 121.92 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "4fc616a4-22c0-5cb6-a024-1b04828f8482")))

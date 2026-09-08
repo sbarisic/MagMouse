@@ -32,8 +32,10 @@ Calibrate sensing with coil and wheel interference present.
 Use explicit per-effect duration, duty/repeat-rate and current limits, with zero
 commanded coil current after an effect and while held at rest. Include driver
 wake latency in click timing and use the actual IN1/IN2 controls documented in
-[interfaces](../docs/interfaces.md). Provide a hardware path to end stale commands;
-do not assume button-driver fault telemetry is available.
+[interfaces](../docs/interfaces.md). The revision 0.3 schematic gates commands
+with a hardware heartbeat timeout. Implement its startup, heartbeat and USB-state
+contract from [power](../docs/power.md); do not assume button-driver fault telemetry
+is available.
 
 When implementation begins, add reproducible builds, host-testable control/power
 logic, hardware integration checks and CI. USB VID/PID assignment, report layout,

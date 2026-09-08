@@ -17,7 +17,10 @@
   footprints (revision 0.2; stock refresh and final circuit review remain).
 - [ ] Obtain exact datasheets/reference circuits and confirm part availability.
 - [ ] Validate PAW3950 optics, circuit, initialization and redistribution rights.
-- [ ] Choose Type-C detection and complete input-power/protection design.
+- [x] Implement Type-C detection and input/actuator power-control schematic
+  (revision 0.3); see [power review](../hardware/kicad/POWER_REVIEW.md).
+- [ ] Validate USB startup/configuration/suspend, source transitions, inrush,
+  voltage/current limits, timeout/reset, reverse current and regeneration on hardware.
 - [ ] Build one elastic-paddle/custom-coil fixture using the
   [button prototype plan](../mechanical/button-mechanisms/README.md).
 - [ ] Measure passive return, bidirectional force/travel/current, winding properties,

@@ -6,7 +6,7 @@ Quantities are per mouse; alternatives are not additive. Confirm exact orderable
 parts, packages, footprints, ratings and availability before procurement.
 
 The [KiCad starter BOM](../kicad/README.md) is the source of truth for circuits
-already drawn: revision 0.2 has 60 component instances with complete MPN,
+already drawn: revision 0.3 has 141 component instances with complete MPN,
 catalog ID and footprint fields. The broader inventory below also includes
 subsystems that have not been implemented. See [sourcing evidence](../kicad/SOURCING.md).
 
@@ -19,7 +19,7 @@ subsystems that have not been implemented. See [sourcing evidence](../kicad/SOUR
 | 1 | ICM-42688-P | Supplementary accelerometer/gyro |
 | 3 | TMAG5253BA2 | Left, middle and right analog Hall sensing |
 | 3 | Axial NdFeB sensing magnet, TBD | Separate button position magnets; dimensions/grade set by Hall gap/range |
-| 1 | ADS7038 | Eight-channel ADC; six assigned inputs |
+| 1 | ADS7038 | Eight-channel ADC; all eight inputs assigned |
 | 3 | Custom stationary wound-copper coil | One per moving-magnet button actuator; prototype OD 6-8 mm, height 2-4 mm; winding TBD |
 | 3 | N52 actuator magnet, prototype diameter 4-5 mm x 1.5-2 mm | Moves with paddle; separate from sensing magnet; size/grade not frozen |
 | 3 | Printed coil former/mount | Stationary coil support; integrated or separate bobbin TBD |
@@ -32,10 +32,10 @@ subsystems that have not been implemented. See [sourcing evidence](../kicad/SOUR
 | 1 | DRV8316R | SPI-configurable BLDC driver; PWM mode TBD |
 | 1 | 2020/0606 RGB LED, TBD | Status/profile indication |
 | 3 | LED resistors, TBD | Values depend on LED and drive circuit |
-| 1 | TLV62569DBVR | Selected 5 V to 3.3 V buck; C141836 |
+| 1 | TPS62162DSGR | Selected fixed 3.3 V buck; C40256 |
 | 1 | TYPE-C-31-M-12 | Data and VBUS; C165948 |
-| 2* | 5.1 kohm CC Rd resistors | Coordinate with chosen sink detector; may be integrated |
-| TBD | Type-C sink/current detector | Required for advertised-current awareness; part/interface open |
+| 0 | External CC Rd resistors | TUSB320 integrates Rd; do not populate extra parallel terminations |
+| 1 | TUSB320LAIRWBR | CC sink/current detector; C132554; GPIO mode |
 | 1 | TPD2EUSB30DRTR | USB data ESD protection; C97502 |
 | 2 | 33 ohm USB series resistors | Draft value per ESP32 implementation |
 | 1 | TS-1088-AR02016 reset/EN button | Recovery; C720477 |
@@ -43,13 +43,13 @@ subsystems that have not been implemented. See [sourcing evidence](../kicad/SOUR
 | 1 set | Programming/test pads | 3V3, GND, EN, GPIO0, UART and measurements |
 | TBD | Decoupling and bulk capacitors | Device-specific, logic and driver transients |
 | TBD | Pull-ups/pull-downs | Boot, control and fault states |
-| 1 set | SWPA4020S2R2MT and 100 kOhm / 22.1 kOhm divider | Selected buck filter and feedback; see KiCad BOM |
+| 1 set | SWPA4020S3R3MT and local output capacitors | 3.3 uH filter and 30 uF nominal capacitance; see KiCad BOM |
 | TBD | Optical passives | Exact PAW3950 reference circuit |
 | TBD | Current-setting/scaling/filter components | DRV8231A IPROPI/VREF and wheel feedback |
-| TBD | Input protection and power monitoring | Inrush, current limits, reverse current and VBUS sensing |
+| 1 set | TPS259470LRPWR x2, TVS clamps, TLV9001 and passives | Input/actuator protection and telemetry; see power review |
 | 3 | B2B-PH-SM4-TBT(LF)(SN) | Two-pin SMT coil headers; C265003; harnesses separate |
 | TBD | Other connectors and mounting hardware | Wheel motor and mechanical assembly |
-| TBD | Hardware actuator timeout/disable circuit | Safe stop on stale control; button drivers have no dedicated fault output |
+| 1 set | SN74LVC1G123, SN74LVC08A x3 and SN74LVC2G04 | Heartbeat timeout, source/reset qualification, sensor enable and six drive gates |
 
 The external powered hub/adapter is not included in this mouse BOM. Do not fit
 external Rd resistors in parallel with integrated Rd without checking the detector

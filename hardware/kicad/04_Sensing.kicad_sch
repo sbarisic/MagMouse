@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 04_Sensing")
     (date "2026-09-08")
-    (rev "0.2 DRAFT")
+    (rev "0.3 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -446,7 +446,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "0315143d-034f-55ea-82e7-f0accd519b5c"))
-  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.3 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -588,7 +588,7 @@
       (width 0)
       (type default))
     (uuid "e95fd29b-01ee-5126-8d96-c22d75ef322b"))
-  (global_label "+3V3"
+  (global_label "HALL_EN"
     (shape bidirectional)
     (at 38.1 60.96 180)
     (effects
@@ -883,7 +883,7 @@
       (width 0)
       (type default))
     (uuid "80fef162-3ce5-57e1-b0a0-44681ec06887"))
-  (global_label "+3V3"
+  (global_label "HALL_EN"
     (shape bidirectional)
     (at 147.32 60.96 180)
     (effects
@@ -1178,7 +1178,7 @@
       (width 0)
       (type default))
     (uuid "64263d65-eb3c-5e86-a6bb-41516fece1d8"))
-  (global_label "+3V3"
+  (global_label "HALL_EN"
     (shape bidirectional)
     (at 256.54 60.96 180)
     (effects
@@ -1529,12 +1529,6 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "d7390a6e-67ae-53b7-8877-99dee79a748f"))
-  (no_connect
-    (at 101.6 190.5)
-    (uuid "95c986bf-c4f9-5212-9e62-3524d4d915bc"))
-  (no_connect
-    (at 101.6 193.04)
-    (uuid "8127ec88-0ff6-51e0-8ae5-7a01059d237c"))
   (wire
     (pts
       (xy 111.76 167.64)
@@ -2060,11 +2054,43 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "01cfa09a-0bc8-55e4-a4dc-626284ba2217"))
-  (text "AIN0-2: Hall position. AIN3-5: driver current feedback. AIN6/7 unused in this draft.\nWheel phase-current acquisition remains open; do not assume two spare channels solve PWM sampling.\nHall sensors share the ADC analog supply/reference. Verify magnet gaps and interference under drive.\nADC/Hall JLC catalog IDs assigned. Final layout/stencil and magnetic placement need review."
+  (text "AIN0-2: Hall position. AIN3-5: button current. AIN6: input current. AIN7: actuator rail voltage.\nWheel phase-current acquisition needs a separate path; no ADC inputs remain free.\nHall sensors share the ADC supply/reference. Validate acquisition settling and magnetic interference.\nPower telemetry calibration and fault-injection tests are specified in docs/power.md."
     (at 20 243 0)
     (effects
       (font
         (size 1.2 1.2))
       (justify left top))
     (uuid "2cf73e49-aae6-5fbc-93ea-2be8c2205b74"))
-  (embedded_fonts no))
+  (embedded_fonts no)
+  (wire
+    (pts
+      (xy 101.6 190.5)
+      (xy 96.52 190.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "805af612-180f-5d90-96ff-c8f8a8914846"))
+  (global_label "USB_IMON_ADC"
+    (shape bidirectional)
+    (at 96.52 190.5 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a9f6c5c2-2980-5e3e-a7af-87568e5008d9"))
+  (wire
+    (pts
+      (xy 101.6 193.04)
+      (xy 96.52 193.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d8cb31fd-e9c8-5d37-8347-2de76b04e115"))
+  (global_label "ACT_VMON"
+    (shape bidirectional)
+    (at 96.52 193.04 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a044bc46-68fb-5c0e-b40b-62f3edff580e")))

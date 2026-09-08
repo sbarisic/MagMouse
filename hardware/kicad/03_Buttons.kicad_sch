@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 03_Buttons")
     (date "2026-09-08")
-    (rev "0.2 DRAFT")
+    (rev "0.3 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -505,7 +505,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "d29e0230-12e7-5143-8fae-07d8b95a0f08"))
-  (text "DRAFT 0.2 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.3 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -679,7 +679,7 @@
       (width 0)
       (type default))
     (uuid "1dc44700-6e22-57b9-a9f6-5427ff206cfe"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 119.38 43.18 90)
     (effects
@@ -1436,7 +1436,7 @@
       (width 0)
       (type default))
     (uuid "6b3e2f88-3ba7-5e1c-8139-3789dd62457c"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 271.78 49.53 90)
     (effects
@@ -1556,7 +1556,7 @@
       (width 0)
       (type default))
     (uuid "7fc67360-8d7e-5eb2-af4c-496b9d0c88c3"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 312.42 49.53 90)
     (effects
@@ -1994,7 +1994,7 @@
       (width 0)
       (type default))
     (uuid "8e844e31-3468-5313-8f15-3bcf451c7ac1"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 119.38 114.3 90)
     (effects
@@ -2751,7 +2751,7 @@
       (width 0)
       (type default))
     (uuid "f7c949fc-abe9-575e-8c64-ddaa360cc9aa"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 271.78 120.65 90)
     (effects
@@ -2871,7 +2871,7 @@
       (width 0)
       (type default))
     (uuid "567b9578-2130-5d24-813b-f85aeb879c9c"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 312.42 120.65 90)
     (effects
@@ -3309,7 +3309,7 @@
       (width 0)
       (type default))
     (uuid "e48b0b19-afd1-5684-b8ff-454674671371"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 119.38 185.42 90)
     (effects
@@ -4066,7 +4066,7 @@
       (width 0)
       (type default))
     (uuid "d942c68d-6897-5b81-9ce4-78ae5611d252"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 271.78 191.77 90)
     (effects
@@ -4186,7 +4186,7 @@
       (width 0)
       (type default))
     (uuid "718de94d-a8ee-5b86-9981-f7190e65c545"))
-  (global_label "ACT_5V_PENDING"
+  (global_label "ACT_5V"
     (shape bidirectional)
     (at 312.42 191.77 90)
     (effects
@@ -4457,7 +4457,7 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "1c757389-7a5b-5f38-aefd-caf487f44adf"))
-  (text "VREF nominal 1.65 V; IPROPI 1500 uA/A and 3.3k give Itrip approx 0.333 A.\nProvisional limit only: characterize accuracy at 5 V and low pulse currents. No continuous hold drive.\nIN1/IN2 pulldowns provide reset default; hardware timeout + switched ACT supply are still missing.\nCurrent feedback is sampled directly; review settling/blanking before adding any filter to IPROPI."
+  (text "VREF nominal 1.65 V; IPROPI 1500 uA/A and 3.3k give Itrip approx 0.333 A.\nProvisional limit only: characterize accuracy at 5 V and low pulse currents. No continuous hold drive.\nIN1/IN2 are hardware-gated by ACT_DRIVE_EN; switched ACT_5V has reverse blocking and a local clamp.\nCurrent feedback is sampled directly; review settling/blanking before adding any filter to IPROPI."
     (at 20 248 0)
     (effects
       (font

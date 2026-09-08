@@ -38,7 +38,7 @@ flowchart TD
     Angle[MA735 wheel angle] --> MCU
     Power --> Buttons
     Power --> Wheel
-    CC[Type-C current detection, part TBD] --> MCU
+    CC[TUSB320 Type-C current detection] --> MCU
 ```
 
 The button direction was revised on 2026-09-08: custom moving-magnet actuators

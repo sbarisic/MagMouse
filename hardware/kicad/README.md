@@ -1,101 +1,77 @@
-# KiCad starter schematic
+# KiCad schematic
 
-Revision 0.2, 2026-09-08. Created and exported with KiCad 10.0.6.
-This is an editable circuit-development draft, **not a working or order-ready
-mouse design**. No PCB layout exists yet.
+Revision 0.3, 2026-09-08, KiCad 10.0.6. USB-C power control is connected.
+This is an editable development draft; **no PCB layout or order-ready mouse
+design exists yet**. Firmware, measurements and absent subsystems remain open.
 
 ## Open and edit
 
-1. In KiCad Manager, choose **File > Open Existing Project** and select
-   [MagMouse.kicad_pro](MagMouse.kicad_pro).
-2. Open [MagMouse.kicad_sch](MagMouse.kicad_sch) from the project tree.
-3. Double-click a sheet to enter it. Select a component and press **E** to
-   inspect its MPN, footprint, LCSC number and sourcing status.
+1. Open [MagMouse.kicad_pro](MagMouse.kicad_pro) in KiCad Manager.
+2. Open [MagMouse.kicad_sch](MagMouse.kicad_sch).
+3. Enter a sheet and press **E** on a component to inspect its MPN, footprint,
+   LCSC number and sourcing status.
 
-Use the standard symbol and footprint libraries bundled with KiCad 10. Accept
-the default library setup if this fresh installation asks. The project-local
-symbol library is registered through [sym-lib-table](sym-lib-table).
-No JLCPCB plugin is required to edit this project or retain sourcing fields.
+Use the standard KiCad 10 libraries. The local symbol and footprint libraries
+are registered by [sym-lib-table](sym-lib-table) and [fp-lib-table](fp-lib-table).
+No JLCPCB plugin is needed. Edit the schematic files directly.
 
-## Included circuits
-
-| Sheet | Draft content |
+| Sheet | Implemented content |
 | --- | --- |
-| Overview | Hierarchy and unresolved blocks |
-| 01 Power / USB | USB-C data, ESD candidate, TLV62569 3.3 V buck and test pads |
-| 02 MCU | ESP32-S3-MINI-1-N8, decoupling, USB resistors, reset/boot and recovery pads |
-| 03 Buttons | Three DRV8231A bridges, input pulldowns, fixed VREF, current feedback and coil connections |
-| 04 Sensing | Three TMAG5253 Hall sensors, ADS7038 and decoupling |
+| Overview | Nine-page hierarchy and remaining work |
+| 01 Power / USB | USB-C data/CC protection, TUSB320 sink detection, TPS62162 fixed 3.3 V regulator |
+| 02 MCU | ESP32-S3 module, USB, reset/boot, recovery pads and power-control GPIOs |
+| 03 Buttons | Three DRV8231A bridges, VREF/current feedback, input pulldowns and coil connectors |
+| 04 Sensing | Three switchable Hall sensors, ADS7038; all eight ADC channels assigned |
+| 05 Protected power | Separate input/actuator eFuses, UVLO/OVLO, ramps, fault/reset and enable clamp |
+| 06 Actuator interlock | Hardware heartbeat timeout, source/reset/sensor-qualified arm and six input gates |
+| 07 Power monitor | CC-selected current-limit resistors, buffered input-current sensing, VBUS presence and ACT voltage |
+| 08 Actuator rail | Input/actuator transient clamps, ACT storage/discharge and test pads |
 
-The custom stationary coils and moving magnets replace the industrial voice
-coils. The elastic paddles provide passive return; the bridges deliver brief
-effects. Coil windings, magnets and mechanical assemblies are external items,
-not SMT components for JLCPCB to populate.
+VBUS_USB feeds PWR_5V through U12; U13 supplies ACT_5V. These rails replace the
+disconnected pending nets. The TPS62162 and 3.3 uH inductor replace the original
+TLV62569/divider circuit. See [power behavior and firmware requirements](../../docs/power.md)
+and [power sourcing/package review](POWER_REVIEW.md).
 
-Draft GPIO allocation: GPIO4/5 left IN1/IN2; GPIO6/7 middle; GPIO8/9 right;
-GPIO10 ADC CS; GPIO11 MOSI; GPIO12 SCLK; GPIO13 MISO; GPIO19/20 USB D-/D+.
-Other MCU pins have NC marks only because their circuits have not been added.
-The complete mouse still needs a reviewed GPIO and peripheral-resource budget.
-
-The buck divider is 100 kOhm / 22.1 kOhm, nominally 3.315 V. Each bridge uses
-a 10 kOhm / 10 kOhm VREF divider and 3.3 kOhm IPROPI resistor. With the
-datasheet's nominal 1500 uA/A mirror ratio, the provisional trip current is
-1.65 / (0.0015 * 3300) = 0.333 A. This is a starting value for bench work;
-accuracy, required force, pulse duration and coil heating are unverified.
-
-## Work before layout
-
-- Complete USB CC termination/current detection, input protection, VBUS sensing
-  and source-current policy. **VBUS_USB is disconnected from PWR_5V_PENDING
-  and ACT_5V_PENDING. This draft cannot run from its USB connector.**
-- Add the protected actuator supply switch, hardware timeout/shutdown and a
-  path for regenerated energy. Input pulldowns alone do not provide a timeout.
-- Add PAW3950 reference circuitry, IMU, wheel driver/encoder/current feedback
-  and RGB indicator. Validate the optical parts and initialization first.
-- Refresh stock and review the selected parts, ratings and footprints in
-  [SOURCING.md](SOURCING.md) when the complete design is ready.
-- Prototype one button, then review power, ADC settling, current sensing,
-  thermal limits, magnetic interference and the complete pin allocation.
-- Review every symbol-to-package mapping and clear ERC before board layout.
+Each button bridge retains the provisional 0.333 A trip setting:
+1.65 V / (0.0015 × 3300 ohms). Actual force, current accuracy, winding heating
+and pulse duration require the mechanical experiment. Coils, magnets, paddles
+and wiring are external assemblies, not SMT parts.
 
 ## Review exports
 
-From the repository root, with Python 3 and KiCad 10 installed:
+From the repository root, run these commands with Python 3 and KiCad 10:
 
-```powershell
-python hardware/kicad/export_review.py
-```
+    python hardware/kicad/export_review.py
+    python hardware/kicad/verify_power.py
 
-The script discovers KiCad on PATH or in typical Windows installation locations;
-use `--kicad-cli PATH` to override it. It exports the current editable sources
-to `build/kicad-review/`: five SVG sheets, XML netlist, ERC JSON, grouped
-`DRAFT-bom.csv`, and `review-status.json`. It never overwrites schematic sources.
-The BOM includes unresolved rows so they cannot silently disappear from review.
-Its column names include Comment, Designator, Footprint and LCSC Part #.
+The exporter accepts --kicad-cli PATH. The checker accepts --footprints PATH
+for a nonstandard KiCad footprint installation. Generated files go to
+build/kicad-review: nine SVG sheets, XML netlist, ERC JSON, DRAFT-bom.csv,
+review-status.json and power-checks.json. Sources are not overwritten.
 
-The current draft has 60 BOM components, all with verified catalog numbers,
-manufacturer part numbers and footprints. Revision 0.2 resolved the initial
-17 missing catalog numbers and six missing footprints. Nine copper test pads
-and two ERC power flags are excluded from the BOM. Catalog identity does not
-reserve assembly stock or establish the eventual order price.
+The current draft has **141 BOM components**, all with catalog IDs, MPNs and
+footprints; 15 copper test pads and three power flags are excluded from the BOM.
+**ERC: zero errors and zero warnings, without new waivers.**
+The additional checker verifies 191 critical pin connections, 156 footprint
+assignments, complete source-to-export coverage and 4,096 Boolean interlock
+cases. Analog timing, thermal behavior and USB compliance are not simulated.
 
-Initial ERC: **two errors** for the unsourced logic/actuator 5 V inputs and
-**two warnings** for the dangling CC1/CC2 connections. These have not been
-waived. Ground and the buck output have power flags; the unfinished input rails
-do not. The script returns exit code 2 while ERC or BOM gaps remain; this is
-expected for revision 0.2 because the power circuit is still incomplete. Even a
-future successful export is not fabrication
-approval: ERC cannot validate analog behavior or missing subsystems.
+Catalog identity does not reserve stock. U11's current JLCPCB listing requires
+Standard PCBA; refresh service eligibility and pricing before placing an order.
+No board-placement file or manufacturing release is produced by these tools.
 
-Revision 0.2 review checked 56 critical pin-to-net assignments and confirmed
-that all 69 assigned footprints (including test pads) exist in the installed
-libraries and contain the required pin numbers. Net connectivity is unchanged
-from revision 0.1. All five rendered sheets were
-visually inspected. These checks do not replace a full circuit/package review.
+## Work before layout
 
-After schematic and layout review, generate Gerbers, drill files and a PCB
-placement/CPL file, refresh JLC stock and prices, and inspect its assembly
-preview. A schematic BOM alone cannot order an assembled PCB.
+- Implement and measure USB startup, configuration, suspend/resume and source
+  changes. Verify the 100 mA startup and 2.5 mA suspend requirements.
+- Prototype one button; measure force/current, winding properties, current-sense
+  accuracy, heating, passive return and magnetic interference.
+- Test timeout/reset/short-circuit behavior, cable drop, inrush, reverse current,
+  regenerative clamp behavior and component temperatures.
+- Add validated PAW3950 circuitry, IMU, wheel driver/encoder/current acquisition
+  and RGB. Wheel regenerative energy may require a dedicated brake circuit.
+- Finish the [GPIO/resource budget](../../docs/interfaces.md), review symbols,
+  land patterns and stencil requirements, then perform board layout and DRC.
 
-Hardware design: CERN-OHL-S-2.0. The separate reusable symbol library has the
-license and attribution recorded in [SOURCING.md](SOURCING.md).
+See [SOURCING.md](SOURCING.md) for retained component evidence and
+[the roadmap](../../docs/roadmap.md) for the broader project.

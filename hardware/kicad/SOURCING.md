@@ -1,16 +1,17 @@
 # Draft sourcing and symbol review
 
-Revision 0.2, checked 2026-09-08. All 60 components in the present schematic
-now have manufacturer part numbers, catalog identifiers and assigned footprints.
-The 17 previously unresolved instances were matched to direct JLCPCB listings.
-The original selections below retain their recorded JLCPCB or LCSC evidence.
-Recheck assembly stock, prices and service eligibility before ordering; no stock
-is reserved. This covers the starter schematic, not the absent mouse subsystems.
+Revision 0.3, checked 2026-09-08. All 141 components in the present schematic
+have manufacturer part numbers, catalog identifiers and assigned footprints.
+New USB-C power parts, changed regulator/inductor, package evidence and assembly
+constraints are documented in [POWER_REVIEW.md](POWER_REVIEW.md). The historical
+revision 0.2 selections below identify retained parts and superseded decisions.
+Recheck assembly stock, prices and service eligibility before ordering; none is
+reserved. This does not cover absent optical/wheel/IMU/RGB subsystems.
 
 | References | Manufacturer part number | Catalog |
 | --- | --- | --- |
 | U4-U6 | TI DRV8231ADSGR | [JLC C5139865](https://jlcpcb.com/partdetail/TexasInstruments-DRV8231ADSGR/C5139865) |
-| U2 | TI TLV62569DBVR | [JLC C141836](https://jlcpcb.com/partdetail/TexasInstruments-TLV62569DBVR/C141836) |
+| U2 | TI TPS62162DSGR | [JLC C40256](https://jlcpcb.com/partdetail/TexasInstruments-TPS62162DSGR/C40256) |
 | U3 | Espressif ESP32-S3-MINI-1-N8 | [LCSC C2913206](https://www.lcsc.com/product-detail/C2913206.html) |
 | J1 | Korean Hroparts TYPE-C-31-M-12 | [LCSC C165948](https://www.lcsc.com/product-detail/C165948.html) |
 | 10 kOhm resistors | UNI-ROYAL 0603WAF1002T5E | [LCSC C25804](https://www.lcsc.com/product-detail/C25804.html) |
@@ -25,7 +26,11 @@ Use the schematic fields as the editable source of truth. `LCSC` and
 Do not substitute parts by value alone: voltage, tolerance, capacitor bias,
 inductor saturation, package and pin mapping matter.
 
-## Resolved selections in revision 0.2
+## Historical selections resolved in revision 0.2
+
+R1/R2 and the 2.2 uH L1 below are superseded in revision 0.3. Their resistor
+part types remain used elsewhere; L1 is now the 3.3 uH variant. The associated
+TLV62569 calculations are historical, not the current regulator design.
 
 | References | Selected manufacturer part number | JLCPCB catalog | Library type |
 | --- | --- | --- | --- |
@@ -107,8 +112,9 @@ libraries. The project-local [MagMouse.kicad_sym](MagMouse.kicad_sym) contains:
 
 The standalone `MagMouse.kicad_sym` library is distributed under
 CC-BY-SA-4.0 with the KiCad libraries exception. Attribution: KiCad library
-contributors for the DRV8231ADSG source; MagMouse contributors for the correction
-and new Hall/ADC symbols. See [the included upstream notice](KICAD-LIBRARY-LICENSE.md)
+contributors for the DRV8231ADSG and D_Schottky sources; MagMouse contributors
+for corrections, new Hall/ADC symbols and the power symbols listed in
+[POWER_REVIEW.md](POWER_REVIEW.md). See [the included upstream notice](KICAD-LIBRARY-LICENSE.md)
 and [the license text](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 The electronic design remains under the repository's CERN-OHL-S-2.0 license.
 
