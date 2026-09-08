@@ -32,8 +32,11 @@
   3-PWM wheel, dedicated second-ADC SPI and one-data-pin RGB; see [interfaces](interfaces.md).
 - [ ] Prove PWM-to-ADC timing, valid low-side sampling windows, angle age and
   concurrent USB/button/optical operation on the selected firmware path.
-- [ ] Draw DRV8316 + ADC2 + MA735 + GB1806, hardware output-disable and the
-  measured-energy brake circuit; see [wheel control](wheel-control.md).
+- [x] Draw DRV8316 + ADC2 + MA735 + GB1806 wire interface, hardware output-disable,
+  power-domain SPI isolation and a provisional autonomous brake (revision 0.5);
+  see [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
+- [ ] Measure returned wheel energy and brake startup/overshoot/temperatures;
+  validate or revise the resistor, capacitance and threshold selections.
 - [ ] Draw the exact PAW3950 reference, then ICM-42688-P and addressable RGB.
 - [x] Select KiCad and add a reproducible schematic review-export workflow.
 - [ ] Choose firmware tools and document versions and reproducible workflows.
@@ -47,6 +50,8 @@ that the actuators can operate within the intended power and thermal envelope.
 - [x] Start an editable motherboard PCB with the existing schematic footprints,
   provisional outline, four copper layers and subsystem reservations;
   see [placement draft](../hardware/pcb/README.md). Routing remains open.
+- [x] Synchronize the wheel schematic to the PCB as 89 off-board staging footprints;
+  preserve the original 183 placements. Mechanical fit is not established.
 - [ ] Model optical height, button travel/stops and actuator mounting.
 - [ ] Validate separate sensing/actuator magnets and separation from wheel/coil fields.
 - [ ] Select flexure material/print process and measure creep, fatigue and stop loads.

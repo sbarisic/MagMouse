@@ -1,5 +1,5 @@
 {
-  "revision": "0.4",
+  "revision": "0.5",
   "module": "ESP32-S3-MINI-1-N8",
   "module_ref": "U3",
   "scope": "GPIO and peripheral allocation; timing targets are not measured acceptance.",
@@ -40,7 +40,7 @@
       "net": "WHEEL_RUN_REQ",
       "direction": "output",
       "peripheral": "wheel",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP17",
       "bias": {
         "ref": "R77",
@@ -218,7 +218,7 @@
       "net": "MOTOR_SPI_MOSI",
       "direction": "output",
       "peripheral": "SPI3",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP20"
     },
     {
@@ -227,7 +227,7 @@
       "net": "MOTOR_SPI_SCLK",
       "direction": "output",
       "peripheral": "SPI3",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP21"
     },
     {
@@ -236,7 +236,7 @@
       "net": "MOTOR_SPI_MISO",
       "direction": "input",
       "peripheral": "SPI3",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP22"
     },
     {
@@ -245,7 +245,7 @@
       "net": "CS_ADC2",
       "direction": "output",
       "peripheral": "SPI3",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP23",
       "bias": {
         "ref": "R74",
@@ -259,7 +259,7 @@
       "net": "CS_MA735",
       "direction": "output",
       "peripheral": "SPI2",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP24",
       "bias": {
         "ref": "R75",
@@ -273,7 +273,7 @@
       "net": "CS_DRV8316",
       "direction": "output",
       "peripheral": "SPI2",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP25",
       "bias": {
         "ref": "R76",
@@ -305,7 +305,7 @@
       "net": "DRV_FAULT_N",
       "direction": "input",
       "peripheral": "MCPWM0_fault",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP28"
     },
     {
@@ -314,7 +314,7 @@
       "net": "WHEEL_PWM_A",
       "direction": "output",
       "peripheral": "MCPWM0",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP29"
     },
     {
@@ -367,7 +367,7 @@
       "net": "WHEEL_PWM_B",
       "direction": "output",
       "peripheral": "MCPWM0",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP32"
     },
     {
@@ -376,7 +376,7 @@
       "net": "WHEEL_PWM_C",
       "direction": "output",
       "peripheral": "MCPWM0",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP33"
     }
   ],
@@ -418,7 +418,7 @@
         {
           "name": "DRV8316R",
           "cs": "CS_DRV8316",
-          "clock_target_hz": 5000000,
+          "clock_target_hz": 1000000,
           "spi_mode": 1
         }
       ]
@@ -509,11 +509,11 @@
       "WHEEL_I_A",
       "WHEEL_I_B",
       "WHEEL_I_C",
-      "WHEEL_BUS_CURRENT_OR_SPARE",
-      "SPARE4",
-      "SPARE5",
-      "SPARE6",
-      "SPARE7"
+      "ADC2_SPARE3",
+      "ADC2_SPARE4",
+      "ADC2_SPARE5",
+      "ADC2_SPARE6",
+      "ADC2_SPARE7"
     ]
   },
   "wheel_timing_targets": {
@@ -528,7 +528,7 @@
     "frames_per_triplet_including_pipeline_flush": 4,
     "burst_budget_us": 8,
     "launch_jitter_budget_us": 1,
-    "settling_guard_budget_us": 2,
+    "settling_guard_budget_us": 3,
     "common_low_side_window_us": 12
   },
   "optional_interfaces": {
@@ -539,10 +539,10 @@
     "GPIO46": "boot-low spare only; no external pull-up or independently driven interrupt at reset"
   },
   "power_domains": {
-    "MA735_and_RGB_enable": "HALL_EN; reuse sensor enable, with power-off data isolation in future circuits",
+    "MA735_and_RGB_enable": "HALL_EN; U28/U29 switch and isolate MA735; RGB circuit remains pending",
     "optical_control": "OPT_CTRL; exact sequencing circuit pending reference",
     "driver_wake": "ACT_DRIVE_EN through safe default-low nSLEEP circuit",
     "driver_run": "WHEEL_RUN_REQ AND ACT_DRIVE_EN through external gates and DRVOFF",
-    "brake": "autonomous local rail comparator; no MCU GPIO"
+    "brake": "U30 TLV1811 + U31 reference + Q5/R121-R124, autonomous from ACT_5V; unmeasured envelope"
   }
 }

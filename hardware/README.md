@@ -3,7 +3,7 @@
 Status: editable KiCad 10 schematic and initial motherboard component placement.
 The schematic is incomplete and the PCB is unrouted; both are development drafts.
 
-- [KiCad project](kicad/README.md): ten-sheet draft with connected USB-C power control, sourcing fields and review exports.
+- [KiCad project](kicad/README.md): fourteen-sheet draft with USB-C power control and wheel/brake circuits, sourcing fields and review exports.
 
 - [schematics](schematics/README.md): circuit partition and review requirements.
 - [pcb](pcb/README.md): layout and release requirements.

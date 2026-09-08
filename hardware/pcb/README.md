@@ -12,9 +12,13 @@ chamfers. Its bounds are X = 100..150 mm and Y = 100..195 mm in KiCad;
 the USB/front edge is Y = 100 mm. These are layout assumptions, not dimensions
 from a measured enclosure. No mounting holes or optical aperture have been cut.
 
-All 183 schematic footprints are linked to their symbols and nets: 150 BOM
-components on the front, plus 33 copper test pads on the back. Test pads are
-excluded from the BOM and placement export. MPN, LCSC and datasheet fields are
+All 272 schematic footprints are linked to their symbols and nets. The previous
+183 placements are preserved: 150 BOM components on the front and 33 test pads
+on the back. The 89 new wheel footprints are staged outside the outline at
+approximately X = 169..254 mm, in four labelled subsystem groups. These include
+84 BOM components, four additional test pads and J5 motor wire pads. Staging is
+not mechanical placement and does not establish that all parts fit this board.
+Test pads and J5 are excluded from the BOM and placement export. MPN, LCSC and datasheet fields are
 retained. Future schematic changes can use KiCad's **Update PCB from Schematic
 (F8)**; do not import another set of footprints manually.
 
@@ -68,20 +72,23 @@ From the repository root:
     python hardware/kicad/export_pcb_review.py
 
 This reads the live schematic/PCB and produces front/back SVGs, native DRC JSON
-and a summary under `build/pcb-review`. It accepts `--kicad-cli PATH`.
+and a summary under `build/pcb-review`. `placement-with-staging.svg` includes
+the off-board wheel parts; the board-area front/back crops omit them. The
+exporter accepts `--kicad-cli PATH`.
 The default exit status checks placement and schematic parity; add
 `--require-routed` to also fail on incomplete connectivity. Neither mode
 establishes manufacturing or electrical acceptance.
 
-Initial check: **0 physical DRC violations, 0 schematic parity issues, 433
+Current check: **0 physical DRC violations, 0 schematic parity issues, 499
 unconnected items**, without DRC exclusions. The board is deliberately unrouted.
-This verifies placement geometry and synchronization, not operation, magnetic
+This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 
 1. Set the shell/PCB dimensions, wheel assembly, optical height/aperture, paddle
    magnets, mounting holes and connector openings with mechanical CAD.
-2. Complete the wheel/ADC2/encoder and regenerative brake schematic, then the
-   exact PAW3950 reference circuit, IMU and one-data-pin RGB LED.
+2. Add the exact PAW3950 reference circuit, IMU and one-data-pin RGB LED.
+   The wheel/ADC2/encoder and provisional brake circuits are drawn; their
+   [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
 3. Refine placement using those envelopes and each IC's reference layout.
    Tighten buck/bridge current loops, decoupling and analog return paths; provide
    exposed-pad thermal vias and space for the brake resistor's heat.

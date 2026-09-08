@@ -1,4 +1,4 @@
-# GPIO and peripheral allocation — revision 0.4
+# GPIO and peripheral allocation — revision 0.5 (pin map unchanged)
 
 The ESP32-S3-MINI-1-N8 fits V1 with **38 assigned GPIOs and one boot-low spare,
 GPIO46**. The user selected a single-data-pin addressable RGB LED on 2026-09-08.
@@ -10,8 +10,9 @@ The [machine-readable allocation](../hardware/kicad/gpio-allocation.json) and
 [MCU schematic](../hardware/kicad/02_MCU.kicad_sch) use the same net names.
 [Sheet 09](../hardware/kicad/09_Interface_Reservations.kicad_sch) exposes new
 signals on test pads and adds boot/control bias resistors. These are real MCU
-connections, not completed peripheral circuits: ADC2, wheel driver, encoder,
-optical circuit, IMU and RGB still need their component sheets.
+connections. Revision 0.5 adds ADC2, wheel driver, encoder, SPI isolation and
+autonomous brake sheets. The optical circuit, IMU and RGB still need their
+component sheets; see [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
 
 ## Complete module pin map
 
@@ -89,7 +90,9 @@ first when using SPI2 CS0 on GPIO10. The slot counts come from S3 capabilities,
 not a generic ESP32 three-device limit.
 
 Use per-device mode, clock and CS timing. Initial clock targets: 20 MHz for
-both ADCs, 10 MHz for MA735/IMU, at most 5 MHz for DRV8316. PAW mode, clock,
+both ADCs, 10 MHz for MA735/IMU, and 1 MHz for DRV8316. The driver
+clock is reduced for its open-drain SDO pull-up and new return buffer; measure
+edge rate and setup margin before increasing it. PAW mode, clock,
 read delays, voltage domain and MISO release await its exact reference.
 Do not treat PAW3395 circuitry as PAW3950 validation. The MCU-side CS pull-ups
 do not authorize direct connection to a lower-voltage peripheral: review
@@ -151,16 +154,16 @@ Independent always-on RGB/encoder operation would require a new resource review.
 
 ## Two ADCs
 
-| Channel | ADS7038 #1 — U10, buttons/system | ADS7038 #2 — reserved wheel device |
+| Channel | ADS7038 #1 — U10, buttons/system | ADS7038 #2 — U23, wheel |
 | --- | --- | --- |
 | CH0 | Left Hall | Phase A current, conditioned SOA |
 | CH1 | Middle Hall | Phase B current, conditioned SOB |
 | CH2 | Right Hall | Phase C current, conditioned SOC |
-| CH3 | Left coil current | Wheel/bus current or spare; sensor unselected |
-| CH4 | Middle coil current | Spare |
-| CH5 | Right coil current | Spare |
-| CH6 | Input current | Spare |
-| CH7 | ACT_5V | Spare |
+| CH3 | Left coil current | Grounded spare via R105; bus-current sensor unselected |
+| CH4 | Middle coil current | Grounded spare via R106 |
+| CH5 | Right coil current | Grounded spare via R107 |
+| CH6 | Input current | Grounded spare via R108 |
+| CH7 | ACT_5V | Grounded spare via R109 |
 
 ADC1 inputs stay unchanged. ADC2 needs no CONVST/DRDY GPIO: host-mode conversions
 start on CS rising edges. It is multiplexed, not simultaneous-sampling.
@@ -182,9 +185,10 @@ four frames before software overhead. First-to-third sampling spacing is
 with the actual front end and channel changes.
 
 Initial targets: 20 kHz PWM, 5 kHz current-control updates, at most 8 us for
-the acquisition burst, 1 us launch jitter, and a 2 us settling guard. Reserve
-at least 12 us of valid common low-side measurement time. The combined 11 us
-budget fits arithmetically; it is not measured. A 12 us common low-side interval
+the acquisition burst, 1 us launch jitter, and a 3 us settling guard. The guard
+now includes the driver propagation delay plus CSA settling at the 200 V/us
+slew setting. Reserve at least 12 us of valid common low-side measurement time.
+The combined 12 us budget has no spare time; it is not measured. A 12 us common low-side interval
 within a 50 us PWM period can limit maximum phase duty to roughly 76%,
 depending on modulation.
 
@@ -208,14 +212,14 @@ Run from the repository root:
     python hardware/kicad/export_review.py
     python hardware/kicad/verify_power.py
     python hardware/kicad/verify_resources.py
+    python hardware/kicad/verify_wheel.py
 
 Checks cover all module GPIOs, net/pad agreement, boot biases, independent CS
 signals, peripheral capacity and timing arithmetic. They do not establish
 firmware deadlines or analog performance.
 
-Next draw DRV8316 + ADC2 + MA735 + motor interfaces using the
-[wheel control contract](wheel-control.md), then the exact optical circuit,
-IMU and RGB. Timing, regenerative energy and physical acceptance remain open.
+Wheel circuits now implement the [wheel control contract](wheel-control.md).
+Next draw the exact optical circuit, IMU and RGB. Timing, regenerative energy and physical acceptance remain open.
 
 ## Primary evidence
 

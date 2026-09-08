@@ -5,8 +5,8 @@
   (paper "A3")
   (title_block
     (title "MagMouse - MagMouse")
-    (date "2026-09-08")
-    (rev "0.4 DRAFT")
+    (date "2026-09-09")
+    (rev "0.5 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols)
@@ -17,7 +17,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "3f36e4f1-a069-5d5f-b81a-7a0e91da7ced"))
-  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.5 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -25,7 +25,7 @@
       (justify left top))
     (uuid "e2c0c3d2-b8d4-50b0-bf7e-fef1d1670553"))
   (sheet
-    (at 20 48)
+    (at 25 48)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -34,13 +34,13 @@
       (color 0 0 0 0))
     (uuid "f98db9d6-39f0-56d0-b006-a308a0af27b1")
     (property "Sheetname" "01_Power_USB"
-      (at 20 46.73 0)
+      (at 25 46.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "01_Power_USB.kicad_sch"
-      (at 20 71.27 0)
+      (at 25 71.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -50,7 +50,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "2")))))
   (sheet
-    (at 150 48)
+    (at 153 48)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -59,13 +59,13 @@
       (color 0 0 0 0))
     (uuid "d5629ffc-c70c-5a32-8660-d50043bd3c4c")
     (property "Sheetname" "02_MCU"
-      (at 150 46.73 0)
+      (at 153 46.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "02_MCU.kicad_sch"
-      (at 150 71.27 0)
+      (at 153 71.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -75,7 +75,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "3")))))
   (sheet
-    (at 280 48)
+    (at 281 48)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -84,13 +84,13 @@
       (color 0 0 0 0))
     (uuid "584f5e2a-40d4-5188-83de-a1357f3244b0")
     (property "Sheetname" "03_Buttons"
-      (at 280 46.73 0)
+      (at 281 46.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "03_Buttons.kicad_sch"
-      (at 280 71.27 0)
+      (at 281 71.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -100,7 +100,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "4")))))
   (sheet
-    (at 20 102)
+    (at 25 90)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -109,13 +109,13 @@
       (color 0 0 0 0))
     (uuid "53ef1b2e-2214-5252-a341-e013ba33a7d8")
     (property "Sheetname" "04_Sensing"
-      (at 20 100.73 0)
+      (at 25 88.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "04_Sensing.kicad_sch"
-      (at 20 125.27 0)
+      (at 25 113.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -125,7 +125,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "5")))))
   (sheet
-    (at 150 102)
+    (at 153 90)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -134,13 +134,13 @@
       (color 0 0 0 0))
     (uuid "8a66e1fe-51be-562e-9512-bb5cf22fe456")
     (property "Sheetname" "05_Protected_Power"
-      (at 150 100.73 0)
+      (at 153 88.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "05_Protected_Power.kicad_sch"
-      (at 150 125.27 0)
+      (at 153 113.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -150,7 +150,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "6")))))
   (sheet
-    (at 280 102)
+    (at 281 90)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -159,13 +159,13 @@
       (color 0 0 0 0))
     (uuid "a8b8e5ef-19e0-5d84-8c60-ff359b0d0164")
     (property "Sheetname" "06_Actuator_Interlock"
-      (at 280 100.73 0)
+      (at 281 88.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "06_Actuator_Interlock.kicad_sch"
-      (at 280 125.27 0)
+      (at 281 113.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -175,7 +175,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "7")))))
   (sheet
-    (at 20 156)
+    (at 25 132)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -184,13 +184,13 @@
       (color 0 0 0 0))
     (uuid "c62fc5ee-40c8-515c-a816-c08000bf7406")
     (property "Sheetname" "07_Power_Monitor"
-      (at 20 154.73 0)
+      (at 25 130.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "07_Power_Monitor.kicad_sch"
-      (at 20 179.27 0)
+      (at 25 155.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -200,7 +200,7 @@
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "8")))))
   (sheet
-    (at 150 156)
+    (at 153 132)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -209,13 +209,13 @@
       (color 0 0 0 0))
     (uuid "eb4158a7-f345-513c-bf55-64544b1ee44b")
     (property "Sheetname" "08_Actuator_Rail"
-      (at 150 154.73 0)
+      (at 153 130.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "08_Actuator_Rail.kicad_sch"
-      (at 150 179.27 0)
+      (at 153 155.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -224,8 +224,8 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "9")))))
-  (text "Power control and full MCU GPIO allocation are connected; sheet 09 exposes reserved interfaces.\nSPI2 = five shared devices; SPI3 = wheel ADC only; wheel 3-PWM + separate button MCPWM group.\nOPEN: draw wheel/ADC2/encoder, optical, IMU, RGB; implement hardware wheel disable and regeneration brake.\nOPEN: firmware timing/USB-state budgets; measured electrical, mechanical and thermal validation; PCB layout."
-    (at 20 220 0)
+  (text "IMPLEMENTED: USB power, MCU allocation, buttons, wheel driver/ADC2/encoder, SPI isolation and autonomous brake.\nOPEN: exact PAW3950 reference, IMU, RGB; measured current timing, regeneration, USB behavior and mechanical fit.\nPCB: original placement retained; new wheel components staged off-board pending mechanical CAD. No routing."
+    (at 20 244 0)
     (effects
       (font
         (size 1.25 1.25))
@@ -243,7 +243,7 @@
       (page "1")))
   (embedded_fonts no)
   (sheet
-    (at 280 156)
+    (at 281 132)
     (size 105 22)
     (stroke
       (width 0.254)
@@ -252,13 +252,13 @@
       (color 0 0 0 0))
     (uuid "56122003-a52d-598a-a125-cd0e2f54c82a")
     (property "Sheetname" "09_Interface_Reservations"
-      (at 280 154.73 0)
+      (at 281 130.73 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "09_Interface_Reservations.kicad_sch"
-      (at 280 179.27 0)
+      (at 281 155.27 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -266,4 +266,104 @@
     (instances
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
-          (page "10"))))))
+          (page "10")))))
+  (sheet
+    (at 25 174)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "9e1c6e51-1ad1-5e3a-bb31-1ec20ff3fedf")
+    (property "Sheetname" "10_Wheel_Driver"
+      (at 25 172.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "10_Wheel_Driver.kicad_sch"
+      (at 25 197.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "11")))))
+  (sheet
+    (at 153 174)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6314463c-8d57-5fea-a888-921d0788386a")
+    (property "Sheetname" "11_Wheel_SPI"
+      (at 153 172.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "11_Wheel_SPI.kicad_sch"
+      (at 153 197.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "12")))))
+  (sheet
+    (at 281 174)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6bb26027-e36c-5149-93b0-61be9c808734")
+    (property "Sheetname" "12_Wheel_Feedback"
+      (at 281 172.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "12_Wheel_Feedback.kicad_sch"
+      (at 281 197.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "13")))))
+  (sheet
+    (at 25 216)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "461c1184-3fdc-571c-978e-4cebba646124")
+    (property "Sheetname" "13_Regeneration_Brake"
+      (at 25 214.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "13_Regeneration_Brake.kicad_sch"
+      (at 25 239.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "14"))))))

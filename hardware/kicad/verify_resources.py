@@ -134,7 +134,7 @@ def main():
               'wheel_wire_time_lower_bound_us': round(frames * frame_us, 3),
               'wheel_window_budget_us': required_window,
               'timing_acceptance': 'OPEN: SPI software overhead, ISR jitter, CSA/ADC settling and valid low-side windows must be measured',
-              'consumer_circuits': 'Wheel/ADC2/MA735/optical/IMU/RGB remain interface reservations',
+              'consumer_circuits': 'Wheel/ADC2/MA735 and brake connected; optical/IMU/RGB remain interface reservations',
               'errors': errors}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')

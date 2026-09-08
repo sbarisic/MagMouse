@@ -4,7 +4,7 @@ An open-source wired mouse exploring contactless magnetic buttons, programmable
 electromagnetic click feedback, and a motorized haptic scroll wheel.
 
 **Status: KiCad schematic and initial motherboard placement.** Open the
-[ten-sheet KiCad draft](hardware/kicad/README.md) for the editable circuit and
+[fourteen-sheet KiCad draft](hardware/kicad/README.md) for the editable circuit and
 JLCPCB/LCSC sourcing fields, or the [PCB placement](hardware/pcb/README.md).
 The board is unrouted; there are no fabrication-ready designs or runnable
 firmware yet. Contactless sensing removes

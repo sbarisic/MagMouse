@@ -208,7 +208,7 @@
         (size 1.3 1.3))
       (justify left top))
     (uuid "7406a9b6-26c1-5db1-be20-e4243c00b739"))
-  (text "MCU connections are allocated; test pads expose future interfaces for review/bring-up.\nThese pads do not implement the wheel driver, ADC2, encoder, optical sensor, IMU or RGB circuit."
+  (text "MCU connections and test pads retain the approved GPIO map.\nSheets 10-13 implement wheel drive, ADC2, encoder, SPI isolation and autonomous braking. Optical, IMU and RGB remain open."
     (at 20 31 0)
     (effects
       (font
@@ -3041,7 +3041,7 @@
         (size 1.0 1.0))
       (justify right))
     (uuid "dc40c04a-09be-5586-a0b8-0b9aece4429d"))
-  (text "Only the N8 module is covered. CS pull-ups are on the MCU side; future voltage-domain isolation remains required.\nWHEEL_RUN_REQ must be hardware-qualified by ACT_DRIVE_EN before DRVOFF/INL/PWM gates.\nGPIO46 stays LOW for download recovery. GPIO45 RGB interface must not pull the strap high during reset."
+  (text "Only the N8 module is covered. Wheel voltage-domain isolation and hardware-qualified RUN are on sheets 10-12.\nOptical/IMU/RGB circuits must still respect their voltage and power-off requirements.\nGPIO46 stays LOW for download recovery. GPIO45 RGB interface must not pull the strap high during reset."
     (at 20 261 0)
     (effects
       (font

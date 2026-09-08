@@ -1,8 +1,10 @@
 # Wheel control implementation contract
 
-This is the next block after the revision 0.4 GPIO allocation, not an implemented
-wheel circuit. Use DRV8316R, a second ADS7038, MA735 and the encoder-free GB1806,
-subject to exact package and motor review. See [signal reservations](interfaces.md).
+Revision 0.5 implements DRV8316R, a second ADS7038, MA735, GB1806 phase-wire
+pads, hardware shutdown and an autonomous brake in sheets 10–13. Firmware and
+motor validation remain open. See [the circuit review](../hardware/kicad/WHEEL_REVIEW.md)
+for exact parts, power domains, calculations and bench limits, and [interfaces](interfaces.md)
+for the unchanged GPIO map.
 
 ## Driver configuration and shutdown
 
@@ -24,16 +26,19 @@ latched fault mechanism. The unused buck still requires TI's specified external
 termination; do not simply ground or float its pins.
 
 These requirements follow [TI DRV8316 SLVSF16B, April 2022](https://www.ti.com/lit/ds/symlink/drv8316.pdf).
-The output-disable gates and driver are not yet drawn; sheet 09 only reserves
-the MCU interfaces and establishes the request's low reset default.
+U22 implements the AND gates; Q4/R82 assert DRVOFF while RUN is low. U21 nSLEEP
+follows ACT_DRIVE_EN. R81/C50 terminate the unused buck with 22 ohms/22 uF;
+set BUCK_DIS = 1 after wake. Begin driver SPI at 1 MHz and read back all required
+configuration before RUN. Reset must restore these settings before torque resumes.
 
 ## Current and angle feedback
 
-ADC2 CH0/1/2 are reserved for conditioned SOA/B/C. Review VREF, input range,
-filters and power-off injection together. Low-side current is only valid in
+ADC2 U23 CH0/1/2 receive SOA/B/C through 330 ohm/22 pF filters. Its analog and
+digital supplies share DRV_AVDD with VREF; U24–U26/U29 isolate SPI power domains.
+Low-side current is only valid in
 appropriate switching states. Confirm gain, offset and settling at the actual
 small wheel currents. CH3 stays optional until a bus-current sensor is chosen;
-CH4-7 remain spare. Do not put slower housekeeping conversions inside the
+CH3–7 are presently grounded through removable zero-ohm links. Do not put slower housekeeping conversions inside the
 time-critical three-phase acquisition burst.
 
 Use MA735 SPI absolute angle; no ABZ/index/PWM connection is required in V1.
@@ -41,19 +46,19 @@ Bound angle age in the shared-bus scheduler. Check magnet alignment,
 interference, filtering and electrical-angle calibration on the actual motor.
 The dedicated ADC bus still needs [sampling-deadline validation](interfaces.md#wheel-acquisition-timing-gate).
 
-Bring up with WHEEL_RUN_REQ low: obtain valid power, wait for driver startup,
-configure/read back mode and gain, establish valid angle/current samples,
+Bring up with WHEEL_RUN_REQ low: obtain a stable ACT rail of at least 4.5 V,
+wait for driver startup, configure/read back mode and gain, establish valid angle/current samples,
 initialize bounded PWM, then request run. Reset, timeout and lost permit must
 remove drive without another SPI transaction.
 
 ## Regenerative-energy path
 
-The existing TVS/capacitors support pulse characterization. Determine a local,
-hysteretic comparator-controlled brake MOSFET/resistor from measured wheel
-energy. It must protect a charged ACT rail after USB removal, MCU reset and
-heartbeat loss, without depending on an upstream supply that has disappeared.
-Keep the TVS as secondary transient protection. No MCU GPIO is reserved for
-brake activation; the comparator must act autonomously.
+U30 TLV1811, U31 LM4040 and Q5 switch four parallel 47 ohm / 2 W resistors.
+The entire brake operates from ACT_5V with nominal 5.982 V turn-on and 5.725 V
+release. It is independent of MCU reset, heartbeat and upstream power. D2 remains
+secondary transient protection. The resistor/threshold selections are provisional;
+validate them against measured wheel energy and the documented startup/thermal
+envelope before accepting regenerative operation. No MCU GPIO is consumed.
 
 Measure back-driven speed, winding resistance/inductance, phase current and
 returned power. Resistor dissipation is approximately Vrail squared / R while
@@ -70,10 +75,9 @@ Firmware must also bound commanded torque and temperature.
 
 ## Remaining schematic order
 
-1. DRV8316, ADC2, MA735, motor interface, hardware disable and brake circuit.
-2. Exact PAW3950 reference, optics and initialization; resolve OPT_CTRL behavior.
-3. ICM-42688-P, INT1 and internal clock.
-4. Addressable RGB with suitable supply/data interface; preserve GPIO45's low
+1. Exact PAW3950 reference, optics and initialization; resolve OPT_CTRL behavior.
+2. ICM-42688-P, INT1 and internal clock.
+3. Addressable RGB with suitable supply/data interface; preserve GPIO45's low
    boot strap and the USB suspend budget.
 
 The allocation stabilizes MCU connections. Missing reference material and

@@ -43,6 +43,12 @@ def main():
             f'{side}.Cu,{side}.Fab,{side}.Silkscreen,Edge.Cuts,Dwgs.User',
             '--output', str(out / f'placement-{side}.svg'), str(board),
         ])
+    # Board-area crops omit the intentionally off-board wheel staging area.
+    commands.append([
+        'pcb', 'export', 'svg', '--mode-single', '--page-size-mode', '1',
+        '--exclude-drawing-sheet', '--layers', 'F.Cu,F.Fab,F.Silkscreen,Edge.Cuts,Dwgs.User',
+        '--output', str(out / 'placement-with-staging.svg'), str(board),
+    ])
     for command in commands:
         subprocess.run([cli, *command], check=True)
 
@@ -61,6 +67,7 @@ def main():
         'ignored_checks': report.get('ignored_checks', []),
         'placement_checks_pass': not violations and not parity,
         'routing_complete': not unconnected,
+        'placement_scope': 'Original motherboard placement plus off-board wheel staging; enclosure fit is unverified',
     }
     (out / 'review-status.json').write_text(
         json.dumps(summary, indent=2) + '\n', encoding='utf-8')

@@ -1663,4 +1663,974 @@
         (number "4"
           (effects
             (font
+              (size 1.0 1.0)))))))
+  (symbol "DRV8316RRGFR"
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 66.5 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "DRV8316RRGFR"
+      (at 0 69.5 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "MagMouse:Texas_RGF0040E"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8316.pdf"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (symbol "DRV8316RRGFR_0_1"
+      (rectangle
+        (start -20.32 63.5)
+        (end 20.32 -63.5)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "DRV8316RRGFR_1_1"
+      (pin power_in line
+        (at -22.86 58.42 0)
+        (length 2.54)
+        (name "VM_1"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "9"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at -22.86 53.34 0)
+        (length 2.54)
+        (name "VM_2"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "10"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at -22.86 48.260000000000005 0)
+        (length 2.54)
+        (name "VM_3"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "11"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 43.18 0)
+        (length 2.54)
+        (name "nSLEEP"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "23"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 38.1 0)
+        (length 2.54)
+        (name "DRVOFF"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "21"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 33.02 0)
+        (length 2.54)
+        (name "INHA"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "27"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 27.94 0)
+        (length 2.54)
+        (name "INHB"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "29"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 22.86 0)
+        (length 2.54)
+        (name "INHC"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "31"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 17.78 0)
+        (length 2.54)
+        (name "INLA"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "28"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 12.700000000000003 0)
+        (length 2.54)
+        (name "INLB"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "30"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 7.6200000000000045 0)
+        (length 2.54)
+        (name "INLC"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "32"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 2.539999999999999 0)
+        (length 2.54)
+        (name "nSCS"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "36"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -2.539999999999999 0)
+        (length 2.54)
+        (name "SCLK"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "35"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -7.6200000000000045 0)
+        (length 2.54)
+        (name "SDI"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "34"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at -22.86 -12.700000000000003 0)
+        (length 2.54)
+        (name "VREF"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "37"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin no_connect line
+        (at -22.86 -17.78 0)
+        (length 2.54)
+        (name "NC"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "1"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin no_connect line
+        (at -22.86 -22.86 0)
+        (length 2.54)
+        (name "NC"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "24"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 58.42 180)
+        (length 2.54)
+        (name "OUTA_1"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "13"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 53.34 180)
+        (length 2.54)
+        (name "OUTA_2"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "14"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 48.260000000000005 180)
+        (length 2.54)
+        (name "OUTB_1"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "16"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 43.18 180)
+        (length 2.54)
+        (name "OUTB_2"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "17"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 38.1 180)
+        (length 2.54)
+        (name "OUTC_1"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "19"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 33.02 180)
+        (length 2.54)
+        (name "OUTC_2"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "20"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 27.94 180)
+        (length 2.54)
+        (name "SOA"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "40"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 22.86 180)
+        (length 2.54)
+        (name "SOB"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "39"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 17.78 180)
+        (length 2.54)
+        (name "SOC"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "38"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_out line
+        (at 22.86 12.700000000000003 180)
+        (length 2.54)
+        (name "AVDD"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "25"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 7.6200000000000045 180)
+        (length 2.54)
+        (name "CP"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "8"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 2.539999999999999 180)
+        (length 2.54)
+        (name "CPH"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "7"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 -2.539999999999999 180)
+        (length 2.54)
+        (name "CPL"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "6"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 -7.6200000000000045 180)
+        (length 2.54)
+        (name "SW_BK"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "5"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at 22.86 -12.700000000000003 180)
+        (length 2.54)
+        (name "FB_BK"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "3"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin open_collector line
+        (at 22.86 -17.78 180)
+        (length 2.54)
+        (name "SDO"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "33"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin open_collector line
+        (at 22.86 -22.86 180)
+        (length 2.54)
+        (name "nFAULT"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "22"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -27.939999999999998 180)
+        (length 2.54)
+        (name "AGND_1"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "2"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -33.019999999999996 180)
+        (length 2.54)
+        (name "AGND_2"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "26"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -38.099999999999994 180)
+        (length 2.54)
+        (name "GND_BK"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "4"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -43.17999999999999 180)
+        (length 2.54)
+        (name "PGND_1"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "12"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -48.260000000000005 180)
+        (length 2.54)
+        (name "PGND_2"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "15"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -53.34 180)
+        (length 2.54)
+        (name "PGND_3"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "18"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin passive line
+        (at 22.86 -58.42 180)
+        (length 2.54)
+        (name "EP"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "41"
+          (effects
+            (font
+              (size 1.0 1.0)))))))
+  (symbol "SN74LVC125APWR"
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 25.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "SN74LVC125APWR"
+      (at 0 28.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (symbol "SN74LVC125APWR_0_1"
+      (rectangle
+        (start -20.32 22.86)
+        (end 20.32 -22.86)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "SN74LVC125APWR_1_1"
+      (pin input line
+        (at -22.86 17.78 0)
+        (length 2.54)
+        (name "1OE_N"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "1"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 12.700000000000001 0)
+        (length 2.54)
+        (name "1A"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "2"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 7.620000000000001 0)
+        (length 2.54)
+        (name "2OE_N"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "4"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 2.540000000000001 0)
+        (length 2.54)
+        (name "2A"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "5"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -2.539999999999999 0)
+        (length 2.54)
+        (name "3OE_N"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "10"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -7.619999999999997 0)
+        (length 2.54)
+        (name "3A"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "9"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -12.7 0)
+        (length 2.54)
+        (name "4OE_N"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "13"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -17.78 0)
+        (length 2.54)
+        (name "4A"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "12"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin tri_state line
+        (at 22.86 17.78 180)
+        (length 2.54)
+        (name "1Y"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "3"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin tri_state line
+        (at 22.86 12.700000000000001 180)
+        (length 2.54)
+        (name "2Y"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "6"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin tri_state line
+        (at 22.86 7.620000000000001 180)
+        (length 2.54)
+        (name "3Y"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "8"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin tri_state line
+        (at 22.86 2.540000000000001 180)
+        (length 2.54)
+        (name "4Y"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "11"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -2.539999999999999 180)
+        (length 2.54)
+        (name "VCC"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "14"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 22.86 -7.619999999999997 180)
+        (length 2.54)
+        (name "GND"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "7"
+          (effects
+            (font
+              (size 1.0 1.0)))))))
+  (symbol "MA735GGU"
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 23.32 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "MA735GGU"
+      (at 0 26.32 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "MagMouse:MPS_UTQFN14_2x2"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (symbol "MA735GGU_0_1"
+      (rectangle
+        (start -20.32 20.32)
+        (end 20.32 -20.32)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "MA735GGU_1_1"
+      (pin power_in line
+        (at -22.86 15.24 0)
+        (length 2.54)
+        (name "VDD"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "13"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 10.16 0)
+        (length 2.54)
+        (name "SCLK"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "1"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 5.08 0)
+        (length 2.54)
+        (name "MOSI"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "8"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 0.0 0)
+        (length 2.54)
+        (name "CS"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "7"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -5.08 0)
+        (length 2.54)
+        (name "SSCK"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "14"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -22.86 -10.159999999999998 0)
+        (length 2.54)
+        (name "TEST"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "2"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at -22.86 -15.24 0)
+        (length 2.54)
+        (name "GND"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "4"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin tri_state line
+        (at 22.86 15.24 180)
+        (length 2.54)
+        (name "MISO"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "5"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 10.16 180)
+        (length 2.54)
+        (name "PWM"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "3"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 5.08 180)
+        (length 2.54)
+        (name "B"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "6"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 0.0 180)
+        (length 2.54)
+        (name "Z"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "9"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 -5.08 180)
+        (length 2.54)
+        (name "A"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "10"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 -10.159999999999998 180)
+        (length 2.54)
+        (name "SSD"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "11"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 22.86 -15.24 180)
+        (length 2.54)
+        (name "MGH"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "12"
+          (effects
+            (font
+              (size 1.0 1.0)))))))
+  (symbol "TLV1811DBVR"
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 13.16 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TLV1811DBVR"
+      (at 0 16.16 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv1811.pdf"
+      (at 0 0 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (symbol "TLV1811DBVR_0_1"
+      (rectangle
+        (start -10.16 10.16)
+        (end 10.16 -10.16)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TLV1811DBVR_1_1"
+      (pin input line
+        (at -12.7 5.08 0)
+        (length 2.54)
+        (name "IN+"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "3"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin input line
+        (at -12.7 -5.08 0)
+        (length 2.54)
+        (name "IN-"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "4"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin output line
+        (at 12.7 0 180)
+        (length 2.54)
+        (name "OUT"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "1"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 0 12.7 270)
+        (length 2.54)
+        (name "V+"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "5"
+          (effects
+            (font
+              (size 1.0 1.0)))))
+      (pin power_in line
+        (at 0 -12.7 90)
+        (length 2.54)
+        (name "V-"
+          (effects
+            (font
+              (size 1.0 1.0))))
+        (number "2"
+          (effects
+            (font
               (size 1.0 1.0))))))))

@@ -1,17 +1,24 @@
 # Draft sourcing and symbol review
 
-Revision 0.4, checked 2026-09-08. All 150 components in the present schematic
+Revision 0.5, checked 2026-09-09. All 234 components in the present schematic
 have manufacturer part numbers, catalog identifiers and assigned footprints.
 New USB-C power parts, changed regulator/inductor, package evidence and assembly
 constraints are documented in [POWER_REVIEW.md](POWER_REVIEW.md). The historical
 revision 0.2 selections below identify retained parts and superseded decisions.
 Recheck assembly stock, prices and service eligibility before ordering; none is
-reserved. This does not cover absent optical/wheel/IMU/RGB subsystems.
+reserved. This does not cover absent optical/IMU/RGB subsystems.
+Wheel part identities, pinouts, custom packages and brake tolerances are in
+[WHEEL_REVIEW.md](WHEEL_REVIEW.md).
 
 Revision 0.4 adds R72-R80 using the existing 10 kOhm C25804 selection and
 TP16-TP33 as copper test pads, excluded from the assembly BOM. The second ADC
-and addressable RGB are allocated interfaces; no new IC or LED is represented
-as sourced or implemented by this change.
+and addressable RGB were allocated interfaces in that revision. Revision 0.5
+implements ADC2 and the wheel subsystem; RGB remains pending.
+
+Revision 0.5 also corrects R5/R6/R58 sourcing: the intended 33 ohm value now
+uses **0603WAF330JT5E / C23140**. C23138 is a **330 ohm** resistor and is now
+used only for the new 330 ohm current filters R102–R104. Intended USB and
+current-limit resistance values are unchanged.
 
 | References | Manufacturer part number | Catalog |
 | --- | --- | --- |
@@ -21,7 +28,7 @@ as sourced or implemented by this change.
 | J1 | Korean Hroparts TYPE-C-31-M-12 | [LCSC C165948](https://www.lcsc.com/product-detail/C165948.html) |
 | 10 kOhm resistors | UNI-ROYAL 0603WAF1002T5E | [LCSC C25804](https://www.lcsc.com/product-detail/C25804.html) |
 | 3.3 kOhm resistors | UNI-ROYAL 0603WAF3301T5E | [LCSC C22978](https://www.lcsc.com/product-detail/C22978.html) |
-| R5, R6, 33 Ohm | UNI-ROYAL 0603WAF3300T5E | [LCSC C23138](https://www.lcsc.com/product-detail/C23138.html) |
+| R5, R6, R58, 33 Ohm | UNI-ROYAL 0603WAF330JT5E | [LCSC C23140](https://www.lcsc.com/product-detail/C23140.html) |
 | 100 nF capacitors | YAGEO CC0603KRX7R9BB104 | [LCSC C14663](https://www.lcsc.com/product-detail/C14663.html) |
 | 10 uF / 25 V capacitors | Samsung CL21A106KAYNNNE | [LCSC C15850](https://www.lcsc.com/product-detail/C15850.html) |
 
@@ -119,7 +126,8 @@ The standalone `MagMouse.kicad_sym` library is distributed under
 CC-BY-SA-4.0 with the KiCad libraries exception. Attribution: KiCad library
 contributors for the DRV8231ADSG and D_Schottky sources; MagMouse contributors
 for corrections, new Hall/ADC symbols and the power symbols listed in
-[POWER_REVIEW.md](POWER_REVIEW.md). See [the included upstream notice](KICAD-LIBRARY-LICENSE.md)
+[POWER_REVIEW.md](POWER_REVIEW.md), and the wheel symbols in
+[WHEEL_REVIEW.md](WHEEL_REVIEW.md). See [the included upstream notice](KICAD-LIBRARY-LICENSE.md)
 and [the license text](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 The electronic design remains under the repository's CERN-OHL-S-2.0 license.
 
