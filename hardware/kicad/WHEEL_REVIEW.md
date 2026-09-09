@@ -206,7 +206,7 @@ The wheel checker verifies 266 pin connections, 32 shutdown combinations,
 board netlists. Five tests include a passing baseline and faults in shutdown,
 brake/ADC supply domains, the 33 Ω catalog number and brake divider.
 Both projects pass native ERC, physical DRC and parity without new exclusions.
-After the [input-power routing pass](../pcb/INPUT_POWER_LAYOUT.md), the motherboard has 698
+After the [U13 local routing pass](../pcb/ACTUATOR_POWER_LAYOUT.md), the motherboard has 677
 native unrouted connections (the DRC JSON lists 499 entries). The encoder is fully routed with zero unconnected items. Eight encoder
 tests check the baseline and seven connector, harness and split faults.
 

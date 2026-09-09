@@ -12,11 +12,12 @@ chamfers. Its bounds are X = 95..155 mm and Y = 100..195 mm in KiCad;
 the USB/front edge is Y = 100 mm. These are layout assumptions, not dimensions
 from a measured enclosure. No mounting holes or optical aperture have been cut.
 
-All **316 motherboard footprints** are inside the outline: 272 BOM components,
+All **317 motherboard footprints** are inside the outline: 273 BOM components,
 43 test pads and J5 motor wire pads. The [60 mm placement pass](PLACEMENT_60MM.md)
 was followed by the [separate encoder project](../encoder/README.md): U27/C62
 moved to that board and J6 was added here. The input-power pass added local
-output bypass C88. No off-board staging parts remain.
+output bypass C88; the U13 pass added input bypass C89 and moved C40 beside
+U13 OUT. No off-board staging parts remain.
 All BOM components on the motherboard remain on the front; 40 test pads are on
 the back and three on the front. Pads do not require backside component assembly.
 
@@ -65,6 +66,7 @@ The [buck routing pass](BUCK_LAYOUT.md) is now followed by the
 [input-power and source-selection subset](INPUT_POWER_LAYOUT.md), including
 USB-to-U12 and U12-to-buck power copper and a filled In1 ground plane. The
 [Type-C pass](TYPEC_LAYOUT.md) connects detector inputs and source-logic supplies.
+The [U13 pass](ACTUATOR_POWER_LAYOUT.md) adds its local feed, bypass and protection copper.
 [JLC041611-2116](STACKUP.md) is selected with 1 oz outer/inner copper;
 board-wide routing and thermal review remain open.
 
@@ -96,10 +98,10 @@ The default exit status checks placement and schematic parity; add
 establishes manufacturing or electrical acceptance.
 
 Current check: **0 physical DRC violations and 0 schematic parity issues**,
-without DRC exclusions. Native connectivity counts **698 unrouted connections**;
+without DRC exclusions. Native connectivity counts **677 unrouted connections**;
 the DRC JSON returns 499 unconnected entries, so its list length is not a full
-connection count. The buck and input-power/source-selection subsets are routed.
-See [input layout and native copper checks](INPUT_POWER_LAYOUT.md) for the completed scope.
+connection count. The buck, input-power/source-selection and U13 local subsets are routed.
+See [actuator layout and native copper checks](ACTUATOR_POWER_LAYOUT.md) for the latest scope.
 This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 
@@ -110,7 +112,7 @@ separation, heat dissipation, signal integrity or enclosure fit.
    Optical, [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) circuits are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
    [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
-3. Route U13 and the remaining power-control branches.
+3. Route U13 enable/fault wiring and the remaining power-control branches.
    Tighten bridge current loops, decoupling and analog return paths; provide
    exposed-pad thermal vias and space for the brake resistor's heat.
 4. Route USB on the selected stackup, actuator power, then sensing/control.

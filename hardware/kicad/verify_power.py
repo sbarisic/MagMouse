@@ -57,6 +57,7 @@ def main():
     device('U11', {1:'USB_CC1',2:'USB_CC2',3:'GND',4:'CC_VBUS_DET',7:'CC_OUT1',8:'CC_OUT2',10:'GND',11:'GND',12:'+3V3'})
     device('U12', {1:'USB_UVLO',2:'USB_OVLO',4:'USB_FAULT_N',5:'VBUS_USB',6:'PWR_5V',7:'USB_DVDT',8:'GND',9:'USB_ILM'})
     device('C88', {1:'PWR_5V',2:'GND'})
+    device('C89', {1:'PWR_5V',2:'GND'})
     device('U13', {1:'ACT_UVLO',2:'ACT_OVLO',4:'ACT_FAULT_N',5:'PWR_5V',6:'ACT_5V',7:'ACT_DVDT',8:'GND',9:'ACT_ILM'})
     device('U2', {1:'GND',2:'PWR_5V',3:'PWR_5V',4:'GND',5:'GND',6:'+3V3',7:'BUCK_SW',8:'LOGIC_PG',9:'GND'})
     device('L1', {1:'BUCK_SW',2:'+3V3'})

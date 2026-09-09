@@ -51,8 +51,9 @@ actuators. The longer rear logic feed needs review alongside the final board
 distribution and bypass network.
 
 The layout retains the 60 x 95 mm outline, selected stackup, USB/optical/ESP32
-datums, mechanical keepouts and separate encoder board. There are still
-316 motherboard footprints and 272 BOM parts.
+datums, mechanical keepouts and separate encoder board. At completion of this
+pass there were 316 motherboard footprints and 272 BOM parts; see the
+[subsequent U13 pass](ACTUATOR_POWER_LAYOUT.md) for current counts.
 
 ## Verification and next work
 
@@ -68,8 +69,9 @@ Use the commands in [the input review](INPUT_POWER_LAYOUT.md). Reports under
 copper connectivity and CAD clearance only; they do not prove powered operation,
 ESD performance or USB compliance.
 
-Continue with the actuator eFuse U13 and its local power/current-limit loops,
-then bridge/BLDC/brake copper and USB data routing. Input-current telemetry,
+The [U13 local power/protection pass](ACTUATOR_POWER_LAYOUT.md) is now complete.
+Continue with remote enable/fault wiring, actuator distribution, bridge/BLDC/brake
+copper and USB data routing. Input-current telemetry,
 fault/reset/MCU interfaces, wider supply distribution, ILM parasitic review,
 mechanical qualification and bench acceptance remain open. No fabrication or
 assembly order files have been released.

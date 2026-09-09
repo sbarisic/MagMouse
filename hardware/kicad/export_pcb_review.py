@@ -73,7 +73,7 @@ def main():
         'ignored_checks': report.get('ignored_checks', []),
         'placement_checks_pass': not violations and not parity,
         'routing_complete': not unconnected,
-        'placement_scope': ('60 x 95 mm motherboard; buck and input-power subsets routed, full-board routing and mechanical fit incomplete'
+        'placement_scope': ('60 x 95 mm motherboard; buck, input-power and U13 local subsets routed, full-board routing and mechanical fit incomplete'
                             if motherboard else 'Standalone encoder board; mechanical fit and cable operation unverified'),
     }
     (out / 'review-status.json').write_text(

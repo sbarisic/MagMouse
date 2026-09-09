@@ -3620,4 +3620,131 @@
       (font
         (size 1.0 1.0))
       (justify left top))
-    (uuid "7ac0e187-ae16-520d-aeae-b49e223758b5")))
+    (uuid "7ac0e187-ae16-520d-aeae-b49e223758b5"))
+  (symbol
+    (lib_id "Device:C")
+    (at 312.42 165.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "37525d73-af8b-5e60-a7c0-4f5788dc8710")
+    (property "Reference" "C89"
+      (at 316.42 163.6 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/50V"
+      (at 316.42 166.1 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL10A105KB8NNNC"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15849"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15849"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses existing 1uF input capacitor selection; DC bias and order stock require review"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15849.html"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C89")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 312.42 161.29)
+      (xy 312.42 156.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0b010ee9-a312-5cf2-8a40-9bd85d3ce729"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 312.42 156.21 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d2ca1814-7b1e-5d25-9d23-d50d0ce7fe42"))
+  (wire
+    (pts
+      (xy 312.42 168.91)
+      (xy 312.42 173.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f3c76700-406b-58ba-a285-cb901ed110e8"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 312.42 173.99 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "271d0821-a2ce-5e2c-9db7-0c6b8a221063"))
+  (text "C89: local U13 input bypass.\nPlace existing C40 at U13 OUT; C37-C39 remain rail storage."
+    (at 290 182 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left top))
+    (uuid "36dfc71e-1868-5ad1-81c7-8e9eacb5a73e")))

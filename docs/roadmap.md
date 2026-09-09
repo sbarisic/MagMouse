@@ -93,7 +93,10 @@ that the actuators can operate within the intended power and thermal envelope.
   JLC041611-2116, 1 oz inner/outer, calculated 90-ohm pair dimensions.
 - [ ] Route USB with its ESD return and continuous reference plane, then obtain
   manufacturer acceptance of the exact stackup and impedance requirements.
-- [ ] Refine and route U13, button/BLDC current loops, sensing and brake power.
+- [x] Route U13's local feed, bypass, voltage dividers, ramp, current limit and
+  D3 anode; see [actuator power review](../hardware/pcb/ACTUATOR_POWER_LAYOUT.md).
+- [ ] Route U13's remote enable/fault wiring, actuator distribution/storage,
+  button/BLDC current loops, sensing and brake power.
 - [ ] Complete signal routing, ground stitching and return-path review.
 - [ ] Refine complete-board placement for routing, thermal paths and analog/SPI
   return paths; verify physical assemblies and allocate mounting holes.

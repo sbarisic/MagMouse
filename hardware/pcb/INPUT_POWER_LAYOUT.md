@@ -45,7 +45,8 @@ The placement changes from the buck-only draft are:
 J6 now mates toward the front edge, minus Y. Check the plug, strain relief,
 bend radius and shell access there. The harness pin numbering is unchanged.
 The USB, optical and ESP32 datums, outline and encoder board are preserved.
-There are now **316 motherboard footprints and 272 BOM parts**.
+At completion of this pass there were **316 motherboard footprints and 272 BOM parts**.
+See [the U13 pass](ACTUATOR_POWER_LAYOUT.md) for current counts.
 
 ## Electrical review still required
 
@@ -91,8 +92,9 @@ The three existing buck tests still
 pass. Reports under `build/pcb-review` include the exact board hash. Run DRC
 alongside the connectivity check; the latter is not a short-circuit detector.
 
-The [Type-C input/supply pass](TYPEC_LAYOUT.md) is complete. Continue with U13,
-bridge/BLDC current loops and the brake. Wider supply distribution and the
+The [Type-C input/supply pass](TYPEC_LAYOUT.md) and subsequent
+[U13 local pass](ACTUATOR_POWER_LAYOUT.md) are complete. Continue with U13
+enable/fault wiring, actuator distribution, bridge/BLDC current loops and the brake. Wider supply distribution and the
 remaining fault/reset/telemetry branches remain open. The selected
 [stackup and USB geometry](STACKUP.md) are ready for the USB routing pass.
 Full-board signal routing, mechanical fit and fabrication preparation remain
