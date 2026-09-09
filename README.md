@@ -4,7 +4,7 @@ An open-source wired mouse exploring contactless magnetic buttons, programmable
 electromagnetic click feedback, and a motorized haptic scroll wheel.
 
 **Status: KiCad schematic and initial motherboard placement.** Open the
-[fourteen-sheet KiCad draft](hardware/kicad/README.md) for the editable circuit and
+[eighteen-sheet KiCad draft](hardware/kicad/README.md) for the editable circuit and
 JLCPCB/LCSC sourcing fields, or the [PCB placement](hardware/pcb/README.md).
 The board is unrouted; there are no fabrication-ready designs or runnable
 firmware yet. Contactless sensing removes
@@ -13,7 +13,7 @@ electrical switch contacts; it does not eliminate mechanical wear or other failu
 ## V1 concept
 
 - ESP32-S3 with native USB Full-Speed HID; target report interval: 1 ms.
-- PAW3950 optical sensor for cursor movement; ICM-42688-P for supplementary motion.
+- PMW3360DM-T2QU + LM19-LSI optical sensor for cursor movement; ICM-42688-P for supplementary motion.
 - Three elastic button paddles provide passive return. Each uses a TMAG5253
   position sensor with its own magnet, plus a custom moving-magnet actuator with
   a stationary wound coil, ADS7038 feedback, and a DRV8231A bidirectional driver.

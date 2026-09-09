@@ -75,7 +75,7 @@ Firmware must also bound commanded torque and temperature.
 
 ## Remaining schematic order
 
-1. Exact PAW3950 reference, optics and initialization; resolve OPT_CTRL behavior.
+1. Qualify PMW3360 optics and initialization; schedule its >=87us burst between encoder slots. See [optical design](../hardware/kicad/OPTICAL_DESIGN.md).
 2. ICM-42688-P, INT1 and internal clock.
 3. Addressable RGB with suitable supply/data interface; preserve GPIO45's low
    boot strap and the USB suspend budget.

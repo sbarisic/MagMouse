@@ -1,14 +1,17 @@
 # Optical sourcing and reference review
 
-Checked 2026-09-09. **PAW3950 remains the selected target, but its circuit and
-optical footprint are not frozen.** No sensor substitution has been made.
+Checked 2026-09-09. **Revision 0.7 implements PMW3360DM-T2QU with LM19-LSI.**
+See [the selection](OPTICAL_SELECTION.md) and [implemented circuit](OPTICAL_DESIGN.md).
+The initial PAW3950 sourcing findings below are retained as historical research.
+Samples, SROM rights, assembly acceptance and physical fit remain open.
 
 ## What can be sourced
 
 | Option | Evidence found | Remaining obstacle |
 | --- | --- | --- |
 | PAW3950DM-T5QU | [JLC C9900186384](https://jlcpcb.com/partdetail/JLCPCBAssembly-PAW3950DMT5QU/C9900186384), DIP16, wave soldering | Live page shows zero stock, unavailable for purchase, and offers consignment. No verified bare-sensor/lens supplier or exact manufacturer reference obtained. |
-| PAW3395DM-T6QU | [JLC C9900026834](https://jlcpcb.com/partdetail/JIALICHUANGSMT-PAW3395DMT6QU/C9900026834), PDIP-16, wave soldering; [LCSC C41346211](https://www.lcsc.com/product-detail/C41346211.html); public PixArt general datasheet | LCSC shows out of stock. JLC inventory was not established. Sensor procurement, initialization documentation and lens drawing are still needed. |
+| PAW3395DM-T6QU | [JLC C9900026834](https://jlcpcb.com/partdetail/JIALICHUANGSMT-PAW3395DMT6QU/C9900026834), PDIP-16, wave soldering; [LCSC C41346211](https://www.lcsc.com/product-detail/C41346211.html); public PixArt general datasheet | Initial LCSC check showed out of stock. Subsequent research found an EFOG kit; see the selection review for price, lens identity and integration limits. |
+| PMW3360DM-T2QU + LM19-LSI | [Yushakobo exact set](https://shop.yushakobo.jp/en/products/11274); public reference circuit and lens drawings | Best documented pair found. Delivery, samples, SROM provenance and assembly acceptance remain open; see the selection review. |
 | PMW3389DM-T3QU | [JLC C9900026115](https://jlcpcb.com/partdetail/JLCPCBAssembly-PMW3389DMT3QU/C9900026115), PDIP-16, wave soldering | Listing alone does not establish purchasable stock or lens inclusion. This would require a separate circuit, firmware and optics review. |
 | PMW3360 breakout for bench work | [Joe's Sensors and Sundry](https://lectronz.com/products/pmw3360-motion-sensor) lists an assembled, tested board with lens at USD31.50 | Currently out of stock. This is an external development board, not a JLC-assembled motherboard part. |
 
@@ -17,8 +20,9 @@ notice. **Do not use this as the sensor material price.** A catalog entry under
 “JLCPCB Assembly” is not evidence that JLC can sell us the sensor. No stock has
 been reserved and no vendor has been contacted.
 
-PAW3395 is the first alternative to investigate because a public manufacturer
-datasheet exists, not because stock or full firmware support has been secured.
+PAW3395 was the first alternative investigated because a public manufacturer
+datasheet exists. The subsequent review ranks PMW3360/LM19-LSI first for V1
+because the exact pair and detailed mechanical reference were found together.
 The [PixArt general datasheet hosted by LCSC](https://datasheet.lcsc.com/lcsc/2504101957_PixArt-PAW3395DM-T6QU_C41346211.pdf)
 names LM19-LSI and LOAE-LSI1 as separate optical parts. Neither the JLC nor LCSC
 sensor listing establishes that a lens is included.
@@ -52,8 +56,9 @@ datasheet cannot fill those gaps for a different sensor.
 
 ## Next optical deliverable
 
-Obtain a supplier-confirmed sensor/lens pair and the following documents before
-integrating the optical circuit into the motherboard:
+For the recommended PMW3360 route, follow the implementation checklist in
+[OPTICAL_SELECTION.md](OPTICAL_SELECTION.md). If retaining PAW3950, obtain a
+supplier-confirmed sensor/lens pair and the following documents before integration:
 
 - Exact PAW3950DM-T5QU pinout, recommended supply circuit, voltage tolerances,
   power/reset sequencing and SPI electrical/timing limits.
@@ -64,8 +69,9 @@ integrating the optical circuit into the motherboard:
 - Sample quantity, genuine-part provenance, packaging, lead time, price and
   acceptance by the assembly house; quote the lens separately.
 
-The current OPT_CTRL, CS_PAW, SPI2 and PAW_MOTION_N allocation remains reserved.
-No optical aperture, assumed working height or enlarged board outline was added.
-Continue IMU/RGB and mechanical parameter collection while this evidence is open.
+Revision 0.7 connects OPT_CTRL, CS_PAW, SPI2 and PAW_MOTION_N to PMW3360.
+Its footprint is staged off-board; reference optical datums and a Dwgs.User
+aperture guide are documented. No actual board cutout or enlarged outline was added.
+Continue sample qualification and mechanical parameter collection.
 Changing the wheel control update rate alone does not widen a fixed PWM
 low-side sampling window; the wheel timing acceptance work remains unchanged.

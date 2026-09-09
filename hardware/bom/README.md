@@ -6,16 +6,16 @@ Quantities are per mouse; alternatives are not additive. Confirm exact orderable
 parts, packages, footprints, ratings and availability before procurement.
 
 The [KiCad starter BOM](../kicad/README.md) is the source of truth for circuits
-already drawn: revision 0.5 has 234 component instances with complete MPN,
+already drawn: revision 0.7 has 272 component instances with complete MPN,
 catalog ID and footprint fields. The broader inventory below also includes
 subsystems that have not been implemented. See [sourcing evidence](../kicad/SOURCING.md).
 
 | Qty | Candidate | Purpose / unresolved detail |
 | --- | --- | --- |
 | 1 | ESP32-S3-MINI-1-N8 | GPIO/resource allocation recorded; firmware timing validation pending |
-| 1 | PAW3950DM-T5QU | Optical X/Y tracking; exact reference implementation required |
-| 1 | LOAE-LSI1 | Optical lens; confirm mechanical stack |
-| 1 | TLV74318 | Proposed local optical 1.8 V LDO |
+| 1 | PMW3360DM-T2QU | Optical X/Y tracking; U35, sample/SROM and assembly acceptance pending |
+| 1 | LM19-LSI | Selected optical lens; reference stack documented, sample fit pending |
+| 1 | TLV75519PDBVR | Local optical 1.9V LDO, U36 |
 | 1 | ICM-42688-P | Supplementary accelerometer/gyro |
 | 3 | TMAG5253BA2 | Left, middle and right analog Hall sensing |
 | 3 | Axial NdFeB sensing magnet, TBD | Separate button position magnets; dimensions/grade set by Hall gap/range |
@@ -30,11 +30,11 @@ subsystems that have not been implemented. See [sourcing evidence](../kicad/SOUR
 | 1 | Diametric magnet, TBD | Dedicated coaxial encoder magnet |
 | 1 | SteadyWin/TSL GB1806 (PM1806), no encoder | Scroll motor; verify exact winding and variant |
 | 1 | DRV8316RRGFR | Drawn as U21, C5218861; gated 3-PWM with analog current outputs |
-| 4 | SN74LVC125APWR | Wheel SPI power-domain isolation, U24–U26/U29 |
+| 5 | SN74LVC125APWR | Wheel SPI isolation U24–U26/U29 and optical SPI/reset U37 |
 | 1 | TPS22919DCKR | Switched encoder supply, U28 |
 | 1 set | TLV1811DBVR, LM4040AIM3-2.5/NOPB, AO3400A and four 47 ohm / 2 W resistors | Autonomous prototype brake; measured energy/thermal limits remain open |
-| 1 | Single-data-pin addressable RGB LED, MPN TBD | Selected by user; RMT data on GPIO45 |
-| TBD | RGB supply/data interface | Select exact LED, level shifting/isolation and suspend behavior |
+| 1 | SK6805-EC15 | Single-data-pin RGB, D5; RMT data on GPIO45 |
+| 1 set | TPS7A2450DBVR + SN74LV1T34DBVR | RGB supply/data interface, U33/U34 |
 | 1 | TPS62162DSGR | Selected fixed 3.3 V buck; C40256 |
 | 1 | TYPE-C-31-M-12 | Data and VBUS; C165948 |
 | 0 | External CC Rd resistors | TUSB320 integrates Rd; do not populate extra parallel terminations |
@@ -47,7 +47,7 @@ subsystems that have not been implemented. See [sourcing evidence](../kicad/SOUR
 | TBD | Decoupling and bulk capacitors | Device-specific, logic and driver transients |
 | TBD | Pull-ups/pull-downs | Boot, control and fault states |
 | 1 set | SWPA4020S3R3MT and local output capacitors | 3.3 uH filter and 30 uF nominal capacitance; see KiCad BOM |
-| TBD | Optical passives | Exact PAW3950 reference circuit |
+| 1 set | Optical supply/isolation and passives | TPS22918 U38, SN74LVC1G125 U39 and sheet 16/17 passives; see optical design |
 | TBD | Current-setting/scaling/filter components | DRV8231A IPROPI/VREF and wheel feedback |
 | 1 set | TPS259470LRPWR x2, TVS clamps, TLV9001 and passives | Input/actuator protection and telemetry; see power review |
 | 3 | B2B-PH-SM4-TBT(LF)(SN) | Two-pin SMT coil headers; C265003; harnesses separate |

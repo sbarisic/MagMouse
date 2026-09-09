@@ -92,7 +92,7 @@ def main():
     check([d['name'] for d in buses.get('SPI3', {}).get('devices', [])] == ['ADS7038_2'],
           'Wheel ADC SPI3 must not share its bus')
     check({d['name'] for d in buses.get('SPI2', {}).get('devices', [])} ==
-          {'ADS7038_1', 'PAW3950', 'ICM42688P', 'MA735', 'DRV8316R'}, 'SPI2 device inventory mismatch')
+          {'ADS7038_1', 'PMW3360', 'ICM42688P', 'MA735', 'DRV8316R'}, 'SPI2 device inventory mismatch')
 
     wheel, buttons = spec['pwm']['wheel'], spec['pwm']['buttons']
     check(wheel['group'] == 0 and buttons['group'] == 1, 'Wheel and buttons require separate MCPWM groups')
@@ -134,7 +134,7 @@ def main():
               'wheel_wire_time_lower_bound_us': round(frames * frame_us, 3),
               'wheel_window_budget_us': required_window,
               'timing_acceptance': 'OPEN: SPI software overhead, ISR jitter, CSA/ADC settling and valid low-side windows must be measured',
-              'consumer_circuits': 'Wheel/ADC2/MA735, brake, IMU and RGB connected; optical remains reserved',
+              'consumer_circuits': 'Wheel/ADC2/MA735, brake, IMU, RGB and PMW3360 connected',
               'errors': errors}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')

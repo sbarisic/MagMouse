@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - MagMouse")
     (date "2026-09-09")
-    (rev "0.6 DRAFT")
+    (rev "0.7 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols)
@@ -17,7 +17,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "3f36e4f1-a069-5d5f-b81a-7a0e91da7ced"))
-  (text "DRAFT 0.6 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.7 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -224,18 +224,18 @@
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
           (page "9")))))
-  (text "IMPLEMENTED: USB power, MCU allocation, buttons, wheel/ADC2/encoder/brake, IMU and single-wire RGB.\nOPEN: exact PAW3950 reference/sourcing and optics; measured timing, regeneration, USB behavior and mechanical fit.\nPCB: earlier placements retained; new parts staged off-board. No routing or mechanical fit claim."
-    (at 20 244 0)
+  (text "IMPLEMENTED: power, MCU, buttons, wheel/brake, IMU, RGB and PMW3360 optical circuit.\nOPEN: samples/SROM rights, optical fit, measured timing, USB behavior, power/thermal and mechanical acceptance."
+    (at 20 260 0)
     (effects
       (font
-        (size 1.25 1.25))
+        (size 1.1 1.1))
       (justify left top))
     (uuid "326f7c0d-a7a5-59c3-9eba-3ad84bff635f"))
-  (text "JLCPCB catalog fields are in Symbol Properties; stock and assembly-service restrictions must be refreshed.\nReview exports are generated from these editable sheets. ERC is not USB compliance or fabrication approval."
-    (at 20 252 0)
+  (text "JLCPCB catalog IDs are not stock or assembly approval. PCB is unrouted; optical parts are staged."
+    (at 20 273 0)
     (effects
       (font
-        (size 1.15 1.15))
+        (size 1.1 1.1))
       (justify left top))
     (uuid "4a9ff06d-1c2f-57c3-9d9f-72486b8a1540"))
   (sheet_instances
@@ -416,4 +416,54 @@
     (instances
       (project "MagMouse"
         (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
-          (page "16"))))))
+          (page "16")))))
+  (sheet
+    (at 25 228)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "002e0bb0-41a6-5a6c-91e5-2465c2fb5e03")
+    (property "Sheetname" "16_Optical_Power"
+      (at 25 226.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "16_Optical_Power.kicad_sch"
+      (at 25 251.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "17")))))
+  (sheet
+    (at 153 228)
+    (size 105 22)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "3851210f-9beb-5086-821b-f8606e2597ad")
+    (property "Sheetname" "17_Optical_Sensor"
+      (at 153 226.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "17_Optical_Sensor.kicad_sch"
+      (at 153 251.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640"
+          (page "18"))))))

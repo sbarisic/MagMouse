@@ -16,7 +16,7 @@
   footprints; all 60 present BOM components now have MPNs, catalog IDs and
   footprints (revision 0.2; stock refresh and final circuit review remain).
 - [ ] Obtain exact datasheets/reference circuits and confirm part availability.
-- [ ] Validate PAW3950 optics, circuit, initialization and redistribution rights.
+- [ ] Validate selected PMW3360/LM19-LSI optics, circuit, initialization and SROM usage rights.
 - [x] Implement Type-C detection and input/actuator power-control schematic
   (revision 0.3); see [power review](../hardware/kicad/POWER_REVIEW.md).
 - [ ] Validate USB startup/configuration/suspend, source transitions, inrush,
@@ -37,9 +37,16 @@
   see [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
 - [ ] Measure returned wheel energy and brake startup/overshoot/temperatures;
   validate or revise the resistor, capacitance and threshold selections.
-- [ ] Obtain a verified optical sensor/lens source and exact PAW3950 circuit/optics
-  evidence; see [optical review](../hardware/kicad/OPTICAL_REVIEW.md). JLC listing
-  C9900186384 currently needs supplied parts; it is not purchasable stock.
+- [x] Compare alternative optical sensors and identify retail sample leads;
+  [selection review](../hardware/kicad/OPTICAL_SELECTION.md) recommends
+  PMW3360DM-T2QU + LM19-LSI, with PAW3395 as a higher-performance alternative.
+- [x] Implement PMW3360 local supplies, buffered SPI/reset and custom footprint
+  (revision 0.7); document lens stack and startup/scheduling requirements in
+  [optical design](../hardware/kicad/OPTICAL_DESIGN.md).
+- [ ] Confirm sample delivery, sensor/lens identity, authorized SROM and assembly
+  acceptance; [supplier inquiry](optical-sample-inquiry.md) is prepared but not sent.
+- [ ] Measure optical supply ramps, startup/suspend current, power-off isolation,
+  tracking and bounded motion-burst scheduling between encoder reads.
 - [x] Draw ICM-42688-P and addressable RGB with enabled supply and level buffer
   (revision 0.6); see [peripheral review](../hardware/kicad/PERIPHERAL_REVIEW.md).
 - [ ] Qualify IMU shared-SPI/vibration and RGB voltage, timing and USB suspend current.
@@ -58,7 +65,12 @@ that the actuators can operate within the intended power and thermal envelope.
 - [x] Synchronize the wheel schematic to the PCB as 89 off-board staging footprints;
   preserve the original 183 placements. Mechanical fit is not established.
 - [x] Stage 18 IMU/RGB footprints without moving the previous 272 placements.
-- [ ] Model optical height, button travel/stops and actuator mounting.
+- [x] Add PMW3360/LM19-LSI [vertical datums and aperture dimensions](../mechanical/optical/README.md).
+- [x] Stage 26 optical footprints while preserving all previous 290 placements.
+- [x] Adopt PCB-first mechanical development and provisionally place U35; the
+  shell will follow the board, lens height and wheel/button interfaces.
+- [ ] Fit optical samples/coupon and freeze lens retention, base/feet, PCB opening
+  and mounting heights; model button travel/stops and actuator mounting.
 - [ ] Validate separate sensing/actuator magnets and separation from wheel/coil fields.
 - [ ] Select flexure material/print process and measure creep, fatigue and stop loads.
 - [ ] Design shaft, bearings, encoder alignment and middle-click mechanism.

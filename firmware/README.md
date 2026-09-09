@@ -11,7 +11,7 @@ Do not interpret this directory as runnable firmware.
 | Subsystem | Responsibility |
 | --- | --- |
 | Board support | Validated pin map, rails, safe boot and recovery |
-| Device drivers | PAW3950, ICM-42688-P, two ADS7038 devices, MA735, DRV8231A and DRV8316R |
+| Device drivers | PMW3360, ICM-42688-P, two ADS7038 devices, MA735, DRV8231A and DRV8316R |
 | Input processing | Optical reports, calibrated Hall thresholds/hysteresis and wheel movement |
 | Button control | Position/current feedback and bounded bidirectional click/release pulses; elastic paddle supplies passive return |
 | Wheel control | Encoder calibration, commutation/FOC and bounded detent torque |

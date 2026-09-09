@@ -1,12 +1,12 @@
 # Draft sourcing and symbol review
 
-Revision 0.6, checked 2026-09-09. All 250 components in the present schematic
+Revision 0.7, checked 2026-09-09. All 272 components in the present schematic
 have manufacturer part numbers, catalog identifiers and assigned footprints.
 New USB-C power parts, changed regulator/inductor, package evidence and assembly
 constraints are documented in [POWER_REVIEW.md](POWER_REVIEW.md). The historical
 revision 0.2 selections below identify retained parts and superseded decisions.
 Recheck assembly stock, prices and service eligibility before ordering; none is
-reserved. This does not cover the absent optical subsystem.
+reserved. Optical sensor availability remains separate from its catalog identity.
 Wheel part identities, pinouts, custom packages and brake tolerances are in
 [WHEEL_REVIEW.md](WHEEL_REVIEW.md).
 
@@ -15,7 +15,11 @@ TP16-TP33 as copper test pads, excluded from the assembly BOM. The second ADC
 and addressable RGB were allocated interfaces in that revision. Revision 0.5
 implements ADC2 and the wheel subsystem. Revision 0.6 adds IMU/RGB; see
 [PERIPHERAL_REVIEW.md](PERIPHERAL_REVIEW.md) for catalog and package evidence,
-and [OPTICAL_REVIEW.md](OPTICAL_REVIEW.md) for actual optical sourcing gaps.
+and [OPTICAL_REVIEW.md](OPTICAL_REVIEW.md) for optical sourcing gaps. The subsequent
+[sensor selection review](OPTICAL_SELECTION.md) records in-stock retail sample
+leads for PMW3360/LM19-LSI and a PAW3395 kit, plus JLC consignment limitations.
+Revision 0.7 adds PMW3360 and its supporting circuit to the schematic/BOM;
+see [optical design](OPTICAL_DESIGN.md). The lens remains an external purchase.
 
 Revision 0.5 also corrects R5/R6/R58 sourcing: the intended 33 ohm value now
 uses **0603WAF330JT5E / C23140**. C23138 is a **330 ohm** resistor and is now
@@ -136,3 +140,15 @@ The electronic design remains under the repository's CERN-OHL-S-2.0 license.
 Datasheet mapping and footprint existence checks are preliminary review evidence;
 they do not establish land-pattern, stencil or assembly sign-off. In particular,
 inspect exposed pads and USB shield mounting in the eventual layout.
+
+## Revision 0.7 optical components
+
+See [OPTICAL_DESIGN.md](OPTICAL_DESIGN.md) for PMW3360, TLV75519, TPS22918 and
+buffer identities. U35 catalog C20612443 is out of stock and is not a turnkey
+assembly commitment. Plan customer-supplied or post-SMT sensor fitting; the
+LM19-LSI lens is an external mechanical purchase. New passives reuse catalog
+parts except C79 ([C1588](https://www.lcsc.com/product-detail/C1588.html)),
+C84 ([C1705](https://www.lcsc.com/product-detail/C1705.html)) and R132
+([C23154](https://www.lcsc.com/product-detail/C23154.html)). Refresh all stock and
+JLC service eligibility before ordering. The prepared [supplier inquiry](../../docs/optical-sample-inquiry.md)
+has not been sent.

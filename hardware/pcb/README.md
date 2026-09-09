@@ -12,7 +12,7 @@ chamfers. Its bounds are X = 100..150 mm and Y = 100..195 mm in KiCad;
 the USB/front edge is Y = 100 mm. These are layout assumptions, not dimensions
 from a measured enclosure. No mounting holes or optical aperture have been cut.
 
-All 290 schematic footprints are linked to their symbols and nets. The previous
+All 316 schematic footprints are linked to their symbols and nets. The previous
 183 placements are preserved: 150 BOM components on the front and 33 test pads
 on the back. The 89 new wheel footprints are staged outside the outline at
 approximately X = 169..254 mm, in four labelled subsystem groups. These include
@@ -20,7 +20,14 @@ approximately X = 169..254 mm, in four labelled subsystem groups. These include
 not mechanical placement and does not establish that all parts fit this board.
 Revision 0.6 preserves all of those positions and adds 18 IMU/RGB staging
 footprints at approximately X=169..254, Y=50..80mm: 16 BOM components and
-two test pads. The board outline is unchanged.
+two test pads. Revision 0.7 adds 26 optical footprints at approximately
+X=45..149, Y=40..80mm, preserving the previous 290 placements. These contain
+22 BOM parts and four test pads. U35 has the staggered custom land pattern;
+its aperture guide is on Dwgs.User, with no actual cutout yet. The outline is unchanged.
+The subsequent PCB-first placement moves U35 from staging to X=125.5,
+Y=157.5mm on F.Cu, rotation 270 degrees. The remaining 315 footprints retain
+their locations. Sensor support parts remain staged for the next placement pass.
+The shell will be designed around the PCB and its mechanical interfaces.
 Test pads and J5 are excluded from the BOM and placement export. MPN, LCSC and datasheet fields are
 retained. Future schematic changes can use KiCad's **Update PCB from Schematic
 (F8)**; do not import another set of footprints manually.
@@ -34,9 +41,13 @@ retained. Future schematic changes can use KiCad's **Update PCB from Schematic
 | Centre | Provisional wheel, optical, IMU and RGB reservations |
 | Rear | ESP32, interlock logic, reset/boot switches and underside test access |
 
-Drawings on **Dwgs.User** identify the reserved areas. The wheel and optical
-rectangles also prohibit copper, vias, pads and footprints on all four copper
-layers. They are planning envelopes, not verified clearances for the GB1806,
+Drawings on **Dwgs.User** identify the reserved areas. The wheel rectangle
+prohibits copper, vias, pads and footprints on all four copper layers. The optical
+rule area now follows the proposed aperture at X=121.20..129.80,
+Y=148.68..165.94mm and prohibits copper, vias and pads on all four layers.
+Footprints may straddle that aperture, as U35 must; review physical body clearance
+separately. A 20 x 22mm drawing reserves space below for the lens assembly.
+These are planning envelopes, not verified clearances for the GB1806,
 shaft, bearings, encoder, lens or sensor. The complete wheel assembly may need
 more area or a separate board. Hall positions and coil connector locations must
 move to match the measured paddle/magnet assembly; their present proximity does
@@ -76,21 +87,24 @@ From the repository root:
 
 This reads the live schematic/PCB and produces front/back SVGs, native DRC JSON
 and a summary under `build/pcb-review`. `placement-with-staging.svg` includes
-the off-board wheel and peripheral parts; the board-area front/back crops omit them. The
+the off-board wheel, peripheral and optical parts; the board-area front/back crops omit them. The
 exporter accepts `--kicad-cli PATH`.
 The default exit status checks placement and schematic parity; add
 `--require-routed` to also fail on incomplete connectivity. Neither mode
 establishes manufacturing or electrical acceptance.
 
-Current check: **0 physical DRC violations, 0 schematic parity issues, 499
-unconnected items**, without DRC exclusions. The board is deliberately unrouted.
+Current check: **0 physical DRC violations and 0 schematic parity issues**,
+without DRC exclusions. Native connectivity counts **792 unrouted connections**;
+the DRC JSON returns 499 unconnected entries, so its list length is not a full
+connection count. The board is deliberately unrouted.
 This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 
-1. Set the shell/PCB dimensions, wheel assembly, optical height/aperture, paddle
-   magnets, mounting holes and connector openings with mechanical CAD.
-2. Resolve [optical sourcing/reference evidence](../kicad/OPTICAL_REVIEW.md) and
-   add the exact PAW3950 circuit. [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) are drawn.
+1. Continue PCB-first placement around the provisional optical centre; reserve
+   wheel, paddle magnets, mounting holes and connector access, then design the
+   shell/base around the resulting board and verified optical height.
+2. Qualify [PMW3360 samples, SROM and optical fit](../kicad/OPTICAL_DESIGN.md).
+   Optical, [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) circuits are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
    [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
 3. Refine placement using those envelopes and each IC's reference layout.

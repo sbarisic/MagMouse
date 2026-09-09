@@ -64,10 +64,11 @@ def main():
         'physical_drc_types': dict(Counter(v['type'] for v in violations)),
         'schematic_parity_issues': len(parity),
         'unconnected_items': len(unconnected),
+        'unconnected_count_scope': 'Entries returned by DRC, not necessarily the full native connectivity count',
         'ignored_checks': report.get('ignored_checks', []),
         'placement_checks_pass': not violations and not parity,
         'routing_complete': not unconnected,
-        'placement_scope': 'Original motherboard placement plus off-board wheel, IMU and RGB staging; enclosure fit is unverified',
+        'placement_scope': 'Original motherboard placement plus off-board wheel, IMU, RGB and optical staging; enclosure fit is unverified',
     }
     (out / 'review-status.json').write_text(
         json.dumps(summary, indent=2) + '\n', encoding='utf-8')

@@ -205,7 +205,9 @@ the incorrect 33 Ω catalog number and an unsafe brake divider.
 Native ERC and physical DRC pass without new exclusions; 499 PCB connections
 remain unrouted. Staging outside the outline does not prove all parts fit.
 
-Next: exact PAW3950 reference/optics, then ICM-42688-P and addressable RGB.
+Subsequent revisions add ICM-42688-P/RGB and PMW3360 optics; see
+[optical design](OPTICAL_DESIGN.md) for the motion-burst scheduling constraint.
+Wheel timing, regeneration energy and mechanical qualification remain open.
 Before routing, settle shell geometry, motor/encoder magnetic alignment, sensor
 aperture, Hall/paddle locations, wire clearance, brake cooling and the production
 stackup. Bench timing and energy results remain electrical acceptance gates.

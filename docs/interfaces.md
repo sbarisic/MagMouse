@@ -1,4 +1,4 @@
-# GPIO and peripheral allocation — revision 0.6 (pin map unchanged)
+# GPIO and peripheral allocation — revision 0.7 (pin map unchanged)
 
 The ESP32-S3-MINI-1-N8 fits V1 with **38 assigned GPIOs and one boot-low spare,
 GPIO46**. The user selected a single-data-pin addressable RGB LED on 2026-09-08.
@@ -11,7 +11,7 @@ The [machine-readable allocation](../hardware/kicad/gpio-allocation.json) and
 [Sheet 09](../hardware/kicad/09_Interface_Reservations.kicad_sch) exposes new
 signals on test pads and adds boot/control bias resistors. These are real MCU
 connections. Revision 0.5 adds ADC2, wheel driver, encoder, SPI isolation and
-autonomous brake sheets. Revision 0.6 adds IMU and RGB sheets; the optical circuit remains reserved.
+autonomous brake sheets. Revision 0.6 adds IMU/RGB; revision 0.7 connects PMW3360 on sheets 16/17.
 See [wheel review](../hardware/kicad/WHEEL_REVIEW.md) and
 [peripheral review](../hardware/kicad/PERIPHERAL_REVIEW.md).
 
@@ -19,8 +19,9 @@ See [wheel review](../hardware/kicad/WHEEL_REVIEW.md) and
 
 The second column contains module land numbers, not bare-chip pins.
 ADC_CS is CS_ADC1; SPI_SCLK/MOSI/MISO are bus A. MOTOR_SPI_* are bus B.
-OPT_CTRL reserves one output for optical reset/power sequencing; its circuit
-must follow the exact PAW3950 reference when obtained.
+OPT_CTRL drives buffered PMW3360 reset (low = asserted). HALL_EN also enables
+the optical supplies. CS_PAW and PAW_MOTION_N retain their historical net names.
+See [optical design and timing](../hardware/kicad/OPTICAL_DESIGN.md).
 
 | GPIO | Module pad | Net | Peripheral / role |
 | --- | --- | --- | --- |
@@ -93,23 +94,26 @@ not a generic ESP32 three-device limit.
 Use per-device mode, clock and CS timing. Initial clock targets: 20 MHz for
 both ADCs, 10 MHz for MA735/IMU, and 1 MHz for DRV8316. The driver
 clock is reduced for its open-drain SDO pull-up and new return buffer; measure
-edge rate and setup margin before increasing it. PAW mode, clock,
-read delays, voltage domain and MISO release await its exact reference.
-Do not treat PAW3395 circuitry as PAW3950 validation. The MCU-side CS pull-ups
-do not authorize direct connection to a lower-voltage peripheral: review
-translation, power-off isolation and SDO idle behavior in each future circuit.
+edge rate and setup margin before increasing it. PMW3360 uses mode 3 at 2MHz,
+with isolated clock/data/CS and buffered reset on switched OPT_3V3. Use 1us
+CS setup/read-hold/release guards, 35us write hold, 160us ordinary read delay
+and 35us motion-burst delay. Honor device-specific inter-access intervals.
 DRV8316 requires 16-bit, mode-1 SPI timing and at least 400 ns between CS frames.
 Keep both ADS7038 devices in mode 0, including initial configuration. Use mode 3
 for MA735, with at least 80 ns CS setup and 25 ns hold; allow 150 ns between
 angle frames and 750 ns around register accesses. Do not perform encoder NVM
 writes during motor control. Its SPI read width does not equal effective angle
-resolution. IMU uses mode 0 at 10MHz with 100ns CS setup/hold/release guards; optical settings remain open.
+resolution. IMU uses mode 0 at 10MHz with 100ns CS setup/hold/release guards.
 
 Bus A needs a bounded scheduler/owner. Reserve recurring angle-read slots,
 then service ADC1, optical and IMU work. Bound FIFO bursts; release the bus
 during device-internal waits when its protocol allows. Initial targets are
 5 kHz angle reads with at most 50 us scheduling delay, 1 kHz button/system
-scans and 1 kHz HID reports. PAW timing may force a schedule change.
+scans and 1 kHz HID reports. PMW3360 full bursts take >=87us before software
+overhead and cannot be preempted. Launch only after an angle read when the
+measured worst-case burst fits before the next 200us angle slot; otherwise the
+50us encoder scheduling-delay target can be exceeded. SROM/configuration
+transfers must run outside active haptic control.
 
 Eight ADC1 16-bit reads at 20 MHz use 6.4 us of clock time per 1 ms scan.
 MA735 16-bit reads at 10 MHz use another 8 us/ms at 5 kHz. These calculations
@@ -146,10 +150,10 @@ internal clock; INT2/FSYNC/CLKIN are unassigned. GPIO46 reuse needs a boot-level
 review. The brake chopper must protect the rail independently of an MCU output.
 
 Power-domain controls are included in the allocation: reuse HALL_EN (derived
-from SENS_REQ and MCU_EN) for MA735 and RGB supply enables. This keeps
+from SENS_REQ and MCU_EN) for MA735, RGB and optical supply enables. This keeps
 them off during reset/suspend without extra GPIOs. RGB power comes from the
 appropriate protected logic supply, not the haptics-only ACT rail. OPT_CTRL
-reserves optical sequencing; IMU uses its software sleep controls. U28/U29
+drives buffered optical reset; IMU uses its software sleep controls. U28/U29
 provide encoder isolation; U33/U34 provide RGB supply/data control. Their
 startup and power-down behavior still requires measurement.
 Independent always-on RGB/encoder operation would require a new resource review.
@@ -221,7 +225,8 @@ signals, peripheral capacity and timing arithmetic. They do not establish
 firmware deadlines or analog performance.
 
 Wheel circuits now implement the [wheel control contract](wheel-control.md).
-Next resolve the exact optical circuit and sourcing. IMU/RGB are drawn in revision 0.6.
+PMW3360 circuitry is drawn in revision 0.7. Next qualify samples, authorized SROM,
+optical height, rail ramps and shared-SPI scheduling. IMU/RGB are drawn in revision 0.6.
 Timing, regenerative energy and physical acceptance remain open.
 
 ## Primary evidence

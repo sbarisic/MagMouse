@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="580" viewBox="0 0 1100 580">
+<rect width="1100" height="580" fill="#f5f7fa"/>
+<g font-family="Arial, sans-serif" fill="#182936">
+<text x="40" y="44" font-size="26" font-weight="bold">PMW3360 + LM19-LSI: vertical reference datums</text>
+<text x="40" y="76" font-size="16">Dimensions in mm · Z = 0 at the tracking surface · diagram, not a lens solid model</text>
+<path d="M100 125V470 M100 470H690" fill="none" stroke="#8395a5" stroke-width="2"/>
+<rect x="135" y="224" width="465" height="53" rx="2" fill="#377d69"/>
+<rect x="240" y="145" width="240" height="54" fill="#3b4958"/>
+<path d="M340 199V390 M380 199V390" stroke="#578cae" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M270 390H450" stroke="#327ca5" stroke-width="6"/>
+<path d="M135 470H690" stroke="#182936" stroke-width="5"/>
+<g stroke="#8ba1b2" stroke-width="1" stroke-dasharray="5 4">
+<path d="M480 145H720 M480 177H720 M600 224H720 M600 277H720 M450 390H720 M690 470H720"/>
+</g>
+<g font-size="18">
+<text x="740" y="151">9.81 — package top</text>
+<text x="740" y="183">8.84 — chip die</text>
+<text x="740" y="230">7.40 — PCB top</text>
+<text x="740" y="283">5.80 — PCB bottom</text>
+<text x="740" y="396">2.40 — lens flange bottom</text>
+<text x="740" y="476">0.00 — tracking surface</text>
+<text x="150" y="257" fill="white">PCB: 1.60 thick</text>
+<text x="245" y="134">Sensor</text>
+<text x="400" y="339" fill="#327ca5">Lens datum</text>
+</g>
+<path d="M640 390V470 M631 390H649 M631 470H649" stroke="#c26426" stroke-width="2"/>
+<text x="481" y="421" font-size="18" fill="#a04e1c">2.20–2.60</text>
+<text x="478" y="445" font-size="15" fill="#a04e1c">working range</text>
+<text x="40" y="525" font-size="17" font-weight="bold">The lens-to-surface height is not the PCB-to-surface height.</text>
+<text x="40" y="554" font-size="15">Reference: PixArt R1.50, Fig. 4. Confirm samples, feet, tolerances and retention before cutting or routing the PCB.</text>
+</g></svg>

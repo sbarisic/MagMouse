@@ -7,7 +7,7 @@ is drawn; remaining peripheral circuitry and physical validation are open.
 
 | Requirement | Target / interpretation |
 | --- | --- |
-| Cursor | PAW3950 optical X/Y tracking |
+| Cursor | PMW3360DM-T2QU + LM19-LSI optical X/Y tracking |
 | Supplementary motion | ICM-42688-P lift/orientation experiments; not the cursor source |
 | Buttons | Left, middle, right; magnetic position sensing without switch contacts |
 | Button return | Elastic paddle/flexure supplies passive return with coil current off |
@@ -25,7 +25,7 @@ flowchart TD
     Hub -->|5 V VBUS| Power[Protected power distribution]
     Power --> Logic[3.3 V logic supply]
     Logic --> MCU
-    Logic --> Optical[PAW3950 and local 1.8 V regulator]
+    Logic --> Optical[PMW3360 and switched 3.3 V / local 1.9 V supplies]
     Optical -->|X/Y| MCU
     IMU[ICM-42688-P] --> MCU
     Hall[Three TMAG5253 sensors] --> ADC[ADS7038 #1]

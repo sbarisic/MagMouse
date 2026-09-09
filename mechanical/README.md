@@ -1,10 +1,11 @@
 # Mechanical design
 
-Status: requirements only; no CAD models or dimensioned manufacturing drawings.
+Status: requirements and optical reference datums; no manufacturing CAD models.
 
 - [housing](housing/README.md): enclosure, optics and component packaging.
 - [scroll-wheel](scroll-wheel/README.md): wheel, shaft, motor and encoder alignment.
 - [button-mechanisms](button-mechanisms/README.md): three contactless haptic buttons.
+- [optical](optical/README.md): PMW3360/LM19-LSI stack and aperture reference dimensions.
 
 Choose an editable CAD format and document its tool/version when modeling begins.
 Validate magnet separation with wheel and custom button-coil fields active, including

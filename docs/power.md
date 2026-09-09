@@ -89,7 +89,7 @@ high-voltage input.
 ## Hardware interlock and startup
 
 GPIO16 ACT_REQ, GPIO17 ACT_HEARTBEAT and GPIO18 SENS_REQ default low through
-external resistors. HALL_EN = SENS_REQ AND MCU_EN enables the three Hall sensors.
+external resistors. HALL_EN = SENS_REQ AND MCU_EN enables the Hall sensors, MA735, RGB and optical supplies.
 ARM_VALID requires SOURCE_OK, ACT_REQ and HALL_EN. Default/unknown source,
 reset, sensor shutdown or request removal clears the monostable immediately.
 
@@ -179,3 +179,10 @@ current-limited supply and one characterized coil. Calculate winding energy
 from measured L and I, and integrate actual returned power. Validate overshoot,
 pulse/thermal ratings, capacitor bias, passive return, cable drop and repeated
 clicks. These physical tests remain open.
+
+Revision 0.7 gates PMW3360 power behind HALL_EN. Keep SENS_REQ low until USB
+configuration and sufficient total current budget; optical startup alone has a
+provisional 150mA allocation. Account for encoder/RGB startup at the same enable
+edge. Before clearing SENS_REQ, deselect optical SPI and assert OPT_CTRL low;
+mask PAW_MOTION_N and disable its host pull-up. Full optical initialization and
+authorized SROM reload are required on resume. See [optical design](../hardware/kicad/OPTICAL_DESIGN.md).
