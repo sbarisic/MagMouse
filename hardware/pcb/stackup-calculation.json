@@ -1,0 +1,27 @@
+{
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "checked": "2026-09-09",
+  "stackup": "JLC041611-2116",
+  "order_thickness_mm": 1.6,
+  "supplier_finished_label": "1.58 mm +/-10%",
+  "inner_copper_order_oz": 1,
+  "outer_copper_order_oz": 1,
+  "copper_and_dielectric_thicknesses_mm": [
+    0.035,
+    0.109,
+    0.03,
+    1.23,
+    0.03,
+    0.109,
+    0.035
+  ],
+  "model": "Differential Pair (Non coplanar), with solder mask",
+  "signal_layer": "L1",
+  "reference_layer": "L2",
+  "target_ohms": 90,
+  "spacing_input_mm": 0.15,
+  "width_result_mm": 0.1466,
+  "spacing_result_mm": 0.1501,
+  "solver_tolerance_percent": 0.5,
+  "note": "Solver tolerance is not the fabrication impedance tolerance; quote and coupon acceptance remain open."
+}

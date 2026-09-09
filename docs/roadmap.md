@@ -82,9 +82,19 @@ that the actuators can operate within the intended power and thermal envelope.
   power-off behaviour and 10 MHz cable waveforms on the actual assembly.
 - [x] Refine and route the local 3.3 V buck, output sense and ground returns;
   [native copper checks](../hardware/pcb/BUCK_LAYOUT.md), physical DRC and parity pass.
-- [ ] Refine and route U12 input-eFuse protection/control and connect the USB input,
-  protected rail and buck feed; review current paths and local bypass together.
-- [ ] Select the JLCPCB stackup and calculate USB differential-pair geometry.
+- [x] Route USB-to-U12 and U12-to-buck power, add local output bypass C88,
+  route local protection/current-limit and source-selection logic; see
+  [input copper checks](../hardware/pcb/INPUT_POWER_LAYOUT.md).
+- [x] Route [Type-C CC/ESD/VBUS inputs, local returns and detector/source-logic
+  supplies](../hardware/pcb/TYPEC_LAYOUT.md); native copper and DRC checks pass.
+- [ ] Complete wider supply distribution and remaining fault/reset/telemetry
+  routing; review ILM parasitics, power necks and heat.
+- [x] Select the [JLCPCB stackup and USB geometry](../hardware/pcb/STACKUP.md):
+  JLC041611-2116, 1 oz inner/outer, calculated 90-ohm pair dimensions.
+- [ ] Route USB with its ESD return and continuous reference plane, then obtain
+  manufacturer acceptance of the exact stackup and impedance requirements.
+- [ ] Refine and route U13, button/BLDC current loops, sensing and brake power.
+- [ ] Complete signal routing, ground stitching and return-path review.
 - [ ] Refine complete-board placement for routing, thermal paths and analog/SPI
   return paths; verify physical assemblies and allocate mounting holes.
 - [ ] Fit optical samples/coupon and freeze lens retention, base/feet, PCB opening

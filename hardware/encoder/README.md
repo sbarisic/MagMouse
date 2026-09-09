@@ -90,9 +90,13 @@ checker validates the connector identities, switched/buffered boundaries, pin
 ordering, local bypass and component split against the harness specification.
 Eight encoder tests include seven injected faults. Five wheel tests also pass.
 
-The motherboard has 315 footprints. Its [buck routing pass](../pcb/BUCK_LAYOUT.md)
-reduces native unrouted connections to 775. Physical DRC and parity pass, but
+The motherboard has 316 footprints. Its [input-power routing pass](../pcb/INPUT_POWER_LAYOUT.md)
+reduces native unrouted connections to 698. Physical DRC and parity pass, but
 board-wide routing remains open. Before releasing either
 board, verify cable continuity, 10 MHz SPI waveforms under concurrent operation,
 power-off isolation, angle repeatability, magnetic interference and mechanical
 retention. No Gerbers or placement files are released for ordering.
+
+Motherboard J6 is now rotated 180 degrees at (113, 103.5) mm and mates toward
+minus Y, the front edge. Check shell/USB clearance and harness bend radius.
+Encoder J7 and the pin-to-pin harness map are unchanged.

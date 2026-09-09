@@ -4,6 +4,15 @@ Prepared 2026-09-09. **Not sent; no order or supplier commitment.**
 Candidate: [Yushakobo A080040-01-1](https://shop.yushakobo.jp/en/products/11274),
 PMW3360DM-T2QU / LM19-LSI. Select the LM19-LSI option explicitly.
 
+## Listing refresh, 2026-09-09
+
+The selected A080040-01-1 PMW3360DM-T2QU / LM19-LSI option displayed
+35 units in stock and JPY 3,190 including tax at the retailer link above.
+The retailer states that it sources through an authorized domestic distributor.
+These are listing observations, not a reservation or independent provenance
+verification. Croatia shipping, final landed price, sample fit and SROM rights
+remain unconfirmed. No inquiry has been sent and no parts have been ordered.
+
 ## Supplier inquiry text
 
 We are developing a wired mouse prototype and would like to source two

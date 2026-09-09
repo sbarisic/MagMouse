@@ -71,7 +71,7 @@ def verify(board):
                   'Ground via in U2 exposed solder land requires a separate assembly review')
 
     return {
-        'scope': 'Local buck copper only; input feed, distribution, full-board routing and hardware acceptance remain open',
+        'scope': 'Local buck copper only; input feed is checked separately; distribution, full-board routing and hardware acceptance remain open',
         'switch_track_length_mm': round(switch_length, 3),
         'native_unconnected_connections': connectivity.GetUnconnectedCount(False),
         'errors': errors,

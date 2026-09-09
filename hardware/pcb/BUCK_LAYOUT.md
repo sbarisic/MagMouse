@@ -1,5 +1,8 @@
 # First motherboard routing: 3.3 V buck
 
+Historical buck-only pass; see [current input routing status](INPUT_POWER_LAYOUT.md)
+for later changes and the current unconnected count.
+
 2026-09-09, KiCad 10.0.6. U2 and its local power components now have routed
 copper in [MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb). The motherboard is
 partially routed; this is not a fabrication release or a powered validation.
@@ -22,7 +25,7 @@ measurements on hardware.
 | C3 | 149.5, 113.7 | 0 degrees | Output bypass and VOS sense endpoint |
 | C23 | 144.65, 114.2 | 180 degrees | Additional output bypass |
 
-These are the only six moved footprints. All 315 footprint identities, symbol
+In this original buck-only pass, these were the only six moved footprints. All 315 footprint identities, symbol
 paths and pad nets are preserved. The 60 x 95 mm outline, optical/USB/ESP32
 datums, mechanical keepouts, encoder project and motherboard project rules are
 unchanged. All motherboard assembly components remain on the front.
@@ -76,19 +79,20 @@ an opened SW route and an opened VOS route. Tests modify temporary PCB copies.
 The report is `build/pcb-review/buck-layout-checks.json` and includes the board
 hash. Use native DRC alongside this check; neither proves regulator operation.
 
-## Next routing work
+## Subsequent routing work
 
-1. Refine U12 input-eFuse placement and route its local bypass, protection,
-   control and current-limit connections; plan the USB-to-U12 and U12-to-buck
-   power paths together.
+1. The [input-power pass](INPUT_POWER_LAYOUT.md) has connected USB, U12 and
+   the buck, with local bypass/protection and source-selection copper. The
+   [Type-C pass](TYPEC_LAYOUT.md) completes detector input/supply routing;
+   remaining control/telemetry branches are still open.
 2. Review the actuator eFuse, button bridges and wheel-driver hot loops and
    thermal paths. Keep current-sense and brake-control returns clear of these.
-3. Select the JLCPCB stackup, calculate USB geometry, and route the protected
+3. Use the [selected JLCPCB stackup](STACKUP.md) and route the protected
    USB path with its reference plane and ESD return.
 4. Extend the ground reference and 3.3 V distribution, then route sensing and
    control. Recheck the buck return paths after adding surrounding copper.
 
-The buck input is not yet connected to U12's output. Its output does not yet
+The subsequent input-power pass connects the buck input to U12's output. Its output does not yet
 power the motherboard loads. The partial PCB cannot operate as an assembled
 mouse. Wheel/encoder support, cable access, optical sample fit and mounting
 holes remain mechanical acceptance gates alongside electrical bench work.

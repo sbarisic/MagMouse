@@ -135,3 +135,12 @@ The [local 3.3 V buck layout](../pcb/BUCK_LAYOUT.md) is now routed, with native
 copper connectivity checks and zero physical DRC/parity violations. U12 input
 feed, main distribution and the remaining power/control routing are still open.
 The schematic review and routed subcircuit do not establish powered operation.
+
+## Input PCB routing update, 2026-09-09
+
+C88 adds 10 uF / 25 V local output bypass at U12 (CL21A106KAYNNNE, C15850).
+The buck capacitor C1 is remote from the eFuse. The [input layout review](../pcb/INPUT_POWER_LAYOUT.md)
+describes the completed power/protection/source-selection copper, its native
+connectivity checks and the remaining Type-C, supply and telemetry routes.
+ILM parasitics, quiet returns and thermal performance still require review.
+This does not change the current-limit resistors or enable truth tables.

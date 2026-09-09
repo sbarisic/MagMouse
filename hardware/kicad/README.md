@@ -2,7 +2,7 @@
 
 Revision 0.8, 2026-09-09, KiCad 10.0.6. USB-C power, MCU allocation and wheel/brake, IMU, RGB and PMW3360 circuits are connected.
 A [60 x 95 mm motherboard placement](../pcb/README.md) is available as of
-2026-09-09, with all 315 footprints on-board. U27/C62 and J7 are in a separate,
+2026-09-09, with all 316 footprints on-board. U27/C62 and J7 are in a separate,
 fully routed [14 x 18 mm encoder project](../encoder/README.md). Both are editable
 development drafts; **the motherboard is partially routed and neither board is
 order-ready**. Firmware, measurements and mechanical fit remain open.
@@ -73,16 +73,16 @@ for a nonstandard KiCad footprint installation. Generated files go to
 build/kicad-review: eighteen SVG sheets, XML netlist, ERC JSON, DRAFT-bom.csv,
 review-status.json, power-checks.json, resource-checks.json, wheel-checks.json, peripheral-checks.json and optical-checks.json. Sources are not overwritten.
 
-The motherboard has **271 BOM components**, all with catalog IDs, MPNs and
+The motherboard has **272 BOM components**, all with catalog IDs, MPNs and
 footprints; 43 copper test pads, J5 motor wire pads and four power flags are
 excluded from its BOM. The separate encoder has one schematic sheet and three
 BOM components/footprints: U27, C62 and J7. Across both projects there are 19
-schematic pages, 274 BOM components and 318 footprints. Encoder review outputs
+schematic pages, 275 BOM components and 319 footprints. Encoder review outputs
 and its separate draft BOM go to `build/encoder-review`; its two incoming power
 flags are excluded from assembly. Export both netlists before running the wheel
 checker. The encoder checker also verifies the actual harness contract.
 **Both projects: ERC zero errors and zero warnings, without new waivers.**
-The additional checker verifies 191 critical power pin connections, 315 motherboard footprint
+The additional checker verifies 193 critical power pin connections, 316 motherboard footprint
 assignments, complete source-to-export coverage and 4,096 Boolean interlock
 cases. The resource checker verifies all 39 module GPIOs: 38 assigned and GPIO46
 reserved low for boot-safe expansion. See [the full allocation](../../docs/interfaces.md).
@@ -122,3 +122,12 @@ that require a prototype PCB; finished firmware is not required to start layout.
 
 See [SOURCING.md](SOURCING.md) for retained component evidence and
 [the roadmap](../../docs/roadmap.md) for the broader project.
+
+The [input-power routing pass](../pcb/INPUT_POWER_LAYOUT.md) adds C88,
+USB-to-eFuse-to-buck copper, protection and source-selection routes, and
+a board-wide In1 ground reference. USB geometry is recorded in the
+[selected stackup](../pcb/STACKUP.md); USB and full-board routing remain open.
+
+The [Type-C routing pass](../pcb/TYPEC_LAYOUT.md) completes the detector inputs,
+returns and source-selection supplies. Native connectivity has 698 unrouted
+connections; actuator and USB data routing remain open.

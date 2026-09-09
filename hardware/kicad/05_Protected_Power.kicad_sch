@@ -3493,4 +3493,131 @@
         (size 1.15 1.15))
       (justify left top))
     (uuid "7dbb3a57-5ca0-5182-b1c3-39e1d10a5f3f"))
-  (embedded_fonts no))
+  (embedded_fonts no)
+  (symbol
+    (lib_id "Device:C")
+    (at 86.36 165.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cabe4afc-9954-5df2-9e54-0b3c4321919e")
+    (property "Reference" "C88"
+      (at 90.36 163.6 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10uF/25V"
+      (at 90.36 166.1 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL21A106KAYNNNE"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15850"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15850"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses existing 10uF output capacitor selection; DC bias and order stock require review"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C88")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 86.36 161.29)
+      (xy 86.36 156.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dea98f48-f742-504a-b4fc-a4469082019c"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 86.36 156.21 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "dc6080fb-3095-5cc8-9050-886356803bd7"))
+  (wire
+    (pts
+      (xy 86.36 168.91)
+      (xy 86.36 173.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b354a0a4-1584-57cb-a827-b497ff605927"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 86.36 173.99 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "84caaf73-e12f-5d93-8cb3-697e26c66ba3"))
+  (text "C88: local U12 output bypass.\nC1 remains beside the buck; do not rely on the long feed as local decoupling."
+    (at 65 182 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left top))
+    (uuid "7ac0e187-ae16-520d-aeae-b49e223758b5")))

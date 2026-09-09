@@ -43,3 +43,11 @@ the waveform/loading review calls for it.
 The motherboard wheel reservation is still an unverified planning envelope.
 Zero encoder ERC/DRC/unconnected items establish the current electrical CAD
 checks, not axle fit or magnetic performance. Fabrication release remains open.
+
+## Motherboard connector update, 2026-09-09
+
+J6 at (113, 103.5) mm is rotated 180 degrees and mates toward the front edge
+(minus Y). Reserve plug insertion, strain relief and cable bend clearance there.
+The encoder board, J7 and harness pin map have not changed. The motherboard
+now uses the [selected four-layer stackup](../../hardware/pcb/STACKUP.md), nominal
+1.6 mm order thickness and 1.578 mm copper/dielectric CAD thickness.
