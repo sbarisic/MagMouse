@@ -4,7 +4,7 @@ The selected pair is PMW3360DM-T2QU + **LM19-LSI**. Dimensions below come from
 Figures 3, 4 and 6 of the
 [PixArt PMW3360 datasheet R1.50](https://datasheet.lcsc.com/datasheet/pdf/c018c3e1d470821feefadd37e2f785d5.pdf?productCode=C20612443).
 They are reference dimensions, not measurements of delivered parts or approval
-of the current 50x95mm motherboard outline.
+of the current 60x95mm motherboard outline.
 
 ![Optical vertical datums](optical-stack.svg)
 
@@ -38,7 +38,7 @@ envelope above. Obtain the matching supplier drawing/application note
 PMS0122-LM19-LSI-AN before designing retention or heat staking.
 
 The PCB-first placement now uses optical centre X=125.5, Y=157.5mm in KiCad,
-25.5mm from the board's left edge and 57.5mm behind its front edge. U35 is on
+30.5mm from the board's left edge and 57.5mm behind its front edge. U35 is on
 F.Cu at 270 degrees so its front points toward USB (-Y). The sensor body sits
 above the PCB and its lens below; do not flip the sensor to B.Cu. A conservative
 20 x 22mm underside assembly envelope is drawn about this centre, allowing for

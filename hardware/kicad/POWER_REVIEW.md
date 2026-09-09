@@ -128,3 +128,10 @@ combinations of source, reset, arm, sensor request, permit and six commands.
 It also checks the programmed current-limit margin. Reports are written to
 build/kicad-review. These checks do not simulate analog startup, watchdog RC
 corners, USB protocol, capacitor bias, thermal behavior or regenerative energy.
+
+## PCB routing follow-up, 2026-09-09
+
+The [local 3.3 V buck layout](../pcb/BUCK_LAYOUT.md) is now routed, with native
+copper connectivity checks and zero physical DRC/parity violations. U12 input
+feed, main distribution and the remaining power/control routing are still open.
+The schematic review and routed subcircuit do not establish powered operation.

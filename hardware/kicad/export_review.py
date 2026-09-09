@@ -14,6 +14,9 @@ import xml.etree.ElementTree as ET
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--kicad-cli', help='Path to KiCad 10 kicad-cli executable')
+    parser.add_argument('--schematic', type=Path,
+                        default=Path(__file__).resolve().parent / 'MagMouse.kicad_sch')
+    parser.add_argument('--output', type=Path, help='Separate review directory for this board')
     args = parser.parse_args()
     cli = args.kicad_cli or shutil.which('kicad-cli')
     if not cli:
@@ -26,10 +29,11 @@ def main():
     if not cli:
         parser.error('KiCad CLI not found; supply --kicad-cli PATH')
 
+    sch = args.schematic.resolve()
     project = Path(__file__).resolve().parent
-    out = project.parents[1] / 'build/kicad-review'
+    default_name = 'kicad-review' if sch == project / 'MagMouse.kicad_sch' else sch.stem.lower() + '-review'
+    out = args.output.resolve() if args.output else project.parents[1] / 'build' / default_name
     out.mkdir(parents=True, exist_ok=True)
-    sch = project / 'MagMouse.kicad_sch'
     commands = [
         ['sch', 'export', 'svg', '-o', str(out / 'sheets'), str(sch)],
         ['sch', 'export', 'netlist', '--format', 'kicadxml', '-o', str(out / 'netlist.xml'), str(sch)],

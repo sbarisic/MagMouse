@@ -18,14 +18,28 @@ ROOT = Path(__file__).resolve().parents[2]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--netlist', type=Path, default=ROOT / 'build/kicad-review/netlist.xml')
+    parser.add_argument('--encoder-netlist', type=Path, default=ROOT / 'build/encoder-review/netlist.xml')
     parser.add_argument('--output', type=Path, default=ROOT / 'build/kicad-review/wheel-checks.json')
     args = parser.parse_args()
     xml = ET.parse(args.netlist).getroot()
+    encoder = ET.parse(args.encoder_netlist).getroot()
+    main_refs = {c.get('ref') for c in xml.findall('./components/comp')}
+    encoder_refs = {c.get('ref') for c in encoder.findall('./components/comp')}
+    # Shared net names describe the wired interface. verify_encoder.py checks
+    # both physical connectors and the harness mapping independently.
+    for comp in encoder.findall('./components/comp'):
+        xml.find('components').append(comp)
     components = {c.get('ref'): c for c in xml.findall('./components/comp')}
-    nets = {n.get('name'): {(p.get('ref'), p.get('pin')) for p in n.findall('node')}
-            for n in xml.findall('./nets/net')}
+    nets = {}
+    for tree in [xml, encoder]:
+        for n in tree.findall('./nets/net'):
+            nets.setdefault(n.get('name'), set()).update((p.get('ref'), p.get('pin')) for p in n.findall('node'))
     pin_net = {pin: net for net, nodes in nets.items() for pin in nodes}
     errors, expected = [], {}
+    if main_refs & encoder_refs:
+        errors.append('Duplicate references across motherboard and encoder board')
+    if {'U27', 'C62'} & main_refs or not {'U27', 'C62', 'J7'} <= encoder_refs or 'J6' not in main_refs:
+        errors.append('Encoder board split is incomplete; export both current schematics')
 
     def check(condition, message):
         if not condition:

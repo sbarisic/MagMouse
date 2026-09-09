@@ -69,6 +69,24 @@ that the actuators can operate within the intended power and thermal envelope.
 - [x] Stage 26 optical footprints while preserving all previous 290 placements.
 - [x] Adopt PCB-first mechanical development and provisionally place U35; the
   shell will follow the board, lens height and wheel/button interfaces.
+- [x] Place all 25 optical support footprints around U35; preserve other components
+  and pass physical DRC/parity. See [placement review](../hardware/pcb/OPTICAL_PLACEMENT.md).
+- [x] Widen the provisional motherboard to 60 x 95 mm and place the remaining
+  motherboard electronics (314 footprints); retain U27/C62 as encoder-board
+  planning parts. See [placement review](../hardware/pcb/PLACEMENT_60MM.md).
+- [x] Select a separate upright MA735 encoder board for the horizontal wheel axle.
+- [x] Implement the [encoder board/interconnect](../hardware/encoder/README.md):
+  JST SH headers, separate schematic/BOM, checked harness and fully routed
+  provisional 14 x 18 mm board; ERC/DRC/parity and connectivity pass.
+- [ ] Verify encoder support, shaft/magnet alignment, connector/cable clearances,
+  power-off behaviour and 10 MHz cable waveforms on the actual assembly.
+- [x] Refine and route the local 3.3 V buck, output sense and ground returns;
+  [native copper checks](../hardware/pcb/BUCK_LAYOUT.md), physical DRC and parity pass.
+- [ ] Refine and route U12 input-eFuse protection/control and connect the USB input,
+  protected rail and buck feed; review current paths and local bypass together.
+- [ ] Select the JLCPCB stackup and calculate USB differential-pair geometry.
+- [ ] Refine complete-board placement for routing, thermal paths and analog/SPI
+  return paths; verify physical assemblies and allocate mounting holes.
 - [ ] Fit optical samples/coupon and freeze lens retention, base/feet, PCB opening
   and mounting heights; model button travel/stops and actuator mounting.
 - [ ] Validate separate sensing/actuator magnets and separation from wheel/coil fields.

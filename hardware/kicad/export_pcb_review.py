@@ -14,6 +14,9 @@ import subprocess
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--kicad-cli', help='Path to KiCad 10 kicad-cli executable')
+    parser.add_argument('--board', type=Path,
+                        default=Path(__file__).resolve().parent / 'MagMouse.kicad_pcb')
+    parser.add_argument('--output', type=Path, help='Separate PCB review directory for this board')
     parser.add_argument('--require-routed', action='store_true',
                         help='Also fail when there are unconnected items')
     args = parser.parse_args()
@@ -29,8 +32,10 @@ def main():
         parser.error('KiCad CLI not found; supply --kicad-cli PATH')
 
     project = Path(__file__).resolve().parent
-    board = project / 'MagMouse.kicad_pcb'
-    out = project.parents[1] / 'build/pcb-review'
+    board = args.board.resolve()
+    motherboard = board == project / 'MagMouse.kicad_pcb'
+    default_name = 'pcb-review' if motherboard else board.stem.lower() + '-pcb-review'
+    out = args.output.resolve() if args.output else project.parents[1] / 'build' / default_name
     out.mkdir(parents=True, exist_ok=True)
     commands = [
         ['pcb', 'drc', '--format', 'json', '--schematic-parity',
@@ -43,7 +48,7 @@ def main():
             f'{side}.Cu,{side}.Fab,{side}.Silkscreen,Edge.Cuts,Dwgs.User',
             '--output', str(out / f'placement-{side}.svg'), str(board),
         ])
-    # Board-area crops omit the intentionally off-board wheel staging area.
+    # Full-page export also reveals accidental off-board footprints.
     commands.append([
         'pcb', 'export', 'svg', '--mode-single', '--page-size-mode', '1',
         '--exclude-drawing-sheet', '--layers', 'F.Cu,F.Fab,F.Silkscreen,Edge.Cuts,Dwgs.User',
@@ -57,7 +62,7 @@ def main():
     parity = report['schematic_parity']
     unconnected = report['unconnected_items']
     summary = {
-        'status': 'PLACEMENT REVIEW ONLY - NOT FABRICATION APPROVAL',
+        'status': 'PCB REVIEW ONLY - NOT FABRICATION APPROVAL',
         'kicad_version': report['kicad_version'],
         'board_sha256': hashlib.sha256(board.read_bytes()).hexdigest(),
         'physical_drc_violations': len(violations),
@@ -68,7 +73,8 @@ def main():
         'ignored_checks': report.get('ignored_checks', []),
         'placement_checks_pass': not violations and not parity,
         'routing_complete': not unconnected,
-        'placement_scope': 'Original motherboard placement plus off-board wheel, IMU, RGB and optical staging; enclosure fit is unverified',
+        'placement_scope': ('60 x 95 mm motherboard; local buck routed, full-board routing and mechanical fit incomplete'
+                            if motherboard else 'Standalone encoder board; mechanical fit and cable operation unverified'),
     }
     (out / 'review-status.json').write_text(
         json.dumps(summary, indent=2) + '\n', encoding='utf-8')

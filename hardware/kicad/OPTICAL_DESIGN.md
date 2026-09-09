@@ -2,7 +2,7 @@
 
 Revision 0.7, checked 2026-09-09. The V1 circuit now uses **PMW3360DM-T2QU
 and LM19-LSI**. Sheets 16 and 17 add 22 BOM components and four test pads.
-U35 now has a provisional on-board location; its support parts remain staged. Samples,
+The complete optical group now has provisional on-board placement. Samples,
 SROM usage rights, physical fit and measured operation remain open.
 
 ## Circuit and power
@@ -163,3 +163,10 @@ Subsequent PCB-first placement moves only U35 to X=125.5, Y=157.5mm, F.Cu at
 270 degrees; the other 315 footprints stay put. The optical keepout now follows
 the aperture guide and a separate drawing reserves the underside lens envelope.
 The outer shell will be designed around the resulting mechanical interfaces.
+
+The following [support placement pass](../pcb/OPTICAL_PLACEMENT.md) moves all
+25 optical support footprints onto the board. U35 and the other 290 footprints
+retain their prior positions in that pass. The subsequent
+[60 mm placement pass](../pcb/PLACEMENT_60MM.md) fits the remaining motherboard
+parts, relocates the optical supply block to the left and moves its four test
+pads to B.Cu. U35 and its pin-adjacent bypass capacitors remain fixed.

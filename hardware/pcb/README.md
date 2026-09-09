@@ -3,30 +3,27 @@
 Initial placement, 2026-09-09, KiCad 10.0.6. Open the editable
 [MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb) from the
 [KiCad project](../kicad/MagMouse.kicad_pro).
-**This is an unrouted placement draft, not a fabrication release.**
+**This is a partially routed prototype draft, not a fabrication release.**
 
 ## Starting geometry
 
-The board is a provisional **50 x 95 mm**, 1.6 mm thick, with 3 mm corner
-chamfers. Its bounds are X = 100..150 mm and Y = 100..195 mm in KiCad;
+The board is a provisional **60 x 95 mm**, 1.6 mm thick, with 3 mm corner
+chamfers. Its bounds are X = 95..155 mm and Y = 100..195 mm in KiCad;
 the USB/front edge is Y = 100 mm. These are layout assumptions, not dimensions
 from a measured enclosure. No mounting holes or optical aperture have been cut.
 
-All 316 schematic footprints are linked to their symbols and nets. The previous
-183 placements are preserved: 150 BOM components on the front and 33 test pads
-on the back. The 89 new wheel footprints are staged outside the outline at
-approximately X = 169..254 mm, in four labelled subsystem groups. These include
-84 BOM components, four additional test pads and J5 motor wire pads. Staging is
-not mechanical placement and does not establish that all parts fit this board.
-Revision 0.6 preserves all of those positions and adds 18 IMU/RGB staging
-footprints at approximately X=169..254, Y=50..80mm: 16 BOM components and
-two test pads. Revision 0.7 adds 26 optical footprints at approximately
-X=45..149, Y=40..80mm, preserving the previous 290 placements. These contain
-22 BOM parts and four test pads. U35 has the staggered custom land pattern;
-its aperture guide is on Dwgs.User, with no actual cutout yet. The outline is unchanged.
-The subsequent PCB-first placement moves U35 from staging to X=125.5,
-Y=157.5mm on F.Cu, rotation 270 degrees. The remaining 315 footprints retain
-their locations. Sensor support parts remain staged for the next placement pass.
+All **315 motherboard footprints** are inside the outline: 271 BOM components,
+43 test pads and J5 motor wire pads. The [60 mm placement pass](PLACEMENT_60MM.md)
+was followed by the [separate encoder project](../encoder/README.md): U27/C62
+moved to that board and J6 was added here. No off-board staging parts remain.
+All BOM components on the motherboard remain on the front; 40 test pads are on
+the back and three on the front. Pads do not require backside component assembly.
+
+The outline was widened symmetrically from 50 to 60 mm. The USB connector,
+ESP32 module and optical centre remain fixed. U35 is at X=125.5, Y=157.5mm on
+F.Cu, rotation 270 degrees. Some earlier circuit groups and optical supplies
+were moved to make space for the wheel driver, ADC2, brake, IMU and RGB.
+The [optical placement notes](OPTICAL_PLACEMENT.md) describe the current arrangement.
 The shell will be designed around the PCB and its mechanical interfaces.
 Test pads and J5 are excluded from the BOM and placement export. MPN, LCSC and datasheet fields are
 retained. Future schematic changes can use KiCad's **Update PCB from Schematic
@@ -34,12 +31,12 @@ retained. Future schematic changes can use KiCad's **Update PCB from Schematic
 
 | Area | Initial placement |
 | --- | --- |
-| Front | USB-C connector, data/CC protection, Type-C detection, input eFuse and buck |
+| Front | USB-C connector, data/CC protection, Type-C detection, input eFuse, buck and J6 encoder cable header |
 | Front sides | Left/right coil connectors, bridge drivers and Hall sensors |
-| Left middle | Middle button, actuator storage/clamp, current monitor and ADC1 |
-| Right middle | Actuator eFuse; space budget for wheel driver, ADC2 and brake |
-| Centre | Provisional wheel, optical, IMU and RGB reservations |
-| Rear | ESP32, interlock logic, reset/boot switches and underside test access |
+| Left middle | Middle button, actuator storage/clamp, current monitor, ADC1 and optical supplies |
+| Right middle | Actuator eFuse, wheel driver and ADC2; brake resistors along the edge |
+| Centre | Provisional wheel/encoder mechanics, optical group and IMU; RGB near USB |
+| Rear | ESP32, interlock, ADC2 SPI buffer, brake comparator/reference, reset/boot and test access |
 
 Drawings on **Dwgs.User** identify the reserved areas. The wheel rectangle
 prohibits copper, vias, pads and footprints on all four copper layers. The optical
@@ -63,8 +60,9 @@ and the [module datasheet, v1.7](https://documentation.espressif.com/esp32-s3-mi
 
 Four copper layers are enabled. The intended allocation is front components and
 signals, In1 ground reference, In2 power/slow signals, and back signals/test pads.
-No tracks, vias or copper pours are present yet. The inner-layer dielectric
-thicknesses, copper weights and controlled-impedance stackup are not selected.
+The [buck routing pass](BUCK_LAYOUT.md) adds 37 track segments, 11 vias and local
+front/In1 ground pours. The inner-layer dielectric thicknesses, copper weights
+and controlled-impedance stackup are not selected. Board-wide routing is open.
 
 The project starts with 0.15 mm net clearance, a 0.127 mm absolute minimum,
 0.25 mm default tracks, 0.60/0.30 mm through vias and 0.30 mm copper-to-edge
@@ -86,29 +84,30 @@ From the repository root:
     python hardware/kicad/export_pcb_review.py
 
 This reads the live schematic/PCB and produces front/back SVGs, native DRC JSON
-and a summary under `build/pcb-review`. `placement-with-staging.svg` includes
-the off-board wheel, peripheral and optical parts; the board-area front/back crops omit them. The
+and a summary under `build/pcb-review`. The legacy-named
+`placement-with-staging.svg` now has no off-board encoder parts. The
 exporter accepts `--kicad-cli PATH`.
 The default exit status checks placement and schematic parity; add
 `--require-routed` to also fail on incomplete connectivity. Neither mode
 establishes manufacturing or electrical acceptance.
 
 Current check: **0 physical DRC violations and 0 schematic parity issues**,
-without DRC exclusions. Native connectivity counts **792 unrouted connections**;
+without DRC exclusions. Native connectivity counts **775 unrouted connections**;
 the DRC JSON returns 499 unconnected entries, so its list length is not a full
-connection count. The board is deliberately unrouted.
+connection count. Only the buck subcircuit and its local return copper are routed.
+See [buck layout and native copper checks](BUCK_LAYOUT.md) for the completed scope.
 This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 
-1. Continue PCB-first placement around the provisional optical centre; reserve
-   wheel, paddle magnets, mounting holes and connector access, then design the
-   shell/base around the resulting board and verified optical height.
+1. Fit the implemented upright encoder board, its harness and the complete wheel
+   assembly; allocate paddle magnets, mounting holes and connector access.
+   Design the shell/base around the board and verified optical height.
 2. Qualify [PMW3360 samples, SROM and optical fit](../kicad/OPTICAL_DESIGN.md).
    Optical, [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) circuits are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
    [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
-3. Refine placement using those envelopes and each IC's reference layout.
-   Tighten buck/bridge current loops, decoupling and analog return paths; provide
+3. Continue from the routed buck with U12 input-eFuse placement and routing.
+   Tighten bridge current loops, decoupling and analog return paths; provide
    exposed-pad thermal vias and space for the brake resistor's heat.
 4. Choose the production stackup, route USB and power, then sensing/control.
    Fill ground planes and review return paths, thermal paths and test access.

@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - 12_Wheel_Feedback")
     (date "2026-09-09")
-    (rev "0.5 DRAFT")
+    (rev "0.8 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols
@@ -772,15 +772,240 @@
             (effects
               (font
                 (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector_Generic:Conn_01x08"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 10.16 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x08"
+        (at 0 -12.7 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x08_1_1"
+        (rectangle
+          (start -1.27 8.89)
+          (end 1.27 -11.43)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 7.747)
+          (end 0 7.493)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 5.207)
+          (end 0 4.953)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -4.953)
+          (end 0 -5.207)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -7.493)
+          (end 0 -7.747)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -10.033)
+          (end 0 -10.287)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 7.62 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 5.08 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -5.08 0)
+          (length 3.81)
+          (name "Pin_6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -7.62 0)
+          (length 3.81)
+          (name "Pin_7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -10.16 0)
+          (length 3.81)
+          (name "Pin_8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27))))))
       (embedded_fonts no)))
-  (text "12 / Wheel current ADC and angle encoder"
+  (text "12 / Wheel current ADC and encoder-board interface"
     (at 20 18 0)
     (effects
       (font
         (size 2.5 2.5))
       (justify left top))
     (uuid "ad3ba991-a241-5b38-990a-b3aa011d53cc"))
-  (text "DRAFT 0.5 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.8 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -1147,240 +1372,6 @@
         (size 0.85 0.85))
       (justify left))
     (uuid "06bb0910-689f-56f6-a1fb-7cbb67766f81"))
-  (symbol
-    (lib_id "MagMouse:MA735GGU")
-    (at 274.32 81.28 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "d989bd01-19db-5288-afdd-12ce956cbaff")
-    (property "Reference" "U27"
-      (at 279.32 59.040000000000006 0)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Value" "MA735GGU-P"
-      (at 279.32 61.540000000000006 0)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Footprint" "MagMouse:MPS_UTQFN14_2x2"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Manufacturer" "Monolithic Power Systems"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "MPN" "MA735GGU-P"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "LCSC" "C17233427"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "JLCPCB Part #" "C17233427"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; stock/assembly eligibility refresh required"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Checked" "2026-09-09"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C17233427.html"
-      (at 274.32 81.28 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (instances
-      (project "MagMouse"
-        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/6bb26027-e36c-5149-93b0-61be9c808734"
-          (reference "U27")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 251.46 66.04)
-      (xy 246.38 66.04))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c4c042c7-84da-580e-935b-53d8a2177d3c"))
-  (global_label "ENC_3V3"
-    (shape bidirectional)
-    (at 246.38 66.04 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "406ac735-57ed-5105-97b3-74cf38b69401"))
-  (wire
-    (pts
-      (xy 251.46 71.12)
-      (xy 246.38 71.12))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "cd108c53-564e-56d0-8d78-ea67ec837317"))
-  (global_label "ENC_SCLK_LOCAL"
-    (shape bidirectional)
-    (at 246.38 71.12 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "dfa65296-df84-5945-affc-feea589f9354"))
-  (wire
-    (pts
-      (xy 251.46 76.2)
-      (xy 246.38 76.2))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c01da323-b6f7-5ecf-a845-59d0d135f720"))
-  (global_label "ENC_MOSI_LOCAL"
-    (shape bidirectional)
-    (at 246.38 76.2 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "bfa9f68f-2eea-52ac-bc05-42010ec61c5d"))
-  (wire
-    (pts
-      (xy 251.46 81.28)
-      (xy 246.38 81.28))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "d43b97ed-4e3c-55be-a717-c2fc1ee092bf"))
-  (global_label "ENC_CS_LOCAL"
-    (shape bidirectional)
-    (at 246.38 81.28 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "5457b68f-6123-58b7-ae67-8727e2fad504"))
-  (wire
-    (pts
-      (xy 251.46 86.36)
-      (xy 246.38 86.36))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "32bbdaee-c767-51bb-bd1b-eaea9b1fa36e"))
-  (global_label "GND"
-    (shape bidirectional)
-    (at 246.38 86.36 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "29627a32-e4b8-5935-97de-2a6c6219e3c6"))
-  (wire
-    (pts
-      (xy 251.46 91.44)
-      (xy 246.38 91.44))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a0bbe8ac-f3ce-5a89-93b2-5cf634b5bd74"))
-  (global_label "GND"
-    (shape bidirectional)
-    (at 246.38 91.44 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "b0cc4f56-6468-52cf-bd23-e1f3e80d4aea"))
-  (wire
-    (pts
-      (xy 251.46 96.52)
-      (xy 246.38 96.52))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "1b614fa8-3578-51ce-99ab-8b9b7fdde8b1"))
-  (global_label "GND"
-    (shape bidirectional)
-    (at 246.38 96.52 180)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "3c20b3b4-ef36-5edf-b250-518f7926ad37"))
-  (wire
-    (pts
-      (xy 297.18 66.04)
-      (xy 302.26 66.04))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "bf24235e-9feb-5147-853e-702c5df15706"))
-  (global_label "ENC_MISO_LOCAL"
-    (shape bidirectional)
-    (at 302.26 66.04 0)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify left))
-    (uuid "390d977d-26a4-5f84-b108-07f540797731"))
-  (no_connect
-    (at 297.18 71.12)
-    (uuid "e40027ec-ff4d-5e64-9fd3-2b57b6b5f002"))
-  (no_connect
-    (at 297.18 76.2)
-    (uuid "2d1dddc6-7aaa-54c8-9d78-6e534d19044c"))
-  (no_connect
-    (at 297.18 81.28)
-    (uuid "97c66a8e-b45f-54ce-b48c-92ef1164cca3"))
-  (no_connect
-    (at 297.18 86.36)
-    (uuid "c4097ba2-28bf-5d0a-9ddb-377f95fbf0b0"))
-  (no_connect
-    (at 297.18 91.44)
-    (uuid "13c31043-7614-50e8-b4d8-bd238ddef022"))
-  (no_connect
-    (at 297.18 96.52)
-    (uuid "2db214cf-8223-52d0-99a1-0fd0c66f4f77"))
   (symbol
     (lib_id "Power_Management:TPS22919DCK")
     (at 187.96 154.94 0)
@@ -3354,126 +3345,6 @@
     (uuid "c6e035ed-cce5-588c-9422-b7596ed47e24"))
   (symbol
     (lib_id "Device:C")
-    (at 217.17 236.22 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "b84f27bf-2d96-5159-bbee-7c9bd983271b")
-    (property "Reference" "C62"
-      (at 221.17 234.72 0)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Value" "1uF/50V"
-      (at 221.17 237.22 0)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Datasheet" ""
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Manufacturer" "Samsung Electro-Mechanics"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "MPN" "CL10A105KB8NNNC"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "LCSC" "C15849"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "JLCPCB Part #" "C15849"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Checked" "2026-09-09"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15849.html"
-      (at 217.17 236.22 0)
-      (hide yes)
-      (effects
-        (font
-          (size 1.0 1.0))
-        (justify left)))
-    (instances
-      (project "MagMouse"
-        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/6bb26027-e36c-5149-93b0-61be9c808734"
-          (reference "C62")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 217.17 232.41)
-      (xy 217.17 227.33))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c542876c-0fdd-5846-9a9f-2ff061c81978"))
-  (global_label "ENC_3V3"
-    (shape bidirectional)
-    (at 217.17 227.33 90)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify left))
-    (uuid "a0aefd76-f2d2-59d8-8821-84b877245dda"))
-  (wire
-    (pts
-      (xy 217.17 240.03)
-      (xy 217.17 245.11))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "50c58681-0a47-5920-bb82-52cf13c4a902"))
-  (global_label "GND"
-    (shape bidirectional)
-    (at 217.17 245.11 270)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify right))
-    (uuid "0b935ad5-d59c-5849-b482-7539468d51c6"))
-  (symbol
-    (lib_id "Device:C")
     (at 279.4 236.22 0)
     (unit 1)
     (in_bom yes)
@@ -3719,7 +3590,7 @@
         (size 1.1 1.1))
       (justify left top))
     (uuid "97c9129e-f300-5233-b6fb-22520732fdf2"))
-  (text "MA735 supply follows HALL_EN; QOD discharges ENC_3V3.\nAbsolute SPI only; unused outputs NC, TEST/SSCK grounded.\nStart with 64us filter window; high-resolution 16ms filtering\nis unsuitable for the proposed fast wheel feedback loop."
+  (text "U27/C62 moved to hardware/encoder/Encoder.kicad_sch.\nU28 still switches ENC_3V3 with HALL_EN and QOD discharge.\nU29/U25 retain power-off SPI isolation. No GPIO change.\nUse an eight-wire pin-to-pin harness; confirm cable continuity."
     (at 219 123 0)
     (effects
       (font
@@ -3853,4 +3724,227 @@
       (font
         (size 0.85 0.85))
       (justify right))
-    (uuid "62d54206-b402-57f2-b770-de595143cbbe")))
+    (uuid "62d54206-b402-57f2-b770-de595143cbbe"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x08")
+    (at 274.32 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "51683451-45a1-5fc3-9574-ebb43523209b")
+    (property "Reference" "J6"
+      (at 278.32 79.78 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "ENCODER_8P"
+      (at 278.32 82.28 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "JST"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "SM08B-SRSS-TB(LF)(SN)"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C160407"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C160407"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C160407.html"
+      (at 274.32 81.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "MagMouse"
+        (path "/5d73110b-42e6-5c5c-9841-c82d60f67640/6bb26027-e36c-5149-93b0-61be9c808734"
+          (reference "J6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 269.24 73.66)
+      (xy 264.16 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bb8b70a6-5c8f-5c32-b9bc-a892f5b88993"))
+  (global_label "ENC_3V3"
+    (shape bidirectional)
+    (at 264.16 73.66 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "83ee5af4-3a83-58f8-a0dc-d9b542adfec1"))
+  (wire
+    (pts
+      (xy 269.24 76.2)
+      (xy 264.16 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9a4c103e-9047-5b8a-bc57-43d42b82e303"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 264.16 76.2 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "f5a2c82b-005e-55c1-acbd-adf3b3312e5e"))
+  (wire
+    (pts
+      (xy 269.24 78.74)
+      (xy 264.16 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "553b3b6c-ef4b-5e74-a21b-77760f1fbe3f"))
+  (global_label "ENC_SCLK_LOCAL"
+    (shape bidirectional)
+    (at 264.16 78.74 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "9ccd91af-11f1-5ac1-86ff-3ffc0d7377bd"))
+  (wire
+    (pts
+      (xy 269.24 81.28)
+      (xy 264.16 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "841b2219-58ca-57f1-95e9-955121901189"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 264.16 81.28 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "16383974-993b-51e4-8536-32631c1dc044"))
+  (wire
+    (pts
+      (xy 269.24 83.82)
+      (xy 264.16 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "59a018e9-1b16-5536-afa5-3fe183228258"))
+  (global_label "ENC_MOSI_LOCAL"
+    (shape bidirectional)
+    (at 264.16 83.82 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "5b1ce2f2-9487-5f32-9432-fb16fd196b6b"))
+  (wire
+    (pts
+      (xy 269.24 86.36)
+      (xy 264.16 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9b10f420-0cea-591c-8a3f-639ddf2f3f5c"))
+  (global_label "ENC_CS_LOCAL"
+    (shape bidirectional)
+    (at 264.16 86.36 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "f255e18e-b122-58b1-9c91-37418480756b"))
+  (wire
+    (pts
+      (xy 269.24 88.9)
+      (xy 264.16 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cdf379f1-b48a-5bf7-9345-5015888d4478"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 264.16 88.9 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "74047159-580b-5961-bccc-e10a5752d6b2"))
+  (wire
+    (pts
+      (xy 269.24 91.44)
+      (xy 264.16 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0a7b94b6-38bf-538f-926e-f7849311fe29"))
+  (global_label "ENC_MISO_LOCAL"
+    (shape bidirectional)
+    (at 264.16 91.44 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "7dd39368-0bd6-59f6-9dbf-2139494f9aae"))
+  (text "TO UPRIGHT ENCODER BOARD\nJ6 pin N -> J7 pin N\n1  ENC_3V3\n2  GND\n3  SCLK (buffered)\n4  GND\n5  MOSI (buffered)\n6  CS (buffered)\n7  GND\n8  MISO (return)"
+    (at 296 62 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left top))
+    (uuid "aa6ceb38-960b-54c6-9504-c116380b51a8")))

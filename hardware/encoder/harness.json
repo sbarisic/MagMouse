@@ -1,0 +1,24 @@
+{
+  "name": "Motherboard J6 to upright encoder J7",
+  "status": "Prototype wiring specification; cable length and mechanical fit unverified",
+  "motherboard_connector": "J6",
+  "encoder_connector": "J7",
+  "header_mpn": "SM08B-SRSS-TB(LF)(SN)",
+  "header_lcsc": "C160407",
+  "housing_mpn": "SHR-08V-S-B",
+  "contact_mpn": "SSH-003T-P0.2-H",
+  "housing_quantity": 2,
+  "contact_quantity": 16,
+  "wire": "Eight separate conductors, AWG 28-32, insulation OD 0.4-0.8 mm per JST SH specification",
+  "prototype_length_target_mm": 50,
+  "connections": [
+    {"motherboard_pin": 1, "encoder_pin": 1, "net": "ENC_3V3"},
+    {"motherboard_pin": 2, "encoder_pin": 2, "net": "GND"},
+    {"motherboard_pin": 3, "encoder_pin": 3, "net": "ENC_SCLK_LOCAL"},
+    {"motherboard_pin": 4, "encoder_pin": 4, "net": "GND"},
+    {"motherboard_pin": 5, "encoder_pin": 5, "net": "ENC_MOSI_LOCAL"},
+    {"motherboard_pin": 6, "encoder_pin": 6, "net": "ENC_CS_LOCAL"},
+    {"motherboard_pin": 7, "encoder_pin": 7, "net": "GND"},
+    {"motherboard_pin": 8, "encoder_pin": 8, "net": "ENC_MISO_LOCAL"}
+  ]
+}

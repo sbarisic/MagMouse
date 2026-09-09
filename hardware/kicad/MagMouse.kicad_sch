@@ -6,7 +6,7 @@
   (title_block
     (title "MagMouse - MagMouse")
     (date "2026-09-09")
-    (rev "0.7 DRAFT")
+    (rev "0.8 DRAFT")
     (company "MagMouse")
     (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
   (lib_symbols)
@@ -17,7 +17,7 @@
         (size 2.5 2.5))
       (justify left top))
     (uuid "3f36e4f1-a069-5d5f-b81a-7a0e91da7ced"))
-  (text "DRAFT 0.7 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+  (text "DRAFT 0.8 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
     (at 20 24 0)
     (effects
       (font
@@ -231,7 +231,7 @@
         (size 1.1 1.1))
       (justify left top))
     (uuid "326f7c0d-a7a5-59c3-9eba-3ad84bff635f"))
-  (text "JLCPCB catalog IDs are not stock or assembly approval. PCB is unrouted; optical parts are staged."
+  (text "JLCPCB catalog IDs are not stock or assembly approval. Motherboard buck is routed; full-board routing remains open. Optics are placed.\nU27/C62 are on the separate routed 14 x 18 mm Encoder board; cable and mechanical fit remain unverified."
     (at 20 273 0)
     (effects
       (font

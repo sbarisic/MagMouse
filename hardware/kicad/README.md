@@ -1,9 +1,11 @@
 # KiCad electronics
 
-Revision 0.7, 2026-09-09, KiCad 10.0.6. USB-C power, MCU allocation and wheel/brake, IMU, RGB and PMW3360 circuits are connected.
-An [initial motherboard placement](../pcb/README.md) is available as of
-2026-09-09. Both schematic and PCB are editable development drafts; **the PCB
-is unrouted and not order-ready**. Firmware, measurements and mechanical fit remain open.
+Revision 0.8, 2026-09-09, KiCad 10.0.6. USB-C power, MCU allocation and wheel/brake, IMU, RGB and PMW3360 circuits are connected.
+A [60 x 95 mm motherboard placement](../pcb/README.md) is available as of
+2026-09-09, with all 315 footprints on-board. U27/C62 and J7 are in a separate,
+fully routed [14 x 18 mm encoder project](../encoder/README.md). Both are editable
+development drafts; **the motherboard is partially routed and neither board is
+order-ready**. Firmware, measurements and mechanical fit remain open.
 
 ## Open and edit
 
@@ -32,7 +34,7 @@ No JLCPCB plugin is needed. Edit the schematic files directly.
 | 09 Interface reservations | MCU interfaces, test pads and boot/control bias |
 | 10 Wheel driver | DRV8316R, 3-PWM hardware shutdown, charge pump, unused-buck termination and motor wire pads |
 | 11 Wheel SPI | Driver/ADC2/encoder power-domain buffers and fault return |
-| 12 Wheel feedback | Second ADS7038, phase-current filters, MA735 and switched encoder supply |
+| 12 Wheel feedback | Second ADS7038, phase-current filters, switched encoder supply and J6 cable header |
 | 13 Regeneration brake | ACT-powered comparator/reference, MOSFET and four power resistors |
 | 14 IMU | ICM-42688-P, shared SPI2, INT1 and supply bypass |
 | 15 RGB status | Single-data-pin LED, enabled regulator and logic buffer |
@@ -54,6 +56,9 @@ and wiring are external assemblies, not SMT parts.
 From the repository root, run these commands with Python 3 and KiCad 10:
 
     python hardware/kicad/export_review.py
+    python hardware/kicad/export_review.py --schematic hardware/encoder/Encoder.kicad_sch
+    python hardware/kicad/verify_encoder.py
+    python hardware/kicad/test_encoder_checks.py
     python hardware/kicad/verify_power.py
     python hardware/kicad/verify_resources.py
     python hardware/kicad/verify_wheel.py
@@ -68,10 +73,16 @@ for a nonstandard KiCad footprint installation. Generated files go to
 build/kicad-review: eighteen SVG sheets, XML netlist, ERC JSON, DRAFT-bom.csv,
 review-status.json, power-checks.json, resource-checks.json, wheel-checks.json, peripheral-checks.json and optical-checks.json. Sources are not overwritten.
 
-The current draft has **272 BOM components**, all with catalog IDs, MPNs and
-footprints; 43 copper test pads, J5 motor wire pads and four power flags are excluded from the BOM.
-**ERC: zero errors and zero warnings, without new waivers.**
-The additional checker verifies 191 critical power pin connections, 316 footprint
+The motherboard has **271 BOM components**, all with catalog IDs, MPNs and
+footprints; 43 copper test pads, J5 motor wire pads and four power flags are
+excluded from its BOM. The separate encoder has one schematic sheet and three
+BOM components/footprints: U27, C62 and J7. Across both projects there are 19
+schematic pages, 274 BOM components and 318 footprints. Encoder review outputs
+and its separate draft BOM go to `build/encoder-review`; its two incoming power
+flags are excluded from assembly. Export both netlists before running the wheel
+checker. The encoder checker also verifies the actual harness contract.
+**Both projects: ERC zero errors and zero warnings, without new waivers.**
+The additional checker verifies 191 critical power pin connections, 315 motherboard footprint
 assignments, complete source-to-export coverage and 4,096 Boolean interlock
 cases. The resource checker verifies all 39 module GPIOs: 38 assigned and GPIO46
 reserved low for boot-safe expansion. See [the full allocation](../../docs/interfaces.md).
@@ -87,6 +98,8 @@ Standard PCBA; refresh service eligibility and pricing before placing an order.
 These schematic tools do not produce manufacturing files. Use
 `python hardware/kicad/export_pcb_review.py` for the separate PCB placement/DRC
 review; see [board setup and remaining layout work](../pcb/README.md).
+The first [buck routing pass](../pcb/BUCK_LAYOUT.md) also provides native copper
+connectivity checks and fault-injection tests, run with KiCad's bundled Python.
 
 ## Work before full-board freeze
 

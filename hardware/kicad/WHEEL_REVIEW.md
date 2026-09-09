@@ -192,6 +192,9 @@ Q5 or comparator/reference failure is not covered by the normal-operation clamp.
 ## Reproducible checks and remaining gates
 
     python hardware/kicad/export_review.py
+    python hardware/kicad/export_review.py --schematic hardware/encoder/Encoder.kicad_sch
+    python hardware/kicad/verify_encoder.py
+    python hardware/kicad/test_encoder_checks.py
     python hardware/kicad/verify_power.py
     python hardware/kicad/verify_resources.py
     python hardware/kicad/verify_wheel.py
@@ -199,16 +202,23 @@ Q5 or comparator/reference failure is not covered by the normal-operation clamp.
     python hardware/kicad/export_pcb_review.py
 
 The wheel checker verifies 266 pin connections, 32 shutdown combinations,
-22 part identities, 58 custom land geometries and 128 brake corners. Five
-negative tests reject bypassed shutdown, wrong brake/ADC supply domains,
-the incorrect 33 Ω catalog number and an unsafe brake divider.
-Native ERC and physical DRC pass without new exclusions; 499 PCB connections
-remain unrouted. Staging outside the outline does not prove all parts fit.
+22 part identities, 58 custom land geometries and 128 brake corners across both
+board netlists. Five tests include a passing baseline and faults in shutdown,
+brake/ADC supply domains, the 33 Ω catalog number and brake divider.
+Both projects pass native ERC, physical DRC and parity without new exclusions.
+After the [buck routing pass](../pcb/BUCK_LAYOUT.md), the motherboard has 775
+native unrouted connections (the DRC JSON lists 499 entries). The encoder is fully routed with zero unconnected items. Eight encoder
+tests check the baseline and seven connector, harness and split faults.
 
 Subsequent revisions add ICM-42688-P/RGB and PMW3360 optics; see
 [optical design](OPTICAL_DESIGN.md) for the motion-burst scheduling constraint.
-Wheel timing, regeneration energy and mechanical qualification remain open.
-Before routing, settle shell geometry, motor/encoder magnetic alignment, sensor
+The [60 mm motherboard pass](../pcb/PLACEMENT_60MM.md) places the wheel
+motherboard circuitry. Revision 0.8 moves U27/C62 to the separate
+[upright encoder board](../encoder/README.md), adds J6/J7 JST SH headers and
+checks the pin-to-pin harness. U28, U29 and U25 remain on the motherboard;
+power-off isolation and GPIO allocation are unchanged. Wheel timing, cable
+waveforms, regeneration energy and mechanical qualification remain open.
+Before routing, settle PCB-first mounting interfaces, motor/encoder magnetic alignment, sensor
 aperture, Hall/paddle locations, wire clearance, brake cooling and the production
 stackup. Bench timing and energy results remain electrical acceptance gates.
 
