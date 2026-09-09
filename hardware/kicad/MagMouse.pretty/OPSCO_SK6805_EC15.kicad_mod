@@ -1,0 +1,60 @@
+(footprint "OPSCO_SK6805_EC15"
+  (version 20241229)
+  (generator "pcbnew")
+  (layer "F.Cu")
+  (descr "SK6805-EC15; 0.55mm lands, 0.40mm gap; see PERIPHERAL_REVIEW.md")
+  (attr smd)
+  (fp_text reference "REF**"
+    (at 0 -1.55)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.6 0.6)
+        (thickness 0.1))))
+  (fp_text value "SK6805-EC15"
+    (at 0 1.55)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.6 0.6)
+        (thickness 0.1))))
+  (fp_rect
+    (start -0.75 -0.75)
+    (end 0.75 0.75)
+    (stroke
+      (width 0.1)
+      (type default))
+    (fill none)
+    (layer "F.Fab"))
+  (fp_rect
+    (start -1 -1)
+    (end 1 1)
+    (stroke
+      (width 0.05)
+      (type default))
+    (fill none)
+    (layer "F.CrtYd"))
+  (fp_circle
+    (center -1.1 0.9)
+    (end -1.0 0.9)
+    (stroke
+      (width 0.1)
+      (type default))
+    (fill none)
+    (layer "F.SilkS"))
+  (pad "1" smd rect
+    (at -0.475 0.475)
+    (size 0.55 0.55)
+    (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "2" smd rect
+    (at 0.475 0.475)
+    (size 0.55 0.55)
+    (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "3" smd rect
+    (at 0.475 -0.475)
+    (size 0.55 0.55)
+    (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "4" smd rect
+    (at -0.475 -0.475)
+    (size 0.55 0.55)
+    (layers "F.Cu" "F.Paste" "F.Mask")))

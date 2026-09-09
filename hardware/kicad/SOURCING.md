@@ -1,23 +1,25 @@
 # Draft sourcing and symbol review
 
-Revision 0.5, checked 2026-09-09. All 234 components in the present schematic
+Revision 0.6, checked 2026-09-09. All 250 components in the present schematic
 have manufacturer part numbers, catalog identifiers and assigned footprints.
 New USB-C power parts, changed regulator/inductor, package evidence and assembly
 constraints are documented in [POWER_REVIEW.md](POWER_REVIEW.md). The historical
 revision 0.2 selections below identify retained parts and superseded decisions.
 Recheck assembly stock, prices and service eligibility before ordering; none is
-reserved. This does not cover absent optical/IMU/RGB subsystems.
+reserved. This does not cover the absent optical subsystem.
 Wheel part identities, pinouts, custom packages and brake tolerances are in
 [WHEEL_REVIEW.md](WHEEL_REVIEW.md).
 
 Revision 0.4 adds R72-R80 using the existing 10 kOhm C25804 selection and
 TP16-TP33 as copper test pads, excluded from the assembly BOM. The second ADC
 and addressable RGB were allocated interfaces in that revision. Revision 0.5
-implements ADC2 and the wheel subsystem; RGB remains pending.
+implements ADC2 and the wheel subsystem. Revision 0.6 adds IMU/RGB; see
+[PERIPHERAL_REVIEW.md](PERIPHERAL_REVIEW.md) for catalog and package evidence,
+and [OPTICAL_REVIEW.md](OPTICAL_REVIEW.md) for actual optical sourcing gaps.
 
 Revision 0.5 also corrects R5/R6/R58 sourcing: the intended 33 ohm value now
 uses **0603WAF330JT5E / C23140**. C23138 is a **330 ohm** resistor and is now
-used only for the new 330 ohm current filters R102–R104. Intended USB and
+used for the 330 ohm current filters R102–R104 and RGB series resistor R128. Intended USB and
 current-limit resistance values are unchanged.
 
 | References | Manufacturer part number | Catalog |

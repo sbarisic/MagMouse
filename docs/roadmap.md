@@ -37,7 +37,12 @@
   see [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
 - [ ] Measure returned wheel energy and brake startup/overshoot/temperatures;
   validate or revise the resistor, capacitance and threshold selections.
-- [ ] Draw the exact PAW3950 reference, then ICM-42688-P and addressable RGB.
+- [ ] Obtain a verified optical sensor/lens source and exact PAW3950 circuit/optics
+  evidence; see [optical review](../hardware/kicad/OPTICAL_REVIEW.md). JLC listing
+  C9900186384 currently needs supplied parts; it is not purchasable stock.
+- [x] Draw ICM-42688-P and addressable RGB with enabled supply and level buffer
+  (revision 0.6); see [peripheral review](../hardware/kicad/PERIPHERAL_REVIEW.md).
+- [ ] Qualify IMU shared-SPI/vibration and RGB voltage, timing and USB suspend current.
 - [x] Select KiCad and add a reproducible schematic review-export workflow.
 - [ ] Choose firmware tools and document versions and reproducible workflows.
 - [ ] Complete rail, connector, current-sense and fault-control schematics.
@@ -52,6 +57,7 @@ that the actuators can operate within the intended power and thermal envelope.
   see [placement draft](../hardware/pcb/README.md). Routing remains open.
 - [x] Synchronize the wheel schematic to the PCB as 89 off-board staging footprints;
   preserve the original 183 placements. Mechanical fit is not established.
+- [x] Stage 18 IMU/RGB footprints without moving the previous 272 placements.
 - [ ] Model optical height, button travel/stops and actuator mounting.
 - [ ] Validate separate sensing/actuator magnets and separation from wheel/coil fields.
 - [ ] Select flexure material/print process and measure creep, fatigue and stop loads.

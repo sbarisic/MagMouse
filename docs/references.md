@@ -26,3 +26,8 @@ The custom actuator dimensions, force targets, material suggestions and cost
 allowances come from the supplied analysis and remain unmeasured/unquoted.
 `ideas.md` preserves the original industrial-actuator brainstorming; use the
 maintained architecture and BOM for the current selection.
+
+Optical sourcing and the pinned public reference comparison are in
+[OPTICAL_REVIEW.md](../hardware/kicad/OPTICAL_REVIEW.md). Manufacturer revisions
+and catalog links for IMU/RGB are in
+[PERIPHERAL_REVIEW.md](../hardware/kicad/PERIPHERAL_REVIEW.md).

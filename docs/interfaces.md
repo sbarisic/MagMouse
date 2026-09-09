@@ -1,4 +1,4 @@
-# GPIO and peripheral allocation — revision 0.5 (pin map unchanged)
+# GPIO and peripheral allocation — revision 0.6 (pin map unchanged)
 
 The ESP32-S3-MINI-1-N8 fits V1 with **38 assigned GPIOs and one boot-low spare,
 GPIO46**. The user selected a single-data-pin addressable RGB LED on 2026-09-08.
@@ -11,8 +11,9 @@ The [machine-readable allocation](../hardware/kicad/gpio-allocation.json) and
 [Sheet 09](../hardware/kicad/09_Interface_Reservations.kicad_sch) exposes new
 signals on test pads and adds boot/control bias resistors. These are real MCU
 connections. Revision 0.5 adds ADC2, wheel driver, encoder, SPI isolation and
-autonomous brake sheets. The optical circuit, IMU and RGB still need their
-component sheets; see [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
+autonomous brake sheets. Revision 0.6 adds IMU and RGB sheets; the optical circuit remains reserved.
+See [wheel review](../hardware/kicad/WHEEL_REVIEW.md) and
+[peripheral review](../hardware/kicad/PERIPHERAL_REVIEW.md).
 
 ## Complete module pin map
 
@@ -69,7 +70,7 @@ GPIO26 is usable on N8 but occupied by PSRAM on N4R2. GPIO33-37 are available
 on this N8 module; memory-variant restrictions matter when substituting modules.
 
 GPIO0 retains the boot button/pull-up. GPIO3 WHEEL_RUN_REQ has R77 to ground.
-GPIO45 RGB_DATA has R78 to ground; the eventual LED/level shifter must not pull
+GPIO45 RGB_DATA has R78 to ground; the fitted U34 buffer does not pull
 it high during reset. GPIO46 has R80 to ground and no consumer, preserving
 download boot. Hold the required levels through the manufacturer's 3 ms
 strapping interval. No eFuse changes are required. GPIO39-42 have other uses,
@@ -102,7 +103,7 @@ Keep both ADS7038 devices in mode 0, including initial configuration. Use mode 3
 for MA735, with at least 80 ns CS setup and 25 ns hold; allow 150 ns between
 angle frames and 750 ns around register accesses. Do not perform encoder NVM
 writes during motor control. Its SPI read width does not equal effective angle
-resolution. Exact IMU and optical SPI settings belong in their circuit review.
+resolution. IMU uses mode 0 at 10MHz with 100ns CS setup/hold/release guards; optical settings remain open.
 
 Bus A needs a bounded scheduler/owner. Reserve recurring angle-read slots,
 then service ADC1, optical and IMU work. Bound FIFO bursts; release the bus
@@ -125,7 +126,7 @@ short transfers can perform better without it.
 | --- | --- |
 | MCPWM group 0 | Wheel: timer 0, operators 0/1/2, generator A from each; three center-aligned PWM outputs |
 | MCPWM group 1 | Buttons: timer 0, operators 0/1/2, generators A/B per button; six independent outputs |
-| RMT | One TX channel for addressable RGB; exact LED/interface pending |
+| RMT | One TX channel for SK6805-EC15 via U34; enabled RGB_5V rail |
 | GPIO interrupts | PAW_MOTION_N, IMU_INT1, DRV_FAULT_N; CC/VBUS changes as needed |
 | MCPWM fault | DRV_FAULT_N to group 0; firmware setup does not replace external disable gates |
 | UART0 | GPIO43 TX / GPIO44 RX |
@@ -145,11 +146,12 @@ internal clock; INT2/FSYNC/CLKIN are unassigned. GPIO46 reuse needs a boot-level
 review. The brake chopper must protect the rail independently of an MCU output.
 
 Power-domain controls are included in the allocation: reuse HALL_EN (derived
-from SENS_REQ and MCU_EN) for future MA735 and RGB supply enables. This keeps
+from SENS_REQ and MCU_EN) for MA735 and RGB supply enables. This keeps
 them off during reset/suspend without extra GPIOs. RGB power comes from the
 appropriate protected logic supply, not the haptics-only ACT rail. OPT_CTRL
-reserves optical sequencing; IMU uses its software sleep controls. Implement
-power-off SPI/data isolation and startup settling in those component sheets.
+reserves optical sequencing; IMU uses its software sleep controls. U28/U29
+provide encoder isolation; U33/U34 provide RGB supply/data control. Their
+startup and power-down behavior still requires measurement.
 Independent always-on RGB/encoder operation would require a new resource review.
 
 ## Two ADCs
@@ -219,7 +221,8 @@ signals, peripheral capacity and timing arithmetic. They do not establish
 firmware deadlines or analog performance.
 
 Wheel circuits now implement the [wheel control contract](wheel-control.md).
-Next draw the exact optical circuit, IMU and RGB. Timing, regenerative energy and physical acceptance remain open.
+Next resolve the exact optical circuit and sourcing. IMU/RGB are drawn in revision 0.6.
+Timing, regenerative energy and physical acceptance remain open.
 
 ## Primary evidence
 

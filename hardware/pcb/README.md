@@ -12,12 +12,15 @@ chamfers. Its bounds are X = 100..150 mm and Y = 100..195 mm in KiCad;
 the USB/front edge is Y = 100 mm. These are layout assumptions, not dimensions
 from a measured enclosure. No mounting holes or optical aperture have been cut.
 
-All 272 schematic footprints are linked to their symbols and nets. The previous
+All 290 schematic footprints are linked to their symbols and nets. The previous
 183 placements are preserved: 150 BOM components on the front and 33 test pads
 on the back. The 89 new wheel footprints are staged outside the outline at
 approximately X = 169..254 mm, in four labelled subsystem groups. These include
 84 BOM components, four additional test pads and J5 motor wire pads. Staging is
 not mechanical placement and does not establish that all parts fit this board.
+Revision 0.6 preserves all of those positions and adds 18 IMU/RGB staging
+footprints at approximately X=169..254, Y=50..80mm: 16 BOM components and
+two test pads. The board outline is unchanged.
 Test pads and J5 are excluded from the BOM and placement export. MPN, LCSC and datasheet fields are
 retained. Future schematic changes can use KiCad's **Update PCB from Schematic
 (F8)**; do not import another set of footprints manually.
@@ -73,7 +76,7 @@ From the repository root:
 
 This reads the live schematic/PCB and produces front/back SVGs, native DRC JSON
 and a summary under `build/pcb-review`. `placement-with-staging.svg` includes
-the off-board wheel parts; the board-area front/back crops omit them. The
+the off-board wheel and peripheral parts; the board-area front/back crops omit them. The
 exporter accepts `--kicad-cli PATH`.
 The default exit status checks placement and schematic parity; add
 `--require-routed` to also fail on incomplete connectivity. Neither mode
@@ -86,7 +89,8 @@ separation, heat dissipation, signal integrity or enclosure fit.
 
 1. Set the shell/PCB dimensions, wheel assembly, optical height/aperture, paddle
    magnets, mounting holes and connector openings with mechanical CAD.
-2. Add the exact PAW3950 reference circuit, IMU and one-data-pin RGB LED.
+2. Resolve [optical sourcing/reference evidence](../kicad/OPTICAL_REVIEW.md) and
+   add the exact PAW3950 circuit. [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
    [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
 3. Refine placement using those envelopes and each IC's reference layout.

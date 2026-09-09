@@ -1,6 +1,6 @@
 # KiCad electronics
 
-Revision 0.5, 2026-09-09, KiCad 10.0.6. USB-C power, MCU allocation and wheel/brake circuits are connected.
+Revision 0.6, 2026-09-09, KiCad 10.0.6. USB-C power, MCU allocation and wheel/brake, IMU and RGB circuits are connected.
 An [initial motherboard placement](../pcb/README.md) is available as of
 2026-09-09. Both schematic and PCB are editable development drafts; **the PCB
 is unrouted and not order-ready**. Firmware, measurements and absent subsystems remain open.
@@ -20,7 +20,7 @@ No JLCPCB plugin is needed. Edit the schematic files directly.
 
 | Sheet | Implemented content |
 | --- | --- |
-| Overview | Fourteen-page hierarchy and remaining work |
+| Overview | Sixteen-page hierarchy and remaining work |
 | 01 Power / USB | USB-C data/CC protection, TUSB320 sink detection, TPS62162 fixed 3.3 V regulator |
 | 02 MCU | ESP32-S3 module, USB, reset/boot, recovery pads and power-control GPIOs |
 | 03 Buttons | Three DRV8231A bridges, VREF/current feedback, input pulldowns and coil connectors |
@@ -34,6 +34,8 @@ No JLCPCB plugin is needed. Edit the schematic files directly.
 | 11 Wheel SPI | Driver/ADC2/encoder power-domain buffers and fault return |
 | 12 Wheel feedback | Second ADS7038, phase-current filters, MA735 and switched encoder supply |
 | 13 Regeneration brake | ACT-powered comparator/reference, MOSFET and four power resistors |
+| 14 IMU | ICM-42688-P, shared SPI2, INT1 and supply bypass |
+| 15 RGB status | Single-data-pin LED, enabled regulator and logic buffer |
 
 VBUS_USB feeds PWR_5V through U12; U13 supplies ACT_5V. These rails replace the
 disconnected pending nets. The TPS62162 and 3.3 uH inductor replace the original
@@ -54,22 +56,24 @@ From the repository root, run these commands with Python 3 and KiCad 10:
     python hardware/kicad/verify_resources.py
     python hardware/kicad/verify_wheel.py
     python hardware/kicad/test_wheel_checks.py
+    python hardware/kicad/verify_peripherals.py
+    python hardware/kicad/test_peripheral_checks.py
 
 The exporter accepts --kicad-cli PATH. The checker accepts --footprints PATH
 for a nonstandard KiCad footprint installation. Generated files go to
-build/kicad-review: fourteen SVG sheets, XML netlist, ERC JSON, DRAFT-bom.csv,
-review-status.json, power-checks.json, resource-checks.json and wheel-checks.json. Sources are not overwritten.
+build/kicad-review: sixteen SVG sheets, XML netlist, ERC JSON, DRAFT-bom.csv,
+review-status.json, power-checks.json, resource-checks.json, wheel-checks.json and peripheral-checks.json. Sources are not overwritten.
 
-The current draft has **234 BOM components**, all with catalog IDs, MPNs and
-footprints; 37 copper test pads, J5 motor wire pads and three power flags are excluded from the BOM.
+The current draft has **250 BOM components**, all with catalog IDs, MPNs and
+footprints; 39 copper test pads, J5 motor wire pads and three power flags are excluded from the BOM.
 **ERC: zero errors and zero warnings, without new waivers.**
-The additional checker verifies 191 critical power pin connections, 272 footprint
+The additional checker verifies 191 critical power pin connections, 290 footprint
 assignments, complete source-to-export coverage and 4,096 Boolean interlock
 cases. The resource checker verifies all 39 module GPIOs: 38 assigned and GPIO46
 reserved low for boot-safe expansion. See [the full allocation](../../docs/interfaces.md).
 The wheel checker adds 266 pin checks, 32 shutdown cases, 58 custom land checks
 and 128 brake corners; five mutation tests verify rejection of unsafe edits.
-See [wheel design and evidence](WHEEL_REVIEW.md). Analog timing, firmware
+See [wheel design and evidence](WHEEL_REVIEW.md) and [IMU/RGB review](PERIPHERAL_REVIEW.md). Analog timing, firmware
 deadlines, thermal behavior and USB compliance are not simulated.
 
 Catalog identity does not reserve stock. U11's current JLCPCB listing requires
@@ -91,7 +95,8 @@ that require a prototype PCB; finished firmware is not required to start layout.
   accuracy, heating, passive return and magnetic interference.
 - Test timeout/reset/short-circuit behavior, cable drop, inrush, reverse current,
   regenerative clamp behavior and component temperatures.
-- Add validated PAW3950 circuitry, IMU and RGB. Validate wheel current/angle
+- Resolve the [optical sourcing/reference gaps](OPTICAL_REVIEW.md) and add PAW3950 circuitry.
+  Review and measure the [IMU/RGB circuits](PERIPHERAL_REVIEW.md). Validate wheel current/angle
   acquisition and the provisional autonomous regeneration brake on hardware.
 - Validate the [allocated SPI/PWM timing budgets](../../docs/interfaces.md), review symbols,
   land patterns and stencil requirements, then perform board layout and DRC.

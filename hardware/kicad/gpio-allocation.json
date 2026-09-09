@@ -1,5 +1,5 @@
 {
-  "revision": "0.5",
+  "revision": "0.6",
   "module": "ESP32-S3-MINI-1-N8",
   "module_ref": "U3",
   "scope": "GPIO and peripheral allocation; timing targets are not measured acceptance.",
@@ -190,7 +190,7 @@
       "net": "CS_IMU",
       "direction": "output",
       "peripheral": "SPI2",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP18",
       "bias": {
         "ref": "R73",
@@ -296,7 +296,7 @@
       "net": "IMU_INT1",
       "direction": "input",
       "peripheral": "interrupt",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP27"
     },
     {
@@ -339,7 +339,7 @@
       "net": "RGB_DATA",
       "direction": "output",
       "peripheral": "RMT",
-      "consumer_status": "reserved_interface",
+      "consumer_status": "connected",
       "testpoint": "TP30",
       "bias": {
         "ref": "R78",
@@ -407,7 +407,10 @@
           "name": "ICM42688P",
           "cs": "CS_IMU",
           "clock_target_hz": 10000000,
-          "spi_mode": null
+          "spi_mode": 0,
+          "cs_setup_ns": 100,
+          "cs_hold_ns": 100,
+          "miso_release_guard_ns": 100
         },
         {
           "name": "MA735",
@@ -489,10 +492,14 @@
     }
   },
   "rgb": {
-    "type": "single-data-pin addressable RGB; exact MPN and interface circuit pending",
+    "type": "SK6805-EC15; TPS7A2450 switched rail and SN74LV1T34 data buffer",
     "peripheral": "RMT",
     "tx_channels": 1,
-    "net": "RGB_DATA"
+    "net": "RGB_DATA",
+    "mpn": "SK6805-EC15",
+    "enable_net": "HALL_EN",
+    "supply_net": "RGB_5V",
+    "bit_rate": 800000
   },
   "adc_channels": {
     "ADS7038_1": [
@@ -539,7 +546,7 @@
     "GPIO46": "boot-low spare only; no external pull-up or independently driven interrupt at reset"
   },
   "power_domains": {
-    "MA735_and_RGB_enable": "HALL_EN; U28/U29 switch and isolate MA735; RGB circuit remains pending",
+    "MA735_and_RGB_enable": "HALL_EN; U28/U29 switch/isolate MA735; U33 enables RGB_5V",
     "optical_control": "OPT_CTRL; exact sequencing circuit pending reference",
     "driver_wake": "ACT_DRIVE_EN through safe default-low nSLEEP circuit",
     "driver_run": "WHEEL_RUN_REQ AND ACT_DRIVE_EN through external gates and DRVOFF",

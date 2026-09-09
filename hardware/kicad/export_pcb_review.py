@@ -67,7 +67,7 @@ def main():
         'ignored_checks': report.get('ignored_checks', []),
         'placement_checks_pass': not violations and not parity,
         'routing_complete': not unconnected,
-        'placement_scope': 'Original motherboard placement plus off-board wheel staging; enclosure fit is unverified',
+        'placement_scope': 'Original motherboard placement plus off-board wheel, IMU and RGB staging; enclosure fit is unverified',
     }
     (out / 'review-status.json').write_text(
         json.dumps(summary, indent=2) + '\n', encoding='utf-8')
