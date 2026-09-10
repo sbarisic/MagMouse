@@ -38,5 +38,11 @@ class WheelRouting(unittest.TestCase):
         v=p.PCB_VIA(b);v.SetPosition(t.GetStart());v.SetWidth(p.FromMM(.6));v.SetDrill(p.FromMM(.3));v.SetLayerPair(p.F_Cu,p.B_Cu);v.SetNet(t.GetNet());b.Add(v)
         self.assertTrue(any('WHEEL_I_A: must stay front-only' in e for e in verify(b)['errors']))
 
+    def test_disconnected_spi_pad(self):
+        b=p.LoadBoard(str(BOARD));pad=next(q for f in b.GetFootprints() if f.GetReference()=='U26' for q in f.Pads() if q.GetNumber()=='3')
+        pad.SetPosition(p.VECTOR2I(p.FromMM(52),p.FromMM(55)))
+        errors=verify(b)['errors']
+        self.assertTrue(any('ADC2_SCLK_LOCAL: whole-board endpoint continuity failed' in e for e in errors))
+
 
 if __name__=='__main__':unittest.main()

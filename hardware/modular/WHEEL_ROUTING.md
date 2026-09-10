@@ -1,9 +1,12 @@
-# Wheel PCB power and analog routing
+# Wheel PCB routing
 
 2026-09-11. The editable source is [wheel/Wheel.kicad_pcb](wheel/Wheel.kicad_pcb).
-It has 87 front-side footprints on the 55 x 60 mm, four-layer outline. This pass
-reduces native unconnected items from 233 to **61**, with **zero physical DRC
-violations and zero schematic-parity issues**. It is not ready to order.
+It has 87 front-side footprints on the 55 x 60 mm, four-layer outline. All
+connections are routed: **zero native unconnected items, zero physical DRC
+violations and zero schematic-parity issues**. The earlier power/analog pass
+left 61 connections; this pass finishes those nets and their ground returns.
+It is not yet a manufacturing release. Panelization is on hold until both
+boards have stable placement and mechanical interfaces.
 
 ## Completed copper
 
@@ -28,8 +31,32 @@ violations and zero schematic-parity issues**. It is not ready to order.
 - In1 has one connected saved GND outline. Front/back ground copper and local
   return vias support the driver, ADC, brake, input bulk and bypass capacitors.
   U21 has nine ground vias in its exposed pad; U23 has one in its exposed pad.
-  U30 ground and C65 ground also use vias in pads. **Specify filled and capped
-  vias for these locations and confirm the process in the eventual quote.**
+  U30, C65 and several signal/buffer pads also use vias in pads. **Specify filled
+  and capped vias and confirm the process in the eventual quote.**
+
+## Digital completion and ground returns
+
+ADC2 SPI, driver configuration SPI, PWM, enables, fault, DRVOFF, +3V3 and the
+ADC spare-input ties now connect. Tight IC escapes use staggered **0.45 mm pad /
+0.20 mm hole** through vias. Existing high-current transitions retain their
+larger vias. JLCPCB's [multilayer quote guidance](https://cart.jlcpcb.com/quote?fromDemo=yes)
+lists the 0.45/0.20 mm geometry; filling/capping remains a separate order option.
+The wheel project's minimum via diameter, drill and annular ring are now
+0.45, 0.20 and 0.125 mm. Track clearance remains 0.15 mm; In1 zone clearance
+remains 0.20 mm. No DRC exclusions were added.
+
+DRV_AVDD was redistributed across F.Cu, In2.Cu and B.Cu to free the digital
+escapes; its 19 endpoints remain connected. The sensitive six current-sense
+nets and brake gate/reference/sense routes retain their front-only routing.
+All 15 J9 ground contacts have dedicated return vias. Ground stitching and
+local buffer ground vias close the fill islands created by digital routing.
+Two signal crossings under the FFC were moved to B.Cu to preserve those returns.
+
+The saved report inventories each SPI net's copper and vias. ADC2 local SCLK
+and MOSI have 12.71 and 10.43 mm of copper and two vias each. The local ADC2
+MISO net totals 25.16 mm, including its bias branch. These are layout measures,
+not validated timing or signal-integrity results. The 20 MHz target still needs
+the previously documented sampling-phase and connected-cable measurements.
 
 ## Current-sense review
 
@@ -63,19 +90,20 @@ python -m unittest discover -s hardware/modular -p test_wheel_placement_checks.p
 
 The [routing report](wheel-routing-review.json) fingerprints the PCB and records
 connectivity, front-only routing, lengths, phase widths, ground shadows,
-switching separation and thermal-via count. Five routing regression tests cover
+switching separation and thermal-via count. Six routing regression tests cover
 the saved board and failures from missing In1 reference, a narrowed phase, phase
-encroachment and an ADC signal via. Four placement tests also pass. Native DRC
+encroachment, an ADC signal via and a disconnected SPI pad. Four placement tests
+also pass. Whole-board endpoint checks cover every multi-pad named net. Native DRC
 and schematic parity remain separate required checks; the geometric checker
 does not substitute for them. It also rejects net reassignment during native
 connectivity rebuilding, which can otherwise obscure a short.
 
 ## Next work and acceptance limits
 
-Route the dedicated ADC2 SPI bus first, then configuration SPI, PWM, enables,
-faults and remaining logic supplies/bypassing. Extend return-plane and switching
-proximity checks to those new traces. Finish the wheel routing before migrating
-main-board placement into the larger shaped outline.
+The wheel is now zero-unrouted. The [shaped main PCB](MAIN_PLACEMENT.md) is
+placed from its split schematic and remains to be routed. Resolve board mounts,
+motor/wheel/encoder supports, cable bends and optical stack together in mechanical
+CAD. Do not start panelization until both boards' placement and interfaces are stable.
 
 Bench validation still needs to establish current-reading noise/settling,
 brake reaction and regenerative voltage peaks, power-transition losses, and

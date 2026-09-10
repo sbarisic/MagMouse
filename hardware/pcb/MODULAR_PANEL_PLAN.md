@@ -2,6 +2,11 @@
 
 2026-09-10. Design brief and manufacturing research, not fabrication files.
 
+2026-09-11 update: the independent wheel is routed and the shaped main is
+placed. **Panelization is on hold until both boards have stable placement and
+mechanical interfaces.** The nesting study below remains unchanged; no final
+panel, tabs or tooling were created in the layout-completion pass.
+
 The [implementation planning package](../modular/README.md) now contains the
 native board envelopes, complete proposed component ownership, logical harness
 pin map and a live provisional bare-panel price. Target quantity/destination:

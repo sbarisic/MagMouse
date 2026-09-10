@@ -26,6 +26,15 @@ def verify(board):
         if original[uid(i)]!=i.GetNetname():errors.append('Connectivity changed a copper/pad net assignment; inspect for a short')
     pads=[(f.GetReference(),q) for f in board.GetFootprints() for q in f.Pads() if q.GetNumber()]
     tracks=list(board.GetTracks());ground=p.SHAPE_POLY_SET();ground_ids=set()
+    remaining=conn.GetUnconnectedCount(False)
+    if remaining:errors.append(f'Wheel completion: {remaining} native unconnected items remain')
+    complete_nets=0
+    for net in sorted({q.GetNetname() for _,q in pads}):
+        nodes=[q for _,q in pads if q.GetNetname()==net]
+        if not net or len(nodes)<2:continue
+        complete_nets+=1
+        reached={uid(i) for i in conn.GetConnectedItems(nodes[0])}|{uid(nodes[0])}
+        if any(uid(q) not in reached for q in nodes[1:]):errors.append(net+': whole-board endpoint continuity failed')
     for z in board.Zones():
         if z.GetLayer()==p.In1_Cu and z.GetNetname()=='GND' and not z.GetIsRuleArea():
             ground.BooleanAdd(z.GetFilledPolysList(p.In1_Cu));ground_ids.add(uid(z))
@@ -84,11 +93,18 @@ def verify(board):
         if closest<.5:errors.append(f'{net}: switching copper projection within 0.5 mm ({against})')
     thermal=[t for t in tracks if isinstance(t,p.PCB_VIA) and t.GetNetname()=='GND' and 26.7<=p.ToMM(t.GetPosition().x)<=28.3 and 27.2<=p.ToMM(t.GetPosition().y)<=28.8]
     if len(thermal)<9:errors.append('DRV8316 thermal pad has fewer than nine ground vias')
-    return {'scope':'Wheel local power, brake, phases, ADC2 and saved return geometry; partial routing',
+    digital={}
+    for net in ['MOTOR_SPI_SCLK','MOTOR_SPI_MOSI','CS_ADC2','ADC2_SCLK_LOCAL','ADC2_MOSI_LOCAL','ADC2_CS_LOCAL','ADC2_MISO_LOCAL','SPI_SCLK','SPI_MOSI','CS_DRV8316','DRV_SCLK_LOCAL','DRV_MOSI_LOCAL','DRV_CS_LOCAL','DRV_MISO_LOCAL']:
+        copper=[t for t in tracks if t.GetNetname()==net]
+        digital[net]={'copper_mm':round(sum(p.ToMM(t.GetLength()) for t in copper if not isinstance(t,p.PCB_VIA)),3),
+                      'vias':sum(isinstance(t,p.PCB_VIA) for t in copper),
+                      'layers':sorted({board.GetLayerName(t.GetLayer()) for t in copper if not isinstance(t,p.PCB_VIA)})}
+    return {'scope':'Wheel whole-board continuity plus power, brake, phases, ADC2 and saved analog return geometry',
             'nets':metrics,'current_sense_separation':separation,'checked_ground_pads':checked_ground,
+            'checked_connected_nets':complete_nets,'spi_copper_inventory':digital,
             'in1_ground_outlines':ground.OutlineCount(),'drv8316_thermal_vias':len(thermal),
             'tracks_and_vias':len(tracks),'native_unconnected':conn.GetUnconnectedCount(False),
-            'limits':['Signal buses and control nets remain unfinished','No measured ADC noise, thermal, ampacity or brake reaction acceptance','Filled and capped vias required at exposed pads, U30 ground and C65 ground','Mechanical and panel manufacturing review remains open'],
+            'limits':['SPI length/via inventory is not sampling-time or signal-integrity acceptance','No measured ADC noise, thermal, ampacity or brake reaction acceptance','Filled and capped vias required at exposed pads and signal/ground vias in component pads; smallest signal via 0.45/0.20 mm','Mechanical interfaces remain provisional; panelization is on hold'],
             'errors':errors}
 
 

@@ -1,5 +1,5 @@
 {
-  "status": "Baseline ownership contract; independent split schematics now exist, copper migration pending",
+  "status": "Split schematics implemented; wheel zero-unrouted; shaped main placed; panelization on hold",
   "prototype_scope": {
     "internal_cables_assumed_fully_connected": true,
     "cable_disconnect_survival_required": false,
@@ -158,7 +158,7 @@
     "wheel": {
       "width": 55,
       "length": 60,
-      "status": "87 footprints; local power/brake/phase/ADC2 analog routing and saved ground checks pass; 61 connections remain; digital routing, mounts and mechanical fit pending"
+      "status": "87 footprints; all nets routed; zero native unrouted, physical DRC and parity issues; mechanical and bench qualification pending"
     },
     "encoder": {
       "width": 14,
@@ -181,7 +181,14 @@
         87,
         67
       ],
-      "status": "Nesting study; support web, routed slots, tabs, fiducials and tooling are not designed"
+      "status": "Historical nesting study only; panelization on hold until both boards have stable placement and mechanical interfaces"
     }
+  },
+  "layout_release": {
+    "wheel_zero_unrouted": true,
+    "main_placement_created": true,
+    "mechanical_interfaces_stable": false,
+    "panelization_allowed": false,
+    "panelization_condition": "Both boards must have stable placement and mechanical interfaces before panelization begins."
   }
 }

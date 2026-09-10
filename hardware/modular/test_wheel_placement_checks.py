@@ -15,7 +15,7 @@ class WheelPlacement(unittest.TestCase):
     def test_saved_placement(self):
         result=review(BOARD,NETLIST,DRC)
         self.assertEqual([],result['errors'])
-        self.assertGreater(result['unconnected_items'],0)
+        self.assertEqual(result['unconnected_items'],0)
 
     def mutate(self,edit):
         b=p.LoadBoard(str(BOARD));edit(b,{f.GetReference():f for f in b.GetFootprints()})

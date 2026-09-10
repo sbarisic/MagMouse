@@ -1,5 +1,5 @@
 {
-  "scope": "Wheel local power, brake, phases, ADC2 and saved return geometry; partial routing",
+  "scope": "Wheel whole-board continuity plus power, brake, phases, ADC2 and saved analog return geometry",
   "nets": {
     "ACT_5V": {
       "pads": 24,
@@ -94,10 +94,12 @@
     },
     "DRV_AVDD": {
       "pads": 19,
-      "copper_mm": 93.338,
-      "vias": 0,
+      "copper_mm": 103.511,
+      "vias": 16,
       "layers": [
-        "F.Cu"
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
       ],
       "missing_front_ground_shadow_mm2": 0.0
     },
@@ -255,16 +257,132 @@
     }
   },
   "checked_ground_pads": 36,
+  "checked_connected_nets": 57,
+  "spi_copper_inventory": {
+    "MOTOR_SPI_SCLK": {
+      "copper_mm": 11.435,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "MOTOR_SPI_MOSI": {
+      "copper_mm": 20.373,
+      "vias": 4,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "CS_ADC2": {
+      "copper_mm": 15.143,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "ADC2_SCLK_LOCAL": {
+      "copper_mm": 12.708,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "ADC2_MOSI_LOCAL": {
+      "copper_mm": 10.428,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "ADC2_CS_LOCAL": {
+      "copper_mm": 22.016,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "ADC2_MISO_LOCAL": {
+      "copper_mm": 25.155,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "SPI_SCLK": {
+      "copper_mm": 24.771,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "SPI_MOSI": {
+      "copper_mm": 27.634,
+      "vias": 4,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "CS_DRV8316": {
+      "copper_mm": 32.327,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "DRV_SCLK_LOCAL": {
+      "copper_mm": 10.657,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "DRV_MOSI_LOCAL": {
+      "copper_mm": 8.79,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "DRV_CS_LOCAL": {
+      "copper_mm": 21.362,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "DRV_MISO_LOCAL": {
+      "copper_mm": 39.101,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    }
+  },
   "in1_ground_outlines": 1,
   "drv8316_thermal_vias": 9,
-  "tracks_and_vias": 1661,
-  "native_unconnected": 61,
+  "tracks_and_vias": 4766,
+  "native_unconnected": 0,
   "limits": [
-    "Signal buses and control nets remain unfinished",
+    "SPI length/via inventory is not sampling-time or signal-integrity acceptance",
     "No measured ADC noise, thermal, ampacity or brake reaction acceptance",
-    "Filled and capped vias required at exposed pads, U30 ground and C65 ground",
-    "Mechanical and panel manufacturing review remains open"
+    "Filled and capped vias required at exposed pads and signal/ground vias in component pads; smallest signal via 0.45/0.20 mm",
+    "Mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "f2f2a4c398d7d2f2d1ac6fb66acb40daab3960eaa3bda9feec0e358959c353a4"
+  "board_sha256": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305"
 }

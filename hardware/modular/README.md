@@ -1,6 +1,6 @@
 # Modular mouse planning package
 
-2026-09-10. **Schematic development and planning files; no modular board is ready to order.**
+2026-09-11. **Wheel routed; shaped main placed. Mechanical qualification remains open.**
 
 Independent [main](main/Main.kicad_pro) and [wheel](wheel/Wheel.kicad_pro)
 schematics now exist. They include J8/J9 signal headers, J10/J11 power headers
@@ -9,10 +9,15 @@ discharge resistor. Both pass ERC. See the
 [interface review](INTERFACE_REVIEW.md) for the implemented changes, verification
 commands and remaining power-return, wheel-storage and SPI3 timing findings.
 The [wheel PCB](wheel/Wheel.kicad_pcb) has all 87 footprints on its 55 x 60 mm
-outline. Local power, brake, phases and ADC2 analog paths are routed, with filled
-ground and local thermal/return vias. Physical DRC and schematic parity pass;
-61 connections remain. See the [routing review](WHEEL_ROUTING.md). Main-board
-placement in the larger shaped outline is still pending.
+outline. All connections are routed, with zero native unrouted items and zero
+physical DRC/parity issues. See the [routing review](WHEEL_ROUTING.md).
+The new [main PCB](main/Main.kicad_pcb) has all 246 footprints placed on the
+125 x 80/44 mm outline, with zero physical DRC/parity issues. It is unrouted;
+see the [main placement review](MAIN_PLACEMENT.md).
+
+**Panelization is on hold until both boards have stable placement and mechanical
+interfaces.** Existing nesting-study files remain unchanged. Neither board is
+being released for ordering in this pass.
 
 The prototype assumes fully connected internal cables. Per the user's decision,
 child-board damage after disconnection is acceptable; disconnect/partial-insertion
@@ -28,8 +33,10 @@ Curvature and width-transition locations are draft assumptions from the sketch.
 
 ## Concrete outputs
 
-- [Main-envelope.kicad_pcb](planning/Main-envelope.kicad_pcb): editable native
-  outline, 80 x 125 mm, with the source motherboard's four-layer stackup.
+- [Main.kicad_pcb](main/Main.kicad_pcb): all 246 split-main footprints placed
+  in the shaped 80 x 125 mm outline, with a 44 mm front edge.
+- [Main-envelope.kicad_pcb](planning/Main-envelope.kicad_pcb): historical
+  outline-only planning source with the source motherboard's four-layer stackup.
 - [Wheel-envelope.kicad_pcb](planning/Wheel-envelope.kicad_pcb): provisional
   55 x 60 mm reservation. Its electronics now fit the independent wheel PCB;
   mounts, mating cables and assembled mechanical fit remain unproven.
@@ -43,9 +50,9 @@ Curvature and width-transition locations are draft assumptions from the sketch.
   reference ownership and both endpoints of every main/wheel boundary net.
 - [Partition and harness specification](partition-plan.json): editable inputs.
 
-These outline-only boards have no components or copper. They do not replace
-the source motherboard or routed encoder projects. Existing routing and its
-previous review status are preserved.
+The files under `planning/` are historical envelope/nesting studies. They are
+separate from the editable main and wheel PCB sources. The original motherboard
+and routed encoder project remain unchanged.
 
 The panel reserves 5 mm outer handling rails and at least 2 mm between unit
 envelopes. Grey areas in the drawing are support-web space, not a finished

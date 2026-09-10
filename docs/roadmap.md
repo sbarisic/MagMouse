@@ -33,64 +33,38 @@ is required solely for these cases.
 The [cable review](../hardware/modular/CABLE_REVIEW.md) corrected the physical
 contact order: J8.N to J9.(31-N) for facing bottom-contact headers and a flat
 same-side FFC. The candidate's mating tolerances still need closure before order.
-The [wheel power and analog routing](../hardware/modular/WHEEL_ROUTING.md) now
-connects local supplies, phases, autonomous brake and ADC2 sensing/reference
-paths. All 87 footprints remain front-side on 55 x 60 mm. Filled In1 ground,
-local returns and thermal vias are present. Native DRC/parity report zero issues
-and 61 unconnected items, down from 233. Current-sense channels are front-only,
-with complete saved In1 shadows and at least 1.785 mm from checked switching
-copper. Five routing and four placement regression tests pass. These geometric
-checks do not establish noise, thermal or regenerative-response acceptance.
-Next, route ADC2 SPI3, configuration SPI, PWM/control/fault signals and remaining
-logic supplies. Extend the board-specific checks before routing the larger main
-PCB. SPI3's 20 MHz target still requires sampling validation.
-Keep driver, ADC2 and autonomous brake together on the wheel board. A shared
-panel requires a common stackup, including conversion of the encoder board.
-The current 60 x 95 mm PCB and its review results remain the working baseline;
-the copper split and manufacturing panel have not yet been implemented.
-The outline-only planning files remain separate from the new editable wheel PCB.
-Existing electrical and mechanical acceptance tasks below remain applicable
-and must follow their circuits into the new boards.
+The [wheel PCB](../hardware/modular/WHEEL_ROUTING.md) is now fully routed:
+zero native unrouted connections, physical DRC violations and schematic-parity
+issues. Current-sense channels remain front-only with complete saved In1
+shadows. The [new shaped main PCB](../hardware/modular/MAIN_PLACEMENT.md) contains
+all 246 footprints, with zero physical DRC/parity issues; main routing is pending.
+ADC1 is placed closer to the button sensors. The original monolithic board and
+routed encoder remain unchanged. SPI3 timing, ADC noise, regenerative response
+and temperature rise still require hardware qualification.
+
+**Do not start panelization until both boards have stable placement and mechanical
+interfaces.** The existing nesting study is historical planning only.
 
 ## Current execution order
 
-The actuator distribution, driver/brake current loops and interlock copper are
-connected. Their electrical and thermal acceptance remains open. Use this order
-for the remaining motherboard work:
-
-1. Route/review analog current sensing: ADC2 SOA/SOB/SOC filters, button IPROPI,
-   Hall outputs, VREF and power telemetry. Keep Hall and button-interface
-   placement provisional; review local returns and separation from switching
-   copper, and add useful boundary stitching.
-   Close the non-mechanical `verify_analog_layout.py --require-reviewed` findings
-   before continuing with general routing. Keep Hall geometry explicitly deferred.
-   The saved In1 reference-shadow defects on fixed analog nets are corrected;
-   wheel sense/phase separation, IPROPI/VREF locality and brake placement remain open.
-   Redundant copper is removed from the fixed analog/brake routes, with
-   connectivity and length regression checks. Control reroutes/branch cleanup
-   remove five fixed proximity findings; 36 fixed findings remain open.
-   Guard the cleared SOx/BTN_R_IN2 and SOC/BTN_R_IN1/DRV_INHC separations.
-   Decide whether ADC2/filter/bypass placement may use the back side (two-sided
-   assembly) before proceeding with that placement option.
-2. Complete board-wide +3V3, PWR_5V, switched sensor rails and bypass returns.
-   Audit necks, shared vias and shared actuator/logic/analog return paths.
-3. Route SPI3/ADC2 first, then SPI2 and interrupts/faults/enables. Check branches
-   and stubs for the 2 MHz PMW3360 and 10 MHz MA735 paths.
-4. Review the optical layout separately: 3.3/1.9 V supplies, reset/SPI buffers,
-   bypassing and the complete aperture/lens envelope. Retain the existing
-   supplier/sample and optical-fit gates.
-5. Inspect actual return paths on the substantially routed board, especially
-   USB, ADC2/SPI3, optical, wheel current sensing, IMU and brake reference.
-6. Review heat spreading and thermal vias for both eFuses, buck, motor drivers,
-   brake MOSFET/resistors and exposed-pad devices. Measure combined-load heating.
-7. Move to mechanical CAD before final placement freeze: mounting holes, GB1806
-   support, shaft/bearings, upright encoder support, middle-click travel, cable
-   bend/strain relief, lens/baseplate stack, USB opening, paddles, Hall magnets
-   and actuator gaps. Avoid repeated refinement of placements that this work
-   is likely to change.
-8. Review manufacturing and assembled test access. Include VBUS/PWR_5V/ACT_5V,
-   +3V3 and optical rails, Hall/ADC references, current outputs, phase pads,
-   brake output/gate, USB and important fault/enable signals.
+1. Resolve mechanical interfaces across main, wheel and upright encoder: mounts,
+   GB1806 support, wheel shaft/bearings, middle-click movement, cable bends and
+   strain relief, optical lens/baseplate/feet, USB opening, paddles, Hall magnets
+   and actuator gaps. Keep the old Hall positions provisional until this work
+   establishes them. Main routing can proceed on genuinely fixed circuitry.
+2. Route the main power, actuator/interlock and analog paths. Carry the earlier
+   copper checks forward to the new board, accounting for its outline and ADC1
+   position. Route USB using the selected 90-ohm geometry and verify In1 returns.
+3. Route main SPI3 through its return buffer and wheel header, then SPI2, optical,
+   IMU and remaining controls. Review complete connected paths, stubs, source
+   termination and reference continuity; a routed wheel alone does not prove
+   cable or MCU sampling timing.
+4. Review both boards' return paths, power transitions, thermal copper, test
+   access and component clearance with the mechanical model. Preserve the
+   wheel's zero-unrouted and analog checks after any placement changes.
+5. Finish the main to zero-unrouted and repeat board-wide electrical checks.
+   Once both placements and mechanical interfaces are stable, resume panel
+   design, common-stack encoder conversion and assembly/quote preparation.
 
 - [ ] Before final routing freeze, perform a whole-board electrical review for
   plane splits/crossings, long current loops, analog/PWM adjacency, power-via

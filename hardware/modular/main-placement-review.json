@@ -1,0 +1,62 @@
+{
+  "status": "Main placement draft; routing and mechanical fit pending; panelization on hold",
+  "board_sha256": "2a7b4a90b94b4f23ae10695086f90091f72396c960134ca1a3f53e78baf7c45b",
+  "netlist_sha256": "6c5276947fd10b817e947cecaaf5286fdf273949a2588df7738612dfee798e35",
+  "footprints": 246,
+  "checked_netlist_pins": 781,
+  "checked_courtyards": 246,
+  "back_test_points": 37,
+  "antenna_clearance": "U3 extended RF courtyard may overhang the PCB; module body checked inside; enclosure RF clearance remains open",
+  "native_unconnected": 632,
+  "drc_unconnected_entries": 499,
+  "physical_drc_violations": 0,
+  "schematic_parity_issues": 0,
+  "interface_positions_mm_degrees": {
+    "J1": [
+      40.0,
+      4.0,
+      180.0
+    ],
+    "J2": [
+      17.0,
+      35.0,
+      0.0
+    ],
+    "J3": [
+      17.0,
+      60.0,
+      0.0
+    ],
+    "J4": [
+      63.0,
+      35.0,
+      0.0
+    ],
+    "J6": [
+      28.0,
+      18.5,
+      180.0
+    ],
+    "J8": [
+      63.0,
+      70.0,
+      0.0
+    ],
+    "J10": [
+      72.0,
+      91.0,
+      0.0
+    ],
+    "U35": [
+      40.5,
+      72.5,
+      -90.0
+    ]
+  },
+  "hall_to_adc1_center_span_mm": {
+    "U7": 33.801,
+    "U8": 29.971,
+    "U9": 13.285
+  },
+  "errors": []
+}

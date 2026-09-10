@@ -2,7 +2,7 @@
 
 Historical starting placement below. The 2026-09-11
 [power and analog routing pass](WHEEL_ROUTING.md) supersedes its unrouted status
-and adjusts nearby driver/brake parts. The live PCB has 61 unconnected items;
+and adjusts nearby driver/brake parts. The live PCB now has zero unconnected items;
 `wheel-placement.json` remains the original placement recipe. Current placement
 guard results are in `wheel-placement-review.json`.
 

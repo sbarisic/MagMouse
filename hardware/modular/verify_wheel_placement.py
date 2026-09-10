@@ -63,7 +63,7 @@ def review(board_path,netlist_path,drc_path):
     check(not drc['violations'],'Native physical DRC has unresolved violations')
     check(not drc['schematic_parity'],'Native schematic parity has unresolved issues')
     routed=bool(list(b.GetTracks()))
-    return {'status':'Partial routing; not for fabrication' if routed else 'Initial placement only; unrouted and not for fabrication',
+    return {'status':'Routed; mechanical and electrical qualification pending' if routed and not drc['unconnected_items'] else 'Partial routing; not for fabrication',
             'board_sha256':hashlib.sha256(board_path.read_bytes()).hexdigest(),
             'netlist_sha256':hashlib.sha256(netlist_path.read_bytes()).hexdigest(),
             'footprints':len(fps),'checked_netlist_pins':len(expected),'copper_layers':b.GetCopperLayerCount(),
@@ -72,8 +72,8 @@ def review(board_path,netlist_path,drc_path):
             'unconnected_items':len(drc['unconnected_items']),
             'current_sense_placement':metrics,'brake_gate_airwire_via_series_resistor_mm':gate,
             'reference_plane_status':'See wheel-routing-review.json for saved copper checks' if routed else 'In1 reserved; no saved fill',
-            'open_items':['Complete digital buses, controls and remaining logic supplies',
-                          'Extend return, thermal and signal-integrity review after digital routing',
+            'open_items':['Bench qualification of power, brake, ADC noise and SPI timing',
+                          'Thermal, signal-integrity and enclosure review',
                           'Mounting/support, motor wires, cable mating tolerances and enclosure fit',
                           'Final silkscreen, test access, panel tooling and manufacturing exports'],
             'errors':errors}
