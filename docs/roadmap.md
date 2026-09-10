@@ -37,7 +37,11 @@ The [wheel PCB](../hardware/modular/WHEEL_ROUTING.md) is now fully routed:
 zero native unrouted connections, physical DRC violations and schematic-parity
 issues. Current-sense channels remain front-only with complete saved In1
 shadows. The [new shaped main PCB](../hardware/modular/MAIN_PLACEMENT.md) contains
-all 246 footprints, with zero physical DRC/parity issues; main routing is pending.
+all 246 footprints, with zero physical DRC/parity issues. Its first
+[input-power pass](../hardware/modular/MAIN_POWER_ROUTING.md) routes USB VBUS,
+U12 passive protection/current-limit circuitry and the local buck/buffer supply;
+main native unrouted count is 564, down from 632. Full source-selection,
+interlocks, actuator distribution and remaining main routing are still open.
 ADC1 is placed closer to the button sensors. The original monolithic board and
 routed encoder remain unchanged. SPI3 timing, ADC noise, regenerative response
 and temperature rise still require hardware qualification.
@@ -51,8 +55,12 @@ interfaces.** The existing nesting study is historical planning only.
    GB1806 support, wheel shaft/bearings, middle-click movement, cable bends and
    strain relief, optical lens/baseplate/feet, USB opening, paddles, Hall magnets
    and actuator gaps. Keep the old Hall positions provisional until this work
-   establishes them. Main routing can proceed on genuinely fixed circuitry.
-2. Route the main power, actuator/interlock and analog paths. Carry the earlier
+   establishes them. The user has no parts/CAD yet and explicitly chose to keep
+   mechanics provisional. Preserve the [interface register](../hardware/modular/MECHANICAL_INTERFACES.md)
+   while routing fixed circuitry; no mounting dimensions are frozen.
+2. Continue main power with Type-C/source controls, U13 actuator distribution,
+   interlocks and analog paths. USB VBUS/U12 passive settings and local buck
+   copper are now checked. Carry the earlier
    copper checks forward to the new board, accounting for its outline and ADC1
    position. Route USB using the selected 90-ohm geometry and verify In1 returns.
 3. Route main SPI3 through its return buffer and wheel header, then SPI2, optical,

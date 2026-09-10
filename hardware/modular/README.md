@@ -1,6 +1,6 @@
 # Modular mouse planning package
 
-2026-09-11. **Wheel routed; shaped main placed. Mechanical qualification remains open.**
+2026-09-11. **Wheel routed; shaped main input-power routing started. Mechanics remain provisional.**
 
 Independent [main](main/Main.kicad_pro) and [wheel](wheel/Wheel.kicad_pro)
 schematics now exist. They include J8/J9 signal headers, J10/J11 power headers
@@ -12,8 +12,10 @@ The [wheel PCB](wheel/Wheel.kicad_pcb) has all 87 footprints on its 55 x 60 mm
 outline. All connections are routed, with zero native unrouted items and zero
 physical DRC/parity issues. See the [routing review](WHEEL_ROUTING.md).
 The new [main PCB](main/Main.kicad_pcb) has all 246 footprints placed on the
-125 x 80/44 mm outline, with zero physical DRC/parity issues. It is unrouted;
-see the [main placement review](MAIN_PLACEMENT.md).
+125 x 80/44 mm outline, with zero physical DRC/parity issues. Its
+[input-power subset](MAIN_POWER_ROUTING.md) is routed; 564 native unrouted
+connections remain. See the [main placement review](MAIN_PLACEMENT.md) and
+[mechanical interface register](MECHANICAL_INTERFACES.md).
 
 **Panelization is on hold until both boards have stable placement and mechanical
 interfaces.** Existing nesting-study files remain unchanged. Neither board is

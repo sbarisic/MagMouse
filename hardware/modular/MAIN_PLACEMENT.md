@@ -7,10 +7,11 @@ All assembly components are on F.Cu; 37 test pads are on B.Cu. The outline is
 **125 mm long, 80 mm maximum width and 44 mm across the front**. The common
 four-layer JLC041611-2116 stack remains in place.
 
-Native physical DRC and schematic parity report zero issues. This is a placed,
-unrouted main PCB: 632 native unconnected items. The CLI DRC listing is capped at
-499 entries, so use native connectivity for the full count. Original motherboard
-copper has not been imported, and the original motherboard remains unchanged.
+Native physical DRC and schematic parity report zero issues. The first
+[input-power routing pass](MAIN_POWER_ROUTING.md) reduces native unconnected
+items from the initial 632 to **564**. The CLI DRC listing is capped at 499,
+so use native connectivity for the full count. Selected fixed local U12/buck
+copper was carried over after placement; the original motherboard is unchanged.
 
 ## Placement decisions
 
@@ -40,6 +41,9 @@ copper has not been imported, and the original motherboard remains unchanged.
 
 ## Mechanical interfaces and panel hold
 
+The [mechanical interface register](MECHANICAL_INTERFACES.md) records the current
+datums and open dimensions. The user has no mechanical parts/CAD yet and chose
+to keep mechanics provisional while fixed power routing proceeds.
 The wheel is electrically routed, but its mounts and motor/encoder relationship
 are not frozen. The main is electrically placed, but Hall/button placement,
 mounting holes, wheel/shaft/bearing support, encoder support, cable bends,
