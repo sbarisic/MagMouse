@@ -206,8 +206,11 @@ The wheel checker verifies 266 pin connections, 32 shutdown combinations,
 board netlists. Five tests include a passing baseline and faults in shutdown,
 brake/ADC supply domains, the 33 Ω catalog number and brake divider.
 Both projects pass native ERC, physical DRC and parity without new exclusions.
-After the [U13 local routing pass](../pcb/ACTUATOR_POWER_LAYOUT.md), the motherboard has 677
-native unrouted connections (the DRC JSON lists 499 entries). The encoder is fully routed with zero unconnected items. Eight encoder
+After the [actuator distribution routing pass](../pcb/ACTUATOR_DISTRIBUTION_LAYOUT.md), the motherboard has 247
+native unrouted connections (also 247 DRC entries). Wheel phases, current sensing,
+PWM/enable/fault wiring and brake power/control are connected. U21 has four direct
+thermal vias requiring filled/capped fabrication; temperature and transient
+acceptance remain open. The encoder is fully routed with zero unconnected items. Eight encoder
 tests check the baseline and seven connector, harness and split faults.
 
 Subsequent revisions add ICM-42688-P/RGB and PMW3360 optics; see

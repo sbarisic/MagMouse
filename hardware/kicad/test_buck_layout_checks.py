@@ -13,6 +13,8 @@ import sys
 import tempfile
 import unittest
 
+import pcbnew as pcb
+
 ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -44,7 +46,19 @@ class BuckLayoutChecks(unittest.TestCase):
         self.assertTrue(any("('L1', '1')" in error for error in self.run_check(altered)))
 
     def test_open_voltage_sense_fails(self):
-        altered = self.remove_segment(lambda s: '(net "+3V3")' in s and '(width 0.15)' in s)
+        # Other distributed +3V3 branches also use 0.15 mm tracks now. Cut the
+        # actual sense-pad connections instead of the first track of that width.
+        board = pcb.LoadBoard(str(ROOT / 'hardware/kicad/MagMouse.kicad_pcb'))
+        pad = next(p for f in board.GetFootprints() if f.GetReference() == 'U2'
+                   for p in f.Pads() if p.GetNumber() == '6')
+        ids = {t.m_Uuid.AsString() for t in board.GetTracks()
+               if not isinstance(t, pcb.PCB_VIA) and t.GetNetname() == '+3V3'
+               and t.GetLayer() == pcb.F_Cu
+               and (pad.HitTest(t.GetStart()) or pad.HitTest(t.GetEnd()))}
+        self.assertTrue(ids, 'Expected copper touching U2 voltage-sense pad')
+        altered = re.sub(r'^\t\(segment\b.*?^\t\)\n',
+                         lambda m: '' if any(uid in m[0] for uid in ids) else m[0],
+                         self.source, flags=re.M | re.S)
         self.assertTrue(any("('U2', '6')" in error for error in self.run_check(altered)))
 
 

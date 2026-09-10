@@ -8,6 +8,7 @@ This does not establish current capacity, USB compliance or thermal acceptance.
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 
 import pcbnew as pcb
@@ -48,7 +49,8 @@ def verify(board):
         connected((f'R{index}', '2'), [(f'R{index + 1}', '1')], net)
     connected(('U12', '7'), [('C25', '1')], 'USB_DVDT')
     connected(('U12', '4'), [('R44', '1')], 'USB_FAULT_N')
-    connected(('U12', '9'), [('R56', '1'), ('R59', '1'), ('R60', '1'), ('R61', '1')], 'USB_ILM')
+    connected(('U12', '9'), [('R56', '1'), ('R59', '1'), ('R60', '1'), ('R61', '1'),
+                              ('U19', '3'), ('TP14', '1')], 'USB_ILM')
     connected(('R56', '2'), [('R57', '1')], 'ILM_BASE_1')
     connected(('R57', '2'), [('R58', '1')], 'ILM_BASE_2')
     connected(('R59', '2'), [('Q1', '3')], 'ILM_MED_D')
@@ -68,6 +70,27 @@ def verify(board):
     connected(('U12', '8'), [('U20', '3'), ('U11', '3'), ('U11', '10'), ('U11', '11'),
                             ('C22', '2'), ('U16', '7'), ('C29', '2')], 'GND')
 
+    connected(('U19', '1'), [('U19', '4'), ('R64', '1')], 'USB_IMON_BUF')
+    connected(('R64', '2'), [('C33', '1'), ('U10', '5')], 'USB_IMON_ADC')
+    connected(('U2', '6'), [('U19', '5'), ('C34', '1')], '+3V3')
+    connected(('U12', '8'), [('U19', '2'), ('C34', '2'), ('C33', '2')], 'GND')
+    ilm_tracks = [t for t in board.GetTracks() if t.GetNetname() == 'USB_ILM'
+                  and not isinstance(t, pcb.PCB_VIA)]
+    ilm_length = sum(pcb.ToMM(t.GetLength()) for t in ilm_tracks)
+    if ilm_length > 40:
+        errors.append('USB_ILM exceeds the 40 mm total copper length placement budget')
+    ilm_radius = 0.0
+    if ('U12', '9') in pads:
+        origin = pcb.ToMM(pads['U12', '9'].GetPosition())
+        keys = [(ref, pin) for ref, pin in [('R56', '1'), ('R59', '1'), ('R60', '1'),
+                                            ('R61', '1'), ('U19', '3'), ('TP14', '1')]]
+        for key in keys:
+            if key in pads:
+                ilm_radius = max(ilm_radius, math.dist(origin, pcb.ToMM(pads[key].GetPosition())))
+        if ilm_radius > 10.5:
+            errors.append('USB_ILM setting/input pads exceed the 10.5 mm radius placement budget')
+    # These are geometric regression limits, not proof of TI's <50 pF load.
+
     if ('C88', '1') in pads and ('U12', '6') in pads:
         distance = pcb.ToMM((pads['C88', '1'].GetPosition() -
                              pads['U12', '6'].GetPosition()).EuclideanNorm())
@@ -80,7 +103,9 @@ def verify(board):
 
     return {
         'scope': 'USB/U12/buck feed, local protection, Type-C detector and source-selection supply/copper; '
-                 'MCU interfaces, remaining distribution, telemetry and other board routing remain open',
+                 'includes compact ILM settings and buffered current telemetry; other board routing remains open',
+        'usb_ilm_copper_length_mm': round(ilm_length, 6),
+        'usb_ilm_max_setting_pad_radius_mm': round(ilm_radius, 6),
         'native_unconnected_connections': connectivity.GetUnconnectedCount(False),
         'errors': errors,
     }

@@ -49,6 +49,24 @@ class InputLayoutChecks(unittest.TestCase):
         altered = self.remove_tracks('USB_ILM')
         self.assertTrue(any('USB_ILM' in e for e in self.run_check(altered)))
 
+    def test_buffer_input_branch_open_fails(self):
+        # Removing the common ILM node must also disconnect the nearby buffer.
+        errors = self.run_check(self.remove_tracks('USB_ILM'))
+        self.assertTrue(any("('U19', '3')" in e for e in errors))
+
+    def test_buffered_telemetry_open_fails(self):
+        for net in ['USB_IMON_BUF', 'USB_IMON_ADC']:
+            with self.subTest(net=net):
+                self.assertTrue(any(net in e for e in self.run_check(self.remove_tracks(net))))
+
+    def test_excessive_ilm_copper_length_fails(self):
+        # A connected long branch can pass net continuity but load the ILM node.
+        altered = re.sub(r'^\t\(segment\b.*?^\t\)\n',
+                         lambda m: re.sub(r'\(end [^)]+\)', '(end 150 110)', m[0], count=1)
+                         if '(net "USB_ILM")' in m[0] else m[0],
+                         self.source, flags=re.M | re.S)
+        self.assertTrue(any('40 mm' in e for e in self.run_check(altered)))
+
     def test_open_source_command_fails(self):
         altered = self.remove_tracks('SOURCE_3A')
         self.assertTrue(any('SOURCE_3A' in e for e in self.run_check(altered)))

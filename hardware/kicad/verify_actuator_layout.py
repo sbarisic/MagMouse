@@ -2,7 +2,7 @@
 """Check U13's routed local protection subset using KiCad copper connectivity.
 
 Run with KiCad's Python and alongside physical DRC. Downstream actuator loads,
-remote enable/fault wiring and hardware acceptance are outside this check.
+interlock input wiring and hardware acceptance are outside this check.
 """
 
 import argparse
@@ -44,6 +44,17 @@ def verify(board):
     connected(('U13', '2'), [('R40', '2'), ('R41', '1')], 'ACT_OVLO')
     connected(('U13', '7'), [('C26', '1')], 'ACT_DVDT')
     connected(('U13', '9'), [('R42', '1'), ('R43', '1')], 'ACT_ILM')
+    connected(('U13', '4'), [('R45', '1')], 'ACT_FAULT_N')
+    connected(('U12', '4'), [('R44', '1')], 'USB_FAULT_N')
+    connected(('U16', '11'), [('D3', '3'), ('R49', '1'), ('R84', '1'),
+                             ('U17', '2'), ('U17', '5'), ('U17', '10'), ('U17', '13'),
+                             ('U18', '2'), ('U18', '5'), ('U22', '1'),
+                             ('U21', '23'), ('TP13', '1')], 'ACT_DRIVE_EN')
+    connected(('U3', '45'), [('R28', '2'), ('R44', '2'), ('R45', '2'),
+                            ('R3', '2'), ('C4', '1'), ('SW1', '1'),
+                            ('U18', '10'), ('TP6', '1')], 'MCU_EN')
+    connected(('U2', '6'), [('R3', '1')], '+3V3')
+    connected(('U13', '8'), [('R49', '2'), ('R84', '2'), ('C4', '2'), ('SW1', '2')], 'GND')
 
     local_distances = {}
     for ref, pin in [('C89', '5'), ('C40', '6'), ('C26', '7')]:
@@ -58,8 +69,8 @@ def verify(board):
         errors.append('ACT_ILM must remain on front copper without vias')
 
     return {
-        'scope': 'U13 input feed, local bypass, ramp, current limit and voltage dividers; '
-                 'remote enable/fault wiring, downstream distribution and hardware acceptance remain open',
+        'scope': 'U13 local power/protection, enable fanout and fault/reset copper; '
+                 'interlock inputs and distribution checked separately by verify_distribution_layout.py; hardware acceptance remains open',
         'local_pad_distances_mm': local_distances,
         'ilm_track_length_mm': round(sum(pcb.ToMM(t.GetLength()) for t in ilm
                                           if not isinstance(t, pcb.PCB_VIA)), 3),

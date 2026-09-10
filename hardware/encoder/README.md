@@ -90,8 +90,8 @@ checker validates the connector identities, switched/buffered boundaries, pin
 ordering, local bypass and component split against the harness specification.
 Eight encoder tests include seven injected faults. Five wheel tests also pass.
 
-The motherboard has 317 footprints. Its [U13 local routing pass](../pcb/ACTUATOR_POWER_LAYOUT.md)
-reduces native unrouted connections to 677. Physical DRC and parity pass, but
+The motherboard has 317 footprints. Its [actuator distribution routing pass](../pcb/ACTUATOR_DISTRIBUTION_LAYOUT.md)
+reduces native unrouted connections to 247. Physical DRC and parity pass, but
 board-wide routing remains open. Before releasing either
 board, verify cable continuity, 10 MHz SPI waveforms under concurrent operation,
 power-off isolation, angle repeatability, magnetic interference and mechanical

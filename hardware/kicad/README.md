@@ -126,10 +126,14 @@ See [SOURCING.md](SOURCING.md) for retained component evidence and
 The [input-power routing pass](../pcb/INPUT_POWER_LAYOUT.md) adds C88,
 USB-to-eFuse-to-buck copper, protection and source-selection routes, and
 a board-wide In1 ground reference. USB geometry is recorded in the
-[selected stackup](../pcb/STACKUP.md); USB and full-board routing remain open.
+[selected stackup](../pcb/STACKUP.md); the [USB/ILM pass](../pcb/USB_LAYOUT.md)
+now routes the pair over continuously checked In1 ground. Full-board routing remains open.
 
 The [Type-C routing pass](../pcb/TYPEC_LAYOUT.md) completes the detector inputs,
 returns and source-selection supplies. The [U13 local routing pass](../pcb/ACTUATOR_POWER_LAYOUT.md)
 adds C89 and connects its feed, bypass and protection network. Native connectivity
-has 677 unrouted connections; remote enable/fault wiring, downstream actuator
-distribution and USB data routing remain open.
+has 204 unrouted connections after the [USB/ILM pass](../pcb/USB_LAYOUT.md).
+Actuator feeds, driver/brake outputs, current sensing, interlocks and gate supplies
+are connected and checked, as are USB data and buffered input-current telemetry.
+SPI, optical and remaining board routing are open.
+Six component-land vias at U1/C32/U21 require filled/capped fabrication and stencil review.

@@ -4,6 +4,11 @@ Review stage, 2026-09-09, KiCad 10.0.6. The motherboard remains partially routed
 This pass follows the [input-power](INPUT_POWER_LAYOUT.md) and
 [Type-C](TYPEC_LAYOUT.md) passes. It does not complete actuator distribution.
 
+The subsequent [enable/fault/reset pass](ACTUATOR_CONTROL_LAYOUT.md) completes
+those control nets. The later [distribution pass](ACTUATOR_DISTRIBUTION_LAYOUT.md)
+connects the actuator branches and records the current board counts. The results
+below describe this earlier local-power stage.
+
 ## Completed scope
 
 - Routed PWR_5V from the existing buck-input feed to U13, using a 1.5 mm back

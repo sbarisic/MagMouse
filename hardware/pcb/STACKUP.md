@@ -27,6 +27,10 @@ dielectric constant or loss tangent was provided by the displayed calculation.
 KiCad writes default epsilon_r = 4.5 and loss_tangent = 0.02 when saving;
 these are unverified placeholders, not manufacturer evidence.
 ENIG is recorded as the prototype finish choice; the final quote remains open.
+The current layout requires six 0.60/0.30 mm filled, copper-capped vias:
+four in U21's exposed pad, one in U1's ESD ground land and one in C32's
+supply land. Obtain fabricator/assembler acceptance of the fill/cap process
+and affected land/paste geometry. See [the USB layout review](USB_LAYOUT.md).
 
 ## USB result
 
@@ -36,19 +40,13 @@ The output is **0.1466 mm trace width and 0.1501 mm pair gap**. The saved USB
 netclass applies those dimensions to USB_DP/DM and MCU_USB_DP/DM.
 The calculator's 0.5% setting is solver tolerance, not fabrication tolerance.
 
-USB is not routed yet. Before routing:
-
-1. Normalize the pair names to KiCad's `_P`/`_N` or `+`/`-` convention, or
-   explicitly verify how the native router pairs the current DP/DM names.
-2. Establish the connector-to-ESD-to-series-resistor-to-MCU path, then route
-   the pair over continuous In1 ground. Route around the wheel, optical and
-   antenna voids; do not cross a reference-plane gap.
-3. Review connector/pad fan-out, series resistors, ESD stubs, pair separation,
-   mismatch and ground stitching. Keep adjacent copper sufficiently distant
-   for the selected non-coplanar model, or recalculate that local geometry.
-4. Request this exact stackup and 90-ohm controlled impedance in the final
-   quote. Confirm impedance tolerance, coupon/test provision, finished copper
-   and any CAM width adjustment before accepting fabrication data.
+The [USB route and copper audits](USB_LAYOUT.md) now implement those dimensions
+on F.Cu, with no signal vias and continuous saved In1 ground beneath the
+traces and their 0.327 mm reference margin. Connector/pad fanouts and nearby
+front copper still require signal-integrity review against the non-coplanar
+model. Request this exact stackup and 90-ohm controlled impedance in the
+quote; confirm impedance tolerance, coupon/test provision, finished copper
+and CAM adjustments before accepting fabrication data.
 
 The enclosure and optical height must accommodate actual laminate thickness
 and tolerance. The numerical CAD thickness change is 0.022 mm from the former

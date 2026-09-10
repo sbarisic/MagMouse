@@ -1,0 +1,9 @@
+(version 1)
+
+(rule "Non-USB track minimum"
+    (condition "A.NetClass != 'USB'")
+    (constraint track_width (min 0.15mm)))
+
+(rule "USB selected 90 ohm width"
+    (condition "A.NetClass == 'USB'")
+    (constraint track_width (min 0.1466mm) (opt 0.1466mm) (max 0.1466mm)))

@@ -1,4 +1,11 @@
+For the current routing state and U14/C32 placement, see the
+[USB and compact ILM review](USB_LAYOUT.md). This page records the earlier Type-C pass.
+
 # Type-C detector routing
+
+For the latest completed scope and remaining work, see the
+[enable/fault/reset routing review](ACTUATOR_CONTROL_LAYOUT.md).
+
 
 2026-09-09, KiCad 10.0.6. This pass continues the
 [input-power routing](INPUT_POWER_LAYOUT.md). It connects the Type-C detector

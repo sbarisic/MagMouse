@@ -67,6 +67,12 @@ The [buck routing pass](BUCK_LAYOUT.md) is now followed by the
 USB-to-U12 and U12-to-buck power copper and a filled In1 ground plane. The
 [Type-C pass](TYPEC_LAYOUT.md) connects detector inputs and source-logic supplies.
 The [U13 pass](ACTUATOR_POWER_LAYOUT.md) adds its local feed, bypass and protection copper.
+The [control pass](ACTUATOR_CONTROL_LAYOUT.md) connects enable fanout and power-fault/reset wiring.
+The [distribution pass](ACTUATOR_DISTRIBUTION_LAYOUT.md) connects actuator feeds,
+driver/brake current paths, sensing and remaining interlocks. U21 now requires
+four filled and capped vias in its exposed pad. The [USB pass](USB_LAYOUT.md)
+adds two more at U1/C32, compacts U12 ILM and routes the data pair with a
+checked continuous In1 reference. Include all six component-land vias in the quote.
 [JLC041611-2116](STACKUP.md) is selected with 1 oz outer/inner copper;
 board-wide routing and thermal review remain open.
 
@@ -76,8 +82,9 @@ clearance. The four supply nets have a 0.75 mm suggested track width. These are
 editor starting values: size power paths, copper and thermal vias from measured
 current and temperature limits. Neck-downs and pad escapes require local review.
 The USB netclass now uses the supplier-calculated 0.1466 mm width and
-0.1501 mm gap for 90 ohms on the selected stackup. USB routing, reference-plane
-review and manufacturer impedance acceptance remain open; see [stackup notes](STACKUP.md).
+0.1501 mm gap for the 90-ohm target on the selected stackup. The saved USB
+route/reference audits pass; manufacturer impedance acceptance and USB hardware
+tests remain open. See [USB layout](USB_LAYOUT.md) and [stackup notes](STACKUP.md).
 
 Reference designators are on the fabrication layers for placement review;
 component outlines remain on silkscreen. Add a readable final silkscreen after
@@ -98,10 +105,10 @@ The default exit status checks placement and schematic parity; add
 establishes manufacturing or electrical acceptance.
 
 Current check: **0 physical DRC violations and 0 schematic parity issues**,
-without DRC exclusions. Native connectivity counts **677 unrouted connections**;
-the DRC JSON returns 499 unconnected entries, so its list length is not a full
-connection count. The buck, input-power/source-selection and U13 local subsets are routed.
-See [actuator layout and native copper checks](ACTUATOR_POWER_LAYOUT.md) for the latest scope.
+without new DRC exclusions. Native connectivity counts **204 unrouted connections**;
+the current DRC report also lists 204 entries. The buck, input-power/source-selection,
+U13, actuator distribution, driver/brake, interlock, ILM/telemetry and USB subsets are routed.
+See [USB layout and native copper checks](USB_LAYOUT.md) for the latest scope.
 This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 
@@ -112,11 +119,11 @@ separation, heat dissipation, signal integrity or enclosure fit.
    Optical, [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) circuits are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
    [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
-3. Route U13 enable/fault wiring and the remaining power-control branches.
-   Tighten bridge current loops, decoupling and analog return paths; provide
-   exposed-pad thermal vias and space for the brake resistor's heat.
-4. Route USB on the selected stackup, actuator power, then sensing/control.
-   Fill ground planes and review return paths, thermal paths and test access.
+3. Review actuator current-path necks, decoupling and analog returns; qualify
+   driver and brake heating, and confirm the filled/capped U1/C32/U21 vias.
+4. Route SPI, optical and remaining sensing/control; obtain USB impedance acceptance.
+   Shorten circuitous control routes, add ground stitching and review return
+   paths, thermal paths and test access.
 5. Complete ERC/DRC and package/stencil review before exporting revision-matched
    Gerbers, drills, assembly drawings, BOM and placement files for JLCPCB.
 

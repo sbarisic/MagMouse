@@ -87,16 +87,25 @@ that the actuators can operate within the intended power and thermal envelope.
   [input copper checks](../hardware/pcb/INPUT_POWER_LAYOUT.md).
 - [x] Route [Type-C CC/ESD/VBUS inputs, local returns and detector/source-logic
   supplies](../hardware/pcb/TYPEC_LAYOUT.md); native copper and DRC checks pass.
-- [ ] Complete wider supply distribution and remaining fault/reset/telemetry
-  routing; review ILM parasitics, power necks and heat.
+- [ ] Finish remaining board supplies/signals; quantify ILM parasitics and
+  switching pickup, and review power necks and heat.
 - [x] Select the [JLCPCB stackup and USB geometry](../hardware/pcb/STACKUP.md):
   JLC041611-2116, 1 oz inner/outer, calculated 90-ohm pair dimensions.
-- [ ] Route USB with its ESD return and continuous reference plane, then obtain
-  manufacturer acceptance of the exact stackup and impedance requirements.
+- [x] Compact U12 ILM settings and buffer/test branch; route buffered input-current telemetry.
+- [x] Route [USB with ESD return and continuous In1 reference](../hardware/pcb/USB_LAYOUT.md);
+  add saved-copper continuity, geometry, plane-void and ESD regression checks.
+- [ ] Obtain manufacturer acceptance of the exact stackup, 90-ohm impedance and
+  filled/capped U1, C32 and U21 vias; validate USB electrically on hardware.
 - [x] Route U13's local feed, bypass, voltage dividers, ramp, current limit and
   D3 anode; see [actuator power review](../hardware/pcb/ACTUATOR_POWER_LAYOUT.md).
-- [ ] Route U13's remote enable/fault wiring, actuator distribution/storage,
-  button/BLDC current loops, sensing and brake power.
+- [x] Route actuator enable fanout, U13 fault and the power-fault/reset network,
+  including reset pull-up and enable pull-down returns; see
+  [control routing review](../hardware/pcb/ACTUATOR_CONTROL_LAYOUT.md).
+- [x] Route actuator distribution/storage, button/BLDC current loops, sensing
+  and brake power; complete remaining interlock inputs and gate supplies. See
+  [distribution routing and checks](../hardware/pcb/ACTUATOR_DISTRIBUTION_LAYOUT.md).
+- [ ] Confirm filled/capped U1/C32/U21 vias and affected lands/stencil with the fabricator;
+  qualify current-path necks, combined actuator loading and brake/driver heating.
 - [ ] Complete signal routing, ground stitching and return-path review.
 - [ ] Refine complete-board placement for routing, thermal paths and analog/SPI
   return paths; verify physical assemblies and allocate mounting holes.

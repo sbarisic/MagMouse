@@ -1,5 +1,9 @@
 # Input power and source-selection routing
 
+For the latest completed scope and remaining work, see the
+[USB and compact ILM review](USB_LAYOUT.md).
+
+
 2026-09-09, KiCad 10.0.6. This is a checked routing subset in
 [MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb), not a complete or qualified PCB.
 
@@ -27,8 +31,8 @@ changes; the table below records the original input-power pass.
   wheel, optical and antenna keepouts. The local buck ground pours remain.
   This does not establish a continuous return path for every future signal.
 
-All added vias are 0.60 mm copper / 0.30 mm drill. No filled/capped via-in-pad
-process is assumed. Short U12 pin escapes use 0.25 mm copper before widening;
+All added vias are 0.60 mm copper / 0.30 mm drill. This original pass did not assume filled/capped vias. The later USB pass
+requires them at U1 and C32; see [current fabrication notes](USB_LAYOUT.md). Short U12 pin escapes use 0.25 mm copper before widening;
 the suggested Power netclass width is not a current-capacity guarantee.
 
 The placement changes from the buck-only draft are:
@@ -56,11 +60,11 @@ thermal spreading, quiet ground returns and less than 50 pF at ILM.
 C88 addresses the local output-capacitor requirement, but this routing pass
 does not establish full compliance with that layout guidance.
 
-The current-limit network is still spread over roughly 10–25 mm from U12.
-Review or compact that placement before routing the distant U19/TP14 branch:
-the total ILM parasitic capacitance and coupling have not been calculated or
-measured. Check the ground-current paths around the setting components;
-connection to one GND net alone does not prove a quiet analog return.
+The [subsequent USB pass](USB_LAYOUT.md) compacts the current-limit network:
+USB_ILM falls from 54.094 to 22.935 mm, and setting/input/test pads are within
+8.990 mm of U12.9. U19/TP14 and buffered ADC telemetry are connected.
+The total ILM parasitic capacitance and coupling still need calculation or
+measurement. A common GND net does not by itself prove a quiet analog return.
 
 Review current density, all neck-downs, via sharing and copper temperature at
 maximum load and fault conditions. Validate input inrush, local capacitor
@@ -85,17 +89,16 @@ $kicadPython = "$env:LOCALAPPDATA/Programs/KiCad/10.0/bin/python.exe"
 python hardware/kicad/export_pcb_review.py
 ```
 
-The input verifier traverses actual copper and filled zones. Eight tests check
+The input verifier traverses actual copper and filled zones. Eleven test methods check
 the saved board and deliberate opens in the protected feed, C88 connection,
-current-limit node, source command, CC1, detector supply and sink-mode ground.
+current-limit node, buffer/ADC telemetry, excessive ILM length, source command,
+CC1, detector supply and sink-mode ground.
 The three existing buck tests still
 pass. Reports under `build/pcb-review` include the exact board hash. Run DRC
 alongside the connectivity check; the latter is not a short-circuit detector.
 
-The [Type-C input/supply pass](TYPEC_LAYOUT.md) and subsequent
-[U13 local pass](ACTUATOR_POWER_LAYOUT.md) are complete. Continue with U13
-enable/fault wiring, actuator distribution, bridge/BLDC current loops and the brake. Wider supply distribution and the
-remaining fault/reset/telemetry branches remain open. The selected
-[stackup and USB geometry](STACKUP.md) are ready for the USB routing pass.
-Full-board signal routing, mechanical fit and fabrication preparation remain
-open. This partial board cannot function as an assembled mouse.
+The counts above record this earlier routing pass. See [USB_LAYOUT.md](USB_LAYOUT.md)
+for the current board: input/actuator distribution, interlocks, buffered input
+telemetry and USB data are now checked. Full-board signal routing, mechanical
+fit, thermal/ILM measurements and fabrication preparation remain open.
+This partial board cannot function as an assembled mouse.
