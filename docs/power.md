@@ -1,4 +1,4 @@
-# USB-C power control — revision 0.3
+# USB-C and actuator power control
 
 The [KiCad circuit](../hardware/kicad/README.md) connects USB-C to protected logic
 and actuator supplies. Source detection, current limits, soft-start, reverse
@@ -48,7 +48,7 @@ during final electrical review.
 ## Power paths
 
 VBUS_USB → U12 → PWR_5V → U2 → +3V3 powers logic.
-PWR_5V → U13 → ACT_5V powers the button bridges.
+PWR_5V → U13 → ACT_5V powers the button bridges, wheel driver and autonomous brake.
 U12/U13 are TPS259470LRPWR active-current-limit eFuses with adjustable OVLO
 and reverse blocking. The 472 and 474 variants are not equivalent substitutes.
 
@@ -60,7 +60,7 @@ and reverse blocking. The 472 and 474 variants are not equivalent substitutes.
 | Actuator input OVLO | R40/R41 | 6.63 V rising |
 | Actuator branch current limit | R42 || R43 | 2.02 A |
 | Both rail ramps | C25/C26, 10 nF | 0.2 V/ms; about 25 ms to 5 V |
-| ACT capacitor-only inrush | 70 uF nominal | About 14 mA; other loads are additional |
+| ACT capacitor-only inrush | 110.7 uF nominal direct rail capacitance | About 22.14 mA; active loads and secondary rail charging are additional |
 
 D3 clamps U13 EN low when ACT_DRIVE_EN is low. High-value EN/OVLO dividers
 reduce standby demand. The driver still has its own undervoltage protection:
@@ -154,22 +154,36 @@ D4 shunts residual monitor voltage to the ADC supply during power loss.
 The 100 kOhm resistor limits this alternate path to about 100 uA at a 10.3 V
 rail. Verify ADC pin voltage/injection and logic discharge on unplug/regeneration.
 These are supervisory signals. All eight ADC1 channels are allocated. A second
-ADS7038 and dedicated SPI3 are now reserved for wheel-current acquisition; its
-front-end circuit and sampling validation remain open. See [interfaces](interfaces.md).
+ADS7038 on dedicated SPI3 provides wheel-current acquisition. Its front-end
+circuit is drawn; sampling timing and accuracy still need validation. See
+[interfaces](interfaces.md) and [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
 
-## Regeneration and validation before layout
+## Regeneration and actuator acceptance
 
 U13 blocks regenerative power into PWR_5V; U12 blocks return to the host.
-C37-C40 plus the three driver bulk capacitors give 70 uF nominal storage.
-R69, 1 kOhm, gives a nominal 70 ms discharge constant and about 30 mW at 5.5 V.
+C8/C11/C14, C37-C40, C44/C45 and C68/C69 provide eleven 10 uF capacitors:
+110 uF nominal bulk storage. Seven 100 nF bypass capacitors bring the direct
+rail total to 110.7 uF. This corrects earlier 70/80 uF counts that omitted some
+driver/wheel storage. Charge-pump and secondary-rail capacitors are excluded.
+R69, 1 kOhm, gives a nominal 110.7 ms discharge constant and about 30 mW at 5.5 V.
 Hardware command gating does not wait for that discharge.
 
 D2, SMBJ6.0A, absorbs excess pulse energy locally. At 25 C its standoff is 6 V,
 breakdown 6.67-7.37 V and specified pulse clamp 10.3 V. Temperature and layout
 change the result. The 600 W rating applies to a specified pulse and copper
-area, not continuous dissipation. This path is for characterization of button
-pulses; it is not an accepted continuous wheel brake. Resolve wheel energy and
-any brake resistor/chopper before freezing that subsystem.
+area, not continuous dissipation. U30/U31 independently sense ACT overvoltage
+and switch Q5 plus R121-R124 as an autonomous brake. Four parallel 47-ohm
+resistors give 11.75 ohms and dissipate about 3.06 W while on at 6 V. Nominal
+thresholds are 5.982 V on and 5.725 V off. The 8 W aggregate resistor rating
+does not establish an enclosed-mouse cooling budget.
+
+The initial monitored regeneration envelope is at most 0.4 A returned peak
+current and 0.5 W average returned power, at least 47 uF **effective** rail
+capacitance, brake response within 10 us and measured rail peaks below 6.5 V.
+These are unverified bench targets. Nominal capacitance does not prove the
+effective minimum under DC bias, temperature and tolerance. See the
+[high-current copper review](../hardware/pcb/HIGH_CURRENT_REVIEW.md) for the
+current layout, resistance screening, probe locations and remaining tests.
 
 Record oscilloscope/current measurements for both orientations and default,
 1.5 A and 3 A sources: startup/enumeration, inrush, source transitions,

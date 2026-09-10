@@ -6,6 +6,11 @@ current sensing, autonomous brake and remaining interlocks on the saved
 and [enable/fault/reset](ACTUATOR_CONTROL_LAYOUT.md) passes. The schematic,
 317 motherboard footprints, 273 BOM parts and separate encoder board are unchanged.
 
+The subsequent [high-current review](HIGH_CURRENT_REVIEW.md) widens local driver
+paths, adds front/back ground spreading, screens feed/output resistance and
+corrects the rail capacitor inventory. The routing dimensions below describe
+the original distribution pass.
+
 ## Copper and placement
 
 - ACT_5V reaches all 39 pads, including storage, button-driver bypass capacitors,

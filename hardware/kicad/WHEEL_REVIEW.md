@@ -175,7 +175,9 @@ their aggregate 8 W rating is not an enclosed-mouse cooling budget.
 Initial monitored bench envelope: **0.4 A peak returned rail current, 0.5 W
 average returned power, at least 47 µF effective ACT capacitance, running brake
 response no slower than 10 µs, and measured peak ACT voltage below 6.5 V**.
-The eight 10 µF capacitors C37–C40/C44–C45/C68–C69 give 80 µF nominal; bias,
+The eleven 10 µF capacitors C8/C11/C14, C37–C40, C44–C45 and C68–C69 give
+110 µF nominal bulk storage, plus 0.7 µF of direct rail bypass. The earlier
+80 µF count omitted the three button-driver bulk capacitors. Bias,
 tolerance and temperature must establish the 47 µF minimum. Add capacitance or
 reduce the envelope if they do not. At 0.4 A and 47 µF, a 10 µs delay adds
 0.085 V, giving a conditional 6.259 V peak from the highest static threshold.

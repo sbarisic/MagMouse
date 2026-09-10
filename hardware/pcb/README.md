@@ -105,10 +105,14 @@ The default exit status checks placement and schematic parity; add
 establishes manufacturing or electrical acceptance.
 
 Current check: **0 physical DRC violations and 0 schematic parity issues**,
-without new DRC exclusions. Native connectivity counts **204 unrouted connections**;
-the current DRC report also lists 204 entries. The buck, input-power/source-selection,
+without new DRC exclusions. Native connectivity counts **200 unrouted connections**;
+the current DRC report also lists 200 entries. The buck, input-power/source-selection,
 U13, actuator distribution, driver/brake, interlock, ILM/telemetry and USB subsets are routed.
-See [USB layout and native copper checks](USB_LAYOUT.md) for the latest scope.
+See [USB layout and native copper checks](USB_LAYOUT.md) and the subsequent
+[actuator high-current review](HIGH_CURRENT_REVIEW.md) for resistance screening,
+local ground spreading and the corrected capacitor inventory.
+The subsequent [analog pass](ANALOG_LAYOUT.md) connects the Hall outputs and
+checks all analog nets, but its reference/proximity review findings remain open.
 This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 
@@ -119,8 +123,10 @@ separation, heat dissipation, signal integrity or enclosure fit.
    Optical, [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) circuits are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
    [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
-3. Review actuator current-path necks, decoupling and analog returns; qualify
-   driver and brake heating, and confirm the filled/capped U1/C32/U21 vias.
+3. Qualify the reviewed actuator current paths, effective decoupling and analog
+   returns on hardware; measure driver/brake heating and confirm the
+   filled/capped U1/C32/U21 vias. Static resistance and local ground-area checks
+   now protect the saved geometry; they do not replace these measurements.
 4. Route SPI, optical and remaining sensing/control; obtain USB impedance acceptance.
    Shorten circuitous control routes, add ground stitching and review return
    paths, thermal paths and test access.

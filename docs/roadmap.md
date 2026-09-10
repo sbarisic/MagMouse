@@ -1,5 +1,45 @@
 # Development roadmap
 
+## Current execution order
+
+The actuator distribution, driver/brake current loops and interlock copper are
+connected. Their electrical and thermal acceptance remains open. Use this order
+for the remaining motherboard work:
+
+1. Route/review analog current sensing: ADC2 SOA/SOB/SOC filters, button IPROPI,
+   Hall outputs, VREF and power telemetry. Keep Hall and button-interface
+   placement provisional; review local returns and separation from switching
+   copper, and add useful boundary stitching.
+2. Complete board-wide +3V3, PWR_5V, switched sensor rails and bypass returns.
+   Audit necks, shared vias and shared actuator/logic/analog return paths.
+3. Route SPI3/ADC2 first, then SPI2 and interrupts/faults/enables. Check branches
+   and stubs for the 2 MHz PMW3360 and 10 MHz MA735 paths.
+4. Review the optical layout separately: 3.3/1.9 V supplies, reset/SPI buffers,
+   bypassing and the complete aperture/lens envelope. Retain the existing
+   supplier/sample and optical-fit gates.
+5. Inspect actual return paths on the substantially routed board, especially
+   USB, ADC2/SPI3, optical, wheel current sensing, IMU and brake reference.
+6. Review heat spreading and thermal vias for both eFuses, buck, motor drivers,
+   brake MOSFET/resistors and exposed-pad devices. Measure combined-load heating.
+7. Move to mechanical CAD before final placement freeze: mounting holes, GB1806
+   support, shaft/bearings, upright encoder support, middle-click travel, cable
+   bend/strain relief, lens/baseplate stack, USB opening, paddles, Hall magnets
+   and actuator gaps. Avoid repeated refinement of placements that this work
+   is likely to change.
+8. Review manufacturing and assembled test access. Include VBUS/PWR_5V/ACT_5V,
+   +3V3 and optical rails, Hall/ADC references, current outputs, phase pads,
+   brake output/gate, USB and important fault/enable signals.
+
+- [ ] Before final routing freeze, perform a whole-board electrical review for
+  plane splits/crossings, long current loops, analog/PWM adjacency, power-via
+  count, thermal restrictions, SPI stubs, USB reference continuity, test access,
+  connector interference and parts covered by future wheel/button structures.
+- [ ] Before ordering the final board, start a minimal firmware bring-up branch:
+  actuator-off boot, USB HID, source detection, ADC1/Hall, optical X/Y, MA735,
+  ADC2 phase readings, low-current commutation, then one bounded button pulse.
+  Hardware behavior must be demonstrated on suitable development/prototype
+  hardware; compilation alone is not architecture validation.
+
 ## 0. Repository foundation
 
 - [x] Preserve original ideas and document the selected V1 direction.
@@ -104,8 +144,20 @@ that the actuators can operate within the intended power and thermal envelope.
 - [x] Route actuator distribution/storage, button/BLDC current loops, sensing
   and brake power; complete remaining interlock inputs and gate supplies. See
   [distribution routing and checks](../hardware/pcb/ACTUATOR_DISTRIBUTION_LAYOUT.md).
+- [x] Widen driver current-path escapes and add local front/back ground spreading;
+  screen 27 feed/output paths and protect thermal copper and capacitor inventory
+  with [high-current regression checks](../hardware/pcb/HIGH_CURRENT_REVIEW.md).
+- [x] Connect the 22 analog nets, including all Hall outputs; put ADC2 input
+  filters on F.Cu, reconnect their returns and complete the ACT monitor capacitor
+  return. Add [analog connectivity and geometry screening](../hardware/pcb/ANALOG_LAYOUT.md).
+- [ ] Close the analog review findings: upstream SOx/phase proximity on In2/B,
+  front-reference gaps, long right Hall/IPROPI routes and middle-button VREF.
+  The analog `--require-reviewed` gate currently fails; continuity passes.
 - [ ] Confirm filled/capped U1/C32/U21 vias and affected lands/stencil with the fabricator;
   qualify current-path necks, combined actuator loading and brake/driver heating.
+- [ ] Measure the long brake gate/reference paths, effective ACT capacitance,
+  local VM droop and regeneration with the MCU held in reset; retain the
+  provisional brake envelope until the measurements pass.
 - [ ] Complete signal routing, ground stitching and return-path review.
 - [ ] Refine complete-board placement for routing, thermal paths and analog/SPI
   return paths; verify physical assemblies and allocate mounting holes.
