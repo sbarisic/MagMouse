@@ -1,6 +1,23 @@
 # Modular mouse planning package
 
-2026-09-10. **Planning files only; no modular board is ready to order.**
+2026-09-10. **Schematic development and planning files; no modular board is ready to order.**
+
+Independent [main](main/Main.kicad_pro) and [wheel](wheel/Wheel.kicad_pro)
+schematics now exist. They include J8/J9 signal headers, J10/J11 power headers
+and local disconnect bias. The wheel also has local bulk storage, TVS and a
+discharge resistor. Both pass ERC. See the
+[interface review](INTERFACE_REVIEW.md) for the implemented changes, verification
+commands and remaining power-return, wheel-storage and SPI3 timing findings.
+The [wheel PCB](wheel/Wheel.kicad_pcb) has all 87 footprints on its 55 x 60 mm
+outline. Local power, brake, phases and ADC2 analog paths are routed, with filled
+ground and local thermal/return vias. Physical DRC and schematic parity pass;
+61 connections remain. See the [routing review](WHEEL_ROUTING.md). Main-board
+placement in the larger shaped outline is still pending.
+
+The prototype assumes fully connected internal cables. Per the user's decision,
+child-board damage after disconnection is acceptable; disconnect/partial-insertion
+survival does not block layout or require extra protection. Normal connected
+power, thermal, signal and regeneration checks remain applicable.
 
 The target order is five assembled panels, each with one main, one wheel and
 one encoder board, delivered to Croatia, 43000. The finished main-board outline
@@ -14,7 +31,8 @@ Curvature and width-transition locations are draft assumptions from the sketch.
 - [Main-envelope.kicad_pcb](planning/Main-envelope.kicad_pcb): editable native
   outline, 80 x 125 mm, with the source motherboard's four-layer stackup.
 - [Wheel-envelope.kicad_pcb](planning/Wheel-envelope.kicad_pcb): provisional
-  55 x 60 mm reservation; fit of its parts, mounts and connectors is unproven.
+  55 x 60 mm reservation. Its electronics now fit the independent wheel PCB;
+  mounts, mating cables and assembled mechanical fit remain unproven.
 - [Encoder-envelope.kicad_pcb](planning/Encoder-envelope.kicad_pcb): 14 x 18 mm
   reservation with the common four-layer stack. The existing routed encoder
   has not yet been converted or transferred into this file.
@@ -40,6 +58,9 @@ them. Final tooling, tab access and unit support are still open.
 The fresh source netlists account for 320 footprints: 241 main, 76 wheel and
 3 encoder. Counts include test points and exclude new modular-interface parts.
 They are not the number of components that JLCPCB would populate.
+The split schematics add 13 interface and 3 local power parts: current counts
+are 246 main, 87 wheel and 3 encoder. The nesting drawing retains baseline
+ownership counts. See [local power review](LOCAL_POWER_REVIEW.md).
 
 Wheel ownership contains U21 DRV8316, U22 disable gates, U23 ADC2 with local
 filters/reference/bypass, U24/U26 forward buffers and the complete brake
@@ -54,11 +75,13 @@ encoder traffic through the wheel board is no longer the preferred plan.
 The wheel board still needs the ESP32 or a test fixture to commutate the motor.
 
 The main/wheel boundary has **17 nets: 14 digital signals, +3V3, ACT_5V and GND**.
-The proposed signal harness has 30 contacts: all odd-numbered pins are GND;
-the even pins below each have an adjacent return. This is a logical allocation,
-not an approved FFC/connector footprint or cable orientation.
+The signal harness has 30 contacts. Main J8 odd pins are GND; the J8 even pins
+below each have an adjacent return. A flat same-side FFC between facing headers
+maps J8.N to J9.(31-N), so wheel J9 even pins are GND. A prototype Hirose
+FH12-30S-0.5SH(55) header is selected; cable orientation and conductor construction
+remain unapproved. See the interface review.
 
-| Pin | Net | Direction |
+| Main J8 pin (wheel J9 = 31 minus this pin) | Net | Direction |
 | --- | --- | --- |
 | 2 | SPI_SCLK | Main to wheel |
 | 4 | SPI_MOSI | Main to wheel |
@@ -82,27 +105,29 @@ A candidate is JST SM02B-PASS-TB(LF)(SN),
 JST rates the [PA family](https://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf)
 at 3 A with AWG22. This is not approval for a 3 A motor load: voltage drop,
 regenerative pulses, connector temperature, wire size and protection still
-need a budget. Header footprint, mating parts, stock and cable sourcing are
-not frozen. A 50 mm signal cable is a provisional target, not a tested limit.
+need a budget. The no-boss header footprint and mating parts are now specified
+in the interface review; stock, cable sourcing and assembly sign-off remain
+open. A 50 mm signal cable is a provisional target, not a tested limit.
 
-## Required changes before schematic extraction is accepted
+## Implemented interface and remaining connected-operation review
 
-- Add wheel-local low defaults on WHEEL_RUN_REQ and the three raw PWM inputs.
-  Keep R77 on main because its ESP32 boot-strap role must survive unplugging.
-  Existing DRV_INHx output pulldowns do not bias U22's disconnected input pins.
+Extraction and local bias additions are implemented. Current closure status
+and quantitative findings are in
+[INTERFACE_REVIEW.md](INTERFACE_REVIEW.md). Physical harness and power-ramp
+acceptance remains open even where settled-DC bias checks pass.
+
+- Keep the implemented wheel-local low defaults on RUN/PWM and main R77 boot
+  strap. The existing bias circuitry remains fitted.
 - Retain local ACT_DRIVE_EN pulldown R84 and review independent power-up/down
   of +3V3 and ACT_5V. Keep autonomous brake operation independent of the host.
-- Define idle bias at cable receivers, including CS inputs and U25's return
-  inputs on main. An unplugged wheel must not leave fault or SPI inputs floating
-  or let firmware infer a healthy wheel from a disconnected fault line.
+- Retain the implemented CS and U25 return-input bias. Normal connected reset
+  and startup logic levels still need to be correct.
 - Review partial-power behavior of every buffer, ADC and gate, including
   signal injection when one rail is absent. Confirm from the actual parts'
   datasheets; moving the existing buffers is not proof of safe sequencing.
-- Review open/missing power-return faults. Signal cable grounds also connect
-  the boards and could become the motor-current return if the power GND opens.
-  Do not assume the signal harness is safe for that load. Resolve this with
-  rated return paths, connector arrangement and protection before connector
-  selection is frozen. Hot plugging is not a validated operating mode.
+- Review normal current sharing between power and signal ground conductors
+  with both cables fully seated. Open-return and disconnect survival are outside
+  prototype acceptance; do not add protection solely for those cases.
 - Budget SPI3 round-trip delay through cable, buffers and ADC, plus SPI2 loading
   and branches. Provide appropriate source termination after that review and
   verify waveforms on hardware. SPI frequency alone does not define edge quality.

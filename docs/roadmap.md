@@ -16,14 +16,39 @@ all 17 main/wheel boundary nets are covered. The requested quote is for five
 assembled sets delivered to Croatia 43000. Only a provisional bare-panel price
 has been obtained; assembly and shipping remain unquoted.
 
-Next, close connector selection, cable timing and disconnect/power-return
-behavior, then extract the schematics and place the wheel driver/ADC/brake
-together before further placement-dependent routing on the old motherboard.
+Independent [main and wheel schematics](../hardware/modular/INTERFACE_REVIEW.md)
+now include JLCPCB-listed signal/power headers and local disconnect bias. Both
+pass ERC; the migration preserves 988 baseline pin connections and checks all
+32 cable contacts. Counts including the added interface/local power are 246 main and 87
+wheel footprints, plus the existing 3 encoder footprints.
+
+Wheel-local [bulk storage, secondary TVS and discharge](../hardware/modular/LOCAL_POWER_REVIEW.md)
+are now added: 140.4 uF nominal locally, with the 47 uF effective requirement
+still subject to measured qualification. Nominal connected capacitor-only
+startup load is 42.14 mA. Ten circuit regression tests pass.
+The user accepts child-board damage after an internal cable disconnect for this
+prototype. Assume fully connected internal cables; disconnect, partial-insertion
+and open-return survival are outside acceptance. No extra wheel-feed protection
+is required solely for these cases.
+The [cable review](../hardware/modular/CABLE_REVIEW.md) corrected the physical
+contact order: J8.N to J9.(31-N) for facing bottom-contact headers and a flat
+same-side FFC. The candidate's mating tolerances still need closure before order.
+The [wheel power and analog routing](../hardware/modular/WHEEL_ROUTING.md) now
+connects local supplies, phases, autonomous brake and ADC2 sensing/reference
+paths. All 87 footprints remain front-side on 55 x 60 mm. Filled In1 ground,
+local returns and thermal vias are present. Native DRC/parity report zero issues
+and 61 unconnected items, down from 233. Current-sense channels are front-only,
+with complete saved In1 shadows and at least 1.785 mm from checked switching
+copper. Five routing and four placement regression tests pass. These geometric
+checks do not establish noise, thermal or regenerative-response acceptance.
+Next, route ADC2 SPI3, configuration SPI, PWM/control/fault signals and remaining
+logic supplies. Extend the board-specific checks before routing the larger main
+PCB. SPI3's 20 MHz target still requires sampling validation.
 Keep driver, ADC2 and autonomous brake together on the wheel board. A shared
 panel requires a common stackup, including conversion of the encoder board.
 The current 60 x 95 mm PCB and its review results remain the working baseline;
-the schematic/copper split and manufacturing panel have not yet been implemented.
-The new native outlines are separate planning files with no components or copper.
+the copper split and manufacturing panel have not yet been implemented.
+The outline-only planning files remain separate from the new editable wheel PCB.
 Existing electrical and mechanical acceptance tasks below remain applicable
 and must follow their circuits into the new boards.
 

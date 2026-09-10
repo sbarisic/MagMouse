@@ -6,6 +6,9 @@ The [implementation planning package](../modular/README.md) now contains the
 native board envelopes, complete proposed component ownership, logical harness
 pin map and a live provisional bare-panel price. Target quantity/destination:
 five assembled sets, Croatia 43000. Assembly and delivery are not yet quoted.
+Independent split schematics and connector/bias additions are now implemented;
+see [the current interface review](../modular/INTERFACE_REVIEW.md). Copper
+migration and the finished breakaway panel remain open.
 
 ## Confirmed dimensions and requested delivery
 
@@ -46,7 +49,10 @@ Provide connectors and cables for every functional board-to-board connection.
 Breakaway tabs are mechanical supports: no functional traces or copper planes
 cross them. This permits the same connector-based electrical tests before and
 after separation. Each finished board needs its own mounting/support and
-accessible test points. Driver-off defaults must survive a disconnected cable.
+accessible test points. The prototype assumes fully connected internal cables;
+the user accepts possible child-board damage after a disconnect. Disconnect
+survival is not a placement/release blocker. Connected reset defaults and
+normal power/regeneration behavior remain required.
 
 ## Manufacturing panel
 
@@ -101,7 +107,7 @@ checks rather than carrying over a passing status from the old board.
 1. Draw the 125/80/44 mm shaped-board envelope and reserve the optical stack,
    wheel assembly, mounts, connectors and cable bends.
 2. Inventory the wheel-owned components and define a complete harness pin map,
-   return conductors, power budget and disconnect behavior.
+   return conductors and normal connected-operation power budget.
 3. Extract the wheel circuit and update both schematics and net checks. Place
    the driver/ADC/brake together on the new board before routing its interfaces.
 4. Rework main-board placement within the shaped envelope, and convert the

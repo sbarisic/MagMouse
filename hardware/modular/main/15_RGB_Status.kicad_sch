@@ -1,0 +1,2088 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "1406e60b-0eff-56f4-8b4d-23858507be73")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - 15_RGB_Status")
+    (date "2026-09-09")
+    (rev "0.6 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols
+    (symbol "MagMouse:TPS7A2450DBVR"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 13.16 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Value" "TPS7A2450DBVR"
+        (at 0 16.16 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a24.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (symbol "TPS7A2450DBVR_0_1"
+        (rectangle
+          (start -15.24 10.16)
+          (end 15.24 -10.16)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS7A2450DBVR_1_1"
+        (pin power_in line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "IN"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "EN"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at -17.78 -5.08 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_out line
+          (at 17.78 5.08 180)
+          (length 2.54)
+          (name "OUT"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "5"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin no_connect line
+          (at 17.78 0.0 180)
+          (length 2.54)
+          (name "NC"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))))
+    (symbol "MagMouse:SN74LV1T34DBVR"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 13.16 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Value" "SN74LV1T34DBVR"
+        (at 0 16.16 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (symbol "SN74LV1T34DBVR_0_1"
+        (rectangle
+          (start -15.24 10.16)
+          (end 15.24 -10.16)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "SN74LV1T34DBVR_1_1"
+        (pin power_in line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "5"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "A"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at -17.78 -5.08 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin output line
+          (at 17.78 5.08 180)
+          (length 2.54)
+          (name "Y"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin no_connect line
+          (at 17.78 0.0 180)
+          (length 2.54)
+          (name "NC"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))))
+    (symbol "MagMouse:SK6805-EC15"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 13.16 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Value" "SK6805-EC15"
+        (at 0 16.16 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Footprint" "MagMouse:OPSCO_SK6805_EC15"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0f4b58ac8908ccf8037b2d7ca0ec1e91.pdf?productCode=C2890035"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (symbol "SK6805-EC15_0_1"
+        (rectangle
+          (start -15.24 10.16)
+          (end 15.24 -10.16)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "SK6805-EC15_1_1"
+        (pin power_in line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "DIN"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at -17.78 -5.08 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin output line
+          (at 17.78 5.08 180)
+          (length 2.54)
+          (name "DOUT"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "15 / Single-data-pin status LED with switched protected supply"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 2.5 2.5))
+      (justify left top))
+    (uuid "bd350efd-a82d-51b6-be41-ae616c10c9ef"))
+  (text "DRAFT 0.6 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+    (at 20 24 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "556491bd-7cf0-5a93-b0ea-d0847c4c8133"))
+  (symbol
+    (lib_id "MagMouse:TPS7A2450DBVR")
+    (at 83.82 68.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "aff6466f-5a65-58f8-8b4b-97df2c44406e")
+    (property "Reference" "U33"
+      (at 88.82 56.5 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TPS7A2450DBVR"
+      (at 88.82 59.0 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a24.pdf"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TPS7A2450DBVR"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C2864436"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C2864436"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; stock/quote refresh required"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C2864436.html"
+      (at 83.82 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "U33")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 66.04 63.5)
+      (xy 60.96 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4e0789b8-1b29-55d5-810d-7e976898902f"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 60.96 63.5 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "61701eb1-84b3-5f88-8f10-39146df4379a"))
+  (wire
+    (pts
+      (xy 66.04 68.58)
+      (xy 60.96 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "731385ef-0b77-59a4-8801-b5f84ead58b0"))
+  (global_label "HALL_EN"
+    (shape bidirectional)
+    (at 60.96 68.58 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "6f1b9717-18f3-5ccc-be6a-9676affffefc"))
+  (wire
+    (pts
+      (xy 66.04 73.66)
+      (xy 60.96 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "04e218b3-df33-5316-bdbf-d919e8d7e98b"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 60.96 73.66 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3679cadd-a67b-5126-ae7a-31c39fa0abe6"))
+  (wire
+    (pts
+      (xy 101.6 63.5)
+      (xy 106.68 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1a5fce38-f16f-5958-ba26-53286f4a023f"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 106.68 63.5 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "55faca28-129b-5177-91ef-674b38d96bfd"))
+  (no_connect
+    (at 101.6 68.58)
+    (uuid "31770119-a92d-5c04-bb0b-cc5dd28912d9"))
+  (symbol
+    (lib_id "MagMouse:SN74LV1T34DBVR")
+    (at 213.36 68.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e7c4cc72-a96a-5fc6-9b95-c35cf139288a")
+    (property "Reference" "U34"
+      (at 218.36 56.5 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "SN74LV1T34DBVR"
+      (at 218.36 59.0 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "SN74LV1T34DBVR"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C100024"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C100024"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; stock/quote refresh required"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C100024.html"
+      (at 213.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "U34")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 195.58 63.5)
+      (xy 190.5 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f6f0d500-d09a-56ec-8b0b-5a72a6bdef1e"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 190.5 63.5 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "7be4b11c-fe57-5011-8a0d-948c61f0d407"))
+  (wire
+    (pts
+      (xy 195.58 68.58)
+      (xy 190.5 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "29e0fd04-e368-5245-a0cc-56973051da33"))
+  (global_label "RGB_DATA"
+    (shape bidirectional)
+    (at 190.5 68.58 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "69e43be1-c15d-5e57-a34a-4122aa5e8cb3"))
+  (wire
+    (pts
+      (xy 195.58 73.66)
+      (xy 190.5 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "46bba751-556e-5cd0-ad8a-d8b3093906e9"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 190.5 73.66 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "632d09e9-181f-5b92-9e24-2941fdc4561e"))
+  (wire
+    (pts
+      (xy 231.14 63.5)
+      (xy 236.22 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5994d83a-f0e3-5d1c-934e-5dc89647732f"))
+  (global_label "RGB_BUFFER_OUT"
+    (shape bidirectional)
+    (at 236.22 63.5 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "62ad894e-78f0-5732-8bc1-f7ffba314cce"))
+  (no_connect
+    (at 231.14 68.58)
+    (uuid "4c972b38-1b9b-51ab-af7a-233623df5c83"))
+  (symbol
+    (lib_id "MagMouse:SK6805-EC15")
+    (at 340.36 68.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "45248bdb-073a-5262-bc00-d46c8b2328c1")
+    (property "Reference" "D5"
+      (at 345.36 56.5 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "SK6805-EC15"
+      (at 345.36 59.0 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "MagMouse:OPSCO_SK6805_EC15"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0f4b58ac8908ccf8037b2d7ca0ec1e91.pdf?productCode=C2890035"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "OPSCO Optoelectronics"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "SK6805-EC15"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C2890035"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C2890035"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Standard PCBA only; confirm SK6805-EC15-001 A1 lot/timing before order"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C2890035.html"
+      (at 340.36 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "D5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 63.5)
+      (xy 317.5 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d28bc07e-1dec-53d7-970d-8de000f1375b"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 317.5 63.5 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2e98c5e4-5ee2-5e38-b4f8-ecb8dbd42d3e"))
+  (wire
+    (pts
+      (xy 322.58 68.58)
+      (xy 317.5 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ee80d49c-cad1-5455-9e3b-ae499b55b6b0"))
+  (global_label "RGB_DIN"
+    (shape bidirectional)
+    (at 317.5 68.58 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "97e52083-89f9-516b-a1e0-6549760a4e54"))
+  (wire
+    (pts
+      (xy 322.58 73.66)
+      (xy 317.5 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4ff8d0a0-d59a-5c74-943b-837c30dbb352"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 317.5 73.66 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "1d1fe870-7ab5-59c3-87ac-03e577dea235"))
+  (no_connect
+    (at 358.14 63.5)
+    (uuid "33e362da-0dfa-59c7-a37d-1a1f39fb1ac8"))
+  (symbol
+    (lib_id "Device:R")
+    (at 205.74 132.08 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1b7fedd5-5b3f-5e3f-b98a-ec9e32c11f5d")
+    (property "Reference" "R128"
+      (at 209.74 130.58 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "330R"
+      (at 209.74 133.08 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF3300T5E"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C23138"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C23138"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; refresh stock before order"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C23138.html"
+      (at 205.74 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "R128")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 205.74 128.27)
+      (xy 205.74 123.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "deb761eb-ea40-542b-8dba-49346a7f1b60"))
+  (global_label "RGB_BUFFER_OUT"
+    (shape bidirectional)
+    (at 205.74 123.19 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d2db129b-b514-5225-b8d5-3c7fdfee94ba"))
+  (wire
+    (pts
+      (xy 205.74 135.89)
+      (xy 205.74 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9dc6d076-935e-511c-b24a-b8d11ee279a1"))
+  (global_label "RGB_DIN"
+    (shape bidirectional)
+    (at 205.74 140.97 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "44dfc4db-27cb-54d9-b34f-ad3b42fd1c4e"))
+  (symbol
+    (lib_id "Device:R")
+    (at 279.4 132.08 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c2abbb23-bb21-5d97-873c-40cc62ec872c")
+    (property "Reference" "R129"
+      (at 283.4 130.58 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 283.4 133.08 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; refresh stock before order"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 279.4 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "R129")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 279.4 128.27)
+      (xy 279.4 123.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d8941639-b82f-53c7-912b-91c00961852d"))
+  (global_label "RGB_DIN"
+    (shape bidirectional)
+    (at 279.4 123.19 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "75bb8d94-c323-5db6-ae78-639e0029e368"))
+  (wire
+    (pts
+      (xy 279.4 135.89)
+      (xy 279.4 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6b7587ea-1a7f-5d67-82ac-189106ad40bf"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 279.4 140.97 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "0f1dc1cd-8f7f-5926-b56e-0ac656614975"))
+  (symbol
+    (lib_id "Device:R")
+    (at 353.06 132.08 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c8dce5e1-884c-5f3d-a245-4408b4154fed")
+    (property "Reference" "R130"
+      (at 357.06 130.58 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 357.06 133.08 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; refresh stock before order"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 353.06 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "R130")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 353.06 128.27)
+      (xy 353.06 123.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "59727df0-62b4-594d-9030-4298637d2373"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 353.06 123.19 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ea7d9fb1-b03e-5c07-9b96-72a023078764"))
+  (wire
+    (pts
+      (xy 353.06 135.89)
+      (xy 353.06 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "86b5ce0d-27f9-541f-92f9-d927cd0e64fe"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 353.06 140.97 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "229ce13d-2dd0-593d-a883-50e7be46d75d"))
+  (symbol
+    (lib_id "Device:C")
+    (at 45.72 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4c4d9ac8-b6b9-546e-bd46-9d439f229ef1")
+    (property "Reference" "C73"
+      (at 49.72 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10uF/25V"
+      (at 49.72 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL21A106KAYNNNE"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15850"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15850"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; verify effective capacitance under DC bias"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+      (at 45.72 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "C73")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 45.72 176.53)
+      (xy 45.72 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "65d327fe-dd6e-5e9f-9d4c-1c67a2b1e7d1"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 45.72 171.45 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "33f892cb-f29f-5b09-ba7d-710ee58fb9f0"))
+  (wire
+    (pts
+      (xy 45.72 184.15)
+      (xy 45.72 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "52225602-9cf3-5bbf-80da-f8b411ca0442"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 45.72 189.23 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2f3050c7-88df-540b-96c5-446576f14e89"))
+  (symbol
+    (lib_id "Device:C")
+    (at 121.92 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8f7b0f21-f211-5807-99ac-b4f0425b88d6")
+    (property "Reference" "C74"
+      (at 125.92 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10uF/25V"
+      (at 125.92 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL21A106KAYNNNE"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15850"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15850"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; verify effective capacitance under DC bias"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+      (at 121.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "C74")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 121.92 176.53)
+      (xy 121.92 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "867e6472-bbd4-5e9c-b3ea-28bcbd3c5d03"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 121.92 171.45 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "52110d56-b1e7-5ede-af21-c7e08797b60a"))
+  (wire
+    (pts
+      (xy 121.92 184.15)
+      (xy 121.92 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a352c6a0-9ca7-5a16-88b4-1d04ef707ba9"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 121.92 189.23 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "07da77a8-ba8d-5ef0-9f28-b91daf825646"))
+  (symbol
+    (lib_id "Device:C")
+    (at 205.74 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f1fe349b-8a1b-5ae5-aff0-8977e9de81ad")
+    (property "Reference" "C75"
+      (at 209.74 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 209.74 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C14663"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C14663"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; verify effective capacitance under DC bias"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+      (at 205.74 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "C75")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 205.74 176.53)
+      (xy 205.74 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f7616428-e98b-5989-bae3-dbad450f9963"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 205.74 171.45 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "edc5797e-c80e-514c-bcb5-31f2b2df58d0"))
+  (wire
+    (pts
+      (xy 205.74 184.15)
+      (xy 205.74 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0a3a439b-0b0a-599b-9f0b-153388824e1a"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 205.74 189.23 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "c5c47f92-630b-5af7-b554-3bea0d5a78c3"))
+  (symbol
+    (lib_id "Device:C")
+    (at 279.4 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1230db10-89c6-52bf-8be0-ef7dde8b4e37")
+    (property "Reference" "C76"
+      (at 283.4 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 283.4 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C14663"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C14663"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; verify effective capacitance under DC bias"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+      (at 279.4 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "C76")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 279.4 176.53)
+      (xy 279.4 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "86bdcd18-b9d2-5977-8581-863747eab173"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 279.4 171.45 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "645469eb-e99b-5d00-82c6-aaa7c9f07792"))
+  (wire
+    (pts
+      (xy 279.4 184.15)
+      (xy 279.4 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2b631143-3ea7-525c-8b98-ce8bd22e603c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 279.4 189.23 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "39943168-9bde-5bfc-aa21-fc5a1c00d9b9"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 335.28 180.34 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "4edfc865-1f87-54e8-939c-3825e816b120")
+    (property "Reference" "TP38"
+      (at 339.28 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "RGB_5V"
+      (at 339.28 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 335.28 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "TP38")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 335.28 180.34)
+      (xy 335.28 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "541712e6-0712-588a-a4f9-44dcec67d812"))
+  (global_label "RGB_5V"
+    (shape bidirectional)
+    (at 335.28 185.42 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "d3f760f2-87c3-5b8c-b6fe-ebf3763cbe3e"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 375.92 180.34 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "369fedb2-d66d-5c56-b9d7-837c365e085a")
+    (property "Reference" "TP39"
+      (at 379.92 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "RGB_DIN"
+      (at 379.92 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 375.92 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/85b91052-4714-5e7c-8fb1-77a7728d7085"
+          (reference "TP39")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 375.92 180.34)
+      (xy 375.92 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7cb92806-5733-5c21-8bc4-62da90d3cd17"))
+  (global_label "RGB_DIN"
+    (shape bidirectional)
+    (at 375.92 185.42 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "60a43541-de7d-543d-a4b3-bb6b49125fda"))
+  (text "U33 caps the LED rail near 5V; in dropout RGB_5V follows PWR_5V minus dropout. This is not a boost supply.\nHALL_EN low disables RGB with Hall/encoder sleep; R130 discharges local storage. ACT_5V is never used.\nU34 shifts 3.3V data to the LED rail. R78 on sheet 09 preserves GPIO45 boot-low; no LED-rail pull-up on GPIO45.\nD5 DIN high threshold is 0.78 x VDD in the checked A1 sheet: a direct ESP32 connection is unsuitable."
+    (at 20 220 0)
+    (effects
+      (font
+        (size 1.1 1.1))
+      (justify left top))
+    (uuid "bed955d0-4603-5372-965b-1a102e24143a"))
+  (text "Firmware: hold data low during rail transitions; send black before suspend, then lower HALL_EN.\nTarget 800kbps GRB/MSB-first; A1 timing 0=0.30/0.95us, 1=0.90/0.35us, reset low >=300us.\nQualify startup/dropout, discharge, bus current and RGB_DIN timing on hardware. LED supply must stay 3.7..5.5V."
+    (at 20 252 0)
+    (effects
+      (font
+        (size 1.1 1.1))
+      (justify left top))
+    (uuid "9c96c32f-c1b9-5e20-939c-439f7ee67a42"))
+  (embedded_fonts no))

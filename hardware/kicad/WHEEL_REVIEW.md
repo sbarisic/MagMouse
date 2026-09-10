@@ -92,9 +92,13 @@ U25 runs from system +3V3 and returns driver/encoder MISO to SPI2, ADC2 MISO to
 SPI3, and driver fault to DRV_FAULT_N. Its MISO output enables use the respective
 host CS signals. Never assert two SPI2 device selects simultaneously.
 
-The LVC buffers provide Ioff protection when their supplies are off. This avoids
-a direct host-driven SPI path into an unpowered ADC or encoder. Their intermediate
-power-ramp behavior, glitches and bus contention still require measurement.
+Correction, 2026-09-10: SN74LVC125A does **not** have guaranteed Ioff protection.
+Its overvoltage-tolerant inputs and destination-powered outputs must be reviewed
+by direction: no output may be pulled or externally driven above its own dead
+supply. This topology avoids a direct host SPI output into the ADC/encoder pins,
+but does not by itself establish partial-power-down or ramp acceptance. Output
+clamp current, startup glitches and bus contention still require review and
+measurement. See [modular interface review](../modular/INTERFACE_REVIEW.md).
 R87 is the required pull-up for the driver's open-drain SDO. Start driver register
 access at **1 MHz**, mode 1, with at least 400 ns CS-high time; the former 5 MHz
 interface ceiling is not accepted with this pull-up and unmeasured capacitance.
@@ -232,7 +236,7 @@ stackup. Bench timing and energy results remain electrical acceptance gates.
 - [TI DRV8316, SLVSF16B, April 2022](https://www.ti.com/lit/ds/symlink/drv8316.pdf): pinout, modes, shutdown, CSA, unused-buck termination and RGF land/stencil drawings.
 - [TI ADS7038, SBAS979C, September 2024](https://www.ti.com/lit/ds/symlink/ads7038.pdf): supply domains, reference, input and conversion timing.
 - [MPS MA735, Rev. 1.0, April 2022](https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/): pins, filter settings and UTQFN land pattern.
-- [TI SN74LVC125A, SCAS290T, September 2024](https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf): Ioff, supply range and propagation/loading limits.
+- [TI SN74LVC125A, SCAS290T, September 2024](https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf): input tolerance, output clamp constraints, supply range and propagation/loading limits; no Ioff guarantee.
 - [TI TPS22919, SLVSEN5B, May 2019](https://www.ti.com/lit/ds/symlink/tps22919.pdf): load switching, ON thresholds and QOD connection.
 - [TI TLV1811, SNOSDC8E, July 2025](https://www.ti.com/lit/ds/symlink/tlv1811.pdf): output levels, offset, power-on reset and external hysteresis.
 - [TI LM4040-N, SNOS633N, August 2025](https://www.ti.com/lit/ds/symlink/lm4040-n.pdf): reference grade, bias and temperature bounds.

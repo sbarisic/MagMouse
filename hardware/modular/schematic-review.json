@@ -1,0 +1,162 @@
+{
+  "status": "Static schematic migration and DC checks only",
+  "prototype_scope": {
+    "internal_cables_assumed_fully_connected": true,
+    "cable_disconnect_survival_required": false,
+    "decision": "User accepts possible child-board damage after an internal cable disconnect; disconnect, partial-insertion and open-return fault survival are outside prototype acceptance.",
+    "retained_requirements": "Normal connected operation, startup/shutdown with cables attached, USB/source limits, regeneration, cable ampacity and signal integrity"
+  },
+  "netlist_sha256": {
+    "baseline": "a9863c0f6d1eaa724fa635cb1eee485d3efa60561cfcf365ef1b15deb80ce1e1",
+    "main": "6c5276947fd10b817e947cecaaf5286fdf273949a2588df7738612dfee798e35",
+    "wheel": "d74eb163571397910f055c279911b56ccec5a2f8066601b42007361cf3dde1be"
+  },
+  "component_counts": {
+    "main": 246,
+    "wheel": 87
+  },
+  "preserved_baseline_pin_checks": 988,
+  "harness_contacts_checked": 32,
+  "shutdown_truth_table_cases": 64,
+  "bias_screen": {
+    "fault_unplugged_max_V": 0.6732,
+    "fault_connected_min_V": 2.389403558370682,
+    "fault_total_sink_leakage_screen_A": 5e-05,
+    "R144": {
+      "unplugged_max_V": 0.6732,
+      "main_reset_min_V": 2.1257948576168095
+    },
+    "R145": {
+      "unplugged_max_V": 0.6732,
+      "main_reset_min_V": 2.1257948576168095
+    },
+    "enable_unplugged_max_V": 0.51
+  },
+  "wheel_rail": {
+    "capacitors": [
+      {
+        "ref": "C41",
+        "nominal_uF": 0.1
+      },
+      {
+        "ref": "C42",
+        "nominal_uF": 0.1
+      },
+      {
+        "ref": "C43",
+        "nominal_uF": 0.1
+      },
+      {
+        "ref": "C44",
+        "nominal_uF": 10.0
+      },
+      {
+        "ref": "C45",
+        "nominal_uF": 10.0
+      },
+      {
+        "ref": "C65",
+        "nominal_uF": 0.1
+      },
+      {
+        "ref": "C68",
+        "nominal_uF": 10.0
+      },
+      {
+        "ref": "C69",
+        "nominal_uF": 10.0
+      },
+      {
+        "ref": "C90",
+        "nominal_uF": 100.0
+      }
+    ],
+    "nominal_uF": 140.4,
+    "required_effective_uF": 47,
+    "meets_effective_requirement": false,
+    "bulk_initial_tolerance_floor_uF": 80.0,
+    "bulk_initial_and_endurance_screen_uF": 64.0,
+    "mlcc_credit_in_effective_screen_uF": 0,
+    "status": "Local parts added; effective C, ESR, inrush and transient qualification pending",
+    "connected_system_nominal_uF": 210.7,
+    "nominal_slew_V_per_ms": 0.2,
+    "nominal_capacitor_only_inrush_mA": 42.14,
+    "nominal_wheel_stored_energy_at_6_5V_mJ": 2.96595,
+    "bleed_nominal_6_5_to_0_5V_s_no_generation": 1.692558782001719,
+    "bleed_dissipation_at_6_5V_mW": 8.98936170212766,
+    "conditional_transient": {
+      "minimum_measured_capacitance_uF": 47.0,
+      "maximum_effective_series_resistance_ohm": 0.1,
+      "maximum_returned_bus_current_A": 0.4,
+      "maximum_running_brake_response_us": 10.0,
+      "brake_on_upper_screen_V": 6.175,
+      "capacitive_rise_V": 0.08510638297872343,
+      "resistive_step_V": 0.04000000000000001,
+      "peak_before_unmodeled_inductance_V": 6.300106382978723,
+      "remaining_margin_to_6_5V_V": 0.19989361702127706,
+      "cold_start_200us_from_2_4V_screen_V": 4.142127659574468,
+      "accepted": false
+    },
+    "secondary_tvs": {
+      "ref": "D6",
+      "standoff_V": 6,
+      "specified_pulse_clamp_V": 10.3,
+      "enforces_6_5V_limit": false
+    }
+  },
+  "spi3_screen": {
+    "external_path_max_ns_before_cable": 28,
+    "unshifted_20MHz_half_cycle_ns": 25,
+    "unshifted_20MHz_margin_before_cable_ns": -3,
+    "ideal_four_frame_burst_at_10MHz_us": 10.0,
+    "frequency_sweep": [
+      {
+        "SCLK_MHz": 1,
+        "unshifted_half_cycle_margin_before_cable_and_MCU_ns": 472.0,
+        "four_frames_with_four_0_7us_gaps_us": 74.8,
+        "remaining_in_12us_quiet_window_before_software_us": -62.8
+      },
+      {
+        "SCLK_MHz": 5,
+        "unshifted_half_cycle_margin_before_cable_and_MCU_ns": 72.0,
+        "four_frames_with_four_0_7us_gaps_us": 17.2,
+        "remaining_in_12us_quiet_window_before_software_us": -5.199999999999999
+      },
+      {
+        "SCLK_MHz": 10,
+        "unshifted_half_cycle_margin_before_cable_and_MCU_ns": 22.0,
+        "four_frames_with_four_0_7us_gaps_us": 10.0,
+        "remaining_in_12us_quiet_window_before_software_us": 2.0
+      },
+      {
+        "SCLK_MHz": 20,
+        "unshifted_half_cycle_margin_before_cable_and_MCU_ns": -3.0,
+        "four_frames_with_four_0_7us_gaps_us": 6.4,
+        "remaining_in_12us_quiet_window_before_software_us": 5.6
+      }
+    ],
+    "assumptions": "16ns ADC plus 6ns forward and 6ns return buffer at datasheet loads; actual load, input delay and setup/hold unqualified",
+    "status": "20 MHz target unaccepted; validate sampling phase and loaded cable"
+  },
+  "power_return_fault_screen": {
+    "candidate_cable": "687630050002",
+    "nominal_U13_branch_limit_A": 2.0206060606060605,
+    "ideal_equal_sharing_15_contacts_A": 0.1347070707070707,
+    "single_remaining_ground_contact_A_before_protection": 2.0206060606060605,
+    "candidate_conductor_rating_A_at_25C": 0.5,
+    "single_contact_screen_exceeds_rating": true,
+    "accepted": false,
+    "required_for_prototype": false,
+    "review_status": "Outside prototype scope by user decision; not validated",
+    "scope": "Nominal DC illustration only; no current-sharing, derating, fault-energy or interruption guarantee"
+  },
+  "open_review_gates": [
+    "Fully connected harness current sharing, voltage drop and conductor/connector heating",
+    "FFC supplier construction, pin orientation and mechanical retention",
+    "Connected-system power-ramp/output-clamp measurement; SN74LVC125A has no guaranteed Ioff",
+    "SPI3/ADC2 timing including ESP32 input delay and cable loading",
+    "Wheel-local effective capacitance/ESR, inrush and braking transient qualification",
+    "PCB placement/routing, mechanical fit and assembly-panel DFM"
+  ],
+  "errors": []
+}

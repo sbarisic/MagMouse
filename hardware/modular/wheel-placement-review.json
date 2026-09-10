@@ -1,0 +1,36 @@
+{
+  "status": "Partial routing; not for fabrication",
+  "board_sha256": "f2f2a4c398d7d2f2d1ac6fb66acb40daab3960eaa3bda9feec0e358959c353a4",
+  "netlist_sha256": "d74eb163571397910f055c279911b56ccec5a2f8066601b42007361cf3dde1be",
+  "footprints": 87,
+  "checked_netlist_pins": 295,
+  "copper_layers": 4,
+  "tracks_and_vias": 1661,
+  "zones": 3,
+  "physical_drc_violations": 0,
+  "schematic_parity_issues": 0,
+  "unconnected_items": 61,
+  "current_sense_placement": {
+    "A": {
+      "driver_to_filter_to_adc_airwire_mm": 7.219691486725058,
+      "adc_to_filter_cap_airwire_mm": 3.208961085772155
+    },
+    "B": {
+      "driver_to_filter_to_adc_airwire_mm": 5.848975400910258,
+      "adc_to_filter_cap_airwire_mm": 2.549005933692583
+    },
+    "C": {
+      "driver_to_filter_to_adc_airwire_mm": 6.286060672324848,
+      "adc_to_filter_cap_airwire_mm": 2.8550930370129803
+    }
+  },
+  "brake_gate_airwire_via_series_resistor_mm": 7.2852938017810285,
+  "reference_plane_status": "See wheel-routing-review.json for saved copper checks",
+  "open_items": [
+    "Complete digital buses, controls and remaining logic supplies",
+    "Extend return, thermal and signal-integrity review after digital routing",
+    "Mounting/support, motor wires, cable mating tolerances and enclosure fit",
+    "Final silkscreen, test access, panel tooling and manufacturing exports"
+  ],
+  "errors": []
+}

@@ -1,0 +1,171 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "0ca4ecab-b8ea-54d3-becb-5e1404c0d404")
+  (paper "A3")
+  (title_block
+    (title "MagMouse modular Wheel")
+    (date "2026-09-10")
+    (rev "0.1 DRAFT"))
+  (lib_symbols)
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (embedded_fonts no)
+  (text "MagMouse modular Wheel - independent schematic draft\nNOT FOR FABRICATION - copper migration and harness validation incomplete"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "11288f82-125d-5b41-97e0-fc6d560b795a"))
+  (sheet
+    (at 20 50)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "9e1c6e51-1ad1-5e3a-bb31-1ec20ff3fedf")
+    (property "Sheetname" "10_Wheel_Driver"
+      (at 20 48.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "10_Wheel_Driver.kicad_sch"
+      (at 20 68.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "2")))))
+  (sheet
+    (at 20 75)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6314463c-8d57-5fea-a888-921d0788386a")
+    (property "Sheetname" "11_Wheel_SPI"
+      (at 20 73.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "11_Wheel_SPI.kicad_sch"
+      (at 20 93.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "3")))))
+  (sheet
+    (at 20 100)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6bb26027-e36c-5149-93b0-61be9c808734")
+    (property "Sheetname" "12_Wheel_Feedback"
+      (at 20 98.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "12_Wheel_Feedback.kicad_sch"
+      (at 20 118.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "4")))))
+  (sheet
+    (at 20 125)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "461c1184-3fdc-571c-978e-4cebba646124")
+    (property "Sheetname" "13_Regeneration_Brake"
+      (at 20 123.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "13_Regeneration_Brake.kicad_sch"
+      (at 20 143.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "5")))))
+  (sheet
+    (at 20 150)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "48215ee4-e170-5dbb-820d-f5bb0047ff44")
+    (property "Sheetname" "18_Wheel_Harness"
+      (at 20 148.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "18_Wheel_Harness.kicad_sch"
+      (at 20 168.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "6")))))
+  (sheet
+    (at 20 175)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "2b07bc4d-4879-5e5f-a450-6e57838959d2")
+    (property "Sheetname" "19_Local_Power"
+      (at 20 173.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "19_Local_Power.kicad_sch"
+      (at 20 193.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "7"))))))

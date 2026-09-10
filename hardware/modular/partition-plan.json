@@ -1,47 +1,186 @@
 {
-  "status": "PLANNING ONLY - schematics and copper have not been split",
-  "wheel_sheets": ["/10_Wheel_Driver/", "/13_Regeneration_Brake/"],
-  "wheel_extra_refs": [
-    "U23", "C56", "C57", "C58", "C59", "C60", "C61",
-    "R102", "R103", "R104", "R105", "R106", "R107", "R108", "R109",
-    "U24", "U26", "C52", "C54", "R86", "R87", "R88", "R89",
-    "R94", "R95", "R96", "R97", "R98", "R100"
+  "status": "Baseline ownership contract; independent split schematics now exist, copper migration pending",
+  "prototype_scope": {
+    "internal_cables_assumed_fully_connected": true,
+    "cable_disconnect_survival_required": false,
+    "decision": "User accepts possible child-board damage after an internal cable disconnect; disconnect, partial-insertion and open-return fault survival are outside prototype acceptance.",
+    "retained_requirements": "Normal connected operation, startup/shutdown with cables attached, USB/source limits, regeneration, cable ampacity and signal integrity"
+  },
+  "wheel_sheets": [
+    "/10_Wheel_Driver/",
+    "/13_Regeneration_Brake/"
   ],
-  "must_remain_main": ["U25", "C53", "U28", "U29", "C55", "J6", "R77"],
+  "wheel_extra_refs": [
+    "U23",
+    "C56",
+    "C57",
+    "C58",
+    "C59",
+    "C60",
+    "C61",
+    "R102",
+    "R103",
+    "R104",
+    "R105",
+    "R106",
+    "R107",
+    "R108",
+    "R109",
+    "U24",
+    "U26",
+    "C52",
+    "C54",
+    "R86",
+    "R87",
+    "R88",
+    "R89",
+    "R94",
+    "R95",
+    "R96",
+    "R97",
+    "R98",
+    "R100"
+  ],
+  "must_remain_main": [
+    "U25",
+    "C53",
+    "U28",
+    "U29",
+    "C55",
+    "J6",
+    "R77"
+  ],
   "signal_harness": {
-    "status": "Logical pin allocation only; connector MPN, footprint and cable orientation unselected",
+    "status": "Prototype header selected; connected-operation cable construction, orientation and current review remain open",
+    "header_mpn": "FH12-30S-0.5SH(55)",
+    "header_lcsc": "C506793",
+    "footprint": "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal",
+    "datasheet": "https://www.hirose.com/product/p/CL0586-0525-1-55",
+    "main_connector": "J8",
+    "wheel_connector": "J9",
     "contact_count": 30,
     "non_ground_pins": {
-      "2": "SPI_SCLK", "4": "SPI_MOSI", "6": "CS_DRV8316",
-      "8": "DRV_MISO_LOCAL", "10": "MOTOR_SPI_SCLK", "12": "MOTOR_SPI_MOSI",
-      "14": "CS_ADC2", "16": "ADC2_MISO_LOCAL", "18": "WHEEL_PWM_A",
-      "20": "WHEEL_PWM_B", "22": "WHEEL_PWM_C", "24": "ACT_DRIVE_EN",
-      "26": "WHEEL_RUN_REQ", "28": "DRV_FAULT_LOCAL_N", "30": "+3V3"
+      "2": "SPI_SCLK",
+      "4": "SPI_MOSI",
+      "6": "CS_DRV8316",
+      "8": "DRV_MISO_LOCAL",
+      "10": "MOTOR_SPI_SCLK",
+      "12": "MOTOR_SPI_MOSI",
+      "14": "CS_ADC2",
+      "16": "ADC2_MISO_LOCAL",
+      "18": "WHEEL_PWM_A",
+      "20": "WHEEL_PWM_B",
+      "22": "WHEEL_PWM_C",
+      "24": "ACT_DRIVE_EN",
+      "26": "WHEEL_RUN_REQ",
+      "28": "DRV_FAULT_LOCAL_N",
+      "30": "+3V3"
     },
     "remaining_pins": "GND",
     "prototype_length_target_mm": 50,
-    "length_status": "Unverified target; requires mechanical and signal-integrity review"
+    "candidate_cable": {
+      "manufacturer": "Wurth Elektronik",
+      "mpn": "687630050002",
+      "datasheet": "https://www.we-online.com/components/products/datasheet/687630050002.pdf",
+      "status": "Trial candidate only: nominal fit, strip-length and width/span tolerances do not fully meet FH12 recommendation; sample or alternate cable required before order",
+      "catalog_current_per_conductor_A_at_25C": 0.5,
+      "minimum_operating_temperature_C": -30,
+      "conductor_width_mm": 0.3,
+      "conductor_thickness_mm": 0.05
+    },
+    "length_status": "Unverified target; requires mechanical and signal-integrity review",
+    "wheel_pin_for_main_pin": {
+      "1": 30,
+      "2": 29,
+      "3": 28,
+      "4": 27,
+      "5": 26,
+      "6": 25,
+      "7": 24,
+      "8": 23,
+      "9": 22,
+      "10": 21,
+      "11": 20,
+      "12": 19,
+      "13": 18,
+      "14": 17,
+      "15": 16,
+      "16": 15,
+      "17": 14,
+      "18": 13,
+      "19": 12,
+      "20": 11,
+      "21": 10,
+      "22": 9,
+      "23": 8,
+      "24": 7,
+      "25": 6,
+      "26": 5,
+      "27": 4,
+      "28": 3,
+      "29": 2,
+      "30": 1
+    },
+    "orientation_contract": "Both component sides up, bottom-contact headers facing one another, same-side-contact FFC without twist: main J8.n to wheel J9.(31-n). Main odd contacts GND; wheel even contacts GND."
   },
   "power_harness": {
     "status": "Candidate only; final current budget and cable/connector acceptance pending",
-    "pins": {"1": "ACT_5V", "2": "GND"},
+    "pins": {
+      "1": "ACT_5V",
+      "2": "GND"
+    },
     "candidate_header_mpn": "SM02B-PASS-TB(LF)(SN)",
     "candidate_lcsc": "C495198",
+    "footprint": "MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal",
+    "main_connector": "J10",
+    "wheel_connector": "J11",
+    "housing_mpn": "PAP-02V-S",
+    "contact_mpn": "SPHD-001T-P0.5",
+    "prototype_wire": "AWG22, two conductors; no live mating",
     "candidate_catalog_rating_A": 3,
     "rating_wire": "AWG22 per JST PA family specification; rating is not a design-current approval"
   },
   "encoder": {
     "source": "hardware/encoder/Encoder.kicad_sch",
     "connection": "Keep main J6 to encoder J7 directly; do not carry encoder SPI through wheel harness",
-    "refs": ["U27", "C62", "J7"]
+    "refs": [
+      "U27",
+      "C62",
+      "J7"
+    ]
   },
   "geometry_mm": {
-    "main": {"width": 80, "length": 125, "front_width": 44},
-    "wheel": {"width": 55, "length": 60, "status": "Unplaced provisional envelope"},
-    "encoder": {"width": 14, "length": 18},
+    "main": {
+      "width": 80,
+      "length": 125,
+      "front_width": 44
+    },
+    "wheel": {
+      "width": 55,
+      "length": 60,
+      "status": "87 footprints; local power/brake/phase/ADC2 analog routing and saved ground checks pass; 61 connections remain; digital routing, mounts and mechanical fit pending"
+    },
+    "encoder": {
+      "width": 14,
+      "length": 18
+    },
     "panel": {
-      "width": 147, "length": 135, "rail": 5, "minimum_gap": 2,
-      "main_origin": [5, 5], "wheel_origin": [87, 5], "encoder_origin": [87, 67],
+      "width": 147,
+      "length": 135,
+      "rail": 5,
+      "minimum_gap": 2,
+      "main_origin": [
+        5,
+        5
+      ],
+      "wheel_origin": [
+        87,
+        5
+      ],
+      "encoder_origin": [
+        87,
+        67
+      ],
       "status": "Nesting study; support web, routed slots, tabs, fiducials and tooling are not designed"
     }
   }

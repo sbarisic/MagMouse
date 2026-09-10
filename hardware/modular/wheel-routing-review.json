@@ -1,0 +1,270 @@
+{
+  "scope": "Wheel local power, brake, phases, ADC2 and saved return geometry; partial routing",
+  "nets": {
+    "ACT_5V": {
+      "pads": 24,
+      "copper_mm": 236.604,
+      "vias": 30,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "ADC2_DECAP": {
+      "pads": 2,
+      "copper_mm": 2.093,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "BRAKE_DIV_TOP": {
+      "pads": 2,
+      "copper_mm": 3.213,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "BRAKE_DRAIN": {
+      "pads": 5,
+      "copper_mm": 32.752,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "BRAKE_FB_1": {
+      "pads": 2,
+      "copper_mm": 1.95,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "BRAKE_FB_2": {
+      "pads": 2,
+      "copper_mm": 6.831,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "BRAKE_GATE": {
+      "pads": 3,
+      "copper_mm": 5.272,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "BRAKE_OUT": {
+      "pads": 4,
+      "copper_mm": 13.399,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "BRAKE_REF": {
+      "pads": 5,
+      "copper_mm": 17.965,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "BRAKE_SENSE": {
+      "pads": 5,
+      "copper_mm": 12.049,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "DRV_AVDD": {
+      "pads": 19,
+      "copper_mm": 93.338,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "WHEEL_BUCK_OUT": {
+      "pads": 3,
+      "copper_mm": 8.607,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_BUCK_SW": {
+      "pads": 2,
+      "copper_mm": 4.964,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_CP": {
+      "pads": 2,
+      "copper_mm": 5.724,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_CPH": {
+      "pads": 2,
+      "copper_mm": 2.229,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_CPL": {
+      "pads": 2,
+      "copper_mm": 2.643,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_I_A": {
+      "pads": 3,
+      "copper_mm": 5.416,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "WHEEL_I_B": {
+      "pads": 3,
+      "copper_mm": 4.599,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "WHEEL_I_C": {
+      "pads": 3,
+      "copper_mm": 5.216,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "WHEEL_PHASE_A": {
+      "pads": 3,
+      "copper_mm": 22.812,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_PHASE_B": {
+      "pads": 3,
+      "copper_mm": 22.799,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_PHASE_C": {
+      "pads": 3,
+      "copper_mm": 23.368,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": null
+    },
+    "WHEEL_SOA": {
+      "pads": 2,
+      "copper_mm": 2.821,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "WHEEL_SOB": {
+      "pads": 2,
+      "copper_mm": 2.136,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    },
+    "WHEEL_SOC": {
+      "pads": 2,
+      "copper_mm": 2.053,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "missing_front_ground_shadow_mm2": 0.0
+    }
+  },
+  "current_sense_separation": {
+    "WHEEL_I_A": {
+      "minimum_projected_gap_mm": 2.931,
+      "aggressor": "WHEEL_BUCK_SW"
+    },
+    "WHEEL_I_B": {
+      "minimum_projected_gap_mm": 4.185,
+      "aggressor": "WHEEL_BUCK_SW"
+    },
+    "WHEEL_I_C": {
+      "minimum_projected_gap_mm": 5.623,
+      "aggressor": "WHEEL_BUCK_SW"
+    },
+    "WHEEL_SOA": {
+      "minimum_projected_gap_mm": 1.785,
+      "aggressor": "WHEEL_BUCK_SW"
+    },
+    "WHEEL_SOB": {
+      "minimum_projected_gap_mm": 2.643,
+      "aggressor": "WHEEL_BUCK_SW"
+    },
+    "WHEEL_SOC": {
+      "minimum_projected_gap_mm": 2.931,
+      "aggressor": "WHEEL_BUCK_SW"
+    }
+  },
+  "checked_ground_pads": 36,
+  "in1_ground_outlines": 1,
+  "drv8316_thermal_vias": 9,
+  "tracks_and_vias": 1661,
+  "native_unconnected": 61,
+  "limits": [
+    "Signal buses and control nets remain unfinished",
+    "No measured ADC noise, thermal, ampacity or brake reaction acceptance",
+    "Filled and capped vias required at exposed pads, U30 ground and C65 ground",
+    "Mechanical and panel manufacturing review remains open"
+  ],
+  "errors": [],
+  "board_sha256": "f2f2a4c398d7d2f2d1ac6fb66acb40daab3960eaa3bda9feec0e358959c353a4"
+}

@@ -1,0 +1,3750 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "e7efcba7-d49e-58c0-833b-b332dbce8ff1")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - 05_Protected_Power")
+    (date "2026-09-08")
+    (rev "0.4 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols
+    (symbol "MagMouse:TPS259470LRPWR"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 18.240000000000002 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Value" "TPS259470LRPWR"
+        (at 0 21.240000000000002 0)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Footprint" "MagMouse:Texas_RPW0010A"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps25947.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.0 1.0))
+          (justify left)))
+      (symbol "TPS259470LRPWR_0_1"
+        (rectangle
+          (start -15.24 15.24)
+          (end 15.24 -15.24)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS259470LRPWR_1_1"
+        (pin power_in line
+          (at -17.78 10.16 0)
+          (length 2.54)
+          (name "IN"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "5"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "EN_UVLO"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "OVLO"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at -17.78 -5.08 0)
+          (length 2.54)
+          (name "DVDT"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "7"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at -17.78 -10.16 0)
+          (length 2.54)
+          (name "ITIMER"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "10"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_out line
+          (at 17.78 10.16 180)
+          (length 2.54)
+          (name "OUT"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "6"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin open_collector line
+          (at 17.78 5.08 180)
+          (length 2.54)
+          (name "AUXOFF"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin open_collector line
+          (at 17.78 0.0 180)
+          (length 2.54)
+          (name "FLT_N"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at 17.78 -5.08 180)
+          (length 2.54)
+          (name "ILM"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "9"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at 0.0 -17.78 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "8"
+            (effects
+              (font
+                (size 1.0 1.0)))))))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "MagMouse:BAT54_7_F"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "BAT54-7-F"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.diodes.com/datasheet/download/BAT54.pdf"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Schottky diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "diode Schottky"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "BAT54_7_F_0_1"
+        (polyline
+          (pts
+            (xy -1.905 0.635)
+            (xy -1.905 1.27)
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27)
+            (xy -0.635 -1.27)
+            (xy -0.635 -0.635))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 1.27)
+            (xy 1.27 -1.27)
+            (xy -1.27 0)
+            (xy 1.27 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "BAT54_7_F_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 2.54)
+          (name "K"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 2.54)
+          (name "A"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "05 / Protected input and separately switched actuator rail"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 2.5 2.5))
+      (justify left top))
+    (uuid "ea3211ea-ab3c-5521-b95f-afe79f1f5522"))
+  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+    (at 20 24 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "bf1ea5ca-b9f2-592e-a034-4b5983ab5785"))
+  (symbol
+    (lib_id "MagMouse:TPS259470LRPWR")
+    (at 91.44 68.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2e4442b1-4314-5c06-992b-31d9712e4849")
+    (property "Reference" "U12"
+      (at 96.44 46.339999999999996 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TPS259470LRPWR"
+      (at 96.44 48.839999999999996 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "MagMouse:Texas_RPW0010A"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps25947.pdf"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TPS259470LRPWR"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C3662793"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C3662793"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C3662793.html"
+      (at 91.44 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "U12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 73.66 58.42)
+      (xy 68.58 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c76d561a-db8f-5609-96a4-0e5c21ab12cd"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 68.58 58.42 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "ae7b28cc-33a5-5aad-a312-bede0dfee167"))
+  (wire
+    (pts
+      (xy 73.66 63.5)
+      (xy 68.58 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "517c5a66-7b86-5fc3-964e-0318f709da3e"))
+  (global_label "USB_UVLO"
+    (shape bidirectional)
+    (at 68.58 63.5 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "abaa8adc-cf36-530e-9eae-99e43490e820"))
+  (wire
+    (pts
+      (xy 73.66 68.58)
+      (xy 68.58 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f7257617-1d5f-5759-abef-54b58ee7ad47"))
+  (global_label "USB_OVLO"
+    (shape bidirectional)
+    (at 68.58 68.58 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "13027a94-93e0-5f0f-8319-107515c26617"))
+  (wire
+    (pts
+      (xy 73.66 73.66)
+      (xy 68.58 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9afb8e5e-80fc-52a8-bf69-45117ce9b8f0"))
+  (global_label "USB_DVDT"
+    (shape bidirectional)
+    (at 68.58 73.66 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "8882595d-00c1-56c0-b170-576c45c36b34"))
+  (no_connect
+    (at 73.66 78.74)
+    (uuid "f82d15e4-b4e7-57f8-aa99-d49411d2d5dd"))
+  (wire
+    (pts
+      (xy 109.22 58.42)
+      (xy 114.3 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "10a965f1-0597-5585-814d-da0a0b4d8d42"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 114.3 58.42 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "b160bac0-25aa-5f16-b977-742aa98477a8"))
+  (no_connect
+    (at 109.22 63.5)
+    (uuid "441d0a12-841c-5174-a1e9-bb710283b345"))
+  (wire
+    (pts
+      (xy 109.22 68.58)
+      (xy 114.3 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "37b7ef20-cbd0-5067-81e5-8cff60f32c34"))
+  (global_label "USB_FAULT_N"
+    (shape bidirectional)
+    (at 114.3 68.58 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "452cf988-e1df-5c8d-b307-cb140dff59f1"))
+  (wire
+    (pts
+      (xy 109.22 73.66)
+      (xy 114.3 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "28324251-29f4-5a17-82ef-3c6a67d8e291"))
+  (global_label "USB_ILM"
+    (shape bidirectional)
+    (at 114.3 73.66 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "4c053182-fa1c-59fe-9b36-5deb78ecf106"))
+  (wire
+    (pts
+      (xy 91.44 86.36)
+      (xy 91.44 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "413d6c92-3534-5059-80bc-bf4a64f2fe39"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 91.44 91.44 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "402fa23b-6bf8-5ba4-90fc-bdfa87b8925e"))
+  (symbol
+    (lib_id "MagMouse:TPS259470LRPWR")
+    (at 287.02 68.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9fabc1b3-78c0-5f3c-8940-6e8907becff8")
+    (property "Reference" "U13"
+      (at 292.02 46.339999999999996 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "TPS259470LRPWR"
+      (at 292.02 48.839999999999996 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "MagMouse:Texas_RPW0010A"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps25947.pdf"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TPS259470LRPWR"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C3662793"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C3662793"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C3662793.html"
+      (at 287.02 68.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "U13")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 269.24 58.42)
+      (xy 264.16 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "342d87c2-2901-5932-98c0-4f11a274a1d0"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 264.16 58.42 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "0ad6a0b6-c617-579d-896a-67048fe69d6f"))
+  (wire
+    (pts
+      (xy 269.24 63.5)
+      (xy 264.16 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c3c92a35-acfe-5c9e-a2c0-39e57c028d02"))
+  (global_label "ACT_UVLO"
+    (shape bidirectional)
+    (at 264.16 63.5 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "15863060-9dff-5aad-bd03-f1650eb08bc0"))
+  (wire
+    (pts
+      (xy 269.24 68.58)
+      (xy 264.16 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f784ca47-d825-527c-8cb6-9483737ceded"))
+  (global_label "ACT_OVLO"
+    (shape bidirectional)
+    (at 264.16 68.58 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "cd473379-a0c0-5781-9282-9d075dab2837"))
+  (wire
+    (pts
+      (xy 269.24 73.66)
+      (xy 264.16 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "26ec8468-787f-5cce-b14d-5ab90f88a2a8"))
+  (global_label "ACT_DVDT"
+    (shape bidirectional)
+    (at 264.16 73.66 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "7c6eaf01-0303-5cfb-a762-7096b0b3de28"))
+  (no_connect
+    (at 269.24 78.74)
+    (uuid "5e7a806c-e64b-5657-99d8-591588678b14"))
+  (wire
+    (pts
+      (xy 304.8 58.42)
+      (xy 309.88 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4ce7e0db-68e9-57b2-9f21-912d37994655"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 309.88 58.42 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "872326e0-28db-5219-af37-686944f0cbd4"))
+  (no_connect
+    (at 304.8 63.5)
+    (uuid "f4963ab8-f68d-57eb-a859-26d9e4af8719"))
+  (wire
+    (pts
+      (xy 304.8 68.58)
+      (xy 309.88 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "40543f48-fa33-585a-b88a-4bdc9a8706ae"))
+  (global_label "ACT_FAULT_N"
+    (shape bidirectional)
+    (at 309.88 68.58 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "1256d497-d0a5-5935-98e6-ea3b23f70e5b"))
+  (wire
+    (pts
+      (xy 304.8 73.66)
+      (xy 309.88 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "379ca260-c27d-5986-8171-cdec6f53c362"))
+  (global_label "ACT_ILM"
+    (shape bidirectional)
+    (at 309.88 73.66 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ead31bc9-4cd7-5e2a-a7b8-9cbb4d1c2298"))
+  (wire
+    (pts
+      (xy 287.02 86.36)
+      (xy 287.02 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ed81297a-85db-504f-b5d7-9342e6a8cf30"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 287.02 91.44 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "117f3609-e048-52a7-b0e8-759f6ac56cc7"))
+  (symbol
+    (lib_id "Device:R")
+    (at 35.56 124.46 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "dc8e166a-fc2b-5ceb-ac28-f4bde59c8a6a")
+    (property "Reference" "R29"
+      (at 39.56 122.96 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "22.1k"
+      (at 39.56 125.46 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF2212T5E"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25961"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25961"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25961.html"
+      (at 35.56 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R29")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 120.65)
+      (xy 35.56 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bda6f05b-aebf-55f5-bd34-bb8d65b91ab5"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 35.56 115.57 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "3a91ca12-79c0-54aa-b139-d0bb9784c75a"))
+  (symbol
+    (lib_id "Device:R")
+    (at 35.56 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1cd4eba7-09d8-5a6a-949d-8e1acb8595cd")
+    (property "Reference" "R30"
+      (at 39.56 155.98 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 39.56 158.48 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 35.56 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R30")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 161.29)
+      (xy 35.56 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "70e87113-52fe-56a2-a802-e1559be38d9a"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 35.56 166.37 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "52316e42-29a1-5d96-8e16-3eff124c36fe"))
+  (wire
+    (pts
+      (xy 35.56 128.27)
+      (xy 35.56 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "18286c0f-4042-5dc9-ac90-c1fb76dd7a16"))
+  (wire
+    (pts
+      (xy 35.56 140.97)
+      (xy 35.56 153.67))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c7ed57cb-6ac8-576e-934f-ea1b62814a11"))
+  (wire
+    (pts
+      (xy 35.56 140.97)
+      (xy 43.18 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "606e37cb-afe7-5cda-a364-baabe8de3808"))
+  (global_label "USB_UVLO"
+    (shape bidirectional)
+    (at 43.18 140.97 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "74badb97-dff3-5fc3-a948-061042e32fa6"))
+  (junction
+    (at 35.56 140.97)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "44484194-21a6-513c-9748-a81e73b5d77f"))
+  (symbol
+    (lib_id "Device:R")
+    (at 81.28 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1db92464-74f4-58b8-ac4f-dfd9490b9b05")
+    (property "Reference" "R31"
+      (at 85.28 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 85.28 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 81.28 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R31")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 81.28 118.11)
+      (xy 81.28 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f4e6c8f-763e-5425-a6ba-53d774cad169"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 81.28 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "903c088c-d0cf-5fda-869e-13da8247f95c"))
+  (wire
+    (pts
+      (xy 81.28 125.73)
+      (xy 81.28 130.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c9c7ed19-1460-5048-85b4-6cc325b593e8"))
+  (global_label "USB_OV_1"
+    (shape bidirectional)
+    (at 81.28 130.81 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "75ca2d79-3d0d-58dc-9b5a-24a11ea82356"))
+  (symbol
+    (lib_id "Device:R")
+    (at 106.68 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "621268e8-3160-50c5-b778-960b67803e39")
+    (property "Reference" "R32"
+      (at 110.68 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 110.68 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 106.68 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R32")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 106.68 118.11)
+      (xy 106.68 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd04b023-d15c-514d-9a1f-257e804fcb52"))
+  (global_label "USB_OV_1"
+    (shape bidirectional)
+    (at 106.68 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "8034b171-d510-5810-88ae-9a7fb6f4ff43"))
+  (wire
+    (pts
+      (xy 106.68 125.73)
+      (xy 106.68 130.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a1788c90-5d97-5f13-870b-91c7eae05968"))
+  (global_label "USB_OV_2"
+    (shape bidirectional)
+    (at 106.68 130.81 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "71c32f70-4303-5f1a-83ef-1a3f97d4faab"))
+  (symbol
+    (lib_id "Device:R")
+    (at 132.07999999999998 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ea206304-eeff-5e2e-8569-c01379db57dc")
+    (property "Reference" "R33"
+      (at 136.07999999999998 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 136.07999999999998 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 132.07999999999998 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R33")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 132.08 118.11)
+      (xy 132.08 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ef6b757d-97bd-5c18-9d14-84571e798492"))
+  (global_label "USB_OV_2"
+    (shape bidirectional)
+    (at 132.08 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "311078cf-e7bb-5c9f-b838-757bc5235544"))
+  (wire
+    (pts
+      (xy 132.08 125.73)
+      (xy 132.08 130.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "89d784dd-d6ac-5cfb-9ac0-5be31e9ae32c"))
+  (global_label "USB_OV_3"
+    (shape bidirectional)
+    (at 132.08 130.81 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "e6fb0652-6606-5d13-9f07-dcbe5a99fd70"))
+  (symbol
+    (lib_id "Device:R")
+    (at 157.48 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "442ffd2c-a01d-535e-a8b8-49483a1c86e9")
+    (property "Reference" "R34"
+      (at 161.48 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 161.48 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 157.48 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R34")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 157.48 118.11)
+      (xy 157.48 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b087e9a8-cc1d-530f-b132-879af229a0e5"))
+  (global_label "USB_OV_3"
+    (shape bidirectional)
+    (at 157.48 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d72db091-ef62-518e-a4d0-8c6c92a1cac3"))
+  (symbol
+    (lib_id "Device:R")
+    (at 157.48 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "975e2803-ef1f-5830-803c-08ddcabed17e")
+    (property "Reference" "R35"
+      (at 161.48 155.98 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 161.48 158.48 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 157.48 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R35")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 157.48 161.29)
+      (xy 157.48 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "68643ae7-6807-5462-b0ab-e04f70c84121"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 157.48 166.37 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a6c03f37-8de7-50c2-9337-973b41ddb9da"))
+  (wire
+    (pts
+      (xy 157.48 125.73)
+      (xy 157.48 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "387c8280-d4b9-5270-9aa8-0e7376070fbf"))
+  (wire
+    (pts
+      (xy 157.48 139.7)
+      (xy 157.48 153.67))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6b8b4268-c7fe-5e69-986d-8ee41a7007ef"))
+  (wire
+    (pts
+      (xy 157.48 139.7)
+      (xy 165.1 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ef5b38ce-858b-52cf-a64e-6c47730073dc"))
+  (global_label "USB_OVLO"
+    (shape bidirectional)
+    (at 165.1 139.7 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "dd9aa546-4aed-54ff-8d0d-aaf4e0ab0c7f"))
+  (junction
+    (at 157.48 139.7)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "5f81a794-8cd9-58c0-ba57-67a813efb4c5"))
+  (symbol
+    (lib_id "Device:R")
+    (at 223.52 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e07d2363-5926-53ed-b997-b961982d2526")
+    (property "Reference" "R36"
+      (at 227.52 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 227.52 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 223.52 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R36")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 223.52 118.11)
+      (xy 223.52 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b18e6b8c-11fa-594b-bde8-1d8da4171d58"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 223.52 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "9a06adfb-3315-581f-8206-d1ad2d92cf13"))
+  (wire
+    (pts
+      (xy 223.52 125.73)
+      (xy 223.52 130.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e80f9e2f-a616-56b6-b8ca-c3771f6def6b"))
+  (global_label "ACT_UV_1"
+    (shape bidirectional)
+    (at 223.52 130.81 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "54a5832d-db75-5b31-b64a-4117ee691951"))
+  (symbol
+    (lib_id "Device:R")
+    (at 248.92000000000002 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1cfb6ad5-c027-5ec3-a4f1-ae21859aca80")
+    (property "Reference" "R37"
+      (at 252.92000000000002 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 252.92000000000002 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 248.92000000000002 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R37")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 248.92 118.11)
+      (xy 248.92 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e8037d41-1849-54bd-b767-0a26bd9be9db"))
+  (global_label "ACT_UV_1"
+    (shape bidirectional)
+    (at 248.92 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d28a2ba8-026e-5760-bc29-580db42c3e07"))
+  (wire
+    (pts
+      (xy 248.92 125.73)
+      (xy 248.92 130.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2ae8055e-965a-5a5d-b5c5-4153ae0a8c5c"))
+  (global_label "ACT_UV_2"
+    (shape bidirectional)
+    (at 248.92 130.81 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "61100f12-c086-5840-9307-bb9043b7a96b"))
+  (symbol
+    (lib_id "Device:R")
+    (at 274.32 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "171b1d9b-6fbb-5567-ab99-aa11f888d2fe")
+    (property "Reference" "R38"
+      (at 278.32 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 278.32 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 274.32 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R38")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 274.32 118.11)
+      (xy 274.32 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7663965e-c357-51c6-b004-e4c90b645d5f"))
+  (global_label "ACT_UV_2"
+    (shape bidirectional)
+    (at 274.32 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "20a41e6a-7425-579e-8d54-5d2f650adb14"))
+  (symbol
+    (lib_id "Device:R")
+    (at 274.32 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ec1935ba-1ba5-55ff-95f9-933c09ca4a83")
+    (property "Reference" "R39"
+      (at 278.32 155.98 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 278.32 158.48 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 274.32 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R39")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 274.32 161.29)
+      (xy 274.32 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9232f3f3-93e4-5f49-8992-b7a80821e9a2"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 274.32 166.37 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "9a790838-d2dc-5d8e-8d3e-17c69a85de7e"))
+  (wire
+    (pts
+      (xy 274.32 125.73)
+      (xy 274.32 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e74f7067-5b40-5fa8-aef6-3a56ff50f0d1"))
+  (wire
+    (pts
+      (xy 274.32 139.7)
+      (xy 274.32 153.67))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c2986c1b-0d5f-5fb6-a3fb-b1424a25ff0c"))
+  (wire
+    (pts
+      (xy 274.32 139.7)
+      (xy 281.94 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a93f6867-9bf0-5e28-abea-f80fa83809a6"))
+  (global_label "ACT_UVLO"
+    (shape bidirectional)
+    (at 281.94 139.7 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "a9e6acbb-54dc-5c09-b0cf-f819488d9daf"))
+  (junction
+    (at 274.32 139.7)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "f58d7642-efcb-5867-abca-c000b7f463a2"))
+  (symbol
+    (lib_id "Device:R")
+    (at 345.44 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ab96269e-381a-5021-9fc3-270fd63366e1")
+    (property "Reference" "R40"
+      (at 349.44 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100k"
+      (at 349.44 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1003T5E"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25803"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25803"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+      (at 345.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R40")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 345.44 118.11)
+      (xy 345.44 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "747599db-c26f-5fbd-b6c2-2e9b8e8e7e5f"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 345.44 113.03 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "e80b1c60-74cc-56c6-8116-7315414e7be8"))
+  (symbol
+    (lib_id "Device:R")
+    (at 345.44 157.48 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8b2866d7-32f3-56bd-bd99-33170c11753c")
+    (property "Reference" "R41"
+      (at 349.44 155.98 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "22.1k"
+      (at 349.44 158.48 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF2212T5E"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25961"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25961"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25961.html"
+      (at 345.44 157.48 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R41")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 345.44 161.29)
+      (xy 345.44 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "02b3f5bc-e969-5eb6-a936-93c6664be77f"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 345.44 166.37 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "8981945d-95c5-5285-bc7d-f1dd26e1b30f"))
+  (wire
+    (pts
+      (xy 345.44 125.73)
+      (xy 345.44 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1f761ab4-94c9-527f-a5ff-1f8c624d2a60"))
+  (wire
+    (pts
+      (xy 345.44 139.7)
+      (xy 345.44 153.67))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f20b898-5ce2-567d-970f-128959bb5c5f"))
+  (wire
+    (pts
+      (xy 345.44 139.7)
+      (xy 353.06 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "44694bd8-d770-58db-ab9d-f32ac99c237f"))
+  (global_label "ACT_OVLO"
+    (shape bidirectional)
+    (at 353.06 139.7 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "96a32ea3-1928-5a87-8f82-4ea1ffad94c2"))
+  (junction
+    (at 345.44 139.7)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "286d97b0-b1d1-5f17-a056-8b504322455b"))
+  (symbol
+    (lib_id "Device:R")
+    (at 312.42 205.74 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "24598c0d-9e50-5190-9d47-b1d04fd33e76")
+    (property "Reference" "R42"
+      (at 316.42 204.24 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "3.3k"
+      (at 316.42 206.74 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF3301T5E"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C22978"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C22978"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C22978.html"
+      (at 312.42 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R42")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 312.42 201.93)
+      (xy 312.42 196.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e2478493-0ab0-5c88-a507-59715a7efbfe"))
+  (global_label "ACT_ILM"
+    (shape bidirectional)
+    (at 312.42 196.85 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "a5c8da74-59cc-54c7-af3d-f3f42ba5a295"))
+  (wire
+    (pts
+      (xy 312.42 209.55)
+      (xy 312.42 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e895d364-1610-5ea7-b765-a6095fe6dd2d"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 312.42 214.63 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "80043570-1880-561a-8477-667ec77cdc1d"))
+  (symbol
+    (lib_id "Device:R")
+    (at 353.06 205.74 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4a579900-3165-5297-8738-c4f82bb005d1")
+    (property "Reference" "R43"
+      (at 357.06 204.24 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "3.3k"
+      (at 357.06 206.74 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF3301T5E"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C22978"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C22978"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C22978.html"
+      (at 353.06 205.74 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R43")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 353.06 201.93)
+      (xy 353.06 196.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f031f773-4284-53b7-bb28-f8c8671fdc00"))
+  (global_label "ACT_ILM"
+    (shape bidirectional)
+    (at 353.06 196.85 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "dd9275b4-f96f-546b-888d-1b28caf59762"))
+  (wire
+    (pts
+      (xy 353.06 209.55)
+      (xy 353.06 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "61e71d73-1e9d-5dfa-9a75-1ce435b3130f"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 353.06 214.63 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "955e32db-e4a9-50e8-aa92-08d4b01b29a2"))
+  (symbol
+    (lib_id "Device:C")
+    (at 35.56 208.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "97914ec6-9532-5433-8f1e-c2a892394547")
+    (property "Reference" "C24"
+      (at 39.56 206.78 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/50V"
+      (at 39.56 209.28 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL10A105KB8NNNC"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15849"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15849"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15849.html"
+      (at 35.56 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C24")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 204.47)
+      (xy 35.56 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "148137f5-e885-5817-9cb6-dd78180ddbc5"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 35.56 199.39 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "53741c0e-f875-5d8e-aca9-943f92d0ec49"))
+  (wire
+    (pts
+      (xy 35.56 212.09)
+      (xy 35.56 217.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d5b9c94e-45ea-53b3-aaac-7b97e68ad79b"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 35.56 217.17 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "6e438635-2516-57d3-b579-082c1cfcdc19"))
+  (symbol
+    (lib_id "Device:C")
+    (at 86.36 208.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a03c90eb-3edd-58c5-b603-65985d7f98a1")
+    (property "Reference" "C25"
+      (at 90.36 206.78 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10nF"
+      (at 90.36 209.28 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Guangdong Fenghua Advanced Tech"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603B103K500NT"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C57112"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C57112"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C57112.html"
+      (at 86.36 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C25")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 86.36 204.47)
+      (xy 86.36 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "568e6efe-a30d-52f6-8e38-f8ab93d318fc"))
+  (global_label "USB_DVDT"
+    (shape bidirectional)
+    (at 86.36 199.39 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "0a71f025-73fa-5d87-a2c6-6b5d6828de6e"))
+  (wire
+    (pts
+      (xy 86.36 212.09)
+      (xy 86.36 217.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "452630a4-ef9c-577e-bd4c-0c2c4b31f50a"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 86.36 217.17 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "06e03616-9a9c-59d5-93e0-942c59106180"))
+  (symbol
+    (lib_id "Device:C")
+    (at 243.84 208.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f377f7a2-8bda-523b-b0bd-a8fc12da6573")
+    (property "Reference" "C26"
+      (at 247.84 206.78 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10nF"
+      (at 247.84 209.28 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Guangdong Fenghua Advanced Tech"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603B103K500NT"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C57112"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C57112"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C57112.html"
+      (at 243.84 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C26")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 243.84 204.47)
+      (xy 243.84 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1c46fb5e-16de-5bcc-8225-7adbe8c3d202"))
+  (global_label "ACT_DVDT"
+    (shape bidirectional)
+    (at 243.84 199.39 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "3271094a-ecd4-5471-a9ea-29f6e4ed796a"))
+  (wire
+    (pts
+      (xy 243.84 212.09)
+      (xy 243.84 217.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "81ebce78-dc29-5794-b435-9fa62f094fec"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 243.84 217.17 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "0cb15c02-58bd-5cef-9763-cd3d327b30b1"))
+  (symbol
+    (lib_id "Device:R")
+    (at 137.16 208.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "06a1c822-d10d-5083-b4b1-3a111241c7ad")
+    (property "Reference" "R44"
+      (at 141.16 206.78 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1k"
+      (at 141.16 209.28 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1001T5E"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C21190"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C21190"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C21190.html"
+      (at 137.16 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R44")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 137.16 204.47)
+      (xy 137.16 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ce8d7827-aa65-56c0-94d7-ea3fc7245e82"))
+  (global_label "USB_FAULT_N"
+    (shape bidirectional)
+    (at 137.16 199.39 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "07724da4-cc10-5643-b2f9-ba88adf0028e"))
+  (wire
+    (pts
+      (xy 137.16 212.09)
+      (xy 137.16 217.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "30fd3eae-0ec9-5f89-b8dc-bad601a1967b"))
+  (global_label "MCU_EN"
+    (shape bidirectional)
+    (at 137.16 217.17 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "fe2f9703-f16b-5e93-997c-ed0ef3f6ac02"))
+  (symbol
+    (lib_id "Device:R")
+    (at 187.96 208.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0fe0d41d-1c5d-5651-babe-95c1c5f0eb4c")
+    (property "Reference" "R45"
+      (at 191.96 206.78 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1k"
+      (at 191.96 209.28 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1001T5E"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C21190"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C21190"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C21190.html"
+      (at 187.96 208.28 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "R45")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 187.96 204.47)
+      (xy 187.96 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "68283102-f4e8-5a74-a149-cf95a2f33fca"))
+  (global_label "ACT_FAULT_N"
+    (shape bidirectional)
+    (at 187.96 199.39 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "4ffae447-349e-5157-ada7-25ec24b3b82a"))
+  (wire
+    (pts
+      (xy 187.96 212.09)
+      (xy 187.96 217.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c4251e5-db71-5cca-9d0c-fd528784df0f"))
+  (global_label "MCU_EN"
+    (shape bidirectional)
+    (at 187.96 217.17 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "1d858f29-a251-50cf-82e6-c088134a5eac"))
+  (symbol
+    (lib_id "MagMouse:BAT54_7_F")
+    (at 220.98 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fab27d19-b03e-57ae-bb73-039d49bc823a")
+    (property "Reference" "D3"
+      (at 225.98 153.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "BAT54-7-F"
+      (at 225.98 155.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.diodes.com/datasheet/download/BAT54.pdf"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Diodes Incorporated"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "BAT54-7-F"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C106920"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C106920"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C106920.html"
+      (at 220.98 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "D3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 217.17 160.02)
+      (xy 212.09 160.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3bd01ca5-26ad-517b-99ba-a399d31053ab"))
+  (global_label "ACT_DRIVE_EN"
+    (shape bidirectional)
+    (at 212.09 160.02 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "5c9a4a0e-c51e-5d63-876b-58dfa07fe3d7"))
+  (wire
+    (pts
+      (xy 224.79 160.02)
+      (xy 229.87 160.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "76e67c02-a6a3-5361-beb7-ffa1db09017b"))
+  (global_label "ACT_UVLO"
+    (shape bidirectional)
+    (at 229.87 160.02 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "75122d15-37a5-5ea9-871d-43a04fd30354"))
+  (text "U12: input OVLO/UVLO, soft-start, current limit and reverse blocking. ITIMER=NC: fastest response.\nU13: separate reverse blocking prevents actuator regeneration from reaching logic or USB. 2.02 A nominal branch limit.\nFaults hold MCU reset through 1k resistors. Source budgets and firmware state limits are separate from fault thresholds."
+    (at 20 245 0)
+    (effects
+      (font
+        (size 1.15 1.15))
+      (justify left top))
+    (uuid "7dbb3a57-5ca0-5182-b1c3-39e1d10a5f3f"))
+  (embedded_fonts no)
+  (symbol
+    (lib_id "Device:C")
+    (at 86.36 165.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cabe4afc-9954-5df2-9e54-0b3c4321919e")
+    (property "Reference" "C88"
+      (at 90.36 163.6 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10uF/25V"
+      (at 90.36 166.1 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL21A106KAYNNNE"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15850"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15850"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses existing 10uF output capacitor selection; DC bias and order stock require review"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+      (at 86.36 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C88")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 86.36 161.29)
+      (xy 86.36 156.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dea98f48-f742-504a-b4fc-a4469082019c"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 86.36 156.21 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "dc6080fb-3095-5cc8-9050-886356803bd7"))
+  (wire
+    (pts
+      (xy 86.36 168.91)
+      (xy 86.36 173.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b354a0a4-1584-57cb-a827-b497ff605927"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 86.36 173.99 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "84caaf73-e12f-5d93-8cb3-697e26c66ba3"))
+  (text "C88: local U12 output bypass.\nC1 remains beside the buck; do not rely on the long feed as local decoupling."
+    (at 65 182 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left top))
+    (uuid "7ac0e187-ae16-520d-aeae-b49e223758b5"))
+  (symbol
+    (lib_id "Device:C")
+    (at 312.42 165.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "37525d73-af8b-5e60-a7c0-4f5788dc8710")
+    (property "Reference" "C89"
+      (at 316.42 163.6 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/50V"
+      (at 316.42 166.1 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL10A105KB8NNNC"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15849"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15849"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses existing 1uF input capacitor selection; DC bias and order stock require review"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15849.html"
+      (at 312.42 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/8a66e1fe-51be-562e-9512-bb5cf22fe456"
+          (reference "C89")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 312.42 161.29)
+      (xy 312.42 156.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0b010ee9-a312-5cf2-8a40-9bd85d3ce729"))
+  (global_label "PWR_5V"
+    (shape bidirectional)
+    (at 312.42 156.21 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d2ca1814-7b1e-5d25-9d23-d50d0ce7fe42"))
+  (wire
+    (pts
+      (xy 312.42 168.91)
+      (xy 312.42 173.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f3c76700-406b-58ba-a285-cb901ed110e8"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 312.42 173.99 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "271d0821-a2ce-5e2c-9db7-0c6b8a221063"))
+  (text "C89: local U13 input bypass.\nPlace existing C40 at U13 OUT; C37-C39 remain rail storage."
+    (at 290 182 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left top))
+    (uuid "36dfc71e-1868-5ad1-81c7-8e9eacb5a73e")))
