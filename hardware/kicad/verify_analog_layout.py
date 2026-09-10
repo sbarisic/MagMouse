@@ -20,6 +20,18 @@ NETS |= {'WHEEL_SO' + p for p in 'ABC'} | {'WHEEL_I_' + p for p in 'ABC'}
 NETS |= {'BTN_' + p + '_' + kind for p in 'LMR' for kind in ['ISENSE', 'VREF']}
 NETS |= {'HALL_' + p for p in 'LMR'}
 FILTER_NETS = {'WHEEL_I_' + p for p in 'ABC'}
+MECHANICAL_NETS = {'HALL_' + p for p in 'LMR'}
+# Protect the control reroutes that removed wheel-sense proximity findings.
+# Passing this geometric screen does not establish noise or timing acceptance.
+CONTROL_LIMITS = {'BTN_R_IN2': (77, 7), 'DRV_INHC': (52, 7)}
+SEPARATION_GUARDS = {('WHEEL_SO' + p, 'BTN_R_IN2') for p in 'ABC'} | {
+    ('WHEEL_SOC', 'BTN_R_IN1'), ('WHEEL_SOC', 'DRV_INHC')}
+# Whole-net copper regression ceilings after removing redundant branches.
+# These are not settling-time, noise, brake-response or thermal acceptance.
+COPPER_LIMITS_MM = {'BRAKE_OUT': 14, 'BRAKE_REF': 16, 'BRAKE_SENSE': 12,
+                    'BTN_L_VREF': 5, 'BTN_M_VREF': 30, 'BTN_R_VREF': 5,
+                    'BTN_L_ISENSE': 43, 'BTN_M_ISENSE': 44, 'BTN_R_ISENSE': 70,
+                    'USB_IMON_BUF': 50, 'USB_IMON_ADC': 14, 'ACT_VMON': 18}
 GROUND_REFS = {'U10', 'U23', 'U19', 'U7', 'U8', 'U9', 'U30', 'U31',
                'C9', 'C12', 'C15', 'C19', 'C20', 'C21', 'C33', 'C34', 'C36',
                'C56', 'C57', 'C58', 'C59', 'C60', 'C61', 'C65', 'C66', 'C67',
@@ -36,13 +48,21 @@ def noisy(net):
             or net.startswith('BTN_') and ('_COIL_' in net or net.endswith(('_IN1', '_IN2'))))
 
 
+def split_findings(findings):
+    """Defer only Hall geometry, never connectivity errors or other nets."""
+    fixed, mechanical = [], []
+    for finding in findings:
+        (mechanical if finding['net'] in MECHANICAL_NETS else fixed).append(finding)
+    return fixed, mechanical
+
+
 def verify(board):
     board.BuildConnectivity()
     conn = board.GetConnectivity()
     entries = [(f.GetReference(), p) for f in board.GetFootprints() for p in f.Pads() if p.GetNumber()]
     pads = {(r, p.GetNumber()): p for r, p in entries}
     tracks = list(board.GetTracks())
-    errors, metrics, findings = [], {}, []
+    errors, metrics, findings, controls = [], {}, [], {}
     ground = pcb.SHAPE_POLY_SET()
     ground_ids = set()
     for zone in board.Zones():
@@ -55,7 +75,7 @@ def verify(board):
     if not ground.OutlineCount():
         errors.append('Analog reference: no saved filled In1 ground plane')
 
-    for net in sorted(NETS):
+    for net in sorted(NETS | CONTROL_LIMITS.keys()):
         nodes = [(r, p) for r, p in entries if p.GetNetname() == net]
         if len(nodes) < 2:
             errors.append(net + ': missing analog endpoints')
@@ -93,16 +113,21 @@ def verify(board):
         missing = abs(shadow.Area()) / 1e12
         if missing > .00001:
             message = f'{net}: {missing:.6f} mm2 of front copper lacks an In1 ground shadow outside transitions'
-            if net in FILTER_NETS:
+            if net in FILTER_NETS or net in CONTROL_LIMITS:
                 errors.append(message)
             else:
                 findings.append({'kind': 'reference_shadow', 'net': net, 'detail': message})
-        if length > 60:
+        if length > 60 and net in NETS:
             findings.append({'kind': 'long_analog_net', 'net': net,
                              'detail': f'{length:.3f} mm total copper; review loading, settling and pickup'})
-        metrics[net] = {'pads': len(nodes), 'total_track_length_mm': round(length, 3),
+        target = controls if net in CONTROL_LIMITS else metrics
+        target[net] = {'pads': len(nodes), 'total_track_length_mm': round(length, 3),
                         'signal_vias': len(vias), 'layers': sorted({board.GetLayerName(t.GetLayer()) for t in lines}),
                         'front_shadow_missing_mm2': round(missing, 6)}
+        if net in CONTROL_LIMITS:
+            max_length, max_vias = CONTROL_LIMITS[net]
+            if length > max_length or len(vias) > max_vias:
+                errors.append(f'{net}: control route exceeds {max_length} mm / {max_vias} via regression budget')
 
     ground_count = 0
     for ref, pad in entries:
@@ -143,10 +168,35 @@ def verify(board):
                               'analog_start_mm': list(pcb.ToMM(a['item'].GetStart())),
                               'layers': [board.GetLayerName(a['layer']), board.GetLayerName(b['layer'])]}
     findings.extend(pairs[k] for k in sorted(pairs))
+    for net, aggressor in sorted(SEPARATION_GUARDS):
+        if (net, aggressor) in pairs:
+            errors.append(f'{net}/{aggressor}: guarded switching separation below 0.5 mm')
+    findings, mechanical = split_findings(findings)
+    brake_lengths = {net: round(sum(pcb.ToMM(t.GetLength()) for t in tracks
+                     if t.GetNetname() == net and not isinstance(t, pcb.PCB_VIA)), 3)
+                     for net in ['BRAKE_GATE', 'BRAKE_OUT', 'BRAKE_REF']}
+    for net, limit in COPPER_LIMITS_MM.items():
+        if net not in metrics and net not in brake_lengths:
+            continue  # Missing endpoints are already errors above.
+        length = (metrics[net]['total_track_length_mm'] if net in metrics else brake_lengths[net])
+        if length > limit:
+            errors.append(f'{net}: total copper {length:.3f} mm exceeds the {limit} mm regression ceiling')
     return {'scope': 'Analog continuity, ADC2 local filters and saved-ground connections; geometry review screen',
             'analog_nets': metrics, 'checked_ground_pads': ground_count,
+            'control_route_checks': controls,
+            'control_route_limits_mm_and_vias': CONTROL_LIMITS,
+            'guarded_switching_separations': [
+                {'net': net, 'aggressor': aggressor, 'screen_clearance_mm': .5,
+                 'passed': (net, aggressor) not in pairs}
+                for net, aggressor in sorted(SEPARATION_GUARDS)],
             'review_findings': findings,
-            'review_complete': not errors and not findings,
+            'deferred_mechanical_findings': mechanical,
+            'mechanical_deferral_reason': 'Hall placement awaits paddle/magnet CAD. Geometry only; '
+            'Hall continuity and all hard checks remain mandatory.',
+            'fixed_placement_review_complete': not errors and not findings,
+            'review_complete': not errors and not findings and not mechanical,
+            'brake_control_total_track_length_mm': brake_lengths,
+            'whole_net_copper_regression_limits_mm': COPPER_LIMITS_MM,
             'limitations': 'Proximity uses a 0.5 mm project screening distance, includes pin launches, '
             'and does not predict coupling. Front shadows exclude own-via transitions; internal/back '
             'return paths and ground voltage drops need whole-board review. Supply routing and '
@@ -158,7 +208,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--board', type=Path, default=ROOT / 'hardware/kicad/MagMouse.kicad_pcb')
     parser.add_argument('--output', type=Path, default=ROOT / 'build/pcb-review/analog-layout-checks.json')
-    parser.add_argument('--require-reviewed', action='store_true', help='Also fail on unresolved geometry findings')
+    parser.add_argument('--require-reviewed', action='store_true',
+                        help='Also fail on unresolved non-mechanical geometry; Hall geometry stays explicitly deferred')
     args = parser.parse_args()
     report = verify(pcb.LoadBoard(str(args.board.resolve())))
     report['board_sha256'] = hashlib.sha256(args.board.read_bytes()).hexdigest()

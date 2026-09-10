@@ -1,5 +1,32 @@
 # Development roadmap
 
+## New mechanical and modular-board direction
+
+The user confirmed a shaped PCB envelope of 125 mm length, 80 mm maximum
+width and approximately 44 mm at the narrow end; the shell will be larger.
+The requested manufacturing target is an assembled panel whose modules can
+be separated at prepared tabs after delivery. See the
+[modular panel brief](../hardware/pcb/MODULAR_PANEL_PLAN.md).
+
+The [modular planning package](../hardware/modular/README.md) now contains native
+125/80/44 mm main-board and daughterboard envelopes, a 147 x 135 mm provisional
+panel nesting study, complete proposed reference ownership and a logical cable
+pin map. Fresh netlists account for 241 main, 76 wheel and 3 encoder footprints;
+all 17 main/wheel boundary nets are covered. The requested quote is for five
+assembled sets delivered to Croatia 43000. Only a provisional bare-panel price
+has been obtained; assembly and shipping remain unquoted.
+
+Next, close connector selection, cable timing and disconnect/power-return
+behavior, then extract the schematics and place the wheel driver/ADC/brake
+together before further placement-dependent routing on the old motherboard.
+Keep driver, ADC2 and autonomous brake together on the wheel board. A shared
+panel requires a common stackup, including conversion of the encoder board.
+The current 60 x 95 mm PCB and its review results remain the working baseline;
+the schematic/copper split and manufacturing panel have not yet been implemented.
+The new native outlines are separate planning files with no components or copper.
+Existing electrical and mechanical acceptance tasks below remain applicable
+and must follow their circuits into the new boards.
+
 ## Current execution order
 
 The actuator distribution, driver/brake current loops and interlock copper are
@@ -10,6 +37,16 @@ for the remaining motherboard work:
    Hall outputs, VREF and power telemetry. Keep Hall and button-interface
    placement provisional; review local returns and separation from switching
    copper, and add useful boundary stitching.
+   Close the non-mechanical `verify_analog_layout.py --require-reviewed` findings
+   before continuing with general routing. Keep Hall geometry explicitly deferred.
+   The saved In1 reference-shadow defects on fixed analog nets are corrected;
+   wheel sense/phase separation, IPROPI/VREF locality and brake placement remain open.
+   Redundant copper is removed from the fixed analog/brake routes, with
+   connectivity and length regression checks. Control reroutes/branch cleanup
+   remove five fixed proximity findings; 36 fixed findings remain open.
+   Guard the cleared SOx/BTN_R_IN2 and SOC/BTN_R_IN1/DRV_INHC separations.
+   Decide whether ADC2/filter/bypass placement may use the back side (two-sided
+   assembly) before proceeding with that placement option.
 2. Complete board-wide +3V3, PWR_5V, switched sensor rails and bypass returns.
    Audit necks, shared vias and shared actuator/logic/analog return paths.
 3. Route SPI3/ADC2 first, then SPI2 and interrupts/faults/enables. Check branches
@@ -151,8 +188,10 @@ that the actuators can operate within the intended power and thermal envelope.
   filters on F.Cu, reconnect their returns and complete the ACT monitor capacitor
   return. Add [analog connectivity and geometry screening](../hardware/pcb/ANALOG_LAYOUT.md).
 - [ ] Close the analog review findings: upstream SOx/phase proximity on In2/B,
-  front-reference gaps, long right Hall/IPROPI routes and middle-button VREF.
-  The analog `--require-reviewed` gate currently fails; continuity passes.
+  long right IPROPI, middle-button VREF and brake reference/gate placement.
+  Fixed front-reference gaps are resolved. Hall geometry remains explicitly
+  provisional. The analog `--require-reviewed` gate fails on 36 fixed findings;
+  continuity passes.
 - [ ] Confirm filled/capped U1/C32/U21 vias and affected lands/stencil with the fabricator;
   qualify current-path necks, combined actuator loading and brake/driver heating.
 - [ ] Measure the long brake gate/reference paths, effective ACT capacitance,

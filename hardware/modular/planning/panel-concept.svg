@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -18 168 179" width="840" height="895">
+<rect x="-10" y="-18" width="168" height="179" fill="#f6f8fc"/>
+<g font-family="Arial,sans-serif" fill="#172735">
+<text x="0" y="-11" font-size="4.3">MagMouse: one panel, three detachable boards</text>
+<text x="0" y="-5" font-size="3">PLANNING ONLY • 5 sets • Croatia 43000</text>
+<rect width="147" height="135" fill="#e3e8ee" stroke="#6b7785" stroke-width="0.5"/>
+<rect x="5" y="5" width="137" height="125" fill="none" stroke="#8b96a3" stroke-width="0.3" stroke-dasharray="1 1"/>
+<polygon points="38.9612,129.712 33.3565,128.866 28.2031,127.484 23.5185,125.593 19.32,123.215 15.625,120.375 12.4508,117.098 9.81481,113.407 7.73438,109.328 6.22685,104.884 5.30961,100.1 5,95 5,92.923 5,90.7176 5,88.4219 5,86.0741 5,83.7124 5,81.375 5,79.1001 5,76.9259 5,74.8906 5,73.0324 5,71.3895 5,70 5.04282,66.9242 5.17593,64.1435 5.40625,61.5781 5.74074,59.1482 6.18634,56.7737 6.75,54.375 7.43866,51.8721 8.25926,49.1852 9.21875,46.2344 10.3241,42.9398 11.5822,39.2216 13,35 13.9607,31.0486 14.8518,27.2222 15.6875,23.5625 16.4815,20.1111 17.2477,16.9097 18,14 18.7523,11.4236 19.5185,9.22222 20.3125,7.4375 21.1482,6.11111 22.0393,5.28472 23,5 67,5 67.9607,5.28472 68.8518,6.11111 69.6875,7.4375 70.4815,9.22222 71.2477,11.4236 72,14 72.7523,16.9097 73.5185,20.1111 74.3125,23.5625 75.1482,27.2222 76.0393,31.0486 77,35 78.4178,39.2216 79.6759,42.9398 80.7812,46.2344 81.7407,49.1852 82.5613,51.8721 83.25,54.375 83.8137,56.7737 84.2593,59.1482 84.5938,61.5781 84.8241,64.1435 84.9572,66.9242 85,70 85,71.3895 85,73.0324 85,74.8906 85,76.9259 85,79.1001 85,81.375 85,83.7124 85,86.0741 85,88.4219 85,90.7176 85,92.923 85,95 84.6904,100.1 83.7732,104.884 82.2656,109.328 80.1852,113.407 77.5492,117.098 74.375,120.375 70.68,123.215 66.4815,125.593 61.7969,127.484 56.6435,128.866 51.0388,129.712 45,130" fill="#c6e2ce" stroke="#263b45" stroke-width="0.5"/>
+<polygon points="87,5 142,5 142,65 87,65" fill="#f5d4ad" stroke="#263b45" stroke-width="0.5"/>
+<polygon points="87,67 101,67 101,85 87,85" fill="#c3d6f1" stroke="#263b45" stroke-width="0.5"/>
+<text x="45" y="48" text-anchor="middle" font-size="5">MAIN</text>
+<text x="45" y="55" text-anchor="middle" font-size="3.5">80 max x 125 mm</text>
+<text x="45" y="62" text-anchor="middle" font-size="3">44 mm front edge</text>
+<text x="45" y="72" text-anchor="middle" font-size="3">241 existing footprints</text>
+<text x="114.5" y="25" text-anchor="middle" font-size="4">WHEEL</text>
+<text x="114.5" y="32" text-anchor="middle" font-size="3">55 x 60 mm draft</text>
+<text x="114.5" y="41" text-anchor="middle" font-size="2.8">76 existing footprints</text>
+<text x="114.5" y="49" text-anchor="middle" font-size="2.8">DRV + ADC2 + brake</text>
+<text x="111" y="74" text-anchor="middle" font-size="3">ENCODER</text>
+<text x="116" y="80" text-anchor="middle" font-size="2.7">14 x 18 mm</text>
+<text x="73.5" y="142" text-anchor="middle" font-size="3.3">147 x 135 mm provisional assembly envelope</text>
+<text x="0" y="150" font-size="2.8">5 mm outer rails and 2 mm minimum inter-board gap reserved.</text>
+<text x="0" y="155" font-size="2.8">Grey area: support-web study. Tabs/slots, mounts and parts still need placement.</text>
+</g></svg>

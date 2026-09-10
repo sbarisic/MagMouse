@@ -7,6 +7,12 @@ The 60 x 95 mm outline, 317 footprints, schematic and BOM are unchanged.
 The subsequent [analog pass](ANALOG_LAYOUT.md) reroutes signal copper and extends
 U4's front ground spreader. The measurements and hash below describe this
 high-current pass; use the regenerated reports for the latest saved board.
+The later analog/brake cleanup removes redundant signal branches without
+changing the high-current tracks or component placement. Its current brake
+lengths are in the analog review; the older figures below describe this pass.
+The following analog-review control pass changes only button/BLDC command and
+PWM copper. All high-current track geometry and component placement remain
+unchanged; the resistance and ground-spreading checks pass on its saved fill.
 
 ## Copper changes
 

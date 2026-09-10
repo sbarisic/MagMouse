@@ -5,6 +5,11 @@ Routing draft, 2026-09-09, KiCad 10.0.6. Open the editable
 [KiCad project](../kicad/MagMouse.kicad_pro).
 **This is a partially routed prototype draft, not a fabrication release.**
 
+The [new modular-panel brief](MODULAR_PANEL_PLAN.md) records the user's
+125/80/44 mm shaped PCB dimensions and requested detachable assembly panel.
+The existing board below remains the 60 x 95 mm baseline; the shape change,
+wheel-board extraction and common-stackup panel are not yet implemented.
+
 ## Starting geometry
 
 The board is a provisional **60 x 95 mm**, nominal 1.6 mm (1.578 mm CAD laminate), with 3 mm corner
@@ -112,7 +117,21 @@ See [USB layout and native copper checks](USB_LAYOUT.md) and the subsequent
 [actuator high-current review](HIGH_CURRENT_REVIEW.md) for resistance screening,
 local ground spreading and the corrected capacitor inventory.
 The subsequent [analog pass](ANALOG_LAYOUT.md) connects the Hall outputs and
-checks all analog nets, but its reference/proximity review findings remain open.
+checks all analog nets. Correct project-aware filling resolves the fixed analog
+front-reference shadows; switching proximity and other analog findings remain open.
+Hall geometry is explicitly deferred, while Hall connectivity remains mandatory.
+The analog/brake cleanup removes redundant track branches and adds whole-net
+copper length guards. BRAKE_OUT is now 12.336 mm total copper; the 80.480 mm
+BRAKE_GATE and remaining sense/phase coupling still require review.
+The following control pass reroutes BTN_R_IN2 and DRV_INHC, removes redundant
+command/PWM branches and clears five fixed wheel-sense proximity findings.
+There are 36 fixed findings left; the strict analog review still fails.
+Component placement, analog copper and high-current tracks are unchanged in
+that pass, and all BOM components remain on the front.
+For future refills, run `hardware/kicad/refill_pcb_zones.py` with KiCad Python
+against the PCB beside its matching project/rule files, then rerun native DRC
+and saved-copper checks. A scratch PCB without its project can use default
+netclasses and produce different reference-plane clearances.
 This checks local footprint geometry and synchronization, not board fit, operation, magnetic
 separation, heat dissipation, signal integrity or enclosure fit.
 

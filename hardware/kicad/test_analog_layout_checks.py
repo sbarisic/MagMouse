@@ -10,6 +10,7 @@ import tempfile
 import unittest
 
 import pcbnew as pcb
+from verify_analog_layout import split_findings
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -42,7 +43,75 @@ class AnalogLayoutChecks(unittest.TestCase):
         self.assertEqual(report['errors'], [])
         self.assertTrue(report['review_findings'])
         self.assertFalse(report['review_complete'])
+        self.assertFalse(report['fixed_placement_review_complete'])
+        self.assertTrue(report['deferred_mechanical_findings'])
+        self.assertFalse(any(f['net'].startswith('HALL_') for f in report['review_findings']))
         self.assertEqual(code, 1)
+
+    def test_only_hall_geometry_can_be_deferred(self):
+        hall = {'kind': 'reference_shadow', 'net': 'HALL_R'}
+        fixed = {'kind': 'switching_proximity', 'net': 'WHEEL_SOA', 'aggressor': 'WHEEL_PHASE_A'}
+        button = {'kind': 'long_analog_net', 'net': 'BTN_R_ISENSE'}
+        self.assertEqual(split_findings([hall, fixed, button]), ([fixed, button], [hall]))
+
+    def test_fixed_front_traces_have_saved_reference_coverage(self):
+        _, report = self.check(self.source)
+        for net, metrics in report['analog_nets'].items():
+            if not net.startswith('HALL_'):
+                self.assertEqual(metrics['front_shadow_missing_mm2'], 0, net)
+
+    def test_control_reroutes_preserve_separation_and_reference(self):
+        code, report = self.check(self.source)
+        self.assertEqual(code, 0)
+        self.assertEqual(len(report['guarded_switching_separations']), 5)
+        self.assertTrue(all(pair['passed'] for pair in report['guarded_switching_separations']))
+        for net in ['BTN_R_IN2', 'DRV_INHC']:
+            self.assertEqual(report['control_route_checks'][net]['front_shadow_missing_mm2'], 0)
+
+    def test_removed_control_branch_cannot_return_beside_wheel_sense(self):
+        # Reintroduce the former B.Cu IN2 branch beside the SOA transition via.
+        # This 1.9 mm branch stays below the control copper-length ceiling;
+        # the default check must reject its coupling geometry independently
+        # of the other, still-open analog review findings.
+        segment = '''\t(segment
+        (start 134.35 162.8)
+        (end 134.35 160.9)
+        (width 0.15)
+        (layer "B.Cu")
+        (net "BTN_R_IN2")
+        (uuid "00000000-0000-4000-8000-000000000034")
+\t)
+'''
+        altered = self.source.rstrip()[:-1] + segment + ')\n'
+        code, report = self.check(altered)
+        self.assertEqual(code, 1)
+        self.assertTrue(any('WHEEL_SOA/BTN_R_IN2: guarded switching separation' in e
+                            for e in report['errors']))
+        self.assertFalse(any('BTN_R_IN2: control route exceeds' in e for e in report['errors']))
+
+    def test_open_control_reroutes_fail(self):
+        for net in ['BTN_R_IN2', 'DRV_INHC']:
+            with self.subTest(net=net):
+                altered = re.sub(r'^\t\(segment\b.*?^\t\)\n',
+                                 lambda m: '' if f'(net "{net}")' in m[0] else m[0],
+                                 self.source, flags=re.M | re.S)
+                code, report = self.check(altered)
+                self.assertEqual(code, 1)
+                self.assertTrue(any(net + ': disconnected' in e for e in report['errors']))
+
+    def test_redundant_brake_output_copper_fails_length_guard(self):
+        segment = next(m[0] for m in re.finditer(r'^\t\(segment\b.*?^\t\)\n',
+                       self.source, re.M | re.S) if '(net "BRAKE_OUT")' in m[0])
+        # Isolated extra copper does not disconnect any required pad. Native DRC
+        # also rejects this fixture; the focused check must detect its length.
+        segment = re.sub(r'\(start [^)]+\)', '(start 70 70)', segment)
+        segment = re.sub(r'\(end [^)]+\)', '(end 90 70)', segment)
+        segment = re.sub(r'\(uuid "[^"]+"\)',
+                         '(uuid "00000000-0000-4000-8000-000000000033")', segment)
+        altered = self.source.rstrip()[:-1] + segment + ')\n'
+        code, report = self.check(altered)
+        self.assertEqual(code, 1)
+        self.assertTrue(any('BRAKE_OUT: total copper' in e for e in report['errors']))
 
     def test_open_analog_connections_fail(self):
         for net in ['HALL_L', 'WHEEL_SOB', 'BTN_R_ISENSE', 'ACT_VMON']:
@@ -51,7 +120,7 @@ class AnalogLayoutChecks(unittest.TestCase):
                                  lambda m: '' if f'(net "{net}")' in m[0] else m[0],
                                  self.source, flags=re.M | re.S)
                 self.assertNotEqual(altered, self.source)
-                code, report = self.check(altered)
+                code, report = self.check(altered, require_reviewed=True)
                 self.assertEqual(code, 1)
                 self.assertTrue(any(net + ': disconnected' in e for e in report['errors']))
 

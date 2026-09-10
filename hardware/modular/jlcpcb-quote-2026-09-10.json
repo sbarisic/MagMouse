@@ -1,0 +1,50 @@
+{
+  "status": "Live calculator observation; provisional bare-PCB pricing only",
+  "observed_on": "2026-09-10",
+  "source_url": "https://cart.jlcpcb.com/quote",
+  "requested": {"assembled_sets": 5, "country": "Croatia", "postcode": "43000"},
+  "panel": {"quantity": 5, "width_mm": 147, "height_mm": 135, "different_designs": 3,
+    "delivery_format": "Panel by Customer", "units_per_panel": {"main": 1, "wheel": 1, "encoder": 1}},
+  "fabrication": {
+    "layers": 4, "order_thickness_mm": 1.6, "stackup": "JLC041611-2116",
+    "outer_copper_oz": 1, "inner_copper_oz": 1,
+    "soldermask": "Green", "silkscreen": "White", "material": "FR4-Standard TG135-140",
+    "finish": "ENIG", "gold_microinch": 1,
+    "impedance_control": "+/-10 percent; eventual USB differential target 90 ohm",
+    "via_covering": "Epoxy Filled & Capped",
+    "via_plating": "Horizontal Electroless Copper Plating",
+    "min_via_hole_option_mm": 0.3, "confirm_production_file": true
+  },
+  "currency": "USD",
+  "bare_pcb_charges": {
+    "engineering": 25.00, "via_covering": 18.86, "stackup": 17.23,
+    "panel": 32.84, "surface_finish": 18.70, "inner_copper": 17.23,
+    "board": 12.20, "impedance_control": 32.84,
+    "via_plating": 3.53, "confirm_production_file": 1.04
+  },
+  "bare_pcb_total_usd": 179.47,
+  "bare_pcb_per_set_usd": 35.894,
+  "estimated_pcb_weight_kg": 0.46,
+  "assembled_total_usd": null,
+  "components_usd": null,
+  "assembly_usd": null,
+  "shipping_usd": null,
+  "tax_usd": null,
+  "supplier_quote_id": null,
+  "files_uploaded": false,
+  "order_placed": false,
+  "limitations": [
+    "Dimensions are a nesting study, not a completed placed/routed panel",
+    "Assembly UI requires Gerber upload before proceeding",
+    "Country selector returned an empty list; Croatia destination was not applied in calculator",
+    "Three-design assembly eligibility, tabs-intact delivery and panel tooling need supplier acceptance",
+    "BOM, connector selections, CPL and routing are not release complete",
+    "No components, assembly, cables, shipping, VAT, duty or other delivery fees included"
+  ],
+  "unapproved_cost_variant": {
+    "change": "Plugged vias with plating method Not Specified",
+    "bare_pcb_total_usd": 157.08,
+    "reason_not_baseline": "Existing U1/C32/U21 in-pad vias require copper-capped filling; this would require layout/process redesign",
+    "restored_baseline_in_browser": true
+  }
+}
