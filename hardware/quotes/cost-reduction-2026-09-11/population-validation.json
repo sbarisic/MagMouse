@@ -1,0 +1,14 @@
+{
+  "status": "QUOTE ONLY",
+  "source": "743d7f1",
+  "removed": [
+    "U32"
+  ],
+  "requested_references": 205,
+  "bom_cpl_match": true,
+  "other_rows_unchanged": true,
+  "known_stock_exclusion": [
+    "R25"
+  ],
+  "gerbers": "../2026-09-11/Main/Main-Gerbers-QUOTE.zip"
+}

@@ -1,0 +1,37 @@
+["sch", "export", "netlist", "--format", "kicadxml", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\evidence\\netlist.xml", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_sch"]
+
+["pcb", "drc", "--format", "json", "--schematic-parity", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\evidence\\drc.json", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_pcb"]
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to hardware/quotes/2026-09-11/Encoder/evidence/drc.json
+
+["pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", "both", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\evidence\\native-positions.csv", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_pcb"]
+Wrote position data to 'hardware\quotes\2026-09-11\Encoder\evidence\native-positions.csv'.
+
+["pcb", "export", "gerbers", "--layers", "F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts", "--subtract-soldermask", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\gerbers", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_pcb"]
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-F_Cu.gtl'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-B_Cu.gbl'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-F_Paste.gtp'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-B_Paste.gbp'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-F_Silkscreen.gto'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-B_Silkscreen.gbo'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-F_Mask.gts'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-B_Mask.gbs'.
+Plotted to 'E:hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-Edge_Cuts.gm1'.
+
+["pcb", "export", "drill", "--format", "excellon", "--drill-origin", "absolute", "--excellon-units", "mm", "--excellon-separate-th", "--generate-map", "--map-format", "svg", "--generate-report", "--report-path", "hardware\\quotes\\2026-09-11\\Encoder\\evidence\\drill-report.txt", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\gerbers", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_pcb"]
+Created file 'hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-PTH.drl'
+Created file 'hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-NPTH.drl'
+Created file 'hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-PTH-drl_map.svg'.
+Created file 'hardware\quotes\2026-09-11\Encoder\gerbers\Encoder-NPTH-drl_map.svg'.
+Done.
+
+["pcb", "export", "svg", "--mode-single", "--page-size-mode", "2", "--exclude-drawing-sheet", "--layers", "F.Fab,F.Silkscreen,Edge.Cuts", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\assembly-F.svg", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_pcb"]
+Plotted to 'hardware\quotes\2026-09-11\Encoder\assembly-F.svg'.
+Done.
+
+["pcb", "export", "svg", "--mode-single", "--page-size-mode", "2", "--exclude-drawing-sheet", "--layers", "B.Fab,B.Silkscreen,Edge.Cuts", "-o", "hardware\\quotes\\2026-09-11\\Encoder\\assembly-B.svg", "E:\\Projects\\MagMouse\\hardware\\encoder\\Encoder.kicad_pcb"]
+Plotted to 'hardware\quotes\2026-09-11\Encoder\assembly-B.svg'.
+Done.
+

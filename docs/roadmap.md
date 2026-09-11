@@ -13,8 +13,10 @@ The [modular planning package](../hardware/modular/README.md) now contains nativ
 panel nesting study, complete proposed reference ownership and a logical cable
 pin map. Fresh netlists account for 241 main, 76 wheel and 3 encoder footprints;
 all 17 main/wheel boundary nets are covered. The requested quote is for five
-assembled sets delivered to Croatia 43000. Only a provisional bare-panel price
-has been obtained; assembly and shipping remain unquoted.
+assembled sets delivered to Croatia 43000. Separate-board live PCBA quotes now
+total EUR 779.84 in merchandise. Address-specific DHL DDP checkout is
+USD 1,187.35 including shipping/duties/taxes, excluding three unavailable parts
+and the optical/mechanical items. See the [quote scope](../hardware/quotes/README.md).
 
 Independent [main and wheel schematics](../hardware/modular/INTERFACE_REVIEW.md)
 now include JLCPCB-listed signal/power headers and local disconnect bias. Both
@@ -54,6 +56,31 @@ and temperature rise still require hardware qualification.
 interfaces.** The existing nesting study is historical planning only.
 
 ## Current execution order
+
+- [x] Generate [quote-only Main/Wheel/Encoder packages](../hardware/quotes/README.md)
+  with Gerbers/drills, matched BOM/CPL references, source/output hashes and exact
+  via-fill inventories. CAD unchanged; Encoder remains two-layer; no panelization.
+- [x] Upload three five-board jobs, enter fill/cap and impedance settings, price
+  available components/assembly and record address-specific DHL DDP shipping and
+  duties/taxes. Drafts saved to cart; no order submitted.
+- [x] Obtain [two-assembled-set pricing](../hardware/quotes/cost-reduction-2026-09-11/TWO_SET_QUOTE.md):
+  USD 859.98 DHL DDP delivered (about EUR 739.32), omitting optional U32; five
+  PCBs/design fabricated, two assembled. Stock exclusions remain. Audit
+  larger-via/fill-cap cost reductions against actual CAD without modifying it.
+  Cash outlay falls about 28%; the requested 50% reduction is not achieved.
+- [x] Correct the Main/Wheel small-via pricing tier without changing CAD.
+  [Fresh two-set checkout](../hardware/quotes/cost-reduction-2026-09-11/CORRECTED_QUOTE.md)
+  is USD 774.51 DHL DDP (approximately EUR 665.85), about EUR 73.47 less than
+  the preceding two-set quote. Fill/cap, stack and Main USB impedance remain.
+- [x] Screen [combined Main/Wheel placement](../hardware/quotes/cost-reduction-2026-09-11/COMBINED_BOARD_ASSESSMENT.md)
+  without modifying either board. The intact Wheel group does not fit an empty
+  Main-board rectangle; consolidation needs new placement and rerouting.
+- [ ] Develop and validate combined placement if pursuing consolidation, keeping
+  the upright Encoder separate and preserving the routed split-board reference.
+  Obtain a new combined quote before claiming its savings; no panel exists.
+- [ ] Resolve Main R25, Wheel U31 and Encoder U27 stock shortages. Account
+  separately for PMW3360 and non-PCBA parts. Reprice the complete population and
+  final production files after manufacturing closure.
 
 1. Resolve mechanical interfaces across main, wheel and upright encoder: mounts,
    GB1806 support, wheel shaft/bearings, middle-click movement, cable bends and

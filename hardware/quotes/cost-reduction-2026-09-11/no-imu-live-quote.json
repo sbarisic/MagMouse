@@ -1,0 +1,66 @@
+{
+  "observed_on": "2026-09-11",
+  "status": "Quote only; autosaved independent draft, not added to cart or ordered",
+  "source_url": "https://cart.jlcpcb.com/smt-order/?pcbFileNo=c697b7b2bc104c47b2c85b15c37c49b3",
+  "currency": "EUR",
+  "quantity": 5,
+  "board": "Main",
+  "pcb": 152.24,
+  "assembly_including_components": 259.03,
+  "quote_page_total": 411.26,
+  "components": 149.62,
+  "feeders": 67.08,
+  "setup": 21.97,
+  "stencil": 7.06,
+  "smt": 5.81,
+  "xray": 7.05,
+  "packaging": 0.43,
+  "requested_references_per_board": 205,
+  "priced_references_per_board": 204,
+  "deliberate_omission": [
+    "U32"
+  ],
+  "stock_shortage": [
+    "R25"
+  ],
+  "explicitly_included": [
+    "J2",
+    "J3",
+    "J4",
+    "SW1",
+    "SW2"
+  ],
+  "unchanged_baseline_cart": true,
+  "substitutions": false,
+  "order_placed": false,
+  "rounding": "Quote page total is one cent below sum of rounded PCB and PCBA lines. Models use line sums to match baseline cart convention.",
+  "delivered_models": {
+    "status": "Estimates, not fresh checkout quotes",
+    "assumptions": "Baseline implied EUR/USD rate, shipping held fixed, combined customs/tax factor calibrated to baseline DDP checkout; assembly held unchanged for six-layer variants. No eligibility or shipping repricing.",
+    "baseline": 779.84,
+    "shipping": 31.121041549536443,
+    "factor": 1.25870604573258,
+    "noImuSavings": 92.03000000000003,
+    "models": [
+      {
+        "label": "No IMU",
+        "merchandise": 687.81,
+        "delivered": 904.9228484632222,
+        "reduction": 0.1134826400836153
+      },
+      {
+        "label": "No IMU + six-layer half-ounce",
+        "merchandise": 622.3,
+        "delivered": 822.4650154072809,
+        "reduction": 0.19426333933253037
+      },
+      {
+        "label": "No IMU + six-layer half-ounce + larger drills",
+        "merchandise": 592.3599999999999,
+        "delivered": 784.7793563980474,
+        "reduction": 0.23118249878166053
+      }
+    ],
+    "half_target_merchandise": 374.35947922523167
+  }
+}

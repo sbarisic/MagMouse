@@ -13,6 +13,12 @@ project is retained as a reference. These are not fabrication-ready designs;
 mechanics, manufacturing and hardware qualification remain open. Contactless sensing removes
 electrical switch contacts; it does not eliminate mechanical wear or other failures.
 
+[Quote-only JLCPCB packages](hardware/quotes/README.md) now provide separate
+Main/Wheel/Encoder Gerbers, BOMs and CPLs for pricing five sets. The live JLCPCB
+checkout quotes USD 1,187.35 (about EUR 1,021) including DHL DDP shipping and
+duties/taxes for five sets to Croatia 43000. Three stock shortages and the separately installed optical sensor remain;
+this is a partial-population quote, not an order-ready complete set.
+
 ## V1 concept
 
 - ESP32-S3 with native USB Full-Speed HID; target report interval: 1 ms.

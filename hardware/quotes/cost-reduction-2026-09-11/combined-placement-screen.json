@@ -1,0 +1,44 @@
+{
+  "status": "CONSERVATIVE SPACE SCREEN ONLY - NO CAD CHANGES",
+  "source_sha256": {
+    "Main": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
+    "Wheel": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305"
+  },
+  "grid_mm": 0.5,
+  "removed_for_space_screen": [
+    "Main J8",
+    "Main J10",
+    "Main J8 FFC exit reservation",
+    "Wheel J9",
+    "Wheel J11"
+  ],
+  "retained_main_component_count": 205,
+  "retained_wheel_component_count": 80,
+  "main_inside_grid_area_mm2": 8445.0,
+  "main_free_grid_area_mm2": 4086.25,
+  "largest_free_rectangle": {
+    "area_mm2": 504.0,
+    "x_mm": 63.0,
+    "y_mm": 66.0,
+    "width_mm": 16.0,
+    "height_mm": 31.5
+  },
+  "wheel_group_courtyard_bounds_mm": [
+    3.145,
+    4.325,
+    50.005,
+    56.955
+  ],
+  "wheel_group_rectangle_mm": [
+    46.86,
+    52.63
+  ],
+  "unobstructed_group_rectangle_candidates": 0,
+  "limitations": [
+    "Courtyard bounding rectangles, 0.5 mm grid, rotations 0 and 90 degrees only.",
+    "Empty-area totals are not routing, thermal or mechanical acceptance.",
+    "No candidate means the full wheel bounding envelope cannot be reserved with current Main placement; interleaving/replacement remains possible.",
+    "Main buffers and all destination-rail protections are retained pending circuit review.",
+    "Mounts and mechanism dimensions remain provisional."
+  ]
+}

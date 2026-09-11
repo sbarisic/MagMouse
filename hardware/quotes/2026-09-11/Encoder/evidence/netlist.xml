@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\Projects\MagMouse\hardware\encoder\Encoder.kicad_sch</source>
+    <date>2026-09-11T18:30:13</date>
+    <tool>Eeschema 10.0.6</tool>
+    <textvar name="STATUS">DRAFT - NOT FOR FABRICATION</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>MagMouse - Encoder</title>
+        <company>MagMouse</company>
+        <rev>0.1 DRAFT</rev>
+        <date>2026-09-09</date>
+        <source>Encoder.kicad_sch</source>
+        <comment number="1" value="NOT FOR FABRICATION - unresolved circuits listed in README.md"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C62">
+      <value>1uF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="LCSC">C15849</field>
+        <field name="JLCPCB Part #">C15849</field>
+        <field name="Sourcing Status">Catalog identity checked; capacitance under bias needs validation</field>
+        <field name="Checked">2026-09-09</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15849.html</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="LCSC" value="C15849"/>
+      <property name="JLCPCB Part #" value="C15849"/>
+      <property name="Sourcing Status" value="Catalog identity checked; capacitance under bias needs validation"/>
+      <property name="Checked" value="2026-09-09"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15849.html"/>
+      <property name="Sheetname" value="Encoder"/>
+      <property name="Sheetfile" value="Encoder.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b84f27bf-2d96-5159-bbee-7c9bd983271b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>ENCODER_8P</value>
+      <footprint>Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eSH.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">JST</field>
+        <field name="MPN">SM08B-SRSS-TB(LF)(SN)</field>
+        <field name="LCSC">C160407</field>
+        <field name="JLCPCB Part #">C160407</field>
+        <field name="Sourcing Status">JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation</field>
+        <field name="Checked">2026-09-09</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C160407.html</field>
+        <field name="Footprint">Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eSH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="MPN" value="SM08B-SRSS-TB(LF)(SN)"/>
+      <property name="LCSC" value="C160407"/>
+      <property name="JLCPCB Part #" value="C160407"/>
+      <property name="Sourcing Status" value="JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation"/>
+      <property name="Checked" value="2026-09-09"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C160407.html"/>
+      <property name="Sheetname" value="Encoder"/>
+      <property name="Sheetfile" value="Encoder.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ec0a2e3-4cd9-58c6-b88d-2deb75d0a301</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U27">
+      <value>MA735GGU-P</value>
+      <footprint>MagMouse:MPS_UTQFN14_2x2</footprint>
+      <datasheet>https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/</datasheet>
+      <fields>
+        <field name="Manufacturer">Monolithic Power Systems</field>
+        <field name="MPN">MA735GGU-P</field>
+        <field name="LCSC">C17233427</field>
+        <field name="JLCPCB Part #">C17233427</field>
+        <field name="Sourcing Status">Catalog identity checked; stock/assembly eligibility refresh required</field>
+        <field name="Checked">2026-09-09</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C17233427.html</field>
+        <field name="Footprint">MagMouse:MPS_UTQFN14_2x2</field>
+        <field name="Datasheet">https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MagMouse" part="MA735GGU" description=""/>
+      <property name="Manufacturer" value="Monolithic Power Systems"/>
+      <property name="MPN" value="MA735GGU-P"/>
+      <property name="LCSC" value="C17233427"/>
+      <property name="JLCPCB Part #" value="C17233427"/>
+      <property name="Sourcing Status" value="Catalog identity checked; stock/assembly eligibility refresh required"/>
+      <property name="Checked" value="2026-09-09"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C17233427.html"/>
+      <property name="Sheetname" value="Encoder"/>
+      <property name="Sheetfile" value="Encoder.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d989bd01-19db-5288-afdd-12ce956cbaff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="13"/>
+            <pin num="1"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="14"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagMouse" part="MA735GGU">
+      <docs>https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MA735GGU</field>
+        <field name="Footprint">MagMouse:MPS_UTQFN14_2x2</field>
+        <field name="Datasheet">https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SCLK" type="input"/>
+        <pin num="2" name="TEST" type="input"/>
+        <pin num="3" name="PWM" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="MISO" type="tri_state"/>
+        <pin num="6" name="B" type="output"/>
+        <pin num="7" name="CS" type="input"/>
+        <pin num="8" name="MOSI" type="input"/>
+        <pin num="9" name="Z" type="output"/>
+        <pin num="10" name="A" type="output"/>
+        <pin num="11" name="SSD" type="output"/>
+        <pin num="12" name="MGH" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="14" name="SSCK" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="MagMouse">
+      <uri>${KIPRJMOD}/../kicad/MagMouse.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="ENC_3V3" class="Default">
+      <node ref="C62" pin="1" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U27" pin="13" pinfunction="VDD_13" pintype="power_in"/>
+    </net>
+    <net code="2" name="ENC_CS_LOCAL" class="Default">
+      <node ref="J7" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U27" pin="7" pinfunction="CS_7" pintype="input"/>
+    </net>
+    <net code="3" name="ENC_MISO_LOCAL" class="Default">
+      <node ref="J7" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="U27" pin="5" pinfunction="MISO_5" pintype="tri_state"/>
+    </net>
+    <net code="4" name="ENC_MOSI_LOCAL" class="Default">
+      <node ref="J7" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U27" pin="8" pinfunction="MOSI_8" pintype="input"/>
+    </net>
+    <net code="5" name="ENC_SCLK_LOCAL" class="Default">
+      <node ref="J7" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U27" pin="1" pinfunction="SCLK_1" pintype="input"/>
+    </net>
+    <net code="6" name="GND" class="Default">
+      <node ref="C62" pin="2" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J7" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J7" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U27" pin="14" pinfunction="SSCK_14" pintype="input"/>
+      <node ref="U27" pin="2" pinfunction="TEST_2" pintype="input"/>
+      <node ref="U27" pin="4" pinfunction="GND_4" pintype="power_in"/>
+    </net>
+    <net code="7" name="unconnected-(U27-A-Pad10)" class="Default">
+      <node ref="U27" pin="10" pinfunction="A_10" pintype="output+no_connect"/>
+    </net>
+    <net code="8" name="unconnected-(U27-B-Pad6)" class="Default">
+      <node ref="U27" pin="6" pinfunction="B_6" pintype="output+no_connect"/>
+    </net>
+    <net code="9" name="unconnected-(U27-MGH-Pad12)" class="Default">
+      <node ref="U27" pin="12" pinfunction="MGH_12" pintype="output+no_connect"/>
+    </net>
+    <net code="10" name="unconnected-(U27-PWM-Pad3)" class="Default">
+      <node ref="U27" pin="3" pinfunction="PWM_3" pintype="output+no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(U27-SSD-Pad11)" class="Default">
+      <node ref="U27" pin="11" pinfunction="SSD_11" pintype="output+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(U27-Z-Pad9)" class="Default">
+      <node ref="U27" pin="9" pinfunction="Z_9" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

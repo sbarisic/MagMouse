@@ -1,0 +1,32 @@
+{
+  "status": "QUOTE ONLY - NOT FOR FABRICATION OR ASSEMBLY",
+  "source_sha256": {
+    "hardware/encoder/Encoder.kicad_pcb": "487cc3e9c7dbe6352603a6adf508b4b7b8e176259ae80b0a471ed1632d499c95",
+    "hardware/encoder/Encoder.kicad_pro": "5950e85d220d2cb0568afbe517fc51bd3b0e68633764931fef6ef78f04ac7567",
+    "hardware/encoder/Encoder.kicad_sch": "47cd463ec04d8450011fb70d4b1f522dfe7aa73348058f15eca2b71480f5a2ba"
+  },
+  "kicad_version": "10.0.6",
+  "schematic_pcb_references": 3,
+  "assembly_components": 3,
+  "bom_lines": 3,
+  "excluded_references": [],
+  "assembly_sides": {
+    "top": 3
+  },
+  "native_unrouted": 0,
+  "physical_drc": 0,
+  "schematic_parity": 0,
+  "bom_cpl_reference_coverage": "PASS: each source reference assembled or explicitly excluded",
+  "copper_layers": 2,
+  "board_thickness_mm": 1.6,
+  "saved_stackup": [],
+  "vias": 17,
+  "vias_with_smd_drill_overlap": 0,
+  "via_drill_counts": {
+    "0.3": 17
+  },
+  "coordinate_convention": "Absolute KiCad origin; X right, Y up (negative KiCad Y); same Gerber/drill/CPL origin; no bottom mirroring",
+  "rotation_convention": "Native KiCad rotation normalized to [0,360); supplier-specific corrections NOT applied; assembly preview review required",
+  "coverage_validation_errors": [],
+  "excellon_via_checks": "All CAD via hits matched once, diameter exact; coordinate tolerance 0.000501 mm for 1 um drill export precision"
+}

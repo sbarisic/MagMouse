@@ -1,0 +1,1735 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" viewBox="-4.05 -10.05 88.1 143.1">
+<rect x="-1000" y="-1000" width="3000" height="3000" fill="white"/>
+<text x="-0.05" y="-5.05" font-size="1.7799999999999998">QUOTE ONLY: red = drill intersects SMD pad; grey = other via</text>
+<polygon points="62.9607,0.28472 63.8518,1.11111 64.6875,2.4375 65.4815,4.22222 66.2477,6.42361 67.0,9.0 67.7523,11.9097 68.5185,15.1111 69.3125,18.5625 70.1482,22.2222 71.0393,26.0486 72.0,30.0 73.4178,34.2216 74.6759,37.9398 75.7812,41.2344 76.7407,44.1852 77.5613,46.8721 78.25,49.375 78.8137,51.7737 79.2593,54.1482 79.5938,56.5781 79.8241,59.1435 79.9572,61.9242 80.0,65.0 80.0,66.3895 80.0,68.0324 80.0,69.8906 80.0,71.9259 80.0,74.1001 80.0,76.375 80.0,78.7124 80.0,81.0741 80.0,83.4219 80.0,85.7176 80.0,87.923 80.0,90.0 79.6904,95.1001 78.7732,99.8843 77.2656,104.328 75.1852,108.407 72.5492,112.098 69.375,115.375 65.68,118.215 61.4815,120.593 56.7969,122.484 51.6435,123.866 46.0388,124.712 40.0,125.0 33.9612,124.712 28.3565,123.866 23.2031,122.484 18.5185,120.593 14.32,118.215 10.625,115.375 7.45081,112.098 4.81481,108.407 2.73438,104.328 1.22685,99.8843 0.30961,95.1001 0.0,90.0 0.0,87.923 0.0,85.7176 0.0,83.4219 0.0,81.0741 0.0,78.7124 0.0,76.375 0.0,74.1001 0.0,71.9259 0.0,69.8906 0.0,68.0324 0.0,66.3895 0.0,65.0 0.04282,61.9242 0.17593,59.1435 0.40625,56.5781 0.74074,54.1482 1.18634,51.7737 1.75,49.375 2.43866,46.8721 3.25926,44.1852 4.21875,41.2344 5.32407,37.9398 6.58218,34.2216 8.0,30.0 8.96065,26.0486 9.85185,22.2222 10.6875,18.5625 11.4815,15.1111 12.2477,11.9097 13.0,9.0 13.7523,6.42361 14.5185,4.22222 15.3125,2.4375 16.1482,1.11111 17.0393,0.28472 18.0,0.0 62.0,0.0" fill="none" stroke="#263238" stroke-width=".15"/>
+<rect x="41.5" y="26.95" width="0.55" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 41.775 27.225)"/>
+<rect x="42.45" y="26.95" width="0.55" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 42.725 27.225)"/>
+<rect x="42.45" y="26.0" width="0.55" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 42.725 26.275)"/>
+<rect x="41.5" y="26.0" width="0.55" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 41.775 26.275)"/>
+<rect x="13.6" y="45.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.0 45.825)"/>
+<rect x="13.6" y="43.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.0 44.175)"/>
+<rect x="12.4" y="86.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 87.05)"/>
+<rect x="12.4" y="87.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 87.7)"/>
+<rect x="12.4" y="88.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 88.35)"/>
+<rect x="12.4" y="88.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 89.0)"/>
+<rect x="12.4" y="89.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 89.65)"/>
+<rect x="12.4" y="90.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 90.3)"/>
+<rect x="12.4" y="90.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 90.95)"/>
+<rect x="18.125" y="90.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 90.95)"/>
+<rect x="18.125" y="90.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 90.3)"/>
+<rect x="18.125" y="89.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 89.65)"/>
+<rect x="18.125" y="88.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 89.0)"/>
+<rect x="18.125" y="88.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 88.35)"/>
+<rect x="18.125" y="87.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 87.7)"/>
+<rect x="18.125" y="86.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 87.05)"/>
+<rect x="54.4" y="92.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 93.05)"/>
+<rect x="54.4" y="93.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 93.7)"/>
+<rect x="54.4" y="94.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 94.35)"/>
+<rect x="54.4" y="94.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 95.0)"/>
+<rect x="54.4" y="95.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 95.65)"/>
+<rect x="54.4" y="96.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 96.3)"/>
+<rect x="54.4" y="96.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 55.1375 96.95)"/>
+<rect x="60.125" y="96.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 96.95)"/>
+<rect x="60.125" y="96.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 96.3)"/>
+<rect x="60.125" y="95.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 95.65)"/>
+<rect x="60.125" y="94.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 95.0)"/>
+<rect x="60.125" y="94.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 94.35)"/>
+<rect x="60.125" y="93.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 93.7)"/>
+<rect x="60.125" y="92.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 60.8625 93.05)"/>
+<rect x="47.575" y="74.125" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.025 74.6)"/>
+<rect x="49.125" y="74.125" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 49.575 74.6)"/>
+<rect x="47.775" y="42.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.225 42.5)"/>
+<rect x="49.325" y="42.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 49.775 42.5)"/>
+<rect x="11.55" y="64.775" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 12.05 65.5)"/>
+<rect x="13.45" y="64.775" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 13.95 65.5)"/>
+<rect x="26.45" y="71.75" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 27.1125 72.05)"/>
+<rect x="26.45" y="72.7" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 27.1125 73.0)"/>
+<rect x="26.45" y="73.65" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 27.1125 73.95)"/>
+<rect x="28.725" y="73.65" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 29.3875 73.95)"/>
+<rect x="28.725" y="72.7" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 29.3875 73.0)"/>
+<rect x="28.725" y="71.75" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 29.3875 72.05)"/>
+<rect x="67.85" y="20.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 68.25 21.325)"/>
+<rect x="67.85" y="19.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 68.25 19.675)"/>
+<rect x="31.2" y="33.4" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 31.9375 33.7)"/>
+<rect x="31.2" y="31.5" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 31.9375 31.8)"/>
+<rect x="29.325" y="32.45" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 30.0625 32.75)"/>
+<rect x="55.6" y="37.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.0 37.825)"/>
+<rect x="55.6" y="35.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.0 36.175)"/>
+<rect x="13.275" y="39.275" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 13.675 39.75)"/>
+<rect x="14.925" y="39.275" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 15.325 39.75)"/>
+<rect x="68.6" y="64.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 69.0 64.825)"/>
+<rect x="68.6" y="62.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 69.0 63.175)"/>
+<rect x="20.275" y="37.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 20.675 37.5)"/>
+<rect x="21.925" y="37.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 22.325 37.5)"/>
+<rect x="47.775" y="40.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.175 40.5)"/>
+<rect x="49.425" y="40.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 49.825 40.5)"/>
+<rect x="16.68" y="41.26" width="0.64" height="0.48" fill="#e0e6eb" transform="rotate(-0.0 17.0 41.5)"/>
+<rect x="16.625" y="40.45" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 16.75 40.725)"/>
+<rect x="16.625" y="42.0" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 16.75 42.275)"/>
+<rect x="17.125" y="42.0" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 17.25 42.275)"/>
+<rect x="17.125" y="40.45" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 17.25 40.725)"/>
+<rect x="16.6" y="41.2" width="0.8" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 17.0 41.5)"/>
+<rect x="15.775" y="47.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 16.225 48.0)"/>
+<rect x="17.325" y="47.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 17.775 48.0)"/>
+<rect x="36.9" y="54.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 55.05)"/>
+<rect x="36.9" y="55.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 55.7)"/>
+<rect x="36.9" y="56.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 56.35)"/>
+<rect x="36.9" y="56.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 57.0)"/>
+<rect x="36.9" y="57.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 57.65)"/>
+<rect x="36.9" y="58.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 58.3)"/>
+<rect x="36.9" y="58.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 37.6375 58.95)"/>
+<rect x="42.625" y="58.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 58.95)"/>
+<rect x="42.625" y="58.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 58.3)"/>
+<rect x="42.625" y="57.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 57.65)"/>
+<rect x="42.625" y="56.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 57.0)"/>
+<rect x="42.625" y="56.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 56.35)"/>
+<rect x="42.625" y="55.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 55.7)"/>
+<rect x="42.625" y="54.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 43.3625 55.05)"/>
+<rect x="25.025" y="52.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 25.425 53.0)"/>
+<rect x="26.675" y="52.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 27.075 53.0)"/>
+<rect x="11.275" y="101.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 11.675 102.0)"/>
+<rect x="12.925" y="101.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 13.325 102.0)"/>
+<rect x="39.5" y="25.275" width="0.3" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 39.65 25.425)"/>
+<rect x="40.2" y="25.275" width="0.3" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 40.35 25.425)"/>
+<rect x="39.85" y="24.425" width="0.3" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 40.0 24.575)"/>
+<rect x="60.135" y="25.28" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 60.5 25.6)"/>
+<rect x="60.135" y="26.08" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 60.5 26.4)"/>
+<rect x="59.25" y="25.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 59.55 25.25)"/>
+<rect x="59.25" y="25.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 59.55 25.75)"/>
+<rect x="59.25" y="26.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 59.55 26.25)"/>
+<rect x="59.25" y="26.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 59.55 26.75)"/>
+<rect x="61.15" y="26.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 61.45 26.75)"/>
+<rect x="61.15" y="26.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 61.45 26.25)"/>
+<rect x="61.15" y="25.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 61.45 25.75)"/>
+<rect x="61.15" y="25.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 61.45 25.25)"/>
+<rect x="60.05" y="25.2" width="0.9" height="1.6" fill="#e0e6eb" transform="rotate(-0.0 60.5 26.0)"/>
+<rect x="52.275" y="28.225" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 52.675 28.7)"/>
+<rect x="53.925" y="28.225" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 54.325 28.7)"/>
+<rect x="54.325" y="39.75" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 55.0625 40.05)"/>
+<rect x="54.325" y="41.65" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 55.0625 41.95)"/>
+<rect x="56.2" y="40.7" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 56.9375 41.0)"/>
+<rect x="32.1" y="36.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.5 36.825)"/>
+<rect x="32.1" y="34.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.5 35.175)"/>
+<rect x="64.775" y="52.625" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 65.175 53.1)"/>
+<rect x="66.425" y="52.625" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 66.825 53.1)"/>
+<rect x="55.6" y="28.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.0 28.825)"/>
+<rect x="55.6" y="26.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.0 27.175)"/>
+<rect x="51.6" y="94.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 52.0 94.825)"/>
+<rect x="51.6" y="92.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 52.0 93.175)"/>
+<rect x="62.35" y="21.4" width="1.1" height="3.7" fill="#e0e6eb" transform="rotate(-0.0 62.9 23.25)"/>
+<rect x="65.35" y="21.4" width="1.1" height="3.7" fill="#e0e6eb" transform="rotate(-0.0 65.9 23.25)"/>
+<rect x="65.1125" y="60.7375" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 65.85 61.0375)"/>
+<rect x="67.0125" y="60.7375" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 67.75 61.0375)"/>
+<rect x="66.0625" y="58.8625" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 66.8 59.1625)"/>
+<rect x="52.275" y="91.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 52.725 91.5)"/>
+<rect x="53.825" y="91.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 54.275 91.5)"/>
+<rect x="30.1" y="82.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 30.5 82.575)"/>
+<rect x="30.1" y="80.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 30.5 80.925)"/>
+<rect x="12.4" y="94.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 95.05)"/>
+<rect x="12.4" y="95.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 95.7)"/>
+<rect x="12.4" y="96.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 96.35)"/>
+<rect x="12.4" y="96.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 97.0)"/>
+<rect x="12.4" y="97.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 97.65)"/>
+<rect x="12.4" y="98.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 98.3)"/>
+<rect x="12.4" y="98.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 13.1375 98.95)"/>
+<rect x="18.125" y="98.75" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 98.95)"/>
+<rect x="18.125" y="98.1" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 98.3)"/>
+<rect x="18.125" y="97.45" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 97.65)"/>
+<rect x="18.125" y="96.8" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 97.0)"/>
+<rect x="18.125" y="96.15" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 96.35)"/>
+<rect x="18.125" y="95.5" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 95.7)"/>
+<rect x="18.125" y="94.85" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-0.0 18.8625 95.05)"/>
+<rect x="68.1" y="54.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 68.5 54.825)"/>
+<rect x="68.1" y="52.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 68.5 53.175)"/>
+<rect x="48.5" y="30.25" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-0.0 49.0 30.75)"/>
+<rect x="55.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 55.75 68.15)"/>
+<rect x="56.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 56.25 68.15)"/>
+<rect x="56.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 56.75 68.15)"/>
+<rect x="57.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 57.25 68.15)"/>
+<rect x="57.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 57.75 68.15)"/>
+<rect x="58.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 58.25 68.15)"/>
+<rect x="58.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 58.75 68.15)"/>
+<rect x="59.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 59.25 68.15)"/>
+<rect x="59.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 59.75 68.15)"/>
+<rect x="60.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 60.25 68.15)"/>
+<rect x="60.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 60.75 68.15)"/>
+<rect x="61.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 61.25 68.15)"/>
+<rect x="61.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 61.75 68.15)"/>
+<rect x="62.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 62.25 68.15)"/>
+<rect x="62.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 62.75 68.15)"/>
+<rect x="63.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 63.25 68.15)"/>
+<rect x="63.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 63.75 68.15)"/>
+<rect x="64.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 64.25 68.15)"/>
+<rect x="64.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 64.75 68.15)"/>
+<rect x="65.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 65.25 68.15)"/>
+<rect x="65.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 65.75 68.15)"/>
+<rect x="66.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 66.25 68.15)"/>
+<rect x="66.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 66.75 68.15)"/>
+<rect x="67.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 67.25 68.15)"/>
+<rect x="67.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 67.75 68.15)"/>
+<rect x="68.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 68.25 68.15)"/>
+<rect x="68.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 68.75 68.15)"/>
+<rect x="69.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 69.25 68.15)"/>
+<rect x="69.6" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 69.75 68.15)"/>
+<rect x="70.1" y="67.5" width="0.3" height="1.3" fill="#e0e6eb" transform="rotate(-0.0 70.25 68.15)"/>
+<rect x="52.95" y="70.3" width="1.8" height="2.2" fill="#e0e6eb" transform="rotate(-0.0 53.85 71.4)"/>
+<rect x="71.25" y="70.3" width="1.8" height="2.2" fill="#e0e6eb" transform="rotate(-0.0 72.15 71.4)"/>
+<rect x="49.8" y="21.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 50.3 22.0)"/>
+<rect x="51.7" y="21.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 52.2 22.0)"/>
+<rect x="63.1" y="54.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 63.5 54.825)"/>
+<rect x="63.1" y="52.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 63.5 53.175)"/>
+<rect x="45.275" y="54.325" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 45.725 54.8)"/>
+<rect x="46.825" y="54.325" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 47.275 54.8)"/>
+<rect x="22.1" y="31.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 22.5 32.325)"/>
+<rect x="22.1" y="30.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 22.5 30.675)"/>
+<rect x="63.1" y="58.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 63.5 58.825)"/>
+<rect x="63.1" y="56.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 63.5 57.175)"/>
+<rect x="51.85" y="24.7" width="0.85" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 52.275 24.8)"/>
+<rect x="51.85" y="25.1" width="0.85" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 52.275 25.2)"/>
+<rect x="52.3" y="25.5" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 52.4 25.825)"/>
+<rect x="52.7" y="25.5" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 52.8 25.825)"/>
+<rect x="53.1" y="25.5" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 53.2 25.825)"/>
+<rect x="53.5" y="25.5" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 53.6 25.825)"/>
+<rect x="53.3" y="25.1" width="0.85" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 53.725 25.2)"/>
+<rect x="53.3" y="24.7" width="0.85" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 53.725 24.8)"/>
+<rect x="53.5" y="23.85" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 53.6 24.175)"/>
+<rect x="53.1" y="23.85" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 53.2 24.175)"/>
+<rect x="52.7" y="23.85" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 52.8 24.175)"/>
+<rect x="52.3" y="23.85" width="0.2" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 52.4 24.175)"/>
+<rect x="22.275" y="56.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 22.725 57.0)"/>
+<rect x="23.825" y="56.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 24.275 57.0)"/>
+<rect x="22.9" y="44.675" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 23.4125 44.85)"/>
+<rect x="22.9" y="45.325" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 23.4125 45.5)"/>
+<rect x="22.9" y="45.975" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 23.4125 46.15)"/>
+<rect x="24.575" y="45.975" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 25.0875 46.15)"/>
+<rect x="24.575" y="45.325" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 25.0875 45.5)"/>
+<rect x="24.575" y="44.675" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 25.0875 44.85)"/>
+<rect x="46.55" y="46.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.0 46.775)"/>
+<rect x="46.55" y="44.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.0 45.225)"/>
+<rect x="50.35" y="85.6" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.75 86.075)"/>
+<rect x="50.35" y="83.95" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.75 84.425)"/>
+<rect x="46.05" y="21.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 46.55 22.0)"/>
+<rect x="47.95" y="21.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 48.45 22.0)"/>
+<rect x="52.6" y="37.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.0 37.825)"/>
+<rect x="52.6" y="35.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.0 36.175)"/>
+<rect x="49.74" y="45.24" width="0.68" height="0.68" fill="#e0e6eb" transform="rotate(-0.0 50.08 45.58)"/>
+<rect x="49.74" y="46.08" width="0.68" height="0.68" fill="#e0e6eb" transform="rotate(-0.0 50.08 46.42)"/>
+<rect x="50.58" y="45.24" width="0.68" height="0.68" fill="#e0e6eb" transform="rotate(-0.0 50.92 45.58)"/>
+<rect x="50.58" y="46.08" width="0.68" height="0.68" fill="#e0e6eb" transform="rotate(-0.0 50.92 46.42)"/>
+<rect x="48.625" y="45.125" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 49.0425 45.25)"/>
+<rect x="48.625" y="45.625" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 49.0425 45.75)"/>
+<rect x="48.625" y="46.125" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 49.0425 46.25)"/>
+<rect x="48.625" y="46.625" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 49.0425 46.75)"/>
+<rect x="49.625" y="47.04" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 49.75 47.4575)"/>
+<rect x="50.125" y="47.04" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 50.25 47.4575)"/>
+<rect x="50.625" y="47.04" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 50.75 47.4575)"/>
+<rect x="51.125" y="47.04" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 51.25 47.4575)"/>
+<rect x="51.54" y="46.625" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 51.9575 46.75)"/>
+<rect x="51.54" y="46.125" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 51.9575 46.25)"/>
+<rect x="51.54" y="45.625" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 51.9575 45.75)"/>
+<rect x="51.54" y="45.125" width="0.835" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 51.9575 45.25)"/>
+<rect x="51.125" y="44.125" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 51.25 44.5425)"/>
+<rect x="50.625" y="44.125" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 50.75 44.5425)"/>
+<rect x="50.125" y="44.125" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 50.25 44.5425)"/>
+<rect x="49.625" y="44.125" width="0.25" height="0.835" fill="#e0e6eb" transform="rotate(-0.0 49.75 44.5425)"/>
+<rect x="49.66" y="45.16" width="1.68" height="1.68" fill="#e0e6eb" transform="rotate(-0.0 50.5 46.0)"/>
+<rect x="31.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 31.5 20.5)"/>
+<rect x="30.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 30.5 20.5)"/>
+<rect x="29.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 29.5 20.5)"/>
+<rect x="28.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 28.5 20.5)"/>
+<rect x="27.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 27.5 20.5)"/>
+<rect x="26.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 26.5 20.5)"/>
+<rect x="25.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 25.5 20.5)"/>
+<rect x="24.2" y="19.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-180.0 24.5 20.5)"/>
+<rect x="32.2" y="15.725" width="1.2" height="1.8" fill="#e0e6eb" transform="rotate(-180.0 32.8 16.625)"/>
+<rect x="22.6" y="15.725" width="1.2" height="1.8" fill="#e0e6eb" transform="rotate(-180.0 23.2 16.625)"/>
+<rect x="64.775" y="56.925" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 65.175 57.4)"/>
+<rect x="66.425" y="56.925" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 66.825 57.4)"/>
+<rect x="53.25" y="22.1" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.7 22.575)"/>
+<rect x="53.25" y="20.55" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.7 21.025)"/>
+<rect x="18.275" y="101.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 18.675 102.0)"/>
+<rect x="19.925" y="101.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 20.325 102.0)"/>
+<rect x="11.775" y="23.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 12.175 24.0)"/>
+<rect x="13.425" y="23.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 13.825 24.0)"/>
+<rect x="50.35" y="18.625" width="0.925" height="0.45" fill="#e0e6eb" transform="rotate(-0.0 50.8125 18.85)"/>
+<rect x="50.35" y="19.925" width="0.925" height="0.45" fill="#e0e6eb" transform="rotate(-0.0 50.8125 20.15)"/>
+<rect x="52.125" y="19.275" width="0.925" height="0.45" fill="#e0e6eb" transform="rotate(-0.0 52.5875 19.5)"/>
+<rect x="60.55" y="54.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 61.0 54.775)"/>
+<rect x="60.55" y="52.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 61.0 53.225)"/>
+<rect x="46.3875" y="19.3375" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 47.05 19.6375)"/>
+<rect x="47.3375" y="19.3375" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 48.0 19.6375)"/>
+<rect x="48.2875" y="19.3375" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 48.95 19.6375)"/>
+<rect x="48.2875" y="17.0625" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 48.95 17.3625)"/>
+<rect x="46.3875" y="17.0625" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 47.05 17.3625)"/>
+<rect x="31.8" y="59.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.2 59.825)"/>
+<rect x="31.8" y="57.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.2 58.175)"/>
+<rect x="67.2" y="23.825" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-270.0 67.7 24.55)"/>
+<rect x="67.2" y="25.725" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-270.0 67.7 26.45)"/>
+<rect x="41.3" y="84.05" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 41.75 84.525)"/>
+<rect x="41.3" y="82.5" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 41.75 82.975)"/>
+<rect x="14.775" y="101.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 15.175 102.0)"/>
+<rect x="16.425" y="101.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 16.825 102.0)"/>
+<rect x="31.7" y="54.35" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 32.3625 54.65)"/>
+<rect x="31.7" y="55.3" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 32.3625 55.6)"/>
+<rect x="31.7" y="56.25" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 32.3625 56.55)"/>
+<rect x="33.975" y="56.25" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 34.6375 56.55)"/>
+<rect x="33.975" y="54.35" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 34.6375 54.65)"/>
+<rect x="55.75" y="83.5" width="1.05" height="2.0" fill="#e0e6eb" transform="rotate(-0.0 56.275 84.5)"/>
+<rect x="60.2" y="83.5" width="1.05" height="2.0" fill="#e0e6eb" transform="rotate(-0.0 60.725 84.5)"/>
+<rect x="15.775" y="72.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 16.175 73.0)"/>
+<rect x="17.425" y="72.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 17.825 73.0)"/>
+<rect x="47.575" y="75.925" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.025 76.4)"/>
+<rect x="49.125" y="75.925" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 49.575 76.4)"/>
+<rect x="67.75" y="85.85" width="1.8" height="3.8" fill="#e0e6eb" transform="rotate(-0.0 68.65 87.75)"/>
+<rect x="74.45" y="85.85" width="1.8" height="3.8" fill="#e0e6eb" transform="rotate(-0.0 75.35 87.75)"/>
+<rect x="72.5" y="91.0" width="1.0" height="2.7" fill="#e0e6eb" transform="rotate(-0.0 73.0 92.35)"/>
+<rect x="70.5" y="91.0" width="1.0" height="2.7" fill="#e0e6eb" transform="rotate(-0.0 71.0 92.35)"/>
+<rect x="52.55" y="89.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.0 89.775)"/>
+<rect x="52.55" y="87.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.0 88.225)"/>
+<rect x="42.565" y="6.275" width="0.65" height="0.65" fill="#e0e6eb" transform="rotate(-180.0 42.89 6.6)"/>
+<rect x="36.785" y="6.275" width="0.65" height="0.65" fill="#e0e6eb" transform="rotate(-180.0 37.11 6.6)"/>
+<rect x="42.95" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 43.25 8.045)"/>
+<rect x="42.15" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 42.45 8.045)"/>
+<rect x="41.1" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 41.25 8.045)"/>
+<rect x="40.1" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 40.25 8.045)"/>
+<rect x="39.6" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 39.75 8.045)"/>
+<rect x="38.6" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 38.75 8.045)"/>
+<rect x="37.25" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 37.55 8.045)"/>
+<rect x="36.45" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 36.75 8.045)"/>
+<rect x="36.45" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 36.75 8.045)"/>
+<rect x="37.25" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 37.55 8.045)"/>
+<rect x="38.1" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 38.25 8.045)"/>
+<rect x="39.1" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 39.25 8.045)"/>
+<rect x="40.6" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 40.75 8.045)"/>
+<rect x="41.6" y="7.32" width="0.3" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 41.75 8.045)"/>
+<rect x="42.15" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 42.45 8.045)"/>
+<rect x="42.95" y="7.32" width="0.6" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 43.25 8.045)"/>
+<rect x="43.82" y="6.08" width="1.0" height="2.1" fill="#e0e6eb" transform="rotate(-180.0 44.32 7.13)"/>
+<rect x="43.82" y="2.15" width="1.0" height="1.6" fill="#e0e6eb" transform="rotate(-180.0 44.32 2.95)"/>
+<rect x="35.18" y="6.08" width="1.0" height="2.1" fill="#e0e6eb" transform="rotate(-180.0 35.68 7.13)"/>
+<rect x="35.18" y="2.15" width="1.0" height="1.6" fill="#e0e6eb" transform="rotate(-180.0 35.68 2.95)"/>
+<rect x="28.525" y="34.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 28.975 35.25)"/>
+<rect x="30.075" y="34.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 30.525 35.25)"/>
+<rect x="46.8" y="84.05" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.25 84.525)"/>
+<rect x="46.8" y="82.5" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.25 82.975)"/>
+<rect x="52.925" y="99.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 53.325 100.0)"/>
+<rect x="51.275" y="99.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 51.675 100.0)"/>
+<rect x="60.1" y="28.475" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 60.6 29.2)"/>
+<rect x="58.2" y="28.475" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-180.0 58.7 29.2)"/>
+<rect x="28.475" y="65.65" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 29.1375 65.95)"/>
+<rect x="28.475" y="64.7" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 29.1375 65.0)"/>
+<rect x="28.475" y="63.75" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 29.1375 64.05)"/>
+<rect x="26.2" y="63.75" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 26.8625 64.05)"/>
+<rect x="26.2" y="65.65" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 26.8625 65.95)"/>
+<rect x="19.55" y="53.8" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.0 54.275)"/>
+<rect x="19.55" y="52.25" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.0 52.725)"/>
+<rect x="62.68" y="41.26" width="0.64" height="0.48" fill="#e0e6eb" transform="rotate(-0.0 63.0 41.5)"/>
+<rect x="62.625" y="40.45" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 62.75 40.725)"/>
+<rect x="62.625" y="42.0" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 62.75 42.275)"/>
+<rect x="63.125" y="42.0" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 63.25 42.275)"/>
+<rect x="63.125" y="40.45" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 63.25 40.725)"/>
+<rect x="62.6" y="41.2" width="0.8" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 63.0 41.5)"/>
+<rect x="62.635" y="44.28" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 63.0 44.6)"/>
+<rect x="62.635" y="45.08" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 63.0 45.4)"/>
+<rect x="61.75" y="44.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 62.05 44.25)"/>
+<rect x="61.75" y="44.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 62.05 44.75)"/>
+<rect x="61.75" y="45.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 62.05 45.25)"/>
+<rect x="61.75" y="45.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 62.05 45.75)"/>
+<rect x="63.65" y="45.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 63.95 45.75)"/>
+<rect x="63.65" y="45.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 63.95 45.25)"/>
+<rect x="63.65" y="44.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 63.95 44.75)"/>
+<rect x="63.65" y="44.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 63.95 44.25)"/>
+<rect x="62.55" y="44.2" width="0.9" height="1.6" fill="#e0e6eb" transform="rotate(-0.0 63.0 45.0)"/>
+<rect x="46.025" y="52.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 46.475 53.0)"/>
+<rect x="47.575" y="52.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.025 53.0)"/>
+<rect x="57.4" y="25.725" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 57.9 26.45)"/>
+<rect x="57.4" y="23.825" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 57.9 24.55)"/>
+<rect x="26.3" y="75.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 26.8 76.0)"/>
+<rect x="28.2" y="75.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 28.7 76.0)"/>
+<rect x="28.35" y="82.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 28.75 82.575)"/>
+<rect x="28.35" y="80.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 28.75 80.925)"/>
+<rect x="14.1" y="53.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.5 54.325)"/>
+<rect x="14.1" y="52.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.5 52.675)"/>
+<rect x="22.55" y="35.05" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 23.0 35.525)"/>
+<rect x="22.55" y="33.5" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 23.0 33.975)"/>
+<rect x="32.2" y="72.75" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 73.225)"/>
+<rect x="32.2" y="71.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 71.575)"/>
+<rect x="58.775" y="41.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 59.225 41.5)"/>
+<rect x="60.325" y="41.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 60.775 41.5)"/>
+<rect x="23.775" y="85.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 24.175 86.0)"/>
+<rect x="25.425" y="85.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 25.825 86.0)"/>
+<rect x="61.275" y="98.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 61.675 98.5)"/>
+<rect x="62.925" y="98.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 63.325 98.5)"/>
+<rect x="27.8" y="67.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 28.3 68.0)"/>
+<rect x="29.7" y="67.275" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 30.2 68.0)"/>
+<rect x="23.68" y="59.76" width="0.64" height="0.48" fill="#e0e6eb" transform="rotate(-0.0 24.0 60.0)"/>
+<rect x="23.625" y="58.95" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 23.75 59.225)"/>
+<rect x="23.625" y="60.5" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 23.75 60.775)"/>
+<rect x="24.125" y="60.5" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 24.25 60.775)"/>
+<rect x="24.125" y="58.95" width="0.25" height="0.55" fill="#e0e6eb" transform="rotate(-0.0 24.25 59.225)"/>
+<rect x="23.6" y="59.7" width="0.8" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 24.0 60.0)"/>
+<rect x="56.775" y="102.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 57.225 103.0)"/>
+<rect x="58.325" y="102.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 58.775 103.0)"/>
+<rect x="55.75" y="88.0" width="1.05" height="2.0" fill="#e0e6eb" transform="rotate(-0.0 56.275 89.0)"/>
+<rect x="60.2" y="88.0" width="1.05" height="2.0" fill="#e0e6eb" transform="rotate(-0.0 60.725 89.0)"/>
+<rect x="32.2" y="66.15" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 66.625)"/>
+<rect x="32.2" y="64.5" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 64.975)"/>
+<rect x="27.275" y="85.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 27.675 86.0)"/>
+<rect x="28.925" y="85.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 29.325 86.0)"/>
+<rect x="31.775" y="22.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 32.175 23.0)"/>
+<rect x="33.425" y="22.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 33.825 23.0)"/>
+<rect x="26.275" y="77.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 26.725 78.0)"/>
+<rect x="27.825" y="77.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 28.275 78.0)"/>
+<rect x="63.05" y="27.975" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 63.55 28.7)"/>
+<rect x="64.95" y="27.975" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 65.45 28.7)"/>
+<rect x="15.5" y="57.75" width="1.0" height="5.5" fill="#e0e6eb" transform="rotate(-0.0 16.0 60.5)"/>
+<rect x="17.5" y="57.75" width="1.0" height="5.5" fill="#e0e6eb" transform="rotate(-0.0 18.0 60.5)"/>
+<rect x="12.8" y="56.75" width="1.6" height="3.0" fill="#e0e6eb" transform="rotate(-0.0 13.6 58.25)"/>
+<rect x="19.6" y="56.75" width="1.6" height="3.0" fill="#e0e6eb" transform="rotate(-0.0 20.4 58.25)"/>
+<rect x="48.5" y="27.75" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-0.0 49.0 28.25)"/>
+<rect x="26.6" y="83.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 27.0 84.325)"/>
+<rect x="26.6" y="82.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 27.0 82.675)"/>
+<rect x="23.0" y="54.225" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 23.5 54.95)"/>
+<rect x="23.0" y="52.325" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 23.5 53.05)"/>
+<rect x="55.6" y="45.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.0 45.825)"/>
+<rect x="55.6" y="43.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.0 44.175)"/>
+<rect x="15.55" y="64.775" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 16.05 65.5)"/>
+<rect x="17.45" y="64.775" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 17.95 65.5)"/>
+<rect x="19.775" y="28.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 20.175 29.0)"/>
+<rect x="21.425" y="28.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 21.825 29.0)"/>
+<rect x="59.1" y="53.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 59.5 54.325)"/>
+<rect x="59.1" y="52.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 59.5 52.675)"/>
+<rect x="32.2" y="69.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 69.925)"/>
+<rect x="32.2" y="67.8" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 68.275)"/>
+<rect x="52.775" y="48.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 53.225 49.0)"/>
+<rect x="54.325" y="48.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 54.775 49.0)"/>
+<rect x="59.6" y="45.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 60.0 45.825)"/>
+<rect x="59.6" y="43.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 60.0 44.175)"/>
+<rect x="30.1" y="26.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 30.5 26.925)"/>
+<rect x="30.1" y="28.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 30.5 28.575)"/>
+<rect x="25.1" y="50.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 25.5 50.825)"/>
+<rect x="25.1" y="48.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 25.5 49.175)"/>
+<rect x="14.0" y="26.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.4 27.325)"/>
+<rect x="14.0" y="25.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.4 25.675)"/>
+<rect x="37.425" y="87.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 37.825 87.5)"/>
+<rect x="35.775" y="87.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 36.175 87.5)"/>
+<rect x="55.975" y="100.075" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 56.6 100.25)"/>
+<rect x="55.975" y="100.575" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 56.6 100.75)"/>
+<rect x="55.975" y="101.075" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 56.6 101.25)"/>
+<rect x="55.975" y="101.575" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 56.6 101.75)"/>
+<rect x="58.775" y="101.575" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 59.4 101.75)"/>
+<rect x="58.775" y="101.075" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 59.4 101.25)"/>
+<rect x="58.775" y="100.575" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 59.4 100.75)"/>
+<rect x="58.775" y="100.075" width="1.25" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 59.4 100.25)"/>
+<rect x="49.55" y="101.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.0 101.775)"/>
+<rect x="49.55" y="99.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.0 100.225)"/>
+<rect x="46.6" y="29.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.0 30.325)"/>
+<rect x="46.6" y="28.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.0 28.675)"/>
+<rect x="50.825" y="49.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 51.275 49.5)"/>
+<rect x="49.275" y="49.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 49.725 49.5)"/>
+<rect x="21.3" y="45.05" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 21.75 45.525)"/>
+<rect x="21.3" y="43.5" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 21.75 43.975)"/>
+<rect x="12.775" y="41.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 13.225 41.5)"/>
+<rect x="14.325" y="41.025" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 14.775 41.5)"/>
+<rect x="51.325" y="61.55" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 52.0625 61.85)"/>
+<rect x="51.325" y="63.45" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 52.0625 63.75)"/>
+<rect x="53.2" y="62.5" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 53.9375 62.8)"/>
+<rect x="40.65" y="87.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 41.05 87.575)"/>
+<rect x="40.65" y="85.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 41.05 85.925)"/>
+<rect x="57.1" y="52.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 57.5 53.325)"/>
+<rect x="57.1" y="51.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 57.5 51.675)"/>
+<rect x="49.6" y="89.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.0 89.825)"/>
+<rect x="49.6" y="87.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.0 88.175)"/>
+<rect x="52.55" y="41.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.0 41.775)"/>
+<rect x="52.55" y="39.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 53.0 40.225)"/>
+<rect x="63.8875" y="19.3375" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 64.55 19.6375)"/>
+<rect x="64.8375" y="19.3375" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 65.5 19.6375)"/>
+<rect x="65.7875" y="19.3375" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 66.45 19.6375)"/>
+<rect x="65.7875" y="17.0625" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 66.45 17.3625)"/>
+<rect x="63.8875" y="17.0625" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-90.0 64.55 17.3625)"/>
+<rect x="43.8" y="26.55" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 44.25 27.025)"/>
+<rect x="43.8" y="25.0" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 44.25 25.475)"/>
+<rect x="11.1" y="52.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 11.5 53.325)"/>
+<rect x="11.1" y="51.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 11.5 51.675)"/>
+<rect x="46.6" y="102.2" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 102.4)"/>
+<rect x="46.6" y="101.35" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 101.55)"/>
+<rect x="46.6" y="100.5" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 100.7)"/>
+<rect x="46.6" y="99.65" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 99.85)"/>
+<rect x="46.6" y="98.8" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 99.0)"/>
+<rect x="46.6" y="97.95" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 98.15)"/>
+<rect x="46.6" y="97.1" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 97.3)"/>
+<rect x="46.6" y="96.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 96.45)"/>
+<rect x="46.6" y="95.4" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 95.6)"/>
+<rect x="46.6" y="94.55" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 94.75)"/>
+<rect x="46.6" y="93.7" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 93.9)"/>
+<rect x="46.6" y="92.85" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 93.05)"/>
+<rect x="46.6" y="92.0" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 92.2)"/>
+<rect x="46.6" y="91.15" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 91.35)"/>
+<rect x="46.6" y="90.3" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 47.0 90.5)"/>
+<rect x="45.55" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 45.95 89.45)"/>
+<rect x="44.7" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 45.1 89.45)"/>
+<rect x="43.85" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 44.25 89.45)"/>
+<rect x="43.0" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 43.4 89.45)"/>
+<rect x="42.15" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 42.55 89.45)"/>
+<rect x="41.3" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 41.7 89.45)"/>
+<rect x="40.45" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 40.85 89.45)"/>
+<rect x="39.6" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 40.0 89.45)"/>
+<rect x="38.75" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 39.15 89.45)"/>
+<rect x="37.9" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 38.3 89.45)"/>
+<rect x="37.05" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 37.45 89.45)"/>
+<rect x="36.2" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 36.6 89.45)"/>
+<rect x="35.35" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 35.75 89.45)"/>
+<rect x="34.5" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 34.9 89.45)"/>
+<rect x="33.65" y="89.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 34.05 89.45)"/>
+<rect x="32.6" y="90.3" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 90.5)"/>
+<rect x="32.6" y="91.15" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 91.35)"/>
+<rect x="32.6" y="92.0" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 92.2)"/>
+<rect x="32.6" y="92.85" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 93.05)"/>
+<rect x="32.6" y="93.7" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 93.9)"/>
+<rect x="32.6" y="94.55" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 94.75)"/>
+<rect x="32.6" y="95.4" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 95.6)"/>
+<rect x="32.6" y="96.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 96.45)"/>
+<rect x="32.6" y="97.1" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 97.3)"/>
+<rect x="32.6" y="97.95" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 98.15)"/>
+<rect x="32.6" y="98.8" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 99.0)"/>
+<rect x="32.6" y="99.65" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 99.85)"/>
+<rect x="32.6" y="100.5" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 100.7)"/>
+<rect x="32.6" y="101.35" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 101.55)"/>
+<rect x="32.6" y="102.2" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-180.0 33.0 102.4)"/>
+<rect x="33.65" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 34.05 103.45)"/>
+<rect x="34.5" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 34.9 103.45)"/>
+<rect x="35.35" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 35.75 103.45)"/>
+<rect x="36.2" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 36.6 103.45)"/>
+<rect x="37.05" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 37.45 103.45)"/>
+<rect x="37.9" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 38.3 103.45)"/>
+<rect x="38.75" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 39.15 103.45)"/>
+<rect x="39.6" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 40.0 103.45)"/>
+<rect x="40.45" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 40.85 103.45)"/>
+<rect x="41.3" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 41.7 103.45)"/>
+<rect x="42.15" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 42.55 103.45)"/>
+<rect x="43.0" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 43.4 103.45)"/>
+<rect x="43.85" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 44.25 103.45)"/>
+<rect x="44.7" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 45.1 103.45)"/>
+<rect x="45.55" y="103.25" width="0.8" height="0.4" fill="#e0e6eb" transform="rotate(-270.0 45.95 103.45)"/>
+<rect x="41.05" y="97.5" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 41.65 98.1)"/>
+<rect x="41.05" y="95.85" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 41.65 96.45)"/>
+<rect x="41.05" y="94.2" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 41.65 94.8)"/>
+<rect x="39.4" y="97.5" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 40.0 98.1)"/>
+<rect x="39.4" y="95.85" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 40.0 96.45)"/>
+<rect x="39.4" y="94.2" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 40.0 94.8)"/>
+<rect x="37.75" y="97.5" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 38.35 98.1)"/>
+<rect x="37.75" y="95.85" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 38.35 96.45)"/>
+<rect x="37.75" y="94.2" width="1.2" height="1.2" fill="#e0e6eb" transform="rotate(-180.0 38.35 94.8)"/>
+<rect x="46.6" y="103.05" width="0.8" height="0.8" fill="#e0e6eb" transform="rotate(-180.0 47.0 103.45)"/>
+<rect x="46.6" y="89.05" width="0.8" height="0.8" fill="#e0e6eb" transform="rotate(-180.0 47.0 89.45)"/>
+<rect x="32.6" y="89.05" width="0.8" height="0.8" fill="#e0e6eb" transform="rotate(-180.0 33.0 89.45)"/>
+<rect x="32.6" y="103.05" width="0.8" height="0.8" fill="#e0e6eb" transform="rotate(-180.0 33.0 103.45)"/>
+<rect x="12.1" y="26.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 12.5 27.325)"/>
+<rect x="12.1" y="25.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 12.5 25.675)"/>
+<rect x="24.95" y="73.8" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 25.35 74.275)"/>
+<rect x="24.95" y="72.15" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 25.35 72.625)"/>
+<rect x="55.775" y="56.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 56.175 57.0)"/>
+<rect x="57.425" y="56.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 57.825 57.0)"/>
+<rect x="24.775" y="80.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 25.175 81.0)"/>
+<rect x="26.425" y="80.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 26.825 81.0)"/>
+<rect x="62.275" y="51.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 62.675 51.5)"/>
+<rect x="63.925" y="51.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 64.325 51.5)"/>
+<rect x="12.775" y="50.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 13.175 51.0)"/>
+<rect x="14.425" y="50.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 14.825 51.0)"/>
+<rect x="51.775" y="98.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 52.175 98.5)"/>
+<rect x="53.425" y="98.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 53.825 98.5)"/>
+<rect x="16.325" y="84.925" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 16.775 85.4)"/>
+<rect x="14.775" y="84.925" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 15.225 85.4)"/>
+<rect x="53.55" y="46.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 54.0 46.775)"/>
+<rect x="53.55" y="44.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 54.0 45.225)"/>
+<rect x="19.55" y="45.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.0 45.775)"/>
+<rect x="19.55" y="43.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.0 44.225)"/>
+<rect x="39.0" y="87.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 39.4 87.575)"/>
+<rect x="39.0" y="85.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 39.4 85.925)"/>
+<rect x="25.15" y="22.175" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 25.65 22.9)"/>
+<rect x="27.05" y="22.175" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 27.55 22.9)"/>
+<rect x="14.775" y="92.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 15.225 93.0)"/>
+<rect x="16.325" y="92.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 16.775 93.0)"/>
+<rect x="19.5" y="48.725" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 20.0 49.45)"/>
+<rect x="19.5" y="46.825" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 20.0 47.55)"/>
+<rect x="19.7" y="26.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.1 27.325)"/>
+<rect x="19.7" y="25.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.1 25.675)"/>
+<rect x="61.05" y="101.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 61.5 101.775)"/>
+<rect x="61.05" y="99.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 61.5 100.225)"/>
+<rect x="22.775" y="62.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 23.225 63.0)"/>
+<rect x="24.325" y="62.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 24.775 63.0)"/>
+<rect x="32.575" y="39.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 33.025 40.0)"/>
+<rect x="31.025" y="39.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 31.475 40.0)"/>
+<rect x="65.55" y="45.3" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 66.0 45.775)"/>
+<rect x="65.55" y="43.75" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 66.0 44.225)"/>
+<rect x="62.275" y="59.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 62.725 60.25)"/>
+<rect x="63.825" y="59.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 64.275 60.25)"/>
+<rect x="48.025" y="63.275" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.425 63.75)"/>
+<rect x="49.675" y="63.275" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 50.075 63.75)"/>
+<rect x="26.775" y="26.775" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 27.175 27.25)"/>
+<rect x="28.425" y="26.775" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 28.825 27.25)"/>
+<rect x="37.425" y="84.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 37.825 85.0)"/>
+<rect x="35.775" y="84.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-180.0 36.175 85.0)"/>
+<rect x="22.05" y="24.1625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 22.35 24.3)"/>
+<rect x="22.05" y="25.5625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 22.35 25.7)"/>
+<rect x="22.425" y="23.8" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 22.5375 24.125)"/>
+<rect x="22.425" y="25.55" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 22.5375 25.875)"/>
+<rect x="22.86" y="23.84" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 23.0 24.37)"/>
+<rect x="22.86" y="25.1" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 23.0 25.63)"/>
+<rect x="23.36" y="23.84" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 23.5 24.37)"/>
+<rect x="23.36" y="25.1" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 23.5 25.63)"/>
+<rect x="23.85" y="23.8" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 23.9625 24.125)"/>
+<rect x="23.85" y="25.55" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 23.9625 25.875)"/>
+<rect x="23.85" y="24.1625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 24.15 24.3)"/>
+<rect x="23.85" y="25.5625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 24.15 25.7)"/>
+<rect x="22.05" y="24.15" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 22.35 24.3)"/>
+<rect x="22.4" y="23.8" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 22.525 24.125)"/>
+<rect x="22.05" y="24.65" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 22.35 24.775)"/>
+<rect x="22.05" y="25.1" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 22.35 25.225)"/>
+<rect x="22.05" y="25.55" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 22.35 25.7)"/>
+<rect x="22.4" y="25.55" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 22.525 25.875)"/>
+<rect x="22.85" y="23.8" width="0.3" height="2.4" fill="#e0e6eb" transform="rotate(-0.0 23.0 25.0)"/>
+<rect x="23.35" y="23.8" width="0.3" height="2.4" fill="#e0e6eb" transform="rotate(-0.0 23.5 25.0)"/>
+<rect x="23.85" y="25.55" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 23.975 25.875)"/>
+<rect x="23.85" y="25.55" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 24.15 25.7)"/>
+<rect x="23.85" y="25.1" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 24.15 25.225)"/>
+<rect x="23.85" y="24.65" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 24.15 24.775)"/>
+<rect x="23.85" y="23.8" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 23.975 24.125)"/>
+<rect x="23.85" y="24.15" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 24.15 24.3)"/>
+<rect x="54.275" y="30.625" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 54.675 31.1)"/>
+<rect x="55.925" y="30.625" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 56.325 31.1)"/>
+<rect x="49.0625" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 49.8 59.8625)"/>
+<rect x="49.7125" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 50.45 59.8625)"/>
+<rect x="50.3625" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 51.1 59.8625)"/>
+<rect x="51.0125" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 51.75 59.8625)"/>
+<rect x="51.6625" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 52.4 59.8625)"/>
+<rect x="52.3125" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 53.05 59.8625)"/>
+<rect x="52.9625" y="59.6625" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 53.7 59.8625)"/>
+<rect x="52.9625" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 53.7 54.1375)"/>
+<rect x="52.3125" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 53.05 54.1375)"/>
+<rect x="51.6625" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 52.4 54.1375)"/>
+<rect x="51.0125" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 51.75 54.1375)"/>
+<rect x="50.3625" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 51.1 54.1375)"/>
+<rect x="49.7125" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 50.45 54.1375)"/>
+<rect x="49.0625" y="53.9375" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 49.8 54.1375)"/>
+<rect x="26.05" y="68.8" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 26.5 69.275)"/>
+<rect x="26.05" y="67.25" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 26.5 67.725)"/>
+<rect x="61.075" y="103.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 61.475 103.5)"/>
+<rect x="62.725" y="103.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 63.125 103.5)"/>
+<rect x="32.2" y="62.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 63.325)"/>
+<rect x="32.2" y="61.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 32.6 61.675)"/>
+<rect x="17.8" y="26.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 18.2 27.325)"/>
+<rect x="17.8" y="25.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 18.2 25.675)"/>
+<rect x="65.5" y="48.725" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 66.0 49.45)"/>
+<rect x="65.5" y="46.825" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 66.0 47.55)"/>
+<rect x="55.1" y="52.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 55.5 53.325)"/>
+<rect x="55.1" y="51.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 55.5 51.675)"/>
+<rect x="17.9" y="17.85" width="2.5" height="2.3" fill="#e0e6eb" transform="rotate(-180.0 19.15 19.0)"/>
+<rect x="13.6" y="17.85" width="2.5" height="2.3" fill="#e0e6eb" transform="rotate(-180.0 14.85 19.0)"/>
+<rect x="63.6" y="64.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 64.0 64.825)"/>
+<rect x="63.6" y="62.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 64.0 63.175)"/>
+<rect x="56.6" y="61.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 57.0 61.575)"/>
+<rect x="56.6" y="59.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 57.0 59.925)"/>
+<rect x="16.275" y="51.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 16.675 51.5)"/>
+<rect x="17.925" y="51.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 18.325 51.5)"/>
+<rect x="45.2" y="77.51" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 78.16)"/>
+<rect x="45.2" y="75.73" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 76.38)"/>
+<rect x="45.2" y="73.95" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 74.6)"/>
+<rect x="45.2" y="72.17" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 72.82)"/>
+<rect x="45.2" y="70.39" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 71.04)"/>
+<rect x="45.2" y="68.61" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 69.26)"/>
+<rect x="45.2" y="66.83" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 67.48)"/>
+<rect x="45.2" y="65.05" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 45.85 65.7)"/>
+<rect x="34.5" y="64.16" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 64.81)"/>
+<rect x="34.5" y="65.94" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 66.59)"/>
+<rect x="34.5" y="67.72" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 68.37)"/>
+<rect x="34.5" y="69.5" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 70.15)"/>
+<rect x="34.5" y="71.28" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 71.93)"/>
+<rect x="34.5" y="73.06" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 73.71)"/>
+<rect x="34.5" y="74.84" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 75.49)"/>
+<rect x="34.5" y="76.62" width="1.3" height="1.3" fill="#e0e6eb" transform="rotate(-270.0 35.15 77.27)"/>
+<rect x="30.975" y="24.175" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 31.375 24.65)"/>
+<rect x="32.625" y="24.175" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 33.025 24.65)"/>
+<rect x="50.1" y="25.1" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.5 25.575)"/>
+<rect x="50.1" y="23.45" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 50.5 23.925)"/>
+<rect x="23.8" y="29.55" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 24.25 30.025)"/>
+<rect x="23.8" y="28.0" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 24.25 28.475)"/>
+<rect x="20.8375" y="41.1625" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-90.0 21.35 41.3375)"/>
+<rect x="21.4875" y="41.1625" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-90.0 22.0 41.3375)"/>
+<rect x="22.1375" y="41.1625" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-90.0 22.65 41.3375)"/>
+<rect x="22.1375" y="39.4875" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-90.0 22.65 39.6625)"/>
+<rect x="21.4875" y="39.4875" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-90.0 22.0 39.6625)"/>
+<rect x="20.8375" y="39.4875" width="1.025" height="0.35" fill="#e0e6eb" transform="rotate(-90.0 21.35 39.6625)"/>
+<rect x="42.6" y="87.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 43.0 87.825)"/>
+<rect x="42.6" y="85.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 43.0 86.175)"/>
+<rect x="43.025" y="82.825" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 43.3375 83.0)"/>
+<rect x="43.025" y="83.325" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 43.3375 83.5)"/>
+<rect x="43.025" y="83.825" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 43.3375 84.0)"/>
+<rect x="43.025" y="84.325" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 43.3375 84.5)"/>
+<rect x="43.825" y="84.35" width="0.35" height="0.625" fill="#e0e6eb" transform="rotate(-0.0 44.0 84.6625)"/>
+<rect x="44.325" y="84.35" width="0.35" height="0.625" fill="#e0e6eb" transform="rotate(-0.0 44.5 84.6625)"/>
+<rect x="44.825" y="84.35" width="0.35" height="0.625" fill="#e0e6eb" transform="rotate(-0.0 45.0 84.6625)"/>
+<rect x="45.35" y="84.325" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 45.6625 84.5)"/>
+<rect x="45.35" y="83.825" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 45.6625 84.0)"/>
+<rect x="45.35" y="83.325" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 45.6625 83.5)"/>
+<rect x="45.35" y="82.825" width="0.625" height="0.35" fill="#e0e6eb" transform="rotate(-0.0 45.6625 83.0)"/>
+<rect x="44.825" y="82.525" width="0.35" height="0.625" fill="#e0e6eb" transform="rotate(-0.0 45.0 82.8375)"/>
+<rect x="44.325" y="82.525" width="0.35" height="0.625" fill="#e0e6eb" transform="rotate(-0.0 44.5 82.8375)"/>
+<rect x="43.825" y="82.525" width="0.35" height="0.625" fill="#e0e6eb" transform="rotate(-0.0 44.0 82.8375)"/>
+<rect x="48.55" y="85.55" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 49.0 86.025)"/>
+<rect x="48.55" y="84.0" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 49.0 84.475)"/>
+<rect x="28.025" y="69.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 28.475 70.25)"/>
+<rect x="29.575" y="69.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 30.025 70.25)"/>
+<rect x="44.6" y="87.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 45.0 87.825)"/>
+<rect x="44.6" y="85.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 45.0 86.175)"/>
+<rect x="47.575" y="70.565" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.025 71.04)"/>
+<rect x="49.125" y="70.565" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 49.575 71.04)"/>
+<rect x="47.35" y="25.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.75 26.325)"/>
+<rect x="47.35" y="24.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.75 24.675)"/>
+<rect x="58.75" y="59.175" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 59.25 59.9)"/>
+<rect x="60.65" y="59.175" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 61.15 59.9)"/>
+<rect x="16.635" y="44.28" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 17.0 44.6)"/>
+<rect x="16.635" y="45.08" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 17.0 45.4)"/>
+<rect x="15.75" y="44.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 44.25)"/>
+<rect x="15.75" y="44.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 44.75)"/>
+<rect x="15.75" y="45.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 45.25)"/>
+<rect x="15.75" y="45.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 45.75)"/>
+<rect x="17.65" y="45.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 45.75)"/>
+<rect x="17.65" y="45.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 45.25)"/>
+<rect x="17.65" y="44.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 44.75)"/>
+<rect x="17.65" y="44.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 44.25)"/>
+<rect x="16.55" y="44.2" width="0.9" height="1.6" fill="#e0e6eb" transform="rotate(-0.0 17.0 45.0)"/>
+<rect x="15.275" y="23.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 15.675 24.0)"/>
+<rect x="16.925" y="23.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 17.325 24.0)"/>
+<rect x="19.55" y="64.775" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 20.05 65.5)"/>
+<rect x="21.45" y="64.775" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-0.0 21.95 65.5)"/>
+<rect x="61.775" y="47.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 62.225 48.0)"/>
+<rect x="63.325" y="47.525" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 63.775 48.0)"/>
+<rect x="28.8" y="25.0" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 29.2 25.475)"/>
+<rect x="28.8" y="23.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 29.2 23.825)"/>
+<rect x="25.225" y="24.675" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 25.625 25.15)"/>
+<rect x="26.875" y="24.675" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 27.275 25.15)"/>
+<rect x="25.325" y="29.25" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 26.0625 29.55)"/>
+<rect x="25.325" y="31.15" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 26.0625 31.45)"/>
+<rect x="27.2" y="30.2" width="1.475" height="0.6" fill="#e0e6eb" transform="rotate(-0.0 27.9375 30.5)"/>
+<rect x="60.775" y="16.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 61.225 17.25)"/>
+<rect x="62.325" y="16.775" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 62.775 17.25)"/>
+<rect x="58.775" y="50.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 59.175 51.0)"/>
+<rect x="60.425" y="50.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 60.825 51.0)"/>
+<rect x="61.5" y="32.75" width="1.0" height="5.5" fill="#e0e6eb" transform="rotate(-0.0 62.0 35.5)"/>
+<rect x="63.5" y="32.75" width="1.0" height="5.5" fill="#e0e6eb" transform="rotate(-0.0 64.0 35.5)"/>
+<rect x="58.8" y="31.75" width="1.6" height="3.0" fill="#e0e6eb" transform="rotate(-0.0 59.6 33.25)"/>
+<rect x="65.6" y="31.75" width="1.6" height="3.0" fill="#e0e6eb" transform="rotate(-0.0 66.4 33.25)"/>
+<rect x="26.475" y="34.65" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 27.1375 34.95)"/>
+<rect x="26.475" y="33.7" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 27.1375 34.0)"/>
+<rect x="26.475" y="32.75" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 27.1375 33.05)"/>
+<rect x="24.2" y="32.75" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 24.8625 33.05)"/>
+<rect x="24.2" y="34.65" width="1.325" height="0.6" fill="#e0e6eb" transform="rotate(-180.0 24.8625 34.95)"/>
+<rect x="47.575" y="72.345" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 48.025 72.82)"/>
+<rect x="49.125" y="72.345" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 49.575 72.82)"/>
+<rect x="20.5" y="21.5" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 20.95 21.975)"/>
+<rect x="20.5" y="23.05" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 20.95 23.525)"/>
+<rect x="47.6" y="58.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 48.0 58.825)"/>
+<rect x="47.6" y="56.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 48.0 57.175)"/>
+<rect x="13.6" y="68.35" width="2.5" height="2.3" fill="#e0e6eb" transform="rotate(-0.0 14.85 69.5)"/>
+<rect x="17.9" y="68.35" width="2.5" height="2.3" fill="#e0e6eb" transform="rotate(-0.0 19.15 69.5)"/>
+<rect x="35.575" y="52.125" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 36.025 52.6)"/>
+<rect x="37.125" y="52.125" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 37.575 52.6)"/>
+<rect x="64.6" y="40.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 65.0 41.325)"/>
+<rect x="64.6" y="39.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 65.0 39.675)"/>
+<rect x="19.55" y="40.8" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.0 41.275)"/>
+<rect x="19.55" y="39.25" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 20.0 39.725)"/>
+<rect x="15.9" y="26.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 16.3 27.325)"/>
+<rect x="15.9" y="25.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 16.3 25.675)"/>
+<rect x="26.1" y="54.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 26.5 55.175)"/>
+<rect x="26.1" y="56.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 26.5 56.825)"/>
+<rect x="46.6" y="87.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.0 87.825)"/>
+<rect x="46.6" y="85.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 47.0 86.175)"/>
+<rect x="23.3125" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 24.05 43.1125)"/>
+<rect x="23.9625" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 24.7 43.1125)"/>
+<rect x="24.6125" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 25.35 43.1125)"/>
+<rect x="25.2625" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 26.0 43.1125)"/>
+<rect x="25.9125" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 26.65 43.1125)"/>
+<rect x="26.5625" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 27.3 43.1125)"/>
+<rect x="27.2125" y="42.9125" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 27.95 43.1125)"/>
+<rect x="27.2125" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 27.95 37.3875)"/>
+<rect x="26.5625" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 27.3 37.3875)"/>
+<rect x="25.9125" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 26.65 37.3875)"/>
+<rect x="25.2625" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 26.0 37.3875)"/>
+<rect x="24.6125" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 25.35 37.3875)"/>
+<rect x="23.9625" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 24.7 37.3875)"/>
+<rect x="23.3125" y="37.1875" width="1.475" height="0.4" fill="#e0e6eb" transform="rotate(-90.0 24.05 37.3875)"/>
+<rect x="52.275" y="86.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 52.675 86.5)"/>
+<rect x="53.925" y="86.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 54.325 86.5)"/>
+<rect x="49.5" y="97.725" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 50.0 98.45)"/>
+<rect x="49.5" y="95.825" width="1.0" height="1.45" fill="#e0e6eb" transform="rotate(-90.0 50.0 96.55)"/>
+<rect x="21.775" y="50.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 22.175 50.5)"/>
+<rect x="23.425" y="50.025" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 23.825 50.5)"/>
+<rect x="29.525" y="78.775" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 29.925 79.25)"/>
+<rect x="31.175" y="78.775" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 31.575 79.25)"/>
+<rect x="31.85" y="28.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 32.25 28.675)"/>
+<rect x="31.85" y="29.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-270.0 32.25 30.325)"/>
+<rect x="13.6" y="48.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.0 49.325)"/>
+<rect x="13.6" y="47.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 14.0 47.675)"/>
+<rect x="33.6" y="83.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 34.0 84.325)"/>
+<rect x="33.6" y="82.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 34.0 82.675)"/>
+<rect x="16.635" y="53.28" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 17.0 53.6)"/>
+<rect x="16.635" y="54.08" width="0.73" height="0.64" fill="#e0e6eb" transform="rotate(-0.0 17.0 54.4)"/>
+<rect x="15.75" y="53.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 53.25)"/>
+<rect x="15.75" y="53.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 53.75)"/>
+<rect x="15.75" y="54.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 54.25)"/>
+<rect x="15.75" y="54.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 16.05 54.75)"/>
+<rect x="17.65" y="54.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 54.75)"/>
+<rect x="17.65" y="54.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 54.25)"/>
+<rect x="17.65" y="53.625" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 53.75)"/>
+<rect x="17.65" y="53.125" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 17.95 53.25)"/>
+<rect x="16.55" y="53.2" width="0.9" height="1.6" fill="#e0e6eb" transform="rotate(-0.0 17.0 54.0)"/>
+<rect x="59.8" y="56.1625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 60.1 56.3)"/>
+<rect x="59.8" y="57.5625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 60.1 57.7)"/>
+<rect x="60.175" y="55.8" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 60.2875 56.125)"/>
+<rect x="60.175" y="57.55" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 60.2875 57.875)"/>
+<rect x="60.61" y="55.84" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 60.75 56.37)"/>
+<rect x="60.61" y="57.1" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 60.75 57.63)"/>
+<rect x="61.11" y="55.84" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 61.25 56.37)"/>
+<rect x="61.11" y="57.1" width="0.28" height="1.06" fill="#e0e6eb" transform="rotate(-0.0 61.25 57.63)"/>
+<rect x="61.6" y="55.8" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 61.7125 56.125)"/>
+<rect x="61.6" y="57.55" width="0.225" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 61.7125 57.875)"/>
+<rect x="61.6" y="56.1625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 61.9 56.3)"/>
+<rect x="61.6" y="57.5625" width="0.6" height="0.275" fill="#e0e6eb" transform="rotate(-0.0 61.9 57.7)"/>
+<rect x="59.8" y="56.15" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 60.1 56.3)"/>
+<rect x="60.15" y="55.8" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 60.275 56.125)"/>
+<rect x="59.8" y="56.65" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 60.1 56.775)"/>
+<rect x="59.8" y="57.1" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 60.1 57.225)"/>
+<rect x="59.8" y="57.55" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 60.1 57.7)"/>
+<rect x="60.15" y="57.55" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 60.275 57.875)"/>
+<rect x="60.6" y="55.8" width="0.3" height="2.4" fill="#e0e6eb" transform="rotate(-0.0 60.75 57.0)"/>
+<rect x="61.1" y="55.8" width="0.3" height="2.4" fill="#e0e6eb" transform="rotate(-0.0 61.25 57.0)"/>
+<rect x="61.6" y="57.55" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 61.725 57.875)"/>
+<rect x="61.6" y="57.55" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 61.9 57.7)"/>
+<rect x="61.6" y="57.1" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 61.9 57.225)"/>
+<rect x="61.6" y="56.65" width="0.6" height="0.25" fill="#e0e6eb" transform="rotate(-0.0 61.9 56.775)"/>
+<rect x="61.6" y="55.8" width="0.25" height="0.65" fill="#e0e6eb" transform="rotate(-0.0 61.725 56.125)"/>
+<rect x="61.6" y="56.15" width="0.6" height="0.3" fill="#e0e6eb" transform="rotate(-0.0 61.9 56.3)"/>
+<rect x="59.6" y="48.85" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 60.0 49.325)"/>
+<rect x="59.6" y="47.2" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 60.0 47.675)"/>
+<rect x="32.525" y="85.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 32.925 86.0)"/>
+<rect x="34.175" y="85.525" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-0.0 34.575 86.0)"/>
+<rect x="15.5" y="32.75" width="1.0" height="5.5" fill="#e0e6eb" transform="rotate(-0.0 16.0 35.5)"/>
+<rect x="17.5" y="32.75" width="1.0" height="5.5" fill="#e0e6eb" transform="rotate(-0.0 18.0 35.5)"/>
+<rect x="12.8" y="31.75" width="1.6" height="3.0" fill="#e0e6eb" transform="rotate(-0.0 13.6 33.25)"/>
+<rect x="19.6" y="31.75" width="1.6" height="3.0" fill="#e0e6eb" transform="rotate(-0.0 20.4 33.25)"/>
+<rect x="66.1" y="64.35" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 66.5 64.825)"/>
+<rect x="66.1" y="62.7" width="0.8" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 66.5 63.175)"/>
+<rect x="47.9" y="87.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 48.4 88.0)"/>
+<rect x="44.2" y="100.3" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 44.7 100.8)"/>
+<rect x="31.1" y="87.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 31.6 88.0)"/>
+<rect x="57.3" y="74.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 57.8 75.0)"/>
+<rect x="70.425" y="61.625" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 70.925 62.125)"/>
+<rect x="52.1" y="83.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 52.6 84.0)"/>
+<rect x="57.2" y="78.35" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 57.7 78.85)"/>
+<rect x="60.5" y="83.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 61.0 84.0)"/>
+<rect x="28.25" y="80.4" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 28.75 80.9)"/>
+<rect x="35.3" y="83.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 35.8 84.0)"/>
+<rect x="26.9" y="83.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 27.4 84.0)"/>
+<rect x="62.15" y="80.1" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 62.65 80.6)"/>
+<rect x="51.9697" y="95.4697" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 52.4697 95.9697)"/>
+<rect x="53.0" y="60.0" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 53.5 60.5)"/>
+<rect x="52.1" y="87.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 52.6 88.0)"/>
+<rect x="61.3" y="74.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 61.8 75.0)"/>
+<rect x="60.5" y="87.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 61.0 88.0)"/>
+<rect x="39.5" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 40.0 92.0)"/>
+<rect x="43.7" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 44.2 92.0)"/>
+<rect x="18.5" y="87.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 19.0 88.0)"/>
+<rect x="32.0" y="53.9" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 32.5 54.4)"/>
+<rect x="34.2083" y="85.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 34.7083 86.0)"/>
+<rect x="61.5" y="95.15" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 62.0 95.65)"/>
+<rect x="47.9" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 48.4 92.0)"/>
+<rect x="26.9" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 27.4 92.0)"/>
+<rect x="60.5" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 61.0 92.0)"/>
+<rect x="53.1303" y="93.3303" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 53.6303 93.8303)"/>
+<rect x="39.85" y="89.2" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 40.35 89.7)"/>
+<rect x="56.3" y="87.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 56.8 88.0)"/>
+<rect x="52.1" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 52.6 92.0)"/>
+<rect x="56.3" y="83.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 56.8 84.0)"/>
+<rect x="25.5" y="28.0" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 26.0 28.5)"/>
+<rect x="30.2553" y="95.5303" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 30.7553 96.0303)"/>
+<rect x="56.3" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 56.8 92.0)"/>
+<rect x="51.5" y="78.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 52.0 79.0)"/>
+<rect x="31.1" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 31.6 92.0)"/>
+<rect x="35.3" y="91.5" width="1.0" height="1.0" fill="#e0e6eb" transform="rotate(-180.0 35.8 92.0)"/>
+<circle cx="11.5" cy="51.65" r="0.18" fill="#d32f2f"><title>V0001 GND drill 0.2 mm R14.2@F.Cu</title></circle>
+<circle cx="11.9" cy="54.2" r="0.18" fill="#78909c"><title>V0002 BTN_M_IN1 drill 0.3 mm </title></circle>
+<circle cx="12.0" cy="87.05" r="0.18" fill="#78909c"><title>V0003 SOURCE_OK drill 0.3 mm </title></circle>
+<circle cx="12.0" cy="90.95" r="0.18" fill="#78909c"><title>V0004 GND drill 0.3 mm </title></circle>
+<circle cx="12.0" cy="95.7" r="0.18" fill="#78909c"><title>V0005 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="12.0" cy="97.65" r="0.18" fill="#78909c"><title>V0006 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="12.175" cy="22.8" r="0.18" fill="#78909c"><title>V0007 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="12.9" cy="84.55" r="0.18" fill="#78909c"><title>V0008 BTN_L_IN1 drill 0.2 mm </title></circle>
+<circle cx="12.95" cy="65.3" r="0.18" fill="#78909c"><title>V0009 BTN_L_IN1 drill 0.2 mm </title></circle>
+<circle cx="13.0" cy="40.55" r="0.18" fill="#78909c"><title>V0010 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="13.1" cy="99.6" r="0.18" fill="#78909c"><title>V0011 GND drill 0.3 mm </title></circle>
+<circle cx="13.4" cy="87.75" r="0.18" fill="#d32f2f"><title>V0012 ACT_REQ drill 0.2 mm U16.2@F.Cu</title></circle>
+<circle cx="13.5" cy="52.7" r="0.18" fill="#78909c"><title>V0013 GND drill 0.3 mm </title></circle>
+<circle cx="13.8" cy="42.5" r="0.18" fill="#78909c"><title>V0014 +3V3 drill 0.3 mm </title></circle>
+<circle cx="13.9" cy="86.45" r="0.18" fill="#78909c"><title>V0015 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="13.9" cy="99.7" r="0.18" fill="#78909c"><title>V0016 BTN_L_IN2 drill 0.3 mm </title></circle>
+<circle cx="14.0" cy="20.7" r="0.18" fill="#78909c"><title>V0017 GND drill 0.3 mm </title></circle>
+<circle cx="14.0" cy="43.3" r="0.18" fill="#78909c"><title>V0018 GND drill 0.3 mm </title></circle>
+<circle cx="14.0" cy="46.8" r="0.18" fill="#78909c"><title>V0019 GND drill 0.3 mm </title></circle>
+<circle cx="14.2" cy="102.0" r="0.18" fill="#78909c"><title>V0020 GND drill 0.3 mm </title></circle>
+<circle cx="14.4" cy="85.4" r="0.18" fill="#78909c"><title>V0021 GND drill 0.3 mm </title></circle>
+<circle cx="14.4" cy="95.5" r="0.18" fill="#78909c"><title>V0022 BTN_L_CMD1 drill 0.3 mm </title></circle>
+<circle cx="14.6" cy="63.3" r="0.18" fill="#78909c"><title>V0023 BTN_M_IN2 drill 0.3 mm </title></circle>
+<circle cx="14.7" cy="48.5" r="0.18" fill="#78909c"><title>V0024 BTN_L_IN2 drill 0.3 mm </title></circle>
+<circle cx="14.8" cy="43.199999" r="0.18" fill="#78909c"><title>V0025 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="14.9" cy="65.5" r="0.18" fill="#78909c"><title>V0026 GND drill 0.3 mm </title></circle>
+<circle cx="15.0" cy="20.7" r="0.18" fill="#78909c"><title>V0027 GND drill 0.3 mm </title></circle>
+<circle cx="15.0" cy="37.8" r="0.18" fill="#78909c"><title>V0028 BTN_L_COIL_P drill 0.3 mm </title></circle>
+<circle cx="15.0" cy="49.3" r="0.18" fill="#78909c"><title>V0029 +3V3 drill 0.3 mm </title></circle>
+<circle cx="15.1" cy="88.9" r="0.18" fill="#78909c"><title>V0030 +3V3 drill 0.3 mm </title></circle>
+<circle cx="15.3" cy="44.1" r="0.18" fill="#78909c"><title>V0031 BTN_L_ISENSE drill 0.2 mm </title></circle>
+<circle cx="15.3" cy="44.8" r="0.18" fill="#78909c"><title>V0032 BTN_L_IN2 drill 0.3 mm </title></circle>
+<circle cx="15.3" cy="55.1" r="0.18" fill="#78909c"><title>V0033 BTN_M_IN1 drill 0.3 mm </title></circle>
+<circle cx="15.65" cy="90.5" r="0.18" fill="#78909c"><title>V0034 ACT_REQ drill 0.2 mm </title></circle>
+<circle cx="15.8" cy="91.1" r="0.18" fill="#78909c"><title>V0035 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="15.95" cy="52.7" r="0.18" fill="#78909c"><title>V0036 BTN_M_ISENSE drill 0.2 mm </title></circle>
+<circle cx="16.0" cy="20.7" r="0.18" fill="#78909c"><title>V0037 GND drill 0.3 mm </title></circle>
+<circle cx="16.0" cy="84.7" r="0.18" fill="#78909c"><title>V0038 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="16.6" cy="43.449999" r="0.18" fill="#78909c"><title>V0039 GND drill 0.3 mm </title></circle>
+<circle cx="16.6" cy="46.55" r="0.18" fill="#78909c"><title>V0040 GND drill 0.3 mm </title></circle>
+<circle cx="16.6" cy="52.45" r="0.18" fill="#78909c"><title>V0041 GND drill 0.3 mm </title></circle>
+<circle cx="16.6" cy="55.55" r="0.18" fill="#78909c"><title>V0042 GND drill 0.3 mm </title></circle>
+<circle cx="17.0" cy="58.2" r="0.18" fill="#78909c"><title>V0043 BTN_M_COIL_P drill 0.3 mm </title></circle>
+<circle cx="17.2" cy="99.0" r="0.18" fill="#78909c"><title>V0044 ARM_VALID drill 0.3 mm </title></circle>
+<circle cx="17.4" cy="43.449999" r="0.18" fill="#78909c"><title>V0045 GND drill 0.3 mm </title></circle>
+<circle cx="17.4" cy="46.55" r="0.18" fill="#78909c"><title>V0046 GND drill 0.3 mm </title></circle>
+<circle cx="17.4" cy="52.45" r="0.18" fill="#78909c"><title>V0047 GND drill 0.3 mm </title></circle>
+<circle cx="17.4" cy="55.55" r="0.18" fill="#78909c"><title>V0048 GND drill 0.3 mm </title></circle>
+<circle cx="17.5" cy="103.0" r="0.18" fill="#78909c"><title>V0049 BTN_L_CMD2 drill 0.3 mm </title></circle>
+<circle cx="17.6" cy="95.0" r="0.18" fill="#78909c"><title>V0050 BTN_M_IN2 drill 0.3 mm </title></circle>
+<circle cx="17.65" cy="88.8" r="0.18" fill="#78909c"><title>V0051 CC_OUT2_INV drill 0.3 mm </title></circle>
+<circle cx="17.7" cy="93.4" r="0.18" fill="#78909c"><title>V0052 GND drill 0.3 mm </title></circle>
+<circle cx="17.7" cy="102.0" r="0.18" fill="#78909c"><title>V0053 GND drill 0.3 mm </title></circle>
+<circle cx="17.75" cy="40.35" r="0.18" fill="#78909c"><title>V0054 HALL_L drill 0.2 mm </title></circle>
+<circle cx="17.9" cy="86.3" r="0.18" fill="#78909c"><title>V0055 +3V3 drill 0.3 mm </title></circle>
+<circle cx="17.95" cy="85.65" r="0.18" fill="#78909c"><title>V0056 +3V3 drill 0.3 mm </title></circle>
+<circle cx="17.9571" cy="41.1227" r="0.18" fill="#78909c"><title>V0057 GND drill 0.2 mm </title></circle>
+<circle cx="18.0" cy="24.0" r="0.18" fill="#78909c"><title>V0058 GND drill 0.3 mm </title></circle>
+<circle cx="18.0" cy="90.3" r="0.18" fill="#d32f2f"><title>V0059 SOURCE_OK drill 0.3 mm U16.9@F.Cu</title></circle>
+<circle cx="18.6" cy="99.6" r="0.18" fill="#78909c"><title>V0060 BTN_M_IN1 drill 0.3 mm </title></circle>
+<circle cx="18.7" cy="73.0" r="0.18" fill="#78909c"><title>V0061 GND drill 0.3 mm </title></circle>
+<circle cx="18.8" cy="47.4" r="0.18" fill="#78909c"><title>V0062 GND drill 0.3 mm </title></circle>
+<circle cx="18.8" cy="49.1" r="0.18" fill="#78909c"><title>V0063 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="18.9" cy="45.05" r="0.18" fill="#78909c"><title>V0064 BTN_L_COIL_P drill 0.3 mm </title></circle>
+<circle cx="18.9" cy="54.05" r="0.18" fill="#78909c"><title>V0065 BTN_M_COIL_P drill 0.3 mm </title></circle>
+<circle cx="18.9" cy="65.5" r="0.18" fill="#78909c"><title>V0066 GND drill 0.3 mm </title></circle>
+<circle cx="18.95" cy="55.4" r="0.18" fill="#78909c"><title>V0067 +3V3 drill 0.3 mm </title></circle>
+<circle cx="19.0" cy="58.2" r="0.18" fill="#78909c"><title>V0068 BTN_M_COIL_N drill 0.3 mm </title></circle>
+<circle cx="19.05" cy="53.25" r="0.18" fill="#78909c"><title>V0069 BTN_M_COIL_N drill 0.3 mm </title></circle>
+<circle cx="19.1" cy="41.6" r="0.18" fill="#78909c"><title>V0070 +3V3 drill 0.3 mm </title></circle>
+<circle cx="19.1" cy="46.4" r="0.18" fill="#78909c"><title>V0071 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="19.2" cy="67.9" r="0.18" fill="#78909c"><title>V0072 GND drill 0.3 mm </title></circle>
+<circle cx="19.2" cy="83.05" r="0.18" fill="#78909c"><title>V0073 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="19.55" cy="77.95" r="0.18" fill="#78909c"><title>V0074 OPT_LED_P drill 0.2 mm </title></circle>
+<circle cx="19.75" cy="90.95" r="0.18" fill="#78909c"><title>V0075 SOURCE_3A drill 0.3 mm </title></circle>
+<circle cx="20.0" cy="23.525" r="0.18" fill="#78909c"><title>V0076 GND drill 0.3 mm </title></circle>
+<circle cx="20.0" cy="51.8" r="0.18" fill="#78909c"><title>V0077 GND drill 0.3 mm </title></circle>
+<circle cx="20.0" cy="88.8" r="0.18" fill="#78909c"><title>V0078 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="20.0" cy="95.7" r="0.18" fill="#78909c"><title>V0079 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="20.0" cy="97.65" r="0.18" fill="#78909c"><title>V0080 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="20.2" cy="83.4" r="0.18" fill="#78909c"><title>V0081 +3V3 drill 0.3 mm </title></circle>
+<circle cx="20.4" cy="85.6" r="0.18" fill="#78909c"><title>V0082 UART_RX drill 0.2 mm </title></circle>
+<circle cx="20.5" cy="95.1" r="0.18" fill="#78909c"><title>V0083 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="20.75" cy="55.7" r="0.18" fill="#78909c"><title>V0084 +3V3 drill 0.3 mm </title></circle>
+<circle cx="20.8" cy="42.05" r="0.18" fill="#78909c"><title>V0085 +3V3 drill 0.3 mm </title></circle>
+<circle cx="20.9" cy="43.6" r="0.18" fill="#78909c"><title>V0086 GND drill 0.3 mm </title></circle>
+<circle cx="21.05" cy="48.6" r="0.18" fill="#78909c"><title>V0087 +3V3 drill 0.3 mm </title></circle>
+<circle cx="21.1" cy="91.9" r="0.18" fill="#78909c"><title>V0088 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="21.2" cy="25.675" r="0.18" fill="#78909c"><title>V0089 GND drill 0.3 mm </title></circle>
+<circle cx="21.2" cy="102.2" r="0.18" fill="#78909c"><title>V0090 GND drill 0.3 mm </title></circle>
+<circle cx="21.3" cy="49.95" r="0.18" fill="#78909c"><title>V0091 BTN_L_ISENSE drill 0.2 mm </title></circle>
+<circle cx="21.3" cy="83.7" r="0.18" fill="#78909c"><title>V0092 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="21.35" cy="70.6" r="0.18" fill="#78909c"><title>V0093 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="21.35" cy="79.3" r="0.18" fill="#78909c"><title>V0094 SOURCE_3A drill 0.3 mm </title></circle>
+<circle cx="21.35" cy="87.25" r="0.18" fill="#78909c"><title>V0095 BOOT drill 0.2 mm </title></circle>
+<circle cx="21.4" cy="43.1" r="0.18" fill="#78909c"><title>V0096 +3V3 drill 0.2 mm </title></circle>
+<circle cx="21.4" cy="78.45" r="0.18" fill="#78909c"><title>V0097 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="21.6" cy="32.15" r="0.18" fill="#78909c"><title>V0098 ENC_3V3 drill 0.2 mm </title></circle>
+<circle cx="21.85" cy="31.5" r="0.18" fill="#78909c"><title>V0099 SOURCE_OK drill 0.3 mm </title></circle>
+<circle cx="21.85" cy="77.05" r="0.18" fill="#78909c"><title>V0100 SOURCE_OK drill 0.2 mm </title></circle>
+<circle cx="21.95" cy="44.85" r="0.18" fill="#78909c"><title>V0101 +3V3 drill 0.2 mm </title></circle>
+<circle cx="22.15" cy="22.25" r="0.18" fill="#78909c"><title>V0102 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="22.25" cy="33.15" r="0.18" fill="#78909c"><title>V0103 SOURCE_OK drill 0.3 mm </title></circle>
+<circle cx="22.4" cy="81.2" r="0.18" fill="#78909c"><title>V0104 +3V3 drill 0.3 mm </title></circle>
+<circle cx="22.45" cy="45.35" r="0.18" fill="#78909c"><title>V0105 +3V3 drill 0.2 mm </title></circle>
+<circle cx="22.5" cy="49.05" r="0.18" fill="#78909c"><title>V0106 CC_OUT2 drill 0.2 mm </title></circle>
+<circle cx="22.5" cy="69.45" r="0.18" fill="#78909c"><title>V0107 +3V3 drill 0.2 mm </title></circle>
+<circle cx="22.5" cy="76.4" r="0.18" fill="#78909c"><title>V0108 +3V3 drill 0.2 mm </title></circle>
+<circle cx="22.65" cy="29.25" r="0.18" fill="#78909c"><title>V0109 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="22.7" cy="27.45" r="0.18" fill="#78909c"><title>V0110 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="22.7" cy="57.9" r="0.18" fill="#78909c"><title>V0111 GND drill 0.2 mm </title></circle>
+<circle cx="22.75" cy="49.65" r="0.18" fill="#78909c"><title>V0112 BTN_M_ISENSE drill 0.2 mm </title></circle>
+<circle cx="22.8" cy="64.0" r="0.18" fill="#78909c"><title>V0113 +3V3 drill 0.3 mm </title></circle>
+<circle cx="22.8" cy="89.9" r="0.18" fill="#78909c"><title>V0114 CS_PAW drill 0.2 mm </title></circle>
+<circle cx="22.85" cy="84.7" r="0.18" fill="#78909c"><title>V0115 BOOT drill 0.2 mm </title></circle>
+<circle cx="22.9" cy="47.199999" r="0.18" fill="#78909c"><title>V0116 GND drill 0.3 mm </title></circle>
+<circle cx="22.9" cy="65.5" r="0.18" fill="#78909c"><title>V0117 GND drill 0.3 mm </title></circle>
+<circle cx="22.95" cy="51.65" r="0.18" fill="#78909c"><title>V0118 SOURCE_OK drill 0.2 mm </title></circle>
+<circle cx="22.95" cy="61.85" r="0.18" fill="#78909c"><title>V0119 +3V3 drill 0.2 mm </title></circle>
+<circle cx="23.0" cy="22.25" r="0.18" fill="#78909c"><title>V0120 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="23.0" cy="56.1" r="0.18" fill="#78909c"><title>V0121 BTN_M_VREF drill 0.2 mm </title></circle>
+<circle cx="23.0" cy="92.95" r="0.18" fill="#78909c"><title>V0122 BOOT drill 0.2 mm </title></circle>
+<circle cx="23.1" cy="59.9" r="0.18" fill="#78909c"><title>V0123 +3V3 drill 0.3 mm </title></circle>
+<circle cx="23.2" cy="40.35" r="0.18" fill="#78909c"><title>V0124 HALL_L drill 0.2 mm </title></circle>
+<circle cx="23.2" cy="60.8" r="0.18" fill="#78909c"><title>V0125 GND drill 0.2 mm </title></circle>
+<circle cx="23.25" cy="33.1" r="0.18" fill="#78909c"><title>V0126 GND drill 0.3 mm </title></circle>
+<circle cx="23.25" cy="41.35" r="0.18" fill="#78909c"><title>V0127 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="23.3" cy="91.1" r="0.18" fill="#78909c"><title>V0128 ACT_HEARTBEAT drill 0.2 mm </title></circle>
+<circle cx="23.4" cy="30.75" r="0.18" fill="#78909c"><title>V0129 GND drill 0.3 mm </title></circle>
+<circle cx="23.4" cy="46.15" r="0.18" fill="#d32f2f"><title>V0130 CC_OUT2 drill 0.2 mm U14.3@F.Cu</title></circle>
+<circle cx="23.5" cy="27.45" r="0.18" fill="#78909c"><title>V0131 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="23.5" cy="52.1" r="0.18" fill="#78909c"><title>V0132 GND drill 0.3 mm </title></circle>
+<circle cx="23.6" cy="89.9" r="0.18" fill="#78909c"><title>V0133 GND drill 0.2 mm </title></circle>
+<circle cx="23.65" cy="78.45" r="0.18" fill="#78909c"><title>V0134 GND drill 0.2 mm </title></circle>
+<circle cx="23.6529" cy="42.0404" r="0.18" fill="#78909c"><title>V0135 GND drill 0.2 mm </title></circle>
+<circle cx="23.75" cy="76.0" r="0.18" fill="#78909c"><title>V0136 +3V3 drill 0.2 mm </title></circle>
+<circle cx="23.85" cy="22.25" r="0.18" fill="#78909c"><title>V0137 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="24.1" cy="49.95" r="0.18" fill="#d32f2f"><title>V0138 GND drill 0.2 mm R12.2@F.Cu</title></circle>
+<circle cx="24.15" cy="83.8" r="0.18" fill="#78909c"><title>V0139 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="24.2" cy="44.35" r="0.18" fill="#78909c"><title>V0140 CC_OUT1 drill 0.3 mm </title></circle>
+<circle cx="24.3" cy="27.45" r="0.18" fill="#78909c"><title>V0141 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="24.35" cy="74.85" r="0.18" fill="#78909c"><title>V0142 SOURCE_3A drill 0.3 mm </title></circle>
+<circle cx="24.5" cy="92.1" r="0.18" fill="#78909c"><title>V0143 ACT_REQ drill 0.2 mm </title></circle>
+<circle cx="24.65" cy="85.95" r="0.18" fill="#d32f2f"><title>V0144 ACT_HEARTBEAT drill 0.2 mm R47.1@F.Cu</title></circle>
+<circle cx="24.7" cy="51.95" r="0.18" fill="#78909c"><title>V0145 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="24.7" cy="53.75" r="0.18" fill="#78909c"><title>V0146 BTN_M_VREF drill 0.2 mm </title></circle>
+<circle cx="24.7" cy="61.25" r="0.18" fill="#78909c"><title>V0147 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="24.75" cy="20.4" r="0.18" fill="#d32f2f"><title>V0148 ENC_MISO_LOCAL drill 0.2 mm J6.8@F.Cu</title></circle>
+<circle cx="24.75" cy="45.55" r="0.18" fill="#d32f2f"><title>V0149 +3V3 drill 0.2 mm U14.5@F.Cu</title></circle>
+<circle cx="24.75" cy="47.15" r="0.18" fill="#78909c"><title>V0150 SOURCE_OK drill 0.2 mm </title></circle>
+<circle cx="24.8" cy="60.0" r="0.18" fill="#78909c"><title>V0151 GND drill 0.2 mm </title></circle>
+<circle cx="24.85" cy="75.45" r="0.18" fill="#78909c"><title>V0152 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="24.85" cy="79.25" r="0.18" fill="#78909c"><title>V0153 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="24.9" cy="26.0" r="0.18" fill="#78909c"><title>V0154 GND drill 0.3 mm </title></circle>
+<circle cx="25.05" cy="78.65" r="0.18" fill="#78909c"><title>V0155 OPT_LED_P drill 0.2 mm </title></circle>
+<circle cx="25.05" cy="94.2" r="0.18" fill="#78909c"><title>V0156 CC_OUT2 drill 0.2 mm </title></circle>
+<circle cx="25.25" cy="39.45" r="0.18" fill="#78909c"><title>V0157 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="25.3" cy="26.9" r="0.18" fill="#78909c"><title>V0158 SOURCE_OK drill 0.3 mm </title></circle>
+<circle cx="25.3" cy="42.95" r="0.18" fill="#d32f2f"><title>V0159 ENC_SCLK_LOCAL drill 0.2 mm U29.3@F.Cu</title></circle>
+<circle cx="25.4" cy="70.15" r="0.18" fill="#78909c"><title>V0160 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="25.4" cy="75.1" r="0.18" fill="#78909c"><title>V0161 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="25.5" cy="20.5" r="0.18" fill="#d32f2f"><title>V0162 GND drill 0.2 mm J6.7@F.Cu</title></circle>
+<circle cx="25.6" cy="89.1" r="0.18" fill="#78909c"><title>V0163 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="25.65" cy="24.2" r="0.18" fill="#78909c"><title>V0164 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="25.75" cy="66.4" r="0.18" fill="#78909c"><title>V0165 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="25.75" cy="68.55" r="0.18" fill="#78909c"><title>V0166 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="25.75" cy="76.45" r="0.18" fill="#78909c"><title>V0167 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="25.85" cy="53.8" r="0.18" fill="#78909c"><title>V0168 +3V3 drill 0.2 mm </title></circle>
+<circle cx="25.95" cy="35.05" r="0.18" fill="#78909c"><title>V0169 +3V3 drill 0.3 mm </title></circle>
+<circle cx="25.95" cy="44.449999" r="0.18" fill="#78909c"><title>V0170 SOURCE_OK drill 0.3 mm </title></circle>
+<circle cx="26.0" cy="33.45" r="0.18" fill="#78909c"><title>V0171 GND drill 0.3 mm </title></circle>
+<circle cx="26.0" cy="43.6125" r="0.18" fill="#d32f2f"><title>V0172 GND drill 0.2 mm U29.4@F.Cu</title></circle>
+<circle cx="26.05" cy="32.2" r="0.18" fill="#78909c"><title>V0173 GND drill 0.3 mm </title></circle>
+<circle cx="26.05" cy="45.25" r="0.18" fill="#78909c"><title>V0174 +3V3 drill 0.3 mm </title></circle>
+<circle cx="26.15" cy="47.35" r="0.18" fill="#78909c"><title>V0175 CC_OUT2_INV drill 0.3 mm </title></circle>
+<circle cx="26.15" cy="86.0" r="0.18" fill="#d32f2f"><title>V0176 GND drill 0.2 mm R47.2@F.Cu</title></circle>
+<circle cx="26.2" cy="41.35" r="0.18" fill="#78909c"><title>V0177 CC_OUT1 drill 0.2 mm </title></circle>
+<circle cx="26.25" cy="40.35" r="0.18" fill="#78909c"><title>V0178 HALL_L drill 0.2 mm </title></circle>
+<circle cx="26.25" cy="50.15" r="0.18" fill="#78909c"><title>V0179 BTN_M_ISENSE drill 0.2 mm </title></circle>
+<circle cx="26.25" cy="82.0" r="0.18" fill="#78909c"><title>V0180 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="26.3" cy="59.2" r="0.18" fill="#78909c"><title>V0181 HALL_M drill 0.2 mm </title></circle>
+<circle cx="26.4" cy="49.15" r="0.18" fill="#78909c"><title>V0182 GND drill 0.2 mm </title></circle>
+<circle cx="26.45" cy="36.2" r="0.18" fill="#78909c"><title>V0183 GND drill 0.3 mm </title></circle>
+<circle cx="26.45" cy="99.5" r="0.18" fill="#78909c"><title>V0184 BTN_M_CMD1 drill 0.2 mm </title></circle>
+<circle cx="26.5" cy="95.1" r="0.18" fill="#78909c"><title>V0185 ARM_VALID drill 0.3 mm </title></circle>
+<circle cx="26.55" cy="30.35" r="0.18" fill="#78909c"><title>V0186 USB_ILM drill 0.3 mm </title></circle>
+<circle cx="26.6" cy="84.975" r="0.18" fill="#78909c"><title>V0187 +3V3 drill 0.2 mm </title></circle>
+<circle cx="26.65" cy="44.7" r="0.18" fill="#78909c"><title>V0188 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="26.7" cy="58.4" r="0.18" fill="#78909c"><title>V0189 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="26.7" cy="92.8321" r="0.18" fill="#78909c"><title>V0190 GND drill 0.2 mm </title></circle>
+<circle cx="26.8" cy="20.8" r="0.18" fill="#d32f2f"><title>V0191 ENC_CS_LOCAL drill 0.2 mm J6.6@F.Cu</title></circle>
+<circle cx="26.85" cy="35.65" r="0.18" fill="#78909c"><title>V0192 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="26.85" cy="65.25" r="0.18" fill="#78909c"><title>V0193 +3V3 drill 0.2 mm </title></circle>
+<circle cx="26.9" cy="75.3" r="0.18" fill="#d32f2f"><title>V0194 +3V3 drill 0.2 mm C77.1@F.Cu</title></circle>
+<circle cx="27.0" cy="56.25" r="0.18" fill="#78909c"><title>V0195 GND drill 0.2 mm </title></circle>
+<circle cx="27.0" cy="76.6" r="0.18" fill="#d32f2f"><title>V0196 +3V3 drill 0.2 mm C77.1@F.Cu</title></circle>
+<circle cx="27.05" cy="72.3" r="0.18" fill="#d32f2f"><title>V0197 +3V3 drill 0.2 mm U38.1@F.Cu</title></circle>
+<circle cx="27.1" cy="38.55" r="0.18" fill="#78909c"><title>V0198 ENC_3V3 drill 0.2 mm </title></circle>
+<circle cx="27.116" cy="40.85" r="0.18" fill="#78909c"><title>V0199 GND drill 0.2 mm </title></circle>
+<circle cx="27.15" cy="86.5" r="0.18" fill="#78909c"><title>V0200 ACT_REQ drill 0.2 mm </title></circle>
+<circle cx="27.2" cy="90.05" r="0.18" fill="#78909c"><title>V0201 +3V3 drill 0.2 mm </title></circle>
+<circle cx="27.25" cy="68.45" r="0.18" fill="#78909c"><title>V0202 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="27.3" cy="43.1" r="0.18" fill="#d32f2f"><title>V0203 ENC_MOSI_LOCAL drill 0.2 mm U29.6@F.Cu</title></circle>
+<circle cx="27.3" cy="51.75" r="0.18" fill="#78909c"><title>V0204 BTN_M_ISENSE drill 0.2 mm </title></circle>
+<circle cx="27.3" cy="81.85" r="0.18" fill="#78909c"><title>V0205 CS_IMU drill 0.2 mm </title></circle>
+<circle cx="27.35" cy="45.65" r="0.18" fill="#78909c"><title>V0206 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="27.4" cy="63.2" r="0.18" fill="#78909c"><title>V0207 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="27.4" cy="67.85" r="0.18" fill="#78909c"><title>V0208 GND drill 0.2 mm </title></circle>
+<circle cx="27.5" cy="20.5" r="0.18" fill="#d32f2f"><title>V0209 ENC_MOSI_LOCAL drill 0.2 mm J6.5@F.Cu</title></circle>
+<circle cx="27.5" cy="35.75" r="0.18" fill="#78909c"><title>V0210 ENC_CS_LOCAL drill 0.2 mm </title></circle>
+<circle cx="27.55" cy="23.9" r="0.18" fill="#78909c"><title>V0211 GND drill 0.3 mm </title></circle>
+<circle cx="27.55" cy="92.9" r="0.18" fill="#78909c"><title>V0212 UART_RX drill 0.2 mm </title></circle>
+<circle cx="27.7" cy="79.45" r="0.18" fill="#78909c"><title>V0213 +3V3 drill 0.2 mm </title></circle>
+<circle cx="27.7" cy="91.1" r="0.18" fill="#78909c"><title>V0214 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="27.75" cy="41.15" r="0.18" fill="#78909c"><title>V0215 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="27.75" cy="81.4" r="0.18" fill="#78909c"><title>V0216 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="27.8" cy="41.85" r="0.18" fill="#78909c"><title>V0217 SOURCE_3A drill 0.3 mm </title></circle>
+<circle cx="27.8" cy="67.15" r="0.18" fill="#78909c"><title>V0218 +3V3 drill 0.2 mm </title></circle>
+<circle cx="27.8657" cy="82.4157" r="0.18" fill="#78909c"><title>V0219 GND drill 0.2 mm </title></circle>
+<circle cx="28.2" cy="73.0" r="0.18" fill="#78909c"><title>V0220 GND drill 0.2 mm </title></circle>
+<circle cx="28.3" cy="72.05" r="0.18" fill="#78909c"><title>V0221 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="28.3" cy="74.35" r="0.18" fill="#78909c"><title>V0222 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="28.35" cy="89.4" r="0.18" fill="#78909c"><title>V0223 +3V3 drill 0.2 mm </title></circle>
+<circle cx="28.4265" cy="91.1433" r="0.18" fill="#78909c"><title>V0224 GND drill 0.2 mm </title></circle>
+<circle cx="28.5" cy="71.15" r="0.18" fill="#78909c"><title>V0225 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="28.5" cy="76.45" r="0.18" fill="#d32f2f"><title>V0226 GND drill 0.2 mm C77.2@F.Cu</title></circle>
+<circle cx="28.55" cy="92.75" r="0.18" fill="#78909c"><title>V0227 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="28.6" cy="36.15" r="0.18" fill="#78909c"><title>V0228 USB_IMON_BUF drill 0.2 mm </title></circle>
+<circle cx="28.7" cy="43.1" r="0.18" fill="#78909c"><title>V0229 GND drill 0.2 mm </title></circle>
+<circle cx="28.7" cy="48.55" r="0.18" fill="#78909c"><title>V0230 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="28.75" cy="51.6" r="0.18" fill="#78909c"><title>V0231 BTN_M_ISENSE drill 0.2 mm </title></circle>
+<circle cx="28.75" cy="80.9" r="0.18" fill="#d32f2f"><title>V0232 CS_PAW drill 0.2 mm R72.2@F.Cu;TP16.1@B.Cu</title></circle>
+<circle cx="28.75" cy="83.05" r="0.18" fill="#d32f2f"><title>V0233 +3V3 drill 0.2 mm R72.1@F.Cu</title></circle>
+<circle cx="28.85" cy="34.35" r="0.18" fill="#78909c"><title>V0234 +3V3 drill 0.3 mm </title></circle>
+<circle cx="28.95" cy="66.65" r="0.18" fill="#78909c"><title>V0235 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="29.0" cy="21.6" r="0.18" fill="#78909c"><title>V0236 GND drill 0.2 mm </title></circle>
+<circle cx="29.1" cy="84.35" r="0.18" fill="#78909c"><title>V0237 +3V3 drill 0.2 mm </title></circle>
+<circle cx="29.1" cy="87.55" r="0.18" fill="#78909c"><title>V0238 CS_IMU drill 0.2 mm </title></circle>
+<circle cx="29.15" cy="65.0" r="0.18" fill="#d32f2f"><title>V0239 GND drill 0.2 mm U36.2@F.Cu</title></circle>
+<circle cx="29.15" cy="78.0" r="0.18" fill="#78909c"><title>V0240 GND drill 0.2 mm </title></circle>
+<circle cx="29.2" cy="20.5" r="0.18" fill="#d32f2f"><title>V0241 ENC_SCLK_LOCAL drill 0.2 mm J6.3@F.Cu</title></circle>
+<circle cx="29.3" cy="86.0" r="0.18" fill="#d32f2f"><title>V0242 GND drill 0.2 mm R48.2@F.Cu</title></circle>
+<circle cx="29.4" cy="90.75" r="0.18" fill="#78909c"><title>V0243 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="29.4" cy="93.0" r="0.18" fill="#78909c"><title>V0244 PAW_MOTION_N drill 0.2 mm </title></circle>
+<circle cx="29.55" cy="51.6" r="0.18" fill="#78909c"><title>V0245 GND drill 0.2 mm </title></circle>
+<circle cx="30.0" cy="71.15" r="0.18" fill="#78909c"><title>V0246 GND drill 0.2 mm </title></circle>
+<circle cx="30.0" cy="93.2" r="0.18" fill="#78909c"><title>V0247 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="30.0" cy="101.5" r="0.18" fill="#78909c"><title>V0248 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="30.1" cy="43.4" r="0.18" fill="#78909c"><title>V0249 +3V3 drill 0.3 mm </title></circle>
+<circle cx="30.1" cy="66.849999" r="0.18" fill="#78909c"><title>V0250 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="30.2" cy="86.45" r="0.18" fill="#78909c"><title>V0251 ACT_REQ drill 0.2 mm </title></circle>
+<circle cx="30.5" cy="21.7" r="0.18" fill="#78909c"><title>V0252 GND drill 0.2 mm </title></circle>
+<circle cx="30.55" cy="34.35" r="0.18" fill="#78909c"><title>V0253 GND drill 0.3 mm </title></circle>
+<circle cx="30.55" cy="71.9" r="0.18" fill="#78909c"><title>V0254 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="30.55" cy="81.7" r="0.18" fill="#78909c"><title>V0255 BOOT drill 0.2 mm </title></circle>
+<circle cx="30.6" cy="40.0" r="0.18" fill="#78909c"><title>V0256 GND drill 0.2 mm </title></circle>
+<circle cx="30.6" cy="71.25" r="0.18" fill="#78909c"><title>V0257 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="30.7" cy="52.6" r="0.18" fill="#78909c"><title>V0258 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="30.9" cy="83.9" r="0.18" fill="#78909c"><title>V0259 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="30.95" cy="56.4" r="0.18" fill="#78909c"><title>V0260 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="31.0" cy="94.95" r="0.18" fill="#78909c"><title>V0261 CC_OUT2 drill 0.2 mm </title></circle>
+<circle cx="31.0343" cy="78.3343" r="0.18" fill="#78909c"><title>V0262 GND drill 0.2 mm </title></circle>
+<circle cx="31.15" cy="64.55" r="0.18" fill="#78909c"><title>V0263 PAW_MOTION_N drill 0.2 mm </title></circle>
+<circle cx="31.15" cy="68.4" r="0.18" fill="#78909c"><title>V0264 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="31.2" cy="61.8" r="0.18" fill="#78909c"><title>V0265 GND drill 0.2 mm </title></circle>
+<circle cx="31.3" cy="30.25" r="0.18" fill="#78909c"><title>V0266 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="31.3" cy="53.8" r="0.18" fill="#78909c"><title>V0267 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="31.3" cy="99.1" r="0.18" fill="#78909c"><title>V0268 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="31.35" cy="23.25" r="0.18" fill="#78909c"><title>V0269 ENC_3V3 drill 0.2 mm </title></circle>
+<circle cx="31.35" cy="26.4" r="0.18" fill="#78909c"><title>V0270 ENC_CS_LOCAL drill 0.2 mm </title></circle>
+<circle cx="31.35" cy="65.375" r="0.18" fill="#78909c"><title>V0271 GND drill 0.2 mm </title></circle>
+<circle cx="31.4" cy="89.0" r="0.18" fill="#78909c"><title>V0272 ACT_REQ drill 0.3 mm </title></circle>
+<circle cx="31.5" cy="27.1" r="0.18" fill="#78909c"><title>V0273 CC_OUT2 drill 0.3 mm </title></circle>
+<circle cx="31.55" cy="93.75" r="0.18" fill="#78909c"><title>V0274 PAW_MOTION_N drill 0.2 mm </title></circle>
+<circle cx="31.55" cy="96.05" r="0.18" fill="#78909c"><title>V0275 UART_TX drill 0.2 mm </title></circle>
+<circle cx="31.6" cy="78.9" r="0.18" fill="#d32f2f"><title>V0276 ADC_CS drill 0.2 mm R7.2@F.Cu</title></circle>
+<circle cx="31.65" cy="90.3" r="0.18" fill="#78909c"><title>V0277 +3V3 drill 0.2 mm </title></circle>
+<circle cx="31.65" cy="91.55" r="0.18" fill="#d32f2f"><title>V0278 PAW_MOTION_N drill 0.2 mm TP26.1@B.Cu</title></circle>
+<circle cx="31.7" cy="94.95" r="0.18" fill="#78909c"><title>V0279 ACT_PERMIT drill 0.3 mm </title></circle>
+<circle cx="31.95" cy="32.55" r="0.18" fill="#78909c"><title>V0280 GND drill 0.3 mm </title></circle>
+<circle cx="32.0" cy="88.0" r="0.18" fill="#d32f2f"><title>V0281 GND drill 0.2 mm TP15.1@B.Cu</title></circle>
+<circle cx="32.1" cy="52.5" r="0.18" fill="#78909c"><title>V0282 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="32.1" cy="99.8" r="0.18" fill="#78909c"><title>V0283 GND drill 0.3 mm </title></circle>
+<circle cx="32.1" cy="103.4" r="0.18" fill="#78909c"><title>V0284 GND drill 0.3 mm </title></circle>
+<circle cx="32.15" cy="26.45" r="0.18" fill="#78909c"><title>V0285 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="32.2" cy="93.85" r="0.18" fill="#78909c"><title>V0286 PAW_MOTION_N drill 0.2 mm </title></circle>
+<circle cx="32.25" cy="39.3" r="0.18" fill="#78909c"><title>V0287 ENC_3V3 drill 0.2 mm </title></circle>
+<circle cx="32.25" cy="90.15" r="0.18" fill="#78909c"><title>V0288 CS_ADC2 drill 0.2 mm </title></circle>
+<circle cx="32.35" cy="57.25" r="0.18" fill="#78909c"><title>V0289 GND drill 0.2 mm </title></circle>
+<circle cx="32.35" cy="83.05" r="0.18" fill="#78909c"><title>V0290 UART_RX drill 0.2 mm </title></circle>
+<circle cx="32.35" cy="102.6" r="0.18" fill="#78909c"><title>V0291 MCU_EN drill 0.2 mm </title></circle>
+<circle cx="32.4" cy="64.15" r="0.18" fill="#78909c"><title>V0292 OPT_SCLK drill 0.2 mm </title></circle>
+<circle cx="32.5" cy="53.0" r="0.18" fill="#78909c"><title>V0293 GND drill 0.2 mm </title></circle>
+<circle cx="32.6" cy="65.375" r="0.18" fill="#d32f2f"><title>V0294 OPT_SCLK drill 0.2 mm R133.2@F.Cu</title></circle>
+<circle cx="32.6" cy="69.1" r="0.18" fill="#78909c"><title>V0295 GND drill 0.2 mm </title></circle>
+<circle cx="32.65" cy="76.3" r="0.18" fill="#78909c"><title>V0296 OPT_LED_P drill 0.2 mm </title></circle>
+<circle cx="32.65" cy="95.45" r="0.18" fill="#d32f2f"><title>V0297 DRV_FAULT_N drill 0.2 mm U3.37@F.Cu</title></circle>
+<circle cx="32.799999" cy="72.4" r="0.18" fill="#78909c"><title>V0298 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="32.9" cy="60.85" r="0.18" fill="#78909c"><title>V0299 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="33.0" cy="23.25" r="0.18" fill="#78909c"><title>V0300 ENC_CS_LOCAL drill 0.2 mm </title></circle>
+<circle cx="33.0" cy="25.55" r="0.18" fill="#78909c"><title>V0301 GND drill 0.3 mm </title></circle>
+<circle cx="33.0" cy="34.35" r="0.18" fill="#78909c"><title>V0302 GND drill 0.3 mm </title></circle>
+<circle cx="33.0" cy="88.6" r="0.18" fill="#78909c"><title>V0303 GND drill 0.3 mm </title></circle>
+<circle cx="33.15" cy="69.4" r="0.18" fill="#78909c"><title>V0304 OPT_MOSI drill 0.2 mm </title></circle>
+<circle cx="33.299999" cy="22.134" r="0.18" fill="#78909c"><title>V0305 GND drill 0.2 mm </title></circle>
+<circle cx="33.35" cy="48.0" r="0.18" fill="#78909c"><title>V0306 +3V3 drill 0.3 mm </title></circle>
+<circle cx="33.4" cy="29.4" r="0.18" fill="#78909c"><title>V0307 USB_IMON_BUF drill 0.2 mm </title></circle>
+<circle cx="33.4" cy="59.1" r="0.18" fill="#78909c"><title>V0308 OPT_CS_N drill 0.2 mm </title></circle>
+<circle cx="33.549999" cy="51.65" r="0.18" fill="#78909c"><title>V0309 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="33.6375" cy="55.7" r="0.18" fill="#78909c"><title>V0310 CS_PAW drill 0.2 mm </title></circle>
+<circle cx="33.7" cy="69.0" r="0.18" fill="#78909c"><title>V0311 OPT_MISO drill 0.2 mm </title></circle>
+<circle cx="33.7" cy="70.6" r="0.18" fill="#78909c"><title>V0312 OPT_MISO drill 0.2 mm </title></circle>
+<circle cx="33.75" cy="83.5" r="0.18" fill="#78909c"><title>V0313 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="33.75" cy="85.5" r="0.18" fill="#78909c"><title>V0314 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="33.8" cy="23.0" r="0.18" fill="#d32f2f"><title>V0315 ENC_CS_LOCAL drill 0.2 mm R99.2@F.Cu</title></circle>
+<circle cx="33.8" cy="92.35" r="0.18" fill="#78909c"><title>V0316 PAW_MOTION_N drill 0.2 mm </title></circle>
+<circle cx="33.8" cy="93.35" r="0.18" fill="#78909c"><title>V0317 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="33.8" cy="100.3" r="0.18" fill="#78909c"><title>V0318 GND drill 0.3 mm </title></circle>
+<circle cx="34.0" cy="88.5" r="0.18" fill="#78909c"><title>V0319 CS_IMU drill 0.2 mm </title></circle>
+<circle cx="34.0" cy="102.6" r="0.18" fill="#78909c"><title>V0320 GND drill 0.3 mm </title></circle>
+<circle cx="34.05" cy="97.45" r="0.18" fill="#78909c"><title>V0321 BOOT drill 0.2 mm </title></circle>
+<circle cx="34.1" cy="72.15" r="0.18" fill="#78909c"><title>V0322 OPT_CS_N drill 0.2 mm </title></circle>
+<circle cx="34.1" cy="72.95" r="0.18" fill="#78909c"><title>V0323 GND drill 0.2 mm </title></circle>
+<circle cx="34.15" cy="61.8" r="0.18" fill="#78909c"><title>V0324 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="34.2" cy="29.4" r="0.18" fill="#78909c"><title>V0325 GND drill 0.2 mm </title></circle>
+<circle cx="34.25" cy="89.85" r="0.18" fill="#d32f2f"><title>V0326 WHEEL_PWM_C drill 0.2 mm U3.30@F.Cu</title></circle>
+<circle cx="34.4" cy="87.85" r="0.18" fill="#78909c"><title>V0327 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="34.55" cy="92.6" r="0.18" fill="#78909c"><title>V0328 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="34.6" cy="100.4" r="0.18" fill="#78909c"><title>V0329 BTN_L_CMD1 drill 0.3 mm </title></circle>
+<circle cx="34.6375" cy="54.65" r="0.18" fill="#d32f2f"><title>V0330 OPT_3V3 drill 0.2 mm U39.5@F.Cu</title></circle>
+<circle cx="34.65" cy="59.1" r="0.18" fill="#78909c"><title>V0331 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="34.7" cy="96.1" r="0.18" fill="#78909c"><title>V0332 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="34.8" cy="2.95" r="0.18" fill="#78909c"><title>V0333 GND drill 0.3 mm </title></circle>
+<circle cx="34.8" cy="7.13" r="0.18" fill="#78909c"><title>V0334 GND drill 0.3 mm </title></circle>
+<circle cx="34.9" cy="87.5" r="0.18" fill="#78909c"><title>V0335 MOTOR_SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="34.9" cy="102.6" r="0.18" fill="#78909c"><title>V0336 GND drill 0.3 mm </title></circle>
+<circle cx="34.95" cy="89.7" r="0.18" fill="#d32f2f"><title>V0337 MOTOR_SPI_SCLK drill 0.2 mm U3.29@F.Cu</title></circle>
+<circle cx="34.95" cy="91.3" r="0.18" fill="#78909c"><title>V0338 MOTOR_SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="35.1" cy="24.0" r="0.18" fill="#78909c"><title>V0339 CC_OUT2 drill 0.3 mm </title></circle>
+<circle cx="35.1" cy="92.85" r="0.18" fill="#78909c"><title>V0340 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="35.15" cy="62.95" r="0.18" fill="#78909c"><title>V0341 PAW_MOTION_N drill 0.2 mm </title></circle>
+<circle cx="35.2" cy="60.0" r="0.18" fill="#78909c"><title>V0342 OPT_SCLK drill 0.2 mm </title></circle>
+<circle cx="35.25" cy="58.2651" r="0.18" fill="#78909c"><title>V0343 GND drill 0.2 mm </title></circle>
+<circle cx="35.35" cy="85.0" r="0.18" fill="#78909c"><title>V0344 GND drill 0.3 mm </title></circle>
+<circle cx="35.5" cy="86.85" r="0.18" fill="#78909c"><title>V0345 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="35.7" cy="56.2" r="0.18" fill="#78909c"><title>V0346 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="35.8" cy="97.8" r="0.18" fill="#78909c"><title>V0347 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="35.8" cy="102.6" r="0.18" fill="#78909c"><title>V0348 GND drill 0.3 mm </title></circle>
+<circle cx="35.9" cy="61.65" r="0.18" fill="#78909c"><title>V0349 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="36.45" cy="24.5" r="0.18" fill="#78909c"><title>V0350 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="36.45" cy="51.65" r="0.18" fill="#78909c"><title>V0351 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="36.5" cy="25.3" r="0.18" fill="#78909c"><title>V0352 CC_OUT1 drill 0.2 mm </title></circle>
+<circle cx="36.5" cy="56.1" r="0.18" fill="#78909c"><title>V0353 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="36.5" cy="59.4" r="0.18" fill="#78909c"><title>V0354 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="36.6" cy="93.35" r="0.18" fill="#78909c"><title>V0355 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="36.6" cy="102.6" r="0.18" fill="#78909c"><title>V0356 GND drill 0.3 mm </title></circle>
+<circle cx="36.65" cy="63.05" r="0.18" fill="#78909c"><title>V0357 OPT_MISO drill 0.2 mm </title></circle>
+<circle cx="36.75" cy="9.3" r="0.18" fill="#78909c"><title>V0358 GND drill 0.3 mm </title></circle>
+<circle cx="36.8" cy="53.3" r="0.18" fill="#78909c"><title>V0359 HALL_L drill 0.2 mm </title></circle>
+<circle cx="36.8" cy="88.55" r="0.18" fill="#78909c"><title>V0360 +3V3 drill 0.3 mm </title></circle>
+<circle cx="36.85" cy="59.9" r="0.18" fill="#78909c"><title>V0361 CS_PAW drill 0.2 mm </title></circle>
+<circle cx="36.85" cy="96.35" r="0.18" fill="#78909c"><title>V0362 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="36.85" cy="97.3" r="0.18" fill="#78909c"><title>V0363 BOOT drill 0.2 mm </title></circle>
+<circle cx="37.0" cy="85.5" r="0.18" fill="#78909c"><title>V0364 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="37.0365" cy="91.5495" r="0.18" fill="#78909c"><title>V0365 GND drill 0.2 mm </title></circle>
+<circle cx="37.05" cy="84.1" r="0.18" fill="#78909c"><title>V0366 GND drill 0.2 mm </title></circle>
+<circle cx="37.35" cy="96.95" r="0.18" fill="#78909c"><title>V0367 MOTOR_SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="37.4" cy="102.6" r="0.18" fill="#78909c"><title>V0368 GND drill 0.3 mm </title></circle>
+<circle cx="37.45" cy="89.45" r="0.18" fill="#d32f2f"><title>V0369 OPT_CTRL drill 0.2 mm U3.26@F.Cu</title></circle>
+<circle cx="37.55" cy="9.7" r="0.18" fill="#78909c"><title>V0370 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="37.55" cy="10.5" r="0.18" fill="#78909c"><title>V0371 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="37.6" cy="55.65" r="0.18" fill="#d32f2f"><title>V0372 SPI_MOSI drill 0.2 mm U37.2@F.Cu</title></circle>
+<circle cx="37.65" cy="56.4" r="0.18" fill="#d32f2f"><title>V0373 OPT_MOSI drill 0.2 mm U37.3@F.Cu</title></circle>
+<circle cx="37.65" cy="59.55" r="0.18" fill="#78909c"><title>V0374 GND drill 0.2 mm </title></circle>
+<circle cx="37.75" cy="62.95" r="0.18" fill="#78909c"><title>V0375 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="37.8" cy="88.7" r="0.18" fill="#78909c"><title>V0376 CS_IMU drill 0.2 mm </title></circle>
+<circle cx="37.95" cy="91.15" r="0.18" fill="#78909c"><title>V0377 ACT_HEARTBEAT drill 0.2 mm </title></circle>
+<circle cx="38.175" cy="85.2" r="0.18" fill="#d32f2f"><title>V0378 WHEEL_RUN_REQ drill 0.2 mm R77.1@F.Cu</title></circle>
+<circle cx="38.2" cy="55.7" r="0.18" fill="#d32f2f"><title>V0379 SPI_MOSI drill 0.2 mm U37.2@F.Cu</title></circle>
+<circle cx="38.2" cy="57.0" r="0.18" fill="#d32f2f"><title>V0380 CS_PAW drill 0.2 mm U37.4@F.Cu</title></circle>
+<circle cx="38.3" cy="102.6" r="0.18" fill="#78909c"><title>V0381 GND drill 0.3 mm </title></circle>
+<circle cx="38.35" cy="10.0" r="0.18" fill="#78909c"><title>V0382 USB_CC2 drill 0.2 mm </title></circle>
+<circle cx="38.35" cy="93.3" r="0.18" fill="#78909c"><title>V0383 GND drill 0.3 mm </title></circle>
+<circle cx="38.45" cy="52.4" r="0.18" fill="#78909c"><title>V0384 GND drill 0.2 mm </title></circle>
+<circle cx="38.7" cy="57.4" r="0.18" fill="#78909c"><title>V0385 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="38.8" cy="99.6" r="0.18" fill="#78909c"><title>V0386 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="38.8655" cy="97.825" r="0.18" fill="#d32f2f"><title>V0387 GND drill 0.2 mm U3.61@F.Cu</title></circle>
+<circle cx="38.9" cy="63.05" r="0.18" fill="#78909c"><title>V0388 GND drill 0.2 mm </title></circle>
+<circle cx="39.15" cy="92.7" r="0.18" fill="#78909c"><title>V0389 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="39.2" cy="102.6" r="0.18" fill="#78909c"><title>V0390 GND drill 0.3 mm </title></circle>
+<circle cx="39.3" cy="60.1" r="0.18" fill="#78909c"><title>V0391 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="39.6" cy="81.2" r="0.18" fill="#78909c"><title>V0392 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="39.75" cy="54.45" r="0.18" fill="#78909c"><title>V0393 HALL_M drill 0.2 mm </title></circle>
+<circle cx="40.0" cy="24.575" r="0.18" fill="#d32f2f"><title>V0394 GND drill 0.2 mm U1.3@F.Cu</title></circle>
+<circle cx="40.0" cy="102.6" r="0.18" fill="#78909c"><title>V0395 GND drill 0.3 mm </title></circle>
+<circle cx="40.15" cy="55.3" r="0.18" fill="#78909c"><title>V0396 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="40.15" cy="62.05" r="0.18" fill="#78909c"><title>V0397 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="40.15" cy="86.9" r="0.18" fill="#78909c"><title>V0398 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="40.3882" cy="63.0563" r="0.18" fill="#78909c"><title>V0399 GND drill 0.2 mm </title></circle>
+<circle cx="40.4495" cy="56.4135" r="0.18" fill="#78909c"><title>V0400 GND drill 0.2 mm </title></circle>
+<circle cx="40.7" cy="82.6" r="0.18" fill="#78909c"><title>V0401 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="40.8" cy="102.6" r="0.18" fill="#78909c"><title>V0402 GND drill 0.3 mm </title></circle>
+<circle cx="41.1" cy="60.4" r="0.18" fill="#78909c"><title>V0403 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="41.2" cy="61.6" r="0.18" fill="#78909c"><title>V0404 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="41.5" cy="88.65" r="0.18" fill="#78909c"><title>V0405 SENS_REQ drill 0.2 mm </title></circle>
+<circle cx="41.5322" cy="56.5822" r="0.18" fill="#78909c"><title>V0406 GND drill 0.2 mm </title></circle>
+<circle cx="41.7" cy="89.75" r="0.18" fill="#d32f2f"><title>V0407 ACT_HEARTBEAT drill 0.2 mm U3.21@F.Cu</title></circle>
+<circle cx="41.7" cy="102.6" r="0.18" fill="#78909c"><title>V0408 GND drill 0.3 mm </title></circle>
+<circle cx="41.75" cy="24.7" r="0.18" fill="#78909c"><title>V0409 GND drill 0.2 mm </title></circle>
+<circle cx="41.75" cy="82.975" r="0.18" fill="#d32f2f"><title>V0410 GND drill 0.2 mm C72.2@F.Cu</title></circle>
+<circle cx="41.75" cy="90.75" r="0.18" fill="#78909c"><title>V0411 CC_OUT2 drill 0.2 mm </title></circle>
+<circle cx="41.85" cy="52.35" r="0.18" fill="#78909c"><title>V0412 HALL_L drill 0.2 mm </title></circle>
+<circle cx="41.85" cy="58.35" r="0.18" fill="#78909c"><title>V0413 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="42.0" cy="60.7" r="0.18" fill="#78909c"><title>V0414 DRV_FAULT_N drill 0.2 mm </title></circle>
+<circle cx="42.15" cy="57.8" r="0.18" fill="#78909c"><title>V0415 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="42.15" cy="86.75" r="0.18" fill="#78909c"><title>V0416 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="42.25" cy="55.4" r="0.18" fill="#78909c"><title>V0417 GND drill 0.2 mm </title></circle>
+<circle cx="42.35" cy="62.9" r="0.18" fill="#78909c"><title>V0418 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="42.45" cy="9.7" r="0.18" fill="#78909c"><title>V0419 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="42.45" cy="10.5" r="0.18" fill="#78909c"><title>V0420 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="42.45" cy="89.6" r="0.18" fill="#d32f2f"><title>V0421 ACT_REQ drill 0.2 mm U3.20@F.Cu</title></circle>
+<circle cx="42.5" cy="102.6" r="0.18" fill="#78909c"><title>V0422 GND drill 0.3 mm </title></circle>
+<circle cx="42.55" cy="83.8" r="0.18" fill="#78909c"><title>V0423 +3V3 drill 0.3 mm </title></circle>
+<circle cx="42.65" cy="61.35" r="0.18" fill="#78909c"><title>V0424 CS_MA735 drill 0.2 mm </title></circle>
+<circle cx="42.65" cy="84.75" r="0.18" fill="#78909c"><title>V0425 IMU_INT1 drill 0.2 mm </title></circle>
+<circle cx="42.9" cy="94.45" r="0.18" fill="#78909c"><title>V0426 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="43.0" cy="24.7" r="0.18" fill="#78909c"><title>V0427 RGB_DIN drill 0.2 mm </title></circle>
+<circle cx="43.0" cy="85.375" r="0.18" fill="#78909c"><title>V0428 GND drill 0.2 mm </title></circle>
+<circle cx="43.0" cy="87.85" r="0.18" fill="#d32f2f"><title>V0429 RGB_DATA drill 0.2 mm R78.1@F.Cu</title></circle>
+<circle cx="43.0" cy="97.6" r="0.18" fill="#78909c"><title>V0430 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="43.05" cy="52.35" r="0.18" fill="#78909c"><title>V0431 HALL_M drill 0.2 mm </title></circle>
+<circle cx="43.05" cy="96.0" r="0.18" fill="#78909c"><title>V0432 CS_PAW drill 0.2 mm </title></circle>
+<circle cx="43.15" cy="59.65" r="0.18" fill="#78909c"><title>V0433 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="43.15" cy="62.9" r="0.18" fill="#78909c"><title>V0434 GND drill 0.2 mm </title></circle>
+<circle cx="43.2" cy="99.25" r="0.18" fill="#78909c"><title>V0435 MOTOR_SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="43.25" cy="9.3" r="0.18" fill="#78909c"><title>V0436 GND drill 0.3 mm </title></circle>
+<circle cx="43.3" cy="58.35" r="0.18" fill="#d32f2f"><title>V0437 OPT_MISO drill 0.2 mm U37.9@F.Cu</title></circle>
+<circle cx="43.35" cy="57.65" r="0.18" fill="#d32f2f"><title>V0438 CS_PAW drill 0.2 mm U37.10@F.Cu</title></circle>
+<circle cx="43.4" cy="102.6" r="0.18" fill="#78909c"><title>V0439 GND drill 0.3 mm </title></circle>
+<circle cx="43.45" cy="51.6572" r="0.18" fill="#78909c"><title>V0440 GND drill 0.2 mm </title></circle>
+<circle cx="43.6" cy="95.6" r="0.18" fill="#78909c"><title>V0441 BTN_L_CMD2 drill 0.3 mm </title></circle>
+<circle cx="43.6" cy="99.9428" r="0.18" fill="#78909c"><title>V0442 GND drill 0.2 mm </title></circle>
+<circle cx="43.8" cy="85.1625" r="0.18" fill="#78909c"><title>V0443 +3V3 drill 0.2 mm </title></circle>
+<circle cx="43.85" cy="94.5" r="0.18" fill="#78909c"><title>V0444 CS_PAW drill 0.2 mm </title></circle>
+<circle cx="43.95" cy="60.85" r="0.18" fill="#78909c"><title>V0445 ACT_5V drill 0.2 mm </title></circle>
+<circle cx="44.05" cy="89.85" r="0.18" fill="#d32f2f"><title>V0446 CC_OUT1 drill 0.2 mm U3.18@F.Cu</title></circle>
+<circle cx="44.1" cy="83.75" r="0.18" fill="#78909c"><title>V0447 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="44.199999" cy="102.6" r="0.18" fill="#78909c"><title>V0448 GND drill 0.3 mm </title></circle>
+<circle cx="44.2" cy="92.0" r="0.18" fill="#d32f2f"><title>V0449 WHEEL_PWM_A drill 0.2 mm TP29.1@B.Cu</title></circle>
+<circle cx="44.3" cy="24.7" r="0.18" fill="#78909c"><title>V0450 GND drill 0.2 mm </title></circle>
+<circle cx="44.35" cy="85.8" r="0.18" fill="#78909c"><title>V0451 GND drill 0.2 mm </title></circle>
+<circle cx="44.65" cy="94.5" r="0.18" fill="#78909c"><title>V0452 GND drill 0.2 mm </title></circle>
+<circle cx="44.7" cy="82.0375" r="0.18" fill="#78909c"><title>V0453 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="44.7" cy="83.95" r="0.18" fill="#78909c"><title>V0454 CS_IMU drill 0.2 mm </title></circle>
+<circle cx="44.85" cy="90.4" r="0.18" fill="#78909c"><title>V0455 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="45.0" cy="57.2" r="0.18" fill="#78909c"><title>V0456 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="45.0" cy="96.4" r="0.18" fill="#78909c"><title>V0457 BTN_L_CMD1 drill 0.3 mm </title></circle>
+<circle cx="45.1" cy="102.6" r="0.18" fill="#78909c"><title>V0458 GND drill 0.3 mm </title></circle>
+<circle cx="45.1343" cy="80.2157" r="0.18" fill="#78909c"><title>V0459 GND drill 0.2 mm </title></circle>
+<circle cx="45.15" cy="86.85" r="0.18" fill="#78909c"><title>V0460 GND drill 0.2 mm </title></circle>
+<circle cx="45.2" cy="2.95" r="0.18" fill="#78909c"><title>V0461 GND drill 0.3 mm </title></circle>
+<circle cx="45.2" cy="7.13" r="0.18" fill="#78909c"><title>V0462 GND drill 0.3 mm </title></circle>
+<circle cx="45.4" cy="93.8" r="0.18" fill="#78909c"><title>V0463 ACT_HEARTBEAT drill 0.2 mm </title></circle>
+<circle cx="45.55" cy="97.7" r="0.18" fill="#78909c"><title>V0464 CS_PAW drill 0.2 mm </title></circle>
+<circle cx="45.6" cy="60.35" r="0.18" fill="#78909c"><title>V0465 GND drill 0.2 mm </title></circle>
+<circle cx="45.7" cy="79.65" r="0.18" fill="#78909c"><title>V0466 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="45.75" cy="84.6" r="0.18" fill="#d32f2f"><title>V0467 +3V3 drill 0.2 mm U32.8@F.Cu</title></circle>
+<circle cx="45.85" cy="24.65" r="0.18" fill="#78909c"><title>V0468 RGB_DIN drill 0.2 mm </title></circle>
+<circle cx="45.85" cy="101.4" r="0.18" fill="#78909c"><title>V0469 BOOT_SAFE_SPARE drill 0.2 mm </title></circle>
+<circle cx="45.9" cy="102.6" r="0.18" fill="#78909c"><title>V0470 GND drill 0.3 mm </title></circle>
+<circle cx="45.95" cy="88.65" r="0.18" fill="#78909c"><title>V0471 WHEEL_PWM_C drill 0.2 mm </title></circle>
+<circle cx="45.95" cy="98.3928" r="0.18" fill="#78909c"><title>V0472 GND drill 0.2 mm </title></circle>
+<circle cx="46.1" cy="91.8" r="0.18" fill="#78909c"><title>V0473 RGB_DATA drill 0.2 mm </title></circle>
+<circle cx="46.1" cy="93.9" r="0.18" fill="#78909c"><title>V0474 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="46.1" cy="95.6" r="0.18" fill="#78909c"><title>V0475 BTN_L_CMD2 drill 0.3 mm </title></circle>
+<circle cx="46.1" cy="96.4" r="0.18" fill="#78909c"><title>V0476 BTN_L_CMD1 drill 0.3 mm </title></circle>
+<circle cx="46.15" cy="89.45" r="0.18" fill="#d32f2f"><title>V0477 SPI_SCLK drill 0.2 mm U3.16@F.Cu</title></circle>
+<circle cx="46.15" cy="90.55" r="0.18" fill="#78909c"><title>V0478 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="46.199999" cy="102.0" r="0.18" fill="#78909c"><title>V0479 GND drill 0.3 mm </title></circle>
+<circle cx="46.2" cy="91.2" r="0.18" fill="#78909c"><title>V0480 ACT_DRIVE_EN drill 0.2 mm </title></circle>
+<circle cx="46.2" cy="92.4" r="0.18" fill="#78909c"><title>V0481 MOTOR_SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="46.2" cy="100.8" r="0.18" fill="#78909c"><title>V0482 BOOT drill 0.2 mm </title></circle>
+<circle cx="46.3" cy="59.0" r="0.18" fill="#78909c"><title>V0483 SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="46.3" cy="60.5" r="0.18" fill="#78909c"><title>V0484 +3V3 drill 0.2 mm </title></circle>
+<circle cx="46.35" cy="83.25" r="0.18" fill="#78909c"><title>V0485 MOTOR_SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="46.35" cy="85.05" r="0.18" fill="#78909c"><title>V0486 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="46.35" cy="97.1" r="0.18" fill="#78909c"><title>V0487 WHEEL_RUN_REQ drill 0.2 mm </title></circle>
+<circle cx="46.4" cy="55.7" r="0.18" fill="#78909c"><title>V0488 +3V3 drill 0.3 mm </title></circle>
+<circle cx="46.5" cy="24.7" r="0.18" fill="#78909c"><title>V0489 RGB_5V drill 0.2 mm </title></circle>
+<circle cx="46.5" cy="94.95" r="0.18" fill="#78909c"><title>V0490 BTN_M_CMD1 drill 0.2 mm </title></circle>
+<circle cx="46.6" cy="46.775" r="0.18" fill="#d32f2f"><title>V0491 +3V3 drill 0.2 mm C19.1@F.Cu</title></circle>
+<circle cx="46.6" cy="47.35" r="0.18" fill="#78909c"><title>V0492 +3V3 drill 0.2 mm </title></circle>
+<circle cx="46.6" cy="49.95" r="0.18" fill="#78909c"><title>V0493 BTN_M_ISENSE drill 0.2 mm </title></circle>
+<circle cx="46.7" cy="80.9" r="0.18" fill="#78909c"><title>V0494 CS_ADC2 drill 0.2 mm </title></circle>
+<circle cx="46.75" cy="57.8" r="0.18" fill="#78909c"><title>V0495 ACT_5V drill 0.2 mm </title></circle>
+<circle cx="46.75" cy="84.5" r="0.18" fill="#d32f2f"><title>V0496 +3V3 drill 0.2 mm C70.1@F.Cu</title></circle>
+<circle cx="46.95" cy="23.5" r="0.18" fill="#78909c"><title>V0497 RGB_DIN drill 0.2 mm </title></circle>
+<circle cx="47.0" cy="28.65" r="0.18" fill="#d32f2f"><title>V0498 GND drill 0.2 mm R130.2@F.Cu</title></circle>
+<circle cx="47.0" cy="30.3" r="0.18" fill="#d32f2f"><title>V0499 RGB_5V drill 0.2 mm R130.1@F.Cu</title></circle>
+<circle cx="47.0" cy="44.35" r="0.18" fill="#78909c"><title>V0500 GND drill 0.2 mm </title></circle>
+<circle cx="47.0" cy="85.525" r="0.18" fill="#78909c"><title>V0501 GND drill 0.2 mm </title></circle>
+<circle cx="47.0" cy="90.5" r="0.18" fill="#d32f2f"><title>V0502 SPI_MOSI drill 0.2 mm U3.15@F.Cu</title></circle>
+<circle cx="47.0" cy="93.05" r="0.18" fill="#d32f2f"><title>V0503 BTN_R_CMD1 drill 0.2 mm U3.12@F.Cu</title></circle>
+<circle cx="47.05" cy="17.35" r="0.18" fill="#d32f2f"><title>V0504 RGB_5V drill 0.2 mm U33.5@F.Cu</title></circle>
+<circle cx="47.05" cy="22.0" r="0.18" fill="#d32f2f"><title>V0505 PWR_5V drill 0.2 mm C73.1@F.Cu</title></circle>
+<circle cx="47.1" cy="49.45" r="0.18" fill="#78909c"><title>V0506 HALL_M drill 0.2 mm </title></circle>
+<circle cx="47.25" cy="55.7" r="0.18" fill="#78909c"><title>V0507 GND drill 0.2 mm </title></circle>
+<circle cx="47.3" cy="74.6" r="0.18" fill="#78909c"><title>V0508 OPT_VDDPIX drill 0.2 mm </title></circle>
+<circle cx="47.3" cy="88.2" r="0.18" fill="#d32f2f"><title>V0509 BOOT_SAFE_SPARE drill 0.2 mm R80.1@F.Cu</title></circle>
+<circle cx="47.4" cy="61.7" r="0.18" fill="#78909c"><title>V0510 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="47.6" cy="48.5" r="0.18" fill="#78909c"><title>V0511 +3V3 drill 0.2 mm </title></circle>
+<circle cx="47.6" cy="60.35" r="0.18" fill="#78909c"><title>V0512 MOTOR_SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="47.6" cy="82.1" r="0.18" fill="#78909c"><title>V0513 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="47.65" cy="67.616" r="0.18" fill="#78909c"><title>V0514 GND drill 0.2 mm </title></circle>
+<circle cx="47.65" cy="71.95" r="0.18" fill="#78909c"><title>V0515 GND drill 0.2 mm </title></circle>
+<circle cx="47.7" cy="44.45" r="0.18" fill="#78909c"><title>V0516 USB_IMON_ADC drill 0.2 mm </title></circle>
+<circle cx="47.75" cy="24.7" r="0.18" fill="#d32f2f"><title>V0517 GND drill 0.2 mm R129.2@F.Cu</title></circle>
+<circle cx="47.8" cy="20.8" r="0.18" fill="#78909c"><title>V0518 HALL_EN drill 0.3 mm </title></circle>
+<circle cx="47.9" cy="89.4" r="0.18" fill="#78909c"><title>V0519 GND drill 0.3 mm </title></circle>
+<circle cx="47.9" cy="103.4" r="0.18" fill="#78909c"><title>V0520 GND drill 0.3 mm </title></circle>
+<circle cx="47.95" cy="28.325" r="0.18" fill="#78909c"><title>V0521 RGB_DIN drill 0.2 mm </title></circle>
+<circle cx="48.1" cy="84.15" r="0.18" fill="#78909c"><title>V0522 +3V3 drill 0.2 mm </title></circle>
+<circle cx="48.1" cy="95.1" r="0.18" fill="#78909c"><title>V0523 +3V3 drill 0.3 mm </title></circle>
+<circle cx="48.15" cy="66.75" r="0.18" fill="#78909c"><title>V0524 OPT_RESET_N drill 0.2 mm </title></circle>
+<circle cx="48.2" cy="47.55" r="0.18" fill="#78909c"><title>V0525 USB_IMON_ADC drill 0.2 mm </title></circle>
+<circle cx="48.2" cy="81.05" r="0.18" fill="#78909c"><title>V0526 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="48.25" cy="17.0" r="0.18" fill="#78909c"><title>V0527 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="48.25" cy="18.8" r="0.18" fill="#78909c"><title>V0528 GND drill 0.2 mm </title></circle>
+<circle cx="48.3" cy="48.2" r="0.18" fill="#78909c"><title>V0529 +3V3 drill 0.2 mm </title></circle>
+<circle cx="48.35" cy="98.55" r="0.18" fill="#78909c"><title>V0530 VBUS_PRESENT_N drill 0.3 mm </title></circle>
+<circle cx="48.45" cy="22.35" r="0.18" fill="#d32f2f"><title>V0531 GND drill 0.2 mm C73.2@F.Cu</title></circle>
+<circle cx="48.45" cy="79.9" r="0.18" fill="#78909c"><title>V0532 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="48.6" cy="96.9" r="0.18" fill="#78909c"><title>V0533 BTN_M_CMD2 drill 0.3 mm </title></circle>
+<circle cx="48.65" cy="41.6" r="0.18" fill="#78909c"><title>V0534 USB_IMON_ADC drill 0.2 mm </title></circle>
+<circle cx="48.65" cy="63.75" r="0.18" fill="#d32f2f"><title>V0535 ENC_MISO_LOCAL drill 0.2 mm R101.1@F.Cu</title></circle>
+<circle cx="48.7" cy="25.2" r="0.18" fill="#78909c"><title>V0536 VBUS_USB drill 0.3 mm </title></circle>
+<circle cx="48.7" cy="28.55" r="0.18" fill="#d32f2f"><title>V0537 RGB_5V drill 0.2 mm TP38.1@F.Cu</title></circle>
+<circle cx="48.7" cy="81.6" r="0.18" fill="#78909c"><title>V0538 WHEEL_RUN_REQ drill 0.3 mm </title></circle>
+<circle cx="48.75" cy="55.5" r="0.18" fill="#78909c"><title>V0539 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="48.75" cy="90.15" r="0.18" fill="#78909c"><title>V0540 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="48.75" cy="95.3" r="0.18" fill="#78909c"><title>V0541 ACT_HEARTBEAT drill 0.2 mm </title></circle>
+<circle cx="48.8" cy="85.35" r="0.18" fill="#78909c"><title>V0542 +3V3 drill 0.2 mm </title></circle>
+<circle cx="48.85" cy="49.7" r="0.18" fill="#78909c"><title>V0543 GND drill 0.2 mm </title></circle>
+<circle cx="48.85" cy="56.7" r="0.18" fill="#78909c"><title>V0544 +3V3 drill 0.2 mm </title></circle>
+<circle cx="48.9" cy="57.7" r="0.18" fill="#78909c"><title>V0545 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="48.9" cy="61.85" r="0.18" fill="#78909c"><title>V0546 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="48.9" cy="103.95" r="0.18" fill="#78909c"><title>V0547 MCU_EN drill 0.2 mm </title></circle>
+<circle cx="49.0" cy="53.0" r="0.18" fill="#78909c"><title>V0548 GND drill 0.3 mm </title></circle>
+<circle cx="49.0" cy="100.2" r="0.18" fill="#78909c"><title>V0549 GND drill 0.3 mm </title></circle>
+<circle cx="49.2" cy="47.25" r="0.18" fill="#78909c"><title>V0550 BTN_R_ISENSE drill 0.2 mm </title></circle>
+<circle cx="49.2227" cy="80.1071" r="0.18" fill="#78909c"><title>V0551 GND drill 0.2 mm </title></circle>
+<circle cx="49.25" cy="23.65" r="0.18" fill="#78909c"><title>V0552 RGB_BUFFER_OUT drill 0.2 mm </title></circle>
+<circle cx="49.25" cy="28.35" r="0.18" fill="#d32f2f"><title>V0553 RGB_5V drill 0.2 mm TP38.1@F.Cu</title></circle>
+<circle cx="49.25" cy="58.75" r="0.18" fill="#78909c"><title>V0554 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="49.3" cy="31.85" r="0.18" fill="#78909c"><title>V0555 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="49.4" cy="95.1" r="0.18" fill="#78909c"><title>V0556 +3V3 drill 0.3 mm </title></circle>
+<circle cx="49.45" cy="86.5" r="0.18" fill="#d32f2f"><title>V0557 +3V3 drill 0.2 mm C71.1@F.Cu</title></circle>
+<circle cx="49.5" cy="62.75" r="0.18" fill="#78909c"><title>V0558 +3V3 drill 0.2 mm </title></circle>
+<circle cx="49.6" cy="83.05" r="0.18" fill="#78909c"><title>V0559 IMU_PIN9 drill 0.2 mm </title></circle>
+<circle cx="49.65" cy="41.4" r="0.18" fill="#78909c"><title>V0560 USB_IMON_ADC drill 0.2 mm </title></circle>
+<circle cx="49.7" cy="85.25" r="0.18" fill="#78909c"><title>V0561 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="49.8" cy="48.6" r="0.18" fill="#78909c"><title>V0562 +3V3 drill 0.2 mm </title></circle>
+<circle cx="49.8" cy="92.55" r="0.18" fill="#78909c"><title>V0563 GND drill 0.3 mm </title></circle>
+<circle cx="49.8323" cy="56.5767" r="0.18" fill="#78909c"><title>V0564 GND drill 0.2 mm </title></circle>
+<circle cx="49.85" cy="75.5" r="0.18" fill="#78909c"><title>V0565 GND drill 0.2 mm </title></circle>
+<circle cx="49.9" cy="20.35" r="0.18" fill="#78909c"><title>V0566 USB_CC2 drill 0.2 mm </title></circle>
+<circle cx="49.9" cy="65.349999" r="0.18" fill="#78909c"><title>V0567 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="50.0" cy="43.75" r="0.18" fill="#78909c"><title>V0568 HALL_L drill 0.2 mm </title></circle>
+<circle cx="50.0" cy="83.75" r="0.18" fill="#78909c"><title>V0569 +3V3 drill 0.2 mm </title></circle>
+<circle cx="50.0" cy="95.6" r="0.18" fill="#78909c"><title>V0570 GND drill 0.3 mm </title></circle>
+<circle cx="50.1" cy="61.35" r="0.18" fill="#78909c"><title>V0571 OPT_RESET_N drill 0.2 mm </title></circle>
+<circle cx="50.1" cy="64.7" r="0.18" fill="#78909c"><title>V0572 GND drill 0.3 mm </title></circle>
+<circle cx="50.15" cy="98.35" r="0.18" fill="#d32f2f"><title>V0573 +3V3 drill 0.2 mm C5.1@F.Cu</title></circle>
+<circle cx="50.2" cy="69.4" r="0.18" fill="#78909c"><title>V0574 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="50.2" cy="91.75" r="0.18" fill="#78909c"><title>V0575 SENS_REQ drill 0.3 mm </title></circle>
+<circle cx="50.25" cy="21.35" r="0.18" fill="#d32f2f"><title>V0576 RGB_5V drill 0.2 mm C74.1@F.Cu</title></circle>
+<circle cx="50.25" cy="23.15" r="0.18" fill="#78909c"><title>V0577 RGB_DIN drill 0.2 mm </title></circle>
+<circle cx="50.4" cy="52.9" r="0.18" fill="#78909c"><title>V0578 GND drill 0.3 mm </title></circle>
+<circle cx="50.45" cy="41.4" r="0.18" fill="#78909c"><title>V0579 GND drill 0.2 mm </title></circle>
+<circle cx="50.45" cy="43.3" r="0.18" fill="#78909c"><title>V0580 HALL_M drill 0.2 mm </title></circle>
+<circle cx="50.45" cy="71.05" r="0.18" fill="#78909c"><title>V0581 GND drill 0.2 mm </title></circle>
+<circle cx="50.45" cy="76.4" r="0.18" fill="#78909c"><title>V0582 GND drill 0.2 mm </title></circle>
+<circle cx="50.5" cy="46.0" r="0.18" fill="#d32f2f"><title>V0583 GND drill 0.2 mm U10.17@F.Cu</title></circle>
+<circle cx="50.5" cy="62.0428" r="0.18" fill="#78909c"><title>V0584 GND drill 0.2 mm </title></circle>
+<circle cx="50.55" cy="74.8" r="0.18" fill="#78909c"><title>V0585 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="50.55" cy="75.45" r="0.18" fill="#78909c"><title>V0586 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="50.55" cy="78.55" r="0.18" fill="#78909c"><title>V0587 OPT_VDDPIX drill 0.2 mm </title></circle>
+<circle cx="50.75" cy="48.1075" r="0.18" fill="#78909c"><title>V0588 +3V3 drill 0.2 mm </title></circle>
+<circle cx="50.75" cy="83.6" r="0.18" fill="#78909c"><title>V0589 GND drill 0.2 mm </title></circle>
+<circle cx="50.85" cy="70.4" r="0.18" fill="#78909c"><title>V0590 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="50.9" cy="21.35" r="0.18" fill="#78909c"><title>V0591 RGB_5V drill 0.2 mm </title></circle>
+<circle cx="50.95" cy="64.15" r="0.18" fill="#78909c"><title>V0592 ENC_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="50.95" cy="92.7" r="0.18" fill="#78909c"><title>V0593 BTN_R_CMD1 drill 0.2 mm </title></circle>
+<circle cx="51.0" cy="64.849999" r="0.18" fill="#78909c"><title>V0594 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="51.0" cy="92.0" r="0.18" fill="#78909c"><title>V0595 +3V3 drill 0.3 mm </title></circle>
+<circle cx="51.05" cy="66.75" r="0.18" fill="#78909c"><title>V0596 OPT_RESET_N drill 0.2 mm </title></circle>
+<circle cx="51.05" cy="73.0" r="0.18" fill="#78909c"><title>V0597 MOTOR_SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="51.05" cy="86.9" r="0.18" fill="#78909c"><title>V0598 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="51.1" cy="54.1375" r="0.18" fill="#d32f2f"><title>V0599 DRV_FAULT_LOCAL_N drill 0.2 mm U25.12@F.Cu</title></circle>
+<circle cx="51.1" cy="59.85" r="0.18" fill="#d32f2f"><title>V0600 SPI_MISO drill 0.2 mm U25.3@F.Cu</title></circle>
+<circle cx="51.2" cy="98.85" r="0.18" fill="#78909c"><title>V0601 SENS_REQ drill 0.3 mm </title></circle>
+<circle cx="51.3" cy="44.6" r="0.18" fill="#d32f2f"><title>V0602 SPI_SCLK drill 0.2 mm U10.13@F.Cu</title></circle>
+<circle cx="51.3" cy="96.65" r="0.18" fill="#78909c"><title>V0603 ACT_HEARTBEAT drill 0.2 mm </title></circle>
+<circle cx="51.5" cy="52.25" r="0.18" fill="#78909c"><title>V0604 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="51.55" cy="78.1" r="0.18" fill="#78909c"><title>V0605 OPT_CTRL drill 0.2 mm </title></circle>
+<circle cx="51.6" cy="28.5" r="0.18" fill="#78909c"><title>V0606 GND drill 0.3 mm </title></circle>
+<circle cx="51.6" cy="88.55" r="0.18" fill="#78909c"><title>V0607 IMU_PIN9 drill 0.2 mm </title></circle>
+<circle cx="51.7" cy="69.05" r="0.18" fill="#78909c"><title>V0608 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="51.7" cy="87.95" r="0.18" fill="#78909c"><title>V0609 MOTOR_SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="51.75" cy="59.85" r="0.18" fill="#d32f2f"><title>V0610 CS_MA735 drill 0.2 mm U25.4@F.Cu</title></circle>
+<circle cx="51.75" cy="94.65" r="0.18" fill="#d32f2f"><title>V0611 ACT_DRIVE_EN drill 0.2 mm R49.1@F.Cu</title></circle>
+<circle cx="51.8" cy="53.9" r="0.18" fill="#d32f2f"><title>V0612 DRV_FAULT_N drill 0.2 mm U25.11@F.Cu</title></circle>
+<circle cx="51.95" cy="45.2" r="0.18" fill="#d32f2f"><title>V0613 SPI_MISO drill 0.2 mm U10.12@F.Cu</title></circle>
+<circle cx="52.0" cy="23.6" r="0.18" fill="#78909c"><title>V0614 +3V3 drill 0.3 mm </title></circle>
+<circle cx="52.0" cy="79.0" r="0.18" fill="#d32f2f"><title>V0615 OPT_VDDPIX drill 0.2 mm TP42.1@B.Cu</title></circle>
+<circle cx="52.0" cy="83.1" r="0.18" fill="#78909c"><title>V0616 MOTOR_SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="52.2" cy="48.8" r="0.18" fill="#78909c"><title>V0617 +3V3 drill 0.2 mm </title></circle>
+<circle cx="52.3" cy="68.85" r="0.18" fill="#78909c"><title>V0618 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="52.3072" cy="48.15" r="0.18" fill="#78909c"><title>V0619 GND drill 0.2 mm </title></circle>
+<circle cx="52.35" cy="76.1" r="0.18" fill="#78909c"><title>V0620 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="52.4" cy="59.8625" r="0.18" fill="#d32f2f"><title>V0621 ENC_MISO_LOCAL drill 0.2 mm U25.5@F.Cu</title></circle>
+<circle cx="52.4" cy="100.75" r="0.18" fill="#78909c"><title>V0622 GND drill 0.3 mm </title></circle>
+<circle cx="52.6" cy="84.0" r="0.18" fill="#d32f2f"><title>V0623 GND drill 0.2 mm TP9.1@B.Cu</title></circle>
+<circle cx="52.6075" cy="45.75" r="0.18" fill="#78909c"><title>V0624 ADC_CS drill 0.2 mm </title></circle>
+<circle cx="52.7575" cy="46.45" r="0.18" fill="#78909c"><title>V0625 +3V3 drill 0.2 mm </title></circle>
+<circle cx="52.85" cy="92.7" r="0.18" fill="#78909c"><title>V0626 BOOT_SAFE_SPARE drill 0.2 mm </title></circle>
+<circle cx="52.9" cy="57.3" r="0.18" fill="#78909c"><title>V0627 CS_ADC2 drill 0.2 mm </title></circle>
+<circle cx="52.9" cy="58.1" r="0.18" fill="#78909c"><title>V0628 GND drill 0.2 mm </title></circle>
+<circle cx="52.95" cy="29.7" r="0.18" fill="#78909c"><title>V0629 VBUS_USB drill 0.2 mm </title></circle>
+<circle cx="53.0" cy="18.5" r="0.18" fill="#78909c"><title>V0630 GND drill 0.3 mm </title></circle>
+<circle cx="53.0" cy="23.5" r="0.18" fill="#78909c"><title>V0631 GND drill 0.3 mm </title></circle>
+<circle cx="53.0" cy="39.35" r="0.18" fill="#78909c"><title>V0632 GND drill 0.3 mm </title></circle>
+<circle cx="53.0" cy="47.75" r="0.18" fill="#78909c"><title>V0633 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="53.0" cy="96.5" r="0.18" fill="#78909c"><title>V0634 +3V3 drill 0.3 mm </title></circle>
+<circle cx="53.0" cy="98.75" r="0.18" fill="#78909c"><title>V0635 +3V3 drill 0.2 mm </title></circle>
+<circle cx="53.05" cy="59.4625" r="0.18" fill="#d32f2f"><title>V0636 SPI_MISO drill 0.2 mm U25.6@F.Cu</title></circle>
+<circle cx="53.1" cy="93.3" r="0.18" fill="#78909c"><title>V0637 ACT_DRIVE_EN drill 0.2 mm </title></circle>
+<circle cx="53.1824" cy="52.2181" r="0.18" fill="#78909c"><title>V0638 GND drill 0.2 mm </title></circle>
+<circle cx="53.3607" cy="69.9107" r="0.18" fill="#78909c"><title>V0639 GND drill 0.2 mm </title></circle>
+<circle cx="53.4" cy="97.05" r="0.18" fill="#78909c"><title>V0640 BTN_R_IN2 drill 0.2 mm </title></circle>
+<circle cx="53.45" cy="28.15" r="0.18" fill="#78909c"><title>V0641 RGB_5V drill 0.2 mm </title></circle>
+<circle cx="53.5" cy="83.75" r="0.18" fill="#78909c"><title>V0642 CC_OUT1 drill 0.2 mm </title></circle>
+<circle cx="53.65" cy="37.0" r="0.18" fill="#78909c"><title>V0643 +3V3 drill 0.3 mm </title></circle>
+<circle cx="53.65" cy="61.4" r="0.18" fill="#78909c"><title>V0644 OPT_RESET_N drill 0.2 mm </title></circle>
+<circle cx="53.7" cy="20.2" r="0.18" fill="#78909c"><title>V0645 GND drill 0.3 mm </title></circle>
+<circle cx="53.7" cy="54.15" r="0.18" fill="#d32f2f"><title>V0646 MOTOR_SPI_MISO drill 0.2 mm U25.8@F.Cu</title></circle>
+<circle cx="53.75" cy="46.25" r="0.18" fill="#d32f2f"><title>V0647 +3V3 drill 0.2 mm C20.1@F.Cu</title></circle>
+<circle cx="53.75" cy="56.55" r="0.18" fill="#78909c"><title>V0648 DRV_FAULT_LOCAL_N drill 0.3 mm </title></circle>
+<circle cx="53.75" cy="57.25" r="0.18" fill="#78909c"><title>V0649 ADC2_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="53.9" cy="66.95" r="0.18" fill="#78909c"><title>V0650 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="54.0" cy="44.35" r="0.18" fill="#78909c"><title>V0651 GND drill 0.2 mm </title></circle>
+<circle cx="54.0" cy="64.599999" r="0.18" fill="#78909c"><title>V0652 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="54.0" cy="69.5" r="0.18" fill="#78909c"><title>V0653 MOTOR_SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="54.0" cy="88.225" r="0.18" fill="#78909c"><title>V0654 GND drill 0.3 mm </title></circle>
+<circle cx="54.0" cy="89.775" r="0.18" fill="#78909c"><title>V0655 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="54.0" cy="93.7" r="0.18" fill="#d32f2f"><title>V0656 ACT_DRIVE_EN drill 0.3 mm TP13.1@B.Cu</title></circle>
+<circle cx="54.05" cy="24.7" r="0.18" fill="#d32f2f"><title>V0657 CC_OUT2 drill 0.2 mm U11.8@F.Cu</title></circle>
+<circle cx="54.2" cy="24.1" r="0.18" fill="#78909c"><title>V0658 CC_OUT2 drill 0.3 mm </title></circle>
+<circle cx="54.25" cy="61.7" r="0.18" fill="#78909c"><title>V0659 ENC_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="54.3" cy="85.5" r="0.18" fill="#78909c"><title>V0660 GND drill 0.3 mm </title></circle>
+<circle cx="54.3" cy="99.8" r="0.18" fill="#78909c"><title>V0661 ARM_VALID drill 0.3 mm </title></circle>
+<circle cx="54.3235" cy="65.8074" r="0.18" fill="#78909c"><title>V0662 GND drill 0.2 mm </title></circle>
+<circle cx="54.4" cy="59.7" r="0.18" fill="#78909c"><title>V0663 GND drill 0.3 mm </title></circle>
+<circle cx="54.5" cy="72.9" r="0.18" fill="#78909c"><title>V0664 MOTOR_SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="54.5" cy="73.7" r="0.18" fill="#78909c"><title>V0665 GND drill 0.2 mm </title></circle>
+<circle cx="54.6" cy="22.45" r="0.18" fill="#78909c"><title>V0666 +3V3 drill 0.3 mm </title></circle>
+<circle cx="54.6" cy="25.2" r="0.18" fill="#78909c"><title>V0667 CC_OUT1 drill 0.3 mm </title></circle>
+<circle cx="54.675" cy="32.0" r="0.18" fill="#78909c"><title>V0668 +3V3 drill 0.3 mm </title></circle>
+<circle cx="54.7" cy="98.5" r="0.18" fill="#78909c"><title>V0669 GND drill 0.3 mm </title></circle>
+<circle cx="54.85" cy="52.5" r="0.18" fill="#78909c"><title>V0670 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="54.95" cy="60.1" r="0.18" fill="#78909c"><title>V0671 ACT_VMON drill 0.2 mm </title></circle>
+<circle cx="55.0161" cy="49.4661" r="0.18" fill="#d32f2f"><title>V0672 GND drill 0.2 mm C36.2@F.Cu</title></circle>
+<circle cx="55.05" cy="41.2" r="0.18" fill="#78909c"><title>V0673 GND drill 0.3 mm </title></circle>
+<circle cx="55.1" cy="68.2" r="0.18" fill="#78909c"><title>V0674 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="55.1" cy="97.6" r="0.18" fill="#78909c"><title>V0675 GND drill 0.3 mm </title></circle>
+<circle cx="55.15" cy="94.3" r="0.18" fill="#d32f2f"><title>V0676 BTN_R_IN1 drill 0.2 mm U18.3@F.Cu</title></circle>
+<circle cx="55.2" cy="24.55" r="0.18" fill="#78909c"><title>V0677 CC_OUT2 drill 0.3 mm </title></circle>
+<circle cx="55.2" cy="91.5" r="0.18" fill="#78909c"><title>V0678 GND drill 0.3 mm </title></circle>
+<circle cx="55.25" cy="22.7" r="0.18" fill="#78909c"><title>V0679 PWR_5V drill 0.2 mm </title></circle>
+<circle cx="55.3" cy="84.5" r="0.18" fill="#78909c"><title>V0680 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="55.3343" cy="55.5343" r="0.18" fill="#78909c"><title>V0681 GND drill 0.2 mm </title></circle>
+<circle cx="55.35" cy="57.45" r="0.18" fill="#78909c"><title>V0682 ACT_VMON drill 0.2 mm </title></circle>
+<circle cx="55.6" cy="38.65" r="0.18" fill="#78909c"><title>V0683 VBUS_USB drill 0.2 mm </title></circle>
+<circle cx="55.6" cy="82.45" r="0.18" fill="#78909c"><title>V0684 IMU_PIN9 drill 0.2 mm </title></circle>
+<circle cx="55.7" cy="100.75" r="0.18" fill="#78909c"><title>V0685 ACT_HEARTBEAT drill 0.2 mm </title></circle>
+<circle cx="55.75" cy="69.8" r="0.18" fill="#78909c"><title>V0686 GND drill 0.3 mm </title></circle>
+<circle cx="55.75" cy="92.05" r="0.18" fill="#78909c"><title>V0687 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="55.9" cy="50.35" r="0.18" fill="#78909c"><title>V0688 ACT_VMON drill 0.2 mm </title></circle>
+<circle cx="55.9" cy="56.1" r="0.18" fill="#78909c"><title>V0689 ACT_VMON drill 0.2 mm </title></circle>
+<circle cx="56.0" cy="43.35" r="0.18" fill="#78909c"><title>V0690 GND drill 0.3 mm </title></circle>
+<circle cx="56.0" cy="87.1" r="0.18" fill="#78909c"><title>V0691 BTN_R_CMD2 drill 0.3 mm </title></circle>
+<circle cx="56.05" cy="22.45" r="0.18" fill="#78909c"><title>V0692 RGB_5V drill 0.2 mm </title></circle>
+<circle cx="56.1" cy="38.35" r="0.18" fill="#78909c"><title>V0693 VBUS_USB drill 0.2 mm </title></circle>
+<circle cx="56.15" cy="58.15" r="0.18" fill="#78909c"><title>V0694 MCU_EN drill 0.3 mm </title></circle>
+<circle cx="56.15" cy="90.95" r="0.18" fill="#78909c"><title>V0695 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="56.3" cy="23.6" r="0.18" fill="#78909c"><title>V0696 RGB_BUFFER_OUT drill 0.2 mm </title></circle>
+<circle cx="56.3" cy="102.4" r="0.18" fill="#78909c"><title>V0697 GND drill 0.3 mm </title></circle>
+<circle cx="56.325" cy="30.3" r="0.18" fill="#78909c"><title>V0698 CC_OUT1 drill 0.3 mm </title></circle>
+<circle cx="56.4" cy="94.7" r="0.18" fill="#78909c"><title>V0699 BTN_R_CMD2 drill 0.3 mm </title></circle>
+<circle cx="56.45" cy="90.4" r="0.18" fill="#78909c"><title>V0700 +3V3 drill 0.2 mm </title></circle>
+<circle cx="56.6" cy="99.6" r="0.18" fill="#78909c"><title>V0701 GND drill 0.3 mm </title></circle>
+<circle cx="56.75" cy="50.3" r="0.18" fill="#78909c"><title>V0702 VBUS_PRESENT_N drill 0.3 mm </title></circle>
+<circle cx="56.75" cy="69.8" r="0.18" fill="#78909c"><title>V0703 GND drill 0.3 mm </title></circle>
+<circle cx="56.8" cy="75.55" r="0.18" fill="#78909c"><title>V0704 OPT_1V9 drill 0.2 mm </title></circle>
+<circle cx="56.9" cy="27.9" r="0.18" fill="#78909c"><title>V0705 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="56.9" cy="67.099999" r="0.18" fill="#78909c"><title>V0706 SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="56.95" cy="63.75" r="0.18" fill="#78909c"><title>V0707 CS_ADC2 drill 0.2 mm </title></circle>
+<circle cx="56.95" cy="83.1" r="0.18" fill="#78909c"><title>V0708 IMU_PIN9 drill 0.2 mm </title></circle>
+<circle cx="57.05" cy="24.55" r="0.18" fill="#d32f2f"><title>V0709 GND drill 0.3 mm C1.2@F.Cu</title></circle>
+<circle cx="57.15" cy="93.9" r="0.18" fill="#78909c"><title>V0710 VBUS_PRESENT_N drill 0.3 mm </title></circle>
+<circle cx="57.2" cy="83.9" r="0.18" fill="#d32f2f"><title>V0711 VBUS_USB drill 0.2 mm TP10.1@B.Cu</title></circle>
+<circle cx="57.2" cy="96.55" r="0.18" fill="#78909c"><title>V0712 BTN_R_IN1 drill 0.2 mm </title></circle>
+<circle cx="57.25" cy="65.349999" r="0.18" fill="#78909c"><title>V0713 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="57.3" cy="88.55" r="0.18" fill="#78909c"><title>V0714 MOTOR_SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="57.35" cy="90.35" r="0.18" fill="#78909c"><title>V0715 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="57.45" cy="63.25" r="0.18" fill="#78909c"><title>V0716 +3V3 drill 0.3 mm </title></circle>
+<circle cx="57.45" cy="78.85" r="0.18" fill="#d32f2f"><title>V0717 WHEEL_RUN_REQ drill 0.3 mm TP17.1@B.Cu</title></circle>
+<circle cx="57.5" cy="67.0" r="0.18" fill="#78909c"><title>V0718 SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="57.5" cy="76.1" r="0.18" fill="#78909c"><title>V0719 OPT_3V3 drill 0.2 mm </title></circle>
+<circle cx="57.55" cy="29.2" r="0.18" fill="#78909c"><title>V0720 GND drill 0.3 mm </title></circle>
+<circle cx="57.55" cy="47.9" r="0.18" fill="#78909c"><title>V0721 ENC_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="57.55" cy="48.7" r="0.18" fill="#78909c"><title>V0722 GND drill 0.2 mm </title></circle>
+<circle cx="57.6" cy="45.199999" r="0.18" fill="#78909c"><title>V0723 +3V3 drill 0.3 mm </title></circle>
+<circle cx="57.6" cy="50.3" r="0.18" fill="#78909c"><title>V0724 +3V3 drill 0.3 mm </title></circle>
+<circle cx="57.6" cy="66.349999" r="0.18" fill="#78909c"><title>V0725 CS_DRV8316 drill 0.2 mm </title></circle>
+<circle cx="57.7" cy="62.451" r="0.18" fill="#78909c"><title>V0726 GND drill 0.2 mm </title></circle>
+<circle cx="57.7" cy="94.5" r="0.18" fill="#78909c"><title>V0727 BOOT_SAFE_SPARE drill 0.2 mm </title></circle>
+<circle cx="57.7" cy="101.2" r="0.18" fill="#78909c"><title>V0728 ARM_VALID drill 0.3 mm </title></circle>
+<circle cx="57.75" cy="69.8" r="0.18" fill="#78909c"><title>V0729 GND drill 0.3 mm </title></circle>
+<circle cx="57.75" cy="88.1" r="0.18" fill="#78909c"><title>V0730 BOOT drill 0.2 mm </title></circle>
+<circle cx="57.8" cy="57.9" r="0.18" fill="#78909c"><title>V0731 GND drill 0.2 mm </title></circle>
+<circle cx="57.9" cy="27.9" r="0.18" fill="#78909c"><title>V0732 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="58.15" cy="93.4" r="0.18" fill="#78909c"><title>V0733 +3V3 drill 0.2 mm </title></circle>
+<circle cx="58.2" cy="96.35" r="0.18" fill="#78909c"><title>V0734 BTN_R_IN2 drill 0.2 mm </title></circle>
+<circle cx="58.4" cy="55.3" r="0.18" fill="#78909c"><title>V0735 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="58.5" cy="95.3" r="0.18" fill="#78909c"><title>V0736 BTN_R_IN1 drill 0.2 mm </title></circle>
+<circle cx="58.6" cy="67.099999" r="0.18" fill="#78909c"><title>V0737 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="58.65" cy="91.15" r="0.18" fill="#78909c"><title>V0738 MOTOR_SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="58.6858" cy="66.0142" r="0.18" fill="#78909c"><title>V0739 GND drill 0.2 mm </title></circle>
+<circle cx="58.7" cy="27.9" r="0.18" fill="#78909c"><title>V0740 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="58.75" cy="65.4" r="0.18" fill="#78909c"><title>V0741 CS_ADC2 drill 0.2 mm </title></circle>
+<circle cx="58.75" cy="69.8" r="0.18" fill="#78909c"><title>V0742 GND drill 0.3 mm </title></circle>
+<circle cx="58.75" cy="83.95" r="0.18" fill="#78909c"><title>V0743 CC_OUT1 drill 0.2 mm </title></circle>
+<circle cx="58.891" cy="86.959" r="0.18" fill="#78909c"><title>V0744 GND drill 0.2 mm </title></circle>
+<circle cx="59.05" cy="59.15" r="0.18" fill="#d32f2f"><title>V0745 ACT_5V drill 0.2 mm C40.1@F.Cu</title></circle>
+<circle cx="59.1" cy="57.3" r="0.18" fill="#78909c"><title>V0746 ACT_OVLO drill 0.3 mm </title></circle>
+<circle cx="59.2" cy="87.75" r="0.18" fill="#78909c"><title>V0747 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="59.2157" cy="91.7157" r="0.18" fill="#78909c"><title>V0748 GND drill 0.2 mm </title></circle>
+<circle cx="59.25" cy="67.099999" r="0.18" fill="#78909c"><title>V0749 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="59.35" cy="56.05" r="0.18" fill="#78909c"><title>V0750 ACT_UVLO drill 0.3 mm </title></circle>
+<circle cx="59.4" cy="63.7" r="0.18" fill="#78909c"><title>V0751 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="59.4" cy="99.6" r="0.18" fill="#78909c"><title>V0752 +3V3 drill 0.3 mm </title></circle>
+<circle cx="59.45" cy="66.099999" r="0.18" fill="#78909c"><title>V0753 WHEEL_PWM_C drill 0.2 mm </title></circle>
+<circle cx="59.5" cy="23.8" r="0.18" fill="#78909c"><title>V0754 GND drill 0.3 mm </title></circle>
+<circle cx="59.6" cy="88.8" r="0.18" fill="#78909c"><title>V0755 MCU_EN drill 0.2 mm </title></circle>
+<circle cx="59.6" cy="93.2" r="0.18" fill="#78909c"><title>V0756 +3V3 drill 0.3 mm </title></circle>
+<circle cx="59.65" cy="102.35" r="0.18" fill="#78909c"><title>V0757 ACT_PERMIT drill 0.3 mm </title></circle>
+<circle cx="59.7" cy="61.1" r="0.18" fill="#78909c"><title>V0758 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="59.7" cy="94.0" r="0.18" fill="#78909c"><title>V0759 GND drill 0.3 mm </title></circle>
+<circle cx="59.75" cy="69.8" r="0.18" fill="#78909c"><title>V0760 GND drill 0.3 mm </title></circle>
+<circle cx="59.8" cy="97.35" r="0.18" fill="#78909c"><title>V0761 BTN_R_CMD1 drill 0.2 mm </title></circle>
+<circle cx="59.95" cy="67.099999" r="0.18" fill="#78909c"><title>V0762 MOTOR_SPI_SCLK drill 0.2 mm </title></circle>
+<circle cx="60.1" cy="43.3" r="0.18" fill="#78909c"><title>V0763 GND drill 0.3 mm </title></circle>
+<circle cx="60.1" cy="46.8" r="0.18" fill="#78909c"><title>V0764 GND drill 0.3 mm </title></circle>
+<circle cx="60.1" cy="64.599999" r="0.18" fill="#78909c"><title>V0765 ADC2_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="60.2" cy="78.6" r="0.18" fill="#78909c"><title>V0766 MOTOR_SPI_MISO drill 0.2 mm </title></circle>
+<circle cx="60.5" cy="24.65" r="0.18" fill="#78909c"><title>V0767 GND drill 0.3 mm </title></circle>
+<circle cx="60.5" cy="27.5" r="0.18" fill="#78909c"><title>V0768 GND drill 0.3 mm </title></circle>
+<circle cx="60.5" cy="61.9" r="0.18" fill="#78909c"><title>V0769 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="60.6" cy="103.4" r="0.18" fill="#78909c"><title>V0770 +3V3 drill 0.3 mm </title></circle>
+<circle cx="60.7" cy="79.8" r="0.18" fill="#78909c"><title>V0771 +3V3 drill 0.2 mm </title></circle>
+<circle cx="60.75" cy="69.8" r="0.18" fill="#78909c"><title>V0772 GND drill 0.3 mm </title></circle>
+<circle cx="60.775" cy="41.5" r="0.18" fill="#d32f2f"><title>V0773 GND drill 0.2 mm C18.2@F.Cu</title></circle>
+<circle cx="60.8" cy="42.4" r="0.18" fill="#78909c"><title>V0774 ENC_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="60.8" cy="43.35" r="0.18" fill="#78909c"><title>V0775 VBUS_USB drill 0.2 mm </title></circle>
+<circle cx="60.85" cy="96.95" r="0.18" fill="#d32f2f"><title>V0776 HALL_EN drill 0.2 mm U18.8@F.Cu</title></circle>
+<circle cx="60.95" cy="67.099999" r="0.18" fill="#78909c"><title>V0777 MOTOR_SPI_MOSI drill 0.2 mm </title></circle>
+<circle cx="61.0" cy="28.0" r="0.18" fill="#78909c"><title>V0778 GND drill 0.3 mm </title></circle>
+<circle cx="61.0" cy="78.6" r="0.18" fill="#78909c"><title>V0779 GND drill 0.2 mm </title></circle>
+<circle cx="61.1" cy="50.1" r="0.18" fill="#78909c"><title>V0780 BTN_R_VREF drill 0.2 mm </title></circle>
+<circle cx="61.15" cy="52.4" r="0.18" fill="#78909c"><title>V0781 GND drill 0.3 mm </title></circle>
+<circle cx="61.15" cy="55.3" r="0.18" fill="#d32f2f"><title>V0782 PWR_5V drill 0.2 mm C89.1@F.Cu</title></circle>
+<circle cx="61.15" cy="60.95" r="0.18" fill="#78909c"><title>V0783 GND drill 0.3 mm </title></circle>
+<circle cx="61.15" cy="84.9" r="0.18" fill="#d32f2f"><title>V0784 GND drill 0.2 mm SW1.2@F.Cu</title></circle>
+<circle cx="61.15" cy="89.1" r="0.18" fill="#d32f2f"><title>V0785 GND drill 0.2 mm SW2.2@F.Cu</title></circle>
+<circle cx="61.2" cy="17.25" r="0.18" fill="#d32f2f"><title>V0786 RGB_5V drill 0.2 mm C75.1@F.Cu</title></circle>
+<circle cx="61.3" cy="61.9" r="0.18" fill="#78909c"><title>V0787 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="61.3" cy="91.25" r="0.18" fill="#78909c"><title>V0788 WHEEL_PWM_C drill 0.2 mm </title></circle>
+<circle cx="61.35" cy="44.0" r="0.18" fill="#78909c"><title>V0789 BTN_R_ISENSE drill 0.2 mm </title></circle>
+<circle cx="61.45" cy="24.4" r="0.18" fill="#78909c"><title>V0790 LOGIC_PG drill 0.3 mm </title></circle>
+<circle cx="61.45" cy="47.3" r="0.18" fill="#78909c"><title>V0791 BTN_R_VREF drill 0.2 mm </title></circle>
+<circle cx="61.6" cy="81.95" r="0.18" fill="#78909c"><title>V0792 RGB_DATA drill 0.2 mm </title></circle>
+<circle cx="61.75" cy="69.8" r="0.18" fill="#78909c"><title>V0793 GND drill 0.3 mm </title></circle>
+<circle cx="62.0" cy="95.65" r="0.18" fill="#d32f2f"><title>V0794 MCU_EN drill 0.3 mm TP6.1@B.Cu</title></circle>
+<circle cx="62.2" cy="49.3" r="0.18" fill="#78909c"><title>V0795 BTN_R_IN2 drill 0.2 mm </title></circle>
+<circle cx="62.35" cy="41.5" r="0.18" fill="#78909c"><title>V0796 GND drill 0.2 mm </title></circle>
+<circle cx="62.4" cy="54.825" r="0.18" fill="#78909c"><title>V0797 ACT_UVLO drill 0.3 mm </title></circle>
+<circle cx="62.4" cy="101.2" r="0.18" fill="#78909c"><title>V0798 +3V3 drill 0.3 mm </title></circle>
+<circle cx="62.5" cy="62.4" r="0.18" fill="#78909c"><title>V0799 DRV_FAULT_LOCAL_N drill 0.3 mm </title></circle>
+<circle cx="62.5" cy="100.2" r="0.18" fill="#78909c"><title>V0800 GND drill 0.3 mm </title></circle>
+<circle cx="62.5" cy="101.9" r="0.18" fill="#78909c"><title>V0801 +3V3 drill 0.3 mm </title></circle>
+<circle cx="62.55" cy="42.275" r="0.18" fill="#d32f2f"><title>V0802 GND drill 0.2 mm U9.2@F.Cu</title></circle>
+<circle cx="62.6" cy="43.449999" r="0.18" fill="#78909c"><title>V0803 GND drill 0.3 mm </title></circle>
+<circle cx="62.6" cy="46.55" r="0.18" fill="#78909c"><title>V0804 GND drill 0.3 mm </title></circle>
+<circle cx="62.6" cy="53.175" r="0.18" fill="#78909c"><title>V0805 GND drill 0.3 mm </title></circle>
+<circle cx="62.7" cy="57.2" r="0.18" fill="#78909c"><title>V0806 GND drill 0.3 mm </title></circle>
+<circle cx="62.75" cy="69.8" r="0.18" fill="#78909c"><title>V0807 GND drill 0.3 mm </title></circle>
+<circle cx="62.8" cy="17.25" r="0.18" fill="#d32f2f"><title>V0808 GND drill 0.2 mm C75.2@F.Cu</title></circle>
+<circle cx="62.85" cy="96.95" r="0.18" fill="#78909c"><title>V0809 MCU_EN drill 0.2 mm </title></circle>
+<circle cx="63.0" cy="37.8" r="0.18" fill="#78909c"><title>V0810 BTN_R_COIL_P drill 0.3 mm </title></circle>
+<circle cx="63.2" cy="80.05" r="0.18" fill="#78909c"><title>V0811 PWR_5V drill 0.2 mm </title></circle>
+<circle cx="63.4" cy="43.449999" r="0.18" fill="#78909c"><title>V0812 GND drill 0.3 mm </title></circle>
+<circle cx="63.4" cy="46.55" r="0.18" fill="#78909c"><title>V0813 GND drill 0.3 mm </title></circle>
+<circle cx="63.6" cy="90.45" r="0.18" fill="#78909c"><title>V0814 WHEEL_PWM_C drill 0.2 mm </title></circle>
+<circle cx="63.6063" cy="66.3882" r="0.18" fill="#78909c"><title>V0815 GND drill 0.2 mm </title></circle>
+<circle cx="63.75" cy="69.8" r="0.18" fill="#78909c"><title>V0816 GND drill 0.3 mm </title></circle>
+<circle cx="63.8" cy="41.7" r="0.18" fill="#78909c"><title>V0817 HALL_EN drill 0.2 mm </title></circle>
+<circle cx="64.15" cy="40.3" r="0.18" fill="#78909c"><title>V0818 CC_OUT1 drill 0.2 mm </title></circle>
+<circle cx="64.2" cy="90.55" r="0.18" fill="#78909c"><title>V0819 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="64.2" cy="98.5" r="0.18" fill="#78909c"><title>V0820 GND drill 0.3 mm </title></circle>
+<circle cx="64.25" cy="68.95" r="0.18" fill="#78909c"><title>V0821 WHEEL_PWM_A drill 0.2 mm </title></circle>
+<circle cx="64.275" cy="61.15" r="0.18" fill="#78909c"><title>V0822 GND drill 0.3 mm </title></circle>
+<circle cx="64.45" cy="39.65" r="0.18" fill="#d32f2f"><title>V0823 GND drill 0.2 mm R24.2@F.Cu</title></circle>
+<circle cx="64.6" cy="58.825" r="0.18" fill="#78909c"><title>V0824 ACT_OVLO drill 0.3 mm </title></circle>
+<circle cx="64.75" cy="69.8" r="0.18" fill="#78909c"><title>V0825 GND drill 0.3 mm </title></circle>
+<circle cx="64.8" cy="49.9" r="0.18" fill="#78909c"><title>V0826 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="64.8" cy="66.05" r="0.18" fill="#78909c"><title>V0827 GND drill 0.2 mm </title></circle>
+<circle cx="64.9" cy="45.05" r="0.18" fill="#78909c"><title>V0828 BTN_R_COIL_P drill 0.3 mm </title></circle>
+<circle cx="65.0" cy="37.8" r="0.18" fill="#78909c"><title>V0829 BTN_R_COIL_N drill 0.3 mm </title></circle>
+<circle cx="65.05" cy="44.25" r="0.18" fill="#78909c"><title>V0830 BTN_R_COIL_N drill 0.3 mm </title></circle>
+<circle cx="65.099999" cy="65.4" r="0.18" fill="#78909c"><title>V0831 DRV_FAULT_LOCAL_N drill 0.3 mm </title></circle>
+<circle cx="65.25" cy="68.95" r="0.18" fill="#78909c"><title>V0832 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="65.45" cy="29.75" r="0.18" fill="#78909c"><title>V0833 GND drill 0.3 mm </title></circle>
+<circle cx="65.65" cy="67.099999" r="0.18" fill="#78909c"><title>V0834 ADC2_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="65.75" cy="69.8" r="0.18" fill="#78909c"><title>V0835 GND drill 0.3 mm </title></circle>
+<circle cx="65.85" cy="62.2" r="0.18" fill="#78909c"><title>V0836 ACT_UVLO drill 0.3 mm </title></circle>
+<circle cx="66.0" cy="43.3" r="0.18" fill="#78909c"><title>V0837 GND drill 0.3 mm </title></circle>
+<circle cx="66.0" cy="66.599999" r="0.18" fill="#78909c"><title>V0838 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="66.099999" cy="65.3" r="0.18" fill="#78909c"><title>V0839 DRV_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="66.1" cy="26.45" r="0.18" fill="#78909c"><title>V0840 GND drill 0.3 mm </title></circle>
+<circle cx="66.25" cy="68.95" r="0.18" fill="#78909c"><title>V0841 WHEEL_PWM_C drill 0.2 mm </title></circle>
+<circle cx="66.45" cy="19.65" r="0.18" fill="#d32f2f"><title>V0842 GND drill 0.2 mm U34.3@F.Cu</title></circle>
+<circle cx="66.7" cy="70.7" r="0.18" fill="#78909c"><title>V0843 ACT_DRIVE_EN drill 0.3 mm </title></circle>
+<circle cx="66.75" cy="65.95" r="0.18" fill="#78909c"><title>V0844 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="66.75" cy="69.8" r="0.18" fill="#78909c"><title>V0845 GND drill 0.3 mm </title></circle>
+<circle cx="67.0" cy="54.05" r="0.18" fill="#78909c"><title>V0846 GND drill 0.3 mm </title></circle>
+<circle cx="67.2" cy="47.6" r="0.18" fill="#78909c"><title>V0847 GND drill 0.3 mm </title></circle>
+<circle cx="67.25" cy="69.15" r="0.18" fill="#78909c"><title>V0848 ACT_DRIVE_EN drill 0.2 mm </title></circle>
+<circle cx="67.45" cy="70.8" r="0.18" fill="#78909c"><title>V0849 GND drill 0.3 mm </title></circle>
+<circle cx="67.7" cy="57.4" r="0.18" fill="#78909c"><title>V0850 GND drill 0.3 mm </title></circle>
+<circle cx="67.75" cy="66.05" r="0.18" fill="#78909c"><title>V0851 ADC2_MISO_LOCAL drill 0.2 mm </title></circle>
+<circle cx="67.75" cy="74.25" r="0.18" fill="#78909c"><title>V0852 BTN_R_IN2 drill 0.2 mm </title></circle>
+<circle cx="67.8" cy="65.3" r="0.18" fill="#78909c"><title>V0853 BTN_R_IN1 drill 0.2 mm </title></circle>
+<circle cx="67.8" cy="67.099999" r="0.18" fill="#78909c"><title>V0854 DRV_FAULT_LOCAL_N drill 0.2 mm </title></circle>
+<circle cx="68.25" cy="22.4" r="0.18" fill="#78909c"><title>V0855 LOGIC_PG drill 0.3 mm </title></circle>
+<circle cx="68.25" cy="29.6" r="0.18" fill="#78909c"><title>V0856 GND drill 0.3 mm </title></circle>
+<circle cx="68.25" cy="69.15" r="0.18" fill="#78909c"><title>V0857 WHEEL_RUN_REQ drill 0.2 mm </title></circle>
+<circle cx="68.5" cy="55.7" r="0.18" fill="#78909c"><title>V0858 PWR_5V drill 0.3 mm </title></circle>
+<circle cx="68.75" cy="69.8" r="0.18" fill="#78909c"><title>V0859 GND drill 0.3 mm </title></circle>
+<circle cx="68.85" cy="61.65" r="0.18" fill="#78909c"><title>V0860 PWR_5V drill 0.2 mm </title></circle>
+<circle cx="68.9" cy="24.55" r="0.18" fill="#78909c"><title>V0861 +3V3 drill 0.3 mm </title></circle>
+<circle cx="69.0" cy="62.35" r="0.18" fill="#78909c"><title>V0862 GND drill 0.3 mm </title></circle>
+<circle cx="69.2" cy="66.599999" r="0.18" fill="#78909c"><title>V0863 WHEEL_PWM_B drill 0.2 mm </title></circle>
+<circle cx="69.3" cy="66.0" r="0.18" fill="#78909c"><title>V0864 WHEEL_PWM_C drill 0.2 mm </title></circle>
+<circle cx="69.35" cy="53.175" r="0.18" fill="#78909c"><title>V0865 ACT_OVLO drill 0.3 mm </title></circle>
+<circle cx="69.75" cy="69.8" r="0.18" fill="#78909c"><title>V0866 GND drill 0.3 mm </title></circle>
+<circle cx="69.85" cy="23.95" r="0.18" fill="#78909c"><title>V0867 MCU_EN drill 0.2 mm </title></circle>
+<circle cx="70.2" cy="94.5" r="0.18" fill="#78909c"><title>V0868 GND drill 0.3 mm </title></circle>
+<circle cx="70.25" cy="69.15" r="0.18" fill="#78909c"><title>V0869 +3V3 drill 0.2 mm </title></circle>
+<circle cx="71.0" cy="94.5" r="0.18" fill="#78909c"><title>V0870 GND drill 0.3 mm </title></circle>
+<circle cx="71.3" cy="62.5" r="0.18" fill="#d32f2f"><title>V0871 VBUS_USB drill 0.2 mm TP1.1@B.Cu</title></circle>
+<circle cx="71.8" cy="94.5" r="0.18" fill="#78909c"><title>V0872 GND drill 0.3 mm </title></circle>
+<circle cx="72.9" cy="94.5" r="0.18" fill="#78909c"><title>V0873 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="73.7" cy="94.5" r="0.18" fill="#78909c"><title>V0874 ACT_5V drill 0.3 mm </title></circle>
+<circle cx="74.5" cy="94.5" r="0.18" fill="#78909c"><title>V0875 ACT_5V drill 0.3 mm </title></circle>
+</svg>

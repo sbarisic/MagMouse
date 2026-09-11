@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" viewBox="45.975 39.975 22.05 36.05">
+<rect x="-1000" y="-1000" width="3000" height="3000" fill="white"/>
+<text x="49.975" y="44.975" font-size="0.31222222222222223">QUOTE ONLY: red = drill intersects SMD pad; grey = other via</text>
+<polygon points="64.0,68.0 50.0,68.0 50.0,50.0 64.0,50.0" fill="none" stroke="#263238" stroke-width=".15"/>
+<rect x="55.65" y="55.0" width="0.75" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 56.025 55.1)"/>
+<rect x="55.65" y="55.4" width="0.7" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 56.0 55.5)"/>
+<rect x="55.65" y="55.8" width="0.7" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 56.0 55.9)"/>
+<rect x="56.3" y="56.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 56.4 56.5)"/>
+<rect x="56.7" y="56.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 56.8 56.5)"/>
+<rect x="57.1" y="56.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 57.2 56.5)"/>
+<rect x="57.5" y="56.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 57.6 56.5)"/>
+<rect x="57.65" y="55.8" width="0.7" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 58.0 55.9)"/>
+<rect x="57.65" y="55.4" width="0.7" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 58.0 55.5)"/>
+<rect x="57.65" y="55.0" width="0.7" height="0.2" fill="#e0e6eb" transform="rotate(-0.0 58.0 55.1)"/>
+<rect x="57.5" y="54.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 57.6 54.5)"/>
+<rect x="57.1" y="54.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 57.2 54.5)"/>
+<rect x="56.7" y="54.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 56.8 54.5)"/>
+<rect x="56.3" y="54.15" width="0.2" height="0.7" fill="#e0e6eb" transform="rotate(-0.0 56.4 54.5)"/>
+<rect x="56.35" y="52.5" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.8 52.975)"/>
+<rect x="56.35" y="50.95" width="0.9" height="0.95" fill="#e0e6eb" transform="rotate(-90.0 56.8 51.425)"/>
+<rect x="53.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 53.5 62.5)"/>
+<rect x="54.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 54.5 62.5)"/>
+<rect x="55.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 55.5 62.5)"/>
+<rect x="56.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 56.5 62.5)"/>
+<rect x="57.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 57.5 62.5)"/>
+<rect x="58.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 58.5 62.5)"/>
+<rect x="59.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 59.5 62.5)"/>
+<rect x="60.2" y="61.725" width="0.6" height="1.55" fill="#e0e6eb" transform="rotate(-0.0 60.5 62.5)"/>
+<rect x="51.6" y="65.475" width="1.2" height="1.8" fill="#e0e6eb" transform="rotate(-0.0 52.2 66.375)"/>
+<rect x="61.2" y="65.475" width="1.2" height="1.8" fill="#e0e6eb" transform="rotate(-0.0 61.8 66.375)"/>
+<circle cx="52.0" cy="52.0" r="0.18" fill="#78909c"><title>V0001 GND drill 0.3 mm </title></circle>
+<circle cx="52.0" cy="58.0" r="0.18" fill="#78909c"><title>V0002 GND drill 0.3 mm </title></circle>
+<circle cx="54.0" cy="65.5" r="0.18" fill="#78909c"><title>V0003 GND drill 0.3 mm </title></circle>
+<circle cx="54.5" cy="60.8" r="0.18" fill="#78909c"><title>V0004 GND drill 0.3 mm </title></circle>
+<circle cx="55.0" cy="56.2" r="0.18" fill="#78909c"><title>V0005 GND drill 0.3 mm </title></circle>
+<circle cx="55.25" cy="54.0" r="0.18" fill="#78909c"><title>V0006 GND drill 0.3 mm </title></circle>
+<circle cx="55.8" cy="51.425" r="0.18" fill="#78909c"><title>V0007 GND drill 0.3 mm </title></circle>
+<circle cx="55.8" cy="57.6" r="0.18" fill="#78909c"><title>V0008 GND drill 0.3 mm </title></circle>
+<circle cx="56.5" cy="60.8" r="0.18" fill="#78909c"><title>V0009 GND drill 0.3 mm </title></circle>
+<circle cx="56.8" cy="57.8" r="0.18" fill="#78909c"><title>V0010 ENC_MISO_LOCAL drill 0.3 mm </title></circle>
+<circle cx="57.5" cy="60.3" r="0.18" fill="#78909c"><title>V0011 ENC_MOSI_LOCAL drill 0.3 mm </title></circle>
+<circle cx="59.2" cy="58.6" r="0.18" fill="#78909c"><title>V0012 ENC_MOSI_LOCAL drill 0.3 mm </title></circle>
+<circle cx="59.5" cy="60.8" r="0.18" fill="#78909c"><title>V0013 GND drill 0.3 mm </title></circle>
+<circle cx="60.0" cy="65.5" r="0.18" fill="#78909c"><title>V0014 GND drill 0.3 mm </title></circle>
+<circle cx="60.5" cy="60.8" r="0.18" fill="#78909c"><title>V0015 ENC_MISO_LOCAL drill 0.3 mm </title></circle>
+<circle cx="62.0" cy="52.0" r="0.18" fill="#78909c"><title>V0016 GND drill 0.3 mm </title></circle>
+<circle cx="62.0" cy="58.0" r="0.18" fill="#78909c"><title>V0017 GND drill 0.3 mm </title></circle>
+</svg>

@@ -1,0 +1,589 @@
+{
+  "status": "QUOTE ONLY - NOT FOR FABRICATION OR ASSEMBLY",
+  "quantity_per_design": 5,
+  "destination": "Croatia 43000",
+  "source_commit": "743d7f15da87f8d6b07a1d5b9a8c781914fb4ea3",
+  "boards": {
+    "Main": {
+      "status": "QUOTE ONLY - NOT FOR FABRICATION OR ASSEMBLY",
+      "source_sha256": {
+        "hardware/modular/main/01_Power_USB.kicad_sch": "ce9d7b7ddb0401899725b6a057f8d7d39f426b7acefdb6685c61b6429a2a9876",
+        "hardware/modular/main/02_MCU.kicad_sch": "72337c12ac6c0a979718df1d60ea86b8eabb2a93a2065b7f50a3483f070ec273",
+        "hardware/modular/main/03_Buttons.kicad_sch": "8582d1b16c8668518d441e0e44398fe9459c93afb3fecd5158b1768683eb2772",
+        "hardware/modular/main/04_Sensing.kicad_sch": "908003a6ae0ac014e38237388012dfd53e28031d5d7ab1c65db3113271d5f99a",
+        "hardware/modular/main/05_Protected_Power.kicad_sch": "5f974ac0a49bdd5d4db881a40db07d902dc2a8561a2071b5a7b5d6e8cb40511c",
+        "hardware/modular/main/06_Actuator_Interlock.kicad_sch": "fd2c4b24c34a330d4681a4115486c4f5e4f6757ff988a19f84c23f54bee05117",
+        "hardware/modular/main/07_Power_Monitor.kicad_sch": "6ce8ce0dd9f058bf865e17bd20d94e6b9a05832baaf8aec7a3e85be17b4a6b93",
+        "hardware/modular/main/08_Actuator_Rail.kicad_sch": "a655afb4fe28dae81b9034a9e149a1bef7a85a07ec87c3d00425875018965845",
+        "hardware/modular/main/09_Interface_Reservations.kicad_sch": "2613fa18d8a4b048fe6428d5bbe1a8ec693b19792d7f97ba745d32cb4e5f236f",
+        "hardware/modular/main/11_Wheel_SPI.kicad_sch": "9b35277010d00a37831e9ed96c7f8aa0a441f60602536977361433cb5a78ed74",
+        "hardware/modular/main/12_Wheel_Feedback.kicad_sch": "24f4ff69692dab2524c3f8ebd660f7ddf54833b7af8cfc619d711f300e41d63b",
+        "hardware/modular/main/14_IMU.kicad_sch": "8e88ac68f0791d5fab4f23b96c30b62231e3e935f33c9bbd50ff5a087e286038",
+        "hardware/modular/main/15_RGB_Status.kicad_sch": "a35ccbac154f266a6fd5a9b08547a9d6018aebaf0b21bab12a5822ae595da86b",
+        "hardware/modular/main/16_Optical_Power.kicad_sch": "a91b741b4afcd370c87a1664f70bd2cad1a7356d14cc8be68391c4a8ef31bc11",
+        "hardware/modular/main/17_Optical_Sensor.kicad_sch": "d5e8ecb93aec7c5b6ea729a7ca9f72b97b911e094e99b75594de55a4db6a13df",
+        "hardware/modular/main/18_Wheel_Harness.kicad_sch": "0c405fcdbadff6ed2ca26164ff17f044fae3116fd4d7f24d1c4bb03ecc9d48b1",
+        "hardware/modular/main/Main.kicad_pcb": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
+        "hardware/modular/main/Main.kicad_pro": "65787b3fe279003a0be08e4a10381c960a5217f941b5d3cfef486a032f148555",
+        "hardware/modular/main/Main.kicad_sch": "62baf019e06ac37acc08ffa14124c8b391c1662413ed64c7e0a12797f9301ad0"
+      },
+      "kicad_version": "10.0.6",
+      "schematic_pcb_references": 246,
+      "assembly_components": 206,
+      "bom_lines": 56,
+      "excluded_references": [
+        {
+          "Designator": "TP1",
+          "Comment": "VBUS_USB",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP2",
+          "Comment": "PWR_5V",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP3",
+          "Comment": "ACT_5V",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP4",
+          "Comment": "UART_TX",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP5",
+          "Comment": "UART_RX",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP6",
+          "Comment": "MCU_EN",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP7",
+          "Comment": "BOOT",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP8",
+          "Comment": "+3V3",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP9",
+          "Comment": "GND",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP10",
+          "Comment": "VBUS_USB",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP11",
+          "Comment": "PWR_5V",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP12",
+          "Comment": "ACT_5V",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP13",
+          "Comment": "ACT_DRIVE_EN",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP14",
+          "Comment": "USB_ILM",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP15",
+          "Comment": "GND",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP16",
+          "Comment": "CS_PAW",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP17",
+          "Comment": "WHEEL_RUN_REQ",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP18",
+          "Comment": "CS_IMU",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP19",
+          "Comment": "OPT_CTRL",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP20",
+          "Comment": "MOTOR_SPI_MOSI",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP21",
+          "Comment": "MOTOR_SPI_SCLK",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP22",
+          "Comment": "MOTOR_SPI_MISO",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP23",
+          "Comment": "CS_ADC2",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP24",
+          "Comment": "CS_MA735",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP25",
+          "Comment": "CS_DRV8316",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP26",
+          "Comment": "PAW_MOTION_N",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP27",
+          "Comment": "IMU_INT1",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP28",
+          "Comment": "DRV_FAULT_N",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP29",
+          "Comment": "WHEEL_PWM_A",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP30",
+          "Comment": "RGB_DATA",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP31",
+          "Comment": "BOOT_SAFE_SPARE",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP32",
+          "Comment": "WHEEL_PWM_B",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP33",
+          "Comment": "WHEEL_PWM_C",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP38",
+          "Comment": "RGB_5V",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP39",
+          "Comment": "RGB_DIN",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP40",
+          "Comment": "OPT_3V3",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP41",
+          "Comment": "OPT_1V9",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP42",
+          "Comment": "OPT_VDDPIX",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP43",
+          "Comment": "OPT_RESET_N",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "U35",
+          "Comment": "PMW3360DM-T2QU",
+          "Reason": "PMW3360DM-T2QU: customer-supplied/post-assembly optical sensor; catalog stock unavailable in recorded sourcing review",
+          "MPN": "PMW3360DM-T2QU",
+          "LCSC Part #": "C20612443"
+        }
+      ],
+      "assembly_sides": {
+        "top": 206
+      },
+      "native_unrouted": 0,
+      "physical_drc": 0,
+      "schematic_parity": 0,
+      "bom_cpl_reference_coverage": "PASS: each source reference assembled or explicitly excluded",
+      "copper_layers": 4,
+      "board_thickness_mm": 1.578,
+      "saved_stackup": [
+        {
+          "layer": "F.SilkS",
+          "type": "Top Silk Screen"
+        },
+        {
+          "layer": "F.Paste",
+          "type": "Top Solder Paste"
+        },
+        {
+          "layer": "F.Mask",
+          "type": "Top Solder Mask",
+          "thickness": "0.01"
+        },
+        {
+          "layer": "F.Cu",
+          "type": "copper",
+          "thickness": "0.035"
+        },
+        {
+          "layer": "dielectric 1",
+          "type": "prepreg",
+          "thickness": "0.109",
+          "material": "2116 RC54%",
+          "epsilon_r": "4.5",
+          "loss_tangent": "0.02"
+        },
+        {
+          "layer": "In1.Cu",
+          "type": "copper",
+          "thickness": "0.03"
+        },
+        {
+          "layer": "dielectric 2",
+          "type": "core",
+          "thickness": "1.23",
+          "material": "FR4 core 1.3mm 1/1oz with copper",
+          "epsilon_r": "4.5",
+          "loss_tangent": "0.02"
+        },
+        {
+          "layer": "In2.Cu",
+          "type": "copper",
+          "thickness": "0.03"
+        },
+        {
+          "layer": "dielectric 3",
+          "type": "prepreg",
+          "thickness": "0.109",
+          "material": "2116 RC54%",
+          "epsilon_r": "4.5",
+          "loss_tangent": "0.02"
+        },
+        {
+          "layer": "B.Cu",
+          "type": "copper",
+          "thickness": "0.035"
+        },
+        {
+          "layer": "B.Mask",
+          "type": "Bottom Solder Mask",
+          "thickness": "0.01"
+        },
+        {
+          "layer": "B.Paste",
+          "type": "Bottom Solder Paste"
+        },
+        {
+          "layer": "B.SilkS",
+          "type": "Bottom Silk Screen"
+        }
+      ],
+      "vias": 875,
+      "vias_with_smd_drill_overlap": 102,
+      "via_drill_counts": {
+        "0.2": 554,
+        "0.3": 321
+      },
+      "coordinate_convention": "Absolute KiCad origin; X right, Y up (negative KiCad Y); same Gerber/drill/CPL origin; no bottom mirroring",
+      "rotation_convention": "Native KiCad rotation normalized to [0,360); supplier-specific corrections NOT applied; assembly preview review required",
+      "coverage_validation_errors": [],
+      "excellon_via_checks": "All CAD via hits matched once, diameter exact; coordinate tolerance 0.000501 mm for 1 um drill export precision"
+    },
+    "Wheel": {
+      "status": "QUOTE ONLY - NOT FOR FABRICATION OR ASSEMBLY",
+      "source_sha256": {
+        "hardware/modular/wheel/10_Wheel_Driver.kicad_sch": "79620dbc6d5f2aa107becea5b3afed03383bc78fafdc824f54abdf4402768c57",
+        "hardware/modular/wheel/11_Wheel_SPI.kicad_sch": "8a1dae50b41effdca0ef167947a27f6eebe25618c1b8603c210eacf2a944bb1e",
+        "hardware/modular/wheel/12_Wheel_Feedback.kicad_sch": "d986798c86659df8e2a459b97710bc523c1e80f0d39e72aa18f57b2f7da77996",
+        "hardware/modular/wheel/13_Regeneration_Brake.kicad_sch": "903df896d3dfad9dc633ce2e447feb0d9b50bad6f9081715e10c73389946b7b2",
+        "hardware/modular/wheel/18_Wheel_Harness.kicad_sch": "b4e93533a90a94191edda257558c4f464141bc3083555149f386fd90cd82da6e",
+        "hardware/modular/wheel/19_Local_Power.kicad_sch": "53aec8cc375a071da4fe027884ac9e7f443ca8c56782dbf69faa2adae41029b7",
+        "hardware/modular/wheel/Wheel.kicad_pcb": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
+        "hardware/modular/wheel/Wheel.kicad_pro": "8e1acd14d8ee0ede253093ee334b756446c8fc4ed6ae0c4ecae97e2823463677",
+        "hardware/modular/wheel/Wheel.kicad_sch": "8b0f53a93e7b2b6cf5052950577f5c3e596dd7b0446a1982bc60633f613b6241"
+      },
+      "kicad_version": "10.0.6",
+      "schematic_pcb_references": 87,
+      "assembly_components": 82,
+      "bom_lines": 29,
+      "excluded_references": [
+        {
+          "Designator": "J5",
+          "Comment": "GB1806 phase wires",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP34",
+          "Comment": "ACT_5V",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP35",
+          "Comment": "BRAKE_REF",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP36",
+          "Comment": "BRAKE_OUT",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        },
+        {
+          "Designator": "TP37",
+          "Comment": "GND",
+          "Reason": "Excluded from source BOM (PCB copper/test access)",
+          "MPN": "",
+          "LCSC Part #": ""
+        }
+      ],
+      "assembly_sides": {
+        "top": 82
+      },
+      "native_unrouted": 0,
+      "physical_drc": 0,
+      "schematic_parity": 0,
+      "bom_cpl_reference_coverage": "PASS: each source reference assembled or explicitly excluded",
+      "copper_layers": 4,
+      "board_thickness_mm": 1.578,
+      "saved_stackup": [
+        {
+          "layer": "F.SilkS",
+          "type": "Top Silk Screen"
+        },
+        {
+          "layer": "F.Paste",
+          "type": "Top Solder Paste"
+        },
+        {
+          "layer": "F.Mask",
+          "type": "Top Solder Mask",
+          "thickness": "0.01"
+        },
+        {
+          "layer": "F.Cu",
+          "type": "copper",
+          "thickness": "0.035"
+        },
+        {
+          "layer": "dielectric 1",
+          "type": "prepreg",
+          "thickness": "0.109",
+          "material": "2116 RC54%",
+          "epsilon_r": "4.5",
+          "loss_tangent": "0.02"
+        },
+        {
+          "layer": "In1.Cu",
+          "type": "copper",
+          "thickness": "0.03"
+        },
+        {
+          "layer": "dielectric 2",
+          "type": "core",
+          "thickness": "1.23",
+          "material": "FR4 core 1.3mm 1/1oz with copper",
+          "epsilon_r": "4.5",
+          "loss_tangent": "0.02"
+        },
+        {
+          "layer": "In2.Cu",
+          "type": "copper",
+          "thickness": "0.03"
+        },
+        {
+          "layer": "dielectric 3",
+          "type": "prepreg",
+          "thickness": "0.109",
+          "material": "2116 RC54%",
+          "epsilon_r": "4.5",
+          "loss_tangent": "0.02"
+        },
+        {
+          "layer": "B.Cu",
+          "type": "copper",
+          "thickness": "0.035"
+        },
+        {
+          "layer": "B.Mask",
+          "type": "Bottom Solder Mask",
+          "thickness": "0.01"
+        },
+        {
+          "layer": "B.Paste",
+          "type": "Bottom Solder Paste"
+        },
+        {
+          "layer": "B.SilkS",
+          "type": "Bottom Silk Screen"
+        }
+      ],
+      "vias": 196,
+      "vias_with_smd_drill_overlap": 36,
+      "via_drill_counts": {
+        "0.3": 140,
+        "0.2": 56
+      },
+      "coordinate_convention": "Absolute KiCad origin; X right, Y up (negative KiCad Y); same Gerber/drill/CPL origin; no bottom mirroring",
+      "rotation_convention": "Native KiCad rotation normalized to [0,360); supplier-specific corrections NOT applied; assembly preview review required",
+      "coverage_validation_errors": [],
+      "excellon_via_checks": "All CAD via hits matched once, diameter exact; coordinate tolerance 0.000501 mm for 1 um drill export precision"
+    },
+    "Encoder": {
+      "status": "QUOTE ONLY - NOT FOR FABRICATION OR ASSEMBLY",
+      "source_sha256": {
+        "hardware/encoder/Encoder.kicad_pcb": "487cc3e9c7dbe6352603a6adf508b4b7b8e176259ae80b0a471ed1632d499c95",
+        "hardware/encoder/Encoder.kicad_pro": "5950e85d220d2cb0568afbe517fc51bd3b0e68633764931fef6ef78f04ac7567",
+        "hardware/encoder/Encoder.kicad_sch": "47cd463ec04d8450011fb70d4b1f522dfe7aa73348058f15eca2b71480f5a2ba"
+      },
+      "kicad_version": "10.0.6",
+      "schematic_pcb_references": 3,
+      "assembly_components": 3,
+      "bom_lines": 3,
+      "excluded_references": [],
+      "assembly_sides": {
+        "top": 3
+      },
+      "native_unrouted": 0,
+      "physical_drc": 0,
+      "schematic_parity": 0,
+      "bom_cpl_reference_coverage": "PASS: each source reference assembled or explicitly excluded",
+      "copper_layers": 2,
+      "board_thickness_mm": 1.6,
+      "saved_stackup": [],
+      "vias": 17,
+      "vias_with_smd_drill_overlap": 0,
+      "via_drill_counts": {
+        "0.3": 17
+      },
+      "coordinate_convention": "Absolute KiCad origin; X right, Y up (negative KiCad Y); same Gerber/drill/CPL origin; no bottom mirroring",
+      "rotation_convention": "Native KiCad rotation normalized to [0,360); supplier-specific corrections NOT applied; assembly preview review required",
+      "coverage_validation_errors": [],
+      "excellon_via_checks": "All CAD via hits matched once, diameter exact; coordinate tolerance 0.000501 mm for 1 um drill export precision"
+    }
+  },
+  "generator_sha256": "a3e3d56a302b897e91046bcee9c9b3022202be0613b1f066514831e06324285d",
+  "notes_template_sha256": "404647068a66b6cb4f182391aaaea6cbedbebd003e7933d477741cc67a73fda2"
+}

@@ -26,11 +26,17 @@ editor placeholders; they are not supplier-confirmed mask data. No supplier
 dielectric constant or loss tangent was provided by the displayed calculation.
 KiCad writes default epsilon_r = 4.5 and loss_tangent = 0.02 when saving;
 these are unverified placeholders, not manufacturer evidence.
-ENIG is recorded as the prototype finish choice; the final quote remains open.
-The current layout requires six 0.60/0.30 mm filled, copper-capped vias:
-four in U21's exposed pad, one in U1's ESD ground land and one in C32's
-supply land. Obtain fabricator/assembler acceptance of the fill/cap process
-and affected land/paste geometry. See [the USB layout review](USB_LAYOUT.md).
+ENIG is recorded as the prototype finish choice; manufacturing approval remains open.
+The earlier monolithic USB review identified six 0.60/0.30 mm filled,
+copper-capped vias: four in U21's exposed pad, one in U1's ESD ground land
+and one in C32's supply land. That is a historical subset, not the current
+modular-board inventory. The [current quote via maps](../quotes/2026-09-11/MANUFACTURING_NOTES.md)
+identify 102 Main and 36 Wheel vias whose drill disks intersect SMD copper.
+The [cost audit](../quotes/cost-reduction-2026-09-11/fabrication-audit.json)
+distinguishes 90 Main component-land overlaps from 12 overlaps limited to
+DNP/BOM-excluded pads; all 36 Wheel overlaps involve populated components.
+Obtain fabricator/assembler acceptance of the fill/cap process and affected
+land/paste geometry. See [the historical USB layout review](USB_LAYOUT.md).
 
 ## USB result
 

@@ -149,6 +149,15 @@ acceptance remains open even where settled-DC bias checks pass.
 
 ## Quote obtained and what remains
 
+New [quote-only manufacturing packages](../quotes/README.md) are available for
+five separate Main, Wheel and Encoder boards each. They contain actual routed
+Gerbers/drills, validated BOM/CPL files and exact via-fill inventories. All three
+jobs are now priced: EUR 779.84 in merchandise; the address-specific DHL DDP
+checkout is USD 1,187.35 including shipping and duties/taxes. Main R25, Wheel U31 and Encoder U27
+are out of stock; the PMW3360 and non-PCBA items are separate. See the linked
+quote report for the full scope. Encoder stays two-layer in this comparison;
+no production panel has been created and no order was submitted.
+
 The [live JLCPCB calculator](https://cart.jlcpcb.com/quote) displayed
 **US $179.47 for five bare 147 x 135 mm panels**, or **$35.89 per set in PCB
 fabrication alone**. See the [recorded inputs and itemization](jlcpcb-quote-2026-09-10.json).
@@ -161,7 +170,7 @@ excluded from the baseline because the current U1/C32/U21 in-pad vias require
 filled/capped processing. Merely changing the order checkbox is not a valid
 cost reduction for that layout. The browser was restored to filled/capped.
 
-**No assembled or delivered total was obtained.** The assembly screen requires
+**The earlier bare-panel session obtained no assembled or delivered total.** Its assembly screen required
 Gerbers before proceeding. The destination selector returned an empty country
 list, so shipping to Croatia could not be calculated. No files were uploaded,
 no supplier quote ID was issued and no order was placed. Components, assembly,

@@ -1,0 +1,30 @@
+{
+  "observed_on": "2026-09-11",
+  "source": "https://cart.jlcpcb.com/quote",
+  "currency": "EUR",
+  "quantity_per_design": 5,
+  "scope": "Six-layer calculator only; no six-layer Gerbers uploaded or CAD migrated",
+  "coupons_applied": false,
+  "assembly_shipping_tax_included": false,
+  "common_options": {
+    "color": "Green",
+    "silkscreen": "White",
+    "nominal_thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "finish": "ENIG 1 microinch",
+    "material": "FR4 TG155",
+    "vias": "Epoxy Filled & Capped",
+    "production_file_confirmation": true,
+    "kelvin_test": true
+  },
+  "comparisons": [
+    {"board":"Main","processing_size_mm":[90,125],"stack":"JLC061611-2116","inner_copper_oz":1,"minimum_drill_mm":0.2,"impedance_control":"+/-10%","price":155.33,"economic_assembly_eligible":false},
+    {"board":"Main","processing_size_mm":[90,125],"stack":"JLC06161H-3313","inner_copper_oz":0.5,"minimum_drill_mm":0.2,"impedance_control":"+/-10%","price":112.19},
+    {"board":"Wheel","processing_size_mm":[71,70],"stack":"JLC06161H-3313","inner_copper_oz":0.5,"minimum_drill_mm":0.2,"impedance_control":"No requirement","price":74.12},
+    {"board":"Main","processing_size_mm":[90,125],"stack":"JLC06161H-3313","inner_copper_oz":0.5,"minimum_drill_mm":0.3,"impedance_control":"+/-10%","price":96.89},
+    {"board":"Wheel","processing_size_mm":[71,70],"stack":"JLC06161H-3313","inner_copper_oz":0.5,"minimum_drill_mm":0.3,"impedance_control":"No requirement","price":59.48}
+  ],
+  "half_ounce_stack_display": {"actual_thickness_mm":1.5384,"thickness_tolerance_percent":10,"outer_prepreg_mm":0.0994,"inner_copper_mm":0.0152},
+  "enig_2_microinch_main_half_ounce_0_2mm_price":127.10,
+  "note": "Same nominal copper weight is not the same stack. All changes require electrical and mechanical revalidation. Do not submit present four-layer Gerbers as six-layer boards."
+}

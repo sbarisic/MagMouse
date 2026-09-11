@@ -1,0 +1,146 @@
+{
+  "status": "QUOTE ONLY - NOT FOR FABRICATION OR ASSEMBLY",
+  "source_sha256": {
+    "hardware/modular/wheel/10_Wheel_Driver.kicad_sch": "79620dbc6d5f2aa107becea5b3afed03383bc78fafdc824f54abdf4402768c57",
+    "hardware/modular/wheel/11_Wheel_SPI.kicad_sch": "8a1dae50b41effdca0ef167947a27f6eebe25618c1b8603c210eacf2a944bb1e",
+    "hardware/modular/wheel/12_Wheel_Feedback.kicad_sch": "d986798c86659df8e2a459b97710bc523c1e80f0d39e72aa18f57b2f7da77996",
+    "hardware/modular/wheel/13_Regeneration_Brake.kicad_sch": "903df896d3dfad9dc633ce2e447feb0d9b50bad6f9081715e10c73389946b7b2",
+    "hardware/modular/wheel/18_Wheel_Harness.kicad_sch": "b4e93533a90a94191edda257558c4f464141bc3083555149f386fd90cd82da6e",
+    "hardware/modular/wheel/19_Local_Power.kicad_sch": "53aec8cc375a071da4fe027884ac9e7f443ca8c56782dbf69faa2adae41029b7",
+    "hardware/modular/wheel/Wheel.kicad_pcb": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
+    "hardware/modular/wheel/Wheel.kicad_pro": "8e1acd14d8ee0ede253093ee334b756446c8fc4ed6ae0c4ecae97e2823463677",
+    "hardware/modular/wheel/Wheel.kicad_sch": "8b0f53a93e7b2b6cf5052950577f5c3e596dd7b0446a1982bc60633f613b6241"
+  },
+  "kicad_version": "10.0.6",
+  "schematic_pcb_references": 87,
+  "assembly_components": 82,
+  "bom_lines": 29,
+  "excluded_references": [
+    {
+      "Designator": "J5",
+      "Comment": "GB1806 phase wires",
+      "Reason": "Excluded from source BOM (PCB copper/test access)",
+      "MPN": "",
+      "LCSC Part #": ""
+    },
+    {
+      "Designator": "TP34",
+      "Comment": "ACT_5V",
+      "Reason": "Excluded from source BOM (PCB copper/test access)",
+      "MPN": "",
+      "LCSC Part #": ""
+    },
+    {
+      "Designator": "TP35",
+      "Comment": "BRAKE_REF",
+      "Reason": "Excluded from source BOM (PCB copper/test access)",
+      "MPN": "",
+      "LCSC Part #": ""
+    },
+    {
+      "Designator": "TP36",
+      "Comment": "BRAKE_OUT",
+      "Reason": "Excluded from source BOM (PCB copper/test access)",
+      "MPN": "",
+      "LCSC Part #": ""
+    },
+    {
+      "Designator": "TP37",
+      "Comment": "GND",
+      "Reason": "Excluded from source BOM (PCB copper/test access)",
+      "MPN": "",
+      "LCSC Part #": ""
+    }
+  ],
+  "assembly_sides": {
+    "top": 82
+  },
+  "native_unrouted": 0,
+  "physical_drc": 0,
+  "schematic_parity": 0,
+  "bom_cpl_reference_coverage": "PASS: each source reference assembled or explicitly excluded",
+  "copper_layers": 4,
+  "board_thickness_mm": 1.578,
+  "saved_stackup": [
+    {
+      "layer": "F.SilkS",
+      "type": "Top Silk Screen"
+    },
+    {
+      "layer": "F.Paste",
+      "type": "Top Solder Paste"
+    },
+    {
+      "layer": "F.Mask",
+      "type": "Top Solder Mask",
+      "thickness": "0.01"
+    },
+    {
+      "layer": "F.Cu",
+      "type": "copper",
+      "thickness": "0.035"
+    },
+    {
+      "layer": "dielectric 1",
+      "type": "prepreg",
+      "thickness": "0.109",
+      "material": "2116 RC54%",
+      "epsilon_r": "4.5",
+      "loss_tangent": "0.02"
+    },
+    {
+      "layer": "In1.Cu",
+      "type": "copper",
+      "thickness": "0.03"
+    },
+    {
+      "layer": "dielectric 2",
+      "type": "core",
+      "thickness": "1.23",
+      "material": "FR4 core 1.3mm 1/1oz with copper",
+      "epsilon_r": "4.5",
+      "loss_tangent": "0.02"
+    },
+    {
+      "layer": "In2.Cu",
+      "type": "copper",
+      "thickness": "0.03"
+    },
+    {
+      "layer": "dielectric 3",
+      "type": "prepreg",
+      "thickness": "0.109",
+      "material": "2116 RC54%",
+      "epsilon_r": "4.5",
+      "loss_tangent": "0.02"
+    },
+    {
+      "layer": "B.Cu",
+      "type": "copper",
+      "thickness": "0.035"
+    },
+    {
+      "layer": "B.Mask",
+      "type": "Bottom Solder Mask",
+      "thickness": "0.01"
+    },
+    {
+      "layer": "B.Paste",
+      "type": "Bottom Solder Paste"
+    },
+    {
+      "layer": "B.SilkS",
+      "type": "Bottom Silk Screen"
+    }
+  ],
+  "vias": 196,
+  "vias_with_smd_drill_overlap": 36,
+  "via_drill_counts": {
+    "0.3": 140,
+    "0.2": 56
+  },
+  "coordinate_convention": "Absolute KiCad origin; X right, Y up (negative KiCad Y); same Gerber/drill/CPL origin; no bottom mirroring",
+  "rotation_convention": "Native KiCad rotation normalized to [0,360); supplier-specific corrections NOT applied; assembly preview review required",
+  "coverage_validation_errors": [],
+  "excellon_via_checks": "All CAD via hits matched once, diameter exact; coordinate tolerance 0.000501 mm for 1 um drill export precision"
+}

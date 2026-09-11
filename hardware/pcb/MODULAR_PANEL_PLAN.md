@@ -2,18 +2,20 @@
 
 2026-09-10. Design brief and manufacturing research, not fabrication files.
 
-2026-09-11 update: the independent wheel is routed and the shaped main is
-placed. **Panelization is on hold until both boards have stable placement and
+2026-09-11 update: the independent wheel and shaped main are routed.
+**Panelization is on hold until both boards have stable placement and
 mechanical interfaces.** The nesting study below remains unchanged; no final
 panel, tabs or tooling were created in the layout-completion pass.
 
 The [implementation planning package](../modular/README.md) now contains the
 native board envelopes, complete proposed component ownership, logical harness
 pin map and a live provisional bare-panel price. Target quantity/destination:
-five assembled sets, Croatia 43000. Assembly and delivery are not yet quoted.
+five assembled sets, Croatia 43000. [Separate-job assembly and delivery quotes](../quotes/README.md)
+are now available, including a completed two-assembled-set cost comparison.
 Independent split schematics and connector/bias additions are now implemented;
-see [the current interface review](../modular/INTERFACE_REVIEW.md). Copper
-migration and the finished breakaway panel remain open.
+see [the current interface review](../modular/INTERFACE_REVIEW.md). The finished
+breakaway panel remains open. The [mechanical-interface register](../modular/MECHANICAL_INTERFACES.md)
+is the authority for unfrozen mounts, cable paths and optical/button geometry.
 
 ## Confirmed dimensions and requested delivery
 
@@ -21,9 +23,8 @@ The user confirmed that the hand-drawn dimensions are millimetres and describe
 the PCB, not the shell: 125 mm long, 80 mm maximum width and approximately
 44 mm across the narrow end. The shell will be larger. These define the new
 shaped motherboard envelope; the curves and the location of the width
-transitions still need a dimensioned drawing. They supersede the intended
-60 x 95 mm product envelope, but the existing editable motherboard remains
-60 x 95 mm until the new placement and partition are implemented.
+transitions are implemented in the active shaped Main PCB. They supersede the
+old 60 x 95 mm monolithic board, which is retained only as historical reference.
 
 The requested delivery target is one assembled panel containing detachable
 modules, joined by routed gaps and perforated breakaway tabs. The user's

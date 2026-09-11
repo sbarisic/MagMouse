@@ -1,0 +1,6 @@
+﻿Designator,Comment,Reason,MPN,LCSC Part #
+J5,GB1806 phase wires,Excluded from source BOM (PCB copper/test access),,
+TP34,ACT_5V,Excluded from source BOM (PCB copper/test access),,
+TP35,BRAKE_REF,Excluded from source BOM (PCB copper/test access),,
+TP36,BRAKE_OUT,Excluded from source BOM (PCB copper/test access),,
+TP37,GND,Excluded from source BOM (PCB copper/test access),,

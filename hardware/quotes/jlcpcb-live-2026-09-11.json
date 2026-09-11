@@ -1,0 +1,275 @@
+{
+  "status": "Address-specific DHL DDP checkout quote obtained; three stock shortages excluded; no order submitted",
+  "observed_on": "2026-09-11",
+  "source_url": "https://cart.jlcpcb.com/quote",
+  "requested": {
+    "sets": 5,
+    "boards_per_design": 5,
+    "country": "Croatia",
+    "postcode": "43000"
+  },
+  "uploaded": {
+    "Main": {
+      "gerbers": true,
+      "bom": true,
+      "cpl": true,
+      "detected_layers": 4,
+      "detected_outline_mm": [
+        80,
+        125
+      ]
+    },
+    "Wheel": {
+      "gerbers": true,
+      "bom": true,
+      "cpl": true,
+      "detected_layers": 4,
+      "detected_outline_mm": [
+        55,
+        60
+      ]
+    },
+    "Encoder": {
+      "gerbers": true,
+      "bom": true,
+      "cpl": true,
+      "detected_layers": 2,
+      "detected_outline_mm": [
+        14,
+        18
+      ]
+    }
+  },
+  "fabrication_calculator_observations_only": {
+    "Main": {
+      "currency": "EUR",
+      "displayed_subtotal": 152.24,
+      "processing_size_mm": [
+        90,
+        125
+      ],
+      "assembly_service": "Standard",
+      "status": "Verified JLC041611-2116, 90 ohm USB note, fill/cap all vias, Standard top-side assembly, quantity five",
+      "shipping_included": false,
+      "components_or_assembly_included": false
+    },
+    "Wheel": {
+      "currency": "EUR",
+      "displayed_subtotal": 99.58,
+      "processing_size_mm": [
+        71,
+        70
+      ],
+      "assembly_service": "Standard",
+      "stackup": "JLC041611-2116",
+      "outer_copper_oz": 1,
+      "inner_copper_oz": 1,
+      "material": "FR4 TG155 automatically required by 0.20 mm via selection",
+      "via_covering": "Epoxy Filled & Capped",
+      "via_plating": "Horizontal Electroless Copper Plating",
+      "minimum_via_hole_mm": 0.2,
+      "finish": "ENIG 1 microinch",
+      "color": "Green",
+      "impedance_control": "No requirement; no USB pair on Wheel",
+      "production_file_confirmation": true,
+      "automatic_production_confirmation": false,
+      "line_items_displayed": {
+        "special_offer": 6.02,
+        "via_covering": 14.64,
+        "stackup": 14.29,
+        "surface_finish": 14.61,
+        "material_type": 2.93,
+        "inner_copper": 14.29,
+        "minimum_via_hole": 14.64,
+        "kelvin_test": 14.39,
+        "via_plating": 2.87,
+        "production_file_confirmation": 0.89
+      },
+      "rounding_note": "Displayed line items sum to EUR 99.57; site total is EUR 99.58, retained as shown",
+      "shipping_estimate_separate": {
+        "amount": 18.55,
+        "currency": "EUR",
+        "method": "DHL Express",
+        "days": "2-4 business days",
+        "country_selected": "Croatia",
+        "postcode_entered": false
+      },
+      "shipping_included": false,
+      "components_or_assembly_included": false
+    },
+    "Encoder": {
+      "currency": "USD",
+      "displayed_subtotal": 20.7,
+      "processing_size_mm": [
+        14,
+        18
+      ],
+      "assembly_service": "Economic",
+      "layers": 2,
+      "thickness_mm": 1.6,
+      "finish": "ENIG",
+      "via_covering": "Tented",
+      "line_items_displayed": {
+        "special_offer": 4.0,
+        "surface_finish": 16.5,
+        "deburring": 0.2
+      },
+      "status": "Pre-login quote; small-board handling and component eligibility not yet accepted by assembly flow",
+      "shipping_included": false,
+      "components_or_assembly_included": false
+    }
+  },
+  "assembled_total": 779.84,
+  "component_total": 311.87,
+  "combined_shipping": 23.09,
+  "tax": {
+    "scope": "DHL DDP combined customs duties and taxes",
+    "currency": "USD",
+    "amount": 244.04
+  },
+  "supplier_quote_id": null,
+  "order_placed": false,
+  "payment_made": false,
+  "resume": [
+    "Resolve stock for Main R25, Wheel U31 and Encoder U27 without silent substitutions",
+    "Source PMW3360/lens separately",
+    "Complete mechanical and manufacturing review before ordering",
+    "Reprice the final population and production files; no order/payment authorized"
+  ],
+  "live_pcba_quotes": {
+    "component_subtotal": 311.87,
+    "sum_of_individual_quote_page_totals": 779.83,
+    "per_set_with_estimated_shipping": 160.586,
+    "other_exclusions": [
+      "Main U35 PMW3360 sensor and installation",
+      "Optical lens",
+      "FFC and JST cables",
+      "Motor, coils, magnets, bearings and wheel",
+      "Shell and mechanical parts"
+    ],
+    "cart_subtotal_with_estimated_shipping": 802.93,
+    "pricing_scope": "Three separate jobs, supplier handling rails only; not the final mixed-design panel",
+    "rounding_note": "JLC cart rounds PCB and PCBA line items separately; retain live cart total of EUR 779.84 rather than sum of quote-page totals",
+    "Main": {
+      "feeders": 68.4,
+      "components": 233.19,
+      "pcb": 152.24,
+      "setup": 21.97,
+      "smt": 5.91,
+      "xray": 14.1,
+      "packaging": 0.43,
+      "cart_pcba": "SMT026091163532-6515285A",
+      "pcba_including_components": 351.06,
+      "pcb_file_no": "2d3a7fad59ef448aad782eb87c468242",
+      "assembly_references_per_board": 205,
+      "excluded_stock_shortage": {
+        "lcsc": "C23259",
+        "required_placements": 5,
+        "reference": "R25",
+        "mpn": "0603WAF8873T5E",
+        "purchase_shortfall_with_attrition": 20
+      },
+      "stencil": 7.06,
+      "quote_page_total": 503.29,
+      "requested_references_per_board": 206,
+      "cart_pcb": "Y4-6515285A"
+    },
+    "final_delivered_price": {
+      "scope": "Partial population; not complete functional sets",
+      "currency": "USD",
+      "amount": 1187.35
+    },
+    "Wheel": {
+      "feeders": 36.83,
+      "components": 77.18,
+      "pcb": 99.58,
+      "setup": 21.97,
+      "smt": 2.53,
+      "packaging": 0.42,
+      "cart_pcba": "SMT026091163531-6515285A",
+      "pcba_including_components": 145.99,
+      "pcb_file_no": "626a1bc8f0e14ee7a8ad8d7bdf755a87",
+      "assembly_references_per_board": 81,
+      "excluded_stock_shortage": {
+        "lcsc": "C139302",
+        "required_placements": 5,
+        "reference": "U31",
+        "mpn": "LM4040AIM3-2.5/NOPB",
+        "purchase_shortfall_with_attrition": 5
+      },
+      "stencil": 7.06,
+      "quote_page_total": 245.57,
+      "requested_references_per_board": 82,
+      "cart_pcb": "Y3-6515285A"
+    },
+    "cart_shipping_estimate": {
+      "weight_kg": 1.53,
+      "postcode_entered": false,
+      "method": "DHL Express",
+      "country": "Croatia",
+      "amount": 23.09,
+      "delivery": "2-4 business days"
+    },
+    "checkout_blocker": null,
+    "tax_included": false,
+    "Encoder": {
+      "cart_pcba": "SMT026091163527-6515285A",
+      "components": 1.5,
+      "pcb": 17.62,
+      "setup": 7.03,
+      "extended_parts": 2.64,
+      "smt": 0.08,
+      "layers": 2,
+      "pcba_including_components": 13.35,
+      "pcb_file_no": "d75181ec4c1647eba3811eeab723ad5b",
+      "assembly_references_per_board": 2,
+      "nitrogen_reflow": 0.77,
+      "excluded_stock_shortage": {
+        "reference": "U27",
+        "catalog_price_is_not_available_procurement_quote": true,
+        "lcsc": "C17233427",
+        "exact_mpn_search": "Zero JLCPCB stock and zero idle stock",
+        "catalog_only_unit_price_eur": 1.2067,
+        "required_placements": 5,
+        "mpn": "MA735GGU-P",
+        "purchase_shortfall_with_attrition": 5
+      },
+      "stencil": 1.32,
+      "quote_page_total": 30.97,
+      "requested_references_per_board": 3,
+      "cart_pcb": "Y2-6515285A"
+    },
+    "currency": "EUR",
+    "quantity_per_design": 5,
+    "release_status": "QUOTE ONLY. Component rotation, final process review and mechanical interfaces are not approved for production.",
+    "cart_merchandise_total": 779.84,
+    "manually_included_default_unselected_main_refs": [
+      "J2",
+      "J3",
+      "J4",
+      "SW1",
+      "SW2"
+    ],
+    "substitutions_made": false
+  },
+  "address_specific_delivered_quote": {
+    "currency": "USD",
+    "postcode": "43000",
+    "approximate_eur_per_set": 204.15,
+    "country": "Croatia",
+    "grand_total": 1187.35,
+    "shipping": 36.2,
+    "per_set": 237.47,
+    "merchandise": 907.11,
+    "delivery": "2-4 business days",
+    "method": "DHL Express (DDP)",
+    "approximate_eur_total": 1020.76,
+    "order_submitted": false,
+    "customs_duties_and_taxes": 244.04,
+    "personal_data_policy": "Do not record name, street address or phone in repository artifacts",
+    "eur_conversion_basis": "Derived from JLCPCB same-cart EUR 779.84 / USD 907.11; checkout itself displays USD. Not a guaranteed EUR payment amount.",
+    "payment_step_entered": false,
+    "full_address_entered_with_explicit_user_authorization": true,
+    "priced_scope": "Five partial-population Main + Wheel + Encoder sets, same three stock shortages and optical/mechanical exclusions"
+  }
+}

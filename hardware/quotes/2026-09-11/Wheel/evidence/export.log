@@ -1,0 +1,39 @@
+["sch", "export", "netlist", "--format", "kicadxml", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\evidence\\netlist.xml", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_sch"]
+
+["pcb", "drc", "--format", "json", "--schematic-parity", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\evidence\\drc.json", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_pcb"]
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to hardware/quotes/2026-09-11/Wheel/evidence/drc.json
+
+["pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", "both", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\evidence\\native-positions.csv", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_pcb"]
+Wrote position data to 'hardware\quotes\2026-09-11\Wheel\evidence\native-positions.csv'.
+
+["pcb", "export", "gerbers", "--layers", "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts", "--subtract-soldermask", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\gerbers", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_pcb"]
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-F_Cu.gtl'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-In1_Cu.g1'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-In2_Cu.g2'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-B_Cu.gbl'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-F_Paste.gtp'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-B_Paste.gbp'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-F_Silkscreen.gto'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-B_Silkscreen.gbo'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-F_Mask.gts'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-B_Mask.gbs'.
+Plotted to 'E:hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-Edge_Cuts.gm1'.
+
+["pcb", "export", "drill", "--format", "excellon", "--drill-origin", "absolute", "--excellon-units", "mm", "--excellon-separate-th", "--generate-map", "--map-format", "svg", "--generate-report", "--report-path", "hardware\\quotes\\2026-09-11\\Wheel\\evidence\\drill-report.txt", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\gerbers", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_pcb"]
+Created file 'hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-PTH.drl'
+Created file 'hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-NPTH.drl'
+Created file 'hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-PTH-drl_map.svg'.
+Created file 'hardware\quotes\2026-09-11\Wheel\gerbers\Wheel-NPTH-drl_map.svg'.
+Done.
+
+["pcb", "export", "svg", "--mode-single", "--page-size-mode", "2", "--exclude-drawing-sheet", "--layers", "F.Fab,F.Silkscreen,Edge.Cuts", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\assembly-F.svg", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_pcb"]
+Plotted to 'hardware\quotes\2026-09-11\Wheel\assembly-F.svg'.
+Done.
+
+["pcb", "export", "svg", "--mode-single", "--page-size-mode", "2", "--exclude-drawing-sheet", "--layers", "B.Fab,B.Silkscreen,Edge.Cuts", "-o", "hardware\\quotes\\2026-09-11\\Wheel\\assembly-B.svg", "E:\\Projects\\MagMouse\\hardware\\modular\\wheel\\Wheel.kicad_pcb"]
+Plotted to 'hardware\quotes\2026-09-11\Wheel\assembly-B.svg'.
+Done.
+
