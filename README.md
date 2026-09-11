@@ -13,11 +13,16 @@ project is retained as a reference. These are not fabrication-ready designs;
 mechanics, manufacturing and hardware qualification remain open. Contactless sensing removes
 electrical switch contacts; it does not eliminate mechanical wear or other failures.
 
-[Quote-only JLCPCB packages](hardware/quotes/README.md) now provide separate
-Main/Wheel/Encoder Gerbers, BOMs and CPLs for pricing five sets. The live JLCPCB
-checkout quotes USD 1,187.35 (about EUR 1,021) including DHL DDP shipping and
-duties/taxes for five sets to Croatia 43000. Three stock shortages and the separately installed optical sensor remain;
-this is a partial-population quote, not an order-ready complete set.
+The current [Rev-A bench package](hardware/bench/README.md) targets five bare
+three-board panels, one self-assembled population and one stencil, with U32
+unpopulated. Encoder now uses the common four-layer construction. The
+[cost checkpoint](hardware/bench/COST_CHECKPOINT.md) records USD 260.30 delivered
+for the economy panels and stencil, versus USD 292.65 with paid impedance
+control or USD 389.44 for separate boards. Components, cables and bench
+mechanisms are additional; the complete delivered total remains unverified.
+The files are for quote/review only, pending supplier, assembly, bench-fit and
+CAM checks. Earlier [PCBA quote packages](hardware/quotes/README.md) remain as
+historical comparisons, not the selected purchasing plan.
 
 ## V1 concept
 

@@ -1,0 +1,40 @@
+{
+  "scope": "Saved USB continuity, 90-ohm design geometry, filled In1 reference and ESD grounding",
+  "board_is_not_usb_compliance_or_impedance_acceptance": true,
+  "width_mm": 0.1466,
+  "gap_mm": 0.1501,
+  "reference_margin_beyond_trace_edge_mm": 0.327,
+  "uncovered_reference_area_sum_mm2": 0.0,
+  "uncovered_segment_uuids": [],
+  "copper_lengths_mm": {
+    "USB_DM": 156.534975,
+    "MCU_USB_DP": 1.978553,
+    "MCU_USB_DM": 2.309924,
+    "USB_DP": 157.423399
+  },
+  "contact_path_lengths_mm": {
+    "A": {
+      "P": 159.276953,
+      "M": 157.4399
+    },
+    "B": {
+      "P": 156.186953,
+      "M": 156.4399
+    }
+  },
+  "contact_path_skew_mm": {
+    "A": 1.837053,
+    "B": 0.252947
+  },
+  "contact_path_skew_budget_mm": 2.5,
+  "coupled_copper_fraction": 0.93184,
+  "termination_pad_distances_mm": {
+    "R6": 1.8916,
+    "R5": 2.149
+  },
+  "u1_ground_vias_requiring_fill_and_cap": 1,
+  "native_unconnected_connections": 0,
+  "errors": [],
+  "selected_stackup": "JLC041611-2116, 1 oz outer/inner",
+  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+}

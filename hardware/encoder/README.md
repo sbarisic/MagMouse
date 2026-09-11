@@ -1,5 +1,14 @@
 # Upright wheel encoder
 
+## Rev-A bench stack migration, 2026-09-11
+
+The current PCB uses the same four-layer **JLC041611-2116** construction as
+Main and Wheel. Original outer-layer routing, 17 through vias, sensor datum
+and connector orientation are preserved. In1/In2 have ground copper. Native
+DRC, schematic parity and connectivity pass. The historical description below
+predates this migration; use [the bench package](../bench/README.md) for the
+current panel, self-assembly variant and unresolved ordering gates.
+
 Revision 0.8, 2026-09-09, KiCad 10.0.6. The separate **14 x 18 mm** encoder PCB
 is fully routed. ERC, physical DRC and schematic parity pass; there are zero
 unconnected items. These checks do not establish mechanical fit or operation.

@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-09-11",
+  "status": "QUOTE ONLY - NO ORDER SUBMITTED",
+  "destination": "Croatia 43000",
+  "quantity_panels": 5,
+  "different_designs": 3,
+  "panel_size_mm": [151, 139],
+  "stencil": {"quantity": 1, "size_mm": [220, 200], "thickness_mm": 0.10, "unframed": true, "multiple_boards": true, "price_EUR": 6.59, "job": "Stencil-QUOTE-SO12609120215", "cam_positions_require_confirmation": true},
+  "common_specification": {"stack": "JLC041611-2116", "layers": 4, "thickness_mm_nominal": 1.6, "outer_copper_oz": 1, "inner_copper_oz": 1, "material": "FR4 TG155", "finish": "ENIG 1 microinch", "via_covering": "Epoxy Filled & Capped", "x_outs": "Not Accept", "source_drill_sizes_preserved_in_remarks": true, "confirm_production_file": true},
+  "economy": {"PCB_price_EUR": 138.11, "impedance_control": "No requirement; fixed stack retained", "delivered_with_stencil": {"currency": "USD", "merchandise": 168.31, "shipping": 26.42, "duties_and_taxes": 65.57, "total": 260.30, "carrier": "DHL Express DDP", "transit_business_days": "2-4"}, "alternative_EuroPacket_total_USD": 262.52},
+  "guaranteed": {"PCB_price_EUR": 166.34, "impedance_control": "90 ohm differential +/-10%", "delivered_with_stencil": {"currency": "USD", "merchandise": 201.15, "shipping": 26.40, "duties_and_taxes": 65.10, "total": 292.65, "carrier": "DHL Express DDP", "transit_business_days": "2-4"}},
+  "delivered_saving_USD": 32.35,
+  "separate_boards_economy": {"quantity_each": 5, "same_four_layer_specification": true, "main_EUR": 92.92, "wheel_EUR": 70.01, "encoder_EUR": 69.32, "PCB_subtotal_EUR": 232.25, "with_stencil_EUR": 238.84, "jobs": ["Main-Gerbers-QUOTE_Y11", "Wheel-Gerbers-QUOTE_Y12", "Encoder-Gerbers-QUOTE_Y13"], "delivered_with_stencil": {"currency": "USD", "merchandise": 277.82, "shipping": 27.16, "duties_and_taxes": 84.46, "total": 389.44, "carrier": "DHL Express DDP"}},
+  "panel_vs_separate_delivered_saving_USD": 129.14,
+  "scope_notes": ["The cart displays EUR but checkout displays USD. Do not label checkout amounts as EUR.", "These totals cover bare panels and stencil only, not components or bench mechanisms.", "Earlier 130.31/158.55 EUR panel values accepted X-outs and are superseded.", "No final Submit Order or payment action was performed.", "Uploaded panel geometry matches the current build; subsequent deterministic UUID normalization did not change copper/drill geometry. Re-upload final hash-identified package after CAM/release gates close."]
+}

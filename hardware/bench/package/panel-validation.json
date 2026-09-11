@@ -1,0 +1,10 @@
+{
+  "source_pad_count": 1196,
+  "tracks_and_vias": 18323,
+  "filled_polygon_vertices": 119734,
+  "native_unrouted": 0,
+  "unit_transforms_and_net_isolation": "PASS",
+  "saved_copper_translation": "PASS",
+  "tab_drill_unit_clearance_mm": 0.2,
+  "manufacturing_release": false
+}

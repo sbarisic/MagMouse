@@ -1,0 +1,11 @@
+{
+  "thickness_mm": 0.1,
+  "populated_smt_references": 290,
+  "aperture_count": 1084,
+  "deliberately_removed_paste": [
+    "M_U32"
+  ],
+  "below_screening_ratio": [],
+  "status": "APERTURE REVIEW DRAFT - package-specific solder coverage and stencil vendor confirmation required",
+  "scope": "Rectangular aperture ratio screening; not paste-transfer or hidden-joint acceptance"
+}

@@ -1,0 +1,264 @@
+{
+  "checked_on": "2026-09-11",
+  "status": "PUBLIC LISTING CHECKPOINT - NOT A DELIVERED COMPLETE CART",
+  "tools_excluded_from_budget": true,
+  "population_sets": 1,
+  "prices_include_delivery": false,
+  "items": {
+    "CRCW060334K8FKEA": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/vishay-dale/CRCW060334K8FKEA/1174842",
+      "stock_observed": 47827,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 0.1,
+      "package": "0603",
+      "status": "Reviewed bench purchasing substitute for Wheel R113; see SOURCING.md; delivery/tax not quoted"
+    },
+    "TMAG5253BA2IQDMRR": {
+      "supplier": "Mouser",
+      "url": "https://www.mouser.com/ProductDetail/Texas-Instruments/TMAG5253BA2IQDMRR?qs=mELouGlnn3fpVa%252Bc8W6ShA%3D%3D",
+      "stock_observed": 3785,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 0.77,
+      "package": "4-X2SON 1.1x1.4mm",
+      "status": "Exact MPN cut tape listing; separate supplier delivery/tax not quoted"
+    },
+    "SN74LVC08APWR": {
+      "supplier": "Mouser",
+      "url": "https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC08APWR?qs=FM6NhYOeeBVuqx5y44y2yw%3D%3D",
+      "stock_observed": 14237,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 0.4,
+      "package": "14-TSSOP",
+      "status": "Exact MPN cut tape listing; separate supplier shipping and tax not quoted"
+    },
+    "TPD2E2U06DCKR": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TPD2E2U06DCKR/11502208",
+      "stock_observed": 17,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 0.6,
+      "package": "SC-70-3",
+      "status": "Exact MPN cut tape listing; delivery and tax not quoted"
+    },
+    "ADS7038IRTER": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/ADS7038IRTER/11502258",
+      "stock_observed": 1496,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 6.93,
+      "package": "16-WQFN 3x3mm",
+      "status": "Exact MPN cut tape listing; delivery and tax not quoted"
+    },
+    "ESP32-S3-MINI-1-N8": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1-N8/15295890",
+      "stock_observed": 9107,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 5.43,
+      "package": "41-SMD module",
+      "status": "Exact MPN cut tape listing; shipping and tax not quoted"
+    },
+    "FH12-30S-0.5SH(55)": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/FH12-30S-0-5SH-55/1000799",
+      "stock_observed": 8153,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 2.64,
+      "package": "30-position 0.5mm bottom-contact right-angle SMT",
+      "status": "Exact connector available; mating FFC enquiry pending; delivery and tax not quoted"
+    },
+    "DRV8231ADSGR": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/DRV8231ADSGR/15853799",
+      "stock_observed": 6936,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 1.79,
+      "package": "8-WSON 2x2mm",
+      "status": "Exact MPN cut tape listing; delivery and tax not quoted"
+    },
+    "MA735GGU-P": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/monolithic-power-systems-inc/MA735GGU-P/16896184",
+      "stock_observed": 253,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 4.23,
+      "package": "14-UTQFN 2x2 mm",
+      "status": "Exact MPN available as cut tape; delivery/tax not yet quoted"
+    },
+    "LM4040AIM3-2.5/NOPB": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/LM4040AIM3-2-5-NOPB/182330",
+      "stock_observed": 14529,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 2.51,
+      "package": "SOT-23-3",
+      "status": "Exact MPN available as cut tape; delivery/tax not yet quoted"
+    },
+    "0603WAF8873T5E": {
+      "supplier": "LCSC",
+      "url": "https://www.lcsc.com/product-detail/C23259.html",
+      "stock_observed": 0,
+      "moq": 100,
+      "multiple": 100,
+      "currency": "USD",
+      "unit_price": null,
+      "status": "Unavailable; do not use reference-only price as a purchasable quote"
+    },
+    "CRCW0603887KFKEA": {
+      "supplier": "DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/vishay-dale/CRCW0603887KFKEA/1175004",
+      "stock_observed": 39578,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "USD",
+      "unit_price": 0.1,
+      "package": "0603",
+      "status": "Reviewed purchasing substitute for Main R25; see SOURCING.md"
+    },
+    "PMW3360DM-T2QU": {
+      "supplier": "Yushakobo",
+      "url": "https://shop.yushakobo.jp/en/products/11274",
+      "supplier_sku": "A080040-01-1",
+      "included_lens": "LM19-LSI",
+      "stock_observed": 35,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "JPY",
+      "unit_price": null,
+      "status": "BLOCKED: checkout on 2026-09-12 offers neither Croatia nor any EU country; catalogue price excluded. No qualified forwarding service; SROM unconfirmed.",
+      "catalogue_price_jpy": 3190,
+      "delivery_available_croatia": false
+    }
+  },
+  "external_items": [
+    {
+      "item": "SteadyWin GB1806 motor only",
+      "quantity": 1,
+      "url": "https://steadywin-motor.com/products/micro-ptz-dc-small-motor-three-phase-high-speed-with-magnetic-encoder-robotic-arm-pod-parts",
+      "currency": "USD",
+      "listed_price": 12.6,
+      "status": "Page simultaneously shows sold out and add-to-cart; variant stock/delivery unconfirmed, not included in verified subtotal"
+    },
+    {
+      "item": "30-pin 0.5 mm Type-A FFC",
+      "quantity": 1,
+      "status": "Hirose mating tolerances not closed; current Wurth 687630050002 remains trial only"
+    },
+    {
+      "item": "JST PA power harness",
+      "quantity": 1,
+      "status": "Use PAP-02V-S housings and compatible SPHD contacts; wire/current/length and purchasable harness pending"
+    },
+    {
+      "item": "JST SH encoder harness",
+      "quantity": 1,
+      "status": "Two SHR-08V-S-B housings, sixteen SSH-003T-P0.2-H contacts; 50 mm target; precrimp lead sourcing pending"
+    },
+    {
+      "item": "Three button-coil harnesses",
+      "quantity": 3,
+      "status": "JST PH mating housings/contacts and wire required; source separately from PCB headers"
+    },
+    {
+      "item": "Encoder magnet",
+      "quantity": 1,
+      "status": "Diametrically magnetized shaft magnet; field/gap qualification required"
+    },
+    {
+      "item": "Hall/actuator magnets, coil wire and flexure materials",
+      "quantity": 1,
+      "status": "Three-channel bench mechanism material pack; delivered price pending"
+    },
+    {
+      "item": "Bench fixture, fasteners, motor support and optical slider materials",
+      "quantity": 1,
+      "status": "See BENCH_FIXTURE.md; delivered material price pending"
+    },
+    {
+      "item": "Solder paste, flux, wick and cleaning consumables",
+      "quantity": 1,
+      "status": "Select compatible fresh paste and storage/profile; tools excluded, consumables not excluded"
+    }
+  ],
+  "delivery_review_on": "2026-09-12",
+  "replacement_candidates": [
+    {
+      "reference": "Main/L1",
+      "mpn": "SRP4020CC-3R3M",
+      "supplier": "Mouser Croatia",
+      "url": "https://hr.mouser.com/ProductDetail/Bourns/SRP4020CC-3R3M?qs=1Kr7Jg1SGW9l5g8vkQq9zA%3D%3D",
+      "checked_on": "2026-09-12",
+      "stock_observed": 1784,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "EUR",
+      "unit_price": 0.671,
+      "delivery_country_service_confirmed": true,
+      "delivered_cart_confirmed": false,
+      "status": "Electrical candidate only; different recommended solder lands require footprint/copper/stencil update and verification. Not substituted in CAD or purchasing BOM."
+    }
+  ],
+  "optical_candidates": [
+    {
+      "supplier": "CODICO Austria",
+      "sku": "261681",
+      "mpn": "PMK3360IS Sample Kit (CDC)",
+      "url": "https://www.codico.com/en/pmk3360is-sample-kit-cdc",
+      "checked_on": "2026-09-12",
+      "currency": "EUR",
+      "kit_price_ex_vat": 57,
+      "sensors_per_kit": 5,
+      "lenses_per_kit": 5,
+      "status": "EXCLUDED: business-only supplier; user has no business. Historical price only, not eligible for purchasing."
+    },
+    {
+      "supplier": "Ploopy",
+      "ship_from": "Canada",
+      "sku": "PLMKMOPMW001",
+      "url": "https://ploopy.co/shop/replacement-pixart-pmw-3360-mouse-sensor/",
+      "checked_on": "2026-09-12",
+      "consumer_purchase": true,
+      "quantity": 1,
+      "currency": "CAD",
+      "parts_price": 24.99,
+      "shipping_price": 22.02,
+      "cart_total": 47.01,
+      "collected_tax": 0,
+      "import_charges_quoted": false,
+      "destination": "Bjelovar, 43000, Croatia",
+      "shipping": "Tracked; 12-32 business days transit, excludes dispatch time",
+      "eur_reference_rate_cad": 1.6064,
+      "eur_reference_date": "2026-09-11",
+      "converted_cart_total_eur": 29.26,
+      "shipping_service_quote_confirmed": true,
+      "order_placed": false,
+      "status": "Candidate only: listing names PMW3360 sensor and optic without exact suffix/lens MPN. Confirm PMW3360DM-T2QU plus LM19-LSI and SROM before qualification. Import from Canada, not EU stock; inventory not reserved."
+    }
+  ],
+  "private_consumer_suppliers_only": true,
+  "buyer_has_business": false,
+  "selected_optical_supplier": "Ploopy",
+  "optical_supplier_selection_date": "2026-09-12",
+  "optical_purchase_authorized": false
+}

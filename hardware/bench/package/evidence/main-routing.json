@@ -1,0 +1,456 @@
+{
+  "scope": "Main connectivity, saved front reference shadows, transition return proximity and digital path/stub screening",
+  "native_unconnected": 0,
+  "digital_nets": {
+    "ADC2_MISO_LOCAL": {
+      "copper_mm": 23.001,
+      "vias": 4,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.95,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "ADC_CS": {
+      "copper_mm": 84.747,
+      "vias": 10,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 1.975,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "CS_ADC2": {
+      "copper_mm": 75.492,
+      "vias": 5,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 1.722,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "CS_DRV8316": {
+      "copper_mm": 98.119,
+      "vias": 12,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.95,
+      "all_layer_in1_shadow_missing_mm2": 0.000106
+    },
+    "CS_IMU": {
+      "copper_mm": 24.105,
+      "vias": 5,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.95,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "CS_MA735": {
+      "copper_mm": 90.802,
+      "vias": 9,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.377,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "CS_PAW": {
+      "copper_mm": 91.251,
+      "vias": 9,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.325,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "ENC_CS_LOCAL": {
+      "copper_mm": 14.14,
+      "vias": 5,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 1.856,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "ENC_MISO_LOCAL": {
+      "copper_mm": 81.458,
+      "vias": 7,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.006,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "ENC_MOSI_LOCAL": {
+      "copper_mm": 35.237,
+      "vias": 2,
+      "layers": [
+        "B.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 1.86,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "ENC_SCLK_LOCAL": {
+      "copper_mm": 23.082,
+      "vias": 2,
+      "layers": [
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 1.118,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "MOTOR_SPI_MISO": {
+      "copper_mm": 68.114,
+      "vias": 6,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.61,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "MOTOR_SPI_MOSI": {
+      "copper_mm": 52.084,
+      "vias": 6,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.511,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "MOTOR_SPI_SCLK": {
+      "copper_mm": 67.291,
+      "vias": 7,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.25,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "OPT_CS_N": {
+      "copper_mm": 14.532,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.03,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "OPT_MISO": {
+      "copper_mm": 18.287,
+      "vias": 4,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.5,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "OPT_MOSI": {
+      "copper_mm": 16.02,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.8,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "OPT_RESET_N": {
+      "copper_mm": 19.334,
+      "vias": 4,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.259,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "OPT_SCLK": {
+      "copper_mm": 9.642,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 1.736,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "SPI_MISO": {
+      "copper_mm": 76.914,
+      "vias": 10,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.273,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "SPI_MOSI": {
+      "copper_mm": 164.189,
+      "vias": 15,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.95,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    },
+    "SPI_SCLK": {
+      "copper_mm": 92.553,
+      "vias": 9,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0,
+      "farthest_ground_via_mm": 2.75,
+      "all_layer_in1_shadow_missing_mm2": 0.0
+    }
+  },
+  "spi3_paths": [
+    {
+      "from": "U3.29",
+      "to": "J8.10",
+      "conductor_mm": 67.291,
+      "counted_vias": 7,
+      "board_delay_screen_ns": 0.628
+    },
+    {
+      "from": "U3.28",
+      "to": "J8.12",
+      "conductor_mm": 52.084,
+      "counted_vias": 6,
+      "board_delay_screen_ns": 0.493
+    },
+    {
+      "from": "J8.16",
+      "to": "U25.9",
+      "conductor_mm": 16.945,
+      "counted_vias": 2,
+      "board_delay_screen_ns": 0.161
+    },
+    {
+      "from": "U25.8",
+      "to": "U3.31",
+      "conductor_mm": 68.114,
+      "counted_vias": 6,
+      "board_delay_screen_ns": 0.622
+    },
+    {
+      "from": "U3.32",
+      "to": "J8.14",
+      "conductor_mm": 45.666,
+      "counted_vias": 2,
+      "board_delay_screen_ns": 0.391
+    },
+    {
+      "from": "U3.32",
+      "to": "U25.10",
+      "conductor_mm": 60.398,
+      "counted_vias": 5,
+      "board_delay_screen_ns": 0.547
+    }
+  ],
+  "test_point_stubs": [
+    {
+      "net": "CS_ADC2",
+      "test_point": "TP23",
+      "screening_stub_mm": 0
+    },
+    {
+      "net": "CS_DRV8316",
+      "test_point": "TP25",
+      "screening_stub_mm": 0.141
+    },
+    {
+      "net": "CS_IMU",
+      "test_point": "TP18",
+      "screening_stub_mm": 0
+    },
+    {
+      "net": "CS_MA735",
+      "test_point": "TP24",
+      "screening_stub_mm": 0
+    },
+    {
+      "net": "CS_PAW",
+      "test_point": "TP16",
+      "screening_stub_mm": 0
+    },
+    {
+      "net": "MOTOR_SPI_MISO",
+      "test_point": "TP22",
+      "screening_stub_mm": 0
+    },
+    {
+      "net": "MOTOR_SPI_MOSI",
+      "test_point": "TP20",
+      "screening_stub_mm": 0
+    },
+    {
+      "net": "MOTOR_SPI_SCLK",
+      "test_point": "TP21",
+      "screening_stub_mm": 0
+    }
+  ],
+  "logic_supply_paths": [
+    {
+      "from": "U2.6",
+      "to": "U3.3",
+      "conductor_mm": 112.652,
+      "counted_vias": 8,
+      "screening_milliohms": 243.229
+    },
+    {
+      "from": "U2.6",
+      "to": "U10.7",
+      "conductor_mm": 73.621,
+      "counted_vias": 10,
+      "screening_milliohms": 192.849
+    },
+    {
+      "from": "U2.6",
+      "to": "U10.10",
+      "conductor_mm": 77.063,
+      "counted_vias": 11,
+      "screening_milliohms": 206.695
+    },
+    {
+      "from": "U2.6",
+      "to": "U25.14",
+      "conductor_mm": 61.32,
+      "counted_vias": 4,
+      "screening_milliohms": 139.27
+    },
+    {
+      "from": "U2.6",
+      "to": "U32.5",
+      "conductor_mm": 112.642,
+      "counted_vias": 10,
+      "screening_milliohms": 259.639
+    },
+    {
+      "from": "U2.6",
+      "to": "U32.8",
+      "conductor_mm": 110.593,
+      "counted_vias": 10,
+      "screening_milliohms": 249.94
+    }
+  ],
+  "bypass_supply_paths": [
+    {
+      "from": "C5.1",
+      "to": "U3.3",
+      "conductor_mm": 4.446,
+      "counted_vias": 0,
+      "screening_milliohms": 10.824
+    },
+    {
+      "from": "C6.1",
+      "to": "U3.3",
+      "conductor_mm": 1.066,
+      "counted_vias": 0,
+      "screening_milliohms": 2.595
+    },
+    {
+      "from": "C19.1",
+      "to": "U10.7",
+      "conductor_mm": 4.399,
+      "counted_vias": 4,
+      "screening_milliohms": 25.615
+    },
+    {
+      "from": "C20.1",
+      "to": "U10.10",
+      "conductor_mm": 0.763,
+      "counted_vias": 2,
+      "screening_milliohms": 8.025
+    },
+    {
+      "from": "C53.1",
+      "to": "U25.14",
+      "conductor_mm": 3.173,
+      "counted_vias": 0,
+      "screening_milliohms": 7.725
+    },
+    {
+      "from": "C72.1",
+      "to": "U32.5",
+      "conductor_mm": 2.433,
+      "counted_vias": 2,
+      "screening_milliohms": 15.358
+    },
+    {
+      "from": "C71.1",
+      "to": "U32.8",
+      "conductor_mm": 1.324,
+      "counted_vias": 4,
+      "screening_milliohms": 15.0
+    }
+  ],
+  "primary_shadow_area_tolerance_mm2": 0.0002,
+  "review_findings": [],
+  "errors": [],
+  "limits": [
+    "Delay screening assumes 8 ps/mm including full 1.6 mm barrels; excludes devices, connectors, cable and firmware.",
+    "Supply resistance uses the shared 80 C trace/barrel model; excludes pads, contacts, component and ground impedance. It is not a PDN transient simulation.",
+    "All-layer In1 shadows and ground vias joined to secondary return copper are geometric screens. Inner/back traces have a more distant primary reference; secondary pours contain signal crossings. These checks do not establish impedance or EMI performance.",
+    "Cable timing, ADC noise, USB compliance and thermal response require hardware qualification.",
+    "Mechanical interfaces are provisional; panelization remains on hold."
+  ],
+  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "PARTIAL PUBLIC LISTINGS, NOT A DELIVERED CART",
+  "population_sets": 1,
+  "priced_mpn_lines": 65,
+  "mpn_lines": 67,
+  "supplier_currency_subtotals": {
+    "LCSC / USD": 52.3845,
+    "DigiKey / USD": 37.88,
+    "Mouser / USD": 3.91
+  },
+  "unpriced_mpn_lines": [
+    "PMW3360DM-T2QU",
+    "SWPA4020S3R3MT"
+  ],
+  "external_items": [
+    {
+      "item": "SteadyWin GB1806 motor only",
+      "quantity": 1,
+      "url": "https://steadywin-motor.com/products/micro-ptz-dc-small-motor-three-phase-high-speed-with-magnetic-encoder-robotic-arm-pod-parts",
+      "currency": "USD",
+      "listed_price": 12.6,
+      "status": "Page simultaneously shows sold out and add-to-cart; variant stock/delivery unconfirmed, not included in verified subtotal"
+    },
+    {
+      "item": "30-pin 0.5 mm Type-A FFC",
+      "quantity": 1,
+      "status": "Hirose mating tolerances not closed; current Wurth 687630050002 remains trial only"
+    },
+    {
+      "item": "JST PA power harness",
+      "quantity": 1,
+      "status": "Use PAP-02V-S housings and compatible SPHD contacts; wire/current/length and purchasable harness pending"
+    },
+    {
+      "item": "JST SH encoder harness",
+      "quantity": 1,
+      "status": "Two SHR-08V-S-B housings, sixteen SSH-003T-P0.2-H contacts; 50 mm target; precrimp lead sourcing pending"
+    },
+    {
+      "item": "Three button-coil harnesses",
+      "quantity": 3,
+      "status": "JST PH mating housings/contacts and wire required; source separately from PCB headers"
+    },
+    {
+      "item": "Encoder magnet",
+      "quantity": 1,
+      "status": "Diametrically magnetized shaft magnet; field/gap qualification required"
+    },
+    {
+      "item": "Hall/actuator magnets, coil wire and flexure materials",
+      "quantity": 1,
+      "status": "Three-channel bench mechanism material pack; delivered price pending"
+    },
+    {
+      "item": "Bench fixture, fasteners, motor support and optical slider materials",
+      "quantity": 1,
+      "status": "See BENCH_FIXTURE.md; delivered material price pending"
+    },
+    {
+      "item": "Solder paste, flux, wick and cleaning consumables",
+      "quantity": 1,
+      "status": "Select compatible fresh paste and storage/profile; tools excluded, consumables not excluded"
+    }
+  ],
+  "omitted": "U32 only; tools excluded. All unpriced required items remain required. Shipping/taxes are separate and unquoted."
+}

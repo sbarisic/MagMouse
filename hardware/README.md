@@ -5,6 +5,9 @@ connections and zero physical DRC/parity issues. Mechanical integration,
 manufacturing review and hardware qualification remain open.
 
 - [Main project](modular/main/Main.kicad_pro) and [Wheel project](modular/wheel/Wheel.kicad_pro): active editable designs.
+- [Rev-A bench panel and assembly package](bench/README.md): current cost-reduction
+  variant, four-layer Encoder, one-population purchasing list and quote-only
+  manufacturing files. The derived panel does not replace the source boards.
 - [Modular package and reviews](modular/README.md): current routing, cable and mechanical status.
 - [Original KiCad project](kicad/README.md): retained monolithic reference and circuit documentation.
 

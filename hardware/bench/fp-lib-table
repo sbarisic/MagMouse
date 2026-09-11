@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MagMouse")(type "KiCad")(uri "${KIPRJMOD}/../kicad/MagMouse.pretty")(options "")(descr "Shared MagMouse footprints"))
+  (lib (name "MagMouseModular")(type "KiCad")(uri "${KIPRJMOD}/../modular/MagMouseModular.pretty")(options "")(descr "Shared modular footprints"))
+)

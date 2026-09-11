@@ -1,0 +1,296 @@
+{
+  "scope": "Main ADC1, Hall, button references/current sense and power telemetry; geometry review remains separate",
+  "analog_nets": {
+    "ACT_VMON": {
+      "pads": 5,
+      "total_track_length_mm": 25.93,
+      "signal_vias": 4,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "ADC_DECAP": {
+      "pads": 2,
+      "total_track_length_mm": 1.95,
+      "signal_vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "BTN_L_ISENSE": {
+      "pads": 3,
+      "total_track_length_mm": 39.93,
+      "signal_vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "BTN_L_VREF": {
+      "pads": 4,
+      "total_track_length_mm": 5.23,
+      "signal_vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "BTN_M_ISENSE": {
+      "pads": 3,
+      "total_track_length_mm": 36.514,
+      "signal_vias": 6,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "BTN_M_VREF": {
+      "pads": 4,
+      "total_track_length_mm": 11.345,
+      "signal_vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "BTN_R_ISENSE": {
+      "pads": 3,
+      "total_track_length_mm": 20.016,
+      "signal_vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "BTN_R_VREF": {
+      "pads": 4,
+      "total_track_length_mm": 6.026,
+      "signal_vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "HALL_L": {
+      "pads": 2,
+      "total_track_length_mm": 45.706,
+      "signal_vias": 6,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "HALL_M": {
+      "pads": 2,
+      "total_track_length_mm": 28.671,
+      "signal_vias": 5,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "HALL_R": {
+      "pads": 2,
+      "total_track_length_mm": 22.992,
+      "signal_vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "USB_IMON_ADC": {
+      "pads": 3,
+      "total_track_length_mm": 7.109,
+      "signal_vias": 4,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    },
+    "USB_IMON_BUF": {
+      "pads": 3,
+      "total_track_length_mm": 36.594,
+      "signal_vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "front_shadow_missing_mm2": 0.0
+    }
+  },
+  "checked_ground_pads": 25,
+  "review_findings": [],
+  "deferred_mechanical_findings": [
+    {
+      "kind": "switching_proximity",
+      "net": "HALL_L",
+      "aggressor": "BTN_L_COIL_N",
+      "edge_gap_mm": 0.375,
+      "analog_uuid": "bf1ff02a-53ca-4680-9422-e92fdac29793",
+      "aggressor_uuid": "e8eedc0b-4eb0-4508-879d-a402765669be",
+      "analog_start_mm": [
+        17.75,
+        40.35
+      ],
+      "layers": [
+        "F.Cu",
+        "F.Cu"
+      ]
+    }
+  ],
+  "mechanical_deferral_reason": "Hall placement awaits paddle/magnet CAD. Geometry only; Hall continuity and all hard checks remain mandatory.",
+  "fixed_placement_review_complete": true,
+  "review_complete": false,
+  "whole_net_copper_regression_limits_mm": {
+    "ADC_DECAP": 5,
+    "BTN_L_VREF": 10,
+    "BTN_M_VREF": 25,
+    "BTN_R_VREF": 10,
+    "BTN_L_ISENSE": 60,
+    "BTN_M_ISENSE": 55,
+    "BTN_R_ISENSE": 40,
+    "USB_IMON_BUF": 50,
+    "USB_IMON_ADC": 18,
+    "ACT_VMON": 40
+  },
+  "limitations": "Proximity uses a 0.5 mm project screening distance, includes pin launches, and does not predict coupling. Front shadows exclude own-via transitions; internal/back return paths and ground voltage drops need whole-board review. Supply routing and source/ADC settling still need review and hardware measurements.",
+  "native_unconnected_connections": 0,
+  "errors": [],
+  "reviewed_driver_pin_launches": [
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_L_ISENSE",
+      "aggressor": "BTN_L_COIL_P",
+      "edge_gap_mm": 0.157455,
+      "analog_uuid": "7d58a2ed-fe27-4d61-8ce8-f0c1b79ed901",
+      "aggressor_uuid": "97d5331f-36ff-43fd-bfd6-22c8c98803c5",
+      "analog_start_mm": [
+        15.3,
+        44.1
+      ],
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "driver": "U4",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 0.969375,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    },
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_L_ISENSE",
+      "aggressor": "BTN_L_IN2",
+      "edge_gap_mm": 0.165832,
+      "analog_uuid": "c32ac5b1-59c1-483f-b710-54b00e8d900c",
+      "aggressor_uuid": "d9ec2b1c-38dc-49a6-888d-fa4b55883531",
+      "analog_start_mm": [
+        15.75,
+        44.45
+      ],
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "driver": "U4",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 1.227613,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    },
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_L_VREF",
+      "aggressor": "BTN_L_IN1",
+      "edge_gap_mm": 0.324341,
+      "analog_uuid": "50e02fcc-2a1d-4180-9808-e9d063237740",
+      "aggressor_uuid": "dec26e46-fa69-481c-9618-99bcdf45b62d",
+      "analog_start_mm": [
+        16.05,
+        46.75
+      ],
+      "layers": [
+        "F.Cu",
+        "F.Cu"
+      ],
+      "driver": "U4",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 1.657138,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    },
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_M_VREF",
+      "aggressor": "BTN_M_IN1",
+      "edge_gap_mm": 0.324341,
+      "analog_uuid": "957b8d94-4ec9-4ff5-a97e-49197ec74d01",
+      "aggressor_uuid": "cd769f59-b7e9-474b-ae7f-ea4c0d374e36",
+      "analog_start_mm": [
+        16.05,
+        55.75
+      ],
+      "layers": [
+        "F.Cu",
+        "F.Cu"
+      ],
+      "driver": "U5",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 1.191823,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    },
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_R_ISENSE",
+      "aggressor": "BTN_R_IN2",
+      "edge_gap_mm": 0.375,
+      "analog_uuid": "70d76fc5-b1dd-4332-a978-f293abea721a",
+      "aggressor_uuid": "76b4dc3f-2597-4500-939d-23e0f9ddafdc",
+      "analog_start_mm": [
+        62.0,
+        44.25
+      ],
+      "layers": [
+        "F.Cu",
+        "F.Cu"
+      ],
+      "driver": "U6",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 1.799529,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    },
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_R_VREF",
+      "aggressor": "BTN_R_IN1",
+      "edge_gap_mm": 0.427079,
+      "analog_uuid": "a428a8bd-69b1-45cb-9f09-61197a37c424",
+      "aggressor_uuid": "6790ea77-81d3-4503-8d34-b6f7fe55fca1",
+      "analog_start_mm": [
+        62.05,
+        45.75
+      ],
+      "layers": [
+        "F.Cu",
+        "F.Cu"
+      ],
+      "driver": "U6",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 0.625,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    }
+  ],
+  "actuator_monitor_cap_to_adc_mm": 3.351,
+  "mechanical_scope": "Static copper review only. Hall/button positions remain provisional under MECHANICAL_INTERFACES.md.",
+  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+}

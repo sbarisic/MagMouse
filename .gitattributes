@@ -14,3 +14,10 @@ LICENSE text eol=lf
 *.step binary
 *.stl binary
 *.FCStd binary
+
+# Preserve the exact bytes covered by bench CAD and package SHA-256 evidence.
+hardware/modular/main/Main.kicad_pcb -text
+hardware/modular/wheel/Wheel.kicad_pcb -text
+hardware/encoder/Encoder.kicad_pcb -text
+hardware/bench/Panel.kicad_pcb -text
+hardware/bench/package/** -text

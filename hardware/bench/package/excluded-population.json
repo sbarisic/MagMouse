@@ -1,0 +1,227 @@
+[
+  {
+    "board": "Main",
+    "reference": "TP4",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP5",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP6",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP7",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP8",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP9",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP1",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP2",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP3",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP10",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP11",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP12",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP13",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP14",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP15",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP16",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP17",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP18",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP19",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP20",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP21",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP22",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP23",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP24",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP25",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP26",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP27",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP28",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP29",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP30",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP31",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP32",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP33",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "U32",
+    "reason": "IMU omitted in bench variant"
+  },
+  {
+    "board": "Main",
+    "reference": "TP38",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP39",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP40",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP41",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP42",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Main",
+    "reference": "TP43",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Wheel",
+    "reference": "J5",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Wheel",
+    "reference": "TP34",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Wheel",
+    "reference": "TP35",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Wheel",
+    "reference": "TP36",
+    "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Wheel",
+    "reference": "TP37",
+    "reason": "Copper-only test pad or source DNP"
+  }
+]

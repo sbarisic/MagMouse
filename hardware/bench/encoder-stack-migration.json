@@ -1,0 +1,13 @@
+{
+  "before_sha256": "8a7345773990bca17be46771c3ee5857e87aceb4a3343b7028896b6dc0e40588",
+  "after_sha256": "f890117d8e60156774ad8a08e3a761842c6e8784466b49a42b9d0e1c1b9dddd1",
+  "layers": 4,
+  "stack": "JLC041611-2116",
+  "outer_copper_and_pad_identity_preserved": true,
+  "inner_layers": "GND pours copied from existing F.Cu boundary, refilled with source project",
+  "vias": 17,
+  "native_unrouted": 0,
+  "mechanical_datums_unchanged": true,
+  "before_commit": "38452b02b8c886e8896ce6005f17596507e62e91",
+  "before_layers": 2
+}

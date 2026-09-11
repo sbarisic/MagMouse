@@ -1,0 +1,3944 @@
+{
+  "status": "REV-A BENCH QUOTE / ENGINEERING REVIEW REQUIRED",
+  "panel_size_mm": [
+    151,
+    139
+  ],
+  "board_count": 3,
+  "units": {
+    "Main": {
+      "source": "hardware\\modular\\main\\Main.kicad_pcb",
+      "sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
+      "translation_mm": [
+        7,
+        7
+      ],
+      "rotation_degrees": 0,
+      "footprints": 246,
+      "tracks_and_vias": 13510,
+      "zones": 13,
+      "net_prefix": "Main/"
+    },
+    "Wheel": {
+      "source": "hardware\\modular\\wheel\\Wheel.kicad_pcb",
+      "sha256": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
+      "translation_mm": [
+        89,
+        7
+      ],
+      "rotation_degrees": 0,
+      "footprints": 87,
+      "tracks_and_vias": 4766,
+      "zones": 3,
+      "net_prefix": "Wheel/"
+    },
+    "Encoder": {
+      "source": "hardware\\encoder\\Encoder.kicad_pcb",
+      "sha256": "f890117d8e60156774ad8a08e3a761842c6e8784466b49a42b9d0e1c1b9dddd1",
+      "translation_mm": [
+        42,
+        30
+      ],
+      "rotation_degrees": 0,
+      "footprints": 3,
+      "tracks_and_vias": 47,
+      "zones": 4,
+      "net_prefix": "Encoder/"
+    }
+  },
+  "reference_map": [
+    {
+      "board": "Main",
+      "source_reference": "D5",
+      "panel_reference": "M_D5",
+      "source_x_mm": 42.25,
+      "source_y_mm": 26.75,
+      "panel_x_mm": 49.25,
+      "panel_y_mm": 33.75,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R8",
+      "panel_reference": "M_R8",
+      "source_x_mm": 14.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 21.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U16",
+      "panel_reference": "M_U16",
+      "source_x_mm": 16.0,
+      "source_y_mm": 89.0,
+      "panel_x_mm": 23.0,
+      "panel_y_mm": 96.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U18",
+      "panel_reference": "M_U18",
+      "source_x_mm": 58.0,
+      "source_y_mm": 95.0,
+      "panel_x_mm": 65.0,
+      "panel_y_mm": 102.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C85",
+      "panel_reference": "M_C85",
+      "source_x_mm": 48.8,
+      "source_y_mm": 74.6,
+      "panel_x_mm": 55.8,
+      "panel_y_mm": 81.6,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C33",
+      "panel_reference": "M_C33",
+      "source_x_mm": 49.0,
+      "source_y_mm": 42.5,
+      "panel_x_mm": 56.0,
+      "panel_y_mm": 49.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C37",
+      "panel_reference": "M_C37",
+      "source_x_mm": 13.0,
+      "source_y_mm": 65.5,
+      "panel_x_mm": 20.0,
+      "panel_y_mm": 72.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U38",
+      "panel_reference": "M_U38",
+      "source_x_mm": 28.25,
+      "source_y_mm": 73.0,
+      "panel_x_mm": 35.25,
+      "panel_y_mm": 80.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R28",
+      "panel_reference": "M_R28",
+      "source_x_mm": 68.25,
+      "source_y_mm": 20.5,
+      "panel_x_mm": 75.25,
+      "panel_y_mm": 27.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "Q2",
+      "panel_reference": "M_Q2",
+      "source_x_mm": 31.0,
+      "source_y_mm": 32.75,
+      "panel_x_mm": 38.0,
+      "panel_y_mm": 39.75,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R65",
+      "panel_reference": "M_R65",
+      "source_x_mm": 56.0,
+      "source_y_mm": 37.0,
+      "panel_x_mm": 63.0,
+      "panel_y_mm": 44.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R110",
+      "panel_reference": "M_R110",
+      "source_x_mm": 14.5,
+      "source_y_mm": 39.75,
+      "panel_x_mm": 21.5,
+      "panel_y_mm": 46.75,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R143",
+      "panel_reference": "M_R143",
+      "source_x_mm": 69.0,
+      "source_y_mm": 64.0,
+      "panel_x_mm": 76.0,
+      "panel_y_mm": 71.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R125",
+      "panel_reference": "M_R125",
+      "source_x_mm": 21.5,
+      "source_y_mm": 37.5,
+      "panel_x_mm": 28.5,
+      "panel_y_mm": 44.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R64",
+      "panel_reference": "M_R64",
+      "source_x_mm": 49.0,
+      "source_y_mm": 40.5,
+      "panel_x_mm": 56.0,
+      "panel_y_mm": 47.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U7",
+      "panel_reference": "M_U7",
+      "source_x_mm": 17.0,
+      "source_y_mm": 41.5,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 48.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C9",
+      "panel_reference": "M_C9",
+      "source_x_mm": 17.0,
+      "source_y_mm": 48.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 55.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U37",
+      "panel_reference": "M_U37",
+      "source_x_mm": 40.5,
+      "source_y_mm": 57.0,
+      "panel_x_mm": 47.5,
+      "panel_y_mm": 64.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R16",
+      "panel_reference": "M_R16",
+      "source_x_mm": 26.25,
+      "source_y_mm": 53.0,
+      "panel_x_mm": 33.25,
+      "panel_y_mm": 60.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R50",
+      "panel_reference": "M_R50",
+      "source_x_mm": 12.5,
+      "source_y_mm": 102.0,
+      "panel_x_mm": 19.5,
+      "panel_y_mm": 109.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U1",
+      "panel_reference": "M_U1",
+      "source_x_mm": 40.0,
+      "source_y_mm": 25.0,
+      "panel_x_mm": 47.0,
+      "panel_y_mm": 32.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U2",
+      "panel_reference": "M_U2",
+      "source_x_mm": 60.5,
+      "source_y_mm": 26.0,
+      "panel_x_mm": 67.5,
+      "panel_y_mm": 33.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R25",
+      "panel_reference": "M_R25",
+      "source_x_mm": 53.5,
+      "source_y_mm": 28.7,
+      "panel_x_mm": 60.5,
+      "panel_y_mm": 35.7,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "Q3",
+      "panel_reference": "M_Q3",
+      "source_x_mm": 56.0,
+      "source_y_mm": 41.0,
+      "panel_x_mm": 63.0,
+      "panel_y_mm": 48.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R63",
+      "panel_reference": "M_R63",
+      "source_x_mm": 32.5,
+      "source_y_mm": 36.0,
+      "panel_x_mm": 39.5,
+      "panel_y_mm": 43.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R42",
+      "panel_reference": "M_R42",
+      "source_x_mm": 66.0,
+      "source_y_mm": 53.1,
+      "panel_x_mm": 73.0,
+      "panel_y_mm": 60.1,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R27",
+      "panel_reference": "M_R27",
+      "source_x_mm": 56.0,
+      "source_y_mm": 28.0,
+      "panel_x_mm": 63.0,
+      "panel_y_mm": 35.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R49",
+      "panel_reference": "M_R49",
+      "source_x_mm": 52.0,
+      "source_y_mm": 94.0,
+      "panel_x_mm": 59.0,
+      "panel_y_mm": 101.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "L1",
+      "panel_reference": "M_L1",
+      "source_x_mm": 64.4,
+      "source_y_mm": 23.25,
+      "panel_x_mm": 71.4,
+      "panel_y_mm": 30.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "D3",
+      "panel_reference": "M_D3",
+      "source_x_mm": 66.8,
+      "source_y_mm": 60.1,
+      "panel_x_mm": 73.8,
+      "panel_y_mm": 67.1,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C31",
+      "panel_reference": "M_C31",
+      "source_x_mm": 53.5,
+      "source_y_mm": 91.5,
+      "panel_x_mm": 60.5,
+      "panel_y_mm": 98.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R4",
+      "panel_reference": "M_R4",
+      "source_x_mm": 30.5,
+      "source_y_mm": 81.75,
+      "panel_x_mm": 37.5,
+      "panel_y_mm": 88.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U17",
+      "panel_reference": "M_U17",
+      "source_x_mm": 16.0,
+      "source_y_mm": 97.0,
+      "panel_x_mm": 23.0,
+      "panel_y_mm": 104.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R40",
+      "panel_reference": "M_R40",
+      "source_x_mm": 68.5,
+      "source_y_mm": 54.0,
+      "panel_x_mm": 75.5,
+      "panel_y_mm": 61.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP39",
+      "panel_reference": "M_TP39",
+      "source_x_mm": 49.0,
+      "source_y_mm": 30.75,
+      "panel_x_mm": 56.0,
+      "panel_y_mm": 37.75,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J8",
+      "panel_reference": "M_J8",
+      "source_x_mm": 63.0,
+      "source_y_mm": 70.0,
+      "panel_x_mm": 70.0,
+      "panel_y_mm": 77.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C74",
+      "panel_reference": "M_C74",
+      "source_x_mm": 51.25,
+      "source_y_mm": 22.0,
+      "panel_x_mm": 58.25,
+      "panel_y_mm": 29.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R39",
+      "panel_reference": "M_R39",
+      "source_x_mm": 63.5,
+      "source_y_mm": 54.0,
+      "panel_x_mm": 70.5,
+      "panel_y_mm": 61.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C87",
+      "panel_reference": "M_C87",
+      "source_x_mm": 46.5,
+      "source_y_mm": 54.8,
+      "panel_x_mm": 53.5,
+      "panel_y_mm": 61.8,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R62",
+      "panel_reference": "M_R62",
+      "source_x_mm": 22.5,
+      "source_y_mm": 31.5,
+      "panel_x_mm": 29.5,
+      "panel_y_mm": 38.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R41",
+      "panel_reference": "M_R41",
+      "source_x_mm": 63.5,
+      "source_y_mm": 58.0,
+      "panel_x_mm": 70.5,
+      "panel_y_mm": 65.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U11",
+      "panel_reference": "M_U11",
+      "source_x_mm": 53.0,
+      "source_y_mm": 25.0,
+      "panel_x_mm": 60.0,
+      "panel_y_mm": 32.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C12",
+      "panel_reference": "M_C12",
+      "source_x_mm": 23.5,
+      "source_y_mm": 57.0,
+      "panel_x_mm": 30.5,
+      "panel_y_mm": 64.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U14",
+      "panel_reference": "M_U14",
+      "source_x_mm": 24.25,
+      "source_y_mm": 45.5,
+      "panel_x_mm": 31.25,
+      "panel_y_mm": 52.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C19",
+      "panel_reference": "M_C19",
+      "source_x_mm": 47.0,
+      "source_y_mm": 46.0,
+      "panel_x_mm": 54.0,
+      "panel_y_mm": 53.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R126",
+      "panel_reference": "M_R126",
+      "source_x_mm": 50.75,
+      "source_y_mm": 85.25,
+      "panel_x_mm": 57.75,
+      "panel_y_mm": 92.25,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C73",
+      "panel_reference": "M_C73",
+      "source_x_mm": 47.5,
+      "source_y_mm": 22.0,
+      "panel_x_mm": 54.5,
+      "panel_y_mm": 29.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R71",
+      "panel_reference": "M_R71",
+      "source_x_mm": 53.0,
+      "source_y_mm": 37.0,
+      "panel_x_mm": 60.0,
+      "panel_y_mm": 44.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U10",
+      "panel_reference": "M_U10",
+      "source_x_mm": 50.5,
+      "source_y_mm": 46.0,
+      "panel_x_mm": 57.5,
+      "panel_y_mm": 53.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J6",
+      "panel_reference": "M_J6",
+      "source_x_mm": 28.0,
+      "source_y_mm": 18.5,
+      "panel_x_mm": 35.0,
+      "panel_y_mm": 25.5,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R43",
+      "panel_reference": "M_R43",
+      "source_x_mm": 66.0,
+      "source_y_mm": 57.4,
+      "panel_x_mm": 73.0,
+      "panel_y_mm": 64.4,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C22",
+      "panel_reference": "M_C22",
+      "source_x_mm": 53.7,
+      "source_y_mm": 21.8,
+      "panel_x_mm": 60.7,
+      "panel_y_mm": 28.8,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R52",
+      "panel_reference": "M_R52",
+      "source_x_mm": 19.5,
+      "source_y_mm": 102.0,
+      "panel_x_mm": 26.5,
+      "panel_y_mm": 109.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R29",
+      "panel_reference": "M_R29",
+      "source_x_mm": 13.0,
+      "source_y_mm": 24.0,
+      "panel_x_mm": 20.0,
+      "panel_y_mm": 31.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U20",
+      "panel_reference": "M_U20",
+      "source_x_mm": 51.7,
+      "source_y_mm": 19.5,
+      "panel_x_mm": 58.7,
+      "panel_y_mm": 26.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C89",
+      "panel_reference": "M_C89",
+      "source_x_mm": 61.0,
+      "source_y_mm": 54.0,
+      "panel_x_mm": 68.0,
+      "panel_y_mm": 61.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U33",
+      "panel_reference": "M_U33",
+      "source_x_mm": 48.0,
+      "source_y_mm": 18.5,
+      "panel_x_mm": 55.0,
+      "panel_y_mm": 25.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R131",
+      "panel_reference": "M_R131",
+      "source_x_mm": 32.2,
+      "source_y_mm": 59.0,
+      "panel_x_mm": 39.2,
+      "panel_y_mm": 66.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C2",
+      "panel_reference": "M_C2",
+      "source_x_mm": 67.7,
+      "source_y_mm": 25.5,
+      "panel_x_mm": 74.7,
+      "panel_y_mm": 32.5,
+      "rotation_degrees": -90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C72",
+      "panel_reference": "M_C72",
+      "source_x_mm": 41.75,
+      "source_y_mm": 83.75,
+      "panel_x_mm": 48.75,
+      "panel_y_mm": 90.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R51",
+      "panel_reference": "M_R51",
+      "source_x_mm": 16.0,
+      "source_y_mm": 102.0,
+      "panel_x_mm": 23.0,
+      "panel_y_mm": 109.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U39",
+      "panel_reference": "M_U39",
+      "source_x_mm": 33.5,
+      "source_y_mm": 55.6,
+      "panel_x_mm": 40.5,
+      "panel_y_mm": 62.6,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "SW1",
+      "panel_reference": "M_SW1",
+      "source_x_mm": 58.5,
+      "source_y_mm": 84.5,
+      "panel_x_mm": 65.5,
+      "panel_y_mm": 91.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R69",
+      "panel_reference": "M_R69",
+      "source_x_mm": 17.0,
+      "source_y_mm": 73.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 80.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C84",
+      "panel_reference": "M_C84",
+      "source_x_mm": 48.8,
+      "source_y_mm": 76.4,
+      "panel_x_mm": 55.8,
+      "panel_y_mm": 83.4,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J10",
+      "panel_reference": "M_J10",
+      "source_x_mm": 72.0,
+      "source_y_mm": 91.0,
+      "panel_x_mm": 79.0,
+      "panel_y_mm": 98.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C4",
+      "panel_reference": "M_C4",
+      "source_x_mm": 53.0,
+      "source_y_mm": 89.0,
+      "panel_x_mm": 60.0,
+      "panel_y_mm": 96.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J1",
+      "panel_reference": "M_J1",
+      "source_x_mm": 40.0,
+      "source_y_mm": 4.0,
+      "panel_x_mm": 47.0,
+      "panel_y_mm": 11.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C34",
+      "panel_reference": "M_C34",
+      "source_x_mm": 29.75,
+      "source_y_mm": 35.25,
+      "panel_x_mm": 36.75,
+      "panel_y_mm": 42.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C70",
+      "panel_reference": "M_C70",
+      "source_x_mm": 47.25,
+      "source_y_mm": 83.75,
+      "panel_x_mm": 54.25,
+      "panel_y_mm": 90.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R70",
+      "panel_reference": "M_R70",
+      "source_x_mm": 52.5,
+      "source_y_mm": 100.0,
+      "panel_x_mm": 59.5,
+      "panel_y_mm": 107.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C23",
+      "panel_reference": "M_C23",
+      "source_x_mm": 59.65,
+      "source_y_mm": 29.2,
+      "panel_x_mm": 66.65,
+      "panel_y_mm": 36.2,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U36",
+      "panel_reference": "M_U36",
+      "source_x_mm": 28.0,
+      "source_y_mm": 65.0,
+      "panel_x_mm": 35.0,
+      "panel_y_mm": 72.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C10",
+      "panel_reference": "M_C10",
+      "source_x_mm": 20.0,
+      "source_y_mm": 53.5,
+      "panel_x_mm": 27.0,
+      "panel_y_mm": 60.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U9",
+      "panel_reference": "M_U9",
+      "source_x_mm": 63.0,
+      "source_y_mm": 41.5,
+      "panel_x_mm": 70.0,
+      "panel_y_mm": 48.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U6",
+      "panel_reference": "M_U6",
+      "source_x_mm": 63.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 70.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C53",
+      "panel_reference": "M_C53",
+      "source_x_mm": 47.25,
+      "source_y_mm": 53.0,
+      "panel_x_mm": 54.25,
+      "panel_y_mm": 60.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C1",
+      "panel_reference": "M_C1",
+      "source_x_mm": 57.9,
+      "source_y_mm": 25.5,
+      "panel_x_mm": 64.9,
+      "panel_y_mm": 32.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C77",
+      "panel_reference": "M_C77",
+      "source_x_mm": 27.75,
+      "source_y_mm": 76.0,
+      "panel_x_mm": 34.75,
+      "panel_y_mm": 83.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R72",
+      "panel_reference": "M_R72",
+      "source_x_mm": 28.75,
+      "source_y_mm": 81.75,
+      "panel_x_mm": 35.75,
+      "panel_y_mm": 88.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R15",
+      "panel_reference": "M_R15",
+      "source_x_mm": 14.5,
+      "source_y_mm": 53.5,
+      "panel_x_mm": 21.5,
+      "panel_y_mm": 60.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C64",
+      "panel_reference": "M_C64",
+      "source_x_mm": 23.0,
+      "source_y_mm": 34.75,
+      "panel_x_mm": 30.0,
+      "panel_y_mm": 41.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R135",
+      "panel_reference": "M_R135",
+      "source_x_mm": 32.6,
+      "source_y_mm": 72.4,
+      "panel_x_mm": 39.6,
+      "panel_y_mm": 79.4,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C18",
+      "panel_reference": "M_C18",
+      "source_x_mm": 60.0,
+      "source_y_mm": 41.5,
+      "panel_x_mm": 67.0,
+      "panel_y_mm": 48.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R47",
+      "panel_reference": "M_R47",
+      "source_x_mm": 25.0,
+      "source_y_mm": 86.0,
+      "panel_x_mm": 32.0,
+      "panel_y_mm": 93.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R54",
+      "panel_reference": "M_R54",
+      "source_x_mm": 62.5,
+      "source_y_mm": 98.5,
+      "panel_x_mm": 69.5,
+      "panel_y_mm": 105.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C78",
+      "panel_reference": "M_C78",
+      "source_x_mm": 29.25,
+      "source_y_mm": 68.0,
+      "panel_x_mm": 36.25,
+      "panel_y_mm": 75.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U8",
+      "panel_reference": "M_U8",
+      "source_x_mm": 24.0,
+      "source_y_mm": 60.0,
+      "panel_x_mm": 31.0,
+      "panel_y_mm": 67.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C27",
+      "panel_reference": "M_C27",
+      "source_x_mm": 58.0,
+      "source_y_mm": 103.0,
+      "panel_x_mm": 65.0,
+      "panel_y_mm": 110.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "SW2",
+      "panel_reference": "M_SW2",
+      "source_x_mm": 58.5,
+      "source_y_mm": 89.0,
+      "panel_x_mm": 65.5,
+      "panel_y_mm": 96.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R133",
+      "panel_reference": "M_R133",
+      "source_x_mm": 32.6,
+      "source_y_mm": 65.8,
+      "panel_x_mm": 39.6,
+      "panel_y_mm": 72.8,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R48",
+      "panel_reference": "M_R48",
+      "source_x_mm": 28.5,
+      "source_y_mm": 86.0,
+      "panel_x_mm": 35.5,
+      "panel_y_mm": 93.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R99",
+      "panel_reference": "M_R99",
+      "source_x_mm": 33.0,
+      "source_y_mm": 23.0,
+      "panel_x_mm": 40.0,
+      "panel_y_mm": 30.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C79",
+      "panel_reference": "M_C79",
+      "source_x_mm": 27.5,
+      "source_y_mm": 78.0,
+      "panel_x_mm": 34.5,
+      "panel_y_mm": 85.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C3",
+      "panel_reference": "M_C3",
+      "source_x_mm": 64.5,
+      "source_y_mm": 28.7,
+      "panel_x_mm": 71.5,
+      "panel_y_mm": 35.7,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J3",
+      "panel_reference": "M_J3",
+      "source_x_mm": 17.0,
+      "source_y_mm": 60.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 67.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP38",
+      "panel_reference": "M_TP38",
+      "source_x_mm": 49.0,
+      "source_y_mm": 28.25,
+      "panel_x_mm": 56.0,
+      "panel_y_mm": 35.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R74",
+      "panel_reference": "M_R74",
+      "source_x_mm": 27.0,
+      "source_y_mm": 83.5,
+      "panel_x_mm": 34.0,
+      "panel_y_mm": 90.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C11",
+      "panel_reference": "M_C11",
+      "source_x_mm": 23.5,
+      "source_y_mm": 54.0,
+      "panel_x_mm": 30.5,
+      "panel_y_mm": 61.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R66",
+      "panel_reference": "M_R66",
+      "source_x_mm": 56.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 63.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C38",
+      "panel_reference": "M_C38",
+      "source_x_mm": 17.0,
+      "source_y_mm": 65.5,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 72.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R44",
+      "panel_reference": "M_R44",
+      "source_x_mm": 21.0,
+      "source_y_mm": 29.0,
+      "panel_x_mm": 28.0,
+      "panel_y_mm": 36.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R38",
+      "panel_reference": "M_R38",
+      "source_x_mm": 59.5,
+      "source_y_mm": 53.5,
+      "panel_x_mm": 66.5,
+      "panel_y_mm": 60.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R134",
+      "panel_reference": "M_R134",
+      "source_x_mm": 32.6,
+      "source_y_mm": 69.1,
+      "panel_x_mm": 39.6,
+      "panel_y_mm": 76.1,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C36",
+      "panel_reference": "M_C36",
+      "source_x_mm": 54.0,
+      "source_y_mm": 49.0,
+      "panel_x_mm": 61.0,
+      "panel_y_mm": 56.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R20",
+      "panel_reference": "M_R20",
+      "source_x_mm": 60.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 67.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R60",
+      "panel_reference": "M_R60",
+      "source_x_mm": 30.5,
+      "source_y_mm": 27.75,
+      "panel_x_mm": 37.5,
+      "panel_y_mm": 34.75,
+      "rotation_degrees": -90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R18",
+      "panel_reference": "M_R18",
+      "source_x_mm": 25.5,
+      "source_y_mm": 50.0,
+      "panel_x_mm": 32.5,
+      "panel_y_mm": 57.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R32",
+      "panel_reference": "M_R32",
+      "source_x_mm": 14.4,
+      "source_y_mm": 26.5,
+      "panel_x_mm": 21.4,
+      "panel_y_mm": 33.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R76",
+      "panel_reference": "M_R76",
+      "source_x_mm": 37.0,
+      "source_y_mm": 87.5,
+      "panel_x_mm": 44.0,
+      "panel_y_mm": 94.5,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U15",
+      "panel_reference": "M_U15",
+      "source_x_mm": 58.0,
+      "source_y_mm": 101.0,
+      "panel_x_mm": 65.0,
+      "panel_y_mm": 108.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C6",
+      "panel_reference": "M_C6",
+      "source_x_mm": 50.0,
+      "source_y_mm": 101.0,
+      "panel_x_mm": 57.0,
+      "panel_y_mm": 108.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R130",
+      "panel_reference": "M_R130",
+      "source_x_mm": 47.0,
+      "source_y_mm": 29.5,
+      "panel_x_mm": 54.0,
+      "panel_y_mm": 36.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C21",
+      "panel_reference": "M_C21",
+      "source_x_mm": 50.5,
+      "source_y_mm": 49.5,
+      "panel_x_mm": 57.5,
+      "panel_y_mm": 56.5,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C32",
+      "panel_reference": "M_C32",
+      "source_x_mm": 21.75,
+      "source_y_mm": 44.75,
+      "panel_x_mm": 28.75,
+      "panel_y_mm": 51.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C16",
+      "panel_reference": "M_C16",
+      "source_x_mm": 14.0,
+      "source_y_mm": 41.5,
+      "panel_x_mm": 21.0,
+      "panel_y_mm": 48.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "D4",
+      "panel_reference": "M_D4",
+      "source_x_mm": 53.0,
+      "source_y_mm": 62.8,
+      "panel_x_mm": 60.0,
+      "panel_y_mm": 69.8,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R5",
+      "panel_reference": "M_R5",
+      "source_x_mm": 41.05,
+      "source_y_mm": 86.75,
+      "panel_x_mm": 48.05,
+      "panel_y_mm": 93.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R37",
+      "panel_reference": "M_R37",
+      "source_x_mm": 57.5,
+      "source_y_mm": 52.5,
+      "panel_x_mm": 64.5,
+      "panel_y_mm": 59.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R3",
+      "panel_reference": "M_R3",
+      "source_x_mm": 50.0,
+      "source_y_mm": 89.0,
+      "panel_x_mm": 57.0,
+      "panel_y_mm": 96.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C35",
+      "panel_reference": "M_C35",
+      "source_x_mm": 53.0,
+      "source_y_mm": 41.0,
+      "panel_x_mm": 60.0,
+      "panel_y_mm": 48.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U34",
+      "panel_reference": "M_U34",
+      "source_x_mm": 65.5,
+      "source_y_mm": 18.5,
+      "panel_x_mm": 72.5,
+      "panel_y_mm": 25.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C76",
+      "panel_reference": "M_C76",
+      "source_x_mm": 44.25,
+      "source_y_mm": 26.25,
+      "panel_x_mm": 51.25,
+      "panel_y_mm": 33.25,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R14",
+      "panel_reference": "M_R14",
+      "source_x_mm": 11.5,
+      "source_y_mm": 52.5,
+      "panel_x_mm": 18.5,
+      "panel_y_mm": 59.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U3",
+      "panel_reference": "M_U3",
+      "source_x_mm": 40.0,
+      "source_y_mm": 99.0,
+      "panel_x_mm": 47.0,
+      "panel_y_mm": 106.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R31",
+      "panel_reference": "M_R31",
+      "source_x_mm": 12.5,
+      "source_y_mm": 26.5,
+      "panel_x_mm": 19.5,
+      "panel_y_mm": 33.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R132",
+      "panel_reference": "M_R132",
+      "source_x_mm": 25.35,
+      "source_y_mm": 73.45,
+      "panel_x_mm": 32.35,
+      "panel_y_mm": 80.45,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R68",
+      "panel_reference": "M_R68",
+      "source_x_mm": 57.0,
+      "source_y_mm": 57.0,
+      "panel_x_mm": 64.0,
+      "panel_y_mm": 64.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R73",
+      "panel_reference": "M_R73",
+      "source_x_mm": 26.0,
+      "source_y_mm": 81.0,
+      "panel_x_mm": 33.0,
+      "panel_y_mm": 88.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R23",
+      "panel_reference": "M_R23",
+      "source_x_mm": 63.5,
+      "source_y_mm": 51.5,
+      "panel_x_mm": 70.5,
+      "panel_y_mm": 58.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R10",
+      "panel_reference": "M_R10",
+      "source_x_mm": 14.0,
+      "source_y_mm": 51.0,
+      "panel_x_mm": 21.0,
+      "panel_y_mm": 58.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R53",
+      "panel_reference": "M_R53",
+      "source_x_mm": 53.0,
+      "source_y_mm": 98.5,
+      "panel_x_mm": 60.0,
+      "panel_y_mm": 105.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C29",
+      "panel_reference": "M_C29",
+      "source_x_mm": 16.0,
+      "source_y_mm": 85.4,
+      "panel_x_mm": 23.0,
+      "panel_y_mm": 92.4,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C20",
+      "panel_reference": "M_C20",
+      "source_x_mm": 54.0,
+      "source_y_mm": 46.0,
+      "panel_x_mm": 61.0,
+      "panel_y_mm": 53.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C7",
+      "panel_reference": "M_C7",
+      "source_x_mm": 20.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 27.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R6",
+      "panel_reference": "M_R6",
+      "source_x_mm": 39.4,
+      "source_y_mm": 86.75,
+      "panel_x_mm": 46.4,
+      "panel_y_mm": 93.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C88",
+      "panel_reference": "M_C88",
+      "source_x_mm": 26.6,
+      "source_y_mm": 22.9,
+      "panel_x_mm": 33.6,
+      "panel_y_mm": 29.9,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C30",
+      "panel_reference": "M_C30",
+      "source_x_mm": 16.0,
+      "source_y_mm": 93.0,
+      "panel_x_mm": 23.0,
+      "panel_y_mm": 100.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C8",
+      "panel_reference": "M_C8",
+      "source_x_mm": 20.0,
+      "source_y_mm": 48.5,
+      "panel_x_mm": 27.0,
+      "panel_y_mm": 55.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R35",
+      "panel_reference": "M_R35",
+      "source_x_mm": 20.1,
+      "source_y_mm": 26.5,
+      "panel_x_mm": 27.1,
+      "panel_y_mm": 33.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C28",
+      "panel_reference": "M_C28",
+      "source_x_mm": 61.5,
+      "source_y_mm": 101.0,
+      "panel_x_mm": 68.5,
+      "panel_y_mm": 108.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C17",
+      "panel_reference": "M_C17",
+      "source_x_mm": 24.0,
+      "source_y_mm": 63.0,
+      "panel_x_mm": 31.0,
+      "panel_y_mm": 70.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C55",
+      "panel_reference": "M_C55",
+      "source_x_mm": 32.25,
+      "source_y_mm": 40.0,
+      "panel_x_mm": 39.25,
+      "panel_y_mm": 47.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C13",
+      "panel_reference": "M_C13",
+      "source_x_mm": 66.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 73.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C26",
+      "panel_reference": "M_C26",
+      "source_x_mm": 63.5,
+      "source_y_mm": 60.25,
+      "panel_x_mm": 70.5,
+      "panel_y_mm": 67.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R101",
+      "panel_reference": "M_R101",
+      "source_x_mm": 49.25,
+      "source_y_mm": 63.75,
+      "panel_x_mm": 56.25,
+      "panel_y_mm": 70.75,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R59",
+      "panel_reference": "M_R59",
+      "source_x_mm": 28.0,
+      "source_y_mm": 27.25,
+      "panel_x_mm": 35.0,
+      "panel_y_mm": 34.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R77",
+      "panel_reference": "M_R77",
+      "source_x_mm": 37.0,
+      "source_y_mm": 85.0,
+      "panel_x_mm": 44.0,
+      "panel_y_mm": 92.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U12",
+      "panel_reference": "M_U12",
+      "source_x_mm": 23.25,
+      "source_y_mm": 25.0,
+      "panel_x_mm": 30.25,
+      "panel_y_mm": 32.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R26",
+      "panel_reference": "M_R26",
+      "source_x_mm": 55.5,
+      "source_y_mm": 31.1,
+      "panel_x_mm": 62.5,
+      "panel_y_mm": 38.1,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U25",
+      "panel_reference": "M_U25",
+      "source_x_mm": 51.75,
+      "source_y_mm": 57.0,
+      "panel_x_mm": 58.75,
+      "panel_y_mm": 64.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C82",
+      "panel_reference": "M_C82",
+      "source_x_mm": 26.5,
+      "source_y_mm": 68.5,
+      "panel_x_mm": 33.5,
+      "panel_y_mm": 75.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R46",
+      "panel_reference": "M_R46",
+      "source_x_mm": 62.3,
+      "source_y_mm": 103.5,
+      "panel_x_mm": 69.3,
+      "panel_y_mm": 110.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R136",
+      "panel_reference": "M_R136",
+      "source_x_mm": 32.6,
+      "source_y_mm": 62.5,
+      "panel_x_mm": 39.6,
+      "panel_y_mm": 69.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R34",
+      "panel_reference": "M_R34",
+      "source_x_mm": 18.2,
+      "source_y_mm": 26.5,
+      "panel_x_mm": 25.2,
+      "panel_y_mm": 33.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C14",
+      "panel_reference": "M_C14",
+      "source_x_mm": 66.0,
+      "source_y_mm": 48.5,
+      "panel_x_mm": 73.0,
+      "panel_y_mm": 55.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R36",
+      "panel_reference": "M_R36",
+      "source_x_mm": 55.5,
+      "source_y_mm": 52.5,
+      "panel_x_mm": 62.5,
+      "panel_y_mm": 59.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "D1",
+      "panel_reference": "M_D1",
+      "source_x_mm": 17.0,
+      "source_y_mm": 19.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 26.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R141",
+      "panel_reference": "M_R141",
+      "source_x_mm": 64.0,
+      "source_y_mm": 64.0,
+      "panel_x_mm": 71.0,
+      "panel_y_mm": 71.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R45",
+      "panel_reference": "M_R45",
+      "source_x_mm": 57.0,
+      "source_y_mm": 60.75,
+      "panel_x_mm": 64.0,
+      "panel_y_mm": 67.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R11",
+      "panel_reference": "M_R11",
+      "source_x_mm": 17.5,
+      "source_y_mm": 51.5,
+      "panel_x_mm": 24.5,
+      "panel_y_mm": 58.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U35",
+      "panel_reference": "M_U35",
+      "source_x_mm": 40.5,
+      "source_y_mm": 72.5,
+      "panel_x_mm": 47.5,
+      "panel_y_mm": 79.5,
+      "rotation_degrees": -90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R58",
+      "panel_reference": "M_R58",
+      "source_x_mm": 32.2,
+      "source_y_mm": 24.65,
+      "panel_x_mm": 39.2,
+      "panel_y_mm": 31.65,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R128",
+      "panel_reference": "M_R128",
+      "source_x_mm": 50.5,
+      "source_y_mm": 24.75,
+      "panel_x_mm": 57.5,
+      "panel_y_mm": 31.75,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C25",
+      "panel_reference": "M_C25",
+      "source_x_mm": 24.25,
+      "source_y_mm": 29.25,
+      "panel_x_mm": 31.25,
+      "panel_y_mm": 36.25,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U28",
+      "panel_reference": "M_U28",
+      "source_x_mm": 22.0,
+      "source_y_mm": 40.5,
+      "panel_x_mm": 29.0,
+      "panel_y_mm": 47.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R78",
+      "panel_reference": "M_R78",
+      "source_x_mm": 43.0,
+      "source_y_mm": 87.0,
+      "panel_x_mm": 50.0,
+      "panel_y_mm": 94.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U32",
+      "panel_reference": "M_U32",
+      "source_x_mm": 44.5,
+      "source_y_mm": 83.75,
+      "panel_x_mm": 51.5,
+      "panel_y_mm": 90.75,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C71",
+      "panel_reference": "M_C71",
+      "source_x_mm": 49.0,
+      "source_y_mm": 85.25,
+      "panel_x_mm": 56.0,
+      "panel_y_mm": 92.25,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C81",
+      "panel_reference": "M_C81",
+      "source_x_mm": 29.25,
+      "source_y_mm": 70.25,
+      "panel_x_mm": 36.25,
+      "panel_y_mm": 77.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R79",
+      "panel_reference": "M_R79",
+      "source_x_mm": 45.0,
+      "source_y_mm": 87.0,
+      "panel_x_mm": 52.0,
+      "panel_y_mm": 94.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C86",
+      "panel_reference": "M_C86",
+      "source_x_mm": 48.8,
+      "source_y_mm": 71.04,
+      "panel_x_mm": 55.8,
+      "panel_y_mm": 78.04,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R129",
+      "panel_reference": "M_R129",
+      "source_x_mm": 47.75,
+      "source_y_mm": 25.5,
+      "panel_x_mm": 54.75,
+      "panel_y_mm": 32.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C40",
+      "panel_reference": "M_C40",
+      "source_x_mm": 60.2,
+      "source_y_mm": 59.9,
+      "panel_x_mm": 67.2,
+      "panel_y_mm": 66.9,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U4",
+      "panel_reference": "M_U4",
+      "source_x_mm": 17.0,
+      "source_y_mm": 45.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 52.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R30",
+      "panel_reference": "M_R30",
+      "source_x_mm": 16.5,
+      "source_y_mm": 24.0,
+      "panel_x_mm": 23.5,
+      "panel_y_mm": 31.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C39",
+      "panel_reference": "M_C39",
+      "source_x_mm": 21.0,
+      "source_y_mm": 65.5,
+      "panel_x_mm": 28.0,
+      "panel_y_mm": 72.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C15",
+      "panel_reference": "M_C15",
+      "source_x_mm": 63.0,
+      "source_y_mm": 48.0,
+      "panel_x_mm": 70.0,
+      "panel_y_mm": 55.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R57",
+      "panel_reference": "M_R57",
+      "source_x_mm": 29.2,
+      "source_y_mm": 24.65,
+      "panel_x_mm": 36.2,
+      "panel_y_mm": 31.65,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R56",
+      "panel_reference": "M_R56",
+      "source_x_mm": 26.45,
+      "source_y_mm": 25.15,
+      "panel_x_mm": 33.45,
+      "panel_y_mm": 32.15,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "Q1",
+      "panel_reference": "M_Q1",
+      "source_x_mm": 27.0,
+      "source_y_mm": 30.5,
+      "panel_x_mm": 34.0,
+      "panel_y_mm": 37.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C75",
+      "panel_reference": "M_C75",
+      "source_x_mm": 62.0,
+      "source_y_mm": 17.25,
+      "panel_x_mm": 69.0,
+      "panel_y_mm": 24.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R22",
+      "panel_reference": "M_R22",
+      "source_x_mm": 60.0,
+      "source_y_mm": 51.0,
+      "panel_x_mm": 67.0,
+      "panel_y_mm": 58.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J4",
+      "panel_reference": "M_J4",
+      "source_x_mm": 63.0,
+      "source_y_mm": 35.0,
+      "panel_x_mm": 70.0,
+      "panel_y_mm": 42.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U19",
+      "panel_reference": "M_U19",
+      "source_x_mm": 26.0,
+      "source_y_mm": 34.0,
+      "panel_x_mm": 33.0,
+      "panel_y_mm": 41.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C83",
+      "panel_reference": "M_C83",
+      "source_x_mm": 48.8,
+      "source_y_mm": 72.82,
+      "panel_x_mm": 55.8,
+      "panel_y_mm": 79.82,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C24",
+      "panel_reference": "M_C24",
+      "source_x_mm": 20.95,
+      "source_y_mm": 22.75,
+      "panel_x_mm": 27.95,
+      "panel_y_mm": 29.75,
+      "rotation_degrees": -90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R67",
+      "panel_reference": "M_R67",
+      "source_x_mm": 48.0,
+      "source_y_mm": 58.0,
+      "panel_x_mm": 55.0,
+      "panel_y_mm": 65.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "D2",
+      "panel_reference": "M_D2",
+      "source_x_mm": 17.0,
+      "source_y_mm": 69.5,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 76.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C80",
+      "panel_reference": "M_C80",
+      "source_x_mm": 36.8,
+      "source_y_mm": 52.6,
+      "panel_x_mm": 43.8,
+      "panel_y_mm": 59.6,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R24",
+      "panel_reference": "M_R24",
+      "source_x_mm": 65.0,
+      "source_y_mm": 40.5,
+      "panel_x_mm": 72.0,
+      "panel_y_mm": 47.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C63",
+      "panel_reference": "M_C63",
+      "source_x_mm": 20.0,
+      "source_y_mm": 40.5,
+      "panel_x_mm": 27.0,
+      "panel_y_mm": 47.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R33",
+      "panel_reference": "M_R33",
+      "source_x_mm": 16.3,
+      "source_y_mm": 26.5,
+      "panel_x_mm": 23.3,
+      "panel_y_mm": 33.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R17",
+      "panel_reference": "M_R17",
+      "source_x_mm": 26.5,
+      "source_y_mm": 56.0,
+      "panel_x_mm": 33.5,
+      "panel_y_mm": 63.0,
+      "rotation_degrees": -90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R80",
+      "panel_reference": "M_R80",
+      "source_x_mm": 47.0,
+      "source_y_mm": 87.0,
+      "panel_x_mm": 54.0,
+      "panel_y_mm": 94.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U29",
+      "panel_reference": "M_U29",
+      "source_x_mm": 26.0,
+      "source_y_mm": 40.25,
+      "panel_x_mm": 33.0,
+      "panel_y_mm": 47.25,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R55",
+      "panel_reference": "M_R55",
+      "source_x_mm": 53.5,
+      "source_y_mm": 86.5,
+      "panel_x_mm": 60.5,
+      "panel_y_mm": 93.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "C5",
+      "panel_reference": "M_C5",
+      "source_x_mm": 50.0,
+      "source_y_mm": 97.5,
+      "panel_x_mm": 57.0,
+      "panel_y_mm": 104.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R12",
+      "panel_reference": "M_R12",
+      "source_x_mm": 23.0,
+      "source_y_mm": 50.5,
+      "panel_x_mm": 30.0,
+      "panel_y_mm": 57.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R7",
+      "panel_reference": "M_R7",
+      "source_x_mm": 30.75,
+      "source_y_mm": 79.25,
+      "panel_x_mm": 37.75,
+      "panel_y_mm": 86.25,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R61",
+      "panel_reference": "M_R61",
+      "source_x_mm": 32.25,
+      "source_y_mm": 29.5,
+      "panel_x_mm": 39.25,
+      "panel_y_mm": 36.5,
+      "rotation_degrees": -90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R9",
+      "panel_reference": "M_R9",
+      "source_x_mm": 14.0,
+      "source_y_mm": 48.5,
+      "panel_x_mm": 21.0,
+      "panel_y_mm": 55.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R75",
+      "panel_reference": "M_R75",
+      "source_x_mm": 34.0,
+      "source_y_mm": 83.5,
+      "panel_x_mm": 41.0,
+      "panel_y_mm": 90.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U5",
+      "panel_reference": "M_U5",
+      "source_x_mm": 17.0,
+      "source_y_mm": 54.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 61.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "U13",
+      "panel_reference": "M_U13",
+      "source_x_mm": 61.0,
+      "source_y_mm": 57.0,
+      "panel_x_mm": 68.0,
+      "panel_y_mm": 64.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R21",
+      "panel_reference": "M_R21",
+      "source_x_mm": 60.0,
+      "source_y_mm": 48.5,
+      "panel_x_mm": 67.0,
+      "panel_y_mm": 55.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R127",
+      "panel_reference": "M_R127",
+      "source_x_mm": 33.75,
+      "source_y_mm": 86.0,
+      "panel_x_mm": 40.75,
+      "panel_y_mm": 93.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "J2",
+      "panel_reference": "M_J2",
+      "source_x_mm": 17.0,
+      "source_y_mm": 35.0,
+      "panel_x_mm": 24.0,
+      "panel_y_mm": 42.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "R142",
+      "panel_reference": "M_R142",
+      "source_x_mm": 66.5,
+      "source_y_mm": 64.0,
+      "panel_x_mm": 73.5,
+      "panel_y_mm": 71.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP19",
+      "panel_reference": "M_TP19",
+      "source_x_mm": 48.4,
+      "source_y_mm": 88.0,
+      "panel_x_mm": 55.4,
+      "panel_y_mm": 95.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP7",
+      "panel_reference": "M_TP7",
+      "source_x_mm": 44.7,
+      "source_y_mm": 100.8,
+      "panel_x_mm": 51.7,
+      "panel_y_mm": 107.8,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP15",
+      "panel_reference": "M_TP15",
+      "source_x_mm": 31.6,
+      "source_y_mm": 88.0,
+      "panel_x_mm": 38.6,
+      "panel_y_mm": 95.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP41",
+      "panel_reference": "M_TP41",
+      "source_x_mm": 57.8,
+      "source_y_mm": 75.0,
+      "panel_x_mm": 64.8,
+      "panel_y_mm": 82.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP1",
+      "panel_reference": "M_TP1",
+      "source_x_mm": 70.925,
+      "source_y_mm": 62.125,
+      "panel_x_mm": 77.925,
+      "panel_y_mm": 69.125,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP9",
+      "panel_reference": "M_TP9",
+      "source_x_mm": 52.6,
+      "source_y_mm": 84.0,
+      "panel_x_mm": 59.6,
+      "panel_y_mm": 91.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP17",
+      "panel_reference": "M_TP17",
+      "source_x_mm": 57.7,
+      "source_y_mm": 78.85,
+      "panel_x_mm": 64.7,
+      "panel_y_mm": 85.85,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP11",
+      "panel_reference": "M_TP11",
+      "source_x_mm": 61.0,
+      "source_y_mm": 84.0,
+      "panel_x_mm": 68.0,
+      "panel_y_mm": 91.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP16",
+      "panel_reference": "M_TP16",
+      "source_x_mm": 28.75,
+      "source_y_mm": 80.9,
+      "panel_x_mm": 35.75,
+      "panel_y_mm": 87.9,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP5",
+      "panel_reference": "M_TP5",
+      "source_x_mm": 35.8,
+      "source_y_mm": 84.0,
+      "panel_x_mm": 42.8,
+      "panel_y_mm": 91.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP3",
+      "panel_reference": "M_TP3",
+      "source_x_mm": 27.4,
+      "source_y_mm": 84.0,
+      "panel_x_mm": 34.4,
+      "panel_y_mm": 91.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP2",
+      "panel_reference": "M_TP2",
+      "source_x_mm": 62.65,
+      "source_y_mm": 80.6,
+      "panel_x_mm": 69.65,
+      "panel_y_mm": 87.6,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP8",
+      "panel_reference": "M_TP8",
+      "source_x_mm": 52.4697,
+      "source_y_mm": 95.9697,
+      "panel_x_mm": 59.4697,
+      "panel_y_mm": 102.9697,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP43",
+      "panel_reference": "M_TP43",
+      "source_x_mm": 53.5,
+      "source_y_mm": 60.5,
+      "panel_x_mm": 60.5,
+      "panel_y_mm": 67.5,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP20",
+      "panel_reference": "M_TP20",
+      "source_x_mm": 52.6,
+      "source_y_mm": 88.0,
+      "panel_x_mm": 59.6,
+      "panel_y_mm": 95.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP40",
+      "panel_reference": "M_TP40",
+      "source_x_mm": 61.8,
+      "source_y_mm": 75.0,
+      "panel_x_mm": 68.8,
+      "panel_y_mm": 82.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP22",
+      "panel_reference": "M_TP22",
+      "source_x_mm": 61.0,
+      "source_y_mm": 88.0,
+      "panel_x_mm": 68.0,
+      "panel_y_mm": 95.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP28",
+      "panel_reference": "M_TP28",
+      "source_x_mm": 40.0,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 47.0,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP29",
+      "panel_reference": "M_TP29",
+      "source_x_mm": 44.2,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 51.2,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP12",
+      "panel_reference": "M_TP12",
+      "source_x_mm": 19.0,
+      "source_y_mm": 88.0,
+      "panel_x_mm": 26.0,
+      "panel_y_mm": 95.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP24",
+      "panel_reference": "M_TP24",
+      "source_x_mm": 32.5,
+      "source_y_mm": 54.4,
+      "panel_x_mm": 39.5,
+      "panel_y_mm": 61.4,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP23",
+      "panel_reference": "M_TP23",
+      "source_x_mm": 34.7083,
+      "source_y_mm": 86.0,
+      "panel_x_mm": 41.7083,
+      "panel_y_mm": 93.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP6",
+      "panel_reference": "M_TP6",
+      "source_x_mm": 62.0,
+      "source_y_mm": 95.65,
+      "panel_x_mm": 69.0,
+      "panel_y_mm": 102.65,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP30",
+      "panel_reference": "M_TP30",
+      "source_x_mm": 48.4,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 55.4,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP25",
+      "panel_reference": "M_TP25",
+      "source_x_mm": 27.4,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 34.4,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP33",
+      "panel_reference": "M_TP33",
+      "source_x_mm": 61.0,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 68.0,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP13",
+      "panel_reference": "M_TP13",
+      "source_x_mm": 53.6303,
+      "source_y_mm": 93.8303,
+      "panel_x_mm": 60.6303,
+      "panel_y_mm": 100.8303,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP18",
+      "panel_reference": "M_TP18",
+      "source_x_mm": 40.35,
+      "source_y_mm": 89.7,
+      "panel_x_mm": 47.35,
+      "panel_y_mm": 96.7,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP21",
+      "panel_reference": "M_TP21",
+      "source_x_mm": 56.8,
+      "source_y_mm": 88.0,
+      "panel_x_mm": 63.8,
+      "panel_y_mm": 95.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP31",
+      "panel_reference": "M_TP31",
+      "source_x_mm": 52.6,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 59.6,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP10",
+      "panel_reference": "M_TP10",
+      "source_x_mm": 56.8,
+      "source_y_mm": 84.0,
+      "panel_x_mm": 63.8,
+      "panel_y_mm": 91.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP14",
+      "panel_reference": "M_TP14",
+      "source_x_mm": 26.0,
+      "source_y_mm": 28.5,
+      "panel_x_mm": 33.0,
+      "panel_y_mm": 35.5,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP4",
+      "panel_reference": "M_TP4",
+      "source_x_mm": 30.7553,
+      "source_y_mm": 96.0303,
+      "panel_x_mm": 37.7553,
+      "panel_y_mm": 103.0303,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP32",
+      "panel_reference": "M_TP32",
+      "source_x_mm": 56.8,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 63.8,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP42",
+      "panel_reference": "M_TP42",
+      "source_x_mm": 52.0,
+      "source_y_mm": 79.0,
+      "panel_x_mm": 59.0,
+      "panel_y_mm": 86.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP26",
+      "panel_reference": "M_TP26",
+      "source_x_mm": 31.6,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 38.6,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Main",
+      "source_reference": "TP27",
+      "panel_reference": "M_TP27",
+      "source_x_mm": 35.8,
+      "source_y_mm": 92.0,
+      "panel_x_mm": 42.8,
+      "panel_y_mm": 99.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "TP34",
+      "panel_reference": "W_TP34",
+      "source_x_mm": 3.0,
+      "source_y_mm": 24.0,
+      "panel_x_mm": 92.0,
+      "panel_y_mm": 31.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R123",
+      "panel_reference": "W_R123",
+      "source_x_mm": 7.0,
+      "source_y_mm": 55.0,
+      "panel_x_mm": 96.0,
+      "panel_y_mm": 62.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R139",
+      "panel_reference": "W_R139",
+      "source_x_mm": 47.0,
+      "source_y_mm": 37.0,
+      "panel_x_mm": 136.0,
+      "panel_y_mm": 44.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "J5",
+      "panel_reference": "W_J5",
+      "source_x_mm": 28.0,
+      "source_y_mm": 53.0,
+      "panel_x_mm": 117.0,
+      "panel_y_mm": 60.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R102",
+      "panel_reference": "W_R102",
+      "source_x_mm": 23.7,
+      "source_y_mm": 22.0,
+      "panel_x_mm": 112.7,
+      "panel_y_mm": 29.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U22",
+      "panel_reference": "W_U22",
+      "source_x_mm": 40.0,
+      "source_y_mm": 38.0,
+      "panel_x_mm": 129.0,
+      "panel_y_mm": 45.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C45",
+      "panel_reference": "W_C45",
+      "source_x_mm": 20.0,
+      "source_y_mm": 33.5,
+      "panel_x_mm": 109.0,
+      "panel_y_mm": 40.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R138",
+      "panel_reference": "W_R138",
+      "source_x_mm": 47.0,
+      "source_y_mm": 35.0,
+      "panel_x_mm": 136.0,
+      "panel_y_mm": 42.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "TP35",
+      "panel_reference": "W_TP35",
+      "source_x_mm": 3.0,
+      "source_y_mm": 34.0,
+      "panel_x_mm": 92.0,
+      "panel_y_mm": 41.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R97",
+      "panel_reference": "W_R97",
+      "source_x_mm": 30.0,
+      "source_y_mm": 9.5,
+      "panel_x_mm": 119.0,
+      "panel_y_mm": 16.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "TP37",
+      "panel_reference": "W_TP37",
+      "source_x_mm": 3.0,
+      "source_y_mm": 44.0,
+      "panel_x_mm": 92.0,
+      "panel_y_mm": 51.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R144",
+      "panel_reference": "W_R144",
+      "source_x_mm": 47.0,
+      "source_y_mm": 23.0,
+      "panel_x_mm": 136.0,
+      "panel_y_mm": 30.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R100",
+      "panel_reference": "W_R100",
+      "source_x_mm": 31.5,
+      "source_y_mm": 18.0,
+      "panel_x_mm": 120.5,
+      "panel_y_mm": 25.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R107",
+      "panel_reference": "W_R107",
+      "source_x_mm": 19.0,
+      "source_y_mm": 15.0,
+      "panel_x_mm": 108.0,
+      "panel_y_mm": 22.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R96",
+      "panel_reference": "W_R96",
+      "source_x_mm": 33.0,
+      "source_y_mm": 9.5,
+      "panel_x_mm": 122.0,
+      "panel_y_mm": 16.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C46",
+      "panel_reference": "W_C46",
+      "source_x_mm": 20.5,
+      "source_y_mm": 26.0,
+      "panel_x_mm": 109.5,
+      "panel_y_mm": 33.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R87",
+      "panel_reference": "W_R87",
+      "source_x_mm": 43.5,
+      "source_y_mm": 30.0,
+      "panel_x_mm": 132.5,
+      "panel_y_mm": 37.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C60",
+      "panel_reference": "W_C60",
+      "source_x_mm": 26.0,
+      "source_y_mm": 19.5,
+      "panel_x_mm": 115.0,
+      "panel_y_mm": 26.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "D6",
+      "panel_reference": "W_D6",
+      "source_x_mm": 17.0,
+      "source_y_mm": 8.0,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 15.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R113",
+      "panel_reference": "W_R113",
+      "source_x_mm": 10.0,
+      "source_y_mm": 31.5,
+      "panel_x_mm": 99.0,
+      "panel_y_mm": 38.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C48",
+      "panel_reference": "W_C48",
+      "source_x_mm": 33.0,
+      "source_y_mm": 29.5,
+      "panel_x_mm": 122.0,
+      "panel_y_mm": 36.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R89",
+      "panel_reference": "W_R89",
+      "source_x_mm": 48.5,
+      "source_y_mm": 26.0,
+      "panel_x_mm": 137.5,
+      "panel_y_mm": 33.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C43",
+      "panel_reference": "W_C43",
+      "source_x_mm": 23.0,
+      "source_y_mm": 33.0,
+      "panel_x_mm": 112.0,
+      "panel_y_mm": 40.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R115",
+      "panel_reference": "W_R115",
+      "source_x_mm": 17.0,
+      "source_y_mm": 37.8,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 44.8,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R111",
+      "panel_reference": "W_R111",
+      "source_x_mm": 5.0,
+      "source_y_mm": 29.0,
+      "panel_x_mm": 94.0,
+      "panel_y_mm": 36.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U30",
+      "panel_reference": "W_U30",
+      "source_x_mm": 12.0,
+      "source_y_mm": 36.0,
+      "panel_x_mm": 101.0,
+      "panel_y_mm": 43.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R103",
+      "panel_reference": "W_R103",
+      "source_x_mm": 25.5,
+      "source_y_mm": 22.0,
+      "panel_x_mm": 114.5,
+      "panel_y_mm": 29.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C61",
+      "panel_reference": "W_C61",
+      "source_x_mm": 29.0,
+      "source_y_mm": 19.5,
+      "panel_x_mm": 118.0,
+      "panel_y_mm": 26.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C90",
+      "panel_reference": "W_C90",
+      "source_x_mm": 8.0,
+      "source_y_mm": 21.0,
+      "panel_x_mm": 97.0,
+      "panel_y_mm": 28.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "J9",
+      "panel_reference": "W_J9",
+      "source_x_mm": 38.0,
+      "source_y_mm": 5.0,
+      "panel_x_mm": 127.0,
+      "panel_y_mm": 12.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R105",
+      "panel_reference": "W_R105",
+      "source_x_mm": 30.5,
+      "source_y_mm": 14.5,
+      "panel_x_mm": 119.5,
+      "panel_y_mm": 21.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C47",
+      "panel_reference": "W_C47",
+      "source_x_mm": 23.0,
+      "source_y_mm": 27.25,
+      "panel_x_mm": 112.0,
+      "panel_y_mm": 34.25,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C49",
+      "panel_reference": "W_C49",
+      "source_x_mm": 31.4,
+      "source_y_mm": 29.5,
+      "panel_x_mm": 120.4,
+      "panel_y_mm": 36.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R82",
+      "panel_reference": "W_R82",
+      "source_x_mm": 32.0,
+      "source_y_mm": 36.8,
+      "panel_x_mm": 121.0,
+      "panel_y_mm": 43.8,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R90",
+      "panel_reference": "W_R90",
+      "source_x_mm": 37.0,
+      "source_y_mm": 30.0,
+      "panel_x_mm": 126.0,
+      "panel_y_mm": 37.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R121",
+      "panel_reference": "W_R121",
+      "source_x_mm": 7.0,
+      "source_y_mm": 49.0,
+      "panel_x_mm": 96.0,
+      "panel_y_mm": 56.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R114",
+      "panel_reference": "W_R114",
+      "source_x_mm": 13.5,
+      "source_y_mm": 32.0,
+      "panel_x_mm": 102.5,
+      "panel_y_mm": 39.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R106",
+      "panel_reference": "W_R106",
+      "source_x_mm": 30.5,
+      "source_y_mm": 12.5,
+      "panel_x_mm": 119.5,
+      "panel_y_mm": 19.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R98",
+      "panel_reference": "W_R98",
+      "source_x_mm": 34.0,
+      "source_y_mm": 18.5,
+      "panel_x_mm": 123.0,
+      "panel_y_mm": 25.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C59",
+      "panel_reference": "W_C59",
+      "source_x_mm": 23.0,
+      "source_y_mm": 19.5,
+      "panel_x_mm": 112.0,
+      "panel_y_mm": 26.5,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R95",
+      "panel_reference": "W_R95",
+      "source_x_mm": 34.0,
+      "source_y_mm": 25.5,
+      "panel_x_mm": 123.0,
+      "panel_y_mm": 32.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R112",
+      "panel_reference": "W_R112",
+      "source_x_mm": 10.0,
+      "source_y_mm": 29.0,
+      "panel_x_mm": 99.0,
+      "panel_y_mm": 36.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U21",
+      "panel_reference": "W_U21",
+      "source_x_mm": 27.5,
+      "source_y_mm": 28.0,
+      "panel_x_mm": 116.5,
+      "panel_y_mm": 35.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C56",
+      "panel_reference": "W_C56",
+      "source_x_mm": 22.5,
+      "source_y_mm": 16.5,
+      "panel_x_mm": 111.5,
+      "panel_y_mm": 23.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R92",
+      "panel_reference": "W_R92",
+      "source_x_mm": 41.0,
+      "source_y_mm": 30.0,
+      "panel_x_mm": 130.0,
+      "panel_y_mm": 37.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U23",
+      "panel_reference": "W_U23",
+      "source_x_mm": 26.0,
+      "source_y_mm": 16.0,
+      "panel_x_mm": 115.0,
+      "panel_y_mm": 23.0,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C67",
+      "panel_reference": "W_C67",
+      "source_x_mm": 15.0,
+      "source_y_mm": 34.8,
+      "panel_x_mm": 104.0,
+      "panel_y_mm": 41.8,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "Q5",
+      "panel_reference": "W_Q5",
+      "source_x_mm": 12.0,
+      "source_y_mm": 44.0,
+      "panel_x_mm": 101.0,
+      "panel_y_mm": 51.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "J11",
+      "panel_reference": "W_J11",
+      "source_x_mm": 8.0,
+      "source_y_mm": 9.0,
+      "panel_x_mm": 97.0,
+      "panel_y_mm": 16.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R120",
+      "panel_reference": "W_R120",
+      "source_x_mm": 14.0,
+      "source_y_mm": 40.0,
+      "panel_x_mm": 103.0,
+      "panel_y_mm": 47.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C41",
+      "panel_reference": "W_C41",
+      "source_x_mm": 23.0,
+      "source_y_mm": 29.6,
+      "panel_x_mm": 112.0,
+      "panel_y_mm": 36.6,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R81",
+      "panel_reference": "W_R81",
+      "source_x_mm": 22.0,
+      "source_y_mm": 23.0,
+      "panel_x_mm": 111.0,
+      "panel_y_mm": 30.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C57",
+      "panel_reference": "W_C57",
+      "source_x_mm": 22.0,
+      "source_y_mm": 13.5,
+      "panel_x_mm": 111.0,
+      "panel_y_mm": 20.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R86",
+      "panel_reference": "W_R86",
+      "source_x_mm": 45.0,
+      "source_y_mm": 23.5,
+      "panel_x_mm": 134.0,
+      "panel_y_mm": 30.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R122",
+      "panel_reference": "W_R122",
+      "source_x_mm": 17.0,
+      "source_y_mm": 49.0,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 56.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R83",
+      "panel_reference": "W_R83",
+      "source_x_mm": 35.0,
+      "source_y_mm": 39.0,
+      "panel_x_mm": 124.0,
+      "panel_y_mm": 46.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C52",
+      "panel_reference": "W_C52",
+      "source_x_mm": 45.5,
+      "source_y_mm": 19.5,
+      "panel_x_mm": 134.5,
+      "panel_y_mm": 26.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R104",
+      "panel_reference": "W_R104",
+      "source_x_mm": 27.3,
+      "source_y_mm": 22.0,
+      "panel_x_mm": 116.3,
+      "panel_y_mm": 29.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C66",
+      "panel_reference": "W_C66",
+      "source_x_mm": 5.5,
+      "source_y_mm": 36.5,
+      "panel_x_mm": 94.5,
+      "panel_y_mm": 43.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "Q4",
+      "panel_reference": "W_Q4",
+      "source_x_mm": 32.0,
+      "source_y_mm": 40.0,
+      "panel_x_mm": 121.0,
+      "panel_y_mm": 47.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R140",
+      "panel_reference": "W_R140",
+      "source_x_mm": 47.0,
+      "source_y_mm": 39.0,
+      "panel_x_mm": 136.0,
+      "panel_y_mm": 46.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R117",
+      "panel_reference": "W_R117",
+      "source_x_mm": 17.0,
+      "source_y_mm": 32.0,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 39.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R88",
+      "panel_reference": "W_R88",
+      "source_x_mm": 47.0,
+      "source_y_mm": 28.0,
+      "panel_x_mm": 136.0,
+      "panel_y_mm": 35.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R109",
+      "panel_reference": "W_R109",
+      "source_x_mm": 22.0,
+      "source_y_mm": 10.0,
+      "panel_x_mm": 111.0,
+      "panel_y_mm": 17.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C54",
+      "panel_reference": "W_C54",
+      "source_x_mm": 42.5,
+      "source_y_mm": 9.5,
+      "panel_x_mm": 131.5,
+      "panel_y_mm": 16.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R137",
+      "panel_reference": "W_R137",
+      "source_x_mm": 44.0,
+      "source_y_mm": 44.0,
+      "panel_x_mm": 133.0,
+      "panel_y_mm": 51.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R145",
+      "panel_reference": "W_R145",
+      "source_x_mm": 45.0,
+      "source_y_mm": 14.0,
+      "panel_x_mm": 134.0,
+      "panel_y_mm": 21.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R84",
+      "panel_reference": "W_R84",
+      "source_x_mm": 32.0,
+      "source_y_mm": 34.0,
+      "panel_x_mm": 121.0,
+      "panel_y_mm": 41.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C69",
+      "panel_reference": "W_C69",
+      "source_x_mm": 17.0,
+      "source_y_mm": 42.0,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 49.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C50",
+      "panel_reference": "W_C50",
+      "source_x_mm": 19.5,
+      "source_y_mm": 22.5,
+      "panel_x_mm": 108.5,
+      "panel_y_mm": 29.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C58",
+      "panel_reference": "W_C58",
+      "source_x_mm": 26.0,
+      "source_y_mm": 12.0,
+      "panel_x_mm": 115.0,
+      "panel_y_mm": 19.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R124",
+      "panel_reference": "W_R124",
+      "source_x_mm": 17.0,
+      "source_y_mm": 55.0,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 62.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U26",
+      "panel_reference": "W_U26",
+      "source_x_mm": 38.0,
+      "source_y_mm": 14.0,
+      "panel_x_mm": 127.0,
+      "panel_y_mm": 21.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R119",
+      "panel_reference": "W_R119",
+      "source_x_mm": 11.0,
+      "source_y_mm": 40.5,
+      "panel_x_mm": 100.0,
+      "panel_y_mm": 47.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C51",
+      "panel_reference": "W_C51",
+      "source_x_mm": 35.0,
+      "source_y_mm": 34.0,
+      "panel_x_mm": 124.0,
+      "panel_y_mm": 41.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "TP36",
+      "panel_reference": "W_TP36",
+      "source_x_mm": 20.0,
+      "source_y_mm": 41.0,
+      "panel_x_mm": 109.0,
+      "panel_y_mm": 48.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C65",
+      "panel_reference": "W_C65",
+      "source_x_mm": 17.0,
+      "source_y_mm": 35.0,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 42.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C44",
+      "panel_reference": "W_C44",
+      "source_x_mm": 17.0,
+      "source_y_mm": 27.5,
+      "panel_x_mm": 106.0,
+      "panel_y_mm": 34.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C68",
+      "panel_reference": "W_C68",
+      "source_x_mm": 6.0,
+      "source_y_mm": 41.0,
+      "panel_x_mm": 95.0,
+      "panel_y_mm": 48.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R146",
+      "panel_reference": "W_R146",
+      "source_x_mm": 14.0,
+      "source_y_mm": 21.0,
+      "panel_x_mm": 103.0,
+      "panel_y_mm": 28.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R94",
+      "panel_reference": "W_R94",
+      "source_x_mm": 33.5,
+      "source_y_mm": 22.5,
+      "panel_x_mm": 122.5,
+      "panel_y_mm": 29.5,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U24",
+      "panel_reference": "W_U24",
+      "source_x_mm": 40.0,
+      "source_y_mm": 24.0,
+      "panel_x_mm": 129.0,
+      "panel_y_mm": 31.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "U31",
+      "panel_reference": "W_U31",
+      "source_x_mm": 7.0,
+      "source_y_mm": 33.0,
+      "panel_x_mm": 96.0,
+      "panel_y_mm": 40.0,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R116",
+      "panel_reference": "W_R116",
+      "source_x_mm": 20.5,
+      "source_y_mm": 37.8,
+      "panel_x_mm": 109.5,
+      "panel_y_mm": 44.8,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "C42",
+      "panel_reference": "W_C42",
+      "source_x_mm": 23.0,
+      "source_y_mm": 31.3,
+      "panel_x_mm": 112.0,
+      "panel_y_mm": 38.3,
+      "rotation_degrees": 180.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R108",
+      "panel_reference": "W_R108",
+      "source_x_mm": 19.0,
+      "source_y_mm": 18.0,
+      "panel_x_mm": 108.0,
+      "panel_y_mm": 25.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Wheel",
+      "source_reference": "R91",
+      "panel_reference": "W_R91",
+      "source_x_mm": 39.0,
+      "source_y_mm": 30.0,
+      "panel_x_mm": 128.0,
+      "panel_y_mm": 37.0,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Encoder",
+      "source_reference": "U27",
+      "panel_reference": "E_U27",
+      "source_x_mm": 57.0,
+      "source_y_mm": 55.5,
+      "panel_x_mm": 99.0,
+      "panel_y_mm": 85.5,
+      "rotation_degrees": 0.0
+    },
+    {
+      "board": "Encoder",
+      "source_reference": "C62",
+      "panel_reference": "E_C62",
+      "source_x_mm": 56.8,
+      "source_y_mm": 52.2,
+      "panel_x_mm": 98.8,
+      "panel_y_mm": 82.2,
+      "rotation_degrees": 90.0
+    },
+    {
+      "board": "Encoder",
+      "source_reference": "J7",
+      "panel_reference": "E_J7",
+      "source_x_mm": 57.0,
+      "source_y_mm": 64.5,
+      "panel_x_mm": 99.0,
+      "panel_y_mm": 94.5,
+      "rotation_degrees": 0.0
+    }
+  ],
+  "tabs": [
+    {
+      "center": [
+        31.0,
+        7.0
+      ],
+      "normal": [
+        0.0,
+        -1.0
+      ],
+      "polygon": [
+        [
+          28.5,
+          7.1
+        ],
+        [
+          33.5,
+          7.1
+        ],
+        [
+          33.5,
+          4.9
+        ],
+        [
+          28.5,
+          4.9
+        ]
+      ],
+      "holes": [
+        [
+          29.2,
+          6.5
+        ],
+        [
+          30.1,
+          6.5
+        ],
+        [
+          31.0,
+          6.5
+        ],
+        [
+          31.9,
+          6.5
+        ],
+        [
+          32.8,
+          6.5
+        ]
+      ],
+      "board": "Main",
+      "index": 1
+    },
+    {
+      "center": [
+        64.0,
+        7.0
+      ],
+      "normal": [
+        0.0,
+        -1.0
+      ],
+      "polygon": [
+        [
+          61.5,
+          7.1
+        ],
+        [
+          66.5,
+          7.1
+        ],
+        [
+          66.5,
+          4.9
+        ],
+        [
+          61.5,
+          4.9
+        ]
+      ],
+      "holes": [
+        [
+          62.2,
+          6.5
+        ],
+        [
+          63.1,
+          6.5
+        ],
+        [
+          64.0,
+          6.5
+        ],
+        [
+          64.9,
+          6.5
+        ],
+        [
+          65.8,
+          6.5
+        ]
+      ],
+      "board": "Main",
+      "index": 2
+    },
+    {
+      "center": [
+        7.0,
+        82.0
+      ],
+      "normal": [
+        -1.0,
+        -0.0
+      ],
+      "polygon": [
+        [
+          7.1,
+          84.5
+        ],
+        [
+          7.1,
+          79.5
+        ],
+        [
+          4.9,
+          79.5
+        ],
+        [
+          4.9,
+          84.5
+        ]
+      ],
+      "holes": [
+        [
+          6.5,
+          83.8
+        ],
+        [
+          6.5,
+          82.9
+        ],
+        [
+          6.5,
+          82.0
+        ],
+        [
+          6.5,
+          81.1
+        ],
+        [
+          6.5,
+          80.2
+        ]
+      ],
+      "board": "Main",
+      "index": 3
+    },
+    {
+      "center": [
+        87.0,
+        93.0
+      ],
+      "normal": [
+        1.0,
+        -0.0
+      ],
+      "polygon": [
+        [
+          86.9,
+          90.5
+        ],
+        [
+          86.9,
+          95.5
+        ],
+        [
+          89.1,
+          95.5
+        ],
+        [
+          89.1,
+          90.5
+        ]
+      ],
+      "holes": [
+        [
+          87.5,
+          91.2
+        ],
+        [
+          87.5,
+          92.1
+        ],
+        [
+          87.5,
+          93.0
+        ],
+        [
+          87.5,
+          93.9
+        ],
+        [
+          87.5,
+          94.8
+        ]
+      ],
+      "board": "Main",
+      "index": 4
+    },
+    {
+      "center": [
+        107.0,
+        7.0
+      ],
+      "normal": [
+        0.0,
+        -1.0
+      ],
+      "polygon": [
+        [
+          104.5,
+          7.1
+        ],
+        [
+          109.5,
+          7.1
+        ],
+        [
+          109.5,
+          4.9
+        ],
+        [
+          104.5,
+          4.9
+        ]
+      ],
+      "holes": [
+        [
+          105.2,
+          6.5
+        ],
+        [
+          106.1,
+          6.5
+        ],
+        [
+          107.0,
+          6.5
+        ],
+        [
+          107.9,
+          6.5
+        ],
+        [
+          108.8,
+          6.5
+        ]
+      ],
+      "board": "Wheel",
+      "index": 1
+    },
+    {
+      "center": [
+        144.0,
+        10.0
+      ],
+      "normal": [
+        1.0,
+        -0.0
+      ],
+      "polygon": [
+        [
+          143.9,
+          7.5
+        ],
+        [
+          143.9,
+          12.5
+        ],
+        [
+          146.1,
+          12.5
+        ],
+        [
+          146.1,
+          7.5
+        ]
+      ],
+      "holes": [
+        [
+          144.5,
+          8.2
+        ],
+        [
+          144.5,
+          9.1
+        ],
+        [
+          144.5,
+          10.0
+        ],
+        [
+          144.5,
+          10.9
+        ],
+        [
+          144.5,
+          11.8
+        ]
+      ],
+      "board": "Wheel",
+      "index": 2
+    },
+    {
+      "center": [
+        102.0,
+        67.0
+      ],
+      "normal": [
+        0.0,
+        1.0
+      ],
+      "polygon": [
+        [
+          104.5,
+          66.9
+        ],
+        [
+          99.5,
+          66.9
+        ],
+        [
+          99.5,
+          69.1
+        ],
+        [
+          104.5,
+          69.1
+        ]
+      ],
+      "holes": [
+        [
+          103.8,
+          67.5
+        ],
+        [
+          102.9,
+          67.5
+        ],
+        [
+          102.0,
+          67.5
+        ],
+        [
+          101.1,
+          67.5
+        ],
+        [
+          100.2,
+          67.5
+        ]
+      ],
+      "board": "Wheel",
+      "index": 3
+    },
+    {
+      "center": [
+        132.0,
+        67.0
+      ],
+      "normal": [
+        0.0,
+        1.0
+      ],
+      "polygon": [
+        [
+          134.5,
+          66.9
+        ],
+        [
+          129.5,
+          66.9
+        ],
+        [
+          129.5,
+          69.1
+        ],
+        [
+          134.5,
+          69.1
+        ]
+      ],
+      "holes": [
+        [
+          133.8,
+          67.5
+        ],
+        [
+          132.9,
+          67.5
+        ],
+        [
+          132.0,
+          67.5
+        ],
+        [
+          131.1,
+          67.5
+        ],
+        [
+          130.2,
+          67.5
+        ]
+      ],
+      "board": "Wheel",
+      "index": 4
+    },
+    {
+      "center": [
+        92.0,
+        83.0
+      ],
+      "normal": [
+        -1.0,
+        -0.0
+      ],
+      "polygon": [
+        [
+          92.1,
+          85.5
+        ],
+        [
+          92.1,
+          80.5
+        ],
+        [
+          89.9,
+          80.5
+        ],
+        [
+          89.9,
+          85.5
+        ]
+      ],
+      "holes": [
+        [
+          91.5,
+          84.8
+        ],
+        [
+          91.5,
+          83.9
+        ],
+        [
+          91.5,
+          83.0
+        ],
+        [
+          91.5,
+          82.1
+        ],
+        [
+          91.5,
+          81.2
+        ]
+      ],
+      "board": "Encoder",
+      "index": 1
+    },
+    {
+      "center": [
+        106.0,
+        83.0
+      ],
+      "normal": [
+        1.0,
+        -0.0
+      ],
+      "polygon": [
+        [
+          105.9,
+          80.5
+        ],
+        [
+          105.9,
+          85.5
+        ],
+        [
+          108.1,
+          85.5
+        ],
+        [
+          108.1,
+          80.5
+        ]
+      ],
+      "holes": [
+        [
+          106.5,
+          81.2
+        ],
+        [
+          106.5,
+          82.1
+        ],
+        [
+          106.5,
+          83.0
+        ],
+        [
+          106.5,
+          83.9
+        ],
+        [
+          106.5,
+          84.8
+        ]
+      ],
+      "board": "Encoder",
+      "index": 2
+    }
+  ],
+  "tab_width_mm": 5,
+  "mousebite_diameter_mm": 0.6,
+  "mousebite_pitch_mm": 0.9,
+  "drill_row_offset_outside_unit_mm": 0.5,
+  "routing_gap_mm": 2,
+  "stencil_variant_omitted": [
+    "Main/U32"
+  ],
+  "net_namespacing": true,
+  "source_copper_refilled_in_panel": false,
+  "panel_sha256": "750b759e8e756b03552c022ffa5819fc0dbf9515f1ae25ec63b37c09a0d3a3d8"
+}

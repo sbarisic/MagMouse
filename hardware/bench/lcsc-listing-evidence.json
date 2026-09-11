@@ -1,0 +1,1904 @@
+[
+  {
+    "MPN": "0603B103K500NT",
+    "URL": "https://www.lcsc.com/product-detail/C57112.html",
+    "stock": 1463250,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0109
+      },
+      {
+        "quantity": 500,
+        "price": 0.0086
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0076
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0066
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0063
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0061
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF0000T5E",
+    "URL": "https://www.lcsc.com/product-detail/C21189.html",
+    "stock": 13791800,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0026
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0021
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0018
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0015
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0014
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF1000T5E",
+    "URL": "https://www.lcsc.com/product-detail/C22775.html",
+    "stock": 7474000,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.004
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0033
+      },
+      {
+        "quantity": 5000,
+        "price": 0.003
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0025
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0023
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF1001T5E",
+    "URL": "https://www.lcsc.com/product-detail/C21190.html",
+    "stock": 9866800,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0033
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0026
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0023
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0019
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0017
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF1002T5E",
+    "URL": "https://www.lcsc.com/product-detail/C25804.html",
+    "stock": 4617800,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0027
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0022
+      },
+      {
+        "quantity": 5000,
+        "price": 0.002
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0019
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0018
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF1003T5E",
+    "URL": "https://www.lcsc.com/product-detail/C25803.html",
+    "stock": 18218500,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0042
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0032
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0028
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0023
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0021
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF1004T5E",
+    "URL": "https://www.lcsc.com/product-detail/C22935.html",
+    "stock": 5905300,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0024
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0019
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0016
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0014
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0013
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF220JT5E",
+    "URL": "https://www.lcsc.com/product-detail/C23345.html",
+    "stock": 5676500,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0019
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0015
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0013
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0012
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0011
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF2212T5E",
+    "URL": "https://www.lcsc.com/product-detail/C25961.html",
+    "stock": 24400,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0062
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0051
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0045
+      },
+      {
+        "quantity": 10000,
+        "price": 0.004
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0037
+      },
+      {
+        "quantity": 100000,
+        "price": 0.0035
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF3300T5E",
+    "URL": "https://www.lcsc.com/product-detail/C23138.html",
+    "stock": 2567900,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0028
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0022
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0019
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0016
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0014
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF3301T5E",
+    "URL": "https://www.lcsc.com/product-detail/C22978.html",
+    "stock": 5296900,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0028
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0022
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0019
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0017
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0015
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF3302T5E",
+    "URL": "https://www.lcsc.com/product-detail/C4216.html",
+    "stock": 2693800,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0026
+      },
+      {
+        "quantity": 1000,
+        "price": 0.002
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0017
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0015
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0014
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF330JT5E",
+    "URL": "https://www.lcsc.com/product-detail/C23140.html",
+    "stock": 4105100,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0028
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0022
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0019
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0017
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0015
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF3482T5E",
+    "URL": "https://www.lcsc.com/product-detail/C23141.html",
+    "stock": null,
+    "moq": null,
+    "multiple": null,
+    "tiers": []
+  },
+  {
+    "MPN": "0603WAF390JT5E",
+    "URL": "https://www.lcsc.com/product-detail/C23154.html",
+    "stock": 92300,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0045
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0036
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0032
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0027
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0024
+      }
+    ]
+  },
+  {
+    "MPN": "0603WAF4701T5E",
+    "URL": "https://www.lcsc.com/product-detail/C23162.html",
+    "stock": 18282200,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.003
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0027
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0025
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0023
+      },
+      {
+        "quantity": 50000,
+        "price": 0.0022
+      }
+    ]
+  },
+  {
+    "MPN": "16SVPC100M",
+    "URL": "https://www.lcsc.com/product-detail/C136275.html",
+    "stock": 14403,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 0.7054
+      },
+      {
+        "quantity": 10,
+        "price": 0.543
+      },
+      {
+        "quantity": 30,
+        "price": 0.4725
+      },
+      {
+        "quantity": 100,
+        "price": 0.3855
+      },
+      {
+        "quantity": 500,
+        "price": 0.3462
+      },
+      {
+        "quantity": 1000,
+        "price": 0.3232
+      }
+    ]
+  },
+  {
+    "MPN": "2N7002",
+    "URL": "https://www.lcsc.com/product-detail/C8545.html",
+    "stock": 1643800,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0164
+      },
+      {
+        "quantity": 500,
+        "price": 0.0129
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0113
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0101
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0097
+      },
+      {
+        "quantity": 51000,
+        "price": 0.0093
+      }
+    ]
+  },
+  {
+    "MPN": "ADS7038IRTER",
+    "URL": "https://www.lcsc.com/product-detail/C2871580.html",
+    "stock": null,
+    "moq": null,
+    "multiple": null,
+    "tiers": []
+  },
+  {
+    "MPN": "AO3400A",
+    "URL": "https://www.lcsc.com/product-detail/C20917.html",
+    "stock": 505665,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.0853
+      },
+      {
+        "quantity": 50,
+        "price": 0.0683
+      },
+      {
+        "quantity": 150,
+        "price": 0.0596
+      },
+      {
+        "quantity": 500,
+        "price": 0.0524
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0499
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0482
+      }
+    ]
+  },
+  {
+    "MPN": "B2B-PH-SM4-TBT(LF)(SN)",
+    "URL": "https://www.lcsc.com/product-detail/C265003.html",
+    "stock": 3170,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 0.4868
+      },
+      {
+        "quantity": 10,
+        "price": 0.3934
+      },
+      {
+        "quantity": 30,
+        "price": 0.3541
+      },
+      {
+        "quantity": 100,
+        "price": 0.3049
+      },
+      {
+        "quantity": 500,
+        "price": 0.2475
+      },
+      {
+        "quantity": 1000,
+        "price": 0.2344
+      }
+    ]
+  },
+  {
+    "MPN": "BAT54-7-F",
+    "URL": "https://www.lcsc.com/product-detail/C106920.html",
+    "stock": 95240,
+    "moq": 20,
+    "multiple": 20,
+    "tiers": [
+      {
+        "quantity": 20,
+        "price": 0.0356
+      },
+      {
+        "quantity": 200,
+        "price": 0.0278
+      },
+      {
+        "quantity": 600,
+        "price": 0.0234
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0208
+      },
+      {
+        "quantity": 9000,
+        "price": 0.0185
+      },
+      {
+        "quantity": 21000,
+        "price": 0.0173
+      }
+    ]
+  },
+  {
+    "MPN": "CC0603KRX7R9BB104",
+    "URL": "https://www.lcsc.com/product-detail/C14663.html",
+    "stock": 9087200,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0125
+      },
+      {
+        "quantity": 500,
+        "price": 0.009
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0075
+      },
+      {
+        "quantity": 4000,
+        "price": 0.006
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0055
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0052
+      }
+    ]
+  },
+  {
+    "MPN": "CL10A105KB8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C15849.html",
+    "stock": 35600,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0176
+      },
+      {
+        "quantity": 500,
+        "price": 0.0138
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0121
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0108
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0103
+      },
+      {
+        "quantity": 48000,
+        "price": 0.01
+      }
+    ]
+  },
+  {
+    "MPN": "CL10A475KP8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C1705.html",
+    "stock": 1761800,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0178
+      },
+      {
+        "quantity": 500,
+        "price": 0.014
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0124
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0103
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0098
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0095
+      }
+    ]
+  },
+  {
+    "MPN": "CL10B102KB8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C1588.html",
+    "stock": 6304400,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.009
+      },
+      {
+        "quantity": 500,
+        "price": 0.0068
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0059
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0046
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0044
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0042
+      }
+    ]
+  },
+  {
+    "MPN": "CL10B103KB8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C1589.html",
+    "stock": 2516450,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0102
+      },
+      {
+        "quantity": 500,
+        "price": 0.0079
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0069
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0051
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0048
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0046
+      }
+    ]
+  },
+  {
+    "MPN": "CL10B225KP8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C100082.html",
+    "stock": 367860,
+    "moq": 20,
+    "multiple": 20,
+    "tiers": [
+      {
+        "quantity": 20,
+        "price": 0.0355
+      },
+      {
+        "quantity": 200,
+        "price": 0.0284
+      },
+      {
+        "quantity": 600,
+        "price": 0.0253
+      },
+      {
+        "quantity": 4000,
+        "price": 0.023
+      },
+      {
+        "quantity": 8000,
+        "price": 0.022
+      },
+      {
+        "quantity": 20000,
+        "price": 0.0214
+      }
+    ]
+  },
+  {
+    "MPN": "CL10B473KB8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C1622.html",
+    "stock": 560550,
+    "moq": 50,
+    "multiple": 50,
+    "tiers": [
+      {
+        "quantity": 50,
+        "price": 0.0083
+      },
+      {
+        "quantity": 500,
+        "price": 0.0065
+      },
+      {
+        "quantity": 1500,
+        "price": 0.0057
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0051
+      },
+      {
+        "quantity": 24000,
+        "price": 0.0048
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0046
+      }
+    ]
+  },
+  {
+    "MPN": "CL10C220JB8NNNC",
+    "URL": "https://www.lcsc.com/product-detail/C1653.html",
+    "stock": 1209800,
+    "moq": 100,
+    "multiple": 100,
+    "tiers": [
+      {
+        "quantity": 100,
+        "price": 0.0068
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0055
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0049
+      },
+      {
+        "quantity": 8000,
+        "price": 0.0045
+      },
+      {
+        "quantity": 48000,
+        "price": 0.0043
+      },
+      {
+        "quantity": 100000,
+        "price": 0.0042
+      }
+    ]
+  },
+  {
+    "MPN": "CL21A106KAYNNNE",
+    "URL": "https://www.lcsc.com/product-detail/C15850.html",
+    "stock": 2769000,
+    "moq": 20,
+    "multiple": 20,
+    "tiers": [
+      {
+        "quantity": 20,
+        "price": 0.085
+      },
+      {
+        "quantity": 200,
+        "price": 0.067
+      },
+      {
+        "quantity": 600,
+        "price": 0.0578
+      },
+      {
+        "quantity": 2000,
+        "price": 0.0502
+      },
+      {
+        "quantity": 10000,
+        "price": 0.0475
+      },
+      {
+        "quantity": 20000,
+        "price": 0.0457
+      }
+    ]
+  },
+  {
+    "MPN": "CL21A226MAQNNNE",
+    "URL": "https://www.lcsc.com/product-detail/C45783.html",
+    "stock": 2462600,
+    "moq": 20,
+    "multiple": 20,
+    "tiers": [
+      {
+        "quantity": 20,
+        "price": 0.248
+      },
+      {
+        "quantity": 200,
+        "price": 0.191
+      },
+      {
+        "quantity": 600,
+        "price": 0.1632
+      },
+      {
+        "quantity": 2000,
+        "price": 0.1384
+      },
+      {
+        "quantity": 10000,
+        "price": 0.1315
+      },
+      {
+        "quantity": 20000,
+        "price": 0.1275
+      }
+    ]
+  },
+  {
+    "MPN": "DRV8231ADSGR",
+    "URL": "https://www.lcsc.com/product-detail/C5139865.html",
+    "stock": 0,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 1.2587
+      },
+      {
+        "quantity": 10,
+        "price": 1.1226
+      },
+      {
+        "quantity": 30,
+        "price": 0.9932
+      },
+      {
+        "quantity": 100,
+        "price": 0.8965
+      },
+      {
+        "quantity": 500,
+        "price": 0.8571
+      },
+      {
+        "quantity": 1000,
+        "price": 0.8375
+      }
+    ]
+  },
+  {
+    "MPN": "DRV8316RRGFR",
+    "URL": "https://www.lcsc.com/product-detail/C5218861.html",
+    "stock": 38,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 4.5805
+      },
+      {
+        "quantity": 10,
+        "price": 4.0463
+      },
+      {
+        "quantity": 30,
+        "price": 3.7742
+      },
+      {
+        "quantity": 100,
+        "price": 3.4088
+      },
+      {
+        "quantity": 500,
+        "price": 3.2777
+      },
+      {
+        "quantity": 1000,
+        "price": 3.2219
+      }
+    ]
+  },
+  {
+    "MPN": "ESP32-S3-MINI-1-N8",
+    "URL": "https://www.lcsc.com/product-detail/C2913206.html",
+    "stock": 0,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 4.7145
+      },
+      {
+        "quantity": 10,
+        "price": 4.1503
+      },
+      {
+        "quantity": 30,
+        "price": 3.8632
+      },
+      {
+        "quantity": 100,
+        "price": 3.3497
+      },
+      {
+        "quantity": 650,
+        "price": 3.2119
+      },
+      {
+        "quantity": 1300,
+        "price": 3.1529
+      }
+    ]
+  },
+  {
+    "MPN": "FH12-30S-0.5SH(55)",
+    "URL": "https://www.lcsc.com/product-detail/C506793.html",
+    "stock": 0,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 0.8653
+      },
+      {
+        "quantity": 10,
+        "price": 0.7162
+      },
+      {
+        "quantity": 30,
+        "price": 0.6425
+      },
+      {
+        "quantity": 100,
+        "price": 0.5687
+      },
+      {
+        "quantity": 500,
+        "price": 0.5196
+      },
+      {
+        "quantity": 1000,
+        "price": 0.4966
+      }
+    ]
+  },
+  {
+    "MPN": "RC2512JK-7W47RL",
+    "URL": "https://www.lcsc.com/product-detail/C136992.html",
+    "stock": 3670,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.0949
+      },
+      {
+        "quantity": 50,
+        "price": 0.0778
+      },
+      {
+        "quantity": 150,
+        "price": 0.0693
+      },
+      {
+        "quantity": 500,
+        "price": 0.0629
+      },
+      {
+        "quantity": 2500,
+        "price": 0.0578
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0549
+      }
+    ]
+  },
+  {
+    "MPN": "SK6805-EC15",
+    "URL": "https://www.lcsc.com/product-detail/C2890035.html",
+    "stock": 229075,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.0956
+      },
+      {
+        "quantity": 50,
+        "price": 0.0769
+      },
+      {
+        "quantity": 150,
+        "price": 0.0665
+      },
+      {
+        "quantity": 500,
+        "price": 0.0602
+      },
+      {
+        "quantity": 2500,
+        "price": 0.0548
+      },
+      {
+        "quantity": 4500,
+        "price": 0.0519
+      }
+    ]
+  },
+  {
+    "MPN": "SM02B-PASS-TB(LF)(SN)",
+    "URL": "https://www.lcsc.com/product-detail/C495198.html",
+    "stock": 2533,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 0.4721
+      },
+      {
+        "quantity": 10,
+        "price": 0.3688
+      },
+      {
+        "quantity": 30,
+        "price": 0.3262
+      },
+      {
+        "quantity": 100,
+        "price": 0.2705
+      },
+      {
+        "quantity": 500,
+        "price": 0.2459
+      },
+      {
+        "quantity": 1000,
+        "price": 0.2311
+      }
+    ]
+  },
+  {
+    "MPN": "SM08B-SRSS-TB(LF)(SN)",
+    "URL": "https://www.lcsc.com/product-detail/C160407.html",
+    "stock": 123400,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.3343
+      },
+      {
+        "quantity": 50,
+        "price": 0.2702
+      },
+      {
+        "quantity": 150,
+        "price": 0.2427
+      },
+      {
+        "quantity": 500,
+        "price": 0.2084
+      },
+      {
+        "quantity": 3000,
+        "price": 0.1932
+      },
+      {
+        "quantity": 6000,
+        "price": 0.184
+      }
+    ]
+  },
+  {
+    "MPN": "SMBJ12A",
+    "URL": "https://www.lcsc.com/product-detail/C151251.html",
+    "stock": 17945,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.1205
+      },
+      {
+        "quantity": 50,
+        "price": 0.0939
+      },
+      {
+        "quantity": 150,
+        "price": 0.0806
+      },
+      {
+        "quantity": 500,
+        "price": 0.0707
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0627
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0587
+      }
+    ]
+  },
+  {
+    "MPN": "SMBJ6.0A",
+    "URL": "https://www.lcsc.com/product-detail/C83270.html",
+    "stock": 7120,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.1351
+      },
+      {
+        "quantity": 50,
+        "price": 0.1085
+      },
+      {
+        "quantity": 150,
+        "price": 0.0951
+      },
+      {
+        "quantity": 500,
+        "price": 0.0851
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0629
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0589
+      }
+    ]
+  },
+  {
+    "MPN": "SN74LV1T34DBVR",
+    "URL": "https://www.lcsc.com/product-detail/C100024.html",
+    "stock": 5230,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.3256
+      },
+      {
+        "quantity": 50,
+        "price": 0.2672
+      },
+      {
+        "quantity": 150,
+        "price": 0.2387
+      },
+      {
+        "quantity": 500,
+        "price": 0.2132
+      },
+      {
+        "quantity": 3000,
+        "price": 0.2063
+      },
+      {
+        "quantity": 6000,
+        "price": 0.2021
+      }
+    ]
+  },
+  {
+    "MPN": "SN74LVC08APWR",
+    "URL": "https://www.lcsc.com/product-detail/C465737.html",
+    "stock": null,
+    "moq": null,
+    "multiple": null,
+    "tiers": []
+  },
+  {
+    "MPN": "SN74LVC125APWR",
+    "URL": "https://www.lcsc.com/product-detail/C7813.html",
+    "stock": 33688,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 0.5172
+      },
+      {
+        "quantity": 10,
+        "price": 0.422
+      },
+      {
+        "quantity": 30,
+        "price": 0.3826
+      },
+      {
+        "quantity": 100,
+        "price": 0.3317
+      },
+      {
+        "quantity": 500,
+        "price": 0.3087
+      },
+      {
+        "quantity": 1000,
+        "price": 0.2808
+      }
+    ]
+  },
+  {
+    "MPN": "SN74LVC1G123DCUR",
+    "URL": "https://www.lcsc.com/product-detail/C352969.html",
+    "stock": 520,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 1.6506
+      },
+      {
+        "quantity": 10,
+        "price": 1.4338
+      },
+      {
+        "quantity": 30,
+        "price": 1.3156
+      },
+      {
+        "quantity": 100,
+        "price": 1.1825
+      },
+      {
+        "quantity": 500,
+        "price": 1.0626
+      },
+      {
+        "quantity": 1000,
+        "price": 1.0364
+      }
+    ]
+  },
+  {
+    "MPN": "SN74LVC1G125DBVR",
+    "URL": "https://www.lcsc.com/product-detail/C23654.html",
+    "stock": 57630,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.1206
+      },
+      {
+        "quantity": 50,
+        "price": 0.0942
+      },
+      {
+        "quantity": 150,
+        "price": 0.081
+      },
+      {
+        "quantity": 500,
+        "price": 0.0711
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0631
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0592
+      }
+    ]
+  },
+  {
+    "MPN": "SN74LVC2G04DCKR",
+    "URL": "https://www.lcsc.com/product-detail/C105251.html",
+    "stock": 4570,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.204
+      },
+      {
+        "quantity": 50,
+        "price": 0.1727
+      },
+      {
+        "quantity": 150,
+        "price": 0.157
+      },
+      {
+        "quantity": 500,
+        "price": 0.1452
+      },
+      {
+        "quantity": 3000,
+        "price": 0.1242
+      },
+      {
+        "quantity": 6000,
+        "price": 0.1195
+      }
+    ]
+  },
+  {
+    "MPN": "SWPA4020S3R3MT",
+    "URL": "https://www.lcsc.com/product-detail/C83424.html",
+    "stock": null,
+    "moq": null,
+    "multiple": null,
+    "tiers": []
+  },
+  {
+    "MPN": "TLV1811DBVR",
+    "URL": "https://www.lcsc.com/product-detail/C5373003.html",
+    "stock": 31861,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 1.0538
+      },
+      {
+        "quantity": 10,
+        "price": 0.8539
+      },
+      {
+        "quantity": 30,
+        "price": 0.7539
+      },
+      {
+        "quantity": 100,
+        "price": 0.6556
+      },
+      {
+        "quantity": 500,
+        "price": 0.5949
+      },
+      {
+        "quantity": 1000,
+        "price": 0.5654
+      }
+    ]
+  },
+  {
+    "MPN": "TLV75519PDBVR",
+    "URL": "https://www.lcsc.com/product-detail/C2865381.html",
+    "stock": 720,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.1878
+      },
+      {
+        "quantity": 50,
+        "price": 0.1497
+      },
+      {
+        "quantity": 150,
+        "price": 0.131
+      },
+      {
+        "quantity": 500,
+        "price": 0.1144
+      },
+      {
+        "quantity": 3000,
+        "price": 0.1099
+      },
+      {
+        "quantity": 6000,
+        "price": 0.1071
+      }
+    ]
+  },
+  {
+    "MPN": "TLV9001IDBVR",
+    "URL": "https://www.lcsc.com/product-detail/C398363.html",
+    "stock": 101780,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.0987
+      },
+      {
+        "quantity": 50,
+        "price": 0.0778
+      },
+      {
+        "quantity": 150,
+        "price": 0.0674
+      },
+      {
+        "quantity": 500,
+        "price": 0.0595
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0508
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0477
+      }
+    ]
+  },
+  {
+    "MPN": "TMAG5253BA2IQDMRR",
+    "URL": "https://www.lcsc.com/product-detail/C35414983.html",
+    "stock": null,
+    "moq": null,
+    "multiple": null,
+    "tiers": []
+  },
+  {
+    "MPN": "TPD2E2U06DCKR",
+    "URL": "https://www.lcsc.com/product-detail/C1855726.html",
+    "stock": 0,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.2111
+      },
+      {
+        "quantity": 50,
+        "price": 0.1723
+      },
+      {
+        "quantity": 150,
+        "price": 0.1557
+      },
+      {
+        "quantity": 500,
+        "price": 0.1349
+      },
+      {
+        "quantity": 3000,
+        "price": 0.1257
+      },
+      {
+        "quantity": 6000,
+        "price": 0.1201
+      }
+    ]
+  },
+  {
+    "MPN": "TPD2EUSB30DRTR",
+    "URL": "https://www.lcsc.com/product-detail/C97502.html",
+    "stock": 1810,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 0.903
+      },
+      {
+        "quantity": 10,
+        "price": 0.7703
+      },
+      {
+        "quantity": 30,
+        "price": 0.7129
+      },
+      {
+        "quantity": 100,
+        "price": 0.6408
+      },
+      {
+        "quantity": 500,
+        "price": 0.6097
+      },
+      {
+        "quantity": 1000,
+        "price": 0.5917
+      }
+    ]
+  },
+  {
+    "MPN": "TPS22918DBVR",
+    "URL": "https://www.lcsc.com/product-detail/C131941.html",
+    "stock": 1740,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.294
+      },
+      {
+        "quantity": 50,
+        "price": 0.232
+      },
+      {
+        "quantity": 150,
+        "price": 0.2054
+      },
+      {
+        "quantity": 500,
+        "price": 0.1613
+      },
+      {
+        "quantity": 3000,
+        "price": 0.1465
+      },
+      {
+        "quantity": 6000,
+        "price": 0.1376
+      }
+    ]
+  },
+  {
+    "MPN": "TPS22919DCKR",
+    "URL": "https://www.lcsc.com/product-detail/C2149796.html",
+    "stock": 67890,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.1243
+      },
+      {
+        "quantity": 50,
+        "price": 0.0984
+      },
+      {
+        "quantity": 150,
+        "price": 0.0855
+      },
+      {
+        "quantity": 500,
+        "price": 0.0733
+      },
+      {
+        "quantity": 3000,
+        "price": 0.0655
+      },
+      {
+        "quantity": 6000,
+        "price": 0.0616
+      }
+    ]
+  },
+  {
+    "MPN": "TPS259470LRPWR",
+    "URL": "https://www.lcsc.com/product-detail/C3662793.html",
+    "stock": 57,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 1.021
+      },
+      {
+        "quantity": 10,
+        "price": 0.9211
+      },
+      {
+        "quantity": 30,
+        "price": 0.867
+      },
+      {
+        "quantity": 100,
+        "price": 0.8047
+      },
+      {
+        "quantity": 500,
+        "price": 0.7768
+      },
+      {
+        "quantity": 1000,
+        "price": 0.7654
+      }
+    ]
+  },
+  {
+    "MPN": "TPS62162DSGR",
+    "URL": "https://www.lcsc.com/product-detail/C40256.html",
+    "stock": 1847,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 1.1139
+      },
+      {
+        "quantity": 10,
+        "price": 0.9318
+      },
+      {
+        "quantity": 30,
+        "price": 0.8416
+      },
+      {
+        "quantity": 100,
+        "price": 0.7514
+      },
+      {
+        "quantity": 500,
+        "price": 0.6218
+      },
+      {
+        "quantity": 1000,
+        "price": 0.5939
+      }
+    ]
+  },
+  {
+    "MPN": "TPS7A2450DBVR",
+    "URL": "https://www.lcsc.com/product-detail/C2864436.html",
+    "stock": 1920,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.297
+      },
+      {
+        "quantity": 50,
+        "price": 0.2395
+      },
+      {
+        "quantity": 150,
+        "price": 0.1878
+      },
+      {
+        "quantity": 500,
+        "price": 0.1571
+      },
+      {
+        "quantity": 3000,
+        "price": 0.1435
+      },
+      {
+        "quantity": 6000,
+        "price": 0.1353
+      }
+    ]
+  },
+  {
+    "MPN": "TS-1088-AR02016",
+    "URL": "https://www.lcsc.com/product-detail/C720477.html",
+    "stock": 612750,
+    "moq": 10,
+    "multiple": 10,
+    "tiers": [
+      {
+        "quantity": 10,
+        "price": 0.0562
+      },
+      {
+        "quantity": 100,
+        "price": 0.0455
+      },
+      {
+        "quantity": 300,
+        "price": 0.04
+      },
+      {
+        "quantity": 1000,
+        "price": 0.0354
+      },
+      {
+        "quantity": 4000,
+        "price": 0.0329
+      },
+      {
+        "quantity": 8000,
+        "price": 0.0318
+      }
+    ]
+  },
+  {
+    "MPN": "TUSB320LAIRWBR",
+    "URL": "https://www.lcsc.com/product-detail/C132554.html",
+    "stock": 388,
+    "moq": 1,
+    "multiple": 1,
+    "tiers": [
+      {
+        "quantity": 1,
+        "price": 1.0807
+      },
+      {
+        "quantity": 10,
+        "price": 0.9214
+      },
+      {
+        "quantity": 30,
+        "price": 0.8426
+      },
+      {
+        "quantity": 100,
+        "price": 0.7637
+      },
+      {
+        "quantity": 500,
+        "price": 0.6488
+      },
+      {
+        "quantity": 1000,
+        "price": 0.6241
+      }
+    ]
+  },
+  {
+    "MPN": "TYPE-C-31-M-12",
+    "URL": "https://www.lcsc.com/product-detail/C165948.html",
+    "stock": 233345,
+    "moq": 5,
+    "multiple": 5,
+    "tiers": [
+      {
+        "quantity": 5,
+        "price": 0.1873
+      },
+      {
+        "quantity": 50,
+        "price": 0.1478
+      },
+      {
+        "quantity": 150,
+        "price": 0.1286
+      },
+      {
+        "quantity": 1000,
+        "price": 0.1043
+      },
+      {
+        "quantity": 2000,
+        "price": 0.0996
+      },
+      {
+        "quantity": 5000,
+        "price": 0.0968
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "ready_for_order": false,
+  "label": "Rev-A bench prototype - QUOTE ONLY",
+  "source_boards": {
+    "Main": {
+      "source": "hardware\\modular\\main\\Main.kicad_pcb",
+      "sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
+      "translation_mm": [
+        7,
+        7
+      ],
+      "rotation_degrees": 0,
+      "footprints": 246,
+      "tracks_and_vias": 13510,
+      "zones": 13,
+      "net_prefix": "Main/"
+    },
+    "Wheel": {
+      "source": "hardware\\modular\\wheel\\Wheel.kicad_pcb",
+      "sha256": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
+      "translation_mm": [
+        89,
+        7
+      ],
+      "rotation_degrees": 0,
+      "footprints": 87,
+      "tracks_and_vias": 4766,
+      "zones": 3,
+      "net_prefix": "Wheel/"
+    },
+    "Encoder": {
+      "source": "hardware\\encoder\\Encoder.kicad_pcb",
+      "sha256": "f890117d8e60156774ad8a08e3a761842c6e8784466b49a42b9d0e1c1b9dddd1",
+      "translation_mm": [
+        42,
+        30
+      ],
+      "rotation_degrees": 0,
+      "footprints": 3,
+      "tracks_and_vias": 47,
+      "zones": 4,
+      "net_prefix": "Encoder/"
+    }
+  },
+  "open_gates": "See hardware/bench/README.md; supplier, assembly, mechanical and CAM review remain open"
+}
