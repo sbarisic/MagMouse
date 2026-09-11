@@ -3,11 +3,14 @@
 An open-source wired mouse exploring contactless magnetic buttons, programmable
 electromagnetic click feedback, and a motorized haptic scroll wheel.
 
-**Status: KiCad schematic and initial motherboard placement.** Open the
-[eighteen-sheet KiCad draft](hardware/kicad/README.md) for the editable circuit and
-JLCPCB/LCSC sourcing fields, or the [PCB placement](hardware/pcb/README.md).
-The board is unrouted; there are no fabrication-ready designs or runnable
-firmware yet. Contactless sensing removes
+**Status: main and wheel prototype PCBs routed; mechanical integration pending.**
+Open the active [Main project](hardware/modular/main/Main.kicad_pro) or
+[Wheel project](hardware/modular/wheel/Wheel.kicad_pro). Both have zero unrouted
+connections and zero physical DRC/parity issues. See the
+[routing review](hardware/modular/MAIN_SIGNAL_ROUTING.md) and
+[modular hardware package](hardware/modular/README.md). The original monolithic
+project is retained as a reference. These are not fabrication-ready designs;
+mechanics, manufacturing and hardware qualification remain open. Contactless sensing removes
 electrical switch contacts; it does not eliminate mechanical wear or other failures.
 
 ## V1 concept
@@ -39,8 +42,8 @@ open engineering questions.
 
 ## Contributing and licensing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). The next milestone is schematic-level
-design and feasibility validation alongside preliminary PCB placement.
+See [CONTRIBUTING.md](CONTRIBUTING.md). The next milestone is mechanical-interface
+CAD, resulting PCB adjustments and whole-board review before manufacturing closure.
 
 Hardware/mechanical: **CERN-OHL-S-2.0**. Firmware, PC software and supporting code:
 **GPL-3.0-or-later**. General documentation: **CC-BY-SA-4.0**.

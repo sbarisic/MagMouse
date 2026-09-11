@@ -143,7 +143,7 @@ def verify(board):
             errors.append(label + ': exceeds copper resistance regression budget')
     buck = verify_buck(board)
     errors.extend(buck['errors'])
-    return {'scope': 'USB VBUS feed, U12 passive protection/ILM network, local U19 supply/feedback and buck; main routing remains partial',
+    return {'scope': 'USB VBUS feed, U12 passive protection/ILM network, local U19 supply/feedback and buck',
             'local_nets': local, 'usb_ilm_radius_mm': round(ilm_radius, 3),
             'efuse_bypass_pad_distances_mm': bypass_distances,
             'checked_ground_pads': checked_ground, 'in1_ground_outlines': ground.OutlineCount(),
@@ -152,7 +152,7 @@ def verify(board):
             'native_unconnected': conn.GetUnconnectedCount(False),
             'limits': ['Resistance screening at 80 C assumes 35/30 um outer/inner copper and 20 um barrel plating; full traversed segments/barrels, no parallel credit',
                        'Excludes component/contact/pad and ground-plane impedance, thermal rise and regulator/USB qualification',
-                       'Type-C/source commands, interlocks, actuator distribution, ADC telemetry and board-wide logic supply remain open',
+                       'Source controls, actuator/interlock copper, ADC telemetry and board-wide logic supply have separate main-controls, main-analog and main-routing reviews',
                        'ILM length/radius are geometric limits, not proof of parasitic capacitance or noise performance',
                        'Mechanical interfaces remain provisional; panelization is on hold'],
             'errors': errors}

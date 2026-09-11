@@ -12,8 +12,11 @@ Open [main/Main.kicad_pro](main/Main.kicad_pro) or
 [wheel/Wheel.kicad_pro](wheel/Wheel.kicad_pro). Their schematics are independent
 editable sources. The old motherboard PCB remains a retained routing baseline;
 do not update it from either split schematic. The independent wheel PCB now has
-an [initial placement](WHEEL_PLACEMENT.md); main placement and wheel routing
-remain open. The encoder remains in `hardware/encoder`.
+a [completed routing pass](WHEEL_ROUTING.md). The shaped main also has
+[completed routing](MAIN_SIGNAL_ROUTING.md), with zero unrouted connections and
+zero physical DRC/parity issues. Its source/actuator/interlock checks still pass.
+The encoder remains in `hardware/encoder`. Routing does not close the cable
+or sampling-time findings below.
 
 ## Implemented connections and parts
 

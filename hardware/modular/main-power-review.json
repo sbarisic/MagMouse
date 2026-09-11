@@ -1,5 +1,5 @@
 {
-  "scope": "USB VBUS feed, U12 passive protection/ILM network, local U19 supply/feedback and buck; main routing remains partial",
+  "scope": "USB VBUS feed, U12 passive protection/ILM network, local U19 supply/feedback and buck",
   "local_nets": {
     "BUCK_SW": {
       "pad_count": 2,
@@ -8,27 +8,27 @@
     },
     "ILM_BASE_1": {
       "pad_count": 2,
-      "copper_length_mm": 2.074264,
+      "copper_length_mm": 1.282843,
       "vias": 0
     },
     "ILM_BASE_2": {
       "pad_count": 2,
-      "copper_length_mm": 2.581371,
+      "copper_length_mm": 0.786396,
       "vias": 0
     },
     "ILM_HIGH_D": {
       "pad_count": 3,
-      "copper_length_mm": 6.02438,
+      "copper_length_mm": 5.520458,
       "vias": 0
     },
     "ILM_MED_D": {
       "pad_count": 2,
-      "copper_length_mm": 3.660292,
+      "copper_length_mm": 1.719239,
       "vias": 0
     },
     "USB_DVDT": {
       "pad_count": 2,
-      "copper_length_mm": 5.079163,
+      "copper_length_mm": 3.538478,
       "vias": 0
     },
     "USB_ILM": {
@@ -121,14 +121,14 @@
     }
   ],
   "buck_switch_copper_mm": 3.95,
-  "native_unconnected": 564,
+  "native_unconnected": 0,
   "limits": [
     "Resistance screening at 80 C assumes 35/30 um outer/inner copper and 20 um barrel plating; full traversed segments/barrels, no parallel credit",
     "Excludes component/contact/pad and ground-plane impedance, thermal rise and regulator/USB qualification",
-    "Type-C/source commands, interlocks, actuator distribution, ADC telemetry and board-wide logic supply remain open",
+    "Source controls, actuator/interlock copper, ADC telemetry and board-wide logic supply have separate main-controls, main-analog and main-routing reviews",
     "ILM length/radius are geometric limits, not proof of parasitic capacitance or noise performance",
     "Mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "ca33d25c1d7d653d96cc21289aab6b355e3732d8c6101f2e2f19eb663774a2f4"
+  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
 }

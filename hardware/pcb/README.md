@@ -1,5 +1,10 @@
 # Motherboard PCB
 
+The active shaped [Main PCB](../modular/main/Main.kicad_pcb) and separate
+[Wheel PCB](../modular/wheel/Wheel.kicad_pcb) are now routed. See the
+[current modular package](../modular/README.md). The rest of this document
+describes the retained monolithic routing baseline.
+
 Routing draft, 2026-09-09, KiCad 10.0.6. Open the editable
 [MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb) from the
 [KiCad project](../kicad/MagMouse.kicad_pro).
@@ -7,8 +12,9 @@ Routing draft, 2026-09-09, KiCad 10.0.6. Open the editable
 
 The [new modular-panel brief](MODULAR_PANEL_PLAN.md) records the user's
 125/80/44 mm shaped PCB dimensions and requested detachable assembly panel.
-The existing board below remains the 60 x 95 mm baseline; the shape change,
-wheel-board extraction and common-stackup panel are not yet implemented.
+The existing board below remains the historical 60 x 95 mm baseline. The shaped
+main and wheel extraction are implemented in the modular projects; the production
+panel remains on hold for stable mechanical interfaces and manufacturing closure.
 
 ## Starting geometry
 

@@ -2,9 +2,11 @@
 
 2026-09-11. The shaped [main PCB](main/Main.kicad_pcb) now has its USB VBUS
 feed, U12 passive protection/current-limit network, local current-buffer
-supply/feedback and buck copper routed. Native unrouted count is **564**, down
-from 632 at placement. Physical DRC and schematic parity both report zero
-issues. The main remains a partially routed board.
+supply/feedback and buck copper routed. That pass reduced native unrouted count
+from 632 to 564; the subsequent [source/actuator pass](MAIN_CONTROLS_ROUTING.md)
+reduced it to 257. The [completed signal/return pass](MAIN_SIGNAL_ROUTING.md)
+now brings it to **zero unrouted**, with zero physical DRC/parity issues.
+This document records the input-power subset.
 
 ## Completed scope
 
@@ -64,12 +66,12 @@ Seven tests exercise the saved board, an open output capacitor, insufficient
 input vias, a power neck-down, a missing ground reference, a disconnected ILM
 input and a switch-node via.
 
-Type-C/source-selection commands, interlocks, actuator power, board-wide
-3.3 V, ADC telemetry, USB data and digital buses remain unrouted or incomplete.
-The next power pass should complete the detector/source controls and U13/button/
-wheel-feed distribution before the analog and USB data passes. Reserve the
-selected 90-ohm USB geometry and continuous In1 return corridor when placing
-additional vias. A connected subset does not make the board operable.
+Type-C/source-selection commands, interlocks and U13/button/wheel-header power
+are now routed and checked in the [separate review](MAIN_CONTROLS_ROUTING.md).
+Board-wide 3.3 V, ADC telemetry, USB data and digital buses are now routed in
+the [signal/return pass](MAIN_SIGNAL_ROUTING.md). The main board has zero native
+unrouted connections and zero physical DRC/parity issues. This input-power
+checker remains a focused subset; hardware operation is not yet qualified.
 
 Mechanics remain provisional by the user's explicit choice. See the
 [interface register](MECHANICAL_INTERFACES.md). Panelization stays on hold.

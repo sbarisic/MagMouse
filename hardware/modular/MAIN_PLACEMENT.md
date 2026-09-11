@@ -7,11 +7,13 @@ All assembly components are on F.Cu; 37 test pads are on B.Cu. The outline is
 **125 mm long, 80 mm maximum width and 44 mm across the front**. The common
 four-layer JLC041611-2116 stack remains in place.
 
-Native physical DRC and schematic parity report zero issues. The first
-[input-power routing pass](MAIN_POWER_ROUTING.md) reduces native unconnected
-items from the initial 632 to **564**. The CLI DRC listing is capped at 499,
-so use native connectivity for the full count. Selected fixed local U12/buck
-copper was carried over after placement; the original motherboard is unchanged.
+Native physical DRC and schematic parity report zero issues. The
+[input-power](MAIN_POWER_ROUTING.md) and [source/actuator/interlock](MAIN_CONTROLS_ROUTING.md)
+passes were followed by the [complete signal and return pass](MAIN_SIGNAL_ROUTING.md).
+Native unconnected count is now **zero**, down from the initial 632. Seven fixed
+analog parts and twelve test pads moved; the [change record](main-routing-placement-changes.json)
+lists their exact coordinates. ADC1, Hall sensors and protected mechanical
+datums are unchanged. The original motherboard is unchanged.
 
 ## Placement decisions
 
@@ -53,9 +55,9 @@ USB opening and optical lens/baseplate stack still need mechanical CAD.
 interfaces.** The earlier nesting study is unchanged. No panel copper, slots,
 tabs, tooling holes or manufacturing exports were added in this pass.
 
-Next, resolve those interfaces alongside the main routing plan. Preserve the
+Next, resolve those interfaces against the routed main board. Preserve the
 wheel's zero-unrouted result and analog/return checks as the mechanics evolve.
-Then route the main power and sensing paths, USB, SPI and remaining controls.
+Recheck the completed main power, sensing, USB, SPI and control routes after changes.
 Panel work follows interface stability, not merely zero DRC.
 
 ## Verification and source files

@@ -40,8 +40,12 @@ shadows. The [new shaped main PCB](../hardware/modular/MAIN_PLACEMENT.md) contai
 all 246 footprints, with zero physical DRC/parity issues. Its first
 [input-power pass](../hardware/modular/MAIN_POWER_ROUTING.md) routes USB VBUS,
 U12 passive protection/current-limit circuitry and the local buck/buffer supply;
-main native unrouted count is 564, down from 632. Full source-selection,
-interlocks, actuator distribution and remaining main routing are still open.
+the subsequent [source/actuator/interlock pass](../hardware/modular/MAIN_CONTROLS_ROUTING.md)
+reduced main native unrouted count to 257. The
+[completed signal/return pass](../hardware/modular/MAIN_SIGNAL_ROUTING.md) now
+brings the main to **zero unrouted**, with zero physical DRC/parity issues.
+ADC1/Hall/button sensing, USB, SPI3, SPI2/optical, controls, RGB and board-wide
+supplies are connected. Strict analog and signal-return screening gates pass.
 ADC1 is placed closer to the button sensors. The original monolithic board and
 routed encoder remain unchanged. SPI3 timing, ADC noise, regenerative response
 and temperature rise still require hardware qualification.
@@ -58,21 +62,15 @@ interfaces.** The existing nesting study is historical planning only.
    establishes them. The user has no parts/CAD yet and explicitly chose to keep
    mechanics provisional. Preserve the [interface register](../hardware/modular/MECHANICAL_INTERFACES.md)
    while routing fixed circuitry; no mounting dimensions are frozen.
-2. Continue main power with Type-C/source controls, U13 actuator distribution,
-   interlocks and analog paths. USB VBUS/U12 passive settings and local buck
-   copper are now checked. Carry the earlier
-   copper checks forward to the new board, accounting for its outline and ADC1
-   position. Route USB using the selected 90-ohm geometry and verify In1 returns.
-3. Route main SPI3 through its return buffer and wheel header, then SPI2, optical,
-   IMU and remaining controls. Review complete connected paths, stubs, source
-   termination and reference continuity; a routed wheel alone does not prove
-   cable or MCU sampling timing.
-4. Review both boards' return paths, power transitions, thermal copper, test
-   access and component clearance with the mechanical model. Preserve the
-   wheel's zero-unrouted and analog checks after any placement changes.
-5. Finish the main to zero-unrouted and repeat board-wide electrical checks.
-   Once both placements and mechanical interfaces are stable, resume panel
-   design, common-stack encoder conversion and assembly/quote preparation.
+2. Apply mechanical-interface CAD changes to the PCBs, then review both boards'
+   return paths, power transitions, thermal copper, test access and component
+   clearance. Preserve zero-unrouted, parity, USB and analog checks. Electrical
+   routing is complete in the current provisional placement; assembly fit is not.
+3. Convert the encoder to the common stack and close cable/manufacturing reviews,
+   including mating tolerances, filled/capped vias, stencil and exposed pads,
+   component stock and test access after assembly.
+4. Once all board placements and mechanical interfaces are stable, panelize and
+   prepare the assembly/quote package for five sets to Croatia 43000.
 
 - [ ] Before final routing freeze, perform a whole-board electrical review for
   plane splits/crossings, long current loops, analog/PWM adjacency, power-via

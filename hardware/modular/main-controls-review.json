@@ -1,0 +1,349 @@
+{
+  "scope": "Type-C/source controls, main actuator distribution and interlocks to cable headers",
+  "nets": {
+    "ACT_5V": {
+      "pads": 20,
+      "track_mm": 244.249,
+      "vias": 19
+    },
+    "ACT_DRIVE_EN": {
+      "pads": 11,
+      "track_mm": 99.417,
+      "vias": 14
+    },
+    "ACT_DVDT": {
+      "pads": 3,
+      "track_mm": 1.299,
+      "vias": 0
+    },
+    "ACT_FAULT_N": {
+      "pads": 3,
+      "track_mm": 4.387,
+      "vias": 0
+    },
+    "ACT_HEARTBEAT": {
+      "pads": 3,
+      "track_mm": 49.186,
+      "vias": 8
+    },
+    "ACT_ILM": {
+      "pads": 3,
+      "track_mm": 9.049,
+      "vias": 0
+    },
+    "ACT_OVLO": {
+      "pads": 3,
+      "track_mm": 23.605,
+      "vias": 3
+    },
+    "ACT_PERMIT": {
+      "pads": 2,
+      "track_mm": 35.834,
+      "vias": 2
+    },
+    "ACT_REQ": {
+      "pads": 3,
+      "track_mm": 29.683,
+      "vias": 7
+    },
+    "ACT_UVLO": {
+      "pads": 5,
+      "track_mm": 21.256,
+      "vias": 3
+    },
+    "ACT_UV_1": {
+      "pads": 2,
+      "track_mm": 3.65,
+      "vias": 0
+    },
+    "ACT_UV_2": {
+      "pads": 2,
+      "track_mm": 4.65,
+      "vias": 0
+    },
+    "ARM_SOURCE": {
+      "pads": 2,
+      "track_mm": 0.7,
+      "vias": 0
+    },
+    "ARM_VALID": {
+      "pads": 3,
+      "track_mm": 61.762,
+      "vias": 4
+    },
+    "BTN_L_CMD1": {
+      "pads": 3,
+      "track_mm": 40.11,
+      "vias": 4
+    },
+    "BTN_L_CMD2": {
+      "pads": 3,
+      "track_mm": 40.425,
+      "vias": 3
+    },
+    "BTN_L_COIL_N": {
+      "pads": 2,
+      "track_mm": 7.807,
+      "vias": 0
+    },
+    "BTN_L_COIL_P": {
+      "pads": 2,
+      "track_mm": 7.764,
+      "vias": 2
+    },
+    "BTN_L_IN1": {
+      "pads": 3,
+      "track_mm": 52.175,
+      "vias": 2
+    },
+    "BTN_L_IN2": {
+      "pads": 3,
+      "track_mm": 59.827,
+      "vias": 3
+    },
+    "BTN_M_CMD1": {
+      "pads": 3,
+      "track_mm": 31.028,
+      "vias": 2
+    },
+    "BTN_M_CMD2": {
+      "pads": 3,
+      "track_mm": 44.609,
+      "vias": 7
+    },
+    "BTN_M_COIL_N": {
+      "pads": 2,
+      "track_mm": 4.541,
+      "vias": 2
+    },
+    "BTN_M_COIL_P": {
+      "pads": 2,
+      "track_mm": 2.864,
+      "vias": 2
+    },
+    "BTN_M_IN1": {
+      "pads": 3,
+      "track_mm": 54.488,
+      "vias": 3
+    },
+    "BTN_M_IN2": {
+      "pads": 3,
+      "track_mm": 44.415,
+      "vias": 2
+    },
+    "BTN_R_CMD1": {
+      "pads": 3,
+      "track_mm": 25.277,
+      "vias": 3
+    },
+    "BTN_R_CMD2": {
+      "pads": 3,
+      "track_mm": 22.875,
+      "vias": 2
+    },
+    "BTN_R_COIL_N": {
+      "pads": 2,
+      "track_mm": 7.341,
+      "vias": 2
+    },
+    "BTN_R_COIL_P": {
+      "pads": 2,
+      "track_mm": 7.306,
+      "vias": 2
+    },
+    "BTN_R_IN1": {
+      "pads": 3,
+      "track_mm": 52.135,
+      "vias": 4
+    },
+    "BTN_R_IN2": {
+      "pads": 3,
+      "track_mm": 52.348,
+      "vias": 4
+    },
+    "CC_OUT1": {
+      "pads": 4,
+      "track_mm": 127.187,
+      "vias": 9
+    },
+    "CC_OUT2": {
+      "pads": 4,
+      "track_mm": 113.952,
+      "vias": 10
+    },
+    "CC_OUT2_INV": {
+      "pads": 2,
+      "track_mm": 44.426,
+      "vias": 2
+    },
+    "CC_VBUS_DET": {
+      "pads": 2,
+      "track_mm": 3.507,
+      "vias": 0
+    },
+    "DRV_FAULT_LOCAL_N": {
+      "pads": 3,
+      "track_mm": 22.018,
+      "vias": 5
+    },
+    "DRV_FAULT_N": {
+      "pads": 3,
+      "track_mm": 64.462,
+      "vias": 10
+    },
+    "HALL_EN": {
+      "pads": 9,
+      "track_mm": 209.212,
+      "vias": 17
+    },
+    "MCU_EN": {
+      "pads": 9,
+      "track_mm": 176.746,
+      "vias": 13
+    },
+    "SENS_REQ": {
+      "pads": 3,
+      "track_mm": 40.628,
+      "vias": 3
+    },
+    "SOURCE_3A": {
+      "pads": 3,
+      "track_mm": 56.042,
+      "vias": 4
+    },
+    "SOURCE_OK": {
+      "pads": 5,
+      "track_mm": 66.687,
+      "vias": 9
+    },
+    "USB_CC1": {
+      "pads": 3,
+      "track_mm": 19.521,
+      "vias": 0
+    },
+    "USB_CC2": {
+      "pads": 3,
+      "track_mm": 23.854,
+      "vias": 2
+    },
+    "USB_FAULT_N": {
+      "pads": 3,
+      "track_mm": 5.475,
+      "vias": 0
+    },
+    "VBUS_GATE": {
+      "pads": 4,
+      "track_mm": 10.571,
+      "vias": 0
+    },
+    "VBUS_PRESENT_N": {
+      "pads": 3,
+      "track_mm": 62.443,
+      "vias": 3
+    },
+    "WD_CEXT": {
+      "pads": 2,
+      "track_mm": 2.0,
+      "vias": 0
+    },
+    "WD_RCEXT": {
+      "pads": 3,
+      "track_mm": 10.56,
+      "vias": 0
+    },
+    "WHEEL_RUN_REQ": {
+      "pads": 4,
+      "track_mm": 53.238,
+      "vias": 5
+    }
+  },
+  "checked_ground_pads": 134,
+  "checked_supply_pads": 25,
+  "power_paths": [
+    {
+      "path": "U12.6 -> U13.5",
+      "screening_milliohms": 35.434,
+      "budget_milliohms": 50
+    },
+    {
+      "path": "U13.6 -> U4.5",
+      "screening_milliohms": 66.499,
+      "budget_milliohms": 85
+    },
+    {
+      "path": "U13.6 -> U5.5",
+      "screening_milliohms": 60.596,
+      "budget_milliohms": 85
+    },
+    {
+      "path": "U13.6 -> U6.5",
+      "screening_milliohms": 46.794,
+      "budget_milliohms": 85
+    },
+    {
+      "path": "U13.6 -> J10.1",
+      "screening_milliohms": 26.347,
+      "budget_milliohms": 50
+    },
+    {
+      "path": "U4.6 -> J2.1",
+      "screening_milliohms": 13.466,
+      "budget_milliohms": 25
+    },
+    {
+      "path": "U4.8 -> J2.2",
+      "screening_milliohms": 15.841,
+      "budget_milliohms": 25
+    },
+    {
+      "path": "U5.6 -> J3.1",
+      "screening_milliohms": 7.501,
+      "budget_milliohms": 25
+    },
+    {
+      "path": "U5.8 -> J3.2",
+      "screening_milliohms": 9.989,
+      "budget_milliohms": 25
+    },
+    {
+      "path": "U6.6 -> J4.1",
+      "screening_milliohms": 12.908,
+      "budget_milliohms": 25
+    },
+    {
+      "path": "U6.8 -> J4.2",
+      "screening_milliohms": 13.398,
+      "budget_milliohms": 25
+    }
+  ],
+  "power_transition_vias": {
+    "C40.1": 3,
+    "J10.1": 3,
+    "J10.2": 3
+  },
+  "button_ground_spreading": {
+    "U4": {
+      "local_front_connected_vias": 4,
+      "F.Cu_filled_mm2": 38.172,
+      "B.Cu_filled_mm2": 36.175
+    },
+    "U5": {
+      "local_front_connected_vias": 4,
+      "F.Cu_filled_mm2": 25.276,
+      "B.Cu_filled_mm2": 46.256
+    },
+    "U6": {
+      "local_front_connected_vias": 4,
+      "F.Cu_filled_mm2": 43.296,
+      "B.Cu_filled_mm2": 45.556
+    }
+  },
+  "native_unconnected": 0,
+  "limits": [
+    "Copper resistance regression uses the shared 80 C track/barrel model; no ampacity or thermal qualification",
+    "Connectivity is not proof of USB source transitions, reset/timeout behavior or cable/SPI timing",
+    "Hall and button mechanical interfaces remain provisional; panelization is on hold"
+  ],
+  "errors": [],
+  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+}

@@ -1,0 +1,272 @@
+{
+  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
+  "changed_footprints": [
+    {
+      "reference": "C36",
+      "before_mm_degrees": [
+        16.0,
+        76.0,
+        90.0
+      ],
+      "after_mm_degrees": [
+        54.0,
+        49.0,
+        0.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "D4",
+      "before_mm_degrees": [
+        13.0,
+        80.0,
+        0.0
+      ],
+      "after_mm_degrees": [
+        53.0,
+        62.8,
+        0.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "R16",
+      "before_mm_degrees": [
+        12.0,
+        48.5,
+        90.0
+      ],
+      "after_mm_degrees": [
+        26.25,
+        53.0,
+        0.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "R17",
+      "before_mm_degrees": [
+        22.0,
+        48.0,
+        90.0
+      ],
+      "after_mm_degrees": [
+        26.5,
+        56.0,
+        -90.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "R24",
+      "before_mm_degrees": [
+        67.0,
+        51.5,
+        0.0
+      ],
+      "after_mm_degrees": [
+        65.0,
+        40.5,
+        90.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "R67",
+      "before_mm_degrees": [
+        12.5,
+        73.0,
+        90.0
+      ],
+      "after_mm_degrees": [
+        48.0,
+        58.0,
+        90.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "R68",
+      "before_mm_degrees": [
+        13.0,
+        76.5,
+        90.0
+      ],
+      "after_mm_degrees": [
+        57.0,
+        57.0,
+        0.0
+      ],
+      "reason": "Analog filter/reference/current-sense locality and thermal clearance"
+    },
+    {
+      "reference": "TP1",
+      "before_mm_degrees": [
+        15.5,
+        83.75,
+        180.0
+      ],
+      "after_mm_degrees": [
+        70.925,
+        62.125,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP13",
+      "before_mm_degrees": [
+        23.2,
+        88.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        53.6303,
+        93.8303,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP16",
+      "before_mm_degrees": [
+        35.8,
+        88.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        28.75,
+        80.9,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP17",
+      "before_mm_degrees": [
+        34.25,
+        81.75,
+        180.0
+      ],
+      "after_mm_degrees": [
+        57.7,
+        78.85,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP18",
+      "before_mm_degrees": [
+        44.2,
+        88.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        40.35,
+        89.7,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP2",
+      "before_mm_degrees": [
+        23.2,
+        84.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        62.65,
+        80.6,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP23",
+      "before_mm_degrees": [
+        19.0,
+        92.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        34.7083,
+        86.0,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP24",
+      "before_mm_degrees": [
+        23.2,
+        92.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        32.5,
+        54.4,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP4",
+      "before_mm_degrees": [
+        31.6,
+        84.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        30.7553,
+        96.0303,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP6",
+      "before_mm_degrees": [
+        40.0,
+        84.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        62.0,
+        95.65,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP7",
+      "before_mm_degrees": [
+        44.2,
+        84.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        44.7,
+        100.8,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    },
+    {
+      "reference": "TP8",
+      "before_mm_degrees": [
+        48.4,
+        84.0,
+        180.0
+      ],
+      "after_mm_degrees": [
+        52.4697,
+        95.9697,
+        180.0
+      ],
+      "reason": "Shorter probe branch and routing access"
+    }
+  ],
+  "mechanical_datums_unchanged": true
+}

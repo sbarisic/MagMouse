@@ -74,7 +74,7 @@ def review(board_path,netlist_path,drc_path):
     check(not drc['violations'],'Physical DRC has unresolved violations')
     check(not drc['schematic_parity'],'Schematic parity has unresolved issues')
     board.BuildConnectivity()
-    return {'status':'Main placement draft; routing and mechanical fit pending; panelization on hold',
+    return {'status':'Main placement/routing snapshot; mechanical fit pending; panelization on hold',
             'board_sha256':hashlib.sha256(board_path.read_bytes()).hexdigest(),
             'netlist_sha256':hashlib.sha256(netlist_path.read_bytes()).hexdigest(),
             'footprints':len(fps),'checked_netlist_pins':len(expected),'checked_courtyards':checked_courtyards,

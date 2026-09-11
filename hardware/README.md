@@ -1,9 +1,12 @@
 # Electronics
 
-Status: editable KiCad 10 schematic and initial motherboard component placement.
-The schematic is incomplete and the PCB is unrouted; both are development drafts.
+Status: the independent main and wheel PCBs are routed, with zero unrouted
+connections and zero physical DRC/parity issues. Mechanical integration,
+manufacturing review and hardware qualification remain open.
 
-- [KiCad project](kicad/README.md): fourteen-sheet draft with USB-C power control and wheel/brake circuits, sourcing fields and review exports.
+- [Main project](modular/main/Main.kicad_pro) and [Wheel project](modular/wheel/Wheel.kicad_pro): active editable designs.
+- [Modular package and reviews](modular/README.md): current routing, cable and mechanical status.
+- [Original KiCad project](kicad/README.md): retained monolithic reference and circuit documentation.
 
 - [schematics](schematics/README.md): circuit partition and review requirements.
 - [pcb](pcb/README.md): layout and release requirements.

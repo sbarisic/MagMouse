@@ -1,5 +1,11 @@
 # KiCad electronics
 
+This directory is the **retained monolithic reference**. Current work uses the
+independent [Main project](../modular/main/Main.kicad_pro) and
+[Wheel project](../modular/wheel/Wheel.kicad_pro), both now routed with zero
+unrouted/DRC/parity issues. See the [modular package](../modular/README.md).
+The revision and instructions below describe the older reference project.
+
 Revision 0.8, 2026-09-09, KiCad 10.0.6. USB-C power, MCU allocation and wheel/brake, IMU, RGB and PMW3360 circuits are connected.
 A [60 x 95 mm motherboard placement](../pcb/README.md) is available as of
 2026-09-09, with all 317 footprints on-board. U27/C62 and J7 are in a separate,
@@ -7,7 +13,7 @@ fully routed [14 x 18 mm encoder project](../encoder/README.md). Both are editab
 development drafts; **the motherboard is partially routed and neither board is
 order-ready**. Firmware, measurements and mechanical fit remain open.
 
-## Open and edit
+## Open the retained reference
 
 1. Open [MagMouse.kicad_pro](MagMouse.kicad_pro) in KiCad Manager.
 2. Open [MagMouse.kicad_sch](MagMouse.kicad_sch).
