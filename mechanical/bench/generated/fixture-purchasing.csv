@@ -1,0 +1,24 @@
+Item,Required_quantity,Purchase_quantity,Material,Solid_volume_cm3,Price_EUR,Shipping_EUR,Status
+base_0_0,1,1,PETG printed part,74.107,,,Price from selected filament and slicer usage remains pending
+base_1_0,1,1,PETG printed part,89.656,,,Price from selected filament and slicer usage remains pending
+base_0_1,1,1,PETG printed part,89.601,,,Price from selected filament and slicer usage remains pending
+base_1_1,1,1,PETG printed part,89.656,,,Price from selected filament and slicer usage remains pending
+tile_joiner_x,4,4,PETG printed part,9.019,,,Price from selected filament and slicer usage remains pending
+tile_joiner_y,4,4,PETG printed part,9.019,,,Price from selected filament and slicer usage remains pending
+edge_saddle,8,8,PETG printed part,3.416,,,Price from selected filament and slicer usage remains pending
+edge_cap,8,8,PETG printed part,1.173,,,Price from selected filament and slicer usage remains pending
+ribbon_clamp_base,2,2,PETG printed part,5.615,,,Price from selected filament and slicer usage remains pending
+ribbon_clamp_cap,2,2,PETG printed part,4.623,,,Price from selected filament and slicer usage remains pending
+encoder_clamp_base,2,2,PETG printed part,2.927,,,Price from selected filament and slicer usage remains pending
+encoder_clamp_cap,2,2,PETG printed part,2.621,,,Price from selected filament and slicer usage remains pending
+pair_clamp_base,8,8,PETG printed part,7.099,,,Price from selected filament and slicer usage remains pending
+pair_clamp_cap,8,8,PETG printed part,6.692,,,Price from selected filament and slicer usage remains pending
+encoder_carrier,1,1,PETG printed part,4.491,,,Price from selected filament and slicer usage remains pending
+encoder_edge_clip,2,2,PETG printed part,0.516,,,Price from selected filament and slicer usage remains pending
+motor_plate,1,1,PETG printed part,16.396,,,Price from selected filament and slicer usage remains pending
+button_lever,3,3,PETG printed part,5.427,,,Price from selected filament and slicer usage remains pending
+button_stop,3,3,PETG printed part,1.921,,,Price from selected filament and slicer usage remains pending
+M3 threaded rod 60 mm,12,12,Hardware allowance; verify lengths on assembled sample,,,,Unquoted consumer hardware; no purchase authorised
+M3 nuts,110,150,Hardware allowance; verify lengths on assembled sample,,,,Unquoted consumer hardware; no purchase authorised
+M3 washers,110,150,Hardware allowance; verify lengths on assembled sample,,,,Unquoted consumer hardware; no purchase authorised
+M3 screws 16/25 mm assortment,70,100,Hardware allowance; verify lengths on assembled sample,,,,Unquoted consumer hardware; no purchase authorised

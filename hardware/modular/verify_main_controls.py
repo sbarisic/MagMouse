@@ -100,7 +100,13 @@ def verify(board):
                 and graph.path(uid(pad), k, allowed)]
         label = '.'.join(key)
         transitions[label] = len(vias)
-        if len(vias) < 3: errors.append(label + ': fewer than three local power-transition vias')
+        # A 1.1 mm plated wire hole has more barrel circumference than the
+        # former three 0.3 mm vias. It directly joins the outer-layer lands.
+        wire_barrel = (key[0]=='J10' and pad.GetAttribute()==p.PAD_ATTRIB_PTH
+                       and p.ToMM(pad.GetDrillSize().x)>=1.099
+                       and pad.IsOnLayer(p.F_Cu) and pad.IsOnLayer(p.B_Cu))
+        if not wire_barrel and len(vias) < 3:
+            errors.append(label + ': fewer than three local power-transition vias')
     spreading = {}
     for ref, front_min, back_min in [('U4', 20, 10), ('U5', 17, 10), ('U6', 35, 20)]:
         pad = pads[ref, '9']; origin = pad.GetPosition()

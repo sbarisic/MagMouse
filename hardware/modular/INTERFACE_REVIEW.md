@@ -1,3 +1,9 @@
+> Rev-A bench update: internal interfaces now use soldered through-hole arrays.
+> The active manufacturing-review package is `hardware/bench/`; its HARNESS_REVIEW.md
+> and generated wire maps supersede historical FFC/JST details below. Order scope
+> is five bare three-board panels, one component population and one stencil.
+> No final-shell or supplier/CAM acceptance is claimed.
+
 # Main-to-wheel circuit interface review
 
 2026-09-10. Independent main/wheel schematics exist and pass migration checks.

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/><g font-family="sans-serif" font-size="2.6">
+<text x="10" y="12" font-size="5">Rev-A soldered-wire map / no connectors fitted</text>
+<text x="10" y="20">Read numbered pads from component-side or mirrored solder-side drawings. Never infer mapping from cable colour.</text>
+<text x="10" y="29">150 mm AWG28 ribbon: J8.N → J9.(31−N)</text>
+<text x="155" y="29">Encoder, power and coil wires</text>
+<text x="10" y="36.0" fill="#153d7a">Main/J8.1 → Wheel/J9.30</text>
+<text x="90" y="36.0" fill="#153d7a">GND</text>
+<text x="10" y="40.4" fill="#222">Main/J8.2 → Wheel/J9.29</text>
+<text x="90" y="40.4" fill="#222">SPI_SCLK</text>
+<text x="10" y="44.8" fill="#153d7a">Main/J8.3 → Wheel/J9.28</text>
+<text x="90" y="44.8" fill="#153d7a">GND</text>
+<text x="10" y="49.2" fill="#222">Main/J8.4 → Wheel/J9.27</text>
+<text x="90" y="49.2" fill="#222">SPI_MOSI</text>
+<text x="10" y="53.6" fill="#153d7a">Main/J8.5 → Wheel/J9.26</text>
+<text x="90" y="53.6" fill="#153d7a">GND</text>
+<text x="10" y="58.0" fill="#222">Main/J8.6 → Wheel/J9.25</text>
+<text x="90" y="58.0" fill="#222">CS_DRV8316</text>
+<text x="10" y="62.400000000000006" fill="#153d7a">Main/J8.7 → Wheel/J9.24</text>
+<text x="90" y="62.400000000000006" fill="#153d7a">GND</text>
+<text x="10" y="66.80000000000001" fill="#222">Main/J8.8 → Wheel/J9.23</text>
+<text x="90" y="66.80000000000001" fill="#222">DRV_MISO_LOCAL</text>
+<text x="10" y="71.2" fill="#153d7a">Main/J8.9 → Wheel/J9.22</text>
+<text x="90" y="71.2" fill="#153d7a">GND</text>
+<text x="10" y="75.6" fill="#222">Main/J8.10 → Wheel/J9.21</text>
+<text x="90" y="75.6" fill="#222">MOTOR_SPI_SCLK</text>
+<text x="10" y="80.0" fill="#153d7a">Main/J8.11 → Wheel/J9.20</text>
+<text x="90" y="80.0" fill="#153d7a">GND</text>
+<text x="10" y="84.4" fill="#222">Main/J8.12 → Wheel/J9.19</text>
+<text x="90" y="84.4" fill="#222">MOTOR_SPI_MOSI</text>
+<text x="10" y="88.80000000000001" fill="#153d7a">Main/J8.13 → Wheel/J9.18</text>
+<text x="90" y="88.80000000000001" fill="#153d7a">GND</text>
+<text x="10" y="93.2" fill="#222">Main/J8.14 → Wheel/J9.17</text>
+<text x="90" y="93.2" fill="#222">CS_ADC2</text>
+<text x="10" y="97.60000000000001" fill="#153d7a">Main/J8.15 → Wheel/J9.16</text>
+<text x="90" y="97.60000000000001" fill="#153d7a">GND</text>
+<text x="10" y="102.0" fill="#222">Main/J8.16 → Wheel/J9.15</text>
+<text x="90" y="102.0" fill="#222">ADC2_MISO_LOCAL</text>
+<text x="10" y="106.4" fill="#153d7a">Main/J8.17 → Wheel/J9.14</text>
+<text x="90" y="106.4" fill="#153d7a">GND</text>
+<text x="10" y="110.80000000000001" fill="#222">Main/J8.18 → Wheel/J9.13</text>
+<text x="90" y="110.80000000000001" fill="#222">WHEEL_PWM_A</text>
+<text x="10" y="115.2" fill="#153d7a">Main/J8.19 → Wheel/J9.12</text>
+<text x="90" y="115.2" fill="#153d7a">GND</text>
+<text x="10" y="119.60000000000001" fill="#222">Main/J8.20 → Wheel/J9.11</text>
+<text x="90" y="119.60000000000001" fill="#222">WHEEL_PWM_B</text>
+<text x="10" y="124.0" fill="#153d7a">Main/J8.21 → Wheel/J9.10</text>
+<text x="90" y="124.0" fill="#153d7a">GND</text>
+<text x="10" y="128.4" fill="#222">Main/J8.22 → Wheel/J9.9</text>
+<text x="90" y="128.4" fill="#222">WHEEL_PWM_C</text>
+<text x="10" y="132.8" fill="#153d7a">Main/J8.23 → Wheel/J9.8</text>
+<text x="90" y="132.8" fill="#153d7a">GND</text>
+<text x="10" y="137.2" fill="#222">Main/J8.24 → Wheel/J9.7</text>
+<text x="90" y="137.2" fill="#222">ACT_DRIVE_EN</text>
+<text x="10" y="141.60000000000002" fill="#153d7a">Main/J8.25 → Wheel/J9.6</text>
+<text x="90" y="141.60000000000002" fill="#153d7a">GND</text>
+<text x="10" y="146.0" fill="#222">Main/J8.26 → Wheel/J9.5</text>
+<text x="90" y="146.0" fill="#222">WHEEL_RUN_REQ</text>
+<text x="10" y="150.4" fill="#153d7a">Main/J8.27 → Wheel/J9.4</text>
+<text x="90" y="150.4" fill="#153d7a">GND</text>
+<text x="10" y="154.8" fill="#222">Main/J8.28 → Wheel/J9.3</text>
+<text x="90" y="154.8" fill="#222">DRV_FAULT_LOCAL_N</text>
+<text x="10" y="159.20000000000002" fill="#153d7a">Main/J8.29 → Wheel/J9.2</text>
+<text x="90" y="159.20000000000002" fill="#153d7a">GND</text>
+<text x="10" y="163.60000000000002" fill="#222">Main/J8.30 → Wheel/J9.1</text>
+<text x="90" y="163.60000000000002" fill="#222">+3V3</text>
+<text x="155" y="36.0" fill="#222">Main/J10.1 → Wheel/J11.1</text>
+<text x="235" y="36.0" fill="#222">ACT_5V</text>
+<text x="155" y="40.4" fill="#153d7a">Main/J10.2 → Wheel/J11.2</text>
+<text x="235" y="40.4" fill="#153d7a">GND</text>
+<text x="155" y="44.8" fill="#222">Main/J6.1 → Encoder/J7.1</text>
+<text x="235" y="44.8" fill="#222">ENC_3V3</text>
+<text x="155" y="49.2" fill="#153d7a">Main/J6.2 → Encoder/J7.2</text>
+<text x="235" y="49.2" fill="#153d7a">GND</text>
+<text x="155" y="53.6" fill="#222">Main/J6.3 → Encoder/J7.3</text>
+<text x="235" y="53.6" fill="#222">ENC_SCLK_LOCAL</text>
+<text x="155" y="58.0" fill="#153d7a">Main/J6.4 → Encoder/J7.4</text>
+<text x="235" y="58.0" fill="#153d7a">GND</text>
+<text x="155" y="62.400000000000006" fill="#222">Main/J6.5 → Encoder/J7.5</text>
+<text x="235" y="62.400000000000006" fill="#222">ENC_MOSI_LOCAL</text>
+<text x="155" y="66.80000000000001" fill="#222">Main/J6.6 → Encoder/J7.6</text>
+<text x="235" y="66.80000000000001" fill="#222">ENC_CS_LOCAL</text>
+<text x="155" y="71.2" fill="#153d7a">Main/J6.7 → Encoder/J7.7</text>
+<text x="235" y="71.2" fill="#153d7a">GND</text>
+<text x="155" y="75.6" fill="#222">Main/J6.8 → Encoder/J7.8</text>
+<text x="235" y="75.6" fill="#222">ENC_MISO_LOCAL</text>
+<text x="155" y="80.0" fill="#222">Main/J2.1 → Coil L lead 1</text>
+<text x="235" y="80.0" fill="#222">BTN_L_COIL_P</text>
+<text x="155" y="84.4" fill="#222">Main/J2.2 → Coil L lead 2</text>
+<text x="235" y="84.4" fill="#222">BTN_L_COIL_N</text>
+<text x="155" y="88.80000000000001" fill="#222">Main/J3.1 → Coil M lead 1</text>
+<text x="235" y="88.80000000000001" fill="#222">BTN_M_COIL_P</text>
+<text x="155" y="93.2" fill="#222">Main/J3.2 → Coil M lead 2</text>
+<text x="235" y="93.2" fill="#222">BTN_M_COIL_N</text>
+<text x="155" y="97.60000000000001" fill="#222">Main/J4.1 → Coil R lead 1</text>
+<text x="235" y="97.60000000000001" fill="#222">BTN_R_COIL_P</text>
+<text x="155" y="102.0" fill="#222">Main/J4.2 → Coil R lead 2</text>
+<text x="235" y="102.0" fill="#222">BTN_R_COIL_N</text>
+<text x="10" y="176">All 15 ribbon and 3 encoder ground conductors are mandatory. A meter alone cannot prove each parallel ground wire is present.</text>
+<text x="10" y="184">Power: AWG22 / 150 mm. Encoder: AWG28 / 150 mm. Coils: AWG24 / 200 mm; both leads are switched bridge outputs.</text>
+<text x="10" y="192">Inspect individual wires, joints and adjacent-net isolation before power. Clamp insulation; solder protrusion below 1.5 mm.</text>
+<text x="10" y="201">Rev-A bench prototype — pending supplier/CAM approval. No electrical function is validated by this drawing alone.</text></g></svg>

@@ -1,11 +1,30 @@
 {
   "thickness_mm": 0.1,
-  "populated_smt_references": 290,
-  "aperture_count": 1084,
+  "label": "0.10 mm \u2014 selected for Rev-A prototype",
+  "material": "Unframed stainless steel, uniform thickness",
+  "board_groups": [
+    "Main",
+    "Wheel",
+    "Encoder"
+  ],
+  "populated_smt_references": 281,
+  "aperture_count": 962,
   "deliberately_removed_paste": [
     "M_U32"
   ],
+  "minimum_area_ratio": 0.775229,
+  "minimum_required_area_ratio": 0.66,
   "below_screening_ratio": [],
-  "status": "APERTURE REVIEW DRAFT - package-specific solder coverage and stencil vendor confirmation required",
-  "scope": "Rectangular aperture ratio screening; not paste-transfer or hidden-joint acceptance"
+  "status": "PASS - geometric stencil design review for Rev-A prototype",
+  "panel_unit_shape_transforms": "PASS",
+  "population_and_land_deposits": "PASS",
+  "aperture_overlap": "PASS",
+  "measurement": "Actual polygon area/perimeter; nominal wet paste volume, not measured transfer",
+  "nominal_volume_vs_0_125mm_example": 0.8,
+  "volume_tradeoff_packages": [
+    "Main/U2,U4,U5,U6 (WSON)",
+    "Main/U10 and Wheel/U23 (ADC)",
+    "Wheel/U21 (motor driver)"
+  ],
+  "assembly_validation": "Practice print/reflow and actual paste/oven profile remain assembly tasks; no manufacturer process qualification claimed"
 }

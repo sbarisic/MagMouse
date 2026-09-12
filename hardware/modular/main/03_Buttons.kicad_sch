@@ -1714,55 +1714,55 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "COIL_L"
+    (property "Value" "Soldered wires Power_1x02"
       (at 372.3 54.34 0)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
+    (property "Footprint" "MagMouseModular:Wire_Power_1x02_P2.54mm"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743"
+    (property "Datasheet" ""
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "JST"
+    (property "Manufacturer" ""
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "B2B-PH-SM4-TBT(LF)(SN)"
+    (property "MPN" ""
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C265003"
+    (property "LCSC" ""
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C265003"
+    (property "JLCPCB Part #" ""
       (at 368.3 53.34 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
       (at 368.3 53.34 0)
       (hide yes)
       (effects
@@ -1781,7 +1781,7 @@
         (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/584f5e2a-40d4-5188-83de-a1357f3244b0"
           (reference "J2")
           (unit 1))))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"
+    (property "Supplier URL" ""
       (at 368.3 53.34 0)
       (hide yes)
       (effects
@@ -3029,55 +3029,55 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "COIL_M"
+    (property "Value" "Soldered wires Power_1x02"
       (at 372.3 125.46000000000001 0)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
+    (property "Footprint" "MagMouseModular:Wire_Power_1x02_P2.54mm"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743"
+    (property "Datasheet" ""
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "JST"
+    (property "Manufacturer" ""
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "B2B-PH-SM4-TBT(LF)(SN)"
+    (property "MPN" ""
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C265003"
+    (property "LCSC" ""
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C265003"
+    (property "JLCPCB Part #" ""
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
@@ -3096,7 +3096,7 @@
         (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/584f5e2a-40d4-5188-83de-a1357f3244b0"
           (reference "J3")
           (unit 1))))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"
+    (property "Supplier URL" ""
       (at 368.3 124.46000000000001 0)
       (hide yes)
       (effects
@@ -4344,55 +4344,55 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "COIL_R"
+    (property "Value" "Soldered wires Power_1x02"
       (at 372.3 196.57999999999998 0)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
+    (property "Footprint" "MagMouseModular:Wire_Power_1x02_P2.54mm"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743"
+    (property "Datasheet" ""
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "JST"
+    (property "Manufacturer" ""
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "B2B-PH-SM4-TBT(LF)(SN)"
+    (property "MPN" ""
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C265003"
+    (property "LCSC" ""
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C265003"
+    (property "JLCPCB Part #" ""
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects
@@ -4411,7 +4411,7 @@
         (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/584f5e2a-40d4-5188-83de-a1357f3244b0"
           (reference "J4")
           (unit 1))))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"
+    (property "Supplier URL" ""
       (at 368.3 195.57999999999998 0)
       (hide yes)
       (effects

@@ -1,0 +1,33 @@
+{
+  "panel_quantity": 5,
+  "designs_per_panel": 3,
+  "panel_size_mm": [
+    151,
+    139
+  ],
+  "panelization": "Panel by customer; routed tabs and mouse bites; no V-score",
+  "pcb_assembly": false,
+  "allow_x_outs": false,
+  "confirm_production_files": true,
+  "layers": 4,
+  "nominal_thickness_mm": 1.6,
+  "stack": "JLC041611-2116",
+  "material": "FR4 TG155",
+  "outer_copper_oz": 1,
+  "inner_copper_oz": 1,
+  "finish": "ENIG 1 microinch",
+  "solder_mask": "Green",
+  "silkscreen": "White",
+  "paid_impedance_control": false,
+  "stack_substitution_allowed": false,
+  "via_treatment": "All actual vias epoxy filled and copper capped; all component/NPTH holes open",
+  "stencil_quantity": 1,
+  "stencil_sheet_mm": [
+    220,
+    200
+  ],
+  "stencil_thickness_mm": 0.1,
+  "stencil": "Unframed stainless, top only, supplied three groups; no automatic aperture resizing",
+  "destination": "Croatia 43000",
+  "status": "DRAFT - not submitted; no purchase authorized"
+}

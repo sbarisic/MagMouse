@@ -1,0 +1,32 @@
+{
+  "local_manufacturing_screen": "PASS",
+  "panel_size_mm": [
+    151,
+    139
+  ],
+  "designs": 3,
+  "tabs": 10,
+  "tab_width_mm": 5,
+  "mousebite_diameter_mm": 0.6,
+  "mousebite_web_mm": 0.3,
+  "vias_to_fill": 1114,
+  "via_drill_counts": {
+    "0.2": 641,
+    "0.3": 472,
+    "0.4": 1
+  },
+  "component_holes_to_leave_open": 109,
+  "npth_to_leave_open": 56,
+  "minimum_component_annular_ring_mm": 0.2,
+  "minimum_track_width_mm": 0.1466,
+  "full_clearance_drc": "See evidence/acceptance.json; source hashes checked",
+  "cam_approval": false,
+  "remaining": "JLC confirmation of fixed stack, supplied routing and via treatment; no supplier response received",
+  "open_component_npth_and_slot_excellon_check": "PASS",
+  "source_sha256": {
+    "Main": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
+    "Wheel": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
+    "Encoder": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337"
+  },
+  "panel_sha256": "1f3f8121f979f9fd2a3187496b33da98dff684c1de76fb7d7f12d6e04e67f070"
+}

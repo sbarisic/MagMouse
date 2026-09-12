@@ -143,6 +143,14 @@ def verify(board):
             errors.append(label + ': exceeds copper resistance regression budget')
     buck = verify_buck(board)
     errors.extend(buck['errors'])
+    l1 = fps['L1']
+    if l1.GetValue() != 'SRP4020CC-3R3M' or str(l1.GetFPID().GetLibNickname()) != 'MagMouseModular' or str(l1.GetFPID().GetLibItemName()) != 'L_Bourns_SRP4020CC':
+        errors.append('Main L1 must use the reviewed Bourns SRP4020CC-3R3M and matching footprint')
+    for q in l1.Pads():
+        if abs(p.ToMM(q.GetSize().x)-1.5)>0.001 or abs(p.ToMM(q.GetSize().y)-2.4)>0.001:
+            errors.append('L1 recommended land dimensions must be 1.5 x 2.4 mm')
+    if abs(p.ToMM((pads['L1','1'].GetPosition()-pads['L1','2'].GetPosition()).EuclideanNorm())-3.7)>0.001:
+        errors.append('L1 land centre spacing must be 3.7 mm')
     return {'scope': 'USB VBUS feed, U12 passive protection/ILM network, local U19 supply/feedback and buck',
             'local_nets': local, 'usb_ilm_radius_mm': round(ilm_radius, 3),
             'efuse_bypass_pad_distances_mm': bypass_distances,

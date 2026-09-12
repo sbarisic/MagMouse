@@ -1,7 +1,8 @@
 # Rev-A self-assembly and bring-up
 
 This is a bench prototype with U32 deliberately omitted. Preserve all power
-protection, brake, driver, ADC and interface parts. Match the purchasing variant
+protection, brake, drivers, ADCs and buffers. Internal connectors are replaced
+by nine bare through-hole wire arrays. Match the purchasing variant
 to the generated reference map; R25 uses the documented Vishay substitute.
 
 ## Equipment and preparation
@@ -31,10 +32,17 @@ joint is wetted; abnormal current or temperature requires investigation.
    parts first, then passives and remaining reflow-qualified parts. Keep U32
    empty. Confirm IC/diode/LED/capacitor orientation against the annotated
    drawing and package marking before reflow.
-4. Reflow one unit at a time using a measured profile. Verify connectors and
+4. Reflow one unit at a time using a measured profile. Verify the USB connector and
    the polymer capacitor are within their specific reflow limits. Solder USB
    shell anchors and any intended hand-solder joints separately as needed.
-5. Fit PMW3360 after other soldering/cleaning. Keep the sensor aperture protected
+5. Hand solder the 46 mapped wire conductors and designated USB anchor joints.
+   No paste belongs on the 86 wire holes. Support the depanelled board with
+   underside access. Keep stripping short, inspect each joint and trim ends
+   below 1.5 mm. Attach printed strain-relief clamps to the fixture and retain
+   all ground wires. Check the component-side and mirrored solder-side maps,
+   continuity of each conductor, and isolation between unlike nets before
+   powering the assembly. Never use cable colour alone as a pin-number check.
+6. Fit PMW3360 after other soldering/cleaning. Keep the sensor aperture protected
    until lens fitting; use its specified lead-soldering process. Do not put the
    sensor or lens through a generic board reflow profile. Fit the matching lens
    and clean only by the optical manufacturer's permitted method.
@@ -58,3 +66,11 @@ for each gate. Power off before changing internal cables or test wiring.
 Specific operating limits must come from the implemented bring-up firmware,
 coil/motor measurements and existing electrical contracts. This document does
 not invent a safe drive current or certify the hardware before it exists.
+
+For each fixed button magnet, capture released/pressed endpoints with actuators
+disabled and follow `button-calibration.md`. Reject clipping, unstable endpoints,
+insufficient signal-to-noise separation and reversals through the full stroke.
+Initial normalized thresholds are 0.60 press / 0.40 release. Repeat the test
+with button coils and the wheel active before accepting them. Invalid or missing
+calibration leaves that button's report and haptic output disabled. Persistent
+per-unit firmware implementation remains a separate task.

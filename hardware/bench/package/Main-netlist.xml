@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\modular\main\Main.kicad_sch</source>
-    <date>2026-09-12T01:24:12</date>
+    <date>2026-09-12T15:14:08</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">MODULAR DRAFT - NOT FOR FABRICATION</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -558,29 +558,29 @@
       </units>
     </comp>
     <comp ref="L1">
-      <value>SWPA4020S3R3MT</value>
-      <footprint>Inductor_SMD:L_Sunlord_SWPA4020S</footprint>
-      <datasheet>https://atta.szlcsc.com/upload/public/pdf/source/20210916/AC798BA7E846B7D0B6818F45CD84DB0B.pdf</datasheet>
+      <value>SRP4020CC-3R3M</value>
+      <footprint>MagMouseModular:L_Bourns_SRP4020CC</footprint>
+      <datasheet>https://www.bourns.com/docs/product-datasheets/srp4020cc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Sunlord</field>
-        <field name="MPN">SWPA4020S3R3MT</field>
-        <field name="LCSC">C83424</field>
-        <field name="JLCPCB Part #">C83424</field>
-        <field name="Sourcing Status">Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C83424.html</field>
-        <field name="Footprint">Inductor_SMD:L_Sunlord_SWPA4020S</field>
-        <field name="Datasheet">https://atta.szlcsc.com/upload/public/pdf/source/20210916/AC798BA7E846B7D0B6818F45CD84DB0B.pdf</field>
+        <field name="Manufacturer">Bourns</field>
+        <field name="MPN">SRP4020CC-3R3M</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">Bench replacement reviewed 2026-09-12; Mouser consumer purchase; stock not reserved</field>
+        <field name="Checked">2026-09-12</field>
+        <field name="Supplier URL">https://hr.mouser.com/ProductDetail/Bourns/SRP4020CC-3R3M</field>
+        <field name="Footprint">MagMouseModular:L_Bourns_SRP4020CC</field>
+        <field name="Datasheet">https://www.bourns.com/docs/product-datasheets/srp4020cc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="Manufacturer" value="Sunlord"/>
-      <property name="MPN" value="SWPA4020S3R3MT"/>
-      <property name="LCSC" value="C83424"/>
-      <property name="JLCPCB Part #" value="C83424"/>
-      <property name="Sourcing Status" value="Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C83424.html"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="MPN" value="SRP4020CC-3R3M"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="Bench replacement reviewed 2026-09-12; Mouser consumer purchase; stock not reserved"/>
+      <property name="Checked" value="2026-09-12"/>
+      <property name="Supplier URL" value="https://hr.mouser.com/ProductDetail/Bourns/SRP4020CC-3R3M"/>
       <property name="Sheetname" value="01_Power_USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -1964,30 +1964,29 @@
       </units>
     </comp>
     <comp ref="J2">
-      <value>COIL_L</value>
-      <footprint>Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743</datasheet>
+      <value>Soldered wires Power_1x02</value>
+      <footprint>MagMouseModular:Wire_Power_1x02_P2.54mm</footprint>
       <fields>
-        <field name="Manufacturer">JST</field>
-        <field name="MPN">B2B-PH-SM4-TBT(LF)(SN)</field>
-        <field name="LCSC">C265003</field>
-        <field name="JLCPCB Part #">C265003</field>
-        <field name="Sourcing Status">JLCPCB catalog verified; stock/quote refresh required</field>
+        <field name="Manufacturer"/>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
         <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003</field>
+        <field name="Supplier URL"/>
         <field name="JLCPCB Library Type">Extended</field>
-        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743</field>
+        <field name="Footprint">MagMouseModular:Wire_Power_1x02_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Manufacturer" value="JST"/>
-      <property name="MPN" value="B2B-PH-SM4-TBT(LF)(SN)"/>
-      <property name="LCSC" value="C265003"/>
-      <property name="JLCPCB Part #" value="C265003"/>
-      <property name="Sourcing Status" value="JLCPCB catalog verified; stock/quote refresh required"/>
+      <property name="Manufacturer" value=""/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"/>
+      <property name="Supplier URL" value=""/>
       <property name="JLCPCB Library Type" value="Extended"/>
       <property name="Sheetname" value="03_Buttons"/>
       <property name="Sheetfile" value="03_Buttons.kicad_sch"/>
@@ -2005,30 +2004,29 @@
       </units>
     </comp>
     <comp ref="J3">
-      <value>COIL_M</value>
-      <footprint>Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743</datasheet>
+      <value>Soldered wires Power_1x02</value>
+      <footprint>MagMouseModular:Wire_Power_1x02_P2.54mm</footprint>
       <fields>
-        <field name="Manufacturer">JST</field>
-        <field name="MPN">B2B-PH-SM4-TBT(LF)(SN)</field>
-        <field name="LCSC">C265003</field>
-        <field name="JLCPCB Part #">C265003</field>
-        <field name="Sourcing Status">JLCPCB catalog verified; stock/quote refresh required</field>
+        <field name="Manufacturer"/>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
         <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003</field>
+        <field name="Supplier URL"/>
         <field name="JLCPCB Library Type">Extended</field>
-        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743</field>
+        <field name="Footprint">MagMouseModular:Wire_Power_1x02_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Manufacturer" value="JST"/>
-      <property name="MPN" value="B2B-PH-SM4-TBT(LF)(SN)"/>
-      <property name="LCSC" value="C265003"/>
-      <property name="JLCPCB Part #" value="C265003"/>
-      <property name="Sourcing Status" value="JLCPCB catalog verified; stock/quote refresh required"/>
+      <property name="Manufacturer" value=""/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"/>
+      <property name="Supplier URL" value=""/>
       <property name="JLCPCB Library Type" value="Extended"/>
       <property name="Sheetname" value="03_Buttons"/>
       <property name="Sheetfile" value="03_Buttons.kicad_sch"/>
@@ -2046,30 +2044,29 @@
       </units>
     </comp>
     <comp ref="J4">
-      <value>COIL_R</value>
-      <footprint>Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</footprint>
-      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743</datasheet>
+      <value>Soldered wires Power_1x02</value>
+      <footprint>MagMouseModular:Wire_Power_1x02_P2.54mm</footprint>
       <fields>
-        <field name="Manufacturer">JST</field>
-        <field name="MPN">B2B-PH-SM4-TBT(LF)(SN)</field>
-        <field name="LCSC">C265003</field>
-        <field name="JLCPCB Part #">C265003</field>
-        <field name="Sourcing Status">JLCPCB catalog verified; stock/quote refresh required</field>
+        <field name="Manufacturer"/>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
         <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003</field>
+        <field name="Supplier URL"/>
         <field name="JLCPCB Library Type">Extended</field>
-        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</field>
-        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/91225f8a61c6f7b7821281d8757bf5b1.pdf?productCode=C2941743</field>
+        <field name="Footprint">MagMouseModular:Wire_Power_1x02_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Manufacturer" value="JST"/>
-      <property name="MPN" value="B2B-PH-SM4-TBT(LF)(SN)"/>
-      <property name="LCSC" value="C265003"/>
-      <property name="JLCPCB Part #" value="C265003"/>
-      <property name="Sourcing Status" value="JLCPCB catalog verified; stock/quote refresh required"/>
+      <property name="Manufacturer" value=""/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TBT_LF_SN/C265003"/>
+      <property name="Supplier URL" value=""/>
       <property name="JLCPCB Library Type" value="Extended"/>
       <property name="Sheetname" value="03_Buttons"/>
       <property name="Sheetfile" value="03_Buttons.kicad_sch"/>
@@ -7842,29 +7839,28 @@
       </units>
     </comp>
     <comp ref="J6">
-      <value>ENCODER_8P</value>
-      <footprint>Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eSH.pdf</datasheet>
+      <value>Soldered wires Signal_2x04</value>
+      <footprint>MagMouseModular:Wire_Signal_2x04_P2.54mm</footprint>
       <fields>
-        <field name="Manufacturer">JST</field>
-        <field name="MPN">SM08B-SRSS-TB(LF)(SN)</field>
-        <field name="LCSC">C160407</field>
-        <field name="JLCPCB Part #">C160407</field>
-        <field name="Sourcing Status">JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation</field>
+        <field name="Manufacturer"/>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
         <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C160407.html</field>
-        <field name="Footprint">Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eSH.pdf</field>
+        <field name="Supplier URL"/>
+        <field name="Footprint">MagMouseModular:Wire_Signal_2x04_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Manufacturer" value="JST"/>
-      <property name="MPN" value="SM08B-SRSS-TB(LF)(SN)"/>
-      <property name="LCSC" value="C160407"/>
-      <property name="JLCPCB Part #" value="C160407"/>
-      <property name="Sourcing Status" value="JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation"/>
+      <property name="Manufacturer" value=""/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C160407.html"/>
+      <property name="Supplier URL" value=""/>
       <property name="Sheetname" value="12_Wheel_Feedback"/>
       <property name="Sheetfile" value="12_Wheel_Feedback.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -9713,29 +9709,28 @@
       </units>
     </comp>
     <comp ref="J8">
-      <value>WHEEL_SIGNAL_30P</value>
-      <footprint>Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal</footprint>
-      <datasheet>https://www.hirose.com/product/p/CL0586-0525-1-55</datasheet>
+      <value>Soldered wires Signal_2x15</value>
+      <footprint>MagMouseModular:Wire_Signal_2x15_P2.54mm</footprint>
       <fields>
-        <field name="MPN">FH12-30S-0.5SH(55)</field>
-        <field name="LCSC">C506793</field>
-        <field name="JLCPCB Part #">C506793</field>
-        <field name="Manufacturer">Hirose</field>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Manufacturer"/>
         <field name="Checked">2026-09-10</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/C506793</field>
-        <field name="Sourcing Status">Catalog identity checked; stock and assembly quote not reserved</field>
-        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal</field>
-        <field name="Datasheet">https://www.hirose.com/product/p/CL0586-0525-1-55</field>
+        <field name="Supplier URL"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
+        <field name="Footprint">MagMouseModular:Wire_Signal_2x15_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x30" description="Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="FH12-30S-0.5SH(55)"/>
-      <property name="LCSC" value="C506793"/>
-      <property name="JLCPCB Part #" value="C506793"/>
-      <property name="Manufacturer" value="Hirose"/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Checked" value="2026-09-10"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/C506793"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock and assembly quote not reserved"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Sheetname" value="18_Wheel_Harness"/>
       <property name="Sheetfile" value="18_Wheel_Harness.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -9780,29 +9775,28 @@
       </units>
     </comp>
     <comp ref="J10">
-      <value>WHEEL_POWER_2P</value>
-      <footprint>MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</datasheet>
+      <value>Soldered wires Power_1x02</value>
+      <footprint>MagMouseModular:Wire_Power_1x02_P2.54mm</footprint>
       <fields>
-        <field name="MPN">SM02B-PASS-TB(LF)(SN)</field>
-        <field name="LCSC">C495198</field>
-        <field name="JLCPCB Part #">C495198</field>
-        <field name="Manufacturer">JST</field>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Manufacturer"/>
         <field name="Checked">2026-09-10</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/C495198</field>
-        <field name="Sourcing Status">Catalog identity checked; stock and assembly quote not reserved</field>
-        <field name="Footprint">MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</field>
+        <field name="Supplier URL"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
+        <field name="Footprint">MagMouseModular:Wire_Power_1x02_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="SM02B-PASS-TB(LF)(SN)"/>
-      <property name="LCSC" value="C495198"/>
-      <property name="JLCPCB Part #" value="C495198"/>
-      <property name="Manufacturer" value="JST"/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Checked" value="2026-09-10"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/C495198"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock and assembly quote not reserved"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Sheetname" value="18_Wheel_Harness"/>
       <property name="Sheetfile" value="18_Wheel_Harness.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>

@@ -3,8 +3,8 @@
   "native_unconnected": 0,
   "digital_nets": {
     "ADC2_MISO_LOCAL": {
-      "copper_mm": 23.001,
-      "vias": 4,
+      "copper_mm": 26.11,
+      "vias": 5,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -27,20 +27,20 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "CS_ADC2": {
-      "copper_mm": 75.492,
-      "vias": 5,
+      "copper_mm": 94.994,
+      "vias": 6,
       "layers": [
         "B.Cu",
         "F.Cu",
         "In2.Cu"
       ],
       "front_shadow_missing_mm2": 0.0,
-      "farthest_ground_via_mm": 1.722,
+      "farthest_ground_via_mm": 2.067,
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "CS_DRV8316": {
-      "copper_mm": 98.119,
-      "vias": 12,
+      "copper_mm": 126.559,
+      "vias": 15,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -87,7 +87,7 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "ENC_CS_LOCAL": {
-      "copper_mm": 14.14,
+      "copper_mm": 23.931,
       "vias": 5,
       "layers": [
         "B.Cu",
@@ -99,8 +99,8 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "ENC_MISO_LOCAL": {
-      "copper_mm": 81.458,
-      "vias": 7,
+      "copper_mm": 92.196,
+      "vias": 6,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -111,23 +111,24 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "ENC_MOSI_LOCAL": {
-      "copper_mm": 35.237,
+      "copper_mm": 42.44,
       "vias": 2,
       "layers": [
-        "B.Cu"
+        "B.Cu",
+        "In2.Cu"
       ],
       "front_shadow_missing_mm2": 0.0,
-      "farthest_ground_via_mm": 1.86,
+      "farthest_ground_via_mm": 1.442,
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "ENC_SCLK_LOCAL": {
-      "copper_mm": 23.082,
-      "vias": 2,
+      "copper_mm": 32.163,
+      "vias": 1,
       "layers": [
         "In2.Cu"
       ],
       "front_shadow_missing_mm2": 0.0,
-      "farthest_ground_via_mm": 1.118,
+      "farthest_ground_via_mm": 0.964,
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "MOTOR_SPI_MISO": {
@@ -143,8 +144,8 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "MOTOR_SPI_MOSI": {
-      "copper_mm": 52.084,
-      "vias": 6,
+      "copper_mm": 85.046,
+      "vias": 11,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -155,8 +156,8 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "MOTOR_SPI_SCLK": {
-      "copper_mm": 67.291,
-      "vias": 7,
+      "copper_mm": 126.957,
+      "vias": 11,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -237,8 +238,8 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "SPI_MOSI": {
-      "copper_mm": 164.189,
-      "vias": 15,
+      "copper_mm": 192.597,
+      "vias": 16,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -249,8 +250,8 @@
       "all_layer_in1_shadow_missing_mm2": 0.0
     },
     "SPI_SCLK": {
-      "copper_mm": 92.553,
-      "vias": 9,
+      "copper_mm": 126.101,
+      "vias": 10,
       "layers": [
         "B.Cu",
         "F.Cu",
@@ -265,23 +266,23 @@
     {
       "from": "U3.29",
       "to": "J8.10",
-      "conductor_mm": 67.291,
-      "counted_vias": 7,
-      "board_delay_screen_ns": 0.628
+      "conductor_mm": 109.494,
+      "counted_vias": 9,
+      "board_delay_screen_ns": 0.991
     },
     {
       "from": "U3.28",
       "to": "J8.12",
-      "conductor_mm": 52.084,
-      "counted_vias": 6,
-      "board_delay_screen_ns": 0.493
+      "conductor_mm": 79.14,
+      "counted_vias": 11,
+      "board_delay_screen_ns": 0.774
     },
     {
       "from": "J8.16",
       "to": "U25.9",
-      "conductor_mm": 16.945,
-      "counted_vias": 2,
-      "board_delay_screen_ns": 0.161
+      "conductor_mm": 23.517,
+      "counted_vias": 5,
+      "board_delay_screen_ns": 0.252
     },
     {
       "from": "U25.8",
@@ -293,9 +294,9 @@
     {
       "from": "U3.32",
       "to": "J8.14",
-      "conductor_mm": 45.666,
-      "counted_vias": 2,
-      "board_delay_screen_ns": 0.391
+      "conductor_mm": 62.814,
+      "counted_vias": 3,
+      "board_delay_screen_ns": 0.541
     },
     {
       "from": "U3.32",
@@ -351,9 +352,9 @@
     {
       "from": "U2.6",
       "to": "U3.3",
-      "conductor_mm": 112.652,
+      "conductor_mm": 112.582,
       "counted_vias": 8,
-      "screening_milliohms": 243.229
+      "screening_milliohms": 243.121
     },
     {
       "from": "U2.6",
@@ -452,5 +453,5 @@
     "Cable timing, ADC noise, USB compliance and thermal response require hardware qualification.",
     "Mechanical interfaces are provisional; panelization remains on hold."
   ],
-  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
 }

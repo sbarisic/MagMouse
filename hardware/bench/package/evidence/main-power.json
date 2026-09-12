@@ -3,7 +3,7 @@
   "local_nets": {
     "BUCK_SW": {
       "pad_count": 2,
-      "copper_length_mm": 3.95,
+      "copper_length_mm": 3.064001,
       "vias": 0
     },
     "ILM_BASE_1": {
@@ -79,16 +79,16 @@
   "power_paths": [
     {
       "path": "J1.A4 -> U12.5",
-      "screening_milliohms": 21.02,
+      "screening_milliohms": 38.738,
       "budget_milliohms": 40,
-      "counted_track_mm": 31.276,
+      "counted_track_mm": 32.58,
       "counted_full_barrels": 2
     },
     {
       "path": "J1.B4 -> U12.5",
-      "screening_milliohms": 21.02,
+      "screening_milliohms": 38.738,
       "budget_milliohms": 40,
-      "counted_track_mm": 31.276,
+      "counted_track_mm": 32.58,
       "counted_full_barrels": 2
     },
     {
@@ -120,7 +120,7 @@
       "counted_full_barrels": 2
     }
   ],
-  "buck_switch_copper_mm": 3.95,
+  "buck_switch_copper_mm": 3.064,
   "native_unconnected": 0,
   "limits": [
     "Resistance screening at 80 C assumes 35/30 um outer/inner copper and 20 um barrel plating; full traversed segments/barrels, no parallel credit",
@@ -130,5 +130,5 @@
     "Mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
 }

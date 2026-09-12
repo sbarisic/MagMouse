@@ -51,11 +51,11 @@
     "R77"
   ],
   "signal_harness": {
-    "status": "Prototype header selected; connected-operation cable construction, orientation and current review remain open",
-    "header_mpn": "FH12-30S-0.5SH(55)",
-    "header_lcsc": "C506793",
-    "footprint": "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal",
-    "datasheet": "https://www.hirose.com/product/p/CL0586-0525-1-55",
+    "status": "Direct soldered wire arrays; physical wiring and timing need bench validation",
+    "header_mpn": "",
+    "header_lcsc": "",
+    "footprint": "MagMouseModular:Wire_Signal_2x15_P2.54mm",
+    "datasheet": "",
     "main_connector": "J8",
     "wheel_connector": "J9",
     "contact_count": 30,
@@ -77,18 +77,14 @@
       "30": "+3V3"
     },
     "remaining_pins": "GND",
-    "prototype_length_target_mm": 50,
+    "prototype_length_target_mm": 150,
     "candidate_cable": {
-      "manufacturer": "Wurth Elektronik",
-      "mpn": "687630050002",
-      "datasheet": "https://www.we-online.com/components/products/datasheet/687630050002.pdf",
-      "status": "Trial candidate only: nominal fit, strip-length and width/span tolerances do not fully meet FH12 recommendation; sample or alternate cable required before order",
-      "catalog_current_per_conductor_A_at_25C": 0.5,
-      "minimum_operating_temperature_C": -30,
-      "conductor_width_mm": 0.3,
-      "conductor_thickness_mm": 0.05
+      "manufacturer": "",
+      "mpn": "",
+      "status": "30-way AWG28 ribbon, exact consumer product and insulation/bend limits pending",
+      "catalog_current_per_conductor_A_at_25C": null
     },
-    "length_status": "Unverified target; requires mechanical and signal-integrity review",
+    "length_status": "150 mm bench harness; qualify loaded SPI waveforms",
     "wheel_pin_for_main_pin": {
       "1": 30,
       "2": 29,
@@ -121,24 +117,24 @@
       "29": 2,
       "30": 1
     },
-    "orientation_contract": "Both component sides up, bottom-contact headers facing one another, same-side-contact FFC without twist: main J8.n to wheel J9.(31-n). Main odd contacts GND; wheel even contacts GND."
+    "orientation_contract": "Numbered solder lands J8.N to J9.(31-N); component-side and mirrored solder-side views. All fifteen ground wires retained."
   },
   "power_harness": {
-    "status": "Candidate only; final current budget and cable/connector acceptance pending",
+    "status": "Direct soldered AWG22 pair, 150 mm; solder/temperature qualification pending",
     "pins": {
       "1": "ACT_5V",
       "2": "GND"
     },
-    "candidate_header_mpn": "SM02B-PASS-TB(LF)(SN)",
-    "candidate_lcsc": "C495198",
-    "footprint": "MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal",
+    "candidate_header_mpn": "",
+    "candidate_lcsc": "",
+    "footprint": "MagMouseModular:Wire_Power_1x02_P2.54mm",
     "main_connector": "J10",
     "wheel_connector": "J11",
-    "housing_mpn": "PAP-02V-S",
-    "contact_mpn": "SPHD-001T-P0.5",
-    "prototype_wire": "AWG22, two conductors; no live mating",
-    "candidate_catalog_rating_A": 3,
-    "rating_wire": "AWG22 per JST PA family specification; rating is not a design-current approval"
+    "housing_mpn": "",
+    "contact_mpn": "",
+    "prototype_wire": "AWG22 stranded copper, 150 mm pair",
+    "candidate_catalog_rating_A": null,
+    "rating_wire": "No unverified wire ampacity rating assigned; source current limits remain unchanged"
   },
   "encoder": {
     "source": "hardware/encoder/Encoder.kicad_sch",

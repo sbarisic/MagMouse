@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-09-12T13:20:45Z",
+  "destination": "https://jlcpcb.com/help/contact",
+  "category": "PCB Inquiry",
+  "subject": "CAM review: MagMouse Rev-A three-board panel + 0.10 mm stencil",
+  "reply_email": "admin@sbarisic.com",
+  "sender_name": "Sasa Barisic",
+  "status": "submitted; supplier CAM response pending",
+  "confirmation": "Thanks for getting in touch with us! Your message has been successfully submitted. A member of our support staff will respond as soon as possible. Expect a reply between Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8.",
+  "ticket_number": null,
+  "order_placed": false,
+  "payment_made": false,
+  "archive": "CAM-review-attachments.zip",
+  "archive_bytes": 1409268,
+  "archive_sha256": "200002eda55b0db4513de96e1de92435af1634ce5469944b2865e1fe72803dcf",
+  "pcb_zip_sha256": "5264c763e6ec8741a7d1f048a034eb03c04ee8fbd4fc3d33ac85c39fb98e7d29",
+  "stencil_zip_sha256": "3636dd40948e445638c439d5cd6de8905e08b06ff0d9766b5a1ffa1330bf06ce",
+  "scope": "Pre-order PCB CAM and stencil review only. Five bare three-design 151 x 139 mm panels and one unframed 220 x 200 mm uniform 0.10 mm stencil. No PCBA. Request explicit acceptance or required changes against enclosed hashes; explain first if formal review requires an order."
+}

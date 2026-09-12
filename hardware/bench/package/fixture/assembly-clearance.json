@@ -1,0 +1,68 @@
+{
+  "board_underside_above_base_mm": 15,
+  "joint_protrusion_limit_mm": 1.5,
+  "joint_to_base_clearance_mm": 13.5,
+  "saddles": [
+    {
+      "x": 49,
+      "y": 20,
+      "rotation": 90,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 82,
+      "y": 20,
+      "rotation": 90,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 25,
+      "y": 95,
+      "rotation": 0,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 105,
+      "y": 106,
+      "rotation": 180,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 69.5,
+      "y": 160,
+      "rotation": 90,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 115.5,
+      "y": 172,
+      "rotation": 180,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 73.5,
+      "y": 220,
+      "rotation": -90,
+      "board_overlap_mm3": 0
+    },
+    {
+      "x": 103.5,
+      "y": 220,
+      "rotation": -90,
+      "board_overlap_mm3": 0
+    }
+  ],
+  "component_height_requirement": "Measure underside components; lower surface must remain at least 5 mm above base",
+  "unresolved": [
+    "motor adapter and shaft geometry",
+    "lens retention and optical working height",
+    "encoder clip contact and magnet gap",
+    "flexure fatigue and coil fit"
+  ],
+  "board_source_sha256": {
+    "Main": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
+    "Wheel": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
+    "Encoder": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337"
+  },
+  "model_scope": "PCB outline envelopes and printed supports; no fabricated component-height certification"
+}

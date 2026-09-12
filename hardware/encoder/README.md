@@ -1,5 +1,15 @@
 # Upright wheel encoder
 
+## Current soldered-wire revision
+
+J7 now uses eight plated solder holes in a 2×4 array on 2.54 mm pitch,
+0.8 mm nominal holes / 1.8 mm pads. All eight signals, including three grounds,
+remain connected to Main J6 by the 150 mm AWG28 harness. There is no JST purchase
+or paste on these lands. Sensor position and board outline are preserved; local
+termination routing is updated. See the [wire map](../bench/package/wire-map.svg)
+and [printable carrier](../../mechanical/bench/README.md). The historical connector
+description below is superseded for Rev-A.
+
 ## Rev-A bench stack migration, 2026-09-11
 
 The current PCB uses the same four-layer **JLC041611-2116** construction as

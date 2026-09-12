@@ -9,7 +9,9 @@ import subprocess
 import sys
 import zipfile
 
-from build_panel import HERE,ROOT,SOURCES,OFFSETS,sha,outline,xy,save_json
+from build_panel import HERE,ROOT,SOURCES,OFFSETS,sha,outline,xy,save_json,atomic_text
+from wire_interfaces import INTERFACES
+from stencil_policy import POLICY, exclude_non_reflow, verify_geometry, verify_transforms
 sys.path.insert(0,str(ROOT/'hardware/quotes'))
 from export_quote_packages import read_components,write_csv,via_inventory,validate_drills
 import pcbnew as p
@@ -94,6 +96,8 @@ def procurement():
         target=OUT/(name+'-netlist.xml');run(['sch','export','netlist','--format','kicadxml','-o',target,path.with_suffix('.kicad_sch')])
         comps,_=read_components(target)
         for ref,c in comps.items():
+            if ref in INTERFACES[name]:
+                excluded.append(dict(board=name,reference=ref,reason='Bare plated wire termination; hand solder wire, no connector part'));continue
             if c['excluded'] or c['dnp'] or (name=='Main' and ref=='U32'):
                 excluded.append(dict(board=name,reference=ref,reason='IMU omitted in bench variant' if ref=='U32' else 'Copper-only test pad or source DNP'));continue
             mpn=c['fields'].get('MPN','');assert mpn,(name,ref)
@@ -126,41 +130,42 @@ def procurement():
     write_csv(OUT/'one-set-purchasing.csv',list(rows[0]),rows)
     write_csv(OUT/'population.csv',list(population[0]),population)
     save_json(OUT/'excluded-population.json',excluded)
-    assert len(population)==291, len(population) # 292 physical parts, less U32; includes separately fitted U35.
+    contract=json.loads((HERE/'population-contract.json').read_text())
+    assert sorted(r['board']+'/'+r['reference'] for r in population)==contract['populated_components'],'Unexpected physical population change'
+    assert sorted(n+'/'+r for n,refs in INTERFACES.items() for r in refs)==contract['wire_terminations']
     return population,rows
 
 
 def stencil(panel,population):
+    from paste_variant import apply
+    retained_paste=apply(panel)
     byref={f.GetReference():f for f in panel.GetFootprints()}
     wanted={row['panel_reference'] for row in population if row['method']=='TOP SMT REFLOW'}
-    removed=[]
-    for ref,f in byref.items():
-        if ref not in wanted:
-            for pad in f.Pads():
-                if pad.IsOnLayer(p.F_Paste):
-                    ls=pad.GetLayerSet();ls.RemoveLayer(p.F_Paste);pad.SetLayerSet(ls);removed.append(ref)
-    apertures=[]
-    for ref in sorted(wanted):
-        f=byref[ref]
-        for pad in f.Pads():
-            if not pad.IsOnLayer(p.F_Paste):continue
-            margin=pad.GetSolderPasteMargin(p.F_Cu)
-            w=p.ToMM(pad.GetSize().x+2*margin.x);h=p.ToMM(pad.GetSize().y+2*margin.y)
-            ratio=w*h/(2*(w+h)*.1)
-            apertures.append(dict(Reference=ref,Pad=pad.GetNumber(),Width_mm=w,Height_mm=h,
-                Rectangular_area_ratio_at_0_10mm=round(ratio,4),Shape=int(pad.GetShape()),
-                Review='CHECK RELEASE' if ratio<.66 else 'Rectangular screening pass'))
-    assert 'M_U32' in removed and all(a['Reference']!='M_U32' for a in apertures)
-    assert wanted=={a['Reference'] for a in apertures},'SMT part has no paste aperture'
-    write_csv(OUT/'stencil-apertures.csv',list(apertures[0]),apertures)
+    removed=exclude_non_reflow(panel,wanted)
+    minimum=verify_geometry(panel,wanted)
+    from review_details import paste_measurements
+    selected={r['panel_reference']:r for r in population if r['panel_reference'] in wanted}
+    actual,coverage,_=paste_measurements(panel,selected)
+    with (OUT/'paste-shape-measurements.csv').open(newline='',encoding='utf-8') as f:
+        expected=list(csv.DictReader(f))
+    verify_transforms(actual,expected,OFFSETS)
+    write_csv(OUT/'stencil-apertures.csv',list(actual[0]),actual)
+    write_csv(OUT/'stencil-land-coverage.csv',list(coverage[0]),coverage)
     tmp=ROOT/'build/bench-stencil.kicad_pcb';p.SaveBoard(str(tmp),panel)
     run(['pcb','export','gerbers','-l','F.Paste','-o',OUT/'stencil',tmp])
     run(['pcb','export','svg','--mode-single','-l','F.Paste','--page-size-mode','2','--exclude-drawing-sheet','--drill-shape-opt','0','-o',OUT/'stencil/stencil.svg',tmp])
-    save_json(OUT/'stencil-review.json',dict(thickness_mm=.10,populated_smt_references=len(wanted),
-        aperture_count=len(apertures),deliberately_removed_paste=sorted(set(removed)),
-        below_screening_ratio=[a for a in apertures if a['Review']=='CHECK RELEASE'],
-        status='APERTURE REVIEW DRAFT - package-specific solder coverage and stencil vendor confirmation required',
-        scope='Rectangular aperture ratio screening; not paste-transfer or hidden-joint acceptance'))
+    save_json(OUT/'stencil-review.json',dict(thickness_mm=POLICY.thickness_mm,
+        label=POLICY.label,material='Unframed stainless steel, uniform thickness',board_groups=list(SOURCES),
+        populated_smt_references=len(wanted),aperture_count=len(actual),
+        deliberately_removed_paste=removed,minimum_area_ratio=round(minimum,6),
+        minimum_required_area_ratio=POLICY.minimum_area_ratio,below_screening_ratio=[],
+        status='PASS - geometric stencil design review for Rev-A prototype',
+        panel_unit_shape_transforms='PASS',population_and_land_deposits='PASS',aperture_overlap='PASS',
+        measurement='Actual polygon area/perimeter; nominal wet paste volume, not measured transfer',
+        nominal_volume_vs_0_125mm_example=0.8,
+        volume_tradeoff_packages=['Main/U2,U4,U5,U6 (WSON)','Main/U10 and Wheel/U23 (ADC)','Wheel/U21 (motor driver)'],
+        assembly_validation='Practice print/reflow and actual paste/oven profile remain assembly tasks; no manufacturer process qualification claimed'))
+
 
 
 def assembly_aids(population,rows):
@@ -200,7 +205,7 @@ def assembly_aids(population,rows):
         '<text x="10" y="180">100 mm calibration bar</text>',
         '<text x="10" y="190">Dashed blocks: removable edge stops; use matching-thickness scrap support.</text>',
         '<text x="10" y="195">Mask unused stencil groups. Depanel bare boards before paste/reflow. Main U32: DNP.</text></g></svg>'])
-    (OUT/'stencil-support-jig.svg').write_text('\n'.join(svg),encoding='utf-8')
+    atomic_text(OUT/'stencil-support-jig.svg','\n'.join(svg))
     write_csv(OUT/'pin-one-hidden-pad-checklist.csv',list(checklist[0]),checklist)
     totals=defaultdict(float)
     for row in rows:
@@ -220,33 +225,59 @@ def main():
     panel=p.LoadBoard(str(HERE/'Panel.kicad_pcb'));manifest=json.loads((HERE/'panel-manifest.json').read_text())
     report=verify_panel(panel,manifest);save_json(OUT/'panel-validation.json',report)
     population,rows=procurement()
+    from review_details import generate
+    generate(population)
     vias=via_inventory(panel);write_csv(OUT/'all-vias.csv',list(vias[0]),vias)
+    from verify_wire_interfaces import verify,verify_fill,verify_fixture_alignment
+    verify({n:p.LoadBoard(str(path)) for n,path in SOURCES.items()});verify_fill(panel,vias);verify_fixture_alignment()
     run(['pcb','export','gerbers','-l',','.join([*LAYERS,'F.Mask','B.Mask','F.SilkS','B.SilkS','Edge.Cuts']),'-o',OUT/'gerbers',HERE/'Panel.kicad_pcb'])
     run(['pcb','export','drill','--format','excellon','--excellon-separate-th','--drill-origin','absolute','--excellon-units','mm','--generate-map','--map-format','svg','-o',OUT/'gerbers',HERE/'Panel.kicad_pcb'])
     validate_drills(OUT/'gerbers/Panel-PTH.drl',vias)
     for name,path in SOURCES.items():
         (OUT/'placement').mkdir(parents=True,exist_ok=True)
-        run(['pcb','export','svg','--mode-single','-l','F.Fab,Edge.Cuts','--page-size-mode','2','--exclude-drawing-sheet','--sketch-pads-on-fab-layers','-o',OUT/'placement'/(name+'.svg'),path])
+        run(['pcb','export','svg','--mode-single','-l','F.Fab,F.SilkS,Edge.Cuts','--page-size-mode','2','--exclude-drawing-sheet','--sketch-pads-on-fab-layers','-o',OUT/'placement'/(name+'.svg'),path])
     stencil(panel,population)
+    from manufacturing_review import generate as manufacturing_handoff
+    manufacturing_handoff(OUT)
     assembly_aids(population,rows)
     # Keep the review notes self-contained when this folder is handed to CAM.
     notes=(HERE/'README.md').read_text(encoding='utf-8').replace('`package/','`')
-    (OUT/'MANUFACTURING_NOTES.md').write_text(notes,encoding='utf-8')
+    atomic_text(OUT/'MANUFACTURING_NOTES.md',notes)
     for name in ('SOURCING.md','WURTH_ENQUIRY.md','ORDER_READINESS.md','BENCH_FIXTURE.md','ASSEMBLY_AND_BRINGUP.md',
                  'COST_CHECKPOINT.md','CAD_REVIEW.md','quote-observations.json','sourcing-observations.json',
-                 'bench-fixture.svg','panel-mechanical.svg','panel-manifest.json'):
+                 'bench-fixture.svg','panel-mechanical.svg','panel-manifest.json','L1_REVIEW.md',
+                 'HARNESS_REVIEW.md','STENCIL_REVIEW.md','BENCH_ACCESS_REVIEW.md','stencil_policy.py','MANUFACTURING_REVIEW.md'):
         shutil.copyfile(HERE/name,OUT/name)
+    shutil.copyfile(ROOT/'docs/button-calibration.md',OUT/'button-calibration.md')
+    shutil.copyfile(HERE/'population-contract.json',OUT/'population-contract.json')
+    fixture=OUT/'fixture';fixture.mkdir(exist_ok=True)
+    expected={'README.md','build_fixture.py','board-interfaces.json'}|{f.name for f in (ROOT/'mechanical/bench/generated').glob('*') if f.is_file()}
+    for stale in fixture.iterdir():
+        if stale.is_file() and stale.name not in expected:stale.unlink()
+    shutil.copyfile(ROOT/'mechanical/bench/README.md',fixture/'README.md')
+    shutil.copyfile(ROOT/'mechanical/bench/build_fixture.py',fixture/'build_fixture.py')
+    shutil.copyfile(ROOT/'mechanical/bench/board-interfaces.json',fixture/'board-interfaces.json')
+    for source in (ROOT/'mechanical/bench/generated').glob('*'):
+        if source.is_file():shutil.copyfile(source,fixture/source.name)
     (OUT/'copper-review').mkdir(exist_ok=True)
     for layer in LAYERS:
         run(['pcb','export','svg','--mode-single','-l',layer+',Edge.Cuts','--page-size-mode','2',
              '--exclude-drawing-sheet','-o',OUT/'copper-review'/(layer+'.svg'),HERE/'Panel.kicad_pcb'])
     save_json(OUT/'release-status.json',dict(ready_for_order=False,
-        label='Rev-A bench prototype - QUOTE ONLY',source_boards=manifest['units'],
+        label='Rev-A bench prototype - pending supplier/CAM approval',source_boards=manifest['units'],
         open_gates='See hardware/bench/README.md; supplier, assembly, mechanical and CAM review remain open'))
     for folder,name in [('gerbers','Panel-Gerbers-QUOTE.zip'),('stencil','Stencil-QUOTE.zip')]:
         with zipfile.ZipFile(OUT/name,'w',zipfile.ZIP_DEFLATED) as z:
             for f in sorted((OUT/folder).glob('*')):
                 if f.suffix!='.svg':z.write(f,f.name)
+    drafts=OUT/'supplier-drafts';drafts.mkdir(exist_ok=True)
+    for source in (HERE/'supplier-drafts').glob('*.md'):
+        text=source.read_text(encoding='utf-8')
+        text=text.replace('{{GERBER_SHA256}}',sha(OUT/'Panel-Gerbers-QUOTE.zip'))
+        text=text.replace('{{STENCIL_SHA256}}',sha(OUT/'Stencil-QUOTE.zip'))
+        atomic_text(drafts/source.name,text)
+    from manufacturing_review import bundle
+    bundle(OUT)
     incomplete.unlink()
     save_json(OUT/'file-sha256.json',{str(f.relative_to(OUT)):sha(f) for f in sorted(OUT.rglob('*')) if f.is_file() and f.name!='file-sha256.json'})
     print('Verified panel and exported',len(population),'population references;',len(rows),'purchase lines')

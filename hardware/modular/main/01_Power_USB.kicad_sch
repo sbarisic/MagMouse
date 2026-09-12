@@ -3171,69 +3171,69 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "SWPA4020S3R3MT"
+    (property "Value" "SRP4020CC-3R3M"
       (at 165.18 185.5 90)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4020S"
+    (property "Footprint" "MagMouseModular:L_Bourns_SRP4020CC"
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210916/AC798BA7E846B7D0B6818F45CD84DB0B.pdf"
+    (property "Datasheet" "https://www.bourns.com/docs/product-datasheets/srp4020cc.pdf"
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "Sunlord"
+    (property "Manufacturer" "Bourns"
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "SWPA4020S3R3MT"
+    (property "MPN" "SRP4020CC-3R3M"
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C83424"
+    (property "LCSC" ""
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C83424"
+    (property "JLCPCB Part #" ""
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed"
+    (property "Sourcing Status" "Bench replacement reviewed 2026-09-12; Mouser consumer purchase; stock not reserved"
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-09-12"
       (at 170.18 190.5 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C83424.html"
+    (property "Supplier URL" "https://hr.mouser.com/ProductDetail/Bourns/SRP4020CC-3R3M"
       (at 170.18 190.5 0)
       (hide yes)
       (effects

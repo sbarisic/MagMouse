@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "10.0.6"
     },
-    "CreationDate": "2026-09-12T01:24:25+02:00"
+    "CreationDate": "2026-09-12T15:14:37+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,34 +14,14 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 151.05,
-      "Y": 139.05
+      "X": 151,
+      "Y": 139
     },
     "LayerNumber": 4,
     "BoardThickness": 1.578,
     "Finish": "ENIG",
-    "ImpedanceControlled": true
+    "ImpedanceControlled": false
   },
-  "DesignRules": [
-    {
-      "Layers": "Outer",
-      "PadToPad": 0.15,
-      "PadToTrack": 0.15,
-      "TrackToTrack": 0.15,
-      "MinLineWidth": 0.1466,
-      "TrackToRegion": 0.15,
-      "RegionToRegion": 0.15
-    },
-    {
-      "Layers": "Inner",
-      "PadToPad": 0.0,
-      "PadToTrack": 0.0,
-      "TrackToTrack": 0.15,
-      "MinLineWidth": 0.15,
-      "TrackToRegion": 0.15,
-      "RegionToRegion": 0.15
-    }
-  ],
   "FilesAttributes": [
     {
       "Path": "bench-stencil-F_Paste.gtp",

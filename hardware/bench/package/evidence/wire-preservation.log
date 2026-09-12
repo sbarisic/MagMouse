@@ -1,0 +1,107 @@
+Adding duplicate image handler for 'PNG file'
+Adding duplicate image handler for 'JPEG file'
+Adding duplicate image handler for 'TIFF file'
+Adding duplicate image handler for 'GIF file'
+Adding duplicate image handler for 'PNM file'
+Adding duplicate image handler for 'PCX file'
+Adding duplicate image handler for 'IFF file'
+Adding duplicate image handler for 'Windows icon file'
+Adding duplicate image handler for 'Windows cursor file'
+Adding duplicate image handler for 'Windows animated cursor file'
+Adding duplicate image handler for 'TGA file'
+Adding duplicate image handler for 'XPM file'
+Adding duplicate image handler for 'WebP file'
+Adding duplicate image handler for 'PNG file'
+Adding duplicate image handler for 'JPEG file'
+Adding duplicate image handler for 'TIFF file'
+Adding duplicate image handler for 'GIF file'
+Adding duplicate image handler for 'PNM file'
+Adding duplicate image handler for 'PCX file'
+Adding duplicate image handler for 'IFF file'
+Adding duplicate image handler for 'Windows icon file'
+Adding duplicate image handler for 'Windows cursor file'
+Adding duplicate image handler for 'Windows animated cursor file'
+Adding duplicate image handler for 'TGA file'
+Adding duplicate image handler for 'XPM file'
+Adding duplicate image handler for 'WebP file'
+Adding duplicate image handler for 'PNG file'
+Adding duplicate image handler for 'JPEG file'
+Adding duplicate image handler for 'TIFF file'
+Adding duplicate image handler for 'GIF file'
+Adding duplicate image handler for 'PNM file'
+Adding duplicate image handler for 'PCX file'
+Adding duplicate image handler for 'IFF file'
+Adding duplicate image handler for 'Windows icon file'
+Adding duplicate image handler for 'Windows cursor file'
+Adding duplicate image handler for 'Windows animated cursor file'
+Adding duplicate image handler for 'TGA file'
+Adding duplicate image handler for 'XPM file'
+Adding duplicate image handler for 'WebP file'
+Adding duplicate image handler for 'PNG file'
+Adding duplicate image handler for 'JPEG file'
+Adding duplicate image handler for 'TIFF file'
+Adding duplicate image handler for 'GIF file'
+Adding duplicate image handler for 'PNM file'
+Adding duplicate image handler for 'PCX file'
+Adding duplicate image handler for 'IFF file'
+Adding duplicate image handler for 'Windows icon file'
+Adding duplicate image handler for 'Windows cursor file'
+Adding duplicate image handler for 'Windows animated cursor file'
+Adding duplicate image handler for 'TGA file'
+Adding duplicate image handler for 'XPM file'
+Adding duplicate image handler for 'WebP file'
+Adding duplicate image handler for 'PNG file'
+Adding duplicate image handler for 'JPEG file'
+Adding duplicate image handler for 'TIFF file'
+Adding duplicate image handler for 'GIF file'
+Adding duplicate image handler for 'PNM file'
+Adding duplicate image handler for 'PCX file'
+Adding duplicate image handler for 'IFF file'
+Adding duplicate image handler for 'Windows icon file'
+Adding duplicate image handler for 'Windows cursor file'
+Adding duplicate image handler for 'Windows animated cursor file'
+Adding duplicate image handler for 'TGA file'
+Adding duplicate image handler for 'XPM file'
+Adding duplicate image handler for 'WebP file'
+{
+  "Main": {
+    "before_sha256": "e7490d0fa4c39e6343f8472fefdf72fb9450fdccbf39011087e395d64b6e8ee7",
+    "after_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
+    "protected_copper": "Identical",
+    "outline": "Identical",
+    "moved_references": [
+      "J8",
+      "J6",
+      "J10",
+      "J3",
+      "J4",
+      "J2",
+      "TP1",
+      "TP10"
+    ],
+    "sensor_positions": "Preserved",
+    "other_component_positions": "Preserved"
+  },
+  "Wheel": {
+    "before_sha256": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
+    "after_sha256": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
+    "protected_copper": "Identical",
+    "outline": "Identical",
+    "moved_references": [
+      "D6",
+      "J9",
+      "J11"
+    ],
+    "sensor_positions": "Preserved",
+    "other_component_positions": "Preserved"
+  },
+  "Encoder": {
+    "before_sha256": "f890117d8e60156774ad8a08e3a761842c6e8784466b49a42b9d0e1c1b9dddd1",
+    "after_sha256": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337",
+    "protected_copper": "Identical",
+    "outline": "Identical",
+    "moved_references": [],
+    "sensor_positions": "Preserved",
+    "other_component_positions": "Preserved"
+  }
+}

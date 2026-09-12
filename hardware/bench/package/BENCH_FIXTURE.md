@@ -6,7 +6,8 @@ a drill template for the PCBs. No motherboard or daughterboard holes are added.
 
 ## Support and adjustment
 
-Use a 250 x 260 x 6 nonconductive base with a 10 mm accessory-hole grid, except
+Print the editable parts in `mechanical/bench/build_fixture.py` in PETG.
+Use four 125 × 130 × 6 mm base tiles to form a 250 × 260 mm base with a 10 mm accessory-hole grid, except
 within the optical slider window. Fit removable edge saddles to M3 slots in
 the base; saddle lips engage no more than 0.3 mm of the board underside.
 Support Main at the four clear tab-adjacent sites recorded in the panel
@@ -21,14 +22,12 @@ base. Keep at least 5 mm clear beneath non-optical components and permit
 removing the base or tilting the carrier for bottom-side probing. All board
 supports are removable: these coordinates do not freeze mouse-shell mounts.
 
-The straight header-to-header route in this arrangement is about 74 mm before
-insertion allowance. A 50 mm trial FFC does NOT fit this fixture. Reserve a
-nominal 150 mm same-side cable and an elevated nonconductive bridge above the
-rear Main components; minimum bend radius is determined by its selected
-manufacturer, not by this drawing. Longer-cable timing remains a new bench
-qualification item. Begin digital bring-up at reduced clock rates and measure
-at both ends before using the final SPI3 schedule. Do not change the approved
-J8.N to J9.(31-N) contact mapping to accommodate an unsuitable cable.
+Use a 150 mm 30-way AWG28 ribbon between the new J8/J9 solder arrays, with
+printed clamps attached to the fixture. Route the ribbon clear of components
+and leave slack at both ends. Follow the selected wire's bend limit; no FFC
+stiffener or exposed-contact tolerance applies. Begin digital bring-up at
+reduced clock rates and measure at both ends before accepting the final SPI3
+schedule. Preserve J8.N to J9.(31-N) mapping and every ground conductor.
 
 ## Optical slider
 
@@ -49,6 +48,9 @@ GB1806 variant. The supplier provides a [motor drawing](https://islandcloud.co/l
 but the motor-only stock and purchased variant are not yet verified. Therefore
 the bolt adapter is explicitly unfrozen; do not clamp the rotating bell.
 
+Use the 150 mm AWG28 soldered encoder harness (the former 50 mm target
+is not the bench cable). Start with its connector projected near base
+(150,60) mm and keep the routed cable span at most 120 mm before slack.
 Use an independently adjustable upright Encoder carrier, with axial slide,
 height adjustment and tip/tilt shims. Centre U27 on the shaft magnet and set
 the gap by the MA735 field indication and magnet specification. Mount the
@@ -56,14 +58,24 @@ encoder magnet mechanically before rotation; do not run an unsecured magnet.
 Keep this magnet and the motor away from Hall experiments until interference
 has been measured.
 
-Each Hall test uses a removable bridge and screw-driven magnet carriage over
-its existing sensor position. Add hard stops so neither magnet nor carrier can
-strike the 1.1 x 1.4 mm sensor. Mount experimental coils/flexures independently
-on the base and connect through J2/J3/J4. Document each coil resistance,
-magnet orientation and travel before powered pulses. Final paddles, bearings,
-middle-click travel and actuator gaps remain mechanical development work.
+Each Hall test uses a magnet fixed to a moving PETG lever, a passive return
+flexure and a separate physical stop. Keep the magnet secure; adjust supports
+and shims so neither magnet nor carrier can strike the existing Hall sensor.
+Precise magnet positioning is not a fabrication gate. Calibrate released and
+pressed sensor values per button using `docs/button-calibration.md`; the full
+stroke must remain monotonic and unclipped. Printed flexure fatigue, return
+force and stops require a sample test. Mount experimental coils independently
+on the base and connect through J2/J3/J4. Record coil resistance, magnet polarity
+and travel before powered pulses. Final paddles, bearings and in-mouse
+middle-click geometry remain outside this bench revision.
 
-**Open before hardware use:** cable qualification, actual motor adapter,
+**Open before hardware use:** wire fit and continuity, actual motor adapter,
 optical lens retention/sample fit, measured support clearances and material
 purchasing. This fixture drawing makes the test arrangement reviewable; it
 does not certify an unbuilt mechanism.
+
+See BENCH_ACCESS_REVIEW.md and the generated support/probe-clearance tables.
+Wheel TP34 is obstructed by C90; use accessible J11.1/J11.2 solder lands with
+clipped or held probes. Do not fit loop test points on USB or SPI. Solder wires,
+optical parts and designated USB anchor joints after reflow. Keep solder
+protrusion below 1.5 mm and at least 5 mm free below the lowest joint/component.

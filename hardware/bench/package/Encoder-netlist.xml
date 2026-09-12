@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\encoder\Encoder.kicad_sch</source>
-    <date>2026-09-12T01:24:13</date>
+    <date>2026-09-12T15:14:09</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">DRAFT - NOT FOR FABRICATION</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -64,29 +64,28 @@
       </units>
     </comp>
     <comp ref="J7">
-      <value>ENCODER_8P</value>
-      <footprint>Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eSH.pdf</datasheet>
+      <value>Soldered wires Signal_2x04</value>
+      <footprint>MagMouseModular:Wire_Signal_2x04_P2.54mm</footprint>
       <fields>
-        <field name="Manufacturer">JST</field>
-        <field name="MPN">SM08B-SRSS-TB(LF)(SN)</field>
-        <field name="LCSC">C160407</field>
-        <field name="JLCPCB Part #">C160407</field>
-        <field name="Sourcing Status">JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation</field>
+        <field name="Manufacturer"/>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
         <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C160407.html</field>
-        <field name="Footprint">Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eSH.pdf</field>
+        <field name="Supplier URL"/>
+        <field name="Footprint">MagMouseModular:Wire_Signal_2x04_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Manufacturer" value="JST"/>
-      <property name="MPN" value="SM08B-SRSS-TB(LF)(SN)"/>
-      <property name="LCSC" value="C160407"/>
-      <property name="JLCPCB Part #" value="C160407"/>
-      <property name="Sourcing Status" value="JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation"/>
+      <property name="Manufacturer" value=""/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C160407.html"/>
+      <property name="Supplier URL" value=""/>
       <property name="Sheetname" value="Encoder"/>
       <property name="Sheetfile" value="Encoder.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>

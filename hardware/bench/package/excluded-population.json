@@ -31,6 +31,21 @@
   },
   {
     "board": "Main",
+    "reference": "J2",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Main",
+    "reference": "J3",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Main",
+    "reference": "J4",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Main",
     "reference": "TP1",
     "reason": "Copper-only test pad or source DNP"
   },
@@ -166,6 +181,11 @@
   },
   {
     "board": "Main",
+    "reference": "J6",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Main",
     "reference": "U32",
     "reason": "IMU omitted in bench variant"
   },
@@ -200,6 +220,16 @@
     "reason": "Copper-only test pad or source DNP"
   },
   {
+    "board": "Main",
+    "reference": "J8",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Main",
+    "reference": "J10",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
     "board": "Wheel",
     "reference": "J5",
     "reason": "Copper-only test pad or source DNP"
@@ -223,5 +253,20 @@
     "board": "Wheel",
     "reference": "TP37",
     "reason": "Copper-only test pad or source DNP"
+  },
+  {
+    "board": "Wheel",
+    "reference": "J9",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Wheel",
+    "reference": "J11",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
+  },
+  {
+    "board": "Encoder",
+    "reference": "J7",
+    "reason": "Bare plated wire termination; hand solder wire, no connector part"
   }
 ]

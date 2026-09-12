@@ -1,3 +1,9 @@
+> Rev-A bench update: internal interfaces now use soldered through-hole arrays.
+> The active manufacturing-review package is `hardware/bench/`; its HARNESS_REVIEW.md
+> and generated wire maps supersede historical FFC/JST details below. Order scope
+> is five bare three-board panels, one component population and one stencil.
+> No final-shell or supplier/CAM acceptance is claimed.
+
 # Modular mouse planning package
 
 2026-09-11. **Main and wheel routed with zero unrouted connections. Mechanics remain provisional.**

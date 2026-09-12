@@ -874,48 +874,48 @@
         (font
           (size 1 1))
         (justify left)))
-    (property "Value" "WHEEL_SIGNAL_30P"
+    (property "Value" "Soldered wires Signal_2x15"
       (at 96.44 101.1 0)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "MPN" "FH12-30S-0.5SH(55)"
+    (property "MPN" ""
       (at 96.44 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "LCSC" "C506793"
+    (property "LCSC" ""
       (at 96.44 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "JLCPCB Part #" "C506793"
+    (property "JLCPCB Part #" ""
       (at 96.44 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Manufacturer" "Hirose"
+    (property "Manufacturer" ""
       (at 96.44 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal"
+    (property "Footprint" "MagMouseModular:Wire_Signal_2x15_P2.54mm"
       (at 96.44 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Datasheet" "https://www.hirose.com/product/p/CL0586-0525-1-55"
+    (property "Datasheet" ""
       (at 96.44 101.6 0)
       (hide yes)
       (effects
@@ -929,14 +929,14 @@
         (font
           (size 1 1))
         (justify left)))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/C506793"
+    (property "Supplier URL" ""
       (at 96.44 101.6 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; stock and assembly quote not reserved"
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
       (at 96.44 101.6 0)
       (hide yes)
       (effects
@@ -1442,48 +1442,48 @@
         (font
           (size 1 1))
         (justify left)))
-    (property "Value" "WHEEL_POWER_2P"
+    (property "Value" "Soldered wires Power_1x02"
       (at 203.12 55.38 0)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "MPN" "SM02B-PASS-TB(LF)(SN)"
+    (property "MPN" ""
       (at 203.12 55.88 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "LCSC" "C495198"
+    (property "LCSC" ""
       (at 203.12 55.88 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "JLCPCB Part #" "C495198"
+    (property "JLCPCB Part #" ""
       (at 203.12 55.88 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Manufacturer" "JST"
+    (property "Manufacturer" ""
       (at 203.12 55.88 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Footprint" "MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal"
+    (property "Footprint" "MagMouseModular:Wire_Power_1x02_P2.54mm"
       (at 203.12 55.88 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"
+    (property "Datasheet" ""
       (at 203.12 55.88 0)
       (hide yes)
       (effects
@@ -1497,14 +1497,14 @@
         (font
           (size 1 1))
         (justify left)))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/C495198"
+    (property "Supplier URL" ""
       (at 203.12 55.88 0)
       (hide yes)
       (effects
         (font
           (size 1 1))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; stock and assembly quote not reserved"
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
       (at 203.12 55.88 0)
       (hide yes)
       (effects

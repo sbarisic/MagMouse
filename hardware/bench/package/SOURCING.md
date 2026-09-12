@@ -1,3 +1,8 @@
+> Current Rev-A uses soldered wires. All internal FFC/JST sourcing and mating
+> requirements below are superseded historical observations. See HARNESS_REVIEW.md
+> and the current purchasing list; no connector purchases or follow-up enquiries
+> are required. Optical identity and other component evidence remain applicable.
+
 # One-set sourcing checkpoint
 
 **Purchasing constraint (2026-09-12): private-consumer suppliers only.** The
@@ -87,26 +92,12 @@ variant BOM; do not silently change the JLC baseline or its regression checks.
 
 ## Unresolved procurement and interface items
 
-Main L1 replacement candidate: **Bourns SRP4020CC-3R3M**. Mouser Croatia's
-live listing on 2026-09-12 showed 1,784 available, MOQ/multiple one, and
-EUR 0.671 each in cut tape, before tax/freight. Croatia service is explicitly
-supported; most orders above EUR 75 qualify for free shipping. This is country
-service confirmation, not a completed delivered cart or reserved stock.
-[Exact Croatia listing](https://hr.mouser.com/ProductDetail/Bourns/SRP4020CC-3R3M?qs=1Kr7Jg1SGW9l5g8vkQq9zA%3D%3D),
-[Croatia delivery policy](https://hr.mouser.com/).
-
-The shielded Bourns part retains 3.3 uH +/-20%, reduces maximum DCR from
-91 to 76 milliohms, and specifies typical 3.5 A heating / 4.0 A saturation
-currents under its stated test conditions. These support its electrical
-candidacy for U2 TPS62162's 3.3 V / 1 A supply. It is **not a drop-in purchase**:
-its recommended solder lands differ from L_Sunlord_SWPA4020S. The existing
-L1 pads measure 1.1 x 3.7 mm at 3.0 mm centre spacing; a local footprint,
-copper and stencil update plus repeated power/DRC/parity checks is required.
-No source-board or BOM substitution has been made. Converter heating and
-noise still need bench verification. The earlier Eaton stock figure is stale
-and is not used as current purchasing evidence.
-[Bourns specification](https://www.bourns.com/docs/product-datasheets/srp4020cc.pdf),
-[TI regulator guidance](https://www.ti.com/lit/ds/symlink/tps62160.pdf).
+Main L1 now uses **Bourns SRP4020CC-3R3M**, with the manufacturer land pattern
+and local copper update. See [L1_REVIEW.md](L1_REVIEW.md). The earlier Mouser
+Croatia observation on 2026-09-12 was EUR 0.671, MOQ one, 1,784 available;
+this is not reserved stock or a delivered cart. The purchasing list now uses
+this exact part and no longer carries the original Sunlord item for Main L1.
+Hardware regulator temperature, ripple and load steps still require testing.
 
 - The Wurth FFC still has stripped-length and width/pitch-span tolerance
   differences from the Hirose drawing. A Molex Type-A lead was investigated,

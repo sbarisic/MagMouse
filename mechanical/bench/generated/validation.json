@@ -1,0 +1,235 @@
+{
+  "parameters": {
+    "base_x": 250,
+    "base_y": 260,
+    "base_thickness": 6,
+    "tile_x": 125,
+    "tile_y": 130,
+    "m3_clearance": 3.4,
+    "board_thickness": 1.578,
+    "under_board_minimum": 5,
+    "magnet_diameter": 5,
+    "magnet_thickness": 2,
+    "magnet_fit_allowance": 0.3,
+    "lever_length": 35,
+    "flexure_thickness": 0.8,
+    "button_travel": 1.5,
+    "motor_bolt_circle": null,
+    "motor_hole_count": 4,
+    "lens_retention_width": null,
+    "board_under_height": 15
+  },
+  "parts": [
+    {
+      "name": "base_0_0",
+      "dimensions_mm": [
+        125.0,
+        130.0,
+        6.0
+      ],
+      "volume_mm3": 74106.95355528902,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "base_1_0",
+      "dimensions_mm": [
+        125.0,
+        130.0,
+        6.0
+      ],
+      "volume_mm3": 89655.56880769314,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "base_0_1",
+      "dimensions_mm": [
+        125.0,
+        130.0,
+        6.0
+      ],
+      "volume_mm3": 89601.09359107987,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "base_1_1",
+      "dimensions_mm": [
+        125.0,
+        130.0,
+        6.0
+      ],
+      "volume_mm3": 89655.56880769314,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "tile_joiner_x",
+      "dimensions_mm": [
+        50.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 2254.7327556980085,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "tile_joiner_y",
+      "dimensions_mm": [
+        50.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 2254.7327556980085,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "edge_saddle",
+      "dimensions_mm": [
+        10.3,
+        8.0,
+        6.0
+      ],
+      "volume_mm3": 427.024783386753,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "edge_cap",
+      "dimensions_mm": [
+        10.3,
+        8.0,
+        2.0
+      ],
+      "volume_mm3": 146.641594462251,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "ribbon_clamp_base",
+      "dimensions_mm": [
+        60.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 2807.3663778490045,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "ribbon_clamp_cap",
+      "dimensions_mm": [
+        60.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 2311.286377849005,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "encoder_clamp_base",
+      "dimensions_mm": [
+        32.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 1463.3663778490038,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "encoder_clamp_cap",
+      "dimensions_mm": [
+        32.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 1310.726377849004,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "pair_clamp_base",
+      "dimensions_mm": [
+        20.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 887.3663778490042,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "pair_clamp_cap",
+      "dimensions_mm": [
+        20.0,
+        12.0,
+        4.0
+      ],
+      "volume_mm3": 836.4863778490038,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "encoder_carrier",
+      "dimensions_mm": [
+        32.0,
+        24.0,
+        34.0
+      ],
+      "volume_mm3": 4490.889566773505,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "encoder_edge_clip",
+      "dimensions_mm": [
+        9.3,
+        8.0,
+        6.0
+      ],
+      "volume_mm3": 257.85718892450205,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "motor_plate",
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        5.0
+      ],
+      "volume_mm3": 16396.12926697634,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "button_lever",
+      "dimensions_mm": [
+        49.0,
+        18.0,
+        8.2
+      ],
+      "volume_mm3": 1808.9135310718705,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "button_stop",
+      "dimensions_mm": [
+        12.0,
+        16.0,
+        3.5
+      ],
+      "volume_mm3": 640.2227903089392,
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "status": "Valid printable candidates; actual support, magnet and motor fit pending",
+  "generator_sha256": "a0250cdad1e1a62f202833ee7740709b481205b244b76d31cfad2be605fbe5fe"
+}

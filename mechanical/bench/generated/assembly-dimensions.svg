@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/><g font-family="sans-serif" font-size="3" fill="#222">
+<text x="10" y="12" font-size="5">Rev-A PETG bench / assembly dimensions in mm</text>
+<text x="10" y="20">PCB/component envelopes are illustrative; measure parts before setting supports.</text>
+<rect x="12" y="35" width="125" height="130" fill="#eee" stroke="#555"/>
+<path d="M74.5 35V165 M12 100H137" stroke="#555"/>
+<text x="30" y="32">250 overall (shown at 1:2)</text>
+<text x="15" y="175">4 tiles: 125 × 130 × 6 each; grid 10; M3 holes Ø3.4</text>
+<rect x="155" y="128" width="125" height="6" fill="#bbb"/>
+<rect x="170" y="95" width="85" height="1.578" fill="#417648"/>
+<path d="M177 97V101 M215 97V101" stroke="#333"/>
+<text x="150" y="45">Height setup (side view, schematic)</text>
+<text x="150" y="57">Board underside: 15–35 above base top</text>
+<text x="150" y="66">Solder protrusion: less than 1.5</text>
+<text x="150" y="75">Lowest joint/component: ≥5 clear to base</text>
+<text x="150" y="84">Saddle lip: 0.3 engagement; never over parts</text>
+<text x="150" y="146">M3 rods, nuts and washers set saddle height.</text>
+<text x="150" y="156">Clamps load insulation, not solder joints.</text>
+<text x="150" y="166">Motor hole pattern / lens retention: measure first.</text>
+<path d="M12 190H112" stroke="black"/><text x="12" y="198">100 mm print calibration / print at 100%</text>
+<text x="145" y="198">Pending supplier/CAM approval; bench use only</text></g></svg>

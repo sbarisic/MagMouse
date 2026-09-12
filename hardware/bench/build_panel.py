@@ -6,6 +6,7 @@ nets. Manufacturing acceptance is deliberately separate from geometry checks.
 import argparse
 from collections import Counter
 import hashlib
+import os
 import json
 from pathlib import Path
 import sys
@@ -29,7 +30,13 @@ PANEL_SIZE = (151,139)
 
 def xy(x,y): return p.VECTOR2I(p.FromMM(x),p.FromMM(y))
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
-def save_json(path, data): path.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+def atomic_text(path,text):
+    temporary=path.with_name(path.name+'.writing')
+    temporary.write_text(text,encoding='utf-8')
+    os.replace(temporary,path)
+
+
+def save_json(path, data): atomic_text(path,json.dumps(data,indent=2)+'\n')
 def uid(item): return item.m_Uuid.AsString()
 UUID_REPLACEMENTS={}
 def stable_uuid(item, name): UUID_REPLACEMENTS[uid(item)]=str(uuid.uuid5(uuid.NAMESPACE_URL,'MagMouse/bench/'+name))
@@ -46,7 +53,9 @@ def normalize_uuids(path):
         geometric={'(footprint','(segment','(arc','(via','(zone','(gr_line','(gr_arc','(gr_text','(gr_rect','(gr_poly','(gr_circle'}
         fixed=[s for s in sections if s.split()[0] not in geometric]
         shapes=sorted(s for s in sections if s.split()[0] in geometric)
-        path.write_text('(kicad_pcb\n'+'\n'.join(fixed+shapes)+'\n)\n',encoding='utf-8')
+    temporary=path.with_suffix('.normalized.tmp')
+    temporary.write_text('(kicad_pcb\n'+'\n'.join(fixed+shapes)+'\n)\n',encoding='utf-8')
+    os.replace(temporary,path)
 def duplicate(item):
     raw=item.Duplicate(False) if isinstance(item,(p.ZONE,p.FOOTPRINT)) else item.Duplicate()
     return getattr(p,'Cast_to_'+item.GetClass())(raw)
@@ -152,7 +161,8 @@ def build():
     assert all(b.GetCopperLayerCount()==4 for b in boards.values())
     sections=[s for s in root_sections(SOURCES['Main'].read_text(encoding='utf-8'))
               if s.split()[0] in ('(version','(generator','(generator_version','(general','(paper','(layers','(setup')]
-    dest=HERE/'Panel.kicad_pcb';dest.write_text('(kicad_pcb\n'+'\n'.join(sections)+'\n)\n',encoding='utf-8')
+    dest=HERE/'Panel.kicad_pcb';temporary=dest.with_suffix('.initial.tmp')
+    temporary.write_text('(kicad_pcb\n'+'\n'.join(sections)+'\n)\n',encoding='utf-8');os.replace(temporary,dest)
     # Preserve source design minima in the derived manufacturing project.
     pro=HERE/'Panel.kicad_pro';pro.write_bytes(SOURCES['Main'].with_suffix('.kicad_pro').read_bytes())
     panel=p.LoadBoard(str(dest));manifest={};units=[];tabs=[];refs=[]

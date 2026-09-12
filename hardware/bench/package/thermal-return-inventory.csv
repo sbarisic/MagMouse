@@ -1,0 +1,14 @@
+Board,Reference,Ground_vias_within_3mm,Ground_pads,All_ground_pads_reach_In1,Acceptance
+Main,U2,4,4,True,Geometry inventory only; no junction temperature or current rating inferred
+Main,U6,5,2,True,Geometry inventory only; no junction temperature or current rating inferred
+Main,U12,2,1,True,Geometry inventory only; no junction temperature or current rating inferred
+Main,U4,5,2,True,Geometry inventory only; no junction temperature or current rating inferred
+Main,U5,4,2,True,Geometry inventory only; no junction temperature or current rating inferred
+Main,U13,1,1,True,Geometry inventory only; no junction temperature or current rating inferred
+Wheel,R123,0,0,N/A,Geometry inventory only; no junction temperature or current rating inferred
+Wheel,R121,0,0,N/A,Geometry inventory only; no junction temperature or current rating inferred
+Wheel,U21,12,7,True,Geometry inventory only; no junction temperature or current rating inferred
+Wheel,Q5,0,1,True,Geometry inventory only; no junction temperature or current rating inferred
+Wheel,R122,0,0,N/A,Geometry inventory only; no junction temperature or current rating inferred
+Wheel,R124,0,0,N/A,Geometry inventory only; no junction temperature or current rating inferred
+Encoder,U27,3,3,True,Geometry inventory only; no junction temperature or current rating inferred

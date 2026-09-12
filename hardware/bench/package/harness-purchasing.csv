@@ -1,0 +1,4 @@
+Description,Required_m,Suggested_purchase_m,Spare_m,Mapping,Supplier,Price_EUR,Shipping_EUR,Status
+"30-way stranded AWG28 ribbon, 1.27 mm conductor pitch",0.3,0.5,0.2,Main/J8-Wheel/J9 0.15 m; trim 8 conductors for Main/J6-Encoder/J7 0.15 m,Private-consumer source; exact wire product and price pending,,,No crimp housings or contacts; inspect strand fit/insulation and verify continuity
+"Stranded AWG22 insulated wire, two identifiable colours",0.3,1.0,0.7,Main/J10-Wheel/J11; two 0.15 m leads,Private-consumer source; exact wire product and price pending,,,No crimp housings or contacts; inspect strand fit/insulation and verify continuity
+"Stranded AWG24 insulated wire, marked paired leads",1.2,2.0,0.8,Main/J2/J3/J4; six 0.20 m leads,Private-consumer source; exact wire product and price pending,,,No crimp housings or contacts; inspect strand fit/insulation and verify continuity

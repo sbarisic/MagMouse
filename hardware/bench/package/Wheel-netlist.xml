@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\modular\wheel\Wheel.kicad_sch</source>
-    <date>2026-09-12T01:24:12</date>
+    <date>2026-09-12T15:14:09</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">MODULAR DRAFT - NOT FOR FABRICATION</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -3107,29 +3107,28 @@
       </units>
     </comp>
     <comp ref="J9">
-      <value>WHEEL_SIGNAL_30P</value>
-      <footprint>Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal</footprint>
-      <datasheet>https://www.hirose.com/product/p/CL0586-0525-1-55</datasheet>
+      <value>Soldered wires Signal_2x15</value>
+      <footprint>MagMouseModular:Wire_Signal_2x15_P2.54mm</footprint>
       <fields>
-        <field name="MPN">FH12-30S-0.5SH(55)</field>
-        <field name="LCSC">C506793</field>
-        <field name="JLCPCB Part #">C506793</field>
-        <field name="Manufacturer">Hirose</field>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Manufacturer"/>
         <field name="Checked">2026-09-10</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/C506793</field>
-        <field name="Sourcing Status">Catalog identity checked; stock and assembly quote not reserved</field>
-        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal</field>
-        <field name="Datasheet">https://www.hirose.com/product/p/CL0586-0525-1-55</field>
+        <field name="Supplier URL"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
+        <field name="Footprint">MagMouseModular:Wire_Signal_2x15_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x30" description="Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="FH12-30S-0.5SH(55)"/>
-      <property name="LCSC" value="C506793"/>
-      <property name="JLCPCB Part #" value="C506793"/>
-      <property name="Manufacturer" value="Hirose"/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Checked" value="2026-09-10"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/C506793"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock and assembly quote not reserved"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Sheetname" value="18_Wheel_Harness"/>
       <property name="Sheetfile" value="18_Wheel_Harness.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -3174,29 +3173,28 @@
       </units>
     </comp>
     <comp ref="J11">
-      <value>WHEEL_POWER_2P</value>
-      <footprint>MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</datasheet>
+      <value>Soldered wires Power_1x02</value>
+      <footprint>MagMouseModular:Wire_Power_1x02_P2.54mm</footprint>
       <fields>
-        <field name="MPN">SM02B-PASS-TB(LF)(SN)</field>
-        <field name="LCSC">C495198</field>
-        <field name="JLCPCB Part #">C495198</field>
-        <field name="Manufacturer">JST</field>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Manufacturer"/>
         <field name="Checked">2026-09-10</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/C495198</field>
-        <field name="Sourcing Status">Catalog identity checked; stock and assembly quote not reserved</field>
-        <field name="Footprint">MagMouseModular:JST_PA_SM02B-PASS_1x02_P2.00mm_Horizontal</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</field>
+        <field name="Supplier URL"/>
+        <field name="Sourcing Status">Hand-soldered wire termination; no connector fitted; do not fill these holes</field>
+        <field name="Footprint">MagMouseModular:Wire_Power_1x02_P2.54mm</field>
+        <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="SM02B-PASS-TB(LF)(SN)"/>
-      <property name="LCSC" value="C495198"/>
-      <property name="JLCPCB Part #" value="C495198"/>
-      <property name="Manufacturer" value="JST"/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Checked" value="2026-09-10"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/C495198"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock and assembly quote not reserved"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Sourcing Status" value="Hand-soldered wire termination; no connector fitted; do not fill these holes"/>
       <property name="Sheetname" value="18_Wheel_Harness"/>
       <property name="Sheetfile" value="18_Wheel_Harness.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>

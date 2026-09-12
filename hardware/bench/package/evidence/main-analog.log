@@ -292,5 +292,5 @@
   ],
   "actuator_monitor_cap_to_adc_mm": 3.351,
   "mechanical_scope": "Static copper review only. Hall/button positions remain provisional under MECHANICAL_INTERFACES.md.",
-  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
 }

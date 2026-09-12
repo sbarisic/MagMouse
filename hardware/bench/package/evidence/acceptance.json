@@ -9,14 +9,15 @@
     "main-routing",
     "main-usb",
     "main-power",
-    "main-controls"
+    "main-controls",
+    "wheel-routing"
   ],
   "source_sha256": {
-    "Main": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
-    "Wheel": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
-    "Encoder": "f890117d8e60156774ad8a08e3a761842c6e8784466b49a42b9d0e1c1b9dddd1"
+    "Main": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
+    "Wheel": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
+    "Encoder": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337"
   },
-  "panel_sha256": "750b759e8e756b03552c022ffa5819fc0dbf9515f1ae25ec63b37c09a0d3a3d8",
+  "panel_sha256": "1f3f8121f979f9fd2a3187496b33da98dff684c1de76fb7d7f12d6e04e67f070",
   "manufacturing_ready": false,
   "limits": "Geometric/electrical CAD screening only. Open supplier, bench mechanical, assembly and CAM gates remain in README."
 }

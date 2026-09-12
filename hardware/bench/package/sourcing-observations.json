@@ -149,6 +149,17 @@
       "status": "BLOCKED: checkout on 2026-09-12 offers neither Croatia nor any EU country; catalogue price excluded. No qualified forwarding service; SROM unconfirmed.",
       "catalogue_price_jpy": 3190,
       "delivery_available_croatia": false
+    },
+    "SRP4020CC-3R3M": {
+      "supplier": "Mouser",
+      "url": "https://hr.mouser.com/ProductDetail/Bourns/SRP4020CC-3R3M",
+      "stock_observed": 1784,
+      "moq": 1,
+      "multiple": 1,
+      "currency": "EUR",
+      "unit_price": 0.671,
+      "checked_on": "2026-09-12",
+      "status": "Recorded catalogue observation; Main L1 footprint and electrical substitution implemented. Stock not reserved; tax/freight not quoted."
     }
   },
   "external_items": [
@@ -161,24 +172,24 @@
       "status": "Page simultaneously shows sold out and add-to-cart; variant stock/delivery unconfirmed, not included in verified subtotal"
     },
     {
-      "item": "30-pin 0.5 mm Type-A FFC",
+      "item": "30-way AWG28 ribbon, 150 mm",
       "quantity": 1,
-      "status": "Hirose mating tolerances not closed; current Wurth 687630050002 remains trial only"
+      "status": "Direct soldered; exact product and EUR price pending"
     },
     {
-      "item": "JST PA power harness",
+      "item": "AWG22 power pair, 150 mm",
       "quantity": 1,
-      "status": "Use PAP-02V-S housings and compatible SPHD contacts; wire/current/length and purchasable harness pending"
+      "status": "No housings/contacts; product and EUR price pending"
     },
     {
-      "item": "JST SH encoder harness",
+      "item": "8-way AWG28 harness, 150 mm",
       "quantity": 1,
-      "status": "Two SHR-08V-S-B housings, sixteen SSH-003T-P0.2-H contacts; 50 mm target; precrimp lead sourcing pending"
+      "status": "Trimmed ribbon, all eight wires retained; EUR price pending"
     },
     {
-      "item": "Three button-coil harnesses",
+      "item": "Three AWG24 coil pairs, 200 mm",
       "quantity": 3,
-      "status": "JST PH mating housings/contacts and wire required; source separately from PCB headers"
+      "status": "Direct soldered; product and EUR price pending"
     },
     {
       "item": "Encoder magnet",

@@ -3,13 +3,13 @@
   "nets": {
     "ACT_5V": {
       "pads": 20,
-      "track_mm": 244.249,
-      "vias": 19
+      "track_mm": 200.698,
+      "vias": 17
     },
     "ACT_DRIVE_EN": {
       "pads": 11,
-      "track_mm": 99.417,
-      "vias": 14
+      "track_mm": 120.578,
+      "vias": 15
     },
     "ACT_DVDT": {
       "pads": 3,
@@ -88,7 +88,7 @@
     },
     "BTN_L_COIL_P": {
       "pads": 2,
-      "track_mm": 7.764,
+      "track_mm": 9.671,
       "vias": 2
     },
     "BTN_L_IN1": {
@@ -113,22 +113,22 @@
     },
     "BTN_M_COIL_N": {
       "pads": 2,
-      "track_mm": 4.541,
+      "track_mm": 6.448,
       "vias": 2
     },
     "BTN_M_COIL_P": {
       "pads": 2,
-      "track_mm": 2.864,
+      "track_mm": 4.978,
       "vias": 2
     },
     "BTN_M_IN1": {
       "pads": 3,
-      "track_mm": 54.488,
+      "track_mm": 55.534,
       "vias": 3
     },
     "BTN_M_IN2": {
       "pads": 3,
-      "track_mm": 44.415,
+      "track_mm": 44.764,
       "vias": 2
     },
     "BTN_R_CMD1": {
@@ -143,12 +143,12 @@
     },
     "BTN_R_COIL_N": {
       "pads": 2,
-      "track_mm": 7.341,
+      "track_mm": 9.248,
       "vias": 2
     },
     "BTN_R_COIL_P": {
       "pads": 2,
-      "track_mm": 7.306,
+      "track_mm": 9.419,
       "vias": 2
     },
     "BTN_R_IN1": {
@@ -163,8 +163,8 @@
     },
     "CC_OUT1": {
       "pads": 4,
-      "track_mm": 127.187,
-      "vias": 9
+      "track_mm": 174.813,
+      "vias": 11
     },
     "CC_OUT2": {
       "pads": 4,
@@ -183,8 +183,8 @@
     },
     "DRV_FAULT_LOCAL_N": {
       "pads": 3,
-      "track_mm": 22.018,
-      "vias": 5
+      "track_mm": 46.4,
+      "vias": 9
     },
     "DRV_FAULT_N": {
       "pads": 3,
@@ -193,12 +193,12 @@
     },
     "HALL_EN": {
       "pads": 9,
-      "track_mm": 209.212,
+      "track_mm": 211.895,
       "vias": 17
     },
     "MCU_EN": {
       "pads": 9,
-      "track_mm": 176.746,
+      "track_mm": 179.406,
       "vias": 13
     },
     "SENS_REQ": {
@@ -253,8 +253,8 @@
     },
     "WHEEL_RUN_REQ": {
       "pads": 4,
-      "track_mm": 53.238,
-      "vias": 5
+      "track_mm": 94.779,
+      "vias": 9
     }
   },
   "checked_ground_pads": 134,
@@ -282,12 +282,12 @@
     },
     {
       "path": "U13.6 -> J10.1",
-      "screening_milliohms": 26.347,
+      "screening_milliohms": 49.866,
       "budget_milliohms": 50
     },
     {
       "path": "U4.6 -> J2.1",
-      "screening_milliohms": 13.466,
+      "screening_milliohms": 13.552,
       "budget_milliohms": 25
     },
     {
@@ -297,29 +297,29 @@
     },
     {
       "path": "U5.6 -> J3.1",
-      "screening_milliohms": 7.501,
+      "screening_milliohms": 7.587,
       "budget_milliohms": 25
     },
     {
       "path": "U5.8 -> J3.2",
-      "screening_milliohms": 9.989,
+      "screening_milliohms": 10.075,
       "budget_milliohms": 25
     },
     {
       "path": "U6.6 -> J4.1",
-      "screening_milliohms": 12.908,
+      "screening_milliohms": 13.941,
       "budget_milliohms": 25
     },
     {
       "path": "U6.8 -> J4.2",
-      "screening_milliohms": 13.398,
+      "screening_milliohms": 13.484,
       "budget_milliohms": 25
     }
   ],
   "power_transition_vias": {
     "C40.1": 3,
-    "J10.1": 3,
-    "J10.2": 3
+    "J10.1": 0,
+    "J10.2": 0
   },
   "button_ground_spreading": {
     "U4": {
@@ -329,13 +329,13 @@
     },
     "U5": {
       "local_front_connected_vias": 4,
-      "F.Cu_filled_mm2": 25.276,
+      "F.Cu_filled_mm2": 26.456,
       "B.Cu_filled_mm2": 46.256
     },
     "U6": {
       "local_front_connected_vias": 4,
-      "F.Cu_filled_mm2": 43.296,
-      "B.Cu_filled_mm2": 45.556
+      "F.Cu_filled_mm2": 36.165,
+      "B.Cu_filled_mm2": 29.632
     }
   },
   "native_unconnected": 0,
@@ -345,5 +345,5 @@
     "Hall and button mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
 }

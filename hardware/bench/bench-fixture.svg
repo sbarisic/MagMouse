@@ -9,8 +9,11 @@
 <rect x="135" y="20" width="100" height="100" fill="#e2eaff" stroke="#245"/>
 <text x="140" y="34" font-size="3.5">Motor + upright Encoder</text>
 <text x="140" y="42" font-size="3">Slotted adjustable carrier</text>
-<path d="M88,95 L88,164" stroke="#8052a0" stroke-width="4"/>
-<text x="100" y="148" font-size="3">FFC: elevated bridge, length to qualify</text>
+<circle cx="150" cy="60" r="2" fill="none" stroke="#8052a0"/>
+<text x="155" y="61" font-size="2.5">Encoder wire termination</text>
+<text x="140" y="69" font-size="2.5">150 mm AWG28 wires / max 120 mm route + slack</text>
+<path d="M98.5,83.5 L96,164" stroke="#8052a0" stroke-width="4"/>
+<text x="100" y="148" font-size="3">150 mm AWG28 ribbon / fixture clamps</text>
 <text x="12" y="242" font-size="3.5">1:1 at 100% print / PCB mounting holes NOT required</text>
 <path d="M15,250 h50" stroke="black" stroke-width=".3"/>
 <text x="20" y="255" font-size="3">50 mm calibration</text>

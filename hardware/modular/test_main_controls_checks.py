@@ -35,15 +35,14 @@ class MainControls(unittest.TestCase):
     def test_wheel_feed_neckdown(self):
         board = p.LoadBoard(str(BOARD))
         for t in board.GetTracks():
-            if not isinstance(t, p.PCB_VIA) and t.GetNetname() == 'ACT_5V' and t.GetLayer() == p.B_Cu and p.ToMM(t.GetWidth()) > 1.9:
+            if not isinstance(t, p.PCB_VIA) and t.GetNetname() == 'ACT_5V' and t.GetLayer() == p.In2_Cu and 41<p.ToMM(t.GetPosition().y)<45:
                 t.SetWidth(p.FromMM(.15))
         self.assertTrue(any('J10.1: exceeds copper resistance' in e for e in verify(board)['errors']))
 
-    def test_insufficient_header_power_vias(self):
+    def test_insufficient_power_wire_barrel(self):
         board = p.LoadBoard(str(BOARD))
-        for t in board.GetTracks():
-            if isinstance(t, p.PCB_VIA) and t.GetNetname() == 'ACT_5V' and p.ToMM(t.GetPosition().y) > 93:
-                t.SetDrill(p.FromMM(.2))
+        pad=next(q for f in board.GetFootprints() if f.GetReference()=='J10' for q in f.Pads() if q.GetNumber()=='1')
+        pad.SetDrillSize(p.VECTOR2I(p.FromMM(.8),p.FromMM(.8)))
         self.assertTrue(any('J10.1: fewer than three' in e for e in verify(board)['errors']))
 
     def test_lost_button_ground_spreader(self):

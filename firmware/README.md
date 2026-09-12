@@ -6,6 +6,10 @@ timing feasibility work. The revision 0.4 [GPIO/peripheral allocation](../docs/i
 is checked against the schematic; runtime deadlines remain unproven.
 Do not interpret this directory as runnable firmware.
 
+The small-batch [button calibration contract](../docs/button-calibration.md)
+uses secured magnets with measured released/pressed endpoints and hysteresis.
+Precision matching of button magnets is not a Rev-A fabrication prerequisite.
+
 ## Planned responsibilities
 
 | Subsystem | Responsibility |

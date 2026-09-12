@@ -63,12 +63,12 @@ def review(board_path,netlist_path,drc_path):
         f=fps[ref];q=f.GetPosition();return [round(p.ToMM(q.x),5),round(p.ToMM(q.y),5),f.GetOrientationDegrees()]
     check(position('J1')==[40,4,180],'USB datum changed')
     check(position('U35')==[40.5,72.5,-90],'Optical datum changed')
-    check(position('J8')==[63,70,0],'Main FFC position/orientation changed; review cable contract')
-    check(position('J10')==[72,91,0],'Main power-harness position changed; review cable clearance')
+    check(position('J8')==[73.5,63.5,-90],'Main solder-array position/orientation changed; review wire access')
+    check(position('J10')==[71,42,180],'Main power-wire position changed; review cable clearance')
     hall_spans={ref:round(math.dist(position(ref)[:2],position('U10')[:2]),3) for ref in ['U7','U8','U9']}
     check(max(hall_spans.values())<40,'ADC1 is more than 40 mm from a provisional Hall sensor')
     names={z.GetZoneName() for z in board.Zones() if z.GetIsRuleArea()}
-    for name in ['PMW3360 APERTURE RESERVE - SAMPLE FIT PENDING','WHEEL MECHANICS PROVISIONAL','J8 FFC EXIT - BEND HEIGHT UNVERIFIED']:
+    for name in ['PMW3360 APERTURE RESERVE - SAMPLE FIT PENDING','WHEEL MECHANICS PROVISIONAL','J8 SOLDERED WIRE ACCESS - CLAMP ON FIXTURE']:
         check(name in names,'Missing mechanical reservation: '+name)
     drc=json.loads(drc_path.read_text())
     check(not drc['violations'],'Physical DRC has unresolved violations')

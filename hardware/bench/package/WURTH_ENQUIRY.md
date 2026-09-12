@@ -1,3 +1,6 @@
+> SUPERSEDED for soldered-wire Rev-A. Historical enquiry record only; no reply
+> or additional message is required for this revision. Do not send a follow-up.
+
 # FFC compatibility enquiry
 
 Submitted with the user's authorization through Würth's

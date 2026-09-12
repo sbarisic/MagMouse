@@ -1,6 +1,6 @@
 # MagMouse Rev-A bench prototype
 
-**QUOTE AND REVIEW ONLY. Do not order from this directory yet.**
+**Rev-A bench prototype — pending supplier/CAM approval. Do not order yet.**
 
 Purchasing is limited to private-consumer suppliers; the user has no business.
 CODICO business-only offers are excluded. Distinguish EU-stock items from
@@ -13,6 +13,15 @@ from the bench purchasing and paste variant; its schematic and footprint remain.
 
 ## Review files
 
+- `MANUFACTURING_REVIEW.md`: completed local manufacturing review and JLC handoff.
+- `package/CAM-review-attachments.zip`: consolidated, hashed CAM review attachments.
+- `L1_REVIEW.md`: implemented Bourns replacement and local buck review.
+- `HARNESS_REVIEW.md`: soldered-wire pin maps, lengths and pending optical identity.
+- `STENCIL_REVIEW.md`: package dispositions and remaining process limits.
+- `BENCH_ACCESS_REVIEW.md`: probe access, support and local copper findings.
+- `supplier-drafts/`: unsent Ploopy/JLC CAM drafts and the superseded Würth follow-up;
+  exported CAM draft identifies the actual ZIP hashes.
+
 - `Panel.kicad_pro` / `Panel.kicad_pcb`: derived 151 x 139 mm, three-design panel.
 - `panel-mechanical.svg`: printable outline and component-boundary review.
 - `panel-manifest.json`: source hashes, board/reference mapping and translations.
@@ -23,6 +32,10 @@ from the bench purchasing and paste variant; its schematic and footprint remain.
 - `package/all-vias.csv`: via-only fill/cap inventory. Never fill component holes,
   tooling holes or perforation holes.
 - `BENCH_FIXTURE.md`, `bench-fixture.svg`: adjustable bench arrangement; no shell claim.
+- `mechanical/bench/`: editable build123d, STEP/STL parts and dimensioned fixture views.
+- `package/button-calibration.md`: fixed magnet endpoint calibration; runnable firmware is separate.
+- `package/harness-pin-map.csv`: all 46 wires, component-side and mirrored solder-side views.
+- `population-contract.json`: 282 retained parts, nine replaced connectors and U32 exclusion.
 - `ASSEMBLY_AND_BRINGUP.md`: preparation, practice assembly and staged hardware tests.
 - `SOURCING.md`, `WURTH_ENQUIRY.md`: supplier evidence and unresolved interfaces.
 - `ORDER_READINESS.md`: remaining PCB work for a testable bench revision.
@@ -50,9 +63,9 @@ crosses a tab. The panel uses 2 mm separation clearance, ten 5 mm tabs with
 five 0.6 mm perforations each, 0.9 mm pitch and 0.3 mm webs. Cut while supported
 and **before population**. Do not bend populated boards to depanel them.
 
-Stencil quote: one 220 x 200 mm unframed stainless sheet, 0.10 mm thick,
-three identifiable TOP aperture groups. Preserve each board's paste geometry
-1:1, including existing exposed-pad windows. JLC's multi-board option requires
+Selected Rev-A stencil: one 220 x 200 mm unframed stainless sheet, 0.10 mm thick,
+three identifiable TOP aperture groups. Apply `paste_variant.py` for the
+reviewed Hall/WSON/ADC apertures; copper and coordinates remain 1:1. JLC's multi-board option requires
 permission to rearrange groups: approve the final CAM group positions before
 building the alignment jig. A reordered stencil requires a regenerated jig.
 
@@ -73,21 +86,23 @@ timestamps; the package hashes identify each exported snapshot. Copper/pad/via
 and saved ground-fill transforms are checked against the individual source
 boards. Source modification requires rebuilding and rerunning checks.
 
-## Gates still open
+## Manufacturing and assembly items still open
 
-Start with the L1 replacement and interface checks in ORDER_READINESS.md.
+The L1 replacement and soldered-wire migration are implemented; see ORDER_READINESS.md.
 Ploopy is the user's selected optical supplier; exact lens/part confirmation
-remains open. Final ergonomic shell development is not a bench-order gate.
+remains open. Wire/fixture fit, optical mounting and final ergonomic shell
+development are assembly/mechanical tasks, not bench bare-board ordering gates.
 
-1. Supplier-confirmed FFC dimensions and delivered price. The authorized Würth
-   enquiry was submitted successfully; a reply is pending.
+1. Exact wire product, insulation/strand fit, continuity and strain-relief checks.
+   The FFC enquiry requirement is superseded; no follow-up is sent.
 2. Complete delivered parts/harness/mechanism/consumables pricing. Catalogue
    stock is not a reserved order; missing lines are not zero-cost parts.
 3. Received lens/motor dimensions and practical bench fixture fit. Final shell,
    paddle geometry, optical retention and ergonomic wheel support remain open.
-4. Package-by-package paste-volume/profile review, stencil CAM confirmation,
-   practice reflow and inspection of hidden joints. Aperture ratio screening
-   alone does not close this gate.
+4. The 0.10 mm stencil design is selected; see STENCIL_REVIEW.md for accepted
+   aperture geometry and volume tradeoffs. CAM confirms manufacturability.
+   Paste/profile setup, practice reflow and hidden-joint inspection are assembly
+   tasks, not bare-board ordering gates.
 5. Fabricator acceptance of tab support, routability, minimum vias and selective
    fill/cap instructions. Zero native DRC is not manufacturing approval.
 6. Complete delivered project total. The identical-stack separate-board

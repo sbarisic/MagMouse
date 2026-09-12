@@ -10,6 +10,9 @@ import itertools
 import json
 from pathlib import Path
 import xml.etree.ElementTree as ET
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'bench'))
+from wire_interfaces import INTERFACES,footprint_name
 from local_power_checks import review as review_local_power
 
 HERE = Path(__file__).resolve().parent
@@ -35,7 +38,9 @@ def verify(baseline,main_path,wheel_path):
     additions={"main":{"J8","J10","R141","R142","R143"},
                "wheel":{"J9","J11","R137","R138","R139","R140","R144","R145","C90","D6","R146"}}
     expected_edits={"R84":("10k","0603WAF1002T5E","C25804"),
-                    "R88":("4.7k","0603WAF4701T5E","C23162")}
+                    "R88":("4.7k","0603WAF4701T5E","C23162"),
+                    # Bench L1 qualification: hardware/bench/L1_REVIEW.md.
+                    "L1":("SRP4020CC-3R3M","SRP4020CC-3R3M","")}
     checks=0
     for board,(comps,pins) in boards.items():
         check(set(comps)==set(ownership[board])|additions[board],f"{board}: component inventory mismatch")
@@ -51,17 +56,21 @@ def verify(baseline,main_path,wheel_path):
             before={f.get("name"):f.text or "" for f in old[ref].findall("./fields/field")}
             after={f.get("name"):f.text or "" for f in comps[ref].findall("./fields/field")}
             edit=expected_edits.get(ref)
+            wire_kind=INTERFACES[board.title()].get(ref)
             for field in ("MPN","LCSC","Footprint"):
                 expected=(edit[1] if field=="MPN" else edit[2]) if edit and field!="Footprint" else before.get(field,"")
+                if ref=='L1' and field=='Footprint':expected='MagMouseModular:L_Bourns_SRP4020CC'
+                if wire_kind:expected='MagMouseModular:'+footprint_name(wire_kind) if field=='Footprint' else ''
                 check(after.get(field,"")==expected,f"{ref}: unexpected {field} change")
-            check(comps[ref].findtext("value")== (edit[0] if edit else old[ref].findtext("value")),f"{ref}: unexpected value change")
+            value='Soldered wires '+wire_kind if wire_kind else edit[0] if edit else old[ref].findtext("value")
+            check(comps[ref].findtext("value")==value,f"{ref}: unexpected value change")
     def net(board,ref,pin):return boards[board][1].get((ref,str(pin)))
     def resistor(board,ref,a,b):
         check({net(board,ref,1),net(board,ref,2)}=={a,b},f"{board} {ref}: bias ends wrong")
     for pin in range(1,31):
         expected=plan["signal_harness"]["non_ground_pins"].get(str(pin),"GND")
         wheel_pin=plan["signal_harness"]["wheel_pin_for_main_pin"][str(pin)]
-        check(wheel_pin==31-pin,"Cable mapping differs from facing bottom-contact header geometry")
+        check(wheel_pin==31-pin,"Wire mapping differs from J8.N to J9.(31-N)")
         check(net("main","J8",pin)==expected and net("wheel","J9",wheel_pin)==expected,f"Signal cable pin {pin} -> {wheel_pin}")
     for pin,expected in plan["power_harness"]["pins"].items():
         check(net("main","J10",pin)==expected and net("wheel","J11",pin)==expected,f"Power cable pin {pin}")
@@ -132,13 +141,13 @@ def verify(baseline,main_path,wheel_path):
     # U13's nominal limit is shared by the actuator branch. It is not a
     # guaranteed maximum, or a dedicated wheel-feed protective limit.
     nominal_limit=3334*(1/resistance("main","R42")+1/resistance("main","R43"))
-    ffc_rating=plan["signal_harness"]["candidate_cable"]["catalog_current_per_conductor_A_at_25C"]
+    wire_rating=plan["signal_harness"]["candidate_cable"]["catalog_current_per_conductor_A_at_25C"]
     return_fault={"candidate_cable":plan["signal_harness"]["candidate_cable"]["mpn"],
                   "nominal_U13_branch_limit_A":nominal_limit,
                   "ideal_equal_sharing_15_contacts_A":nominal_limit/15,
                   "single_remaining_ground_contact_A_before_protection":nominal_limit,
-                  "candidate_conductor_rating_A_at_25C":ffc_rating,
-                  "single_contact_screen_exceeds_rating":nominal_limit>ffc_rating,
+                  "candidate_conductor_rating_A_at_25C":wire_rating,
+                  "single_contact_screen_exceeds_rating":None if wire_rating is None else nominal_limit>wire_rating,
                   "accepted":False,
                   "required_for_prototype":disconnect_required,
                   "review_status":"Open" if disconnect_required else "Outside prototype scope by user decision; not validated",
@@ -159,7 +168,7 @@ def verify(baseline,main_path,wheel_path):
             "assumptions":"16ns ADC plus 6ns forward and 6ns return buffer at datasheet loads; actual load, input delay and setup/hold unqualified",
             "status":"20 MHz target unaccepted; validate sampling phase and loaded cable"}
     open_gates=["Fully connected harness current sharing, voltage drop and conductor/connector heating",
-                "FFC supplier construction, pin orientation and mechanical retention",
+                "Soldered-wire product, numbered continuity, ground conductors and fixture strain relief",
                 "Connected-system power-ramp/output-clamp measurement; SN74LVC125A has no guaranteed Ioff",
                 "SPI3/ADC2 timing including ESP32 input delay and cable loading",
                 "Wheel-local effective capacitance/ESR, inrush and braking transient qualification",

@@ -37,6 +37,11 @@ def main():
         (OUT/(name+'.log')).write_text(result.stdout+result.stderr,encoding='utf-8')
         assert result.returncode==0,(name,result.stdout,result.stderr)
         checks.append(name)
+    wheel=subprocess.run([sys.executable,str(ROOT/'hardware/modular/verify_wheel_routing.py'),
+        '--board',str(SOURCES['Wheel']),'--output',str(OUT/'wheel-routing.json')],capture_output=True,text=True)
+    (OUT/'wheel-routing.log').write_text(wheel.stdout+wheel.stderr,encoding='utf-8')
+    assert wheel.returncode==0,('wheel-routing',wheel.stdout,wheel.stderr)
+    checks.append('wheel-routing')
     assert initial=={n:sha(path) for n,path in SOURCES.items()},'Sources changed during verification'
     save_json(OUT/'acceptance.json',dict(cad_checks='PASS',checks=checks,source_sha256=initial,
         panel_sha256=sha(HERE/'Panel.kicad_pcb'),manufacturing_ready=False,

@@ -7,10 +7,10 @@
   "uncovered_reference_area_sum_mm2": 0.0,
   "uncovered_segment_uuids": [],
   "copper_lengths_mm": {
-    "USB_DM": 156.534975,
-    "MCU_USB_DP": 1.978553,
+    "USB_DP": 157.423399,
     "MCU_USB_DM": 2.309924,
-    "USB_DP": 157.423399
+    "MCU_USB_DP": 1.978553,
+    "USB_DM": 156.534975
   },
   "contact_path_lengths_mm": {
     "A": {
@@ -36,5 +36,5 @@
   "native_unconnected_connections": 0,
   "errors": [],
   "selected_stackup": "JLC041611-2116, 1 oz outer/inner",
-  "board_sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad"
+  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
 }

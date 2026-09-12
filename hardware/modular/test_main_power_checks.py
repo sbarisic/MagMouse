@@ -8,6 +8,12 @@ BOARD = Path(__file__).resolve().parent / 'main/Main.kicad_pcb'
 
 
 class MainPower(unittest.TestCase):
+    def test_wrong_inductor_land_pattern(self):
+        board = p.LoadBoard(str(BOARD))
+        pad = next(q for f in board.GetFootprints() if f.GetReference() == 'L1' for q in f.Pads())
+        pad.SetSize(p.VECTOR2I(p.FromMM(1.1),p.FromMM(3.7)))
+        self.assertTrue(any('L1 recommended land' in e for e in verify(board)['errors']))
+
     def test_saved_routing(self):
         self.assertEqual([], verify(p.LoadBoard(str(BOARD)))['errors'])
         self.assertEqual([], verify_stackup(BOARD.read_text(encoding='utf-8')))

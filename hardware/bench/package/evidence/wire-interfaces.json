@@ -1,0 +1,12 @@
+{
+  "terminations": 9,
+  "plated_wire_holes": 86,
+  "conductors": 46,
+  "ribbon_ground_conductors": 15,
+  "encoder_ground_conductors": 3,
+  "source_sha256": {
+    "Main": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
+    "Wheel": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
+    "Encoder": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337"
+  }
+}

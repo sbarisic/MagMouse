@@ -1,6 +1,34 @@
 # Development roadmap
 
-## New mechanical and modular-board direction
+## Current Rev-A bench checklist
+
+Five bare three-board panels, one component population and one stencil.
+U32 remains unpopulated; all other core functions and the four-layer stack remain.
+Current status is [pending supplier/CAM approval](../hardware/bench/ORDER_READINESS.md).
+
+- [x] Replace internal connectors with soldered-wire arrays; retain all grounds
+  and the original electrical mappings. All three boards have zero unrouted,
+  physical DRC and schematic-parity findings.
+- [x] Rerun strict power/interlock/analog/USB/signal-return checks and modular,
+  panel/stencil and fixture regressions.
+- [x] Provide 19 printable PETG part designs, editable build123d, STEP/STL and
+  assembly drawings; no new PCB mounting holes or Hall moves.
+- [x] Document fixed-magnet button calibration, passive return, stops, soldered
+  wiring, continuity checks and current-limited staged bring-up.
+- [x] Regenerate the panel, Gerbers/drills, selective-fill inventory, stencil,
+  placement/pin views, purchasing lists and unsent CAM attachments.
+- [ ] Confirm Ploopy optical identity, received lens/motor dimensions and physical fit.
+- [ ] Close unresolved paste/reflow evidence and obtain actual CAM acceptance.
+- [ ] Complete consumer wire/material selection and delivered EUR pricing;
+  current cost observations are historical, not purchase authorization.
+- [ ] Practice reflow, assemble one set and validate electrical/thermal behaviour.
+- [ ] Implement runnable bring-up firmware and persistent per-button calibration.
+
+Final shell, paddles and in-mouse wheel mechanics are later work. The records
+below include superseded monolithic/PCBA milestones and are not the current
+ordering checklist.
+
+## Earlier mechanical and modular-board direction
 
 The user confirmed a shaped PCB envelope of 125 mm length, 80 mm maximum
 width and approximately 44 mm at the narrow end; the shell will be larger.

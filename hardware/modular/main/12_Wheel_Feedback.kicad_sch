@@ -1245,55 +1245,55 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "ENCODER_8P"
+    (property "Value" "Soldered wires Signal_2x04"
       (at 278.32 82.28 0)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal"
+    (property "Footprint" "MagMouseModular:Wire_Signal_2x04_P2.54mm"
       (at 274.32 81.28 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+    (property "Datasheet" ""
       (at 274.32 81.28 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "JST"
+    (property "Manufacturer" ""
       (at 274.32 81.28 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "SM08B-SRSS-TB(LF)(SN)"
+    (property "MPN" ""
       (at 274.32 81.28 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C160407"
+    (property "LCSC" ""
       (at 274.32 81.28 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C160407"
+    (property "JLCPCB Part #" ""
       (at 274.32 81.28 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB SMT listing checked 2026-09-09; order stock and harness fit need confirmation"
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
       (at 274.32 81.28 0)
       (hide yes)
       (effects
@@ -1307,7 +1307,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C160407.html"
+    (property "Supplier URL" ""
       (at 274.32 81.28 0)
       (hide yes)
       (effects

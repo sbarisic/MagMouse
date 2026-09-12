@@ -1,16 +1,16 @@
 {
   "status": "PARTIAL PUBLIC LISTINGS, NOT A DELIVERED CART",
   "population_sets": 1,
-  "priced_mpn_lines": 65,
-  "mpn_lines": 67,
+  "priced_mpn_lines": 62,
+  "mpn_lines": 63,
   "supplier_currency_subtotals": {
-    "LCSC / USD": 52.3845,
-    "DigiKey / USD": 37.88,
-    "Mouser / USD": 3.91
+    "LCSC / USD": 48.3084,
+    "DigiKey / USD": 32.6,
+    "Mouser / USD": 3.91,
+    "Mouser / EUR": 0.671
   },
   "unpriced_mpn_lines": [
-    "PMW3360DM-T2QU",
-    "SWPA4020S3R3MT"
+    "PMW3360DM-T2QU"
   ],
   "external_items": [
     {
@@ -22,24 +22,24 @@
       "status": "Page simultaneously shows sold out and add-to-cart; variant stock/delivery unconfirmed, not included in verified subtotal"
     },
     {
-      "item": "30-pin 0.5 mm Type-A FFC",
+      "item": "30-way AWG28 ribbon, 150 mm",
       "quantity": 1,
-      "status": "Hirose mating tolerances not closed; current Wurth 687630050002 remains trial only"
+      "status": "Direct soldered; exact product and EUR price pending"
     },
     {
-      "item": "JST PA power harness",
+      "item": "AWG22 power pair, 150 mm",
       "quantity": 1,
-      "status": "Use PAP-02V-S housings and compatible SPHD contacts; wire/current/length and purchasable harness pending"
+      "status": "No housings/contacts; product and EUR price pending"
     },
     {
-      "item": "JST SH encoder harness",
+      "item": "8-way AWG28 harness, 150 mm",
       "quantity": 1,
-      "status": "Two SHR-08V-S-B housings, sixteen SSH-003T-P0.2-H contacts; 50 mm target; precrimp lead sourcing pending"
+      "status": "Trimmed ribbon, all eight wires retained; EUR price pending"
     },
     {
-      "item": "Three button-coil harnesses",
+      "item": "Three AWG24 coil pairs, 200 mm",
       "quantity": 3,
-      "status": "JST PH mating housings/contacts and wire required; source separately from PCB headers"
+      "status": "Direct soldered; product and EUR price pending"
     },
     {
       "item": "Encoder magnet",

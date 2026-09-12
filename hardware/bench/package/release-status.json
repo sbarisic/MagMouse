@@ -1,43 +1,43 @@
 {
   "ready_for_order": false,
-  "label": "Rev-A bench prototype - QUOTE ONLY",
+  "label": "Rev-A bench prototype - pending supplier/CAM approval",
   "source_boards": {
     "Main": {
       "source": "hardware\\modular\\main\\Main.kicad_pcb",
-      "sha256": "46e27e519aec089aa4a75ee38826c4a85a4b6bfae748e1478282a758d757b0ad",
+      "sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
       "translation_mm": [
         7,
         7
       ],
       "rotation_degrees": 0,
       "footprints": 246,
-      "tracks_and_vias": 13510,
+      "tracks_and_vias": 15313,
       "zones": 13,
       "net_prefix": "Main/"
     },
     "Wheel": {
       "source": "hardware\\modular\\wheel\\Wheel.kicad_pcb",
-      "sha256": "658b59797cd56dd0818f7bdaf3b91de7eb5c68fde502ef7f4c8039b472758305",
+      "sha256": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
       "translation_mm": [
         89,
         7
       ],
       "rotation_degrees": 0,
       "footprints": 87,
-      "tracks_and_vias": 4766,
+      "tracks_and_vias": 5175,
       "zones": 3,
       "net_prefix": "Wheel/"
     },
     "Encoder": {
       "source": "hardware\\encoder\\Encoder.kicad_pcb",
-      "sha256": "f890117d8e60156774ad8a08e3a761842c6e8784466b49a42b9d0e1c1b9dddd1",
+      "sha256": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337",
       "translation_mm": [
         42,
         30
       ],
       "rotation_degrees": 0,
       "footprints": 3,
-      "tracks_and_vias": 47,
+      "tracks_and_vias": 83,
       "zones": 4,
       "net_prefix": "Encoder/"
     }

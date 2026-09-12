@@ -1,40 +1,49 @@
 # Bench panel review evidence
 
-Review snapshot: 2026-09-11, KiCad 10.0.6. This is not manufacturing release.
+Review snapshot: 2026-09-12, KiCad 10.0.6. **Pending supplier/CAM approval.**
 
-- Native DRC: Main, Wheel, Encoder and derived Panel each have zero physical
-  violations and zero unconnected items. All three individual boards also
-  have zero schematic-parity issues.
-- Main strict analog, strict routing, USB/reference/ESD, power and control
-  checks passed. `package/evidence/acceptance.json` records source hashes.
-- The modular regression suite passed 59 tests. The panel suite passed five
-  tests, including deliberately modified source hashes, copper, net mapping
-  and tab positions. Logs are in `package/evidence/`.
-- Two native panel builds were byte-identical. Panel hash:
-  `750b759e8e756b03552c022ffa5819fc0dbf9515f1ae25ec63b37c09a0d3a3d8`.
-- Export validation checked 1,196 source pads, 18,323 track/via objects and
-  119,734 saved ground-fill vertices under the coordinate transforms. The
-  three boards retain separate net namespaces. No functional tab copper.
-- The via-only inventory contains 1,088 entries. Component, NPTH, tooling
-  and tab perforation holes are excluded from the fill instructions.
-- The one-population variant has 291 populated references and 290 SMT
-  references. Main U32 paste is excluded; optical sensor fitting is separate.
-  The combined stencil contains 1,084 apertures. Rectangle area/perimeter
-  screening at 0.10 mm passed; this is not a paste-volume qualification.
+Main L1 now uses the reviewed Bourns pattern and local routing described in
+L1_REVIEW.md. Main/Wheel/Encoder now have soldered-wire arrays with local routing repairs. The derived panel
+has been rebuilt from the individual boards.
 
-Rendered panel F.Cu and In1.Cu views were visually inspected at overview
-scale. Copper remains inside the respective board shapes and their original
-optical/mechanical/antenna exclusions remain visible. The three reference
-planes are separate. The automated source-fill equality checks provide the
-more precise evidence that panelization did not change the unit ground
-geometry. Overview images do not establish local signal integrity.
+`package/evidence/acceptance.json` records exact source/panel hashes and native
+DRC/connectivity/parity plus strict Main analog, routing, USB/ESD, power,
+interlocks and Wheel electrical checks. The modular and bench regression logs
+include negative checks for wrong L1 lands and underprinted Hall paste.
+Read the generated records for current results, not a historical count.
 
-The mechanical panel view, stencil view and 1:1 support-jig drawing were
-also inspected. They show separate Main/Wheel/Encoder groups, a 100 mm
-print scale bar and removable support positions. Final JLC CAM group
-positions must be used for the actual jig if the stencil groups are moved.
+`package/panel-validation.json` checks transformed source pads, track/via
+objects, saved fill vertices, independent net namespaces and tab clearance.
+`all-vias.csv` contains only vias; component, mechanical and tab holes are
+excluded from filling. The exact stack and USB geometry are unchanged.
 
-Still open: manufacturer-specific paste release/windowing/profile review,
-fabricator approval of perforated tabs and selective via filling, cable
-qualification and physical bench fit. Hardware testing is required for USB,
-analog noise, motor/brake behavior and electrical/thermal acceptance.
+The population contract retains 282 component references (281 SMT plus the
+hand-fitted optical sensor), excludes nine connector purchases and retains all
+86 bare wire lands. U32 remains the only omitted functional IC. `detail-review.json` and paste tables record actual polygon screening,
+thermal-land coverage and source hashes. Unit paste is compared against every
+translated panel aperture during export. U32 and optical paste remain absent.
+Manufacturer geometry is separate from transfer efficiency and reflow approval.
+
+Close-scale copper review covers the changed buck, button/ADC area, wheel/brake
+and optical area; full copper/paste/panel views and connector pin views accompany
+the package. Support-strip and probe-envelope screens are recorded separately.
+The C90/TP34 obstruction has a documented accessible connector alternative.
+
+Visual inspection covered the panel/slot overview, saved In1 plane, full stencil,
+adjustable fixture, buck/button/ADC/wheel/optical copper and local paste overlays
+for U2, U7, U10, U12, J8, U21 and U27. The overlays show red deposits on grey
+copper. Overlapping constituent RPW pad shapes merge in the Gerber; aperture
+records count source pad objects, not necessarily distinct laser-cut openings.
+Wire migration also changes termination copper, removes connector paste and
+adds local return stitching. Read current source hashes and regenerated images.
+
+Open findings are in ORDER_READINESS.md and STENCIL_REVIEW.md. No saved check
+establishes USB operation, ADC noise, motor/brake performance, thermal limits,
+assembly yield, actual fixture fit or external CAM approval.
+
+The Main wheel-power termination moved to (71,42) mm to keep its feed short.
+The resistance screen is below the unchanged 50 mΩ ceiling. Its 1.1 mm plated
+wire hole replaces the former SMT pad plus three 0.3 mm transition vias; barrel
+circumference is greater at the same plating thickness. Copper resistance is
+not a hardware ampacity or temperature qualification. All limits remain in
+the electrical checkers. USB width/gap and Hall/optical coordinates are retained.
