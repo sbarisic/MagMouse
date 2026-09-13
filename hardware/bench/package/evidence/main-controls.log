@@ -3,27 +3,27 @@
   "nets": {
     "ACT_5V": {
       "pads": 20,
-      "track_mm": 200.698,
+      "track_mm": 360.46,
       "vias": 17
     },
     "ACT_DRIVE_EN": {
       "pads": 11,
-      "track_mm": 120.578,
+      "track_mm": 136.239,
       "vias": 15
     },
     "ACT_DVDT": {
       "pads": 3,
-      "track_mm": 1.299,
+      "track_mm": 2.681,
       "vias": 0
     },
     "ACT_FAULT_N": {
       "pads": 3,
-      "track_mm": 4.387,
+      "track_mm": 5.799,
       "vias": 0
     },
     "ACT_HEARTBEAT": {
       "pads": 3,
-      "track_mm": 49.186,
+      "track_mm": 56.423,
       "vias": 8
     },
     "ACT_ILM": {
@@ -33,22 +33,22 @@
     },
     "ACT_OVLO": {
       "pads": 3,
-      "track_mm": 23.605,
+      "track_mm": 27.726,
       "vias": 3
     },
     "ACT_PERMIT": {
       "pads": 2,
-      "track_mm": 35.834,
+      "track_mm": 46.175,
       "vias": 2
     },
     "ACT_REQ": {
       "pads": 3,
-      "track_mm": 29.683,
+      "track_mm": 39.466,
       "vias": 7
     },
     "ACT_UVLO": {
       "pads": 5,
-      "track_mm": 21.256,
+      "track_mm": 23.651,
       "vias": 3
     },
     "ACT_UV_1": {
@@ -68,112 +68,112 @@
     },
     "ARM_VALID": {
       "pads": 3,
-      "track_mm": 61.762,
+      "track_mm": 65.836,
       "vias": 4
     },
     "BTN_L_CMD1": {
       "pads": 3,
-      "track_mm": 40.11,
+      "track_mm": 45.774,
       "vias": 4
     },
     "BTN_L_CMD2": {
       "pads": 3,
-      "track_mm": 40.425,
+      "track_mm": 41.738,
       "vias": 3
     },
     "BTN_L_COIL_N": {
       "pads": 2,
-      "track_mm": 7.807,
+      "track_mm": 8.931,
       "vias": 0
     },
     "BTN_L_COIL_P": {
       "pads": 2,
-      "track_mm": 9.671,
+      "track_mm": 13.229,
       "vias": 2
     },
     "BTN_L_IN1": {
       "pads": 3,
-      "track_mm": 52.175,
+      "track_mm": 56.31,
       "vias": 2
     },
     "BTN_L_IN2": {
       "pads": 3,
-      "track_mm": 59.827,
+      "track_mm": 61.939,
       "vias": 3
     },
     "BTN_M_CMD1": {
       "pads": 3,
-      "track_mm": 31.028,
+      "track_mm": 35.92,
       "vias": 2
     },
     "BTN_M_CMD2": {
       "pads": 3,
-      "track_mm": 44.609,
+      "track_mm": 45.748,
       "vias": 7
     },
     "BTN_M_COIL_N": {
       "pads": 2,
-      "track_mm": 6.448,
+      "track_mm": 10.654,
       "vias": 2
     },
     "BTN_M_COIL_P": {
       "pads": 2,
-      "track_mm": 4.978,
+      "track_mm": 10.085,
       "vias": 2
     },
     "BTN_M_IN1": {
       "pads": 3,
-      "track_mm": 55.534,
+      "track_mm": 58.769,
       "vias": 3
     },
     "BTN_M_IN2": {
       "pads": 3,
-      "track_mm": 44.764,
+      "track_mm": 46.25,
       "vias": 2
     },
     "BTN_R_CMD1": {
       "pads": 3,
-      "track_mm": 25.277,
+      "track_mm": 27.652,
       "vias": 3
     },
     "BTN_R_CMD2": {
       "pads": 3,
-      "track_mm": 22.875,
+      "track_mm": 23.474,
       "vias": 2
     },
     "BTN_R_COIL_N": {
       "pads": 2,
-      "track_mm": 9.248,
+      "track_mm": 11.017,
       "vias": 2
     },
     "BTN_R_COIL_P": {
       "pads": 2,
-      "track_mm": 9.419,
+      "track_mm": 13.1,
       "vias": 2
     },
     "BTN_R_IN1": {
       "pads": 3,
-      "track_mm": 52.135,
+      "track_mm": 67.899,
       "vias": 4
     },
     "BTN_R_IN2": {
       "pads": 3,
-      "track_mm": 52.348,
+      "track_mm": 73.323,
       "vias": 4
     },
     "CC_OUT1": {
       "pads": 4,
-      "track_mm": 174.813,
+      "track_mm": 185.289,
       "vias": 11
     },
     "CC_OUT2": {
       "pads": 4,
-      "track_mm": 113.952,
+      "track_mm": 130.787,
       "vias": 10
     },
     "CC_OUT2_INV": {
       "pads": 2,
-      "track_mm": 44.426,
+      "track_mm": 47.82,
       "vias": 2
     },
     "CC_VBUS_DET": {
@@ -183,47 +183,47 @@
     },
     "DRV_FAULT_LOCAL_N": {
       "pads": 3,
-      "track_mm": 46.4,
+      "track_mm": 48.704,
       "vias": 9
     },
     "DRV_FAULT_N": {
       "pads": 3,
-      "track_mm": 64.462,
+      "track_mm": 73.744,
       "vias": 10
     },
     "HALL_EN": {
       "pads": 9,
-      "track_mm": 211.895,
+      "track_mm": 241.709,
       "vias": 17
     },
     "MCU_EN": {
       "pads": 9,
-      "track_mm": 179.406,
+      "track_mm": 198.044,
       "vias": 13
     },
     "SENS_REQ": {
       "pads": 3,
-      "track_mm": 40.628,
+      "track_mm": 44.753,
       "vias": 3
     },
     "SOURCE_3A": {
       "pads": 3,
-      "track_mm": 56.042,
+      "track_mm": 65.772,
       "vias": 4
     },
     "SOURCE_OK": {
       "pads": 5,
-      "track_mm": 66.687,
+      "track_mm": 78.52,
       "vias": 9
     },
     "USB_CC1": {
       "pads": 3,
-      "track_mm": 19.521,
+      "track_mm": 21.87,
       "vias": 0
     },
     "USB_CC2": {
       "pads": 3,
-      "track_mm": 23.854,
+      "track_mm": 26.146,
       "vias": 2
     },
     "USB_FAULT_N": {
@@ -233,27 +233,27 @@
     },
     "VBUS_GATE": {
       "pads": 4,
-      "track_mm": 10.571,
+      "track_mm": 11.652,
       "vias": 0
     },
     "VBUS_PRESENT_N": {
       "pads": 3,
-      "track_mm": 62.443,
+      "track_mm": 75.483,
       "vias": 3
     },
     "WD_CEXT": {
       "pads": 2,
-      "track_mm": 2.0,
+      "track_mm": 2.141,
       "vias": 0
     },
     "WD_RCEXT": {
       "pads": 3,
-      "track_mm": 10.56,
+      "track_mm": 10.933,
       "vias": 0
     },
     "WHEEL_RUN_REQ": {
       "pads": 4,
-      "track_mm": 94.779,
+      "track_mm": 107.121,
       "vias": 9
     }
   },
@@ -262,32 +262,32 @@
   "power_paths": [
     {
       "path": "U12.6 -> U13.5",
-      "screening_milliohms": 35.434,
+      "screening_milliohms": 35.534,
       "budget_milliohms": 50
     },
     {
       "path": "U13.6 -> U4.5",
-      "screening_milliohms": 66.499,
+      "screening_milliohms": 64.876,
       "budget_milliohms": 85
     },
     {
       "path": "U13.6 -> U5.5",
-      "screening_milliohms": 60.596,
+      "screening_milliohms": 58.973,
       "budget_milliohms": 85
     },
     {
       "path": "U13.6 -> U6.5",
-      "screening_milliohms": 46.794,
+      "screening_milliohms": 37.856,
       "budget_milliohms": 85
     },
     {
       "path": "U13.6 -> J10.1",
-      "screening_milliohms": 49.866,
+      "screening_milliohms": 40.927,
       "budget_milliohms": 50
     },
     {
       "path": "U4.6 -> J2.1",
-      "screening_milliohms": 13.552,
+      "screening_milliohms": 15.484,
       "budget_milliohms": 25
     },
     {
@@ -297,12 +297,12 @@
     },
     {
       "path": "U5.6 -> J3.1",
-      "screening_milliohms": 7.587,
+      "screening_milliohms": 8.795,
       "budget_milliohms": 25
     },
     {
       "path": "U5.8 -> J3.2",
-      "screening_milliohms": 10.075,
+      "screening_milliohms": 11.974,
       "budget_milliohms": 25
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "path": "U6.8 -> J4.2",
-      "screening_milliohms": 13.484,
+      "screening_milliohms": 14.198,
       "budget_milliohms": 25
     }
   ],
@@ -324,18 +324,18 @@
   "button_ground_spreading": {
     "U4": {
       "local_front_connected_vias": 4,
-      "F.Cu_filled_mm2": 38.172,
-      "B.Cu_filled_mm2": 36.175
+      "F.Cu_filled_mm2": 38.072,
+      "B.Cu_filled_mm2": 36.209
     },
     "U5": {
       "local_front_connected_vias": 4,
-      "F.Cu_filled_mm2": 26.456,
-      "B.Cu_filled_mm2": 46.256
+      "F.Cu_filled_mm2": 26.382,
+      "B.Cu_filled_mm2": 46.259
     },
     "U6": {
       "local_front_connected_vias": 4,
-      "F.Cu_filled_mm2": 36.165,
-      "B.Cu_filled_mm2": 29.632
+      "F.Cu_filled_mm2": 36.223,
+      "B.Cu_filled_mm2": 29.672
     }
   },
   "native_unconnected": 0,
@@ -345,5 +345,5 @@
     "Hall and button mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
+  "board_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
 }

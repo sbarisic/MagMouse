@@ -1,6 +1,7 @@
 """Prepare the bare-board CAM handoff without submitting an order."""
 from collections import Counter
 import csv
+import io
 import json
 import math
 import re
@@ -129,8 +130,9 @@ def generate(out):
     verify_open_drills(holes,out/'gerbers')
     result['open_component_npth_and_slot_excellon_check']='PASS'
     result['source_sha256']=acceptance['source_sha256'];result['panel_sha256']=acceptance['panel_sha256']
-    with (out/'do-not-fill-holes.csv').open('w',encoding='utf-8',newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=list(holes[0]));writer.writeheader();writer.writerows(holes)
+    data=io.StringIO(newline='')
+    writer=csv.DictWriter(data,fieldnames=list(holes[0]));writer.writeheader();writer.writerows(holes)
+    atomic_text(out/'do-not-fill-holes.csv',data.getvalue())
     save_json(out/'manufacturing-review.json',result);save_json(out/'order-settings.json',ORDER)
     svg=['<svg xmlns="http://www.w3.org/2000/svg" width="190mm" height="165mm" viewBox="-5 -12 190 165">',
          '<rect x="-5" y="-12" width="190" height="165" fill="white"/>',
@@ -170,8 +172,15 @@ def bundle(out):
         'panel-mechanical.svg','panel-manifest.json','via-treatment.svg',
         'all-vias.csv','do-not-fill-holes.csv','STENCIL_REVIEW.md','stencil-review.json',
         'stencil-support-jig.svg','stencil/stencil.svg','paste-shape-measurements.csv',
-        'paste-land-coverage.csv','supplier-drafts/JLC_CAM_REVIEW.md']
+        'paste-land-coverage.csv','supplier-drafts/JLC_CAM_REVIEW.md',
+        'TRACE_CLEANUP.md','trace-cleanup.json','COPPER_JOIN_REVIEW.md','copper-join-repairs.json',
+        'ROUTER_REVIEW.md','evidence/router-gerber.json','evidence/gerber-joins.json','evidence/contact-inventory.json','evidence/acceptance.json']
     hashes={name:sha(out/name) for name in names}
     with zipfile.ZipFile(out/'CAM-review-attachments.zip','w',zipfile.ZIP_DEFLATED) as z:
         for name in names:z.write(out/name,name)
         z.writestr('attachment-sha256.json',json.dumps(hashes,indent=2)+'\n')
+
+
+if __name__=="__main__":
+    import sys
+    generate(Path(sys.argv[1]))

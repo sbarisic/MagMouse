@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "Main": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
+    "Wheel": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01",
+    "Encoder": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170"
+  },
+  "width_tolerance_mm": 0.002,
+  "layers": [
+    {
+      "layer": "F_Cu",
+      "gerber_sha256": "b6036eb82b62baef5ed2f9c84e255a4737d39be40a4c0d73df00c274a91086a2",
+      "verified_joins": 793,
+      "whole_board": [
+        {
+          "board": "Main",
+          "source_elements": 5806,
+          "contacts": 12054,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Wheel",
+          "source_elements": 2092,
+          "contacts": 4880,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Encoder",
+          "source_elements": 90,
+          "contacts": 90,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "layer": "In1_Cu",
+      "gerber_sha256": "36ffd1f74e053f11cd13d3b9f1e0fee902b91448976678191bd4835c705937da",
+      "verified_joins": 0,
+      "whole_board": [
+        {
+          "board": "Main",
+          "source_elements": 977,
+          "contacts": 0,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Wheel",
+          "source_elements": 222,
+          "contacts": 0,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Encoder",
+          "source_elements": 24,
+          "contacts": 1,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "layer": "In2_Cu",
+      "gerber_sha256": "8f72b73fcb9b8e8f827b5147ae1dc1cf2e21333321c97dfe3e769d04a4a6c5a1",
+      "verified_joins": 659,
+      "whole_board": [
+        {
+          "board": "Main",
+          "source_elements": 3657,
+          "contacts": 4948,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Wheel",
+          "source_elements": 385,
+          "contacts": 305,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Encoder",
+          "source_elements": 24,
+          "contacts": 1,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "layer": "B_Cu",
+      "gerber_sha256": "ed2d0dfdf6ee12da7f41f547ff6a5f9ab803725b9b03748d5de95267eb976f26",
+      "verified_joins": 1005,
+      "whole_board": [
+        {
+          "board": "Main",
+          "source_elements": 3988,
+          "contacts": 24488,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Wheel",
+          "source_elements": 527,
+          "contacts": 653,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        },
+        {
+          "board": "Encoder",
+          "source_elements": 27,
+          "contacts": 6,
+          "missing_mm2": 0.0,
+          "extra_mm2": 0.0
+        }
+      ]
+    }
+  ]
+}

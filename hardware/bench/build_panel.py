@@ -35,6 +35,21 @@ def atomic_text(path,text):
     temporary.write_text(text,encoding='utf-8')
     os.replace(temporary,path)
 
+def publish_panel_file(temporary, path):
+    """Publish derived panel bytes when a Windows reader denies rename.
+
+    Some viewers allow rewriting their open file but deny replacing its name.
+    Only the derived Panel uses this fallback; unit source boards never do.
+    """
+    try:
+        os.replace(temporary,path)
+    except PermissionError:
+        data=temporary.read_bytes()
+        path.write_bytes(data)
+        assert path.read_bytes()==data, 'Derived panel write did not verify'
+        try:temporary.unlink()
+        except PermissionError:pass
+
 
 def save_json(path, data): atomic_text(path,json.dumps(data,indent=2)+'\n')
 def uid(item): return item.m_Uuid.AsString()
@@ -44,18 +59,21 @@ def normalize_uuids(path):
     import re
     text=path.read_text(encoding='utf-8')
     text=re.sub(r'\(uuid "([^"]+)"\)',lambda m:'(uuid "'+UUID_REPLACEMENTS.get(m[1],m[1])+'")',text)
-    path.write_text(text,encoding='utf-8')
+    staging=ROOT/'build'/'panel-staging';staging.mkdir(parents=True,exist_ok=True)
+    input_path=staging/(str(uuid.uuid4())+'.kicad_pcb')
+    output_path=staging/(str(uuid.uuid4())+'.kicad_pcb')
+    input_path.write_text(text,encoding='utf-8')
     # KiCad orders items by UUID on save. Normalize first, then reload/save so
     # random creation order cannot change otherwise identical generated files.
-    normalized=p.LoadBoard(str(path));p.SaveBoard(str(path),normalized)
+    normalized=p.LoadBoard(str(input_path));p.SaveBoard(str(output_path),normalized)
     if path.name=='Panel.kicad_pcb':
-        sections=list(root_sections(path.read_text(encoding='utf-8')))
+        sections=list(root_sections(output_path.read_text(encoding='utf-8')))
         geometric={'(footprint','(segment','(arc','(via','(zone','(gr_line','(gr_arc','(gr_text','(gr_rect','(gr_poly','(gr_circle'}
         fixed=[s for s in sections if s.split()[0] not in geometric]
         shapes=sorted(s for s in sections if s.split()[0] in geometric)
-    temporary=path.with_suffix('.normalized.tmp')
+    temporary=staging/(str(uuid.uuid4())+'.normalized.tmp')
     temporary.write_text('(kicad_pcb\n'+'\n'.join(fixed+shapes)+'\n)\n',encoding='utf-8')
-    os.replace(temporary,path)
+    publish_panel_file(temporary,path)
 def duplicate(item):
     raw=item.Duplicate(False) if isinstance(item,(p.ZONE,p.FOOTPRINT)) else item.Duplicate()
     return getattr(p,'Cast_to_'+item.GetClass())(raw)
@@ -112,6 +130,7 @@ def migrate_encoder():
 
 
 def add_segment(b,a,c,layer=p.Edge_Cuts):
+    if xy(*a)==xy(*c):return
     s=p.PCB_SHAPE(b);s.SetShape(p.SHAPE_T_SEGMENT);s.SetStart(xy(*a));s.SetEnd(xy(*c));s.SetWidth(p.FromMM(.05));s.SetLayer(layer)
     stable_uuid(s,f'segment-{layer}-{a}-{c}');b.Add(s)
 
@@ -153,6 +172,20 @@ def tab_candidates(board, poly):
             result.append(dict(center=[x,y],normal=[nx,ny],polygon=corners,holes=holes))
     return result
 
+def frame_material(units):
+    return box(0,0,*PANEL_SIZE).difference(unary_union([u.buffer(2,join_style='round',quad_segs=128) for u in units])).buffer(-1,quad_segs=128).buffer(1,quad_segs=128)
+
+def verify_tab_bridge(tab, unit, frame):
+    """Require the entire 5 mm tab width to enter both substrates by 0.08 mm."""
+    x,y=tab['center'];nx,ny=tab['normal'];tx,ty=-ny,nx
+    def strip(a,b):
+        return Polygon([(x+tx*u+nx*v,y+ty*u+ny*v) for u,v in [(-2.5,a),(2.5,a),(2.5,b),(-2.5,b)]])
+    tab_poly=Polygon(tab['polygon'])
+    assert tab_poly.buffer(1e-7).covers(strip(-.09,2.09)), 'Tab is not a full-width bridge'
+    assert unit.buffer(1e-7).covers(strip(-.09,-.01)), 'Tab does not enter intended board across full width'
+    assert frame.buffer(1e-7).covers(strip(2.01,2.09)), 'Tab does not enter frame across full width'
+    return dict(board_overlap_depth_mm=.08,frame_overlap_depth_mm=.08,bridge_width_mm=5)
+
 
 def build():
     HERE.mkdir(exist_ok=True)
@@ -161,11 +194,14 @@ def build():
     assert all(b.GetCopperLayerCount()==4 for b in boards.values())
     sections=[s for s in root_sections(SOURCES['Main'].read_text(encoding='utf-8'))
               if s.split()[0] in ('(version','(generator','(generator_version','(general','(paper','(layers','(setup')]
-    dest=HERE/'Panel.kicad_pcb';temporary=dest.with_suffix('.initial.tmp')
-    temporary.write_text('(kicad_pcb\n'+'\n'.join(sections)+'\n)\n',encoding='utf-8');os.replace(temporary,dest)
+    dest=HERE/'Panel.kicad_pcb'
+    staging=ROOT/'build'/'panel-staging';staging.mkdir(parents=True,exist_ok=True)
+    temporary=staging/(str(uuid.uuid4())+'.kicad_pcb')
+    temporary.write_text('(kicad_pcb\n'+'\n'.join(sections)+'\n)\n',encoding='utf-8')
     # Preserve source design minima in the derived manufacturing project.
-    pro=HERE/'Panel.kicad_pro';pro.write_bytes(SOURCES['Main'].with_suffix('.kicad_pro').read_bytes())
-    panel=p.LoadBoard(str(dest));manifest={};units=[];tabs=[];refs=[]
+    pro=HERE/'Panel.kicad_pro';pro_data=SOURCES['Main'].with_suffix('.kicad_pro').read_bytes()
+    if not pro.exists() or pro.read_bytes()!=pro_data:atomic_text(pro,pro_data.decode('utf-8'))
+    panel=p.LoadBoard(str(temporary));manifest={};units=[];tabs=[];refs=[]
     from shapely.affinity import translate
     for name,b in boards.items():
         ox,oy=OFFSETS[name];offset=xy(ox,oy);poly=outline(b);placed=translate(poly,ox,oy);units.append(placed)
@@ -195,11 +231,13 @@ def build():
         # Spread tabs over available edges. The main's front and two straight
         # side edges are preferred; rectangular modules use opposed edges.
         candidates=tab_candidates(b,poly);chosen=[]
-        targets={'Main':[(24,0),(56,0),(0,75),(80,85)],'Wheel':[(12,0),(43,0),(12,60),(43,60)],'Encoder':[(50,54),(64,54)]}[name]
+        targets={'Main':[(24,0),(57,0),(0,75),(80,68)],'Wheel':[(9,0),(55,12),(13,60),(43,60)],'Encoder':[(53,50),(64,53)]}[name]
         for target in targets:
             usable=[c for c in candidates if all(Point(c['center']).distance(Point(t['center']))>=8 for t in chosen)]
             if not usable:raise ValueError(name+': insufficient clear tab sites')
-            best=min(usable,key=lambda c:Point(c['center']).distance(Point(target)));chosen.append(best)
+            best=min(usable,key=lambda c:Point(c['center']).distance(Point(target)))
+            assert Point(best['center']).distance(Point(target))<1e-6,(name,'Reviewed tab site unavailable',target)
+            chosen.append(best)
         for i,t in enumerate(chosen):
             t['board']=name;t['index']=i+1
             t['polygon']=[(x+ox,y+oy) for x,y in t['polygon']];t['holes']=[(x+ox,y+oy) for x,y in t['holes']]
@@ -207,27 +245,43 @@ def build():
         manifest[name]=dict(source=str(SOURCES[name].relative_to(ROOT)),sha256=hashes[name],
             translation_mm=[ox,oy],rotation_degrees=0,footprints=len(list(b.GetFootprints())),
             tracks_and_vias=len(list(b.GetTracks())),zones=len(list(b.Zones())),net_prefix=name+'/')
-    outer=box(0,0,*PANEL_SIZE)
-    waste=outer.difference(unary_union([u.buffer(2,join_style='round') for u in units]))
-    # Remove unsupported sharp waste tips between curved and rectangular units.
-    waste=waste.buffer(-1).buffer(1)
+    waste=frame_material(units)
+    for tab in tabs:
+        verify_tab_bridge(tab,units[list(boards).index(tab['board'])],waste)
     material=unary_union([waste,*units,*[Polygon(t['polygon']) for t in tabs]])
     assert material.geom_type=='Polygon' and material.is_valid,'Panel is not one connected valid substrate'
+    from router_geometry import make_routable,verify_outer,CONTOUR_SIMPLIFICATION
+    for unit in units:verify_outer(Polygon(unit.exterior))
+    material,router=make_routable(material)
+    # Snap overlay vertices to KiCad's nanometre grid and remove duplicate
+    # vertices before constructing Edge.Cuts. Do not emit zero-length edges.
+    from shapely import set_precision
+    material=set_precision(material.simplify(CONTOUR_SIMPLIFICATION,preserve_topology=True),.000001)
+    from router_geometry import verify_material_tab
+    router['tab_checks']=[verify_material_tab(material,tab) for tab in tabs]
     for ring in [material.exterior,*material.interiors]:
         coords=list(ring.coords)
         for a,c in zip(coords,coords[1:]):add_segment(panel,a,c)
     for i,t in enumerate(tabs):
         for j,(x,y) in enumerate(t['holes']):add_hole(panel,x,y,.6,f'MB{i+1}_{j+1}')
-    for i,(x,y) in enumerate([(2.5,2.5),(148.5,2.5),(2.5,136.5),(148.5,136.5)]):add_hole(panel,x,y,2,f'TOOL{i+1}')
+    for i,(x,y) in enumerate([(2.5,2.5),(148.5,2.5),(2.5,136.5),(148.5,136.5)]):
+        assert material.boundary.distance(Point(x,y).buffer(1))>=.2,'Tooling hole too close to routing'
+        add_hole(panel,x,y,2,f'TOOL{i+1}')
     # Copy saved copper exactly. Do not refill panel zones: source custom rules
     # and changed edge clearance must not silently change proven unit copper.
     panel.BuildConnectivity()
-    p.SaveBoard(str(dest),panel);normalize_uuids(dest)
+    staged_board=staging/(str(uuid.uuid4())+".kicad_pcb")
+    assert p.SaveBoard(str(staged_board),panel)
+    publish_panel_file(staged_board,dest)
+    normalize_uuids(dest)
+    # Temporary KiCad boards have default project settings; restore reviewed minima.
+    atomic_text(pro,pro_data.decode("utf-8"))
     assert all(sha(f)==hashes[n] for n,f in SOURCES.items()),'Source changed during panel build'
     save_json(HERE/'panel-manifest.json',dict(status='REV-A BENCH QUOTE / ENGINEERING REVIEW REQUIRED',
         panel_size_mm=PANEL_SIZE,board_count=3,units=manifest,reference_map=refs,tabs=tabs,
         tab_width_mm=5,mousebite_diameter_mm=.6,mousebite_pitch_mm=.9,
         drill_row_offset_outside_unit_mm=.5,routing_gap_mm=2,
+        router=router,
         stencil_variant_omitted=['Main/U32'],net_namespacing=True,
         source_copper_refilled_in_panel=False,panel_sha256=sha(dest)))
     # Readable mechanical preview, drawn in mm; a 100% print is a scale jig.

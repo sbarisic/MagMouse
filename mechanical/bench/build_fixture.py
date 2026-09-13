@@ -123,7 +123,7 @@ def assembly(parts,cfg,out):
         assert board.is_valid and board.volume>100,'Invalid source PCB envelope'
         board.label=name+' envelope';boards.append(board);shapes.append(board)
     # Edge saddle orientation points its 0.3 mm lip toward the board.
-    sites=[(49,20,90),(82,20,90),(25,95,0),(105,106,180),
+    sites=[(49,20,90),(82,20,90),(25,95,0),(105,88,180),
            (69.5,160,90),(115.5,172,180),(73.5,220,-90),(103.5,220,-90)]
     overlaps=[]
     for x,y,a in sites:

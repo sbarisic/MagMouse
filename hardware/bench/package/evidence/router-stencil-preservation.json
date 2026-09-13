@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "baseline_sha256": "16db28221f26a474c424794b31b62de315bbedfb96b17aa5d5ce72cc7aca958f",
+  "current_sha256": "6043e0e91e2d69f7b3d5940e93a126d81a4da0c9b124683bd75ec519903fcf6d",
+  "symmetric_difference_mm2": 0.0,
+  "thickness_mm": 0.1
+}

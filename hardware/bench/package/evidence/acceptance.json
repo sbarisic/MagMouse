@@ -10,14 +10,18 @@
     "main-usb",
     "main-power",
     "main-controls",
-    "wheel-routing"
+    "wheel-routing",
+    "Main all-layer track/pad/via entries",
+    "Wheel all-layer track/pad/via entries",
+    "Encoder all-layer track/pad/via entries",
+    "All boards local zone entries and per-layer element inventory"
   ],
   "source_sha256": {
-    "Main": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285",
-    "Wheel": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e",
-    "Encoder": "65ebb09a202aa030e7d0160de3b1fd1cc7a9f4e778b7690d6e4b7d8a435a7337"
+    "Main": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
+    "Wheel": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01",
+    "Encoder": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170"
   },
-  "panel_sha256": "1f3f8121f979f9fd2a3187496b33da98dff684c1de76fb7d7f12d6e04e67f070",
+  "panel_sha256": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e",
   "manufacturing_ready": false,
   "limits": "Geometric/electrical CAD screening only. Open supplier, bench mechanical, assembly and CAM gates remain in README."
 }

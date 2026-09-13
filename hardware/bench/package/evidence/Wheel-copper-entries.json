@@ -1,0 +1,7 @@
+{
+  "board": "Wheel",
+  "source_sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01",
+  "width_tolerance_mm": 0.002,
+  "audited_cap_contacts": 2880,
+  "findings": []
+}

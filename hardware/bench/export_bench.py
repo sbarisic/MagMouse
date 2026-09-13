@@ -3,11 +3,13 @@ from collections import Counter,defaultdict
 import csv
 import json
 import math
+import os
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import zipfile
+import uuid
 
 from build_panel import HERE,ROOT,SOURCES,OFFSETS,sha,outline,xy,save_json,atomic_text
 from wire_interfaces import INTERFACES
@@ -21,10 +23,26 @@ OUT=HERE/'package'
 LAYERS=('F.Cu','In1.Cu','In2.Cu','B.Cu')
 
 
+def copy_file(source,target):
+    target=Path(target);temporary=target.with_name(target.name+'.'+str(uuid.uuid4())+'.writing')
+    temporary.write_bytes(Path(source).read_bytes())
+    os.replace(temporary,target)
+
+
 def run(args):
+    # Native exporters cannot truncate a file held by a Windows mapped reader.
+    # Export to a fresh directory, then publish complete files atomically.
+    args=list(args);i=args.index('-o')+1;dest=Path(args[i])
+    stage=ROOT/'build'/'export-staging'/str(uuid.uuid4());stage.mkdir(parents=True)
+    directory=args[2] in ('gerbers','drill')
+    args[i]=stage if directory else stage/dest.name
     result=subprocess.run([str(CLI),*map(str,args)],capture_output=True,text=True)
     with (OUT/'export.log').open('a',encoding='utf-8') as f:f.write(result.stdout+result.stderr)
     if result.returncode:raise RuntimeError(result.stdout+result.stderr)
+    for source in stage.iterdir():
+        target=dest/source.name if directory else dest
+        target.parent.mkdir(parents=True,exist_ok=True)
+        os.replace(source,target)
 
 
 def track_key(t,dx=0,dy=0,prefix=''):
@@ -49,6 +67,9 @@ def fill_vertices(board,dx=0,dy=0,prefix=''):
 
 
 def verify_panel(panel,manifest):
+    # Read the live panel outline before loading other boards: KiCad 10
+    # outline extraction has process-global state affected by later loads.
+    poly=outline(panel)
     refs={f.GetReference():f for f in panel.GetFootprints()};tracks=Counter();filled=Counter();pad_count=0
     for name,path in SOURCES.items():
         assert sha(path)==manifest['units'][name]['sha256'],name+' stale panel source'
@@ -67,15 +88,21 @@ def verify_panel(panel,manifest):
     assert filled==fill_vertices(panel),'Panel saved zone copper differs from translated sources'
     panel.BuildConnectivity()
     assert panel.GetConnectivity().GetUnconnectedCount(False)==0,'Panel has disconnected copper'
-    poly=outline(panel)
     assert poly.is_valid
-    # Every tab drill remains outside source board material; fixed geometry
-    # checks do not claim that the router can mill every inside corner.
+    from router_geometry import verify_panel,verify_material_tab
+    verify_panel(poly,manifest['router'])
+    # Check drilled holes and full-width bridges in actual routed material.
     from shapely.affinity import translate
     from shapely.geometry import Point
     polygons={n:translate(outline(p.LoadBoard(str(path))),*OFFSETS[n]) for n,path in SOURCES.items()}
+    from build_panel import frame_material,verify_tab_bridge
+    frame=frame_material(list(polygons.values()))
     for tab in manifest['tabs']:
+        verify_tab_bridge(tab,polygons[tab['board']],frame)
+        verify_material_tab(poly,tab)
         for x,y in tab['holes']:
+            assert poly.covers(Point(x,y).buffer(.3)), 'Slot intersects perforation'
+            assert poly.boundary.distance(Point(x,y).buffer(.3))>=.2-1e-6, 'Slot leaves insufficient perforation web'
             assert all(Point(x,y).buffer(.3).distance(poly)>=.199 for poly in polygons.values())
     return dict(source_pad_count=pad_count,tracks_and_vias=sum(tracks.values()),
                 filled_polygon_vertices=sum(filled.values()),native_unrouted=0,
@@ -93,7 +120,14 @@ def procurement():
             stock_observed=item['stock'],moq=item['moq'],multiple=item['multiple'],
             currency='USD',tiers=item['tiers'],status='Public listing; delivery and tax not quoted'))
     for name,path in SOURCES.items():
-        target=OUT/(name+'-netlist.xml');run(['sch','export','netlist','--format','kicadxml','-o',target,path.with_suffix('.kicad_sch')])
+        target=OUT/(name+'-netlist.xml')
+        temporary=OUT/(name+'-netlist.exporting.xml')
+        run(['sch','export','netlist','--format','kicadxml','-o',temporary,path.with_suffix('.kicad_sch')])
+        # Avoid native export truncation failures when a Windows reader maps
+        # the previous XML. Publish only a fully generated netlist.
+        try:os.replace(temporary,target)
+        except PermissionError:
+            target.write_bytes(temporary.read_bytes());temporary.unlink()
         comps,_=read_components(target)
         for ref,c in comps.items():
             if ref in INTERFACES[name]:
@@ -233,12 +267,16 @@ def main():
     run(['pcb','export','gerbers','-l',','.join([*LAYERS,'F.Mask','B.Mask','F.SilkS','B.SilkS','Edge.Cuts']),'-o',OUT/'gerbers',HERE/'Panel.kicad_pcb'])
     run(['pcb','export','drill','--format','excellon','--excellon-separate-th','--drill-origin','absolute','--excellon-units','mm','--generate-map','--map-format','svg','-o',OUT/'gerbers',HERE/'Panel.kicad_pcb'])
     validate_drills(OUT/'gerbers/Panel-PTH.drl',vias)
+    from verify_gerber_joins import main as verify_gerber_joins
+    verify_gerber_joins()
+    from verify_router_gerber import main as verify_router_gerber
+    verify_router_gerber()
     for name,path in SOURCES.items():
         (OUT/'placement').mkdir(parents=True,exist_ok=True)
         run(['pcb','export','svg','--mode-single','-l','F.Fab,F.SilkS,Edge.Cuts','--page-size-mode','2','--exclude-drawing-sheet','--sketch-pads-on-fab-layers','-o',OUT/'placement'/(name+'.svg'),path])
     stencil(panel,population)
-    from manufacturing_review import generate as manufacturing_handoff
-    manufacturing_handoff(OUT)
+    # Isolate outline extraction from the mutable stencil board / KiCad caches.
+    subprocess.run([sys.executable,str(HERE/"manufacturing_review.py"),str(OUT)],check=True)
     assembly_aids(population,rows)
     # Keep the review notes self-contained when this folder is handed to CAM.
     notes=(HERE/'README.md').read_text(encoding='utf-8').replace('`package/','`')
@@ -246,19 +284,20 @@ def main():
     for name in ('SOURCING.md','WURTH_ENQUIRY.md','ORDER_READINESS.md','BENCH_FIXTURE.md','ASSEMBLY_AND_BRINGUP.md',
                  'COST_CHECKPOINT.md','CAD_REVIEW.md','quote-observations.json','sourcing-observations.json',
                  'bench-fixture.svg','panel-mechanical.svg','panel-manifest.json','L1_REVIEW.md',
-                 'HARNESS_REVIEW.md','STENCIL_REVIEW.md','BENCH_ACCESS_REVIEW.md','stencil_policy.py','MANUFACTURING_REVIEW.md'):
-        shutil.copyfile(HERE/name,OUT/name)
-    shutil.copyfile(ROOT/'docs/button-calibration.md',OUT/'button-calibration.md')
-    shutil.copyfile(HERE/'population-contract.json',OUT/'population-contract.json')
+                 'HARNESS_REVIEW.md','STENCIL_REVIEW.md','BENCH_ACCESS_REVIEW.md','stencil_policy.py','MANUFACTURING_REVIEW.md',
+                 'ROUTER_REVIEW.md','TRACE_CLEANUP.md','trace-cleanup.json','COPPER_JOIN_REVIEW.md','copper-join-repairs.json'):
+        copy_file(HERE/name,OUT/name)
+    copy_file(ROOT/'docs/button-calibration.md',OUT/'button-calibration.md')
+    copy_file(HERE/'population-contract.json',OUT/'population-contract.json')
     fixture=OUT/'fixture';fixture.mkdir(exist_ok=True)
     expected={'README.md','build_fixture.py','board-interfaces.json'}|{f.name for f in (ROOT/'mechanical/bench/generated').glob('*') if f.is_file()}
     for stale in fixture.iterdir():
         if stale.is_file() and stale.name not in expected:stale.unlink()
-    shutil.copyfile(ROOT/'mechanical/bench/README.md',fixture/'README.md')
-    shutil.copyfile(ROOT/'mechanical/bench/build_fixture.py',fixture/'build_fixture.py')
-    shutil.copyfile(ROOT/'mechanical/bench/board-interfaces.json',fixture/'board-interfaces.json')
+    copy_file(ROOT/'mechanical/bench/README.md',fixture/'README.md')
+    copy_file(ROOT/'mechanical/bench/build_fixture.py',fixture/'build_fixture.py')
+    copy_file(ROOT/'mechanical/bench/board-interfaces.json',fixture/'board-interfaces.json')
     for source in (ROOT/'mechanical/bench/generated').glob('*'):
-        if source.is_file():shutil.copyfile(source,fixture/source.name)
+        if source.is_file():copy_file(source,fixture/source.name)
     (OUT/'copper-review').mkdir(exist_ok=True)
     for layer in LAYERS:
         run(['pcb','export','svg','--mode-single','-l',layer+',Edge.Cuts','--page-size-mode','2',

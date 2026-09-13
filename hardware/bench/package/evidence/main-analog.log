@@ -3,7 +3,7 @@
   "analog_nets": {
     "ACT_VMON": {
       "pads": 5,
-      "total_track_length_mm": 25.93,
+      "total_track_length_mm": 28.537,
       "signal_vias": 4,
       "layers": [
         "B.Cu",
@@ -22,7 +22,7 @@
     },
     "BTN_L_ISENSE": {
       "pads": 3,
-      "total_track_length_mm": 39.93,
+      "total_track_length_mm": 41.572,
       "signal_vias": 2,
       "layers": [
         "B.Cu",
@@ -32,7 +32,7 @@
     },
     "BTN_L_VREF": {
       "pads": 4,
-      "total_track_length_mm": 5.23,
+      "total_track_length_mm": 6.54,
       "signal_vias": 0,
       "layers": [
         "F.Cu"
@@ -41,7 +41,7 @@
     },
     "BTN_M_ISENSE": {
       "pads": 3,
-      "total_track_length_mm": 36.514,
+      "total_track_length_mm": 40.005,
       "signal_vias": 6,
       "layers": [
         "B.Cu",
@@ -51,7 +51,7 @@
     },
     "BTN_M_VREF": {
       "pads": 4,
-      "total_track_length_mm": 11.345,
+      "total_track_length_mm": 15.01,
       "signal_vias": 2,
       "layers": [
         "F.Cu",
@@ -61,7 +61,7 @@
     },
     "BTN_R_ISENSE": {
       "pads": 3,
-      "total_track_length_mm": 20.016,
+      "total_track_length_mm": 19.587,
       "signal_vias": 2,
       "layers": [
         "F.Cu",
@@ -71,7 +71,7 @@
     },
     "BTN_R_VREF": {
       "pads": 4,
-      "total_track_length_mm": 6.026,
+      "total_track_length_mm": 6.893,
       "signal_vias": 2,
       "layers": [
         "F.Cu",
@@ -81,7 +81,7 @@
     },
     "HALL_L": {
       "pads": 2,
-      "total_track_length_mm": 45.706,
+      "total_track_length_mm": 47.254,
       "signal_vias": 6,
       "layers": [
         "F.Cu",
@@ -91,7 +91,7 @@
     },
     "HALL_M": {
       "pads": 2,
-      "total_track_length_mm": 28.671,
+      "total_track_length_mm": 36.551,
       "signal_vias": 5,
       "layers": [
         "B.Cu",
@@ -102,7 +102,7 @@
     },
     "HALL_R": {
       "pads": 2,
-      "total_track_length_mm": 22.992,
+      "total_track_length_mm": 24.316,
       "signal_vias": 0,
       "layers": [
         "F.Cu"
@@ -111,7 +111,7 @@
     },
     "USB_IMON_ADC": {
       "pads": 3,
-      "total_track_length_mm": 7.109,
+      "total_track_length_mm": 9.408,
       "signal_vias": 4,
       "layers": [
         "F.Cu",
@@ -121,7 +121,7 @@
     },
     "USB_IMON_BUF": {
       "pads": 3,
-      "total_track_length_mm": 36.594,
+      "total_track_length_mm": 39.597,
       "signal_vias": 2,
       "layers": [
         "F.Cu",
@@ -175,7 +175,7 @@
       "aggressor": "BTN_L_COIL_P",
       "edge_gap_mm": 0.157455,
       "analog_uuid": "7d58a2ed-fe27-4d61-8ce8-f0c1b79ed901",
-      "aggressor_uuid": "97d5331f-36ff-43fd-bfd6-22c8c98803c5",
+      "aggressor_uuid": "751d0a90-ddae-4da1-bea2-a90000dce5cb",
       "analog_start_mm": [
         15.3,
         44.1
@@ -193,12 +193,12 @@
       "kind": "switching_proximity",
       "net": "BTN_L_ISENSE",
       "aggressor": "BTN_L_IN2",
-      "edge_gap_mm": 0.165832,
-      "analog_uuid": "c32ac5b1-59c1-483f-b710-54b00e8d900c",
+      "edge_gap_mm": 0.15533,
+      "analog_uuid": "5e57365a-6ea5-407d-bd5a-9551679f4050",
       "aggressor_uuid": "d9ec2b1c-38dc-49a6-888d-fa4b55883531",
       "analog_start_mm": [
-        15.75,
-        44.45
+        17.25,
+        46.0
       ],
       "layers": [
         "B.Cu",
@@ -227,6 +227,26 @@
       "driver": "U4",
       "launch_radius_mm": 1.5,
       "minimum_gap_outside_launch_mm": 1.657138,
+      "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
+    },
+    {
+      "kind": "switching_proximity",
+      "net": "BTN_M_ISENSE",
+      "aggressor": "BTN_M_IN2",
+      "edge_gap_mm": 0.452079,
+      "analog_uuid": "57f255e0-ecef-4d30-8551-212f46e5bb53",
+      "aggressor_uuid": "40f8e2d6-5e91-464f-811c-7171895b9efc",
+      "analog_start_mm": [
+        16.0,
+        53.15
+      ],
+      "layers": [
+        "F.Cu",
+        "F.Cu"
+      ],
+      "driver": "U5",
+      "launch_radius_mm": 1.5,
+      "minimum_gap_outside_launch_mm": 7.554934,
       "review": "Proximity is confined to the driver pin launch; no extended adjacent run outside it. Hardware noise remains unqualified."
     },
     {
@@ -273,9 +293,9 @@
       "kind": "switching_proximity",
       "net": "BTN_R_VREF",
       "aggressor": "BTN_R_IN1",
-      "edge_gap_mm": 0.427079,
+      "edge_gap_mm": 0.325,
       "analog_uuid": "a428a8bd-69b1-45cb-9f09-61197a37c424",
-      "aggressor_uuid": "6790ea77-81d3-4503-8d34-b6f7fe55fca1",
+      "aggressor_uuid": "d5df3138-74b1-47ae-9091-ffbc95245a48",
       "analog_start_mm": [
         62.05,
         45.75
@@ -292,5 +312,5 @@
   ],
   "actuator_monitor_cap_to_adc_mm": 3.351,
   "mechanical_scope": "Static copper review only. Hall/button positions remain provisional under MECHANICAL_INTERFACES.md.",
-  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
+  "board_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
 }

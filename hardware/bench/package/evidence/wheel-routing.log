@@ -3,7 +3,7 @@
   "nets": {
     "ACT_5V": {
       "pads": 24,
-      "copper_mm": 240.432,
+      "copper_mm": 248.253,
       "vias": 30,
       "layers": [
         "B.Cu",
@@ -13,7 +13,7 @@
     },
     "ADC2_DECAP": {
       "pads": 2,
-      "copper_mm": 2.093,
+      "copper_mm": 2.045,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -22,7 +22,7 @@
     },
     "BRAKE_DIV_TOP": {
       "pads": 2,
-      "copper_mm": 3.213,
+      "copper_mm": 3.145,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -49,7 +49,7 @@
     },
     "BRAKE_FB_2": {
       "pads": 2,
-      "copper_mm": 6.831,
+      "copper_mm": 6.989,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -58,7 +58,7 @@
     },
     "BRAKE_GATE": {
       "pads": 3,
-      "copper_mm": 5.272,
+      "copper_mm": 5.087,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -67,7 +67,7 @@
     },
     "BRAKE_OUT": {
       "pads": 4,
-      "copper_mm": 13.399,
+      "copper_mm": 13.337,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -76,7 +76,7 @@
     },
     "BRAKE_REF": {
       "pads": 5,
-      "copper_mm": 17.965,
+      "copper_mm": 17.794,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -85,7 +85,7 @@
     },
     "BRAKE_SENSE": {
       "pads": 5,
-      "copper_mm": 12.049,
+      "copper_mm": 11.773,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -94,7 +94,7 @@
     },
     "DRV_AVDD": {
       "pads": 19,
-      "copper_mm": 103.511,
+      "copper_mm": 101.652,
       "vias": 16,
       "layers": [
         "B.Cu",
@@ -105,7 +105,7 @@
     },
     "WHEEL_BUCK_OUT": {
       "pads": 3,
-      "copper_mm": 8.607,
+      "copper_mm": 8.614,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -114,7 +114,7 @@
     },
     "WHEEL_BUCK_SW": {
       "pads": 2,
-      "copper_mm": 4.964,
+      "copper_mm": 5.058,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -123,7 +123,7 @@
     },
     "WHEEL_CP": {
       "pads": 2,
-      "copper_mm": 5.724,
+      "copper_mm": 5.776,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -132,7 +132,7 @@
     },
     "WHEEL_CPH": {
       "pads": 2,
-      "copper_mm": 2.229,
+      "copper_mm": 2.36,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -141,7 +141,7 @@
     },
     "WHEEL_CPL": {
       "pads": 2,
-      "copper_mm": 2.643,
+      "copper_mm": 2.738,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -150,7 +150,7 @@
     },
     "WHEEL_I_A": {
       "pads": 3,
-      "copper_mm": 5.416,
+      "copper_mm": 5.387,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -159,7 +159,7 @@
     },
     "WHEEL_I_B": {
       "pads": 3,
-      "copper_mm": 4.599,
+      "copper_mm": 4.537,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -168,7 +168,7 @@
     },
     "WHEEL_I_C": {
       "pads": 3,
-      "copper_mm": 5.216,
+      "copper_mm": 4.978,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -204,7 +204,7 @@
     },
     "WHEEL_SOA": {
       "pads": 2,
-      "copper_mm": 2.821,
+      "copper_mm": 2.805,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -213,7 +213,7 @@
     },
     "WHEEL_SOB": {
       "pads": 2,
-      "copper_mm": 2.136,
+      "copper_mm": 2.043,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -222,7 +222,7 @@
     },
     "WHEEL_SOC": {
       "pads": 2,
-      "copper_mm": 2.053,
+      "copper_mm": 1.969,
       "vias": 0,
       "layers": [
         "F.Cu"
@@ -260,7 +260,7 @@
   "checked_connected_nets": 57,
   "spi_copper_inventory": {
     "MOTOR_SPI_SCLK": {
-      "copper_mm": 13.869,
+      "copper_mm": 13.602,
       "vias": 4,
       "layers": [
         "F.Cu",
@@ -268,7 +268,7 @@
       ]
     },
     "MOTOR_SPI_MOSI": {
-      "copper_mm": 13.017,
+      "copper_mm": 12.972,
       "vias": 2,
       "layers": [
         "F.Cu",
@@ -276,7 +276,7 @@
       ]
     },
     "CS_ADC2": {
-      "copper_mm": 20.187,
+      "copper_mm": 19.722,
       "vias": 4,
       "layers": [
         "F.Cu",
@@ -284,7 +284,7 @@
       ]
     },
     "ADC2_SCLK_LOCAL": {
-      "copper_mm": 12.708,
+      "copper_mm": 12.267,
       "vias": 2,
       "layers": [
         "B.Cu",
@@ -292,7 +292,7 @@
       ]
     },
     "ADC2_MOSI_LOCAL": {
-      "copper_mm": 10.428,
+      "copper_mm": 10.038,
       "vias": 2,
       "layers": [
         "B.Cu",
@@ -300,7 +300,7 @@
       ]
     },
     "ADC2_CS_LOCAL": {
-      "copper_mm": 22.016,
+      "copper_mm": 21.399,
       "vias": 2,
       "layers": [
         "B.Cu",
@@ -308,7 +308,7 @@
       ]
     },
     "ADC2_MISO_LOCAL": {
-      "copper_mm": 31.607,
+      "copper_mm": 26.507,
       "vias": 2,
       "layers": [
         "B.Cu",
@@ -316,7 +316,7 @@
       ]
     },
     "SPI_SCLK": {
-      "copper_mm": 39.51,
+      "copper_mm": 39.036,
       "vias": 4,
       "layers": [
         "B.Cu",
@@ -325,7 +325,7 @@
       ]
     },
     "SPI_MOSI": {
-      "copper_mm": 39.583,
+      "copper_mm": 38.238,
       "vias": 4,
       "layers": [
         "B.Cu",
@@ -334,7 +334,7 @@
       ]
     },
     "CS_DRV8316": {
-      "copper_mm": 42.491,
+      "copper_mm": 41.85,
       "vias": 2,
       "layers": [
         "F.Cu",
@@ -350,7 +350,7 @@
       ]
     },
     "DRV_MOSI_LOCAL": {
-      "copper_mm": 8.79,
+      "copper_mm": 8.773,
       "vias": 2,
       "layers": [
         "B.Cu",
@@ -358,7 +358,7 @@
       ]
     },
     "DRV_CS_LOCAL": {
-      "copper_mm": 21.362,
+      "copper_mm": 21.072,
       "vias": 2,
       "layers": [
         "B.Cu",
@@ -366,7 +366,7 @@
       ]
     },
     "DRV_MISO_LOCAL": {
-      "copper_mm": 48.798,
+      "copper_mm": 47.71,
       "vias": 3,
       "layers": [
         "B.Cu",
@@ -376,7 +376,7 @@
   },
   "in1_ground_outlines": 1,
   "drv8316_thermal_vias": 9,
-  "tracks_and_vias": 5175,
+  "tracks_and_vias": 2265,
   "native_unconnected": 0,
   "limits": [
     "SPI length/via inventory is not sampling-time or signal-integrity acceptance",
@@ -385,5 +385,5 @@
     "Mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "2f59e59f2abc2a07c266bbebf767364f2848a56cdbf181c151426d404c2bd84e"
+  "board_sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01"
 }

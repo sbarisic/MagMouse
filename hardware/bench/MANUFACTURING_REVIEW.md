@@ -1,5 +1,18 @@
 # Rev-A manufacturing handoff
 
+## 2026-09-13 working revision
+
+Latest revision includes all-layer pad/via-entry and near-tangent-cap fixes,
+plus removal of the Wheel ADC2_MISO_LOCAL loop. See COPPER_JOIN_REVIEW.md.
+
+Routing cleanup changed the working boards and regenerated exports after the
+2026-09-12 submission. See [trace cleanup](TRACE_CLEANUP.md). The frozen archive
+under `submissions/2026-09-12-jlc-cam/` remains the exact submitted revision;
+the new working files have not been submitted. The Main-right tab and replacement Encoder-top tab now have individual full-width
+board/frame checks. Copper joins use shared centerlines and retain nominal widths.
+See COPPER_JOIN_REVIEW.md for the revised validation.
+The earlier local-review statement below predates that finding.
+
 Reviewed 2026-09-12. **Local review complete; JLC CAM confirmation pending.**
 Five bare three-design panels and one stencil; no PCBA service. The user
 authorized submission, and JLC's contact form confirmed receipt on 2026-09-12.
@@ -57,8 +70,9 @@ placement and numbered wire-pad drawings during assembly.
    review; retain the previously quoted selection and require confirmation.
    No substitution to another stack or half-ounce inner copper is authorized.
 2. **Routed profile and tabs:** mill the supplied outline, preserve all three
-   unit envelopes and ten tabs. Identify any required inside-corner tool-radius
-   accommodation before modifying the file. Depanel before population.
+   unit envelopes and ten tabs. Confirm the supplied 2 mm cutter / 1 mm internal
+   radius geometry described in ROUTER_REVIEW.md before any CAM changes.
+   Depanel before population.
 3. **Hole treatment:** fill/cap only the listed actual vias. Keep component,
    wire, locating, tooling and perforation holes open. Select production-file
    confirmation so these treatments can be checked before fabrication.

@@ -51,8 +51,8 @@ centering is acceptable. Please disable automatic aperture optimization.
 
 Package identity (filled automatically in the exported draft):
 
-- Gerber/drill ZIP SHA-256: 5264c763e6ec8741a7d1f048a034eb03c04ee8fbd4fc3d33ac85c39fb98e7d29
-- Stencil ZIP SHA-256: 3636dd40948e445638c439d5cd6de8905e08b06ff0d9766b5a1ffa1330bf06ce
+- Gerber/drill ZIP SHA-256: 4cba2a9d7495062b300fe373270570fc5f3a564428f0df8e72c567d168f9c812
+- Stencil ZIP SHA-256: f883dcd89a1c858e57dc0c72ad2da5d0fa25d0032a1315265ba2c171d4182955
 - Source/transform authority: panel-manifest.json
 - All-file hashes: file-sha256.json
 
@@ -66,3 +66,17 @@ PCB Gerber ZIP for PCB upload and its enclosed stencil ZIP for stencil upload.
 
 Please return explicit acceptance or a list of required changes against these
 exact files. A price quotation alone will not be treated as CAM acceptance.
+
+## Unsubmitted copper/tab revision
+
+This draft replaces the earlier working geometry with full-width centerline joins and supported Main-right/Encoder-top tabs. See COPPER_JOIN_REVIEW.md and the attached source/verification hashes. The submitted 2026-09-12 archive is preserved separately. Do not treat this local draft as submitted or approved.
+
+The current local review adds a complete element/zone inventory and whole-copper Gerber comparison. No additional copper or stencil geometry changed in this review. See evidence/contact-inventory.json, evidence/gerber-joins.json and evidence/acceptance.json in the attached bundle.
+
+## Unsubmitted router-compatible revision
+
+The panel now specifies rounded slot ends for a nominal 2 mm router and 1 mm
+internal radius. See ROUTER_REVIEW.md, the paths in panel-manifest.json and
+evidence/router-gerber.json. Please confirm the factory tooling and routing
+tolerances against these contours; the paths are verification geometry, not
+G-code. Unit copper, stack and stencil apertures remain unchanged.

@@ -1,0 +1,7 @@
+{
+  "board": "Encoder",
+  "source_sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170",
+  "width_tolerance_mm": 0.002,
+  "audited_cap_contacts": 32,
+  "findings": []
+}

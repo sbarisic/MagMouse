@@ -4,6 +4,7 @@ Run after export_bench.procurement. Polygon screening is not paste-transfer,
 probe-fit, connector qualification or thermal acceptance.
 """
 import csv
+import io
 import html
 import json
 from collections import defaultdict
@@ -19,8 +20,9 @@ from shapely.affinity import scale
 OUT=HERE/'package'
 
 def write_rows(path,rows):
-    with path.open('w',newline='',encoding='utf-8') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+    data=io.StringIO(newline='')
+    w=csv.DictWriter(data,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+    atomic_text(path,data.getvalue())
 
 def polyset(poly):
     def ring(c):return [(p.ToMM(c.CPoint(i).x),p.ToMM(c.CPoint(i).y)) for i in range(c.PointCount())]

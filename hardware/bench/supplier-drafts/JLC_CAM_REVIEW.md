@@ -66,3 +66,17 @@ PCB Gerber ZIP for PCB upload and its enclosed stencil ZIP for stencil upload.
 
 Please return explicit acceptance or a list of required changes against these
 exact files. A price quotation alone will not be treated as CAM acceptance.
+
+## Unsubmitted copper/tab revision
+
+This draft replaces the earlier working geometry with full-width centerline joins and supported Main-right/Encoder-top tabs. See COPPER_JOIN_REVIEW.md and the attached source/verification hashes. The submitted 2026-09-12 archive is preserved separately. Do not treat this local draft as submitted or approved.
+
+The current local review adds a complete element/zone inventory and whole-copper Gerber comparison. No additional copper or stencil geometry changed in this review. See evidence/contact-inventory.json, evidence/gerber-joins.json and evidence/acceptance.json in the attached bundle.
+
+## Unsubmitted router-compatible revision
+
+The panel now specifies rounded slot ends for a nominal 2 mm router and 1 mm
+internal radius. See ROUTER_REVIEW.md, the paths in panel-manifest.json and
+evidence/router-gerber.json. Please confirm the factory tooling and routing
+tolerances against these contours; the paths are verification geometry, not
+G-code. Unit copper, stack and stencil apertures remain unchanged.

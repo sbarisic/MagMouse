@@ -1,0 +1,44 @@
+{
+  "Main": {
+    "source": "hardware/modular/main/Main.kicad_pcb",
+    "sha256": "daba98df932bafbf7bb5efc93945b806297ccd592bd58087cf1b93aec7f67026",
+    "preserved": {
+      "pads": 843,
+      "vias": 911,
+      "footprints": 246,
+      "usb_tracks": 152,
+      "edges": 97
+    },
+    "before_tracks_and_vias": 15313,
+    "after_tracks_and_vias": 8257,
+    "reduction": 7056
+  },
+  "Wheel": {
+    "source": "hardware/modular/wheel/Wheel.kicad_pcb",
+    "sha256": "421a859dd67d3175c9ad8afdee47317d5b2e505eac93a4f215f4c59c8412beca",
+    "preserved": {
+      "pads": 311,
+      "vias": 187,
+      "footprints": 87,
+      "usb_tracks": 0,
+      "edges": 4
+    },
+    "before_tracks_and_vias": 5175,
+    "after_tracks_and_vias": 2225,
+    "reduction": 2950
+  },
+  "Encoder": {
+    "source": "hardware/encoder/Encoder.kicad_pcb",
+    "sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170",
+    "preserved": {
+      "pads": 24,
+      "vias": 16,
+      "footprints": 3,
+      "usb_tracks": 0,
+      "edges": 4
+    },
+    "before_tracks_and_vias": 83,
+    "after_tracks_and_vias": 69,
+    "reduction": 14
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "board": "Main",
+    "layer": "F.Cu",
+    "stem": "Main-F.Cu",
+    "source": "hardware/modular/main/Main.kicad_pcb",
+    "sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
+  },
+  {
+    "board": "Main",
+    "layer": "In1.Cu",
+    "stem": "Main-In1.Cu",
+    "source": "hardware/modular/main/Main.kicad_pcb",
+    "sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
+  },
+  {
+    "board": "Main",
+    "layer": "In2.Cu",
+    "stem": "Main-In2.Cu",
+    "source": "hardware/modular/main/Main.kicad_pcb",
+    "sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
+  },
+  {
+    "board": "Main",
+    "layer": "B.Cu",
+    "stem": "Main-B.Cu",
+    "source": "hardware/modular/main/Main.kicad_pcb",
+    "sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
+  },
+  {
+    "board": "Wheel",
+    "layer": "F.Cu",
+    "stem": "Wheel-F.Cu",
+    "source": "hardware/modular/wheel/Wheel.kicad_pcb",
+    "sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01"
+  },
+  {
+    "board": "Wheel",
+    "layer": "In1.Cu",
+    "stem": "Wheel-In1.Cu",
+    "source": "hardware/modular/wheel/Wheel.kicad_pcb",
+    "sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01"
+  },
+  {
+    "board": "Wheel",
+    "layer": "In2.Cu",
+    "stem": "Wheel-In2.Cu",
+    "source": "hardware/modular/wheel/Wheel.kicad_pcb",
+    "sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01"
+  },
+  {
+    "board": "Wheel",
+    "layer": "B.Cu",
+    "stem": "Wheel-B.Cu",
+    "source": "hardware/modular/wheel/Wheel.kicad_pcb",
+    "sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01"
+  },
+  {
+    "board": "Encoder",
+    "layer": "F.Cu",
+    "stem": "Encoder-F.Cu",
+    "source": "hardware/encoder/Encoder.kicad_pcb",
+    "sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170"
+  },
+  {
+    "board": "Encoder",
+    "layer": "In1.Cu",
+    "stem": "Encoder-In1.Cu",
+    "source": "hardware/encoder/Encoder.kicad_pcb",
+    "sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170"
+  },
+  {
+    "board": "Encoder",
+    "layer": "In2.Cu",
+    "stem": "Encoder-In2.Cu",
+    "source": "hardware/encoder/Encoder.kicad_pcb",
+    "sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170"
+  },
+  {
+    "board": "Encoder",
+    "layer": "B.Cu",
+    "stem": "Encoder-B.Cu",
+    "source": "hardware/encoder/Encoder.kicad_pcb",
+    "sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170"
+  },
+  {
+    "board": "Panel",
+    "layer": "F.Cu",
+    "stem": "Panel-F.Cu",
+    "source": "hardware/bench/Panel.kicad_pcb",
+    "sha256": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e"
+  },
+  {
+    "board": "Panel",
+    "layer": "In1.Cu",
+    "stem": "Panel-In1.Cu",
+    "source": "hardware/bench/Panel.kicad_pcb",
+    "sha256": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e"
+  },
+  {
+    "board": "Panel",
+    "layer": "In2.Cu",
+    "stem": "Panel-In2.Cu",
+    "source": "hardware/bench/Panel.kicad_pcb",
+    "sha256": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e"
+  },
+  {
+    "board": "Panel",
+    "layer": "B.Cu",
+    "stem": "Panel-B.Cu",
+    "source": "hardware/bench/Panel.kicad_pcb",
+    "sha256": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e"
+  }
+]

@@ -1,7 +1,7 @@
 {
   "source_pad_count": 1178,
-  "tracks_and_vias": 20571,
-  "filled_polygon_vertices": 133678,
+  "tracks_and_vias": 13029,
+  "filled_polygon_vertices": 124762,
   "native_unrouted": 0,
   "unit_transforms_and_net_isolation": "PASS",
   "saved_copper_translation": "PASS",

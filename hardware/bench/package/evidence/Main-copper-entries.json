@@ -1,0 +1,7 @@
+{
+  "board": "Main",
+  "source_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
+  "width_tolerance_mm": 0.002,
+  "audited_cap_contacts": 23009,
+  "findings": []
+}

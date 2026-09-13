@@ -8,12 +8,12 @@
     },
     "ILM_BASE_1": {
       "pad_count": 2,
-      "copper_length_mm": 1.282843,
+      "copper_length_mm": 1.975123,
       "vias": 0
     },
     "ILM_BASE_2": {
       "pad_count": 2,
-      "copper_length_mm": 0.786396,
+      "copper_length_mm": 1.946317,
       "vias": 0
     },
     "ILM_HIGH_D": {
@@ -23,17 +23,17 @@
     },
     "ILM_MED_D": {
       "pad_count": 2,
-      "copper_length_mm": 1.719239,
+      "copper_length_mm": 2.658007,
       "vias": 0
     },
     "USB_DVDT": {
       "pad_count": 2,
-      "copper_length_mm": 3.538478,
+      "copper_length_mm": 4.654791,
       "vias": 0
     },
     "USB_ILM": {
       "pad_count": 7,
-      "copper_length_mm": 22.934913,
+      "copper_length_mm": 22.55883,
       "vias": 1
     },
     "USB_OVLO": {
@@ -130,5 +130,5 @@
     "Mechanical interfaces remain provisional; panelization is on hold"
   ],
   "errors": [],
-  "board_sha256": "bb9de93d7a17cfdeb6be468289413aca5a7f204ff4877fa0d9d4c58794cd6285"
+  "board_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223"
 }

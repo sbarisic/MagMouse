@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "gerber_sha256": "b1ffa910358fa28a838dc3afd0ac47b4039841adc5ae87f5b44ddedde49bb7e8",
+  "panel_sha256": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e",
+  "openings": 8,
+  "tool_diameter_mm": 2,
+  "tolerance_mm": 0.002,
+  "minimum_perforation_slot_web_mm": 0.43852364258784454
+}

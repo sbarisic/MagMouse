@@ -1,9 +1,25 @@
 # Rev-A manufacturing handoff
 
+## 2026-09-13 working revision
+
+Latest revision includes all-layer pad/via-entry and near-tangent-cap fixes,
+plus removal of the Wheel ADC2_MISO_LOCAL loop. See COPPER_JOIN_REVIEW.md.
+
+Routing cleanup changed the working boards and regenerated exports after the
+2026-09-12 submission. See [trace cleanup](TRACE_CLEANUP.md). The frozen archive
+under `submissions/2026-09-12-jlc-cam/` remains the exact submitted revision;
+the new working files have not been submitted. The Main-right tab and replacement Encoder-top tab now have individual full-width
+board/frame checks. Copper joins use shared centerlines and retain nominal widths.
+See COPPER_JOIN_REVIEW.md for the revised validation.
+The earlier local-review statement below predates that finding.
+
 Reviewed 2026-09-12. **Local review complete; JLC CAM confirmation pending.**
-Five bare three-design panels and one stencil; no PCBA service. Supplier
-communications remain drafts. This review does not place an order or refresh
-the historical price.
+Five bare three-design panels and one stencil; no PCBA service. The user
+authorized submission, and JLC's contact form confirmed receipt on 2026-09-12.
+See [submission record](submissions/2026-09-12-jlc-cam/receipt.json) and the
+frozen archive beside it. CAM approval is still pending. No order or payment
+was made, and the historical price has not been refreshed. Other supplier
+communications remain drafts.
 
 ## Findings and corrections
 
@@ -54,8 +70,9 @@ placement and numbered wire-pad drawings during assembly.
    review; retain the previously quoted selection and require confirmation.
    No substitution to another stack or half-ounce inner copper is authorized.
 2. **Routed profile and tabs:** mill the supplied outline, preserve all three
-   unit envelopes and ten tabs. Identify any required inside-corner tool-radius
-   accommodation before modifying the file. Depanel before population.
+   unit envelopes and ten tabs. Confirm the supplied 2 mm cutter / 1 mm internal
+   radius geometry described in ROUTER_REVIEW.md before any CAM changes.
+   Depanel before population.
 3. **Hole treatment:** fill/cap only the listed actual vias. Keep component,
    wire, locating, tooling and perforation holes open. Select production-file
    confirmation so these treatments can be checked before fabrication.
@@ -69,8 +86,12 @@ do not add further bare-board ordering gates.
 
 ## Handoff files
 
-Use `package/CAM-review-attachments.zip` together with the unsent
-`package/supplier-drafts/JLC_CAM_REVIEW.md`. The bundle contains the PCB and
+The exact submitted bundle is preserved in
+`submissions/2026-09-12-jlc-cam/CAM-review-attachments.zip`. The exported
+`package/supplier-drafts/JLC_CAM_REVIEW.md` remains the prepared request;
+its draft label and the exported package bytes were preserved after submission.
+The contact-form cover requested the same manufacturing review and included
+the PCB, stencil and complete bundle hashes. The bundle contains the PCB and
 stencil ZIPs, exact settings, layer/stack table, profile drawing, hole-treatment
 map and inventories, and stencil/jig review files. Its internal hash manifest
 identifies each attachment; `package/file-sha256.json` identifies the complete
