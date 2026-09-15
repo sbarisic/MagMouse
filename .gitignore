@@ -14,6 +14,19 @@ Desktop.ini
 __pycache__/
 *.py[cod]
 node_modules/
+.venv-*/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Local scratch work (do not hide review evidence with a blanket *.log rule)
+/.tmp/
+/.cache/
 
 # Generated builds
 build/
@@ -29,3 +42,14 @@ sdkconfig.old
 *.kicad_pcb-bak
 *-backups/
 *.FCStd1
+
+# Brake simulation: keep code, compact measured evidence and plots in Git.
+# Recreate large waveforms / per-run decks / routine logs with run.py.
+/hardware/simulation/brake/results/*.npz
+/hardware/simulation/brake/results/*.cir
+/hardware/simulation/brake/results/*.log
+# Vendor models are downloaded with fetch_models.py; redistribution is not established.
+# Generated decks also embed vendor model text, including the failed-model reproducer.
+/hardware/simulation/brake/models/*.lib
+/hardware/simulation/brake/models/*.zip
+/hardware/simulation/brake/model-checks/*.cir

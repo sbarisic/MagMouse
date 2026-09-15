@@ -21,3 +21,7 @@ hardware/modular/wheel/Wheel.kicad_pcb -text
 hardware/encoder/Encoder.kicad_pcb -text
 hardware/bench/Panel.kicad_pcb -text
 hardware/bench/package/** -text
+# Simulation evidence has byte-level hashes; preserve it across Windows checkouts.
+hardware/simulation/brake/results/** -text
+hardware/simulation/brake/RESULTS.md -text
+hardware/simulation/brake/model-checks/*.log -text

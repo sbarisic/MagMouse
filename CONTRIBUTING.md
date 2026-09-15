@@ -13,7 +13,9 @@ record decisions and their rationale in the maintained documents.
 - Use the license for the relevant directory. Add SPDX identifiers to new source
   files where comments are supported, and preserve third-party notices.
 
-There is no build or test toolchain yet. For documentation changes, verify local
-links, consistency of signal/component names, and `git diff --check`. When adding
-the first firmware or host application, document reproducible build and test
-commands and add corresponding CI in the same change.
+CAD verification, panel/fixture generation and simulation tools are documented
+in their hardware and mechanical directories. See the
+[repository content policy](docs/repository-contents.md) before adding generated
+files. For documentation changes, verify local links and run `git diff --check`
+on the edited text files. When adding the first firmware or host application,
+document reproducible build and test commands and add corresponding CI.

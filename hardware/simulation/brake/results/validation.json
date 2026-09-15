@@ -1,0 +1,41 @@
+{
+  "numerical_checks": "PASS",
+  "rail_target": "PASS",
+  "response_target": "FAIL in delay-stress cases",
+  "response_failures": [
+    "minimum_10us_pulse",
+    "minimum_10us_repeated",
+    "minimum_10us_unplug",
+    "nominal_10us_pulse",
+    "nominal_10us_repeated",
+    "nominal_10us_unplug",
+    "resistance_stress",
+    "threshold_high",
+    "threshold_low"
+  ],
+  "production_files_unchanged": {
+    "hardware/modular/main/Main.kicad_pcb": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
+    "hardware/modular/wheel/Wheel.kicad_pcb": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01",
+    "hardware/encoder/Encoder.kicad_pcb": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170",
+    "hardware/bench/Panel.kicad_pcb": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e",
+    "hardware/bench/submissions/2026-09-12-jlc-cam/CAM-review-attachments.zip": "200002eda55b0db4513de96e1de92435af1634ce5469944b2865e1fe72803dcf"
+  },
+  "model_sources": {
+    "TLV1811": {
+      "url": "https://www.ti.com/lit/zip/snom762",
+      "file": "models/tlv1811.lib",
+      "use": "Original convergence attempt only; not used in accepted sweep",
+      "sha256": "8a273cb9af327982356c4cd0071dd9a5183cd84967ed16a1f7c2c9b8db1124e8"
+    },
+    "LM4040": {
+      "url": "https://www.ti.com/lit/zip/snom526",
+      "file": "models/lm4040.lib",
+      "use": "Unmodified TI reference subcircuit; native psa compatibility",
+      "sha256": "8e1e252008162dd3ef6039b3169260d4f82e9b798876e015dbc1088d6d3eaaec"
+    },
+    "AO3400A": {
+      "url": "https://www.aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a",
+      "use": "No manufacturer model located; Rds and gate-load approximation"
+    }
+  }
+}

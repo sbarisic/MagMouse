@@ -1,0 +1,266 @@
+{
+  "sources": {
+    "hardware\\bench\\package\\Main-netlist.xml": "a9ea3f038ccdcda80ecff1ad1739e5d94fd55176f946529454e8b6c8260f6c59",
+    "hardware\\bench\\package\\Wheel-netlist.xml": "4804dd85072ad60fdaee9d66bdfb2667df40a19501ac311d447ea92fc3fc4a67",
+    "hardware\\bench\\package\\Encoder-netlist.xml": "cebcc3b9a528287d725c29129520038baf98b93cd6cd35b7d2dbe212302175e4"
+  },
+  "capacitors": [
+    {
+      "board": "Main",
+      "ref": "C7",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Main",
+      "ref": "C8",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Main",
+      "ref": "C10",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Main",
+      "ref": "C11",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Main",
+      "ref": "C13",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Main",
+      "ref": "C14",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Main",
+      "ref": "C37",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Main",
+      "ref": "C38",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Main",
+      "ref": "C39",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Main",
+      "ref": "C40",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Wheel",
+      "ref": "C41",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Wheel",
+      "ref": "C42",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Wheel",
+      "ref": "C43",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Wheel",
+      "ref": "C44",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Wheel",
+      "ref": "C45",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Wheel",
+      "ref": "C65",
+      "value": "100nF",
+      "farads": 1.0000000000000001e-07
+    },
+    {
+      "board": "Wheel",
+      "ref": "C68",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Wheel",
+      "ref": "C69",
+      "value": "10uF/25V",
+      "farads": 9.999999999999999e-06
+    },
+    {
+      "board": "Wheel",
+      "ref": "C90",
+      "value": "100uF/16V",
+      "farads": 9.999999999999999e-05
+    }
+  ],
+  "brake": {
+    "C65": "100nF",
+    "C66": "100nF",
+    "C67": "22pF/50V",
+    "C68": "10uF/25V",
+    "C69": "10uF/25V",
+    "Q5": "AO3400A",
+    "R111": "10k",
+    "R112": "100k",
+    "R113": "34.8k",
+    "R114": "100k",
+    "R115": "1M",
+    "R116": "1M",
+    "R117": "1M",
+    "R119": "100R",
+    "R120": "100k",
+    "R121": "47R/2W",
+    "R122": "47R/2W",
+    "R123": "47R/2W",
+    "R124": "47R/2W",
+    "TP34": "ACT_5V",
+    "TP35": "BRAKE_REF",
+    "TP36": "BRAKE_OUT",
+    "TP37": "GND",
+    "U30": "TLV1811DBVR",
+    "U31": "LM4040AIM3-2.5/NOPB"
+  },
+  "pins": {
+    "C65": {
+      "1": "ACT_5V",
+      "2": "GND"
+    },
+    "C66": {
+      "1": "BRAKE_REF",
+      "2": "GND"
+    },
+    "C67": {
+      "1": "BRAKE_SENSE",
+      "2": "GND"
+    },
+    "C68": {
+      "1": "ACT_5V",
+      "2": "GND"
+    },
+    "C69": {
+      "1": "ACT_5V",
+      "2": "GND"
+    },
+    "Q5": {
+      "3": "BRAKE_DRAIN",
+      "1": "BRAKE_GATE",
+      "2": "GND"
+    },
+    "R111": {
+      "1": "ACT_5V",
+      "2": "BRAKE_REF"
+    },
+    "R112": {
+      "1": "ACT_5V",
+      "2": "BRAKE_DIV_TOP"
+    },
+    "R113": {
+      "1": "BRAKE_DIV_TOP",
+      "2": "BRAKE_SENSE"
+    },
+    "R114": {
+      "1": "BRAKE_SENSE",
+      "2": "GND"
+    },
+    "R115": {
+      "2": "BRAKE_FB_1",
+      "1": "BRAKE_OUT"
+    },
+    "R116": {
+      "1": "BRAKE_FB_1",
+      "2": "BRAKE_FB_2"
+    },
+    "R117": {
+      "1": "BRAKE_FB_2",
+      "2": "BRAKE_SENSE"
+    },
+    "R119": {
+      "2": "BRAKE_GATE",
+      "1": "BRAKE_OUT"
+    },
+    "R120": {
+      "1": "BRAKE_GATE",
+      "2": "GND"
+    },
+    "R121": {
+      "1": "ACT_5V",
+      "2": "BRAKE_DRAIN"
+    },
+    "R122": {
+      "1": "ACT_5V",
+      "2": "BRAKE_DRAIN"
+    },
+    "R123": {
+      "1": "ACT_5V",
+      "2": "BRAKE_DRAIN"
+    },
+    "R124": {
+      "1": "ACT_5V",
+      "2": "BRAKE_DRAIN"
+    },
+    "TP34": {
+      "1": "ACT_5V"
+    },
+    "TP35": {
+      "1": "BRAKE_REF"
+    },
+    "TP36": {
+      "1": "BRAKE_OUT"
+    },
+    "TP37": {
+      "1": "GND"
+    },
+    "U30": {
+      "5": "ACT_5V",
+      "1": "BRAKE_OUT",
+      "4": "BRAKE_REF",
+      "3": "BRAKE_SENSE",
+      "2": "GND"
+    },
+    "U31": {
+      "1": "BRAKE_REF",
+      "2": "GND",
+      "3": "unconnected-(U31-NC-Pad3)"
+    }
+  },
+  "bleeders": [
+    {
+      "board": "Main",
+      "ref": "R69",
+      "ohms": 1000.0
+    },
+    {
+      "board": "Wheel",
+      "ref": "R146",
+      "ohms": 4700.0
+    }
+  ],
+  "nominal_capacitance_F": 0.00021069999999999997
+}
