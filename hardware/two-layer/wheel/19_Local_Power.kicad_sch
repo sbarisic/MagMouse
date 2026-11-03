@@ -1,0 +1,685 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "4b0449c1-184c-59e2-9a41-1079ba7240b6")
+  (paper "A3")
+  (title_block
+    (title "Wheel-local rail storage and secondary clamp")
+    (date "2026-09-10")
+    (rev "0.2 DRAFT"))
+  (lib_symbols
+    (symbol "Device:C_Polarized"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C_Polarized"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Polarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "CP_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_Polarized_0_1"
+        (rectangle
+          (start -2.286 0.508)
+          (end 2.286 1.016)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.778 2.286)
+            (xy -0.762 2.286))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.27 2.794)
+            (xy -1.27 1.778))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 2.286 -0.508)
+          (end -2.286 -1.016)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline))))
+      (symbol "C_Polarized_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:D_Zener"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "D_Zener"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Zener diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "D_Zener_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+            (xy -0.762 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "D_Zener_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 2.54)
+          (name "K"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 2.54)
+          (name "A"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (embedded_fonts no)
+  (symbol
+    (lib_id "Device:C_Polarized")
+    (at 64.77 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cc1da232-8ff7-5ca0-9887-80fdabe44720")
+    (property "Reference" "C90"
+      (at 69.85 67.31 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "100uF/16V"
+      (at 69.85 69.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Panasonic"
+      (at 69.85 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "16SVPC100M"
+      (at 69.85 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" "C136275"
+      (at 69.85 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
+      (at 69.85 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000C256.pdf"
+      (at 69.85 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Review" "100uF +/-20% initial; 16V; local ACT bulk. See LOCAL_POWER_REVIEW.md. Effective C and ESR require qualification."
+      (at 69.85 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/2b07bc4d-4879-5e5f-a450-6e57838959d2"
+          (reference "C90")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 64.77 66.04)
+      (xy 64.77 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1d215e97-7b65-5fc1-a97e-f9dc6305a8fd"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 64.77 60.96 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "3036a599-7501-57dc-9a31-c2ee97340685"))
+  (wire
+    (pts
+      (xy 64.77 73.66)
+      (xy 64.77 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9e1b5fcd-980e-5aaf-bd35-2b0158012271"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 64.77 78.74 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ea3c8909-4358-577d-ada9-5f9e47804b79"))
+  (symbol
+    (lib_id "Device:D_Zener")
+    (at 170.18 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "25dea03c-4a36-5027-b66c-da5455329c1e")
+    (property "Reference" "D6"
+      (at 175.18 61.849999999999994 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "SMBJ6.0A"
+      (at 175.18 64.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Littelfuse"
+      (at 175.26 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "SMBJ6.0A"
+      (at 175.26 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" "C83270"
+      (at 175.26 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Diode_SMD:D_SMB"
+      (at 175.26 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf"
+      (at 175.26 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Review" "Secondary pulse protection only: 6V standoff, 10.3V specified clamp. Autonomous brake sets normal rail peak."
+      (at 175.26 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/2b07bc4d-4879-5e5f-a450-6e57838959d2"
+          (reference "D6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 166.37 69.85)
+      (xy 161.29 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "413a2d3b-447b-508d-a512-9314d56d8e34"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 161.29 69.85 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "922bbe1f-cff8-5fc9-92b0-0797490f92a0"))
+  (wire
+    (pts
+      (xy 173.99 69.85)
+      (xy 179.07 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b2c11741-8165-5ecb-993a-371e85f5e91b"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 179.07 69.85 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "77d3192a-be56-58c6-8f6e-3b8702d93e37"))
+  (symbol
+    (lib_id "Device:R")
+    (at 279.4 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8839ffb6-9e7b-54f0-bf3f-f2e138c18a74")
+    (property "Reference" "R146"
+      (at 284.48 67.31 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "4.7k"
+      (at 284.48 69.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 284.48 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "0603WAF4701T5E"
+      (at 284.48 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" "C23162"
+      (at 284.48 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 284.48 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 284.48 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Review" "Local passive discharge; 5.3mW at 5V. Discharge time assumes no ongoing motor generation."
+      (at 284.48 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/2b07bc4d-4879-5e5f-a450-6e57838959d2"
+          (reference "R146")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 279.4 66.04)
+      (xy 279.4 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "51e6fff2-2207-56e3-aa73-5546ac0c3f60"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 279.4 60.96 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "78cec0b5-3f67-515a-b15a-5ee440d92984"))
+  (wire
+    (pts
+      (xy 279.4 73.66)
+      (xy 279.4 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "63fec19f-6608-540f-ad64-abbc75b44127"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 279.4 78.74 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "efd1365d-7ee2-58bb-9db0-9ae4a3bdd1f4"))
+  (text "WHEEL-LOCAL ACT_5V ENERGY STORAGE\nKeep these parts on the wheel board after depanelization. No main-board capacitance credit."
+    (at 25 20 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "547b803c-7bfc-5f56-98a2-4c61101e7edf"))
+  (text "C90: positive pad 1 to ACT_5V.\nPlace beside U21 VM ceramics and brake power return.\nRetain C44/C45/C68/C69 and local 100nF bypasses.\nWheel total: 140.4uF nominal; 47uF effective minimum.\nAllow 6.0mm component height plus mechanical margin."
+    (at 35 110 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "a9a3fe40-4821-5906-a940-382367c63654"))
+  (text "D6: cathode pad 1 to ACT_5V.\nShort, wide return to local power GND.\nNOT a 6.5V clamp or a continuous braking load.\nU30/U31/Q5/R121-R124 remain the primary brake."
+    (at 35 150 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "2e2cae73-c030-58c0-a01d-80907c0d88c4"))
+  (text "R146 works with the power cable absent.\nAbout 1.69s from 6.5V to 0.5V at nominal C/R,\nonly with no external supply or motor generation.\nCheck actual rail voltage before servicing."
+    (at 225 110 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "2bcda1f0-54dc-54cb-b8da-23a0bf711aec"))
+  (text "DRAFT: capacitor ESR/effective C, inrush, brake transient, harness return faults and PCB layout remain unqualified.\nNo live cable mating. See ../LOCAL_POWER_REVIEW.md and ../INTERFACE_REVIEW.md."
+    (at 35 195 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "f04c2581-5163-5873-bf3e-40d159124217")))

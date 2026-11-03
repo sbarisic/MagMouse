@@ -1,0 +1,421 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "426250dd-6ae7-5a98-8e38-90bc300c8140")
+  (paper "A3")
+  (title_block
+    (title "MagMouse modular Main")
+    (date "2026-09-10")
+    (rev "0.1 DRAFT"))
+  (lib_symbols)
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (embedded_fonts no)
+  (text "MagMouse modular Main - independent schematic draft\nNOT FOR FABRICATION - copper migration and harness validation incomplete"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "e224e9cf-4157-56f1-b6c9-de7a9aba4086"))
+  (sheet
+    (at 20 50)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "f98db9d6-39f0-56d0-b006-a308a0af27b1")
+    (property "Sheetname" "01_Power_USB"
+      (at 20 48.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "01_Power_USB.kicad_sch"
+      (at 20 68.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "2")))))
+  (sheet
+    (at 20 75)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "d5629ffc-c70c-5a32-8660-d50043bd3c4c")
+    (property "Sheetname" "02_MCU"
+      (at 20 73.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "02_MCU.kicad_sch"
+      (at 20 93.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "3")))))
+  (sheet
+    (at 20 100)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "584f5e2a-40d4-5188-83de-a1357f3244b0")
+    (property "Sheetname" "03_Buttons"
+      (at 20 98.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "03_Buttons.kicad_sch"
+      (at 20 118.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "4")))))
+  (sheet
+    (at 20 125)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "53ef1b2e-2214-5252-a341-e013ba33a7d8")
+    (property "Sheetname" "04_Sensing"
+      (at 20 123.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "04_Sensing.kicad_sch"
+      (at 20 143.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "5")))))
+  (sheet
+    (at 20 150)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "8a66e1fe-51be-562e-9512-bb5cf22fe456")
+    (property "Sheetname" "05_Protected_Power"
+      (at 20 148.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "05_Protected_Power.kicad_sch"
+      (at 20 168.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "6")))))
+  (sheet
+    (at 20 175)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "a8b8e5ef-19e0-5d84-8c60-ff359b0d0164")
+    (property "Sheetname" "06_Actuator_Interlock"
+      (at 20 173.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "06_Actuator_Interlock.kicad_sch"
+      (at 20 193.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "7")))))
+  (sheet
+    (at 20 200)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "c62fc5ee-40c8-515c-a816-c08000bf7406")
+    (property "Sheetname" "07_Power_Monitor"
+      (at 20 198.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "07_Power_Monitor.kicad_sch"
+      (at 20 218.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "8")))))
+  (sheet
+    (at 20 225)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "eb4158a7-f345-513c-bf55-64544b1ee44b")
+    (property "Sheetname" "08_Actuator_Rail"
+      (at 20 223.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "08_Actuator_Rail.kicad_sch"
+      (at 20 243.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "9")))))
+  (sheet
+    (at 152 50)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "56122003-a52d-598a-a125-cd0e2f54c82a")
+    (property "Sheetname" "09_Interface_Reservations"
+      (at 152 48.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "09_Interface_Reservations.kicad_sch"
+      (at 152 68.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "10")))))
+  (sheet
+    (at 152 75)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6314463c-8d57-5fea-a888-921d0788386a")
+    (property "Sheetname" "11_Wheel_SPI"
+      (at 152 73.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "11_Wheel_SPI.kicad_sch"
+      (at 152 93.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "11")))))
+  (sheet
+    (at 152 100)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "6bb26027-e36c-5149-93b0-61be9c808734")
+    (property "Sheetname" "12_Wheel_Feedback"
+      (at 152 98.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "12_Wheel_Feedback.kicad_sch"
+      (at 152 118.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "12")))))
+  (sheet
+    (at 152 125)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "3c9b8a28-3e49-56f7-8e91-446ab534358a")
+    (property "Sheetname" "14_IMU"
+      (at 152 123.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "14_IMU.kicad_sch"
+      (at 152 143.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "13")))))
+  (sheet
+    (at 152 150)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "85b91052-4714-5e7c-8fb1-77a7728d7085")
+    (property "Sheetname" "15_RGB_Status"
+      (at 152 148.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "15_RGB_Status.kicad_sch"
+      (at 152 168.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "14")))))
+  (sheet
+    (at 152 175)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "002e0bb0-41a6-5a6c-91e5-2465c2fb5e03")
+    (property "Sheetname" "16_Optical_Power"
+      (at 152 173.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "16_Optical_Power.kicad_sch"
+      (at 152 193.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "15")))))
+  (sheet
+    (at 152 200)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "3851210f-9beb-5086-821b-f8606e2597ad")
+    (property "Sheetname" "17_Optical_Sensor"
+      (at 152 198.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "17_Optical_Sensor.kicad_sch"
+      (at 152 218.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "16")))))
+  (sheet
+    (at 152 225)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "f0572d70-f163-5775-a2dd-b62394b9c2b9")
+    (property "Sheetname" "18_Wheel_Harness"
+      (at 152 223.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "18_Wheel_Harness.kicad_sch"
+      (at 152 243.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140"
+          (page "17"))))))

@@ -1,0 +1,6754 @@
+{
+  "Main": {
+    "source": "hardware\\modular\\main\\Main.kicad_pcb",
+    "source_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
+    "components": {
+      "D5": {
+        "value": "SK6805-EC15",
+        "footprint": "OPSCO_SK6805_EC15",
+        "pads": [
+          [
+            "1",
+            "RGB_DIN"
+          ],
+          [
+            "2",
+            "RGB_5V"
+          ],
+          [
+            "3",
+            "unconnected-(D5-DOUT-Pad3)"
+          ],
+          [
+            "4",
+            "GND"
+          ]
+        ]
+      },
+      "R8": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_IN1"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U16": {
+        "value": "SN74LVC08APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "SOURCE_OK"
+          ],
+          [
+            "10",
+            "CC_OUT2_INV"
+          ],
+          [
+            "11",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "12",
+            "ACT_PERMIT"
+          ],
+          [
+            "13",
+            "ARM_VALID"
+          ],
+          [
+            "14",
+            "+3V3"
+          ],
+          [
+            "2",
+            "ACT_REQ"
+          ],
+          [
+            "3",
+            "ARM_SOURCE"
+          ],
+          [
+            "4",
+            "ARM_SOURCE"
+          ],
+          [
+            "5",
+            "HALL_EN"
+          ],
+          [
+            "6",
+            "ARM_VALID"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "SOURCE_3A"
+          ],
+          [
+            "9",
+            "SOURCE_OK"
+          ]
+        ]
+      },
+      "U18": {
+        "value": "SN74LVC08APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "BTN_R_CMD1"
+          ],
+          [
+            "10",
+            "MCU_EN"
+          ],
+          [
+            "11",
+            "unconnected-(U18-4Y-Pad11)"
+          ],
+          [
+            "12",
+            "GND"
+          ],
+          [
+            "13",
+            "GND"
+          ],
+          [
+            "14",
+            "+3V3"
+          ],
+          [
+            "2",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "3",
+            "BTN_R_IN1"
+          ],
+          [
+            "4",
+            "BTN_R_CMD2"
+          ],
+          [
+            "5",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "6",
+            "BTN_R_IN2"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "HALL_EN"
+          ],
+          [
+            "9",
+            "SENS_REQ"
+          ]
+        ]
+      },
+      "C85": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_VDDPIX"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C33": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_IMON_ADC"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C37": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U38": {
+        "value": "TPS22918DBVR",
+        "footprint": "SOT-23-6",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "HALL_EN"
+          ],
+          [
+            "4",
+            "OPT_RAMP_CT"
+          ],
+          [
+            "5",
+            "unconnected-(U38-QOD-Pad5)"
+          ],
+          [
+            "6",
+            "OPT_3V3"
+          ]
+        ]
+      },
+      "R28": {
+        "value": "1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "LOGIC_PG"
+          ],
+          [
+            "2",
+            "MCU_EN"
+          ]
+        ]
+      },
+      "Q2": {
+        "value": "2N7002",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "SOURCE_3A"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "ILM_HIGH_D"
+          ]
+        ]
+      },
+      "R65": {
+        "value": "22.1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ],
+          [
+            "2",
+            "VBUS_GATE"
+          ]
+        ]
+      },
+      "R110": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "HALL_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R143": {
+        "value": "33k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_MISO_LOCAL"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R125": {
+        "value": "0R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ENC_QOD"
+          ],
+          [
+            "2",
+            "ENC_3V3"
+          ]
+        ]
+      },
+      "R64": {
+        "value": "1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_IMON_BUF"
+          ],
+          [
+            "2",
+            "USB_IMON_ADC"
+          ]
+        ]
+      },
+      "U7": {
+        "value": "TMAG5253BA2IQDMRR",
+        "footprint": "Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "HALL_EN"
+          ],
+          [
+            "4",
+            "HALL_L"
+          ],
+          [
+            "5",
+            "GND"
+          ]
+        ]
+      },
+      "C9": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_VREF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U37": {
+        "value": "SN74LVC125APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "CS_PAW"
+          ],
+          [
+            "10",
+            "CS_PAW"
+          ],
+          [
+            "11",
+            "OPT_RESET_N"
+          ],
+          [
+            "12",
+            "OPT_CTRL"
+          ],
+          [
+            "13",
+            "GND"
+          ],
+          [
+            "14",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "SPI_MOSI"
+          ],
+          [
+            "3",
+            "OPT_MOSI"
+          ],
+          [
+            "4",
+            "CS_PAW"
+          ],
+          [
+            "5",
+            "SPI_SCLK"
+          ],
+          [
+            "6",
+            "OPT_SCLK"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "SPI_MISO"
+          ],
+          [
+            "9",
+            "OPT_MISO"
+          ]
+        ]
+      },
+      "R16": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "BTN_M_VREF"
+          ]
+        ]
+      },
+      "R50": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_CMD1"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U1": {
+        "value": "TPD2EUSB30DRTR",
+        "footprint": "Texas_DRT-3",
+        "pads": [
+          [
+            "1",
+            "USB_DP"
+          ],
+          [
+            "2",
+            "USB_DM"
+          ],
+          [
+            "3",
+            "GND"
+          ]
+        ]
+      },
+      "U2": {
+        "value": "TPS62162DSGR",
+        "footprint": "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "2",
+            "PWR_5V"
+          ],
+          [
+            "3",
+            "PWR_5V"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "GND"
+          ],
+          [
+            "6",
+            "+3V3"
+          ],
+          [
+            "7",
+            "BUCK_SW"
+          ],
+          [
+            "8",
+            "LOGIC_PG"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "R25": {
+        "value": "887k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ],
+          [
+            "2",
+            "CC_VBUS_DET"
+          ]
+        ]
+      },
+      "Q3": {
+        "value": "2N7002",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "VBUS_GATE"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "VBUS_PRESENT_N"
+          ]
+        ]
+      },
+      "R63": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "SOURCE_3A"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R42": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_ILM"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R27": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CC_OUT2"
+          ]
+        ]
+      },
+      "R49": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "L1": {
+        "value": "SRP4020CC-3R3M",
+        "footprint": "L_Bourns_SRP4020CC",
+        "pads": [
+          [
+            "1",
+            "BUCK_SW"
+          ],
+          [
+            "2",
+            "+3V3"
+          ]
+        ]
+      },
+      "D3": {
+        "value": "BAT54-7-F",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "ACT_UVLO"
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            "ACT_DRIVE_EN"
+          ]
+        ]
+      },
+      "C31": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R4": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "BOOT"
+          ]
+        ]
+      },
+      "U17": {
+        "value": "SN74LVC08APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "BTN_L_CMD1"
+          ],
+          [
+            "10",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "11",
+            "BTN_M_IN2"
+          ],
+          [
+            "12",
+            "BTN_M_CMD2"
+          ],
+          [
+            "13",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "14",
+            "+3V3"
+          ],
+          [
+            "2",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "3",
+            "BTN_L_IN1"
+          ],
+          [
+            "4",
+            "BTN_L_CMD2"
+          ],
+          [
+            "5",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "6",
+            "BTN_L_IN2"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "BTN_M_IN1"
+          ],
+          [
+            "9",
+            "BTN_M_CMD1"
+          ]
+        ]
+      },
+      "R40": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "ACT_OVLO"
+          ]
+        ]
+      },
+      "TP39": {
+        "value": "RGB_DIN",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "RGB_DIN"
+          ]
+        ]
+      },
+      "J8": {
+        "value": "Soldered wires Signal_2x15",
+        "footprint": "Wire_Signal_2x15_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "10",
+            "MOTOR_SPI_SCLK"
+          ],
+          [
+            "11",
+            "GND"
+          ],
+          [
+            "12",
+            "MOTOR_SPI_MOSI"
+          ],
+          [
+            "13",
+            "GND"
+          ],
+          [
+            "14",
+            "CS_ADC2"
+          ],
+          [
+            "15",
+            "GND"
+          ],
+          [
+            "16",
+            "ADC2_MISO_LOCAL"
+          ],
+          [
+            "17",
+            "GND"
+          ],
+          [
+            "18",
+            "WHEEL_PWM_A"
+          ],
+          [
+            "19",
+            "GND"
+          ],
+          [
+            "2",
+            "SPI_SCLK"
+          ],
+          [
+            "20",
+            "WHEEL_PWM_B"
+          ],
+          [
+            "21",
+            "GND"
+          ],
+          [
+            "22",
+            "WHEEL_PWM_C"
+          ],
+          [
+            "23",
+            "GND"
+          ],
+          [
+            "24",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "25",
+            "GND"
+          ],
+          [
+            "26",
+            "WHEEL_RUN_REQ"
+          ],
+          [
+            "27",
+            "GND"
+          ],
+          [
+            "28",
+            "DRV_FAULT_LOCAL_N"
+          ],
+          [
+            "29",
+            "GND"
+          ],
+          [
+            "3",
+            "GND"
+          ],
+          [
+            "30",
+            "+3V3"
+          ],
+          [
+            "4",
+            "SPI_MOSI"
+          ],
+          [
+            "5",
+            "GND"
+          ],
+          [
+            "6",
+            "CS_DRV8316"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "DRV_MISO_LOCAL"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "C74": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R39": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_UVLO"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C87": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R62": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "SOURCE_OK"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R41": {
+        "value": "22.1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_OVLO"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U11": {
+        "value": "TUSB320LAIRWBR",
+        "footprint": "Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+        "pads": [
+          [
+            "1",
+            "USB_CC1"
+          ],
+          [
+            "10",
+            "GND"
+          ],
+          [
+            "11",
+            "GND"
+          ],
+          [
+            "12",
+            "+3V3"
+          ],
+          [
+            "2",
+            "USB_CC2"
+          ],
+          [
+            "3",
+            "GND"
+          ],
+          [
+            "4",
+            "CC_VBUS_DET"
+          ],
+          [
+            "5",
+            "unconnected-(U11-ADDR-Pad5)"
+          ],
+          [
+            "6",
+            "unconnected-(U11-OUT3-Pad6)"
+          ],
+          [
+            "7",
+            "CC_OUT1"
+          ],
+          [
+            "8",
+            "CC_OUT2"
+          ],
+          [
+            "9",
+            "unconnected-(U11-ID-Pad9)"
+          ]
+        ]
+      },
+      "C12": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_VREF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U14": {
+        "value": "SN74LVC2G04DCKR",
+        "footprint": "SOT-363_SC-70-6",
+        "pads": [
+          [
+            "1",
+            "CC_OUT1"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "CC_OUT2"
+          ],
+          [
+            "4",
+            "CC_OUT2_INV"
+          ],
+          [
+            "5",
+            "+3V3"
+          ],
+          [
+            "6",
+            "SOURCE_OK"
+          ]
+        ]
+      },
+      "C19": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R126": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "IMU_PIN9"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C73": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R71": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "VBUS_PRESENT_N"
+          ]
+        ]
+      },
+      "U10": {
+        "value": "ADS7038IRTER",
+        "footprint": "WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "HALL_R"
+          ],
+          [
+            "10",
+            "+3V3"
+          ],
+          [
+            "11",
+            "ADC_CS"
+          ],
+          [
+            "12",
+            "SPI_MISO"
+          ],
+          [
+            "13",
+            "SPI_SCLK"
+          ],
+          [
+            "14",
+            "SPI_MOSI"
+          ],
+          [
+            "15",
+            "HALL_L"
+          ],
+          [
+            "16",
+            "HALL_M"
+          ],
+          [
+            "17",
+            "GND"
+          ],
+          [
+            "2",
+            "BTN_L_ISENSE"
+          ],
+          [
+            "3",
+            "BTN_M_ISENSE"
+          ],
+          [
+            "4",
+            "BTN_R_ISENSE"
+          ],
+          [
+            "5",
+            "USB_IMON_ADC"
+          ],
+          [
+            "6",
+            "ACT_VMON"
+          ],
+          [
+            "7",
+            "+3V3"
+          ],
+          [
+            "8",
+            "ADC_DECAP"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "J6": {
+        "value": "Soldered wires Signal_2x04",
+        "footprint": "Wire_Signal_2x04_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "ENC_SCLK_LOCAL"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "ENC_MOSI_LOCAL"
+          ],
+          [
+            "6",
+            "ENC_CS_LOCAL"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "ENC_MISO_LOCAL"
+          ]
+        ]
+      },
+      "R43": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_ILM"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C22": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R52": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_CMD1"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R29": {
+        "value": "22.1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ],
+          [
+            "2",
+            "USB_UVLO"
+          ]
+        ]
+      },
+      "U20": {
+        "value": "TPD2E2U06DCKR",
+        "footprint": "SOT-323_SC-70",
+        "pads": [
+          [
+            "1",
+            "USB_CC1"
+          ],
+          [
+            "2",
+            "USB_CC2"
+          ],
+          [
+            "3",
+            "GND"
+          ]
+        ]
+      },
+      "C89": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U33": {
+        "value": "TPS7A2450DBVR",
+        "footprint": "SOT-23-5",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "HALL_EN"
+          ],
+          [
+            "4",
+            "unconnected-(U33-NC-Pad4)"
+          ],
+          [
+            "5",
+            "RGB_5V"
+          ]
+        ]
+      },
+      "R131": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "OPT_CS_N"
+          ]
+        ]
+      },
+      "C2": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C72": {
+        "value": "10nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R51": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_CMD2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U39": {
+        "value": "SN74LVC1G125DBVR",
+        "footprint": "SOT-23-5",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "2",
+            "CS_PAW"
+          ],
+          [
+            "3",
+            "GND"
+          ],
+          [
+            "4",
+            "OPT_CS_N"
+          ],
+          [
+            "5",
+            "OPT_3V3"
+          ]
+        ]
+      },
+      "SW1": {
+        "value": "RESET",
+        "footprint": "SW_SPST_TS-1088-xR020",
+        "pads": [
+          [
+            "1",
+            "MCU_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R69": {
+        "value": "1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C84": {
+        "value": "4.7uF/10V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_VDDPIX"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "J10": {
+        "value": "Soldered wires Power_1x02",
+        "footprint": "Wire_Power_1x02_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C4": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "MCU_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "J1": {
+        "value": "TYPE-C-31-M-12",
+        "footprint": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "A1",
+            "GND"
+          ],
+          [
+            "A12",
+            "GND"
+          ],
+          [
+            "A4",
+            "VBUS_USB"
+          ],
+          [
+            "A5",
+            "USB_CC1"
+          ],
+          [
+            "A6",
+            "USB_DP"
+          ],
+          [
+            "A7",
+            "USB_DM"
+          ],
+          [
+            "A8",
+            "unconnected-(J1-SBU1-PadA8)"
+          ],
+          [
+            "A9",
+            "VBUS_USB"
+          ],
+          [
+            "B1",
+            "GND"
+          ],
+          [
+            "B12",
+            "GND"
+          ],
+          [
+            "B4",
+            "VBUS_USB"
+          ],
+          [
+            "B5",
+            "USB_CC2"
+          ],
+          [
+            "B6",
+            "USB_DP"
+          ],
+          [
+            "B7",
+            "USB_DM"
+          ],
+          [
+            "B8",
+            "unconnected-(J1-SBU2-PadB8)"
+          ],
+          [
+            "B9",
+            "VBUS_USB"
+          ],
+          [
+            "SH",
+            "GND"
+          ],
+          [
+            "SH",
+            "GND"
+          ],
+          [
+            "SH",
+            "GND"
+          ],
+          [
+            "SH",
+            "GND"
+          ]
+        ]
+      },
+      "C34": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C70": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R70": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "SENS_REQ"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C23": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U36": {
+        "value": "TLV75519PDBVR",
+        "footprint": "SOT-23-5",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "OPT_3V3"
+          ],
+          [
+            "4",
+            "unconnected-(U36-NC-Pad4)"
+          ],
+          [
+            "5",
+            "OPT_1V9"
+          ]
+        ]
+      },
+      "C10": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U9": {
+        "value": "TMAG5253BA2IQDMRR",
+        "footprint": "Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "HALL_EN"
+          ],
+          [
+            "4",
+            "HALL_R"
+          ],
+          [
+            "5",
+            "GND"
+          ]
+        ]
+      },
+      "U6": {
+        "value": "DRV8231ADSGR",
+        "footprint": "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "BTN_R_ISENSE"
+          ],
+          [
+            "2",
+            "BTN_R_IN2"
+          ],
+          [
+            "3",
+            "BTN_R_IN1"
+          ],
+          [
+            "4",
+            "BTN_R_VREF"
+          ],
+          [
+            "5",
+            "ACT_5V"
+          ],
+          [
+            "6",
+            "BTN_R_COIL_P"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "BTN_R_COIL_N"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "C53": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C1": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C77": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R72": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CS_PAW"
+          ]
+        ]
+      },
+      "R15": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_IN2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C64": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R135": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "OPT_MISO"
+          ]
+        ]
+      },
+      "C18": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R47": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_HEARTBEAT"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R54": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_CMD1"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C78": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U8": {
+        "value": "TMAG5253BA2IQDMRR",
+        "footprint": "Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "HALL_EN"
+          ],
+          [
+            "4",
+            "HALL_M"
+          ],
+          [
+            "5",
+            "GND"
+          ]
+        ]
+      },
+      "C27": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WD_RCEXT"
+          ],
+          [
+            "2",
+            "WD_CEXT"
+          ]
+        ]
+      },
+      "SW2": {
+        "value": "BOOT",
+        "footprint": "SW_SPST_TS-1088-xR020",
+        "pads": [
+          [
+            "1",
+            "BOOT"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R133": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "OPT_SCLK"
+          ]
+        ]
+      },
+      "R48": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_REQ"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R99": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "ENC_CS_LOCAL"
+          ]
+        ]
+      },
+      "C79": {
+        "value": "1nF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_RAMP_CT"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C3": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "J3": {
+        "value": "Soldered wires Power_1x02",
+        "footprint": "Wire_Power_1x02_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "BTN_M_COIL_P"
+          ],
+          [
+            "2",
+            "BTN_M_COIL_N"
+          ]
+        ]
+      },
+      "TP38": {
+        "value": "RGB_5V",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "RGB_5V"
+          ]
+        ]
+      },
+      "R74": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CS_ADC2"
+          ]
+        ]
+      },
+      "C11": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R66": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_GATE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C38": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R44": {
+        "value": "1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_FAULT_N"
+          ],
+          [
+            "2",
+            "MCU_EN"
+          ]
+        ]
+      },
+      "R38": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_UV_2"
+          ],
+          [
+            "2",
+            "ACT_UVLO"
+          ]
+        ]
+      },
+      "R134": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_MOSI"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C36": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_VMON"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R20": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_IN1"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R60": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_ILM"
+          ],
+          [
+            "2",
+            "ILM_HIGH_D"
+          ]
+        ]
+      },
+      "R18": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_ISENSE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R32": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_OV_1"
+          ],
+          [
+            "2",
+            "USB_OV_2"
+          ]
+        ]
+      },
+      "R76": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CS_DRV8316"
+          ]
+        ]
+      },
+      "U15": {
+        "value": "SN74LVC1G123DCUR",
+        "footprint": "VSSOP-8_2.3x2mm_P0.5mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "2",
+            "ACT_HEARTBEAT"
+          ],
+          [
+            "3",
+            "ARM_VALID"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "ACT_PERMIT"
+          ],
+          [
+            "6",
+            "WD_CEXT"
+          ],
+          [
+            "7",
+            "WD_RCEXT"
+          ],
+          [
+            "8",
+            "+3V3"
+          ]
+        ]
+      },
+      "C6": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R130": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C21": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC_DECAP"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C32": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C16": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "D4": {
+        "value": "BAT54-7-F",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "ACT_VMON"
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            "+3V3"
+          ]
+        ]
+      },
+      "R5": {
+        "value": "33R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "MCU_USB_DM"
+          ],
+          [
+            "2",
+            "USB_DM"
+          ]
+        ]
+      },
+      "R37": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_UV_1"
+          ],
+          [
+            "2",
+            "ACT_UV_2"
+          ]
+        ]
+      },
+      "R3": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "MCU_EN"
+          ]
+        ]
+      },
+      "C35": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_GATE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U34": {
+        "value": "SN74LV1T34DBVR",
+        "footprint": "SOT-23-5",
+        "pads": [
+          [
+            "1",
+            "unconnected-(U34-NC-Pad1)"
+          ],
+          [
+            "2",
+            "RGB_DATA"
+          ],
+          [
+            "3",
+            "GND"
+          ],
+          [
+            "4",
+            "RGB_BUFFER_OUT"
+          ],
+          [
+            "5",
+            "RGB_5V"
+          ]
+        ]
+      },
+      "C76": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R14": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_IN1"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U3": {
+        "value": "ESP32-S3-MINI-1-N8",
+        "footprint": "ESP32-S2-MINI-1",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "10",
+            "BTN_M_CMD1"
+          ],
+          [
+            "11",
+            "BTN_M_CMD2"
+          ],
+          [
+            "12",
+            "BTN_R_CMD1"
+          ],
+          [
+            "13",
+            "BTN_R_CMD2"
+          ],
+          [
+            "14",
+            "ADC_CS"
+          ],
+          [
+            "15",
+            "SPI_MOSI"
+          ],
+          [
+            "16",
+            "SPI_SCLK"
+          ],
+          [
+            "17",
+            "SPI_MISO"
+          ],
+          [
+            "18",
+            "CC_OUT1"
+          ],
+          [
+            "19",
+            "CC_OUT2"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "20",
+            "ACT_REQ"
+          ],
+          [
+            "21",
+            "ACT_HEARTBEAT"
+          ],
+          [
+            "22",
+            "SENS_REQ"
+          ],
+          [
+            "23",
+            "MCU_USB_DM"
+          ],
+          [
+            "24",
+            "MCU_USB_DP"
+          ],
+          [
+            "25",
+            "CS_IMU"
+          ],
+          [
+            "26",
+            "OPT_CTRL"
+          ],
+          [
+            "27",
+            "WHEEL_PWM_B"
+          ],
+          [
+            "28",
+            "MOTOR_SPI_MOSI"
+          ],
+          [
+            "29",
+            "MOTOR_SPI_SCLK"
+          ],
+          [
+            "3",
+            "+3V3"
+          ],
+          [
+            "30",
+            "WHEEL_PWM_C"
+          ],
+          [
+            "31",
+            "MOTOR_SPI_MISO"
+          ],
+          [
+            "32",
+            "CS_ADC2"
+          ],
+          [
+            "33",
+            "CS_MA735"
+          ],
+          [
+            "34",
+            "CS_DRV8316"
+          ],
+          [
+            "35",
+            "PAW_MOTION_N"
+          ],
+          [
+            "36",
+            "IMU_INT1"
+          ],
+          [
+            "37",
+            "DRV_FAULT_N"
+          ],
+          [
+            "38",
+            "WHEEL_PWM_A"
+          ],
+          [
+            "39",
+            "UART_TX"
+          ],
+          [
+            "4",
+            "BOOT"
+          ],
+          [
+            "40",
+            "UART_RX"
+          ],
+          [
+            "41",
+            "RGB_DATA"
+          ],
+          [
+            "42",
+            "GND"
+          ],
+          [
+            "43",
+            "GND"
+          ],
+          [
+            "44",
+            "BOOT_SAFE_SPARE"
+          ],
+          [
+            "45",
+            "MCU_EN"
+          ],
+          [
+            "46",
+            "GND"
+          ],
+          [
+            "47",
+            "GND"
+          ],
+          [
+            "48",
+            "GND"
+          ],
+          [
+            "49",
+            "GND"
+          ],
+          [
+            "5",
+            "VBUS_PRESENT_N"
+          ],
+          [
+            "50",
+            "GND"
+          ],
+          [
+            "51",
+            "GND"
+          ],
+          [
+            "52",
+            "GND"
+          ],
+          [
+            "53",
+            "GND"
+          ],
+          [
+            "54",
+            "GND"
+          ],
+          [
+            "55",
+            "GND"
+          ],
+          [
+            "56",
+            "GND"
+          ],
+          [
+            "57",
+            "GND"
+          ],
+          [
+            "58",
+            "GND"
+          ],
+          [
+            "59",
+            "GND"
+          ],
+          [
+            "6",
+            "CS_PAW"
+          ],
+          [
+            "60",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "61",
+            "GND"
+          ],
+          [
+            "62",
+            "GND"
+          ],
+          [
+            "63",
+            "GND"
+          ],
+          [
+            "64",
+            "GND"
+          ],
+          [
+            "65",
+            "GND"
+          ],
+          [
+            "7",
+            "WHEEL_RUN_REQ"
+          ],
+          [
+            "8",
+            "BTN_L_CMD1"
+          ],
+          [
+            "9",
+            "BTN_L_CMD2"
+          ]
+        ]
+      },
+      "R31": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ],
+          [
+            "2",
+            "USB_OV_1"
+          ]
+        ]
+      },
+      "R132": {
+        "value": "39R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_1V9"
+          ],
+          [
+            "2",
+            "OPT_LED_P"
+          ]
+        ]
+      },
+      "R68": {
+        "value": "22.1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_VMON"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R73": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CS_IMU"
+          ]
+        ]
+      },
+      "R23": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_VREF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R10": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "BTN_L_VREF"
+          ]
+        ]
+      },
+      "R53": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_CMD2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C29": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C20": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C7": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R6": {
+        "value": "33R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "MCU_USB_DP"
+          ],
+          [
+            "2",
+            "USB_DP"
+          ]
+        ]
+      },
+      "C88": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C30": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C8": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R35": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_OVLO"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C28": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C17": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C55": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C13": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C26": {
+        "value": "10nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_DVDT"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R101": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ENC_MISO_LOCAL"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R59": {
+        "value": "4.7k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_ILM"
+          ],
+          [
+            "2",
+            "ILM_MED_D"
+          ]
+        ]
+      },
+      "R77": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_RUN_REQ"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U12": {
+        "value": "TPS259470LRPWR",
+        "footprint": "Texas_RPW0010A",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "USB_UVLO"
+          ],
+          [
+            "1",
+            "USB_UVLO"
+          ],
+          [
+            "10",
+            "unconnected-(U12-ITIMER-Pad10)"
+          ],
+          [
+            "10",
+            "unconnected-(U12-ITIMER-Pad10)"
+          ],
+          [
+            "2",
+            "USB_OVLO"
+          ],
+          [
+            "3",
+            "unconnected-(U12-AUXOFF-Pad3)"
+          ],
+          [
+            "4",
+            "USB_FAULT_N"
+          ],
+          [
+            "4",
+            "USB_FAULT_N"
+          ],
+          [
+            "5",
+            "VBUS_USB"
+          ],
+          [
+            "6",
+            "PWR_5V"
+          ],
+          [
+            "7",
+            "USB_DVDT"
+          ],
+          [
+            "7",
+            "USB_DVDT"
+          ],
+          [
+            "8",
+            "GND"
+          ],
+          [
+            "9",
+            "USB_ILM"
+          ]
+        ]
+      },
+      "R26": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CC_OUT1"
+          ]
+        ]
+      },
+      "U25": {
+        "value": "SN74LVC125APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "CS_DRV8316"
+          ],
+          [
+            "10",
+            "CS_ADC2"
+          ],
+          [
+            "11",
+            "DRV_FAULT_N"
+          ],
+          [
+            "12",
+            "DRV_FAULT_LOCAL_N"
+          ],
+          [
+            "13",
+            "GND"
+          ],
+          [
+            "14",
+            "+3V3"
+          ],
+          [
+            "2",
+            "DRV_MISO_LOCAL"
+          ],
+          [
+            "3",
+            "SPI_MISO"
+          ],
+          [
+            "4",
+            "CS_MA735"
+          ],
+          [
+            "5",
+            "ENC_MISO_LOCAL"
+          ],
+          [
+            "6",
+            "SPI_MISO"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "MOTOR_SPI_MISO"
+          ],
+          [
+            "9",
+            "ADC2_MISO_LOCAL"
+          ]
+        ]
+      },
+      "C82": {
+        "value": "2.2uF/10V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_1V9"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R46": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "WD_RCEXT"
+          ]
+        ]
+      },
+      "R136": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "PAW_MOTION_N"
+          ]
+        ]
+      },
+      "R34": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_OV_3"
+          ],
+          [
+            "2",
+            "USB_OVLO"
+          ]
+        ]
+      },
+      "C14": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R36": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ],
+          [
+            "2",
+            "ACT_UV_1"
+          ]
+        ]
+      },
+      "D1": {
+        "value": "SMBJ12A",
+        "footprint": "D_SMB",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R141": {
+        "value": "33k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_FAULT_LOCAL_N"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R45": {
+        "value": "1k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_FAULT_N"
+          ],
+          [
+            "2",
+            "MCU_EN"
+          ]
+        ]
+      },
+      "R11": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_VREF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U35": {
+        "value": "PMW3360DM-T2QU",
+        "footprint": "PixArt_PMW3360DM_T2QU",
+        "pads": [
+          [
+            "1",
+            "unconnected-(U35-NC-Pad1)"
+          ],
+          [
+            "10",
+            "OPT_SCLK"
+          ],
+          [
+            "11",
+            "OPT_MOSI"
+          ],
+          [
+            "12",
+            "OPT_MISO"
+          ],
+          [
+            "13",
+            "OPT_CS_N"
+          ],
+          [
+            "14",
+            "unconnected-(U35-NC-Pad14)"
+          ],
+          [
+            "15",
+            "OPT_LED_P"
+          ],
+          [
+            "16",
+            "unconnected-(U35-NC-Pad16)"
+          ],
+          [
+            "2",
+            "unconnected-(U35-NC-Pad2)"
+          ],
+          [
+            "3",
+            "OPT_VDDPIX"
+          ],
+          [
+            "4",
+            "OPT_1V9"
+          ],
+          [
+            "5",
+            "OPT_3V3"
+          ],
+          [
+            "6",
+            "unconnected-(U35-NC-Pad6)"
+          ],
+          [
+            "7",
+            "OPT_RESET_N"
+          ],
+          [
+            "8",
+            "GND"
+          ],
+          [
+            "9",
+            "PAW_MOTION_N"
+          ]
+        ]
+      },
+      "R58": {
+        "value": "33R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ILM_BASE_2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R128": {
+        "value": "330R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_BUFFER_OUT"
+          ],
+          [
+            "2",
+            "RGB_DIN"
+          ]
+        ]
+      },
+      "C25": {
+        "value": "10nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_DVDT"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U28": {
+        "value": "TPS22919DCKR",
+        "footprint": "SOT-363_SC-70-6",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "HALL_EN"
+          ],
+          [
+            "4",
+            "unconnected-(U28-NC-Pad4)"
+          ],
+          [
+            "5",
+            "ENC_QOD"
+          ],
+          [
+            "6",
+            "ENC_3V3"
+          ]
+        ]
+      },
+      "R78": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_DATA"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U32": {
+        "value": "ICM-42688-P",
+        "footprint": "LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y",
+        "pads": [
+          [
+            "1",
+            "SPI_MISO"
+          ],
+          [
+            "10",
+            "unconnected-(U32-RESV-Pad10)"
+          ],
+          [
+            "11",
+            "unconnected-(U32-RESV-Pad11)"
+          ],
+          [
+            "12",
+            "CS_IMU"
+          ],
+          [
+            "13",
+            "SPI_SCLK"
+          ],
+          [
+            "14",
+            "SPI_MOSI"
+          ],
+          [
+            "2",
+            "unconnected-(U32-RESV-Pad2)"
+          ],
+          [
+            "3",
+            "unconnected-(U32-RESV-Pad3)"
+          ],
+          [
+            "4",
+            "IMU_INT1"
+          ],
+          [
+            "5",
+            "+3V3"
+          ],
+          [
+            "6",
+            "GND"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "+3V3"
+          ],
+          [
+            "9",
+            "IMU_PIN9"
+          ]
+        ]
+      },
+      "C71": {
+        "value": "2.2uF/10V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C81": {
+        "value": "2.2uF/10V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R79": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_CTRL"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C86": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R129": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_DIN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C40": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U4": {
+        "value": "DRV8231ADSGR",
+        "footprint": "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "BTN_L_ISENSE"
+          ],
+          [
+            "2",
+            "BTN_L_IN2"
+          ],
+          [
+            "3",
+            "BTN_L_IN1"
+          ],
+          [
+            "4",
+            "BTN_L_VREF"
+          ],
+          [
+            "5",
+            "ACT_5V"
+          ],
+          [
+            "6",
+            "BTN_L_COIL_P"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "BTN_L_COIL_N"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "R30": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_UVLO"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C39": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C15": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_VREF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R57": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ILM_BASE_1"
+          ],
+          [
+            "2",
+            "ILM_BASE_2"
+          ]
+        ]
+      },
+      "R56": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_ILM"
+          ],
+          [
+            "2",
+            "ILM_BASE_1"
+          ]
+        ]
+      },
+      "Q1": {
+        "value": "2N7002",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "SOURCE_OK"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "ILM_MED_D"
+          ]
+        ]
+      },
+      "C75": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "RGB_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R22": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "BTN_R_VREF"
+          ]
+        ]
+      },
+      "J4": {
+        "value": "Soldered wires Power_1x02",
+        "footprint": "Wire_Power_1x02_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "BTN_R_COIL_P"
+          ],
+          [
+            "2",
+            "BTN_R_COIL_N"
+          ]
+        ]
+      },
+      "U19": {
+        "value": "TLV9001IDBVR",
+        "footprint": "SOT-23-5",
+        "pads": [
+          [
+            "1",
+            "USB_IMON_BUF"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "USB_ILM"
+          ],
+          [
+            "4",
+            "USB_IMON_BUF"
+          ],
+          [
+            "5",
+            "+3V3"
+          ]
+        ]
+      },
+      "C83": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_1V9"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C24": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R67": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "ACT_VMON"
+          ]
+        ]
+      },
+      "D2": {
+        "value": "SMBJ6.0A",
+        "footprint": "D_SMB",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C80": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R24": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_ISENSE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C63": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R33": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_OV_2"
+          ],
+          [
+            "2",
+            "USB_OV_3"
+          ]
+        ]
+      },
+      "R17": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_M_VREF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R80": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BOOT_SAFE_SPARE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U29": {
+        "value": "SN74LVC125APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "10",
+            "GND"
+          ],
+          [
+            "11",
+            "unconnected-(U29-4Y-Pad11)"
+          ],
+          [
+            "12",
+            "GND"
+          ],
+          [
+            "13",
+            "ENC_3V3"
+          ],
+          [
+            "14",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "SPI_SCLK"
+          ],
+          [
+            "3",
+            "ENC_SCLK_LOCAL"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "SPI_MOSI"
+          ],
+          [
+            "6",
+            "ENC_MOSI_LOCAL"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "ENC_CS_LOCAL"
+          ],
+          [
+            "9",
+            "CS_MA735"
+          ]
+        ]
+      },
+      "R55": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_CMD2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C5": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R12": {
+        "value": "3.3k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_ISENSE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R7": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "ADC_CS"
+          ]
+        ]
+      },
+      "R61": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "USB_ILM"
+          ],
+          [
+            "2",
+            "ILM_HIGH_D"
+          ]
+        ]
+      },
+      "R9": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_L_IN2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R75": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "CS_MA735"
+          ]
+        ]
+      },
+      "U5": {
+        "value": "DRV8231ADSGR",
+        "footprint": "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "BTN_M_ISENSE"
+          ],
+          [
+            "2",
+            "BTN_M_IN2"
+          ],
+          [
+            "3",
+            "BTN_M_IN1"
+          ],
+          [
+            "4",
+            "BTN_M_VREF"
+          ],
+          [
+            "5",
+            "ACT_5V"
+          ],
+          [
+            "6",
+            "BTN_M_COIL_P"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "BTN_M_COIL_N"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "U13": {
+        "value": "TPS259470LRPWR",
+        "footprint": "Texas_RPW0010A",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "ACT_UVLO"
+          ],
+          [
+            "1",
+            "ACT_UVLO"
+          ],
+          [
+            "10",
+            "unconnected-(U13-ITIMER-Pad10)"
+          ],
+          [
+            "10",
+            "unconnected-(U13-ITIMER-Pad10)"
+          ],
+          [
+            "2",
+            "ACT_OVLO"
+          ],
+          [
+            "3",
+            "unconnected-(U13-AUXOFF-Pad3)"
+          ],
+          [
+            "4",
+            "ACT_FAULT_N"
+          ],
+          [
+            "4",
+            "ACT_FAULT_N"
+          ],
+          [
+            "5",
+            "PWR_5V"
+          ],
+          [
+            "6",
+            "ACT_5V"
+          ],
+          [
+            "7",
+            "ACT_DVDT"
+          ],
+          [
+            "7",
+            "ACT_DVDT"
+          ],
+          [
+            "8",
+            "GND"
+          ],
+          [
+            "9",
+            "ACT_ILM"
+          ]
+        ]
+      },
+      "R21": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BTN_R_IN2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R127": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "IMU_INT1"
+          ]
+        ]
+      },
+      "J2": {
+        "value": "Soldered wires Power_1x02",
+        "footprint": "Wire_Power_1x02_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "BTN_L_COIL_P"
+          ],
+          [
+            "2",
+            "BTN_L_COIL_N"
+          ]
+        ]
+      },
+      "R142": {
+        "value": "33k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_MISO_LOCAL"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "TP19": {
+        "value": "OPT_CTRL",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "OPT_CTRL"
+          ]
+        ]
+      },
+      "TP7": {
+        "value": "BOOT",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "BOOT"
+          ]
+        ]
+      },
+      "TP15": {
+        "value": "GND",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ]
+        ]
+      },
+      "TP41": {
+        "value": "OPT_1V9",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "OPT_1V9"
+          ]
+        ]
+      },
+      "TP1": {
+        "value": "VBUS_USB",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ]
+        ]
+      },
+      "TP9": {
+        "value": "GND",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ]
+        ]
+      },
+      "TP17": {
+        "value": "WHEEL_RUN_REQ",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "WHEEL_RUN_REQ"
+          ]
+        ]
+      },
+      "TP11": {
+        "value": "PWR_5V",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ]
+        ]
+      },
+      "TP16": {
+        "value": "CS_PAW",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "CS_PAW"
+          ]
+        ]
+      },
+      "TP5": {
+        "value": "UART_RX",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "UART_RX"
+          ]
+        ]
+      },
+      "TP3": {
+        "value": "ACT_5V",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ]
+        ]
+      },
+      "TP2": {
+        "value": "PWR_5V",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "PWR_5V"
+          ]
+        ]
+      },
+      "TP8": {
+        "value": "+3V3",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ]
+        ]
+      },
+      "TP43": {
+        "value": "OPT_RESET_N",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "OPT_RESET_N"
+          ]
+        ]
+      },
+      "TP20": {
+        "value": "MOTOR_SPI_MOSI",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "MOTOR_SPI_MOSI"
+          ]
+        ]
+      },
+      "TP40": {
+        "value": "OPT_3V3",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "OPT_3V3"
+          ]
+        ]
+      },
+      "TP22": {
+        "value": "MOTOR_SPI_MISO",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "MOTOR_SPI_MISO"
+          ]
+        ]
+      },
+      "TP28": {
+        "value": "DRV_FAULT_N",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "DRV_FAULT_N"
+          ]
+        ]
+      },
+      "TP29": {
+        "value": "WHEEL_PWM_A",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PWM_A"
+          ]
+        ]
+      },
+      "TP12": {
+        "value": "ACT_5V",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ]
+        ]
+      },
+      "TP24": {
+        "value": "CS_MA735",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "CS_MA735"
+          ]
+        ]
+      },
+      "TP23": {
+        "value": "CS_ADC2",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "CS_ADC2"
+          ]
+        ]
+      },
+      "TP6": {
+        "value": "MCU_EN",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "MCU_EN"
+          ]
+        ]
+      },
+      "TP30": {
+        "value": "RGB_DATA",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "RGB_DATA"
+          ]
+        ]
+      },
+      "TP25": {
+        "value": "CS_DRV8316",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "CS_DRV8316"
+          ]
+        ]
+      },
+      "TP33": {
+        "value": "WHEEL_PWM_C",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PWM_C"
+          ]
+        ]
+      },
+      "TP13": {
+        "value": "ACT_DRIVE_EN",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "ACT_DRIVE_EN"
+          ]
+        ]
+      },
+      "TP18": {
+        "value": "CS_IMU",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "CS_IMU"
+          ]
+        ]
+      },
+      "TP21": {
+        "value": "MOTOR_SPI_SCLK",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "MOTOR_SPI_SCLK"
+          ]
+        ]
+      },
+      "TP31": {
+        "value": "BOOT_SAFE_SPARE",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "BOOT_SAFE_SPARE"
+          ]
+        ]
+      },
+      "TP10": {
+        "value": "VBUS_USB",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "VBUS_USB"
+          ]
+        ]
+      },
+      "TP14": {
+        "value": "USB_ILM",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "USB_ILM"
+          ]
+        ]
+      },
+      "TP4": {
+        "value": "UART_TX",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "UART_TX"
+          ]
+        ]
+      },
+      "TP32": {
+        "value": "WHEEL_PWM_B",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PWM_B"
+          ]
+        ]
+      },
+      "TP42": {
+        "value": "OPT_VDDPIX",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "OPT_VDDPIX"
+          ]
+        ]
+      },
+      "TP26": {
+        "value": "PAW_MOTION_N",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "PAW_MOTION_N"
+          ]
+        ]
+      },
+      "TP27": {
+        "value": "IMU_INT1",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "IMU_INT1"
+          ]
+        ]
+      }
+    },
+    "removed_inner_segments": 2680,
+    "layer_count": 2
+  },
+  "Wheel": {
+    "source": "hardware\\modular\\wheel\\Wheel.kicad_pcb",
+    "source_sha256": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01",
+    "components": {
+      "TP34": {
+        "value": "ACT_5V",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ]
+        ]
+      },
+      "R123": {
+        "value": "47R/2W",
+        "footprint": "R_2512_6332Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "BRAKE_DRAIN"
+          ]
+        ]
+      },
+      "R139": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PWM_B"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "J5": {
+        "value": "GB1806 phase wires",
+        "footprint": "MotorWire_3x1mm_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PHASE_A"
+          ],
+          [
+            "2",
+            "WHEEL_PHASE_B"
+          ],
+          [
+            "3",
+            "WHEEL_PHASE_C"
+          ]
+        ]
+      },
+      "R102": {
+        "value": "330R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_SOA"
+          ],
+          [
+            "2",
+            "WHEEL_I_A"
+          ]
+        ]
+      },
+      "U22": {
+        "value": "SN74LVC08APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "10",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "11",
+            "DRV_INHC"
+          ],
+          [
+            "12",
+            "WHEEL_PWM_C"
+          ],
+          [
+            "13",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "14",
+            "+3V3"
+          ],
+          [
+            "2",
+            "WHEEL_RUN_REQ"
+          ],
+          [
+            "3",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "4",
+            "WHEEL_PWM_A"
+          ],
+          [
+            "5",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "6",
+            "DRV_INHA"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "DRV_INHB"
+          ],
+          [
+            "9",
+            "WHEEL_PWM_B"
+          ]
+        ]
+      },
+      "C45": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R138": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PWM_A"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "TP35": {
+        "value": "BRAKE_REF",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "BRAKE_REF"
+          ]
+        ]
+      },
+      "R97": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "MOTOR_SPI_MOSI"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "TP37": {
+        "value": "GND",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ]
+        ]
+      },
+      "R144": {
+        "value": "33k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "CS_DRV8316"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R100": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_MISO_LOCAL"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R107": {
+        "value": "0R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_SPARE5"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R96": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "MOTOR_SPI_SCLK"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C46": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_CP"
+          ],
+          [
+            "2",
+            "ACT_5V"
+          ]
+        ]
+      },
+      "R87": {
+        "value": "4.7k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "DRV_MISO_LOCAL"
+          ]
+        ]
+      },
+      "C60": {
+        "value": "22pF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_I_B"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "D6": {
+        "value": "SMBJ6.0A",
+        "footprint": "D_SMB",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R113": {
+        "value": "34.8k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_DIV_TOP"
+          ],
+          [
+            "2",
+            "BRAKE_SENSE"
+          ]
+        ]
+      },
+      "C48": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R89": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_FAULT_LOCAL_N"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C43": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R115": {
+        "value": "1M",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_OUT"
+          ],
+          [
+            "2",
+            "BRAKE_FB_1"
+          ]
+        ]
+      },
+      "R111": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "BRAKE_REF"
+          ]
+        ]
+      },
+      "U30": {
+        "value": "TLV1811DBVR",
+        "footprint": "SOT-23-5",
+        "pads": [
+          [
+            "1",
+            "BRAKE_OUT"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "BRAKE_SENSE"
+          ],
+          [
+            "4",
+            "BRAKE_REF"
+          ],
+          [
+            "5",
+            "ACT_5V"
+          ]
+        ]
+      },
+      "R103": {
+        "value": "330R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_SOB"
+          ],
+          [
+            "2",
+            "WHEEL_I_B"
+          ]
+        ]
+      },
+      "C61": {
+        "value": "22pF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_I_C"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C90": {
+        "value": "100uF/16V",
+        "footprint": "CP_Elec_6.3x5.9",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "J9": {
+        "value": "Soldered wires Signal_2x15",
+        "footprint": "Wire_Signal_2x15_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "10",
+            "GND"
+          ],
+          [
+            "11",
+            "WHEEL_PWM_B"
+          ],
+          [
+            "12",
+            "GND"
+          ],
+          [
+            "13",
+            "WHEEL_PWM_A"
+          ],
+          [
+            "14",
+            "GND"
+          ],
+          [
+            "15",
+            "ADC2_MISO_LOCAL"
+          ],
+          [
+            "16",
+            "GND"
+          ],
+          [
+            "17",
+            "CS_ADC2"
+          ],
+          [
+            "18",
+            "GND"
+          ],
+          [
+            "19",
+            "MOTOR_SPI_MOSI"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "20",
+            "GND"
+          ],
+          [
+            "21",
+            "MOTOR_SPI_SCLK"
+          ],
+          [
+            "22",
+            "GND"
+          ],
+          [
+            "23",
+            "DRV_MISO_LOCAL"
+          ],
+          [
+            "24",
+            "GND"
+          ],
+          [
+            "25",
+            "CS_DRV8316"
+          ],
+          [
+            "26",
+            "GND"
+          ],
+          [
+            "27",
+            "SPI_MOSI"
+          ],
+          [
+            "28",
+            "GND"
+          ],
+          [
+            "29",
+            "SPI_SCLK"
+          ],
+          [
+            "3",
+            "DRV_FAULT_LOCAL_N"
+          ],
+          [
+            "30",
+            "GND"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "WHEEL_RUN_REQ"
+          ],
+          [
+            "6",
+            "GND"
+          ],
+          [
+            "7",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "8",
+            "GND"
+          ],
+          [
+            "9",
+            "WHEEL_PWM_C"
+          ]
+        ]
+      },
+      "R105": {
+        "value": "0R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_SPARE3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C47": {
+        "value": "47nF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_CPH"
+          ],
+          [
+            "2",
+            "WHEEL_CPL"
+          ]
+        ]
+      },
+      "C49": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R82": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "WHEEL_DRVOFF"
+          ]
+        ]
+      },
+      "R90": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_INHA"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R121": {
+        "value": "47R/2W",
+        "footprint": "R_2512_6332Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "BRAKE_DRAIN"
+          ]
+        ]
+      },
+      "R114": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_SENSE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R106": {
+        "value": "0R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_SPARE4"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R98": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "ADC2_CS_LOCAL"
+          ]
+        ]
+      },
+      "C59": {
+        "value": "22pF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_I_A"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R95": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "SPI_MOSI"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R112": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "BRAKE_DIV_TOP"
+          ]
+        ]
+      },
+      "U21": {
+        "value": "DRV8316RRGFR",
+        "footprint": "Texas_RGF0040E",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "unconnected-(U21-NC-Pad1)"
+          ],
+          [
+            "10",
+            "ACT_5V"
+          ],
+          [
+            "11",
+            "ACT_5V"
+          ],
+          [
+            "12",
+            "GND"
+          ],
+          [
+            "13",
+            "WHEEL_PHASE_A"
+          ],
+          [
+            "14",
+            "WHEEL_PHASE_A"
+          ],
+          [
+            "15",
+            "GND"
+          ],
+          [
+            "16",
+            "WHEEL_PHASE_B"
+          ],
+          [
+            "17",
+            "WHEEL_PHASE_B"
+          ],
+          [
+            "18",
+            "GND"
+          ],
+          [
+            "19",
+            "WHEEL_PHASE_C"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "20",
+            "WHEEL_PHASE_C"
+          ],
+          [
+            "21",
+            "WHEEL_DRVOFF"
+          ],
+          [
+            "22",
+            "DRV_FAULT_LOCAL_N"
+          ],
+          [
+            "23",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "24",
+            "unconnected-(U21-NC-Pad24)"
+          ],
+          [
+            "25",
+            "DRV_AVDD"
+          ],
+          [
+            "26",
+            "GND"
+          ],
+          [
+            "27",
+            "DRV_INHA"
+          ],
+          [
+            "28",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "29",
+            "DRV_INHB"
+          ],
+          [
+            "3",
+            "WHEEL_BUCK_OUT"
+          ],
+          [
+            "30",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "31",
+            "DRV_INHC"
+          ],
+          [
+            "32",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "33",
+            "DRV_MISO_LOCAL"
+          ],
+          [
+            "34",
+            "DRV_MOSI_LOCAL"
+          ],
+          [
+            "35",
+            "DRV_SCLK_LOCAL"
+          ],
+          [
+            "36",
+            "DRV_CS_LOCAL"
+          ],
+          [
+            "37",
+            "DRV_AVDD"
+          ],
+          [
+            "38",
+            "WHEEL_SOC"
+          ],
+          [
+            "39",
+            "WHEEL_SOB"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "40",
+            "WHEEL_SOA"
+          ],
+          [
+            "41",
+            "GND"
+          ],
+          [
+            "5",
+            "WHEEL_BUCK_SW"
+          ],
+          [
+            "6",
+            "WHEEL_CPL"
+          ],
+          [
+            "7",
+            "WHEEL_CPH"
+          ],
+          [
+            "8",
+            "WHEEL_CP"
+          ],
+          [
+            "9",
+            "ACT_5V"
+          ]
+        ]
+      },
+      "C56": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R92": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_INHC"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U23": {
+        "value": "ADS7038IRTER",
+        "footprint": "WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+        "pads": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "1",
+            "WHEEL_I_C"
+          ],
+          [
+            "10",
+            "DRV_AVDD"
+          ],
+          [
+            "11",
+            "ADC2_CS_LOCAL"
+          ],
+          [
+            "12",
+            "ADC2_MISO_LOCAL"
+          ],
+          [
+            "13",
+            "ADC2_SCLK_LOCAL"
+          ],
+          [
+            "14",
+            "ADC2_MOSI_LOCAL"
+          ],
+          [
+            "15",
+            "WHEEL_I_A"
+          ],
+          [
+            "16",
+            "WHEEL_I_B"
+          ],
+          [
+            "17",
+            "GND"
+          ],
+          [
+            "2",
+            "ADC2_SPARE3"
+          ],
+          [
+            "3",
+            "ADC2_SPARE4"
+          ],
+          [
+            "4",
+            "ADC2_SPARE5"
+          ],
+          [
+            "5",
+            "ADC2_SPARE6"
+          ],
+          [
+            "6",
+            "ADC2_SPARE7"
+          ],
+          [
+            "7",
+            "DRV_AVDD"
+          ],
+          [
+            "8",
+            "ADC2_DECAP"
+          ],
+          [
+            "9",
+            "GND"
+          ]
+        ]
+      },
+      "C67": {
+        "value": "22pF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_SENSE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "Q5": {
+        "value": "AO3400A",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "BRAKE_GATE"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "BRAKE_DRAIN"
+          ]
+        ]
+      },
+      "J11": {
+        "value": "Soldered wires Power_1x02",
+        "footprint": "Wire_Power_1x02_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R120": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_GATE"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C41": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R81": {
+        "value": "22R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_BUCK_SW"
+          ],
+          [
+            "2",
+            "WHEEL_BUCK_OUT"
+          ]
+        ]
+      },
+      "C57": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R86": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "DRV_CS_LOCAL"
+          ]
+        ]
+      },
+      "R122": {
+        "value": "47R/2W",
+        "footprint": "R_2512_6332Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "BRAKE_DRAIN"
+          ]
+        ]
+      },
+      "R83": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C52": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R104": {
+        "value": "330R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_SOC"
+          ],
+          [
+            "2",
+            "WHEEL_I_C"
+          ]
+        ]
+      },
+      "C66": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_REF"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "Q4": {
+        "value": "2N7002",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "WHEEL_RUN_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "WHEEL_DRVOFF"
+          ]
+        ]
+      },
+      "R140": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_PWM_C"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R117": {
+        "value": "1M",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_FB_2"
+          ],
+          [
+            "2",
+            "BRAKE_SENSE"
+          ]
+        ]
+      },
+      "R88": {
+        "value": "4.7k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "DRV_FAULT_LOCAL_N"
+          ]
+        ]
+      },
+      "R109": {
+        "value": "0R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_SPARE7"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C54": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R137": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_RUN_REQ"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R145": {
+        "value": "33k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "CS_ADC2"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R84": {
+        "value": "10k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_DRIVE_EN"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C69": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C50": {
+        "value": "22uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "WHEEL_BUCK_OUT"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C58": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_DECAP"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R124": {
+        "value": "47R/2W",
+        "footprint": "R_2512_6332Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "BRAKE_DRAIN"
+          ]
+        ]
+      },
+      "U26": {
+        "value": "SN74LVC125APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "10",
+            "GND"
+          ],
+          [
+            "11",
+            "unconnected-(U26-4Y-Pad11)"
+          ],
+          [
+            "12",
+            "GND"
+          ],
+          [
+            "13",
+            "DRV_AVDD"
+          ],
+          [
+            "14",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "MOTOR_SPI_SCLK"
+          ],
+          [
+            "3",
+            "ADC2_SCLK_LOCAL"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "MOTOR_SPI_MOSI"
+          ],
+          [
+            "6",
+            "ADC2_MOSI_LOCAL"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "ADC2_CS_LOCAL"
+          ],
+          [
+            "9",
+            "CS_ADC2"
+          ]
+        ]
+      },
+      "R119": {
+        "value": "100R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_OUT"
+          ],
+          [
+            "2",
+            "BRAKE_GATE"
+          ]
+        ]
+      },
+      "C51": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "+3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "TP36": {
+        "value": "BRAKE_OUT",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pads": [
+          [
+            "1",
+            "BRAKE_OUT"
+          ]
+        ]
+      },
+      "C65": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C44": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "C68": {
+        "value": "10uF/25V",
+        "footprint": "C_0805_2012Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R146": {
+        "value": "4.7k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R94": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "SPI_SCLK"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "U24": {
+        "value": "SN74LVC125APWR",
+        "footprint": "TSSOP-14_4.4x5mm_P0.65mm",
+        "pads": [
+          [
+            "1",
+            "GND"
+          ],
+          [
+            "10",
+            "GND"
+          ],
+          [
+            "11",
+            "unconnected-(U24-4Y-Pad11)"
+          ],
+          [
+            "12",
+            "GND"
+          ],
+          [
+            "13",
+            "DRV_AVDD"
+          ],
+          [
+            "14",
+            "DRV_AVDD"
+          ],
+          [
+            "2",
+            "SPI_SCLK"
+          ],
+          [
+            "3",
+            "DRV_SCLK_LOCAL"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "SPI_MOSI"
+          ],
+          [
+            "6",
+            "DRV_MOSI_LOCAL"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "DRV_CS_LOCAL"
+          ],
+          [
+            "9",
+            "CS_DRV8316"
+          ]
+        ]
+      },
+      "U31": {
+        "value": "LM4040AIM3-2.5/NOPB",
+        "footprint": "SOT-23",
+        "pads": [
+          [
+            "1",
+            "BRAKE_REF"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "unconnected-(U31-NC-Pad3)"
+          ]
+        ]
+      },
+      "R116": {
+        "value": "1M",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "BRAKE_FB_1"
+          ],
+          [
+            "2",
+            "BRAKE_FB_2"
+          ]
+        ]
+      },
+      "C42": {
+        "value": "100nF",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ACT_5V"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R108": {
+        "value": "0R",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ADC2_SPARE6"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "R91": {
+        "value": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "DRV_INHB"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      }
+    },
+    "removed_inner_segments": 163,
+    "layer_count": 2
+  },
+  "Encoder": {
+    "source": "hardware\\encoder\\Encoder.kicad_pcb",
+    "source_sha256": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170",
+    "components": {
+      "U27": {
+        "value": "MA735GGU-P",
+        "footprint": "MPS_UTQFN14_2x2",
+        "pads": [
+          [
+            "1",
+            "ENC_SCLK_LOCAL"
+          ],
+          [
+            "10",
+            "unconnected-(U27-A-Pad10)"
+          ],
+          [
+            "11",
+            "unconnected-(U27-SSD-Pad11)"
+          ],
+          [
+            "12",
+            "unconnected-(U27-MGH-Pad12)"
+          ],
+          [
+            "13",
+            "ENC_3V3"
+          ],
+          [
+            "14",
+            "GND"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "unconnected-(U27-PWM-Pad3)"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "ENC_MISO_LOCAL"
+          ],
+          [
+            "6",
+            "unconnected-(U27-B-Pad6)"
+          ],
+          [
+            "7",
+            "ENC_CS_LOCAL"
+          ],
+          [
+            "8",
+            "ENC_MOSI_LOCAL"
+          ],
+          [
+            "9",
+            "unconnected-(U27-Z-Pad9)"
+          ]
+        ]
+      },
+      "C62": {
+        "value": "1uF/50V",
+        "footprint": "C_0603_1608Metric",
+        "pads": [
+          [
+            "1",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ]
+        ]
+      },
+      "J7": {
+        "value": "Soldered wires Signal_2x04",
+        "footprint": "Wire_Signal_2x04_P2.54mm",
+        "pads": [
+          [
+            "1",
+            "ENC_3V3"
+          ],
+          [
+            "2",
+            "GND"
+          ],
+          [
+            "3",
+            "ENC_SCLK_LOCAL"
+          ],
+          [
+            "4",
+            "GND"
+          ],
+          [
+            "5",
+            "ENC_MOSI_LOCAL"
+          ],
+          [
+            "6",
+            "ENC_CS_LOCAL"
+          ],
+          [
+            "7",
+            "GND"
+          ],
+          [
+            "8",
+            "ENC_MISO_LOCAL"
+          ]
+        ]
+      }
+    },
+    "removed_inner_segments": 0,
+    "layer_count": 2
+  }
+}

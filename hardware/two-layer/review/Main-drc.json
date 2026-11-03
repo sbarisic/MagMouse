@@ -1,0 +1,103 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T16:09:52",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "Main.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CC_OUT2] on F.Cu, length 14.3543 mm",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 34.8
+                    },
+                    "uuid": "84b4f3fb-d741-46f0-9534-78fa360e3d64"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CS_ADC2] on B.Cu, length 2.6500 mm",
+                    "pos": {
+                        "x": 116.3,
+                        "y": 67.45
+                    },
+                    "uuid": "8ad6dcfc-53c2-4899-a9c3-166e6d766ed6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CS_IMU] on F.Cu, length 14.8500 mm",
+                    "pos": {
+                        "x": 88.35,
+                        "y": 93.75
+                    },
+                    "uuid": "864abb64-d614-4b70-ab2f-d6f9e5f94a0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CS_IMU] on F.Cu, length 3.1820 mm",
+                    "pos": {
+                        "x": 88.15,
+                        "y": 84.65
+                    },
+                    "uuid": "d01278c2-763d-4d0e-846b-e8e02f431148"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Copper sliver (F.Cu)",
+            "items": [],
+            "severity": "warning",
+            "type": "copper_sliver"
+        }
+    ]
+}

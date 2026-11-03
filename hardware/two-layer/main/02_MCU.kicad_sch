@@ -1,0 +1,3822 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "bd61f3e5-e7b9-5d15-92a5-a5e81115d4a6")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - 02_MCU")
+    (date "2026-09-08")
+    (rev "0.4 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols
+    (symbol "RF_Module:ESP32-S3-MINI-1"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -11.43 29.21 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "ESP32-S3-MINI-1"
+        (at 12.7 29.21 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" "RF_Module:ESP32-S2-MINI-1"
+        (at 15.24 -29.21 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf"
+        (at 0 40.64 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, onboard antenna"
+        (at 0 43.18 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "RF Radio BT ESP ESP32-S3 Espressif"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "ESP32?S*MINI?1"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "ESP32-S3-MINI-1_0_1"
+        (rectangle
+          (start -12.7 27.94)
+          (end 12.7 -27.94)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "ESP32-S3-MINI-1_1_1"
+        (pin power_in line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 30.48 270)
+          (length 2.54)
+          (name "3V3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 20.32 0)
+          (length 2.54)
+          (name "IO0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 17.78 0)
+          (length 2.54)
+          (name "IO1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 15.24 0)
+          (length 2.54)
+          (name "IO2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 12.7 0)
+          (length 2.54)
+          (name "IO3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 10.16 0)
+          (length 2.54)
+          (name "IO4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 7.62 0)
+          (length 2.54)
+          (name "IO5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 5.08 0)
+          (length 2.54)
+          (name "IO6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 2.54 0)
+          (length 2.54)
+          (name "IO7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 0 0)
+          (length 2.54)
+          (name "IO8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -2.54 0)
+          (length 2.54)
+          (name "IO9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -5.08 0)
+          (length 2.54)
+          (name "IO10"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -7.62 0)
+          (length 2.54)
+          (name "IO11"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -10.16 0)
+          (length 2.54)
+          (name "IO12"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -12.7 0)
+          (length 2.54)
+          (name "IO13"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "17"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -15.24 0)
+          (length 2.54)
+          (name "IO14"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "18"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -17.78 0)
+          (length 2.54)
+          (name "IO15"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "19"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -20.32 0)
+          (length 2.54)
+          (name "IO16"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "20"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -22.86 0)
+          (length 2.54)
+          (name "IO17"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "21"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at -15.24 -25.4 0)
+          (length 2.54)
+          (name "IO18"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "22"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 17.78 180)
+          (length 2.54)
+          (name "USB_D-"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "23"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "IO19" bidirectional line))
+        (pin bidirectional line
+          (at 15.24 15.24 180)
+          (length 2.54)
+          (name "USB_D+"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "24"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "IO20" bidirectional line))
+        (pin bidirectional line
+          (at 15.24 12.7 180)
+          (length 2.54)
+          (name "IO21"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "25"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 10.16 180)
+          (length 2.54)
+          (name "IO26"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "26"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -22.86 180)
+          (length 2.54)
+          (name "IO47"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "27"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 7.62 180)
+          (length 2.54)
+          (name "IO33"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "28"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 5.08 180)
+          (length 2.54)
+          (name "IO34"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "29"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -25.4 180)
+          (length 2.54)
+          (name "IO48"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "30"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 2.54 180)
+          (length 2.54)
+          (name "IO35"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "31"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 0 180)
+          (length 2.54)
+          (name "IO36"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "32"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -2.54 180)
+          (length 2.54)
+          (name "IO37"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "33"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -5.08 180)
+          (length 2.54)
+          (name "IO38"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "34"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -7.62 180)
+          (length 2.54)
+          (name "IO39"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "35"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -10.16 180)
+          (length 2.54)
+          (name "IO40"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "36"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -12.7 180)
+          (length 2.54)
+          (name "IO41"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "37"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -15.24 180)
+          (length 2.54)
+          (name "IO42"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "38"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 25.4 180)
+          (length 2.54)
+          (name "TXD0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "39"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 22.86 180)
+          (length 2.54)
+          (name "RXD0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "40"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -17.78 180)
+          (length 2.54)
+          (name "IO45"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "41"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "42"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "43"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -20.32 180)
+          (length 2.54)
+          (name "IO46"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "44"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -15.24 25.4 0)
+          (length 2.54)
+          (name "EN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "45"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "46"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "47"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "48"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "49"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "50"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "51"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "52"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "53"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "54"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "55"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "56"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "57"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "58"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "59"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "60"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "61"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "62"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "63"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "64"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -30.48 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "65"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Switch:SW_Push"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "SW"
+        (at 1.27 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "SW_Push"
+        (at 0 -1.524 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Push button switch, generic, two pins"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "switch normally-open pushbutton push-button"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "SW_Push_0_1"
+        (circle
+          (center -2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "02 / ESP32-S3 module, USB and recovery"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 2.5 2.5))
+      (justify left top))
+    (uuid "74fb1197-bd17-5e54-9f49-17a52c310dd5"))
+  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+    (at 20 24 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "82f233d6-8178-5aba-9ca2-1d21af27cedd"))
+  (symbol
+    (lib_id "RF_Module:ESP32-S3-MINI-1")
+    (at 114.3 96.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b688bbf3-b4fd-5944-9221-f0a89b3497c9")
+    (property "Reference" "U3"
+      (at 119.3 59.03999999999999 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "ESP32-S3-MINI-1-N8"
+      (at 119.3 61.53999999999999 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "RF_Module:ESP32-S2-MINI-1"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Espressif Systems"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "ESP32-S3-MINI-1-N8"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C2913206"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C2913206"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C2913206.html"
+      (at 114.3 96.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "U3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 114.3 127.0)
+      (xy 114.3 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "df599bc5-b1e6-53a8-abdc-eb3612387f0b"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 114.3 132.08 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "8fbd99ac-f67d-55b8-bfa3-fa684932cab5"))
+  (wire
+    (pts
+      (xy 114.3 66.04)
+      (xy 114.3 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a7cc0da4-9a09-5e14-85ac-b4b0f011f165"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 114.3 60.96 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d99ac25c-8a8c-591b-89b0-0e11b5cfb70b"))
+  (wire
+    (pts
+      (xy 99.06 76.2)
+      (xy 93.98 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c2c461cc-e3f7-59bc-a199-f9d86d353ae3"))
+  (global_label "BOOT"
+    (shape bidirectional)
+    (at 93.98 76.2 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "d94a7e45-95a0-53f7-9509-da317d586068"))
+  (wire
+    (pts
+      (xy 99.06 86.36)
+      (xy 93.98 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "99e33ed9-1810-5c1f-bed9-a684ee7f5571"))
+  (global_label "BTN_L_CMD1"
+    (shape bidirectional)
+    (at 93.98 86.36 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "0c79278d-a231-5685-8478-c00245e6a4c7"))
+  (wire
+    (pts
+      (xy 99.06 88.9)
+      (xy 93.98 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3a346d96-0f53-533c-a375-5bfb031fe0c5"))
+  (global_label "BTN_L_CMD2"
+    (shape bidirectional)
+    (at 93.98 88.9 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "ee98325c-830d-51c9-8ded-45e379babaea"))
+  (wire
+    (pts
+      (xy 99.06 91.44)
+      (xy 93.98 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "068cd8ca-a765-5ab4-91ad-7339d706159a"))
+  (global_label "BTN_M_CMD1"
+    (shape bidirectional)
+    (at 93.98 91.44 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "32ed0fcd-02fe-573f-8f97-e6665f410b0f"))
+  (wire
+    (pts
+      (xy 99.06 93.98)
+      (xy 93.98 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2b6fe4e5-fb21-5b71-a655-e2ead68cabf3"))
+  (global_label "BTN_M_CMD2"
+    (shape bidirectional)
+    (at 93.98 93.98 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2f5ce532-2408-5ac6-a14b-28a3591ebf78"))
+  (wire
+    (pts
+      (xy 99.06 96.52)
+      (xy 93.98 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "58d42167-0f79-5e13-94d7-5b0fcda41b56"))
+  (global_label "BTN_R_CMD1"
+    (shape bidirectional)
+    (at 93.98 96.52 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "ffc0dd5b-daa7-51ae-9209-281569f5a96b"))
+  (wire
+    (pts
+      (xy 99.06 99.06)
+      (xy 93.98 99.06))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c4bbd45f-9d08-5df8-b787-f2533d728e4f"))
+  (global_label "BTN_R_CMD2"
+    (shape bidirectional)
+    (at 93.98 99.06 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "6e1ed597-4dd6-5eab-b97c-27e5acbc685b"))
+  (wire
+    (pts
+      (xy 99.06 101.6)
+      (xy 93.98 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c44102ef-c7c6-50b2-a013-52444710bfb9"))
+  (global_label "ADC_CS"
+    (shape bidirectional)
+    (at 93.98 101.6 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "58bc01b5-b4a6-5bcd-8d44-55877f3cc51f"))
+  (wire
+    (pts
+      (xy 99.06 104.14)
+      (xy 93.98 104.14))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "857ffee8-3bce-5612-951b-0f53e2ee4a7e"))
+  (global_label "SPI_MOSI"
+    (shape bidirectional)
+    (at 93.98 104.14 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "1f73305b-aa7c-564c-82ef-9e4e463e6b8a"))
+  (wire
+    (pts
+      (xy 99.06 106.68)
+      (xy 93.98 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "27e9c4a5-1d4a-56b8-8219-0ce970bbc28f"))
+  (global_label "SPI_SCLK"
+    (shape bidirectional)
+    (at 93.98 106.68 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2957a7ae-111e-5e7b-8240-1c9a5fc3c1bd"))
+  (wire
+    (pts
+      (xy 99.06 109.22)
+      (xy 93.98 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "077496b7-15af-575f-a861-ee9836f09d51"))
+  (global_label "SPI_MISO"
+    (shape bidirectional)
+    (at 93.98 109.22 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "54100b08-bedc-55ec-b65b-5b421fdfb54e"))
+  (wire
+    (pts
+      (xy 129.54 78.74)
+      (xy 134.62 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "80c95507-89bd-5a29-959d-a89b4d6c92dd"))
+  (global_label "MCU_USB_DM"
+    (shape bidirectional)
+    (at 134.62 78.74 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "c1c55b10-f2f9-5d25-b5d1-82c24c1a8aa6"))
+  (wire
+    (pts
+      (xy 129.54 81.28)
+      (xy 134.62 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b035e60e-a526-5c36-9018-fa86f7a66590"))
+  (global_label "MCU_USB_DP"
+    (shape bidirectional)
+    (at 134.62 81.28 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "a9bbae28-2a3c-5106-9fc6-9eb1ff5ac53f"))
+  (wire
+    (pts
+      (xy 129.54 71.12)
+      (xy 134.62 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "19feabd9-b10f-5e1e-bc99-9cfb2ae2b5ad"))
+  (global_label "UART_TX"
+    (shape bidirectional)
+    (at 134.62 71.12 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "cb695d4f-7be4-5f34-a93b-4f847d0b6e44"))
+  (wire
+    (pts
+      (xy 129.54 73.66)
+      (xy 134.62 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d3bf6750-1961-53c3-b66b-668b2264c4c5"))
+  (global_label "UART_RX"
+    (shape bidirectional)
+    (at 134.62 73.66 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ad1ce844-8078-52ba-b005-8fdb4823e020"))
+  (wire
+    (pts
+      (xy 99.06 71.12)
+      (xy 93.98 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "90421a2f-f122-5966-a224-55c27bdc0b96"))
+  (global_label "MCU_EN"
+    (shape bidirectional)
+    (at 93.98 71.12 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a43bc9e2-b87f-5339-8db4-5cee7083189f"))
+  (symbol
+    (lib_id "Device:R")
+    (at 218.44 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2af6d7f3-53a3-510b-ba44-dcbcf79898bb")
+    (property "Reference" "R3"
+      (at 222.44 49.3 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 222.44 51.8 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 218.44 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "R3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 218.44 46.99)
+      (xy 218.44 41.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7d995d6d-cb1c-5e2d-8040-a5030736070e"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 218.44 41.91 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ba1ae706-69d2-518c-aeba-901d44b660a9"))
+  (symbol
+    (lib_id "Device:R")
+    (at 289.56 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "be0b1bb8-5f79-5366-a9b4-e03f215c186d")
+    (property "Reference" "R4"
+      (at 293.56 49.3 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 293.56 51.8 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 289.56 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "R4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 289.56 46.99)
+      (xy 289.56 41.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "db15df01-946f-53be-bf2d-d763454e2e7c"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 289.56 41.91 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "8944ace4-2786-5a58-990e-a3c20d56f2f2"))
+  (wire
+    (pts
+      (xy 289.56 54.61)
+      (xy 289.56 59.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "09750c5a-33c0-54b9-a3c4-50b55ca5ab32"))
+  (global_label "BOOT"
+    (shape bidirectional)
+    (at 289.56 59.69 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "05d4c767-5237-55cf-a284-fbfd217093ad"))
+  (symbol
+    (lib_id "Device:R")
+    (at 218.44 165.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "27696180-4c24-558f-97ac-2043d01cce16")
+    (property "Reference" "R5"
+      (at 222.44 163.6 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "33R"
+      (at 222.44 166.1 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF330JT5E"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C23140"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C23140"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Corrected catalog mismatch: C23140 is 33 ohm; C23138 is 330 ohm"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C23140"
+      (at 218.44 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "R5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 218.44 161.29)
+      (xy 218.44 156.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "18e5df98-431f-5141-8e0f-92e254938f44"))
+  (global_label "MCU_USB_DM"
+    (shape bidirectional)
+    (at 218.44 156.21 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "e34d7b92-b266-5508-b41e-b81a92164769"))
+  (wire
+    (pts
+      (xy 218.44 168.91)
+      (xy 218.44 173.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "99398eeb-0941-5338-9274-e33b75f6bb12"))
+  (global_label "USB_DM"
+    (shape bidirectional)
+    (at 218.44 173.99 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3f5cd6fe-be4c-5fd1-809f-242b6be36453"))
+  (symbol
+    (lib_id "Device:R")
+    (at 289.56 165.1 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ce7997b5-b040-5c83-8c80-3cb79514ee77")
+    (property "Reference" "R6"
+      (at 293.56 163.6 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "33R"
+      (at 293.56 166.1 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF330JT5E"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C23140"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C23140"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Corrected catalog mismatch: C23140 is 33 ohm; C23138 is 330 ohm"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-09"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C23140"
+      (at 289.56 165.1 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "R6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 289.56 161.29)
+      (xy 289.56 156.21))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "51fa7c88-5c01-526b-a549-dbf7af73c9ff"))
+  (global_label "MCU_USB_DP"
+    (shape bidirectional)
+    (at 289.56 156.21 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "96acb33e-d30e-58dd-9dfe-b9f76ca789c9"))
+  (wire
+    (pts
+      (xy 289.56 168.91)
+      (xy 289.56 173.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f37632b0-2db8-540b-ba30-e3662abd715f"))
+  (global_label "USB_DP"
+    (shape bidirectional)
+    (at 289.56 173.99 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2b319606-e985-5690-8d9f-36bc1ed30d17"))
+  (symbol
+    (lib_id "Device:R")
+    (at 353.06 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d06d3b90-3505-534c-b98d-dc065b66f5ca")
+    (property "Reference" "R7"
+      (at 357.06 49.3 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 357.06 51.8 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 353.06 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "R7")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 353.06 46.99)
+      (xy 353.06 41.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "42e161ad-e6f6-5571-bda6-3a36f19b0a93"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 353.06 41.91 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "4482c93a-1a66-5ee3-a451-1ce0ce88c31f"))
+  (wire
+    (pts
+      (xy 353.06 54.61)
+      (xy 353.06 59.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1666a108-acaa-5792-bdcb-48f230aa0438"))
+  (global_label "ADC_CS"
+    (shape bidirectional)
+    (at 353.06 59.69 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "4271ec74-e232-52eb-9f16-86a60f8a19c1"))
+  (symbol
+    (lib_id "Device:C")
+    (at 218.44 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9b901250-2f30-5fe3-8b31-2175dd61f524")
+    (property "Reference" "C4"
+      (at 222.44 84.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "1uF/50V"
+      (at 222.44 87.36 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL10A105KB8NNNC"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15849"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15849"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "C4")
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 218.44 86.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
+  (wire
+    (pts
+      (xy 218.44 90.17)
+      (xy 218.44 95.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "408caa75-df05-5a33-85a8-775d56d7aa71"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 218.44 95.25 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "2215edd0-2273-585b-810a-35b9868f3390"))
+  (wire
+    (pts
+      (xy 218.44 54.61)
+      (xy 218.44 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4cc6a227-9401-5f1a-812c-0b6292c40ea3"))
+  (wire
+    (pts
+      (xy 218.44 68.58)
+      (xy 218.44 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b19ac3a1-6af5-5519-80e9-0fef7d392fb0"))
+  (wire
+    (pts
+      (xy 218.44 68.58)
+      (xy 226.06 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1ba50463-e4a5-539b-98db-471894c0146a"))
+  (global_label "MCU_EN"
+    (shape bidirectional)
+    (at 226.06 68.58 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "a30fee19-3b3b-5dc1-832a-90b431d4a116"))
+  (junction
+    (at 218.44 68.58)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "b615a4b3-d8fc-5c86-8dc4-af9e09210d47"))
+  (symbol
+    (lib_id "Device:C")
+    (at 43.18 60.96 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4c14796b-420f-5100-b65a-91552697178f")
+    (property "Reference" "C5"
+      (at 47.18 59.46 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10uF/25V"
+      (at 47.18 61.96 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CL21A106KAYNNNE"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C15850"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C15850"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+      (at 43.18 60.96 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "C5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 43.18 57.15)
+      (xy 43.18 52.07))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "572bdb4a-9bfc-5968-9c29-73518abd5c94"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 43.18 52.07 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "8a01f68b-5f4f-5e75-8757-6172b0badc18"))
+  (wire
+    (pts
+      (xy 43.18 64.77)
+      (xy 43.18 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "08debead-e0a6-5092-9474-940350442274"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 43.18 69.85 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "0a25b0f8-0370-5bcb-9765-02fe027c9531"))
+  (symbol
+    (lib_id "Device:C")
+    (at 43.18 99.06 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6f64dfc3-db5e-55d0-87bb-c0ae08e4f47e")
+    (property "Reference" "C6"
+      (at 47.18 97.56 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "100nF"
+      (at 47.18 100.06 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C14663"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C14663"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+      (at 43.18 99.06 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "C6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 43.18 95.25)
+      (xy 43.18 90.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "924924e2-0ccc-56eb-8aec-fb7b19957bd4"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 43.18 90.17 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "63cc0752-e3cd-51be-97ff-6ac36ac4e547"))
+  (wire
+    (pts
+      (xy 43.18 102.87)
+      (xy 43.18 107.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0026ed62-eedf-5b01-b771-cc453e5da49c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 43.18 107.95 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "1fce5a9f-b3b7-5787-a468-523624e2526e"))
+  (symbol
+    (lib_id "Switch:SW_Push")
+    (at 218.44 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8a3b3db5-3b0e-5ded-a488-37d472022ecd")
+    (property "Reference" "SW1"
+      (at 222.44 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "RESET"
+      (at 222.44 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "XUNPU"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TS-1088-AR02016"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C720477"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C720477"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "SW1")
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 218.44 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
+  (wire
+    (pts
+      (xy 213.36 121.92)
+      (xy 208.28 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c7210b44-7647-540f-9852-f18fe2a5fe08"))
+  (global_label "MCU_EN"
+    (shape bidirectional)
+    (at 208.28 121.92 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "26854e09-9c9a-565b-b296-268c9e1756a6"))
+  (wire
+    (pts
+      (xy 223.52 121.92)
+      (xy 228.6 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "aae56259-c790-561d-a123-e1d00831a2b7"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 228.6 121.92 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "37d1fe1c-a9d2-5ccb-ab75-db97bc0493b3"))
+  (symbol
+    (lib_id "Switch:SW_Push")
+    (at 289.56 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "41501a12-c242-5e01-be4f-02915cffa073")
+    (property "Reference" "SW2"
+      (at 293.56 120.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "BOOT"
+      (at 293.56 122.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "XUNPU"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "TS-1088-AR02016"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C720477"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C720477"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "SW2")
+          (unit 1))))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Library Type" "Basic"
+      (at 289.56 121.92 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left))))
+  (wire
+    (pts
+      (xy 284.48 121.92)
+      (xy 279.4 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ad154512-ce52-523d-b133-84824398d04e"))
+  (global_label "BOOT"
+    (shape bidirectional)
+    (at 279.4 121.92 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3660a64a-8252-5fe7-a124-77d97b4a3c83"))
+  (wire
+    (pts
+      (xy 294.64 121.92)
+      (xy 299.72 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c6fe1ea0-9edf-5b62-9566-5e21fc1005a5"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 299.72 121.92 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "6467f40e-9bf2-56c0-b5dc-16203fd5ea4e"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 50.8 218.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "8793df5b-ee1f-5b9c-ad9a-3c45ea879ff8")
+    (property "Reference" "TP4"
+      (at 54.8 216.94 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "UART_TX"
+      (at 54.8 219.44 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 50.8 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "TP4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 50.8 218.44)
+      (xy 50.8 223.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3b444c87-050f-5f9e-a3f2-2fea830c9e18"))
+  (global_label "UART_TX"
+    (shape bidirectional)
+    (at 50.8 223.52 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "ab59f5bb-3a91-52a4-b530-eca80f800ed1"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 96.52 218.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "859e8dd5-9a32-52a7-a843-54f3674f95d6")
+    (property "Reference" "TP5"
+      (at 100.52 216.94 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "UART_RX"
+      (at 100.52 219.44 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 96.52 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "TP5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 96.52 218.44)
+      (xy 96.52 223.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "85799c89-cc8e-5983-b3be-352240bf4080"))
+  (global_label "UART_RX"
+    (shape bidirectional)
+    (at 96.52 223.52 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "412af56b-dcd2-5c88-acb9-9dd3dadbb82e"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 142.24 218.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "c1175b40-1faf-5e90-9f6e-abe42901718e")
+    (property "Reference" "TP6"
+      (at 146.24 216.94 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "MCU_EN"
+      (at 146.24 219.44 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 142.24 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "TP6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 142.24 218.44)
+      (xy 142.24 223.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eae58dcd-f65c-5719-92a0-d8e050d71060"))
+  (global_label "MCU_EN"
+    (shape bidirectional)
+    (at 142.24 223.52 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "9b73433f-f62b-55d6-8792-e2def03edc4e"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 187.96 218.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "3f4bea64-375d-54dc-9382-daa0e09e4ae1")
+    (property "Reference" "TP7"
+      (at 191.96 216.94 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "BOOT"
+      (at 191.96 219.44 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 187.96 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "TP7")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 187.96 218.44)
+      (xy 187.96 223.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "53d21dc1-3c20-5e84-ba8a-9d250b4fbd0b"))
+  (global_label "BOOT"
+    (shape bidirectional)
+    (at 187.96 223.52 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "7d725422-5869-59c6-81c5-f1800b83615d"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 233.68 218.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "0bbb96d6-a975-5cf2-aa60-9bf577707675")
+    (property "Reference" "TP8"
+      (at 237.68 216.94 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "+3V3"
+      (at 237.68 219.44 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 233.68 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "TP8")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 233.68 218.44)
+      (xy 233.68 223.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4a5d689b-13cb-5304-8aa6-867b817688e2"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 233.68 223.52 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "68fd5d29-ddc9-5a61-b71b-33113e7b54fa"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 279.4 218.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "7f4baf4a-4a1e-5c2d-9d17-860b326b31ed")
+    (property "Reference" "TP9"
+      (at 283.4 216.94 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "GND"
+      (at 283.4 219.44 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 279.4 218.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/d5629ffc-c70c-5a32-8660-d50043bd3c4c"
+          (reference "TP9")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 279.4 218.44)
+      (xy 279.4 223.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a9e4f25f-e7b7-59df-b18e-432459f29776"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 279.4 223.52 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3aeb606d-b780-5fbf-8d0f-ea2831628cbb"))
+  (text "GPIO allocation: 38 assigned + GPIO46 boot-low spare. Exact module: ESP32-S3-MINI-1-N8 (no PSRAM).\nSPI2: ADC1 / optical / IMU / angle / driver config. SPI3: dedicated ADC2. See sheet 09 and gpio-allocation.json.\nMCPWM0: wheel 3-PWM; MCPWM1: six independent button commands. RMT: one-wire RGB.\nGPIO3 wheel request and GPIO45 RGB have external pulldowns. GPIO26 is unavailable on N4R2. UART recovery retained."
+    (at 20 245 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "2e53d954-1d15-5b79-80d6-86f1be0b2f2d"))
+  (embedded_fonts no)
+  (wire
+    (pts
+      (xy 99.06 78.74)
+      (xy 93.98 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b82627ce-5e3b-5d7b-a6c4-c23fd436fe7a"))
+  (global_label "VBUS_PRESENT_N"
+    (shape bidirectional)
+    (at 93.98 78.74 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3aa08572-35ae-55b2-b8a7-4c9b0dc8d154"))
+  (wire
+    (pts
+      (xy 99.06 111.75999999999999)
+      (xy 93.98 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b2c75252-48e6-5870-8c0f-4e3123f081da"))
+  (global_label "CC_OUT1"
+    (shape bidirectional)
+    (at 93.98 111.76 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "e70c44e1-58af-5199-9079-d6a8c60691f6"))
+  (wire
+    (pts
+      (xy 99.06 114.3)
+      (xy 93.98 114.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f3dd2cb9-b1ec-53dc-84d7-fc163670814e"))
+  (global_label "CC_OUT2"
+    (shape bidirectional)
+    (at 93.98 114.3 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b6c5545a-6f84-5ddf-9e0b-bbeec4c7516b"))
+  (wire
+    (pts
+      (xy 99.06 116.84)
+      (xy 93.98 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "92030718-d010-5075-8bef-048a8f7609a7"))
+  (global_label "ACT_REQ"
+    (shape bidirectional)
+    (at 93.98 116.84 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "078e5506-ed29-53a1-b03a-b1a8f628e26d"))
+  (wire
+    (pts
+      (xy 99.06 119.38)
+      (xy 93.98 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "edb905e7-b3d4-50a1-a02d-3325a477ac30"))
+  (global_label "ACT_HEARTBEAT"
+    (shape bidirectional)
+    (at 93.98 119.38 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "fa534d04-bb32-5640-a4ed-f8232966c1b2"))
+  (wire
+    (pts
+      (xy 99.06 121.91999999999999)
+      (xy 93.98 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "951f906c-a3c0-5bf3-a168-10aa72a5081c"))
+  (global_label "SENS_REQ"
+    (shape bidirectional)
+    (at 93.98 121.92 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "4fc616a4-22c0-5cb6-a024-1b04828f8482"))
+  (wire
+    (pts
+      (xy 99.06 81.28)
+      (xy 93.98 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "70c405ea-2838-5af2-8c50-644b56a0b772"))
+  (global_label "CS_PAW"
+    (shape bidirectional)
+    (at 93.98 81.28 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a7ae61e2-3d39-5d5c-a5ef-046257ae226e"))
+  (wire
+    (pts
+      (xy 99.06 83.82)
+      (xy 93.98 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3b4f18ba-b0bf-52c1-9538-a9c0ecdc77a0"))
+  (global_label "WHEEL_RUN_REQ"
+    (shape bidirectional)
+    (at 93.98 83.82 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b7dc097a-e724-57a1-95fc-e9d8a67a50a1"))
+  (wire
+    (pts
+      (xy 129.54 83.82)
+      (xy 134.62 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7b8304c3-3f26-5665-af94-94320195b249"))
+  (global_label "CS_IMU"
+    (shape bidirectional)
+    (at 134.62 83.82 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "352a7071-d2bb-512e-bfd1-d6e480d28c5c"))
+  (wire
+    (pts
+      (xy 129.54 86.36)
+      (xy 134.62 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f624414-8728-55d0-8bed-9baaa7a60feb"))
+  (global_label "OPT_CTRL"
+    (shape bidirectional)
+    (at 134.62 86.36 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "ba7a6fee-8445-5b79-acdf-6a276760efab"))
+  (wire
+    (pts
+      (xy 129.54 88.89999999999999)
+      (xy 134.62 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "724c872f-c454-53f3-9062-417caa465d0a"))
+  (global_label "MOTOR_SPI_MOSI"
+    (shape bidirectional)
+    (at 134.62 88.9 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "3827d515-470a-592d-b082-d8ddc24225fe"))
+  (wire
+    (pts
+      (xy 129.54 91.44)
+      (xy 134.62 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ff0af348-3ba1-5f14-85e7-c93f626ee725"))
+  (global_label "MOTOR_SPI_SCLK"
+    (shape bidirectional)
+    (at 134.62 91.44 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "9ae2cde0-fe19-5d32-8eed-b48368d83964"))
+  (wire
+    (pts
+      (xy 129.54 93.97999999999999)
+      (xy 134.62 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cdfd701e-633f-50d7-8376-5d3588b711f4"))
+  (global_label "MOTOR_SPI_MISO"
+    (shape bidirectional)
+    (at 134.62 93.98 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "28a0f50b-98d3-5806-b6c7-ead1805b68c7"))
+  (wire
+    (pts
+      (xy 129.54 96.52)
+      (xy 134.62 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c50ea93-c22d-57f8-92d7-508a2877a8a7"))
+  (global_label "CS_ADC2"
+    (shape bidirectional)
+    (at 134.62 96.52 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "2a85d03f-13d3-5a6a-9e7d-06341f836f3b"))
+  (wire
+    (pts
+      (xy 129.54 99.06)
+      (xy 134.62 99.06))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "28d79504-f228-5a84-866a-207c352fc1cb"))
+  (global_label "CS_MA735"
+    (shape bidirectional)
+    (at 134.62 99.06 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "2a4f4c0b-6dec-5402-89ea-19602fecab1f"))
+  (wire
+    (pts
+      (xy 129.54 101.6)
+      (xy 134.62 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f1da7ad-6669-5d6c-9faf-62d13a15ee3c"))
+  (global_label "CS_DRV8316"
+    (shape bidirectional)
+    (at 134.62 101.6 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "13e7e835-c238-5ac4-8c0e-a4d690da04fb"))
+  (wire
+    (pts
+      (xy 129.54 104.14)
+      (xy 134.62 104.14))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a4a33acd-7c36-53fe-b22c-4b9a8a32b050"))
+  (global_label "PAW_MOTION_N"
+    (shape bidirectional)
+    (at 134.62 104.14 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "f6cb12ef-3122-5c97-b250-8e26c9e8d4ba"))
+  (wire
+    (pts
+      (xy 129.54 106.67999999999999)
+      (xy 134.62 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "26d6d3b4-7498-5b0a-95f4-9d10c41a5124"))
+  (global_label "IMU_INT1"
+    (shape bidirectional)
+    (at 134.62 106.68 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "c249bde9-4278-535a-879a-a70e5088e464"))
+  (wire
+    (pts
+      (xy 129.54 109.22)
+      (xy 134.62 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f5a480c3-7ef4-5440-b1f9-b5f08da107bf"))
+  (global_label "DRV_FAULT_N"
+    (shape bidirectional)
+    (at 134.62 109.22 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "b88cfce6-3bfc-5e6d-83b8-5e41cc907d58"))
+  (wire
+    (pts
+      (xy 129.54 111.75999999999999)
+      (xy 134.62 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "37b869d4-87e1-58ed-8f9e-47ee3d466a95"))
+  (global_label "WHEEL_PWM_A"
+    (shape bidirectional)
+    (at 134.62 111.76 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "0c9fdde0-5703-5d23-a5e1-8eada33a1dc7"))
+  (wire
+    (pts
+      (xy 129.54 114.3)
+      (xy 134.62 114.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "911d4f83-09ef-5d99-a368-f3bb3a0115ce"))
+  (global_label "RGB_DATA"
+    (shape bidirectional)
+    (at 134.62 114.3 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "081d8420-bd3d-5592-a5da-46937871b44b"))
+  (wire
+    (pts
+      (xy 129.54 116.84)
+      (xy 134.62 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3cabfa27-5422-5e56-8381-ac67a51627d5"))
+  (global_label "BOOT_SAFE_SPARE"
+    (shape bidirectional)
+    (at 134.62 116.84 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "271fd13c-3782-517e-bc90-b8707e8a36a2"))
+  (wire
+    (pts
+      (xy 129.54 119.38)
+      (xy 134.62 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "12730bd7-419f-53dc-869f-6162ee442cde"))
+  (global_label "WHEEL_PWM_B"
+    (shape bidirectional)
+    (at 134.62 119.38 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "3f768373-7940-5717-93ab-8db1e680739c"))
+  (wire
+    (pts
+      (xy 129.54 121.91999999999999)
+      (xy 134.62 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ed50f22d-9215-5367-b709-25030df56873"))
+  (global_label "WHEEL_PWM_C"
+    (shape bidirectional)
+    (at 134.62 121.92 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "c61e9de4-1898-546b-9b34-82473171a795")))
