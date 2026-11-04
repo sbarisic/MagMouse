@@ -8,7 +8,7 @@
       1.488
     ],
     "substrate_volume_mm3": 8592.02509756846,
-    "glb_meshes": 8375,
+    "glb_meshes": 8373,
     "glb_bounds_m": [
       [
         0.0,
@@ -33,8 +33,8 @@
       100.0,
       1.488
     ],
-    "substrate_volume_mm3": 8857.084726903626,
-    "glb_meshes": 6084,
+    "substrate_volume_mm3": 8857.295087947705,
+    "glb_meshes": 6082,
     "glb_bounds_m": [
       [
         0.0,
@@ -59,8 +59,8 @@
       67.00000000000016,
       1.51
     ],
-    "substrate_volume_mm3": 6679.7723778685,
-    "glb_meshes": 6320,
+    "substrate_volume_mm3": 6679.558906647687,
+    "glb_meshes": 6322,
     "glb_bounds_m": [
       [
         -0.007499999832361937,
@@ -111,8 +111,8 @@
       114.0,
       1.488
     ],
-    "substrate_volume_mm3": 37405.24252036158,
-    "glb_meshes": 25803,
+    "substrate_volume_mm3": 37405.24252036151,
+    "glb_meshes": 25801,
     "glb_bounds_m": [
       [
         -5.551115386789603e-20,

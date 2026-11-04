@@ -1,7 +1,7 @@
 {
   "Lower": {
     "source": "hardware/two-layer/sandwich/lower/Lower.kicad_pcb",
-    "source_sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8",
+    "source_sha256": "8327a22102bdce8ee914699546b593a52598a20f2d57180056fb8f993808199c",
     "configured_board_thickness_mm": 1.578,
     "exported_substrate_expected_mm": 1.488,
     "available_model_instances": 81,
@@ -60,15 +60,15 @@
     "source_unchanged": true,
     "glb_contour_warning": true,
     "exports": {
-      "Lower-bare.step": "27d8a82c198cb7c84f972ce0f8505f6a81331317b2f43687b4de09ea12213be5",
-      "Lower-preview.png": "67bb66a32f76d06f9b79c6d1a5edcc6481b4730d43bbaa9660a4ee92f6e6fb62",
-      "Lower.glb": "32d76702511c27083b0b89345a748002b85bf5b0be593dd0a2819a73ccea5ac7",
-      "Lower.step": "5a7c8bd0b611da23f1e5346ec67b45685e6441a6ae98837c884d485873391c2f"
+      "Lower-bare.step": "584c54b0495fc099eebcd19f6062c607356f6f3c2e0716e107a1b4c99f4d7186",
+      "Lower-preview.png": "8d5af97d6d739b96604e5cae9c53f6c35a99ffd8b048c86925dd5a8a7f7b5249",
+      "Lower.glb": "4e8505956be3a43d2a31c61a7a637eedc2a2c3b400bd2f15051df56ce5d95803",
+      "Lower.step": "4a1b96e5ace02964d7f30004a9e267174aac1fef71fe231683e1ab446b64990e"
     }
   },
   "Upper": {
     "source": "hardware/two-layer/sandwich/upper/Upper.kicad_pcb",
-    "source_sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f",
+    "source_sha256": "2900acdb530d296800e87672e2db2da2a0dabbcd413a25573d266ca89de6f6fb",
     "configured_board_thickness_mm": 1.578,
     "exported_substrate_expected_mm": 1.488,
     "available_model_instances": 73,
@@ -114,15 +114,15 @@
     "source_unchanged": true,
     "glb_contour_warning": false,
     "exports": {
-      "Upper-bare.step": "b4ee823e4c90a5890c6c7ca7dba616b03d60ad8873a24014a160a8ff80568421",
-      "Upper-preview.png": "8c2fee95ad2c364eba57198a62f197f292e185eb38301a910a1f291354d0add4",
-      "Upper.glb": "9da9ba45e69c7de43321ac38bb95a765223b395fa169ba8772d7fcde641be5b1",
-      "Upper.step": "6033d4c06844e53e18b98ae8ca1e4fc0a021ad25364c9a69a678cb06a8f4aae1"
+      "Upper-bare.step": "7e06e95f567a58331d85eb084092cf5329f8edb16411efa584d2aeca67a85596",
+      "Upper-preview.png": "7b2d3274b0fbdf6c1c6fcfbb9e3c05f6b68e397ce00ce2a589a06b39a4fa2b42",
+      "Upper.glb": "7b1daff3de1f421e356a37d0bd8e1bf6b8d6226840f8ffce33f646c57ffb65ce",
+      "Upper.step": "0fe3c70da980cac2559fb1828cf4fa6dfa113ec9e793558ea480d10218ea2e04"
     }
   },
   "Wheel": {
     "source": "hardware/two-layer/sandwich/wheel/Wheel.kicad_pcb",
-    "source_sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5",
+    "source_sha256": "5745466ca9c6af6227ce4b658abae1e5648866572bd3cbee6be54b85489600bd",
     "configured_board_thickness_mm": 1.6,
     "exported_substrate_expected_mm": 1.51,
     "available_model_instances": 79,
@@ -144,10 +144,10 @@
     "source_unchanged": true,
     "glb_contour_warning": false,
     "exports": {
-      "Wheel-bare.step": "b4d7e24c4ae9b1e01e8afd141faf1545bf1a1be9623cf3bcd8fa07e703d46367",
-      "Wheel-preview.png": "9d8c3273442f20e2c704e4c85099a6b75a242c6a184713e293e56218a340f87f",
-      "Wheel.glb": "ade6fdbd4e6bbcfb5af1d28d73a8ba727d75011171236f18f00ea2bb7c21c588",
-      "Wheel.step": "83a3d8cc9955cc45be232446c93d8f3b22ec222159455f058ef1c1c5d6e7a38d"
+      "Wheel-bare.step": "b00ce4c1a2061882ef01e5d1dad2658947989dfdcd26efd13603990ccf35ad6a",
+      "Wheel-preview.png": "093d2e4563c0f77af15fd8fa5feb7995ab48ed9fdf47eb4f0078128cd60642b5",
+      "Wheel.glb": "fea1a594f706a178434d6f6a5d83160b21891bb59e9b3e6de12d17b6715f9e17",
+      "Wheel.step": "735e661d76055096fcf8ee72db7a9c116350c31c59761b869c096ccd5fa895cc"
     }
   },
   "Encoder": {
@@ -178,7 +178,7 @@
   },
   "Panel": {
     "source": "hardware/two-layer/sandwich/panel/Panel.kicad_pcb",
-    "source_sha256": "abe588958c592fae9800ff71a67168982efb68ff9a9b48e571ed46d01cb48ef4",
+    "source_sha256": "6a8556d028138fdfc41dfa375b4b09e6d6f0aec23499a8de20259f140efae34b",
     "configured_board_thickness_mm": 1.578,
     "exported_substrate_expected_mm": 1.488,
     "available_model_instances": 234,
@@ -292,10 +292,10 @@
     "source_unchanged": true,
     "glb_contour_warning": true,
     "exports": {
-      "Panel-bare.step": "45f9d82b4874cb5a068203af82d8e2fd57834a930096a4cb035aa1fac6b1eb7d",
-      "Panel-preview.png": "6cf73d81d5a87022ae28198099a244ba0b3a3997f55507955ebec77819cbea98",
-      "Panel.glb": "9a9c450b9488623bc4801090601ab6dc88aae88765a76c222830e7f05bd03e8a",
-      "Panel.step": "956fdcd3db3162aaceaf0daa0d21b90ea4b8a93b53051b8d15913ee6647839f3"
+      "Panel-bare.step": "bef31da475403df538cece16b22615ab3fb8485f4185789cd0f4a5b118a24c00",
+      "Panel-preview.png": "a3053e9184491013ffb321a4aa06271187bbdc91251c290a17deaad6419cd711",
+      "Panel.glb": "61db08f24f57454ad480a968faed23e60342079c2ea5dd731c1e9cec0570ec73",
+      "Panel.step": "6b3a04a1815d1c0dd48d0986d3d781974685ff5b9a5ef189ff3aba0fbbd7974e"
     }
   }
 }

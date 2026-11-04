@@ -1,7 +1,7 @@
 {
   "Lower": {
     "source": "hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
-    "sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8",
+    "sha256": "8327a22102bdce8ee914699546b593a52598a20f2d57180056fb8f993808199c",
     "dimensions_mm": [
       70.0,
       100.0
@@ -51,7 +51,7 @@
   },
   "Upper": {
     "source": "hardware\\two-layer\\sandwich\\upper\\Upper.kicad_pcb",
-    "sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f",
+    "sha256": "2900acdb530d296800e87672e2db2da2a0dabbcd413a25573d266ca89de6f6fb",
     "dimensions_mm": [
       70.0,
       100.0
@@ -87,7 +87,7 @@
     "unique_bom_lines": 21,
     "placement_entries": 78,
     "via_hole_pad_intersections": 0,
-    "vias": 136,
+    "vias": 134,
     "smallest_drill_mm": 0.3,
     "minimum_track_mm": 0.127,
     "fabrication_rules": {
@@ -101,7 +101,7 @@
   },
   "Wheel": {
     "source": "hardware\\two-layer\\sandwich\\wheel\\Wheel.kicad_pcb",
-    "sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5",
+    "sha256": "5745466ca9c6af6227ce4b658abae1e5648866572bd3cbee6be54b85489600bd",
     "dimensions_mm": [
       70.0,
       67.0
@@ -137,7 +137,7 @@
     "unique_bom_lines": 28,
     "placement_entries": 80,
     "via_hole_pad_intersections": 0,
-    "vias": 167,
+    "vias": 169,
     "smallest_drill_mm": 0.3,
     "minimum_track_mm": 0.127,
     "fabrication_rules": {

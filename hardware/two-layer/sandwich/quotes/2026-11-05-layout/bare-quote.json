@@ -1,0 +1,29 @@
+{
+  "quantity_panels": 5,
+  "complete_sets": 5,
+  "designs_per_panel": 4,
+  "panel_mm": [
+    238,
+    114
+  ],
+  "gerber_sha256": "6052d2e240f1948fddc3952e6de54e4c3088a380dde3449c948c060b57858439",
+  "jlc_bare_job": "MagMouse-238x114-layout_Y19",
+  "bare_fabrication_EUR": 43.72,
+  "checkout_USD": {
+    "merchandise": 48.98,
+    "shipping": 15.43,
+    "duties_and_taxes": 21.67,
+    "total": 86.08
+  },
+  "shipping_method": "Global Standard Direct Line",
+  "transit_business_days": [
+    12,
+    16
+  ],
+  "country": "Croatia",
+  "requested_smt_positions_per_panel": 247,
+  "BOM_lines": 63,
+  "hand_install": [
+    "L_U35"
+  ]
+}

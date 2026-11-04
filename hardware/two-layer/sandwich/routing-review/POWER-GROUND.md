@@ -18,8 +18,8 @@ body-and-land clearance on Wheel measures 2.010 mm.
 
 The earlier trace views suppressed all pours. Wheel had 1,978.0 mm² of front
 GND fill, 2,097.7 mm² of back GND fill and two GND vias before this revision.
-The enlarged board has 3,130.7 mm² of front fill (70.38%) and 3,155.0 mm² of
-back fill (70.93%). The board now has 29 GND vias. The added stitching joins
+The enlarged board has 3,088.1 mm² of front fill (69.42%) and 3,073.2 mm² of
+back fill (69.09%). The board now has 29 GND vias. The added stitching joins
 both layers in the new margins and near the circuitry. U21 PGND pin 12 has a
 1.25 mm front trace to an off-pad GND via. The corresponding Q5 source escape
 is 0.50 mm. Copper fill area measures coverage. Return impedance, EMI, and
@@ -39,10 +39,10 @@ connectors, wire, silicon, solder and the GND return. See the
 | PCB path | Previous estimate | Revised estimate | Voltage drop at stated current |
 | --- | ---: | ---: | ---: |
 | Lower stack PWR_5V to regulator U2 pin 2 | 83.2 mΩ | 48.6 mΩ | 48.6 mV at 1 A |
-| Upper U12 output to U13 input | 122.1 mΩ | 47.7 mΩ | 95.4 mV at 2 A |
+| Upper U12 output to U13 input | 122.1 mΩ | 48.4 mΩ | 96.8 mV at 2 A |
 | Upper U13 output to Wheel harness J10 | 32.8 mΩ | 18.3 mΩ | 36.5 mV at 2 A |
 | Wheel J11 to motor driver U21 pin 9 | 67.5 mΩ | 33.7 mΩ | 67.3 mV at 2 A |
-| Wheel driver phase pins to J5 across all six paths | — | 30.5–38.7 mΩ | 15.2–19.4 mV at 0.5 A |
+| Wheel driver phase pins to J5 across all six paths | — | 22.8–38.1 mΩ | 11.4–19.1 mV at 0.5 A |
 
 Added feeds use 0.90 mm copper on Lower, 1.50 mm and 1.35 mm on Upper and
 1.15 mm on Wheel, with parallel via connections where space permits. The

@@ -8,33 +8,33 @@
   "units": {
     "Lower": {
       "source": "hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
-      "sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8",
+      "sha256": "8327a22102bdce8ee914699546b593a52598a20f2d57180056fb8f993808199c",
       "translation_mm": [
         7.0,
         7.0
       ],
       "footprints": 128,
-      "tracks_and_vias": 3078
+      "tracks_and_vias": 2920
     },
     "Upper": {
       "source": "hardware\\two-layer\\sandwich\\upper\\Upper.kicad_pcb",
-      "sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f",
+      "sha256": "2900acdb530d296800e87672e2db2da2a0dabbcd413a25573d266ca89de6f6fb",
       "translation_mm": [
         84.0,
         7.0
       ],
       "footprints": 92,
-      "tracks_and_vias": 1363
+      "tracks_and_vias": 1247
     },
     "Wheel": {
       "source": "hardware\\two-layer\\sandwich\\wheel\\Wheel.kicad_pcb",
-      "sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5",
+      "sha256": "5745466ca9c6af6227ce4b658abae1e5648866572bd3cbee6be54b85489600bd",
       "translation_mm": [
         168.5,
         10.0
       ],
       "footprints": 87,
-      "tracks_and_vias": 1594
+      "tracks_and_vias": 1486
     },
     "Encoder": {
       "source": "hardware\\two-layer\\encoder\\Encoder.kicad_pcb",
@@ -25349,5 +25349,5 @@
   },
   "exact_translated_pads_tracks_drills_and_zone_copper": true,
   "native_unconnected": 0,
-  "sha256": "abe588958c592fae9800ff71a67168982efb68ff9a9b48e571ed46d01cb48ef4"
+  "sha256": "6a8556d028138fdfc41dfa375b4b09e6d6f0aec23499a8de20259f140efae34b"
 }
