@@ -1,185 +1,150 @@
-# Stacked two-layer Main — 70 × 100 mm
+# MagMouse stacked two-layer boards
 
-Both boards use the same **70 mm wide × 100 mm long tapered outline**. The
-inter-board harness is **19 wires with three shared grounds**. Plastic mechanisms now produce the
-button clicks; Hall sensors read the sensing magnets. The 208 retained original
-footprints remain at full size. The earlier coil design had 25 wires.
+All four boards are routed and have independent schematics. Native KiCad 10.0.6
+checks report zero ERC findings, DRC findings, unconnected items and schematic
+parity findings under the saved rules. The [quote package](quote-package/README.md)
+contains the files for supplier pricing; physical and supplier acceptance remain open.
 
-![Placement study](placement.png)
+The standard-via revision uses 0.30 mm via drills and at least 0.45 mm copper
+lands. All four boards are checked for via-hole/SMD-land overlaps. The derived
+[223 × 114 mm panel](panel/Panel.kicad_pcb) combines one of each board using
+2 mm routed gaps and 5 mm mouse-bite tabs. Source copper is copied exactly,
+with isolated net names for each board; individual outlines remain unchanged.
 
-| Board | Dimensions | Original footprints | Added interface/mount footprints |
-| --- | --- | ---: | ---: |
-| [Lower](lower/Lower.kicad_pro) | 70 × 100 mm | 122 | 6 |
-| [Upper](upper/Upper.kicad_pro) | 70 × 100 mm | 86 | 6 |
+![Routed Main boards](main-routing.png)
 
-The outline retains the earlier taper, scaled from 80 × 125 mm to 70 × 100 mm.
-The front edge is now 38.5 mm wide. Board area is 30% smaller than the previous
-sandwich. Components, pads and drills are **not scaled**: the placement has been
-reworked using full-size footprints and clearance checks.
+| Board/project | Dimensions | Copper layers | Original circuit footprints | Added interface/mount footprints |
+| --- | --- | ---: | ---: | ---: |
+| [Lower](lower/Lower.kicad_pro) | 70 × 100 mm, tapered | 2 | 122 | 6 |
+| [Upper](upper/Upper.kicad_pro) | 70 × 100 mm, tapered | 2 | 86 | 6 |
+| [Wheel](wheel/Wheel.kicad_pro) | 55 × 60 mm | 2 | 87 | 0 |
+| [Encoder](../encoder/Encoder.kicad_pro) | 14 × 18 mm | 2 | 3 | 0 |
 
-These remain **unrouted placement studies**, with no independent split schematics.
+[All-board overview](all-boards.png). Component footprints, pads and drills are
+full size. Both Main outlines retain the approved taper and 38.5 mm front edge.
+The Wheel reduction from 80 × 75 to 55 × 60 mm removed 45% of its board area.
 
-## Circuit split
+## Circuit and schematic split
 
 Lower contains the ESP32, USB connector and data/CC circuitry, 3.3 V regulator,
 optical sensor and local supplies, IMU, RGB, encoder interface and Wheel signal
-interface. Upper contains the eFuses, power monitoring, three
-Hall sensors, ADC1 and hardware interlock. Wheel power J10 stays on Upper;
-Wheel signals J8 stay on Lower.
+connector J8. Upper contains the eFuses, power monitoring, three Hall sensors,
+ADC1, hardware interlock and Wheel power connector J10.
 
-USB data/CC and the analog Hall/current-sense/ADC connections remain local to
-their respective boards. A matching [Wheel variant](wheel/Wheel.kicad_pro) uses
-the smaller wheel harness below. The earlier routed checkpoints and Encoder
-board are unchanged.
+The independent [Lower schematic](lower/Lower.kicad_sch) and
+[Upper schematic](upper/Upper.kicad_sch) each include `20_Stack_Harness` with the
+actual signal/power arrays and mounting holes. PCB symbol paths match these
+projects. The combined [Main circuit](main-circuit/Main.kicad_sch) is retained as
+the migration reference; edit the independent projects for subsequent work.
+Every retained component value and pin/net connection was compared with that
+reference. USB data/CC and analog Hall/current-sense/ADC connections stay local
+to their respective boards.
 
-## Passive buttons — 2026-11-04
+Buttons use passive plastic click mechanisms and one sensing magnet per Hall
+sensor. The active design removes 38 button-only parts, including U4/U5/U6,
+J2/J3/J4 and U17. ADC1 channels 3–5 are grounded spares; GPIO4–9 are unused.
+U18 retains the shared HALL_EN gate. Wheel drive, interlock, ACT_5V protection
+and shared storage remain. [passive-buttons.json](passive-buttons.json) records
+the exact removed parts and pin changes. The older routed checkpoints retain
+the superseded button-coil circuitry.
 
-Removed 38 button-only parts: U4/U5/U6, coil connectors J2/J3/J4, their
-support components, U17 and its command bias parts. U7/U8/U9 Hall sensors
-and U10 ADC remain. ADC1 channels 3–5 are grounded spares. U18 stays because
-one gate supplies the shared HALL_EN signal; its unused inputs are grounded.
-The wheel motor, wheel interlock and shared ACT_5V protection/storage remain.
-[passive-buttons.json](passive-buttons.json) records the exact inventory and pin
-changes. The original routed checkpoints retain the historical coil circuitry.
+## Wiring
 
-## Wheel harness
+The Main stack has **19 wires with three shared grounds**:
 
-The wheel connection is **19 wires with three shared grounds**, reduced from
-32 wires with 16 grounds. [WHEEL_WIRE_MAP.md](WHEEL_WIRE_MAP.md) lists every
-connection. J8 on Lower and J9 on Wheel now have **17 pads**: 14 signals, +3V3,
-and two grounds. The existing J10/J11 pair carries ACT_5V and the third ground.
-
-Both signal arrays use a 2 × 9 grid with one hole omitted. Their copper envelope
-is **22.12 × 4.34 mm**, down from 37.36 × 4.34 mm (41% shorter). Pads retain
-1.8 mm copper and 0.8 mm drills. Connect J8.N to J9.N; this replaces the old
-reversed 30-pin numbering. All signal and supply functions are retained.
-
-[main-circuit/Main.kicad_sch](main-circuit/Main.kicad_sch) is the complete Main
-circuit reference with the new J8 interface and passive-button revision. It is not yet split into independent
-Lower/Upper schematics. The matching Wheel project has its own updated schematic.
-Wheel routing is complete with **zero native DRC findings, zero unconnected items,
-and zero schematic-parity findings** under the inherited rules. The stacked Main
-boards remain unrouted placement studies.
-
-The Wheel PCB is now **55 × 60 mm**, reduced from 80 × 75 mm: **45% less area**.
-All components and signal/power tracks retain their placement and geometry. Two
-ground stitching vias in the removed outer margin were removed, and both ground
-pours were resized and refilled. Wheel and Encoder both have **two copper layers**;
-Encoder remains 14 × 18 mm. [wheel-size.json](wheel-size.json) records the change.
-
-## Reduced wiring
-
-[WIRE_MAP.md](WIRE_MAP.md) gives the new pin numbering. This supersedes the
-previous 25-wire map; the pin numbers have changed.
-
-| Interface | Signals or supplies | Shared grounds | Total wires |
+| Interface | Signals/supplies | Grounds | Total |
 | --- | ---: | ---: | ---: |
-| J101 to J102 | 13 signals | 1 | 14 |
-| J103 to J104 | 3 power rails | 2 | 5 |
-| **Total** | **16** | **3** | **19** |
+| J101 ↔ J102 | 13 signals | 1 | 14 |
+| J103 ↔ J104 | 3 supply rails | 2 | 5 |
 
-The three ground wires connect the same common GND net. There is no longer a
-separate ground wire for every control signal. The signal ground is beside the
-SPI pins. The two power grounds share the supply return; final wire gauge and
-cut lengths will be chosen with the stack height.
+Connect equal pad numbers using [WIRE_MAP.md](WIRE_MAP.md). Signal arrays are
+2 × 7 at 2.54 mm pitch: x = 6/8.54 mm, y = 42–57.24 mm, 1.8 mm lands and
+0.8 mm drills. Five power pads use 5.08 mm pitch at y = 11 mm, x = 25–45.32 mm,
+2.4 mm lands and 1.2 mm drills. Raw VBUS goes up, PWR_5V returns to Lower and
++3V3 goes back up. ACT_5V stays on Upper and feeds Wheel.
 
-Raw VBUS goes up to the protection circuitry, protected PWR_5V returns to the
-lower regulator, and +3V3 goes back up. ACT_5V stays on Upper and feeds Wheel
-through J10. GPIO4–9 are now unused; six button-command wires have been removed.
+The Wheel harness also has **19 wires with three shared grounds**. Lower J8
+and Wheel J9 each use 17 pads in a 2 × 9 grid with one hole omitted; their copper
+envelope is 22.12 × 4.34 mm. Upper J10 and Wheel J11 carry ACT_5V and the third
+ground. See [WHEEL_WIRE_MAP.md](WHEEL_WIRE_MAP.md). Wire gauges, cut lengths and
+stack height still depend on the mechanical assembly.
 
-The signal array is now 2 × 7 pads instead of 2 × 10. Odd pins are at x = 6 mm,
-even pins at x = 8.54 mm, with rows from y = 42 to 57.24 mm. Only pin 1 is GND.
-The five power pads are at y = 11 mm, starting at x = 25 mm with 5.08 mm pitch;
-pins 1 and 5 are GND. Pad numbers match directly between the two boards.
+## Placement and routing
 
-## Placement and mounting
+The approved component spacing and fixed USB, optical, Hall, antenna, connector
+and mounting positions are retained. Two underside test pads moved to clear
+the USB corridor: TP28 to (34,69.5), TP29 to (38,78) mm. Fitted electronic parts
+remain on the front; several diagnostic test pads are on the back.
 
-The crowded groups have been spread across more of each board. Lower's power,
-optical support and IMU groups are farther apart; Upper's
-protection, sensing and interlock groups use more of the middle and rear area.
-USB, the optical sensor, ESP32 antenna, Hall sensors, connectors and mounting
-positions remain fixed. Supporting parts follow their ICs; capacitor/inductor
-centre distances to their assigned IC or LED increase by no more than 0.75 mm.
+The long USB pair was placed before routing, around the right side of the
+optical reserve, using the inherited 1.10 mm trunk width and 0.15 mm nominal
+gap with narrow land escapes. Freerouting 2.5.0 completed the remaining routes.
+KiCad then restored minimum track/via sizes, filled and stitched ground copper,
+removed unused fanout vias, and checked actual connectivity and clearances.
+Power escapes were widened where geometry permits. The fabricator's stack and
+physical USB, power, thermal and analog performance still need verification.
 
-The spacing solver targets a 0.6 mm courtyard gap for movable general parts and
-0.3 mm for capacitors/inductors. Fixed interfaces retain their approved spacing.
-Across the affected groups, the median nearest courtyard gap increased from
-0.25 to 0.53 mm on Lower and from 0.30 to 0.65 mm on Upper. These are placement
-clearances, not copper design-rule values. [spacing-review.json](spacing-review.json)
-records the measurements and anchor checks; [main-boards.png](main-boards.png)
-shows the revised placement. [placement-positions.json](placement-positions.json)
-records every original and new position. Routing and electrical layout review
-remain to be completed.
+Aligned M2 mounting candidates remain at (18,6), (52,6), (7,76), (63,76) mm:
+2.2 mm holes and 5 mm support envelopes. The optical aperture reserve remains
+on Lower. U3 stays at (35,89.25) mm, with its antenna approximately 0.43 mm from
+the curved board edge at the corners. The requested 5 mm reserve is
+x = 22.3–47.7, y = 94.5–104 mm on both boards, extending beyond the rear edge.
+Upper retains substrate over that region; assembled radio performance is untested.
 
-Four aligned M2 mounting candidates are at (18,6), (52,6), (7,76) and (63,76) mm,
-with 2.2 mm holes and 5 mm support envelopes. The lower optical aperture reserve
-moves with the PMW3360. The antenna uses the requested **5 mm clearance** on
-its three free sides, reduced from 15 mm for the intended few-metre radio range.
-U3 is now at **(35, 89.25) mm**, moved 15.25 mm towards the rear edge. Its
-antenna end reaches y = 99 mm, approximately 0.43 mm from the curved edge at
-the outer corners (1 mm at the centre). The surrounding MCU circuitry follows
-the new placement. The reserve is **25.4 × 9.5 mm**, at x = 22.3 to 47.7 mm and
-y = 94.5 to 104 mm on both boards; the outward clearance now extends beyond
-the PCB edge. This includes the antenna area itself; the feed side meets the
-module body. Upper still has substrate above the antenna area.
-The lower module's adjusted keepout and courtyard are stored in the local
-`MagMouseSandwich.pretty` footprint library; the stock library is unchanged.
+## Validation and quote files
 
-Stack height, USB access, button magnet alignment and lens fit remain to be
-established. Radio performance has not been tested in the assembled stack.
+[routing-review/summary.json](routing-review/summary.json) records current board
+hashes, sizes, layer counts, ERC/DRC/parity results and fabrication dimensions.
+The native reports, exported netlists, front/back copper SVGs and track-width
+measurements are alongside it. Inherited ignored categories remain explicit in
+the reports; no new DRC or ERC exclusions were added for routing.
 
-## Validation
+[MagMouse-quote-package.zip](MagMouse-quote-package.zip) includes four separate
+Gerber/drill ZIPs, per-board BOM/CPL CSVs, combined purchasing inventory, manual
+items and via-in-pad intersection lists. Read its [quotation notes](quote-package/README.md)
+for stack, assembly, stock, shipping/tax and mechanical assumptions. This is a
+pricing package. The [first live quote](quotes/2026-11-04-jlcpcb/QUOTE.md) records
+the superseded 0.20 mm, separate-board version. No fabrication order is placed.
 
-KiCad 10.0.6 reports **zero non-connectivity DRC findings** on both boards under
-the inherited rules. There are **343 unconnected items on Lower and 204 on Upper**,
-as expected for these unrouted studies. The reported pass is a placement check,
-not a routed-board or schematic-parity pass.
+`partition.json` preserves ownership and the checked 19-wire contract.
+`placement-positions.json`, `spacing-review.json`, `spacing-baseline.json`,
+`placement.svg/png` and `passive-validation.json` are historical pre-routing
+evidence; their old board hashes and airwire counts are not current route results.
 
-The generator verifies:
+## Reproduction
 
-- Both boards have the same requested 70 × 100 mm outline and two copper layers.
-- All 208 retained original component references occur once. J8 has the revised
-  17-pad interface. Only the documented passive-button pin changes are allowed;
-  unrelated values, packages and pin connections are preserved.
-- All 17 boundary nets are represented by the 19-wire harness.
-- All corresponding saved wire pads have matching net names and XY positions.
-- New wire pads and mounting support envelopes fit inside the tapered outline.
+Use KiCad 10 Python. `split_main.py` is a guarded one-time extraction;
+`build_study.py` now refuses to overwrite the independent projects. Edit the
+independent KiCad projects for future circuit or layout changes.
 
-[partition.json](partition.json) records component ownership, original boundary
-endpoints, wiring, board hashes and validation results. Native DRC reports are
-saved beside each PCB. Inherited ignored checks remain listed in those reports.
-The separate [wheel-interface.json](wheel-interface.json) verifies all 19 saved
-wheel wire assignments, three grounds, and the Wheel variant's routing/parity.
+`route_main.py` exports/imports Specctra sessions, `route_usb.py` defines the
+initial USB corridor, `finish_main.py` fills and stitches ground, and
+`widen_power.py` widens power where clearance and keepouts allow. Freerouting
+2.5.0 used neck retry at 150 µm with the optimizer disabled for Lower. Lower's
+DSN clearance was increased to 165 µm to leave margin for native minimum-width
+restoration; saved KiCad clearances remain unchanged. Temporary sessions, router
+binaries and logs stay in ignored `build/sandwich/main-routing`.
 
-## Rebuild
+`export_quote.py` rechecks all four boards before exporting the package and
+compares Main pins against the retained migration reference. `overview.py`
+renders placement views; add `--main-only --copper` for the routed Main image.
+`wheel_interface.py verify` refreshes the Wheel harness check. Its `prepare`
+action is a destructive rebuild of that variant and is not routine validation.
 
-```powershell
-& '<KiCad>/bin/python.exe' hardware/two-layer/sandwich/build_study.py
-```
+`standard_vias.py` records the one-time drill migration and assists local via
+relocation; `repair_wheel.py` and `continuous_routes.py` provide local path repairs.
+`standard-via-review.json` records unchanged component placement and pad/net identity,
+unchanged motor-phase/brake copper, and the final drill and via-in-pad counts. The finished
+KiCad boards are the editable source. `panelize.py` derives and verifies the
+combined manufacturing panel and exports its Gerbers/drills. Its verification
+compares every source pad, track, via drill and filled-zone vertex after translation,
+checks connected substrate and router access, and runs native panel DRC.
 
-The generator and [compact_placement.py](compact_placement.py) overwrite the
-study boards, projects, reports, wire table and SVG/PNG previews. They read the
-original compact PCB and revised Main circuit reference netlist. Original boards are
-never written. The scripts use Shapely and resvg-py from `build/two-layer/python`.
+The fabrication rules explicitly use JLCPCB's 0.075 mm via annular ring and
+0.20 mm via-hole-to-copper clearance, replacing 0.125/0.25 mm in the earlier
+revision. Via hole-to-hole clearance stays 0.25 mm, copper clearance stays
+0.15 mm by net class (0.127 mm board minimum), and minimum track width stays
+0.127 mm. No additional DRC categories are ignored. These limits are based on
+[JLCPCB's published capabilities](https://jlcpcb.com/capabilities/pcb-capabilities/).
 
-`wheel_interface.py prepare` regenerates the Main circuit reference and Wheel
-schematics, then resets only the Wheel interface routing for a fresh routing run.
-It overwrites the Wheel variant: do not use it as a routine validation command.
-Route its `build/sandwich/Wheel-19wire.dsn` output, then use
-`wheel_interface.py import` to load `Wheel-19wire.ses`, restore the project's
-minimum track/via dimensions, refill copper, and save. `wheel_interface.py verify`
-runs native Wheel DRC/parity and checks the actual saved harness pads.
-This revision used Freerouting 2.5.0 with ground pours refilled in KiCad after
-import. The native KiCad results are the final connectivity and DRC evidence.
-`compact_wheel.py` applies the 55 × 60 mm outline to the routed Wheel variant,
-preserving all retained copper. Run it after a fresh interface routing rebuild,
-then run `wheel_interface.py verify` and `overview.py` to refresh the evidence
-and the [all-board overview](all-boards.png).
-`spaced_groups.py` defines the spacing targets relative to `spacing-baseline.json`.
-After regenerating Main, `review_spacing.py` checks the fixed anchors and support
-part distances. `overview.py --main-only` renders the two Main boards together.
-
-Next implement the split Main schematics and route the stacked boards.
-
-Hardware: CERN-OHL-S-2.0, as in [../../LICENSE](../../LICENSE).
-Scripts: GPL-3.0-or-later. Documentation: CC-BY-SA-4.0.
+Hardware: CERN-OHL-S-2.0. Scripts: GPL-3.0-or-later. Documentation: CC-BY-SA-4.0.

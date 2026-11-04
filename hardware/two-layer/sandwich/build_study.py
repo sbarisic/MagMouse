@@ -254,6 +254,7 @@ def wire_document(wires):
 
 
 def main():
+    assert not (HERE/'lower/Lower.kicad_sch').exists(), 'Independent projects now exist; do not overwrite routed Main boards with the historical placement generator'
     wheel_library()
     scratch = ROOT/'build/sandwich'
     scratch.mkdir(parents=True, exist_ok=True)

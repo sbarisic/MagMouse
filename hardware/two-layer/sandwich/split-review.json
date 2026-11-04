@@ -1,0 +1,12 @@
+{
+  "Lower": {
+    "retained_components": 122,
+    "added_interface_and_mounts": 6,
+    "original_pin_connections_unchanged": true
+  },
+  "Upper": {
+    "retained_components": 86,
+    "added_interface_and_mounts": 6,
+    "original_pin_connections_unchanged": true
+  }
+}

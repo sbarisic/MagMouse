@@ -7,7 +7,8 @@
 - [x] Replace button actuation with passive plastic clicks and Hall sensing;
   remove 38 parts and reduce the Main stack to 19 wires with three grounds.
 - [ ] Model and fit the plastic click mechanism, sensing magnets and stops.
-- [ ] Split the Main reference schematic into board projects and route Main.
+- [x] Split the Main reference schematic into independent Lower/Upper projects,
+  route both boards and export the four-board quote package (2026-11-04).
 - [ ] Validate the assembled mechanics, Hall thresholds and wheel operation.
 
 See the [active design](../hardware/two-layer/sandwich/README.md). Historical

@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-04T09:01:20",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404",
+            "violations": []
+        },
+        {
+            "path": "/10_Wheel_Driver/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/9e1c6e51-1ad1-5e3a-bb31-1ec20ff3fedf",
+            "violations": []
+        },
+        {
+            "path": "/11_Wheel_SPI/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/6314463c-8d57-5fea-a888-921d0788386a",
+            "violations": []
+        },
+        {
+            "path": "/12_Wheel_Feedback/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/6bb26027-e36c-5149-93b0-61be9c808734",
+            "violations": []
+        },
+        {
+            "path": "/13_Regeneration_Brake/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124",
+            "violations": []
+        },
+        {
+            "path": "/18_Wheel_Harness/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/48215ee4-e170-5dbb-820d-f5bb0047ff44",
+            "violations": []
+        },
+        {
+            "path": "/19_Local_Power/",
+            "uuid_path": "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/2b07bc4d-4879-5e5f-a450-6e57838959d2",
+            "violations": []
+        }
+    ],
+    "source": "Wheel.kicad_sch"
+}

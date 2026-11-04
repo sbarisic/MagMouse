@@ -1,6 +1,7 @@
 # USB-C and actuator power control
 
-The active [stacked Main circuit](../hardware/two-layer/sandwich/main-circuit/Main.kicad_sch) connects USB-C to protected logic
+The active [Upper Main circuit](../hardware/two-layer/sandwich/upper/Upper.kicad_sch)
+and [Lower Main circuit](../hardware/two-layer/sandwich/lower/Lower.kicad_sch) connects USB-C to protected logic
 and actuator supplies. Source detection, current limits, soft-start, reverse
 blocking, telemetry, sensor shutdown and the hardware heartbeat interlock are
 implemented. Firmware and bench acceptance remain open; this is not a USB

@@ -117,8 +117,8 @@
   "wheel_unconnected": 0,
   "wheel_schematic_parity_findings": 0,
   "board_sha256": {
-    "Lower": "3d9e43898fbdd453f22d54660ecba0eaab128090563e86d84f58e41f15188238",
-    "Upper": "33651b7770e9676a4bc6de9ec4f1afdface66346e9253737f73af6f18f30dda7",
-    "Wheel": "a19e6108abb645093c2e647687e612fdc60775742144613f0a196dd0dc9e9a8b"
+    "Lower": "56eab133684987761f44f6f9bd5e2b1ee5f68dcf32f885bb96677f84ba207fc9",
+    "Upper": "d4d27bc7af9d56e48d121891a64a06dc27e1a87a6be7cdbb890ead8d87dfc342",
+    "Wheel": "9e7150fda115fb7c8100407e570c7de7513492a0e23ead481cae0383eeb7d49a"
   }
 }

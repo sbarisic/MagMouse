@@ -1,0 +1,93 @@
+(footprint "Wire_Stack_Power_5"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "50a74e12-ffe8-40fe-82aa-374d84eb4d76")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "Stack power / 5 wires"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "606c00d9-c139-4540-b95d-bf9da6ffc9e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d98a70b8-5096-45ed-b2d0-62a043728ced")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c410ce9c-587b-4154-9639-dc4a730daaba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 25 11)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fa71c624-9991-4e95-bac5-e857aebbe214")
+	)
+	(pad "2" thru_hole circle
+		(at 30.08 11)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c7bf5e27-7dc9-42d2-8211-f66ce7a95591")
+	)
+	(pad "3" thru_hole circle
+		(at 35.16 11)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "30bb93ab-60ff-4d3f-8757-de6fe8b7e757")
+	)
+	(pad "4" thru_hole circle
+		(at 40.24 11)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6747a707-44b6-429c-b8f7-8f48abe93120")
+	)
+	(pad "5" thru_hole circle
+		(at 45.32 11)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "010ac781-446e-4dc9-8fb0-132fd02f2902")
+	)
+	(embedded_fonts no)
+)

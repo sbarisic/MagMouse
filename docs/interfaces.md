@@ -5,7 +5,8 @@ GPIO46**. The user selected a single-data-pin addressable RGB LED on 2026-09-08.
 Wheel control uses 3-PWM; ADC2 gets a dedicated SPI host. USB, recovery UART,
 and existing power-control pins stay put. Button command outputs are removed.
 
-This allocation describes the active [stacked Main circuit](../hardware/two-layer/sandwich/main-circuit/Main.kicad_sch).
+This allocation describes the active [Lower](../hardware/two-layer/sandwich/lower/Lower.kicad_sch)
+and [Upper](../hardware/two-layer/sandwich/upper/Upper.kicad_sch) Main circuits.
 The original allocation files and schematics linked below retain the historical
 coil revision. Runtime timing is **not yet proven**.
 The [machine-readable allocation](../hardware/kicad/gpio-allocation.json) and

@@ -1,0 +1,70 @@
+(footprint "MountingHole_2.2mm_M2_5mm_Envelope"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ca657662-9e6f-4b6e-ab1c-82bc408a9f4a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "M2 clearance / 5mm support envelope"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c79530e-ed8e-4948-982f-1824f7940dfa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26fa8b9b-ff49-4864-a4f7-174a6d8e3413")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ecd03fb-b1ca-4d4c-8c1d-8c667ec38155")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 2.5 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b64cd6f9-8716-4010-8f4a-9833bec48e7a")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "19f6b748-2584-4f85-a575-33f98d655be7")
+	)
+	(embedded_fonts no)
+)

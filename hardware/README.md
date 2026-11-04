@@ -2,7 +2,9 @@
 
 Active development: [stacked two-layer boards](two-layer/sandwich/README.md),
 with passive plastic clicks and Hall sensing. The two 70 × 100 mm Main boards
-remain unrouted; Wheel and Encoder are routed. Mechanical integration,
+have independent schematics and completed routing; Wheel and Encoder are also
+routed. A [four-board quote package](two-layer/sandwich/quote-package/README.md)
+is available. Mechanical integration,
 manufacturing review and hardware qualification remain open. Earlier routed
 checkpoints and manufacturing packages below retain the superseded button coils.
 

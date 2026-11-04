@@ -1,0 +1,249 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "793e30da-b5e0-568a-8c06-a46ea4e2fed4")
+  (paper "A3")
+  (title_block
+    (title "Modular wheel harness - circuit draft")
+    (date "2026-09-10")
+    (rev "0.1 DRAFT"))
+  (lib_symbols
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (embedded_fonts no)
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 198.12 55.88 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "52f7b278-3e5f-596e-be2f-123ed9d96458")
+    (property "Reference" "J10"
+      (at 203.12 52.88 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "Soldered wires Power_1x02"
+      (at 203.12 55.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "MagMouseModular:Wire_Power_1x02_P2.54mm"
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-09-10"
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Supplier URL" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/f0572d70-f163-5775-a2dd-b62394b9c2b9"
+          (reference "J10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 193.04 55.88)
+      (xy 187.96 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4b8727ea-8556-5589-968f-758605d81a9c"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 187.96 55.88 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "feb87b31-221e-5ce7-aa34-63748839692f"))
+  (wire
+    (pts
+      (xy 193.04 58.42)
+      (xy 187.96 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a9b44881-d711-5726-b9fa-3b89ee5f98af"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 187.96 58.42 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "5624acb2-4803-52ad-a6f6-32eadd02ddcb"))
+  (text "18_Wheel_Harness / Upper components\nSee 20_Stack_Harness for the inter-board wiring."
+    (at 20 18 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "b9be767a-58cd-54ee-bc59-0c7fe91bfea4")))

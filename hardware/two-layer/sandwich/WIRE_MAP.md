@@ -1,6 +1,6 @@
-# Proposed sandwich wire map
+# Main stack wire map
 
-This is the exact endpoint map for the unrouted placement study. Wire gauge,
+This is the checked endpoint map for the independently routed boards. Wire gauge,
 cut lengths and assembled stack height are not yet selected.
 
 Both boards use the same top-view XY orientation; do not mirror the upper

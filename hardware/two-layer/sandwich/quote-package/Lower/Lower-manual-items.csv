@@ -1,0 +1,5 @@
+﻿Reference,Value,Footprint,Reason
+J101,Stack signals / 14 wires,Wire_Stack_Signal_14,"Wire pad, test access, or component without a purchasing MPN; review manually"
+J103,Stack power / 5 wires,Wire_Stack_Power_5,"Wire pad, test access, or component without a purchasing MPN; review manually"
+J6,Soldered wires Signal_2x04,Wire_Signal_2x04_P2.54mm,"Wire pad, test access, or component without a purchasing MPN; review manually"
+J8,Wheel 17-wire signals / 2 GND,Wire_Wheel_17_P2.54mm,"Wire pad, test access, or component without a purchasing MPN; review manually"

@@ -1,5 +1,5 @@
 {
-  "status": "Unrouted placement study; proposed harness, no split schematics or release approval",
+  "status": "Independent Lower/Upper schematics; fully routed two-layer prototype; quote package exported; physical and supplier acceptance pending",
   "source_placement_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
   "current_main_sha256": "991611c7d10ef17bccaa74acd1ffe80b8f1ef1580623d36f9628d2a9b0ce972c",
   "netlist_sha256": "a299f99e5b15f47977b2ed7a75954046d7670d1d03b6b4359055c8301b1d2f0f",
@@ -999,9 +999,9 @@
       "outline_matches_scaled_original": true,
       "original_footprints": 122,
       "added_footprints": 6,
-      "unconnected_items": 343,
+      "unconnected_items": 0,
       "drc_findings": {},
-      "board_sha256": "3d9e43898fbdd453f22d54660ecba0eaab128090563e86d84f58e41f15188238",
+      "board_sha256": "56eab133684987761f44f6f9bd5e2b1ee5f68dcf32f885bb96677f84ba207fc9",
       "antenna_body_to_outline_mm": 0.4321,
       "minimum_new_wire_pad_to_outline_mm": 4.0504,
       "mount_support_envelopes_inside_outline": true,
@@ -1014,9 +1014,9 @@
       "outline_matches_scaled_original": true,
       "original_footprints": 86,
       "added_footprints": 6,
-      "unconnected_items": 204,
+      "unconnected_items": 0,
       "drc_findings": {},
-      "board_sha256": "33651b7770e9676a4bc6de9ec4f1afdface66346e9253737f73af6f18f30dda7",
+      "board_sha256": "d4d27bc7af9d56e48d121891a64a06dc27e1a87a6be7cdbb890ead8d87dfc342",
       "antenna_body_to_outline_mm": 0.4321,
       "minimum_new_wire_pad_to_outline_mm": 4.0504,
       "mount_support_envelopes_inside_outline": true,
@@ -1075,8 +1075,8 @@
     "component_and_pad_net_identity_except_revised_J8_and_passive_button_pins": true,
     "all_boundary_nets_have_wire_assignments": true,
     "all_19_saved_pad_pairs_match_net_and_xy": true,
-    "both_boards_two_layers_and_unrouted": true,
     "both_outlines_match_70x100_taper": true,
-    "split_schematic_parity_checked": false
+    "split_schematic_parity_checked": true,
+    "both_boards_two_layers_and_fully_routed": true
   }
 }

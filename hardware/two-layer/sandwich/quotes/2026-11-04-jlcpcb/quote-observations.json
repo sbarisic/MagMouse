@@ -1,0 +1,100 @@
+{
+  "checked_on": "2026-11-04",
+  "status": "QUOTE ONLY - NO ORDER SUBMITTED",
+  "destination": "Croatia 43000",
+  "scope": "Five each of four separate bare PCB designs, no stencil or components",
+  "cart_url": "https://cart.jlcpcb.com/shopcart/cart/",
+  "currency_note": "Cart EUR; checkout USD",
+  "cart_total_EUR": 244.68,
+  "layers": 2,
+  "thickness_mm": 1.6,
+  "outer_copper_oz": 1,
+  "finish": "ENIG 1 microinch",
+  "mask": "Green",
+  "silkscreen": "White",
+  "jobs": [
+    {
+      "sha256": "21077e613cdd3bfc02d7e106ddcd98f5c580ad2abd8329d7ababffb92d3e6516",
+      "minimum_drill_mm": 0.2,
+      "job": "Lower-gerbers_Y14",
+      "quantity": 5,
+      "dimensions_mm": [
+        70,
+        100
+      ],
+      "price_EUR": 64.63,
+      "via_covering": "Plugged",
+      "uploaded_file": "Lower-gerbers.zip",
+      "board": "Lower"
+    },
+    {
+      "sha256": "728b0a8e8812059518efe25e555689db94e3ae3c3546087e6aaa0cafbf7a9dbd",
+      "minimum_drill_mm": 0.2,
+      "job": "Upper-gerbers_Y15",
+      "quantity": 5,
+      "dimensions_mm": [
+        70,
+        100
+      ],
+      "price_EUR": 64.63,
+      "via_covering": "Plugged",
+      "uploaded_file": "Upper-gerbers.zip",
+      "board": "Upper"
+    },
+    {
+      "sha256": "843a5e4b094d56667d8f36bc61a31c6aceff4b91c018765d4c67538038af9e52",
+      "minimum_drill_mm": 0.2,
+      "job": "Wheel-gerbers_Y16",
+      "quantity": 5,
+      "dimensions_mm": [
+        55,
+        60
+      ],
+      "price_EUR": 96.85,
+      "via_covering": "Epoxy Filled & Capped",
+      "uploaded_file": "Wheel-gerbers.zip",
+      "board": "Wheel"
+    },
+    {
+      "sha256": "79c443e3b51e5d4104c801eb1375aa2359dc7148f98baf36e925afff700650f9",
+      "minimum_drill_mm": 0.3,
+      "job": "Encoder-gerbers_Y17",
+      "quantity": 5,
+      "dimensions_mm": [
+        14,
+        18
+      ],
+      "price_EUR": 18.57,
+      "via_covering": "Tented",
+      "uploaded_file": "Encoder-gerbers.zip",
+      "board": "Encoder"
+    }
+  ],
+  "delivered_DHL_DDP_USD": {
+    "transit_business_days": "2-4",
+    "shipping": 26.44,
+    "customs_duties_and_taxes": 77.92,
+    "total": 386.75,
+    "merchandise": 274.12,
+    "duty_tax_disbursement_fee": 8.27
+  },
+  "delivered_EuroPacket_DDP_USD": {
+    "transit_business_days": "7-10",
+    "shipping": 32.26,
+    "customs_duties_and_taxes": 76.6,
+    "total": 382.98,
+    "merchandise": 274.12,
+    "duty_tax_disbursement_fee": 0.0
+  },
+  "production_days": 3,
+  "checkout_left_selected": "DHL Express DDP",
+  "evidence": "dhl-checkout.jpg",
+  "limitations": [
+    "Supplier CAM review may adjust prices",
+    "Final optical lens milling not yet included",
+    "Stencil, components, assembly, mechanisms and wiring excluded",
+    "No paid impedance service",
+    "No coupons applied",
+    "No geometry modified for this quote"
+  ]
+}

@@ -1,0 +1,25 @@
+Drill report for Wheel.kicad_pcb
+Created on 2026-11-04T09:01:25
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Wheel-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (268 holes))
+    T2  0.800mm  0.0315"  (17 holes))
+    T3  1.000mm  0.0394"  (3 holes))
+    T4  1.100mm  0.0433"  (2 holes))
+
+    Total plated holes count 290
+
+
+Drill file 'Wheel-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

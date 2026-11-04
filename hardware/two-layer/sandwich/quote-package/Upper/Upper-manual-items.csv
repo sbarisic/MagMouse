@@ -1,0 +1,4 @@
+﻿Reference,Value,Footprint,Reason
+J10,Soldered wires Power_1x02,Wire_Power_1x02_P2.54mm,"Wire pad, test access, or component without a purchasing MPN; review manually"
+J102,Stack signals / 14 wires,Wire_Stack_Signal_14,"Wire pad, test access, or component without a purchasing MPN; review manually"
+J104,Stack power / 5 wires,Wire_Stack_Power_5,"Wire pad, test access, or component without a purchasing MPN; review manually"

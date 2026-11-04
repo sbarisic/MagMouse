@@ -1,0 +1,196 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "ee65dac6-4668-53e5-b9ad-34f5b36446b5")
+  (paper "A3")
+  (title_block
+    (title "MagMouse Upper Main - two layers")
+    (date "2026-11-04")
+    (rev "0.1 DRAFT"))
+  (lib_symbols)
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (embedded_fonts no)
+  (text "MagMouse Upper Main / 70 x 100 mm / two copper layers\nPassive plastic buttons with Hall sensing. Main stack: 19 wires / 3 shared grounds."
+    (at 20 18 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "e56da994-e10a-5a9f-92f3-4baa2ddc2ba1"))
+  (sheet
+    (at 20 50)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "53ef1b2e-2214-5252-a341-e013ba33a7d8")
+    (property "Sheetname" "04_Sensing"
+      (at 20 48.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "04_Sensing.kicad_sch"
+      (at 20 68.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "2")))))
+  (sheet
+    (at 20 75)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "8a66e1fe-51be-562e-9512-bb5cf22fe456")
+    (property "Sheetname" "05_Protected_Power"
+      (at 20 73.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "05_Protected_Power.kicad_sch"
+      (at 20 93.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "3")))))
+  (sheet
+    (at 20 100)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "a8b8e5ef-19e0-5d84-8c60-ff359b0d0164")
+    (property "Sheetname" "06_Actuator_Interlock"
+      (at 20 98.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "06_Actuator_Interlock.kicad_sch"
+      (at 20 118.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "4")))))
+  (sheet
+    (at 20 125)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "c62fc5ee-40c8-515c-a816-c08000bf7406")
+    (property "Sheetname" "07_Power_Monitor"
+      (at 20 123.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "07_Power_Monitor.kicad_sch"
+      (at 20 143.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "5")))))
+  (sheet
+    (at 20 150)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "eb4158a7-f345-513c-bf55-64544b1ee44b")
+    (property "Sheetname" "08_Actuator_Rail"
+      (at 20 148.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "08_Actuator_Rail.kicad_sch"
+      (at 20 168.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "6")))))
+  (sheet
+    (at 20 175)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "f0572d70-f163-5775-a2dd-b62394b9c2b9")
+    (property "Sheetname" "18_Wheel_Harness"
+      (at 20 173.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "18_Wheel_Harness.kicad_sch"
+      (at 20 193.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "7")))))
+  (sheet
+    (at 20 200)
+    (size 112 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "5978ac83-3358-5857-b0d3-9d7a76ef37a1")
+    (property "Sheetname" "20_Stack_Harness"
+      (at 20 198.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "20_Stack_Harness.kicad_sch"
+      (at 20 218.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Upper"
+        (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5"
+          (page "8"))))))

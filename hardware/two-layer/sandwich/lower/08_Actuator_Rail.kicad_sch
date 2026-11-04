@@ -1,0 +1,541 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "802d0f34-82a3-5bef-bbfc-153248a91678")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - 08_Actuator_Rail")
+    (date "2026-09-08")
+    (rev "0.4 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols
+    (symbol "Device:D_Zener"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "D_Zener"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Zener diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "D_Zener_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+            (xy -0.762 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "D_Zener_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 2.54)
+          (name "K"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 2.54)
+          (name "A"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (symbol
+    (lib_id "Device:D_Zener")
+    (at 60.96 71.12 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b998891e-8c55-53ef-bf15-d69f3cb816e2")
+    (property "Reference" "D1"
+      (at 65.96000000000001 63.120000000000005 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "SMBJ12A"
+      (at 65.96000000000001 66.12 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Diode_SMD:D_SMB"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/4ab84a227fae39f9eac85241b8264ead.pdf?productCode=C151251"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "Littelfuse"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "SMBJ12A"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C151251"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C151251"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Catalog MPN verified 2026-09-08; stock and assembly quote must be refreshed"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C151251.html"
+      (at 60.96 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Lower"
+        (path "/3de08a0c-e7af-5127-8d91-8f9110cf7067/eb4158a7-f345-513c-bf55-64544b1ee44b"
+          (reference "D1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 57.15 71.12)
+      (xy 52.07 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "416593a9-657e-5cc4-a335-9c6756f9e1b8"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 52.07 71.12 180)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "1d0a0573-7c20-5f49-91c2-47a5fa51836d"))
+  (wire
+    (pts
+      (xy 64.77 71.12)
+      (xy 69.85 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "acce295c-64cb-53de-9214-ddac136032d5"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 69.85 71.12 0)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "443cc3ef-c39d-520a-9e48-ebc003597ee1"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 40.64 180.34 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "1c9af1cb-a20e-5d9c-a383-b02611de3084")
+    (property "Reference" "TP10"
+      (at 44.64 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "VBUS_USB"
+      (at 44.64 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 40.64 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Lower"
+        (path "/3de08a0c-e7af-5127-8d91-8f9110cf7067/eb4158a7-f345-513c-bf55-64544b1ee44b"
+          (reference "TP10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 40.64 180.34)
+      (xy 40.64 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dbd74a7b-3e14-5a05-8157-66f9392883f4"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 40.64 185.42 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "9c096ec0-a2ab-5e47-8dce-fa387d3635a3"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 43.18 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "06b369cb-469e-539b-a6fc-7c03c47e9137")
+    (property "Reference" "TP1"
+      (at 47.18 211.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "VBUS_USB"
+      (at 47.18 214.36 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 43.18 213.36 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Lower"
+        (path "/3de08a0c-e7af-5127-8d91-8f9110cf7067/eb4158a7-f345-513c-bf55-64544b1ee44b"
+          (reference "TP1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 43.18 213.36)
+      (xy 43.18 218.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "03adcc18-3a5a-5b97-b7eb-9097cf71cc0d"))
+  (global_label "VBUS_USB"
+    (shape bidirectional)
+    (at 43.18 218.44 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b5cd6070-afb2-58f1-bcd4-d82089644b52"))
+  (embedded_fonts no)
+  (text "08_Actuator_Rail / Lower components\nSee 20_Stack_Harness for the inter-board wiring."
+    (at 20 18 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "575bb351-8fd0-5afa-8d3d-a5a86a0cd163")))

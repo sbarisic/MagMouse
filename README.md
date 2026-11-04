@@ -5,7 +5,10 @@ click mechanisms, and a motorized haptic scroll wheel.
 
 **Active development: [four two-layer boards](hardware/two-layer/sandwich/README.md),
 with two 70 × 100 mm stacked Main boards and passive plastic button clicks.**
-Main placement is unrouted; the 55 × 60 mm Wheel and 14 × 18 mm Encoder are routed.
+All four boards are routed, with independent schematics and clean native
+ERC, DRC, connectivity and schematic-parity checks under the saved rules.
+The [quote package](hardware/two-layer/sandwich/quote-package/README.md) contains
+Gerbers, drills, BOMs and placement files; supplier and physical acceptance remain open.
 The Main stack and Wheel harness each use 19 wires with three shared grounds.
 
 The earlier three-board Rev-A bench design below retains button coils and is a

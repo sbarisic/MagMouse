@@ -15,14 +15,18 @@ retained, including the IMU. No feature has been deliberately removed. The copie
 use the existing shared symbol/footprint libraries with corrected relative paths.
 Keep this directory inside the repository when opening a project.
 
-The [stacked Main placement study](sandwich/README.md) explores replacing Main
+The [stacked Main design](sandwich/README.md) replaces the oversized Main
 with two smaller two-layer boards connected by soldered wires. It includes a
 19-wire map with three shared grounds and two editable boards with matching
 70 × 100 mm tapered outlines (38.5 mm front edge).
 The active study uses passive plastic clicks with Hall sensing; 38 button-coil
 parts and six control wires have been removed. The routed checkpoints above
 retain the earlier coil circuitry.
-Those separate study boards are unrouted and do not replace this routed checkpoint.
+The stacked boards now have independent Lower/Upper schematics and completed
+routing, with zero native ERC, DRC, unconnected or schematic-parity findings.
+The earlier oversized routed checkpoints in the table remain available as
+references. Use the [four-board quote package](sandwich/quote-package/README.md)
+for the active design.
 The study also includes a matching Wheel variant with a 19-wire harness, three
 shared grounds, and shorter 17-pad signal arrays on Lower and Wheel. See its
 [wheel wire map](sandwich/WHEEL_WIRE_MAP.md); the routed checkpoints in the table
