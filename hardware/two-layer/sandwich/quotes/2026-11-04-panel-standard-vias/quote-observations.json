@@ -1,0 +1,88 @@
+{
+  "checked_on": "2026-11-04",
+  "status": "QUOTE ONLY - NO ORDER SUBMITTED",
+  "design_commit": "533e284",
+  "destination": "Croatia 43000",
+  "scope": "Five panels, one of each of four bare PCB designs per panel; five complete sets; no stencil, parts or assembly",
+  "uploaded_file": "hardware/two-layer/sandwich/panel/MagMouse-panel-gerbers.zip",
+  "uploaded_sha256": "2dcfe0fa8467c2291107dfdb07231bdb8548b58c5b03704dbc7b33f3a280f473",
+  "cart_job": "MagMouse-panel-gerbers_Y18",
+  "cart_url": "https://cart.jlcpcb.com/shopcart/cart/",
+  "quantity_panels": 5,
+  "different_designs": 4,
+  "panel_size_mm": [
+    223,
+    114
+  ],
+  "layers": 2,
+  "material": "FR4 TG135",
+  "thickness_mm": 1.6,
+  "outer_copper_oz": 1,
+  "finish": "ENIG 1 microinch",
+  "mask": "Green",
+  "silkscreen": "White",
+  "via_drill_mm": 0.3,
+  "minimum_via_land_mm": 0.45,
+  "via_covering": "Tented",
+  "via_plating_method": "Not Specified",
+  "outline_tolerance_mm": 0.2,
+  "confirm_production_file": false,
+  "electrical_test": "Flying Probe Fully Test",
+  "build_business_days": 3,
+  "currency_note": "Cart EUR; checkout USD; actual displayed amounts, not converted estimates",
+  "cart_total_EUR": 42.83,
+  "cart_breakdown_EUR": {
+    "engineering": 3.57,
+    "panel": 10.87,
+    "board": 10.98,
+    "ENIG": 17.41,
+    "via_covering": 0
+  },
+  "delivered_USD": {
+    "DHL Express DDP": {
+      "merchandise": 47.98,
+      "shipping": 27.82,
+      "duties_and_taxes": 25.9,
+      "disbursement_fee": 8.27,
+      "total": 109.97,
+      "transit_business_days": "2-4"
+    },
+    "EuroPacket DDP": {
+      "merchandise": 47.98,
+      "shipping": 31.42,
+      "duties_and_taxes": 19.85,
+      "disbursement_fee": 0,
+      "total": 99.25,
+      "transit_business_days": "7-10"
+    },
+    "FedEx Express DDP": {
+      "merchandise": 47.98,
+      "shipping": 80.18,
+      "duties_and_taxes": 38.99,
+      "disbursement_fee": 0,
+      "total": 167.15,
+      "transit_business_days": "10-12"
+    }
+  },
+  "selected_shipping": "EuroPacket DDP",
+  "previous_separate_boards": {
+    "PCB_EUR": 244.68,
+    "DHL_DDP_USD": 386.75,
+    "EuroPacket_DDP_USD": 382.98
+  },
+  "savings": {
+    "PCB_EUR": 201.85,
+    "PCB_percent": 82.5,
+    "DHL_DDP_USD": 276.78,
+    "DHL_DDP_percent": 71.57
+  },
+  "source_board_validation": "hardware/two-layer/sandwich/quote-package/validation.json",
+  "panel_drc_findings": 0,
+  "panel_unconnected_items": 0,
+  "notes": [
+    "No coupon or desktop-app discount applied.",
+    "The previous four quotes were preserved and left unselected.",
+    "Stopped at Shipping Method; no Submit Order or payment action.",
+    "This is calculator pricing, subject to supplier CAM review."
+  ]
+}

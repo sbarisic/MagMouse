@@ -104,7 +104,9 @@ Gerber/drill ZIPs, per-board BOM/CPL CSVs, combined purchasing inventory, manual
 items and via-in-pad intersection lists. Read its [quotation notes](quote-package/README.md)
 for stack, assembly, stock, shipping/tax and mechanical assumptions. This is a
 pricing package. The [first live quote](quotes/2026-11-04-jlcpcb/QUOTE.md) records
-the superseded 0.20 mm, separate-board version. No fabrication order is placed.
+the superseded 0.20 mm, separate-board version. The [standard-via panel quote](quotes/2026-11-04-panel-standard-vias/QUOTE.md)
+is EUR 42.83 for five complete sets, or USD 99.25 delivered by EuroPacket DDP
+to Croatia (4 November 2026). No fabrication order is placed.
 
 `partition.json` preserves ownership and the checked 19-wire contract.
 `placement-positions.json`, `spacing-review.json`, `spacing-baseline.json`,
