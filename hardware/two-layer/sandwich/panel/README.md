@@ -1,6 +1,6 @@
 # Four-board quotation panel
 
-One 223 × 114 mm, two-layer panel contains one Lower, Upper, Wheel and Encoder
+One 238 × 114 mm, two-layer panel contains one Lower, Upper, Wheel and Encoder
 board. Five panels provide five complete sets. The individual board outlines,
 component positions and copper are preserved by translation; nets are isolated
 between boards. The panel uses 2 mm routed gaps, 5 mm tabs and 0.6 mm mousebites

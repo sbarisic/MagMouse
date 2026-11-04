@@ -1,5 +1,5 @@
 Drill report for Lower.kicad_pcb
-Created on 2026-11-04T09:00:42
+Created on 2026-11-05T00:07:05
 
 Copper Layer Stackup:
     =============================================================
@@ -10,13 +10,13 @@ Copper Layer Stackup:
 Drill file 'Lower-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (428 holes))
+    T1  0.300mm  0.0118"  (276 holes))
     T2  0.600mm  0.0236"  (4 holes)  (with 4 slots)
     T3  0.700mm  0.0276"  (16 holes))
     T4  0.800mm  0.0315"  (39 holes))
     T5  1.200mm  0.0472"  (5 holes))
 
-    Total plated holes count 492
+    Total plated holes count 340
 
 
 Drill file 'Lower-NPTH.drl' contains

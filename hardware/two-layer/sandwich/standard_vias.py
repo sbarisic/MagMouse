@@ -68,6 +68,9 @@ def obstacles(board,net,layer):
     result=[]
     for f in board.GetFootprints():
         for pad in f.Pads():
+            if pad.GetAttribute()==p.PAD_ATTRIB_NPTH and pad.GetDrillSize().x:
+                # Hole-to-copper is 0.20 mm, versus 0.15 mm copper clearance.
+                result.append(Point(p.ToMM(pad.GetPosition())).buffer(p.ToMM(max(pad.GetDrillSize().x,pad.GetDrillSize().y))/2+.05))
             if pad.GetNetname()==net or not pad.IsOnLayer(layer):continue
             shape=p.SHAPE_POLY_SET();pad.TransformShapeToPolygon(shape,layer,0,p.FromMM(.001),p.ERROR_OUTSIDE)
             result.extend(polygons(shape))

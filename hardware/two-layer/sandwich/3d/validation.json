@@ -1,0 +1,132 @@
+{
+  "Lower": {
+    "bare_step_valid": true,
+    "substrate_solids": 1,
+    "substrate_bounds_mm": [
+      70.00000000000004,
+      100.0,
+      1.488
+    ],
+    "substrate_volume_mm3": 8592.02509756846,
+    "glb_meshes": 8375,
+    "glb_bounds_m": [
+      [
+        0.0,
+        -7.500000356230885e-05,
+        0.0
+      ],
+      [
+        0.07000000029802322,
+        0.0037230000730156896,
+        0.10000000149011612
+      ]
+    ],
+    "source_hash_matches": true,
+    "optical_aperture_open_in_step": true,
+    "encoder_corner_cuts_verified": null
+  },
+  "Upper": {
+    "bare_step_valid": true,
+    "substrate_solids": 1,
+    "substrate_bounds_mm": [
+      70.00000000000004,
+      100.0,
+      1.488
+    ],
+    "substrate_volume_mm3": 8857.084726903626,
+    "glb_meshes": 6084,
+    "glb_bounds_m": [
+      [
+        0.0,
+        -7.500000356230885e-05,
+        0.0
+      ],
+      [
+        0.07000000029802322,
+        0.0037230000730156896,
+        0.10000000149011612
+      ]
+    ],
+    "source_hash_matches": true,
+    "optical_aperture_open_in_step": null,
+    "encoder_corner_cuts_verified": null
+  },
+  "Wheel": {
+    "bare_step_valid": true,
+    "substrate_solids": 1,
+    "substrate_bounds_mm": [
+      70.0,
+      67.00000000000016,
+      1.51
+    ],
+    "substrate_volume_mm3": 6679.7723778685,
+    "glb_meshes": 6320,
+    "glb_bounds_m": [
+      [
+        -0.007499999832361937,
+        -7.500000356230885e-05,
+        -0.003000000026077032
+      ],
+      [
+        0.0625,
+        0.007495000222027302,
+        0.06400000303983688
+      ]
+    ],
+    "source_hash_matches": true,
+    "optical_aperture_open_in_step": null,
+    "encoder_corner_cuts_verified": null
+  },
+  "Encoder": {
+    "bare_step_valid": true,
+    "substrate_solids": 1,
+    "substrate_bounds_mm": [
+      14.0,
+      18.0,
+      1.51
+    ],
+    "substrate_volume_mm3": 349.96772288792477,
+    "glb_meshes": 289,
+    "glb_bounds_m": [
+      [
+        0.05000000074505806,
+        -4.999999873689376e-05,
+        0.05000000074505806
+      ],
+      [
+        0.06400000303983688,
+        0.0031949999595806003,
+        0.06800000369548798
+      ]
+    ],
+    "source_hash_matches": true,
+    "optical_aperture_open_in_step": null,
+    "encoder_corner_cuts_verified": true
+  },
+  "Panel": {
+    "bare_step_valid": true,
+    "substrate_solids": 1,
+    "substrate_bounds_mm": [
+      238.0,
+      114.0,
+      1.488
+    ],
+    "substrate_volume_mm3": 37405.24252036158,
+    "glb_meshes": 25803,
+    "glb_bounds_m": [
+      [
+        -5.551115386789603e-20,
+        -7.500000356230885e-05,
+        -2.9976022442429002e-18
+      ],
+      [
+        0.23800000548362732,
+        0.0074730002220273015,
+        0.11400000005960464
+      ]
+    ],
+    "source_hash_matches": true,
+    "optical_aperture_open_in_step": true,
+    "encoder_corner_cuts_verified": null
+  }
+}

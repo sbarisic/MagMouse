@@ -31,7 +31,7 @@ The study also includes a matching Wheel variant with a 19-wire harness, three
 shared grounds, and shorter 17-pad signal arrays on Lower and Wheel. See its
 [wheel wire map](sandwich/WHEEL_WIRE_MAP.md); the routed checkpoints in the table
 above retain the earlier 32-wire interface.
-That matching Wheel variant is now 55 × 60 mm and retains two copper layers.
+The matching two-layer Wheel uses a 70 × 67 mm section of the Main profile. Its expanded GND pours and power paths are documented in the [Wheel review](sandwich/routing-review/POWER-GROUND.md).
 
 ## Checkpoint — 2026-11-03
 

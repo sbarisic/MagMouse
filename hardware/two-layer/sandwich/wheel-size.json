@@ -1,31 +1,19 @@
 {
-  "old_dimensions_mm": [
-    80.0,
-    75.0
+  "source_outline": "Upper outer Edge.Cuts clipped to Main y = 26 through 93 mm",
+  "Wheel_origin_in_Main_mm": [
+    7.5,
+    29.0
+  ],
+  "previous_dimensions_mm": [
+    55,
+    60
   ],
   "dimensions_mm": [
-    55.0,
-    60.0
+    70,
+    67
   ],
-  "area_reduction_percent": 45,
-  "copper_layers": 2,
-  "removed_margin_ground_vias": [
-    {
-      "uuid": "243a53ab-ce9d-46e4-8c9a-de574c16fec0",
-      "position_mm": [
-        62.9144,
-        31.2798
-      ]
-    },
-    {
-      "uuid": "7313c547-741b-46b3-940f-96264266a004",
-      "position_mm": [
-        62.9144,
-        29.0
-      ]
-    }
-  ],
-  "all_remaining_tracks_and_vias_unchanged": true,
-  "before_sha256": "6c073137e5ab30fcc250f3032b505366092ea0a4ed993f43037c88e11f6d1a8a",
-  "board_sha256": "a19e6108abb645093c2e647687e612fdc60775742144613f0a196dd0dc9e9a8b"
+  "previous_area_mm2": 3300,
+  "current_area_mm2": 4448.297,
+  "area_gain_percent": 34.8,
+  "board_sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5"
 }

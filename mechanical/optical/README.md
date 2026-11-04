@@ -32,6 +32,14 @@ Recommended finished holes are 0.70mm. The opening spans X=-8.82..8.44mm and
 Y=-4.30..4.30mm. It is shown on Dwgs.User only until fit is reviewed. It is not
 a standard DIP-16 footprint, nor is that opening the baseplate light aperture.
 
+The active stacked Lower PCB now implements this nominal opening on Edge.Cuts,
+at x=31.20..39.80 and y=43.68..60.94mm after the sensor rotation. Its optical
+center is (35.5,52.5)mm. This supersedes the drawing-only reservation for that
+board; the historical original footprint still carries its drawing guide.
+The board opening uses R1 mm internal corners for the panel's nominal 2 mm
+router. This machining choice is not a specified lens-corner tolerance; actual
+lens fit with these corners and the retention remain to be checked.
+
 The lens drawing is PNLR-019-LSI-G8_011. Do not replace its guide posts, molded
 optical surfaces, retention details or baseplate opening with the rectangular
 envelope above. Obtain the matching supplier drawing/application note

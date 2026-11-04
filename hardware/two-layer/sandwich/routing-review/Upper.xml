@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\sandwich\upper\Upper.kicad_sch</source>
-    <date>2026-11-04T09:01:08</date>
+    <date>2026-11-05T00:07:30</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">TWO-LAYER STACK / PROTOTYPE</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -153,27 +153,32 @@
   <components>
     <comp ref="C16">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="04_Sensing"/>
       <property name="Sheetfile" value="04_Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -191,27 +196,32 @@
     </comp>
     <comp ref="C17">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="04_Sensing"/>
       <property name="Sheetfile" value="04_Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -229,27 +239,32 @@
     </comp>
     <comp ref="C18">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="04_Sensing"/>
       <property name="Sheetfile" value="04_Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -267,29 +282,34 @@
     </comp>
     <comp ref="C19">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">JLCPCB catalog verified; stock/quote refresh required</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849</field>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
         <field name="JLCPCB Library Type">Basic</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="JLCPCB catalog verified; stock/quote refresh required"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
       <property name="JLCPCB Library Type" value="Basic"/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="04_Sensing"/>
       <property name="Sheetfile" value="04_Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -307,29 +327,34 @@
     </comp>
     <comp ref="C20">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">JLCPCB catalog verified; stock/quote refresh required</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849</field>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
         <field name="JLCPCB Library Type">Basic</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="JLCPCB catalog verified; stock/quote refresh required"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
       <property name="JLCPCB Library Type" value="Basic"/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="04_Sensing"/>
       <property name="Sheetfile" value="04_Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -347,29 +372,34 @@
     </comp>
     <comp ref="C21">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">JLCPCB catalog verified; stock/quote refresh required</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849</field>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
         <field name="JLCPCB Library Type">Basic</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="JLCPCB catalog verified; stock/quote refresh required"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
       <property name="JLCPCB Library Type" value="Basic"/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="04_Sensing"/>
       <property name="Sheetfile" value="04_Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -567,27 +597,32 @@
     </comp>
     <comp ref="C24">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15849.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15849.html"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -605,27 +640,32 @@
     </comp>
     <comp ref="C25">
       <value>10nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103</datasheet>
       <fields>
-        <field name="Manufacturer">Guangdong Fenghua Advanced Tech</field>
-        <field name="MPN">0603B103K500NT</field>
-        <field name="LCSC">C57112</field>
-        <field name="JLCPCB Part #">C57112</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C57112.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC1206KRX7R9BB103</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="Guangdong Fenghua Advanced Tech"/>
-      <property name="MPN" value="0603B103K500NT"/>
-      <property name="LCSC" value="C57112"/>
-      <property name="JLCPCB Part #" value="C57112"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C57112.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC1206KRX7R9BB103"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -643,27 +683,32 @@
     </comp>
     <comp ref="C26">
       <value>10nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103</datasheet>
       <fields>
-        <field name="Manufacturer">Guangdong Fenghua Advanced Tech</field>
-        <field name="MPN">0603B103K500NT</field>
-        <field name="LCSC">C57112</field>
-        <field name="JLCPCB Part #">C57112</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C57112.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC1206KRX7R9BB103</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="Guangdong Fenghua Advanced Tech"/>
-      <property name="MPN" value="0603B103K500NT"/>
-      <property name="LCSC" value="C57112"/>
-      <property name="JLCPCB Part #" value="C57112"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C57112.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC1206KRX7R9BB103"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB103"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -681,27 +726,32 @@
     </comp>
     <comp ref="C88">
       <value>10uF/25V</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL21A106KAYNNNE</field>
-        <field name="LCSC">C15850</field>
-        <field name="JLCPCB Part #">C15850</field>
-        <field name="Sourcing Status">Reuses existing 10uF output capacitor selection; DC bias and order stock require review</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15850.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31A106KAHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
+        <field name="Rating">25 V, X5R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL21A106KAYNNNE"/>
-      <property name="LCSC" value="C15850"/>
-      <property name="JLCPCB Part #" value="C15850"/>
-      <property name="Sourcing Status" value="Reuses existing 10uF output capacitor selection; DC bias and order stock require review"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15850.html"/>
+      <property name="MPN" value="CL31A106KAHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"/>
+      <property name="Rating" value="25 V, X5R, 10%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -719,27 +769,32 @@
     </comp>
     <comp ref="C89">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">Reuses existing 1uF input capacitor selection; DC bias and order stock require review</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15849.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="Reuses existing 1uF input capacitor selection; DC bias and order stock require review"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15849.html"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -796,27 +851,32 @@
     </comp>
     <comp ref="R29">
       <value>22.1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF2212T5E</field>
-        <field name="LCSC">C25961</field>
-        <field name="JLCPCB Part #">C25961</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25961.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0722K1L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF2212T5E"/>
-      <property name="LCSC" value="C25961"/>
-      <property name="JLCPCB Part #" value="C25961"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25961.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0722K1L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -834,27 +894,32 @@
     </comp>
     <comp ref="R30">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -872,27 +937,32 @@
     </comp>
     <comp ref="R31">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -910,27 +980,32 @@
     </comp>
     <comp ref="R32">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -948,27 +1023,32 @@
     </comp>
     <comp ref="R33">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -986,27 +1066,32 @@
     </comp>
     <comp ref="R34">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1024,27 +1109,32 @@
     </comp>
     <comp ref="R35">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1062,27 +1152,32 @@
     </comp>
     <comp ref="R36">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1100,27 +1195,32 @@
     </comp>
     <comp ref="R37">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1138,27 +1238,32 @@
     </comp>
     <comp ref="R38">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1176,27 +1281,32 @@
     </comp>
     <comp ref="R39">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1214,27 +1324,32 @@
     </comp>
     <comp ref="R40">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1252,27 +1367,32 @@
     </comp>
     <comp ref="R41">
       <value>22.1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF2212T5E</field>
-        <field name="LCSC">C25961</field>
-        <field name="JLCPCB Part #">C25961</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25961.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0722K1L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF2212T5E"/>
-      <property name="LCSC" value="C25961"/>
-      <property name="JLCPCB Part #" value="C25961"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25961.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0722K1L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1290,27 +1410,32 @@
     </comp>
     <comp ref="R42">
       <value>3.3k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF3301T5E</field>
-        <field name="LCSC">C22978</field>
-        <field name="JLCPCB Part #">C22978</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C22978.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-073K3L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF3301T5E"/>
-      <property name="LCSC" value="C22978"/>
-      <property name="JLCPCB Part #" value="C22978"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C22978.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-073K3L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1328,27 +1453,32 @@
     </comp>
     <comp ref="R43">
       <value>3.3k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF3301T5E</field>
-        <field name="LCSC">C22978</field>
-        <field name="JLCPCB Part #">C22978</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C22978.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-073K3L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF3301T5E"/>
-      <property name="LCSC" value="C22978"/>
-      <property name="JLCPCB Part #" value="C22978"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C22978.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-073K3L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1366,27 +1496,32 @@
     </comp>
     <comp ref="R44">
       <value>1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1001T5E</field>
-        <field name="LCSC">C21190</field>
-        <field name="JLCPCB Part #">C21190</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C21190.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-071KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1001T5E"/>
-      <property name="LCSC" value="C21190"/>
-      <property name="JLCPCB Part #" value="C21190"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C21190.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-071KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1404,27 +1539,32 @@
     </comp>
     <comp ref="R45">
       <value>1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1001T5E</field>
-        <field name="LCSC">C21190</field>
-        <field name="JLCPCB Part #">C21190</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C21190.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-071KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1001T5E"/>
-      <property name="LCSC" value="C21190"/>
-      <property name="JLCPCB Part #" value="C21190"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C21190.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-071KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="05_Protected_Power"/>
       <property name="Sheetfile" value="05_Protected_Power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1532,27 +1672,32 @@
     </comp>
     <comp ref="C27">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15849.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15849.html"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1570,27 +1715,32 @@
     </comp>
     <comp ref="C28">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1608,27 +1758,32 @@
     </comp>
     <comp ref="C29">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1646,27 +1801,32 @@
     </comp>
     <comp ref="C31">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1684,27 +1844,32 @@
     </comp>
     <comp ref="R46">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1722,27 +1887,32 @@
     </comp>
     <comp ref="R47">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1760,27 +1930,32 @@
     </comp>
     <comp ref="R48">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1798,27 +1973,32 @@
     </comp>
     <comp ref="R49">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1836,27 +2016,32 @@
     </comp>
     <comp ref="R70">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="06_Actuator_Interlock"/>
       <property name="Sheetfile" value="06_Actuator_Interlock.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2015,27 +2200,32 @@
     </comp>
     <comp ref="C32">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2053,27 +2243,32 @@
     </comp>
     <comp ref="C33">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2091,27 +2286,32 @@
     </comp>
     <comp ref="C34">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2129,27 +2329,32 @@
     </comp>
     <comp ref="C35">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2167,27 +2372,32 @@
     </comp>
     <comp ref="C36">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0603KRX7R9BB104</field>
-        <field name="LCSC">C14663</field>
-        <field name="JLCPCB Part #">C14663</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C14663.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0603KRX7R9BB104"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="JLCPCB Part #" value="C14663"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C14663.html"/>
+      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2364,27 +2574,32 @@
     </comp>
     <comp ref="R56">
       <value>3.3k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF3301T5E</field>
-        <field name="LCSC">C22978</field>
-        <field name="JLCPCB Part #">C22978</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C22978.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-073K3L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF3301T5E"/>
-      <property name="LCSC" value="C22978"/>
-      <property name="JLCPCB Part #" value="C22978"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C22978.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-073K3L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2402,27 +2617,32 @@
     </comp>
     <comp ref="R57">
       <value>3.3k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF3301T5E</field>
-        <field name="LCSC">C22978</field>
-        <field name="JLCPCB Part #">C22978</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C22978.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-073K3L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF3301T5E"/>
-      <property name="LCSC" value="C22978"/>
-      <property name="JLCPCB Part #" value="C22978"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C22978.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-073K3L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2440,27 +2660,32 @@
     </comp>
     <comp ref="R58">
       <value>33R</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF330JT5E</field>
-        <field name="LCSC">C23140</field>
-        <field name="JLCPCB Part #">C23140</field>
-        <field name="Sourcing Status">Corrected catalog mismatch: C23140 is 33 ohm; C23138 is 330 ohm</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://jlcpcb.com/partdetail/C23140</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0733RL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF330JT5E"/>
-      <property name="LCSC" value="C23140"/>
-      <property name="JLCPCB Part #" value="C23140"/>
-      <property name="Sourcing Status" value="Corrected catalog mismatch: C23140 is 33 ohm; C23138 is 330 ohm"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://jlcpcb.com/partdetail/C23140"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0733RL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2478,27 +2703,32 @@
     </comp>
     <comp ref="R59">
       <value>4.7k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF4701T5E</field>
-        <field name="LCSC">C23162</field>
-        <field name="JLCPCB Part #">C23162</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C23162.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-074K7L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF4701T5E"/>
-      <property name="LCSC" value="C23162"/>
-      <property name="JLCPCB Part #" value="C23162"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C23162.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-074K7L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2516,27 +2746,32 @@
     </comp>
     <comp ref="R60">
       <value>3.3k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF3301T5E</field>
-        <field name="LCSC">C22978</field>
-        <field name="JLCPCB Part #">C22978</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C22978.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-073K3L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF3301T5E"/>
-      <property name="LCSC" value="C22978"/>
-      <property name="JLCPCB Part #" value="C22978"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C22978.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-073K3L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2554,27 +2789,32 @@
     </comp>
     <comp ref="R61">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1002T5E</field>
-        <field name="LCSC">C25804</field>
-        <field name="JLCPCB Part #">C25804</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25804.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1002T5E"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="JLCPCB Part #" value="C25804"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25804.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2592,27 +2832,32 @@
     </comp>
     <comp ref="R62">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2630,27 +2875,32 @@
     </comp>
     <comp ref="R63">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2668,27 +2918,32 @@
     </comp>
     <comp ref="R64">
       <value>1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1001T5E</field>
-        <field name="LCSC">C21190</field>
-        <field name="JLCPCB Part #">C21190</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C21190.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-071KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1001T5E"/>
-      <property name="LCSC" value="C21190"/>
-      <property name="JLCPCB Part #" value="C21190"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C21190.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-071KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2706,27 +2961,32 @@
     </comp>
     <comp ref="R65">
       <value>22.1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF2212T5E</field>
-        <field name="LCSC">C25961</field>
-        <field name="JLCPCB Part #">C25961</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25961.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0722K1L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF2212T5E"/>
-      <property name="LCSC" value="C25961"/>
-      <property name="JLCPCB Part #" value="C25961"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25961.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0722K1L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2744,27 +3004,32 @@
     </comp>
     <comp ref="R66">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2782,27 +3047,32 @@
     </comp>
     <comp ref="R67">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2820,27 +3090,32 @@
     </comp>
     <comp ref="R68">
       <value>22.1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF2212T5E</field>
-        <field name="LCSC">C25961</field>
-        <field name="JLCPCB Part #">C25961</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25961.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-0722K1L</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF2212T5E"/>
-      <property name="LCSC" value="C25961"/>
-      <property name="JLCPCB Part #" value="C25961"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25961.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-0722K1L"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2858,27 +3133,32 @@
     </comp>
     <comp ref="R71">
       <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
-        <field name="JLCPCB Part #">C25803</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C25803.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
-      <property name="JLCPCB Part #" value="C25803"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C25803.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="07_Power_Monitor"/>
       <property name="Sheetfile" value="07_Power_Monitor.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2977,27 +3257,32 @@
     </comp>
     <comp ref="C37">
       <value>10uF/25V</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL21A106KAYNNNE</field>
-        <field name="LCSC">C15850</field>
-        <field name="JLCPCB Part #">C15850</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15850.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31A106KAHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
+        <field name="Rating">25 V, X5R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL21A106KAYNNNE"/>
-      <property name="LCSC" value="C15850"/>
-      <property name="JLCPCB Part #" value="C15850"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15850.html"/>
+      <property name="MPN" value="CL31A106KAHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"/>
+      <property name="Rating" value="25 V, X5R, 10%"/>
       <property name="Sheetname" value="08_Actuator_Rail"/>
       <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3015,27 +3300,32 @@
     </comp>
     <comp ref="C38">
       <value>10uF/25V</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL21A106KAYNNNE</field>
-        <field name="LCSC">C15850</field>
-        <field name="JLCPCB Part #">C15850</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15850.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31A106KAHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
+        <field name="Rating">25 V, X5R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL21A106KAYNNNE"/>
-      <property name="LCSC" value="C15850"/>
-      <property name="JLCPCB Part #" value="C15850"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15850.html"/>
+      <property name="MPN" value="CL31A106KAHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"/>
+      <property name="Rating" value="25 V, X5R, 10%"/>
       <property name="Sheetname" value="08_Actuator_Rail"/>
       <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3053,27 +3343,32 @@
     </comp>
     <comp ref="C39">
       <value>10uF/25V</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL21A106KAYNNNE</field>
-        <field name="LCSC">C15850</field>
-        <field name="JLCPCB Part #">C15850</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15850.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31A106KAHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
+        <field name="Rating">25 V, X5R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL21A106KAYNNNE"/>
-      <property name="LCSC" value="C15850"/>
-      <property name="JLCPCB Part #" value="C15850"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15850.html"/>
+      <property name="MPN" value="CL31A106KAHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"/>
+      <property name="Rating" value="25 V, X5R, 10%"/>
       <property name="Sheetname" value="08_Actuator_Rail"/>
       <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3091,27 +3386,32 @@
     </comp>
     <comp ref="C40">
       <value>10uF/25V</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL21A106KAYNNNE</field>
-        <field name="LCSC">C15850</field>
-        <field name="JLCPCB Part #">C15850</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15850.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31A106KAHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
+        <field name="Rating">25 V, X5R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL21A106KAYNNNE"/>
-      <property name="LCSC" value="C15850"/>
-      <property name="JLCPCB Part #" value="C15850"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15850.html"/>
+      <property name="MPN" value="CL31A106KAHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"/>
+      <property name="Rating" value="25 V, X5R, 10%"/>
       <property name="Sheetname" value="08_Actuator_Rail"/>
       <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3168,27 +3468,32 @@
     </comp>
     <comp ref="R69">
       <value>1k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">UNI-ROYAL</field>
-        <field name="MPN">0603WAF1001T5E</field>
-        <field name="LCSC">C21190</field>
-        <field name="JLCPCB Part #">C21190</field>
-        <field name="Sourcing Status">LCSC listing verified; JLC stock check pending</field>
-        <field name="Checked">2026-09-08</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C21190.html</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC1206FR-071KL</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Rating">0.25 W, 1%</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Manufacturer" value="UNI-ROYAL"/>
-      <property name="MPN" value="0603WAF1001T5E"/>
-      <property name="LCSC" value="C21190"/>
-      <property name="JLCPCB Part #" value="C21190"/>
-      <property name="Sourcing Status" value="LCSC listing verified; JLC stock check pending"/>
-      <property name="Checked" value="2026-09-08"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C21190.html"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC1206FR-071KL"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
+      <property name="Rating" value="0.25 W, 1%"/>
       <property name="Sheetname" value="08_Actuator_Rail"/>
       <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>

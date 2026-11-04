@@ -1,0 +1,1892 @@
+{
+  "Lower": {
+    "sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8",
+    "outline_area_mm2": 5844.18,
+    "gnd_fill": {
+      "F.Cu": {
+        "filled_mm2": 3147.676,
+        "percent": 53.86
+      },
+      "B.Cu": {
+        "filled_mm2": 2277.858,
+        "percent": 38.98
+      }
+    },
+    "gnd_vias": 6,
+    "gnd_via_positions_mm": [
+      [
+        11.4001,
+        34.5115
+      ],
+      [
+        55.725,
+        78.5677
+      ],
+      [
+        46.0012,
+        81.31
+      ],
+      [
+        46.9595,
+        71.9692
+      ],
+      [
+        36.1375,
+        38.5595
+      ],
+      [
+        48.1023,
+        71.6249
+      ]
+    ],
+    "power_paths": [
+      {
+        "source": "J1.A4",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 9.636,
+        "drop_mV": 19.272,
+        "path_loss_mW": 38.544,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 8.035,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              37.2953,
+              7.0874
+            ],
+            "end_mm": [
+              37.2953,
+              7.2533
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.15,
+            "length_mm": 0.1659
+          },
+          {
+            "start_mm": [
+              37.0956,
+              6.8877
+            ],
+            "end_mm": [
+              37.2953,
+              7.0874
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.15,
+            "length_mm": 0.2824
+          },
+          {
+            "start_mm": [
+              35.435733,
+              6.688
+            ],
+            "end_mm": [
+              36.8959,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 1.4602
+          },
+          {
+            "start_mm": [
+              34.2676,
+              6.688
+            ],
+            "end_mm": [
+              35.143699,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.315,
+            "length_mm": 0.8761
+          },
+          {
+            "start_mm": [
+              33.3915,
+              6.688
+            ],
+            "end_mm": [
+              33.975566,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 0.5841
+          },
+          {
+            "start_mm": [
+              33.181125,
+              6.898375
+            ],
+            "end_mm": [
+              33.3915,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.541,
+            "length_mm": 0.2975
+          },
+          {
+            "start_mm": [
+              32.760374,
+              7.319125
+            ],
+            "end_mm": [
+              32.970749,
+              7.10875
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.241,
+            "length_mm": 0.2975
+          },
+          {
+            "start_mm": [
+              32.549999,
+              9.490833
+            ],
+            "end_mm": [
+              32.549999,
+              8.9125
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.648,
+            "length_mm": 0.5783
+          },
+          {
+            "start_mm": [
+              30.08,
+              12.25
+            ],
+            "end_mm": [
+              32.549999,
+              9.78
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 3.4931
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J1.A9",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 3.378,
+        "drop_mV": 6.757,
+        "path_loss_mW": 13.513,
+        "min_width_mm": 0.648,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 4.071,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              32.549999,
+              9.490833
+            ],
+            "end_mm": [
+              32.549999,
+              8.9125
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.648,
+            "length_mm": 0.5783
+          },
+          {
+            "start_mm": [
+              30.08,
+              12.25
+            ],
+            "end_mm": [
+              32.549999,
+              9.78
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 3.4931
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J1.B4",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 3.378,
+        "drop_mV": 6.757,
+        "path_loss_mW": 13.513,
+        "min_width_mm": 0.648,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 4.071,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              32.549999,
+              9.490833
+            ],
+            "end_mm": [
+              32.549999,
+              8.9125
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.648,
+            "length_mm": 0.5783
+          },
+          {
+            "start_mm": [
+              30.08,
+              12.25
+            ],
+            "end_mm": [
+              32.549999,
+              9.78
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 3.4931
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J1.B9",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 9.636,
+        "drop_mV": 19.272,
+        "path_loss_mW": 38.544,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 8.035,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              37.2953,
+              7.0874
+            ],
+            "end_mm": [
+              37.2953,
+              7.2533
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.15,
+            "length_mm": 0.1659
+          },
+          {
+            "start_mm": [
+              37.0956,
+              6.8877
+            ],
+            "end_mm": [
+              37.2953,
+              7.0874
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.15,
+            "length_mm": 0.2824
+          },
+          {
+            "start_mm": [
+              35.435733,
+              6.688
+            ],
+            "end_mm": [
+              36.8959,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 1.4602
+          },
+          {
+            "start_mm": [
+              34.2676,
+              6.688
+            ],
+            "end_mm": [
+              35.143699,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.315,
+            "length_mm": 0.8761
+          },
+          {
+            "start_mm": [
+              33.3915,
+              6.688
+            ],
+            "end_mm": [
+              33.975566,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 0.5841
+          },
+          {
+            "start_mm": [
+              33.181125,
+              6.898375
+            ],
+            "end_mm": [
+              33.3915,
+              6.688
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.541,
+            "length_mm": 0.2975
+          },
+          {
+            "start_mm": [
+              32.760374,
+              7.319125
+            ],
+            "end_mm": [
+              32.970749,
+              7.10875
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.241,
+            "length_mm": 0.2975
+          },
+          {
+            "start_mm": [
+              32.549999,
+              9.490833
+            ],
+            "end_mm": [
+              32.549999,
+              8.9125
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.648,
+            "length_mm": 0.5783
+          },
+          {
+            "start_mm": [
+              30.08,
+              12.25
+            ],
+            "end_mm": [
+              32.549999,
+              9.78
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 3.4931
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J103.3",
+        "destination": "U2.2",
+        "net": "PWR_5V",
+        "case_A": 1.0,
+        "path_mohm": 48.573,
+        "drop_mV": 48.573,
+        "path_loss_mW": 48.573,
+        "min_width_mm": 0.204,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 1.236,
+        "counted_vias": 7,
+        "neck_sections": [
+          {
+            "start_mm": [
+              50.4879,
+              29.5789
+            ],
+            "end_mm": [
+              50.4879,
+              29.0722
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.282,
+            "length_mm": 0.5067
+          },
+          {
+            "start_mm": [
+              50.4879,
+              29.0722
+            ],
+            "end_mm": [
+              50.4879,
+              28.5655
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.222,
+            "length_mm": 0.5067
+          },
+          {
+            "start_mm": [
+              50.4879,
+              28.5655
+            ],
+            "end_mm": [
+              50.64565,
+              28.40775
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.204,
+            "length_mm": 0.2231
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              37.569999,
+              13.969999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              37.969999,
+              10.769999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              42.769999,
+              9.569999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              55.569999,
+              10.769999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              51.169999,
+              22.369999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              50.769999,
+              26.369999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              51.169999,
+              29.969999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          }
+        ]
+      },
+      {
+        "source": "J103.3",
+        "destination": "U2.3",
+        "net": "PWR_5V",
+        "case_A": 1.0,
+        "path_mohm": 47.701,
+        "drop_mV": 47.701,
+        "path_loss_mW": 47.701,
+        "min_width_mm": 0.204,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 1.236,
+        "counted_vias": 7,
+        "neck_sections": [
+          {
+            "start_mm": [
+              50.4879,
+              29.5789
+            ],
+            "end_mm": [
+              50.4879,
+              29.0722
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.282,
+            "length_mm": 0.5067
+          },
+          {
+            "start_mm": [
+              50.4879,
+              29.0722
+            ],
+            "end_mm": [
+              50.4879,
+              28.5655
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.222,
+            "length_mm": 0.5067
+          },
+          {
+            "start_mm": [
+              50.4879,
+              28.5655
+            ],
+            "end_mm": [
+              50.64565,
+              28.40775
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.204,
+            "length_mm": 0.2231
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              37.569999,
+              13.969999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              37.969999,
+              10.769999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              42.769999,
+              9.569999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              55.569999,
+              10.769999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              51.169999,
+              22.369999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              50.769999,
+              26.369999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              51.169999,
+              29.969999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          }
+        ]
+      },
+      {
+        "source": "U2.7",
+        "destination": "L1.1",
+        "net": "BUCK_SW",
+        "case_A": 1.0,
+        "path_mohm": 4.279,
+        "drop_mV": 4.279,
+        "path_loss_mW": 4.279,
+        "min_width_mm": 0.217,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 0.533,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              53.5895,
+              27.6154
+            ],
+            "end_mm": [
+              53.33705,
+              27.6154
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.247,
+            "length_mm": 0.2525
+          },
+          {
+            "start_mm": [
+              53.5895,
+              27.6154
+            ],
+            "end_mm": [
+              53.869657,
+              27.6154
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.217,
+            "length_mm": 0.2802
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "L1.2",
+        "destination": "J103.4",
+        "net": "+3V3",
+        "case_A": 1.0,
+        "path_mohm": 43.318,
+        "drop_mV": 43.318,
+        "path_loss_mW": 43.318,
+        "min_width_mm": 0.252,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 2.646,
+        "counted_vias": 3,
+        "neck_sections": [
+          {
+            "start_mm": [
+              49.3101,
+              19.113
+            ],
+            "end_mm": [
+              49.3101,
+              20.87892
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.252,
+            "length_mm": 1.7659
+          },
+          {
+            "start_mm": [
+              49.510374,
+              18.912725
+            ],
+            "end_mm": [
+              49.3101,
+              19.113
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.279,
+            "length_mm": 0.2832
+          },
+          {
+            "start_mm": [
+              45.000834,
+              10.7705
+            ],
+            "end_mm": [
+              45.59744,
+              10.7705
+            ],
+            "layer": "B.Cu",
+            "width_mm": 0.257,
+            "length_mm": 0.5966
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              60.6981,
+              27.1034
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              49.775,
+              22.5211
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          },
+          {
+            "xy_mm": [
+              54.0,
+              13.5053
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          }
+        ]
+      }
+    ]
+  },
+  "Upper": {
+    "sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f",
+    "outline_area_mm2": 5991.753,
+    "gnd_fill": {
+      "F.Cu": {
+        "filled_mm2": 4286.121,
+        "percent": 71.53
+      },
+      "B.Cu": {
+        "filled_mm2": 3652.357,
+        "percent": 60.96
+      }
+    },
+    "gnd_vias": 6,
+    "gnd_via_positions_mm": [
+      [
+        52.6034,
+        59.3332
+      ],
+      [
+        38.575,
+        17.9495
+      ],
+      [
+        47.0415,
+        54.5473
+      ],
+      [
+        30.4528,
+        73.117
+      ],
+      [
+        55.167,
+        62.7551
+      ],
+      [
+        51.379,
+        61.2554
+      ]
+    ],
+    "power_paths": [
+      {
+        "source": "J104.2",
+        "destination": "U12.5",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 5.782,
+        "drop_mV": 11.563,
+        "path_loss_mW": 23.127,
+        "min_width_mm": 0.616,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 7.06,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              30.08,
+              12.25
+            ],
+            "end_mm": [
+              27.0,
+              15.33
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 4.3558
+          },
+          {
+            "start_mm": [
+              27.0,
+              15.33
+            ],
+            "end_mm": [
+              27.0,
+              16.274999
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 0.945
+          },
+          {
+            "start_mm": [
+              27.0,
+              16.274999
+            ],
+            "end_mm": [
+              27.0,
+              17.740909
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 1.4659
+          },
+          {
+            "start_mm": [
+              27.0,
+              17.740909
+            ],
+            "end_mm": [
+              27.0,
+              18.03409
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.616,
+            "length_mm": 0.2932
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "U12.6",
+        "destination": "J104.3",
+        "net": "PWR_5V",
+        "case_A": 2.0,
+        "path_mohm": 8.834,
+        "drop_mV": 17.668,
+        "path_loss_mW": 35.336,
+        "min_width_mm": 0.201,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 8.983,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              27.5,
+              18.2849
+            ],
+            "end_mm": [
+              27.7081,
+              18.0768
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.201,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              27.9162,
+              17.8687
+            ],
+            "end_mm": [
+              28.1243,
+              17.6606
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.56,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              28.1243,
+              17.6606
+            ],
+            "end_mm": [
+              32.286299,
+              13.4986
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 5.886
+          },
+          {
+            "start_mm": [
+              32.286299,
+              13.4986
+            ],
+            "end_mm": [
+              32.4944,
+              13.2905
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.638,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              32.7025,
+              13.0824
+            ],
+            "end_mm": [
+              32.9106,
+              12.8743
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.207,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              33.1187,
+              12.6662
+            ],
+            "end_mm": [
+              33.3268,
+              12.4581
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.471,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              33.5349,
+              12.25
+            ],
+            "end_mm": [
+              35.16,
+              12.25
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 1.6251
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "U12.6",
+        "destination": "U13.5",
+        "net": "PWR_5V",
+        "case_A": 2.0,
+        "path_mohm": 47.677,
+        "drop_mV": 95.354,
+        "path_loss_mW": 190.708,
+        "min_width_mm": 0.201,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 9.505,
+        "counted_vias": 6,
+        "neck_sections": [
+          {
+            "start_mm": [
+              27.5,
+              18.2849
+            ],
+            "end_mm": [
+              27.7081,
+              18.0768
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.201,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              27.9162,
+              17.8687
+            ],
+            "end_mm": [
+              28.1243,
+              17.6606
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.56,
+            "length_mm": 0.2943
+          },
+          {
+            "start_mm": [
+              28.1243,
+              17.6606
+            ],
+            "end_mm": [
+              32.286299,
+              13.4986
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 5.886
+          },
+          {
+            "start_mm": [
+              48.4126,
+              55.475
+            ],
+            "end_mm": [
+              50.16565,
+              57.228049
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 2.4792
+          },
+          {
+            "start_mm": [
+              50.16565,
+              57.228049
+            ],
+            "end_mm": [
+              50.360433,
+              57.422833
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.452,
+            "length_mm": 0.2755
+          },
+          {
+            "start_mm": [
+              50.555216,
+              57.617616
+            ],
+            "end_mm": [
+              50.75,
+              57.8124
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.214,
+            "length_mm": 0.2755
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              31.47,
+              17.07
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          },
+          {
+            "xy_mm": [
+              51.92,
+              31.87
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          },
+          {
+            "xy_mm": [
+              50.333878,
+              37.095
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          },
+          {
+            "xy_mm": [
+              37.495,
+              49.006121
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          },
+          {
+            "xy_mm": [
+              37.47,
+              54.67
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          },
+          {
+            "xy_mm": [
+              45.445,
+              56.206121
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          }
+        ]
+      },
+      {
+        "source": "U13.6",
+        "destination": "J10.1",
+        "net": "ACT_5V",
+        "case_A": 2.0,
+        "path_mohm": 18.251,
+        "drop_mV": 36.502,
+        "path_loss_mW": 73.004,
+        "min_width_mm": 0.3,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 4.071,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              51.25,
+              59.0
+            ],
+            "end_mm": [
+              51.25,
+              57.546166
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.3,
+            "length_mm": 1.4538
+          },
+          {
+            "start_mm": [
+              51.25,
+              57.2554
+            ],
+            "end_mm": [
+              51.25,
+              54.6385
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 2.6169
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              51.794999,
+              54.994999
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          }
+        ]
+      }
+    ]
+  },
+  "Wheel": {
+    "sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5",
+    "outline_area_mm2": 4448.297,
+    "gnd_fill": {
+      "F.Cu": {
+        "filled_mm2": 3130.65,
+        "percent": 70.38
+      },
+      "B.Cu": {
+        "filled_mm2": 3154.991,
+        "percent": 70.93
+      }
+    },
+    "gnd_vias": 29,
+    "gnd_via_positions_mm": [
+      [
+        -6.5,
+        30.653351
+      ],
+      [
+        33.0,
+        33.8456
+      ],
+      [
+        28.0,
+        54.75
+      ],
+      [
+        34.637,
+        39.2802
+      ],
+      [
+        14.045493,
+        -2.0
+      ],
+      [
+        23.3225,
+        45.28
+      ],
+      [
+        51.455418,
+        -2.0
+      ],
+      [
+        52.703125,
+        62.55
+      ],
+      [
+        7.0,
+        12.0
+      ],
+      [
+        26.515468,
+        -2.0
+      ],
+      [
+        61.139369,
+        16.227905
+      ],
+      [
+        -3.800229,
+        6.572834
+      ],
+      [
+        40.954508,
+        63.0
+      ],
+      [
+        38.985443,
+        -2.0
+      ],
+      [
+        27.25,
+        33.0
+      ],
+      [
+        3.544584,
+        63.0
+      ],
+      [
+        24.75,
+        43.75
+      ],
+      [
+        -6.491829,
+        43.123055
+      ],
+      [
+        59.763475,
+        52.868071
+      ],
+      [
+        58.140388,
+        4.717628
+      ],
+      [
+        1.575518,
+        -2.0
+      ],
+      [
+        24.5,
+        31.85
+      ],
+      [
+        61.5,
+        41.154264
+      ],
+      [
+        16.014559,
+        63.0
+      ],
+      [
+        -6.333544,
+        18.187321
+      ],
+      [
+        25.0,
+        31.25
+      ],
+      [
+        -3.966785,
+        54.662645
+      ],
+      [
+        61.5,
+        28.684289
+      ],
+      [
+        28.484533,
+        63.0
+      ]
+    ],
+    "power_paths": [
+      {
+        "source": "J11.1",
+        "destination": "U21.9",
+        "net": "ACT_5V",
+        "case_A": 2.0,
+        "path_mohm": 33.665,
+        "drop_mV": 67.33,
+        "path_loss_mW": 134.66,
+        "min_width_mm": 0.237,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 0.752,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              24.4622,
+              30.3846
+            ],
+            "end_mm": [
+              24.7138,
+              30.3846
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.237,
+            "length_mm": 0.2516
+          },
+          {
+            "start_mm": [
+              25.1,
+              29.75
+            ],
+            "end_mm": [
+              25.1,
+              30.0
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 0.25
+          },
+          {
+            "start_mm": [
+              25.1,
+              29.5
+            ],
+            "end_mm": [
+              25.1,
+              29.75
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 0.25
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              24.3058,
+              30.3846
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 7.234
+          }
+        ]
+      },
+      {
+        "source": "J11.1",
+        "destination": "U21.10",
+        "net": "ACT_5V",
+        "case_A": 2.0,
+        "path_mohm": 33.462,
+        "drop_mV": 66.924,
+        "path_loss_mW": 133.849,
+        "min_width_mm": 0.237,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 0.502,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              24.4622,
+              30.3846
+            ],
+            "end_mm": [
+              24.7138,
+              30.3846
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.237,
+            "length_mm": 0.2516
+          },
+          {
+            "start_mm": [
+              25.1,
+              29.75
+            ],
+            "end_mm": [
+              25.1,
+              30.0
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.75,
+            "length_mm": 0.25
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              24.3058,
+              30.3846
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 7.234
+          }
+        ]
+      },
+      {
+        "source": "J11.1",
+        "destination": "U21.11",
+        "net": "ACT_5V",
+        "case_A": 2.0,
+        "path_mohm": 33.259,
+        "drop_mV": 66.518,
+        "path_loss_mW": 133.037,
+        "min_width_mm": 0.237,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 0.252,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              24.4622,
+              30.3846
+            ],
+            "end_mm": [
+              24.7138,
+              30.3846
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.237,
+            "length_mm": 0.2516
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              24.3058,
+              30.3846
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 7.234
+          }
+        ]
+      },
+      {
+        "source": "U21.13",
+        "destination": "J5.1",
+        "net": "WHEEL_PHASE_A",
+        "case_A": 0.5,
+        "path_mohm": 38.704,
+        "drop_mV": 19.352,
+        "path_loss_mW": 9.676,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.1155,
+        "length_below_screen_mm": 0,
+        "counted_vias": 1,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              22.8704,
+              39.6694
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.452
+          }
+        ]
+      },
+      {
+        "source": "U21.14",
+        "destination": "J5.1",
+        "net": "WHEEL_PHASE_A",
+        "case_A": 0.5,
+        "path_mohm": 38.363,
+        "drop_mV": 19.182,
+        "path_loss_mW": 9.591,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.1155,
+        "length_below_screen_mm": 0,
+        "counted_vias": 1,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              22.8704,
+              39.6694
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.452
+          }
+        ]
+      },
+      {
+        "source": "U21.16",
+        "destination": "J5.2",
+        "net": "WHEEL_PHASE_B",
+        "case_A": 0.5,
+        "path_mohm": 31.177,
+        "drop_mV": 15.588,
+        "path_loss_mW": 7.794,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.1155,
+        "length_below_screen_mm": 0,
+        "counted_vias": 0,
+        "neck_sections": [],
+        "via_sections": []
+      },
+      {
+        "source": "U21.17",
+        "destination": "J5.2",
+        "net": "WHEEL_PHASE_B",
+        "case_A": 0.5,
+        "path_mohm": 30.496,
+        "drop_mV": 15.248,
+        "path_loss_mW": 7.624,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.1155,
+        "length_below_screen_mm": 0,
+        "counted_vias": 0,
+        "neck_sections": [],
+        "via_sections": []
+      },
+      {
+        "source": "U21.19",
+        "destination": "J5.3",
+        "net": "WHEEL_PHASE_C",
+        "case_A": 0.5,
+        "path_mohm": 31.607,
+        "drop_mV": 15.804,
+        "path_loss_mW": 7.902,
+        "min_width_mm": 0.181,
+        "uniform_10C_screen_width_mm": 0.1155,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              30.1662,
+              36.9546
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.452
+          },
+          {
+            "xy_mm": [
+              29.7388,
+              37.889
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.452
+          }
+        ]
+      },
+      {
+        "source": "U21.20",
+        "destination": "J5.3",
+        "net": "WHEEL_PHASE_C",
+        "case_A": 0.5,
+        "path_mohm": 31.404,
+        "drop_mV": 15.702,
+        "path_loss_mW": 7.851,
+        "min_width_mm": 0.181,
+        "uniform_10C_screen_width_mm": 0.1155,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              30.1662,
+              36.9546
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.452
+          },
+          {
+            "xy_mm": [
+              29.7388,
+              37.889
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.452
+          }
+        ]
+      },
+      {
+        "source": "J11.1",
+        "destination": "R121.1",
+        "net": "ACT_5V",
+        "case_A": 0.5532,
+        "path_mohm": 39.618,
+        "drop_mV": 21.916,
+        "path_loss_mW": 12.124,
+        "min_width_mm": 0.179,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 0,
+        "neck_sections": [],
+        "via_sections": []
+      },
+      {
+        "source": "J11.1",
+        "destination": "R122.1",
+        "net": "ACT_5V",
+        "case_A": 0.5532,
+        "path_mohm": 51.818,
+        "drop_mV": 28.665,
+        "path_loss_mW": 15.857,
+        "min_width_mm": 0.311,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 1,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              23.4558,
+              30.3846
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          }
+        ]
+      },
+      {
+        "source": "J11.1",
+        "destination": "R123.1",
+        "net": "ACT_5V",
+        "case_A": 0.5532,
+        "path_mohm": 44.488,
+        "drop_mV": 24.61,
+        "path_loss_mW": 13.614,
+        "min_width_mm": 0.179,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 0,
+        "neck_sections": [],
+        "via_sections": []
+      },
+      {
+        "source": "J11.1",
+        "destination": "R124.1",
+        "net": "ACT_5V",
+        "case_A": 0.5532,
+        "path_mohm": 56.688,
+        "drop_mV": 31.359,
+        "path_loss_mW": 17.348,
+        "min_width_mm": 0.311,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 1,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              23.4558,
+              30.3846
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.65,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          }
+        ]
+      },
+      {
+        "source": "Q5.3",
+        "destination": "R121.2",
+        "net": "BRAKE_DRAIN",
+        "case_A": 0.5532,
+        "path_mohm": 21.896,
+        "drop_mV": 12.113,
+        "path_loss_mW": 6.701,
+        "min_width_mm": 0.581,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              25.1975,
+              45.5384
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          },
+          {
+            "xy_mm": [
+              9.9625,
+              52.2093
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          }
+        ]
+      },
+      {
+        "source": "Q5.3",
+        "destination": "R122.2",
+        "net": "BRAKE_DRAIN",
+        "case_A": 0.5532,
+        "path_mohm": 13.403,
+        "drop_mV": 7.414,
+        "path_loss_mW": 4.102,
+        "min_width_mm": 0.581,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              25.1975,
+              45.5384
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          },
+          {
+            "xy_mm": [
+              19.9625,
+              52.2093
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          }
+        ]
+      },
+      {
+        "source": "Q5.3",
+        "destination": "R123.2",
+        "net": "BRAKE_DRAIN",
+        "case_A": 0.5532,
+        "path_mohm": 21.556,
+        "drop_mV": 11.925,
+        "path_loss_mW": 6.597,
+        "min_width_mm": 0.581,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              25.1975,
+              45.5384
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          },
+          {
+            "xy_mm": [
+              9.9625,
+              52.2093
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          }
+        ]
+      },
+      {
+        "source": "Q5.3",
+        "destination": "R124.2",
+        "net": "BRAKE_DRAIN",
+        "case_A": 0.5532,
+        "path_mohm": 13.063,
+        "drop_mV": 7.226,
+        "path_loss_mW": 3.998,
+        "min_width_mm": 0.581,
+        "uniform_10C_screen_width_mm": 0.1327,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              25.1975,
+              45.5384
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          },
+          {
+            "xy_mm": [
+              19.9625,
+              52.2093
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.808,
+            "single_barrel_mW_at_case": 0.553
+          }
+        ]
+      }
+    ]
+  },
+  "Encoder": {
+    "sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+    "outline_area_mm2": 236.0,
+    "gnd_fill": {
+      "F.Cu": {
+        "filled_mm2": 125.471,
+        "percent": 53.17
+      },
+      "B.Cu": {
+        "filled_mm2": 135.988,
+        "percent": 57.62
+      }
+    },
+    "gnd_vias": 0,
+    "gnd_via_positions_mm": [],
+    "power_paths": []
+  }
+}

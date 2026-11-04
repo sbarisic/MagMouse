@@ -1107,14 +1107,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 157.48 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
       (at 157.48 142.24 0)
       (hide yes)
       (effects
@@ -1128,42 +1128,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL10A105KB8NNNC"
+    (property "MPN" "CL31B105KBHNNNE"
       (at 157.48 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15849"
+    (property "LCSC" ""
       (at 157.48 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15849"
+    (property "JLCPCB Part #" ""
       (at 157.48 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 157.48 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 157.48 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15849.html"
+    (property "Supplier URL" ""
       (at 157.48 142.24 0)
       (hide yes)
       (effects
@@ -1174,7 +1174,21 @@
       (project "Encoder"
         (path "/cdc56fc6-2724-5349-9d98-cab9b6b8b63c"
           (reference "C62")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
+      (at 157.48 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 157.48 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 157.48 138.43)

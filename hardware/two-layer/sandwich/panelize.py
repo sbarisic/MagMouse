@@ -16,12 +16,12 @@ from shapely.ops import unary_union
 from shapely import set_precision
 
 OUT=HERE/'panel'
-SIZE=(223,114)
-ORIGINS={'Lower':(7,7),'Upper':(84,7),'Wheel':(161,7),'Encoder':(161,74)}
+SIZE=(238,114)
+ORIGINS={'Lower':(7,7),'Upper':(84,7),'Wheel':(161,7),'Encoder':(161,81)}
 TARGETS={'Lower':[(24.75,0),(48.75,0),(0,63),(70,63)],
          'Upper':[(24.75,0),(45.75,0),(0,63),(70,63)],
-         'Wheel':[(9,0),(55,12),(13,60),(43,60)],
-         'Encoder':[(50,56),(64,56)]}
+         'Wheel':[(4.765331,-3),(62.5,35),(13.207003,64),(43.207003,64)],
+         'Encoder':[(57,50),(64,57)]}
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def stable(item,key):bp.UUID_REPLACEMENTS[item.m_Uuid.AsString()]=str(uuid.uuid5(uuid.NAMESPACE_URL,'MagMouse/sandwich-panel/'+key))
@@ -90,7 +90,9 @@ def build():
     for a,poly in units.items():
         for other,q in units.items():
             if a!=other:assert poly.distance(q)>=7-1e-6
-    waste=box(0,0,*SIZE).difference(unary_union([q.buffer(2,quad_segs=128) for q in units.values()])).buffer(-1,quad_segs=128).buffer(1,quad_segs=128)
+    # Internal optical apertures are routed empty, not filled with isolated
+    # panel-waste islands. Reserve the full outer envelope of each unit here.
+    waste=box(0,0,*SIZE).difference(unary_union([Polygon(q.exterior).buffer(2,quad_segs=128) for q in units.values()])).buffer(-1,quad_segs=128).buffer(1,quad_segs=128)
     for t in tabs:bp.verify_tab_bridge(t,units[t['board']],waste)
     material=unary_union([waste,*units.values(),*[Polygon(t['polygon']) for t in tabs]])
     assert material.geom_type=='Polygon' and material.is_valid
@@ -122,15 +124,16 @@ def build():
     (OUT/'panel-manifest.json').write_text(json.dumps(data,indent=2)+'\n')
     # Mechanical drawing is derived from the exact panel polygons.
     paths=['M '+' L '.join(f'{x:.5f},{y:.5f}' for x,y in ring.coords)+' Z' for ring in [material.exterior,*material.interiors]]
-    svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="1784" height="912" viewBox="0 0 {SIZE[0]} {SIZE[1]}">',
+    svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="1904" height="912" viewBox="0 0 {SIZE[0]} {SIZE[1]}">',
          '<rect width="100%" height="100%" fill="#101822"/>','<path d="'+' '.join(paths)+'" fill="#24404a" fill-rule="evenodd" stroke="#c4d7dd" stroke-width=".12"/>']
     colors={'Lower':'#59b4c5','Upper':'#dd9d43','Wheel':'#82c993','Encoder':'#bc9fe2'}
     for name,q in units.items():
-        x,y,*_=q.bounds;svg.append(f'<path d="M '+' L '.join(f'{a:.4f},{b:.4f}' for a,b in q.exterior.coords)+f' Z" fill="{colors[name]}" fill-opacity=".18" stroke="{colors[name]}" stroke-width=".15"/>')
+        unitpath=' '.join('M '+' L '.join(f'{a:.4f},{b:.4f}' for a,b in ring.coords)+' Z' for ring in [q.exterior,*q.interiors])
+        x,y,*_=q.bounds;svg.append(f'<path d="{unitpath}" fill-rule="evenodd" fill="{colors[name]}" fill-opacity=".18" stroke="{colors[name]}" stroke-width=".15"/>')
         svg.append(f'<text x="{x+4}" y="{y+8}" font-family="Arial" font-size="3" fill="white">{name}</text>')
     for t in tabs:
         for x,y in t['holes']:svg.append(f'<circle cx="{x}" cy="{y}" r=".3" fill="white"/>')
-    svg.append('<text x="166" y="105" font-family="Arial" font-size="2.2" fill="white">223 x 114 mm / 2 layers</text></svg>')
+    svg.append('<text x="166" y="105" font-family="Arial" font-size="2.2" fill="white">238 x 114 mm / 2 layers</text></svg>')
     (OUT/'panel.svg').write_text('\n'.join(svg),encoding='utf-8')
     import resvg_py
     (OUT/'panel.png').write_bytes(resvg_py.svg_to_bytes(svg_string='\n'.join(svg)))

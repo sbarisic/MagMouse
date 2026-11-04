@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\encoder\Encoder.kicad_sch</source>
-    <date>2026-11-04T09:01:38</date>
+    <date>2026-11-05T00:08:06</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">DRAFT - NOT FOR FABRICATION</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -27,27 +27,32 @@
   <components>
     <comp ref="C62">
       <value>1uF/50V</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10A105KB8NNNC</field>
-        <field name="LCSC">C15849</field>
-        <field name="JLCPCB Part #">C15849</field>
-        <field name="Sourcing Status">Catalog identity checked; capacitance under bias needs validation</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C15849.html</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
+        <field name="Checked">2026-11-04</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10A105KB8NNNC"/>
-      <property name="LCSC" value="C15849"/>
-      <property name="JLCPCB Part #" value="C15849"/>
-      <property name="Sourcing Status" value="Catalog identity checked; capacitance under bias needs validation"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C15849.html"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
+      <property name="Checked" value="2026-11-04"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
       <property name="Sheetname" value="Encoder"/>
       <property name="Sheetfile" value="Encoder.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>

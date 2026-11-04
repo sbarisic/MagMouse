@@ -7,6 +7,7 @@ from standard_vias import BOARDS, SCRATCH, obstacles, smd_shapes, intersections,
 from route_main import CLI
 import numpy as np
 from shapely import intersects_xy, prepared
+from export_quote import polygons
 
 STEP=.05
 
@@ -14,10 +15,15 @@ def route_pair(b,net,start,end,start_layer,end_layer):
     foreign=[obstacles(b,net,layer) for layer in (p.F_Cu,p.B_Cu)]
     avoid=[shape.buffer(.15+.127/2+.001) for shape in foreign]
     ready=[prepared.prep(shape) for shape in avoid]
-    xs=np.arange(0,55+STEP/2,STEP);ys=np.arange(0,60+STEP/2,STEP)
+    outline=p.SHAPE_POLY_SET();assert b.GetBoardPolygonOutlines(outline,False)
+    interior=unary_union(polygons(outline)).buffer(-.3)
+    x0,y0,x1,y1=interior.bounds
+    x0=math.floor(x0/STEP)*STEP;y0=math.floor(y0/STEP)*STEP
+    xs=np.arange(x0,x1+STEP/2,STEP);ys=np.arange(y0,y1+STEP/2,STEP)
     nx=len(xs);ny=len(ys);xx,yy=np.meshgrid(xs,ys)
-    blocked=np.stack([intersects_xy(shape,xx,yy) for shape in avoid])
-    pad_block=unary_union([s for *_,s in smd_shapes(b)]).buffer(.251)
+    outside=~intersects_xy(interior,xx,yy)
+    blocked=np.stack([intersects_xy(shape,xx,yy)|outside for shape in avoid])
+    pad_block=unary_union([s for *_,s in smd_shapes(b)]).buffer(.151)
     holes=[]
     for t in b.GetTracks():
         if isinstance(t,p.PCB_VIA):holes.append(Point(p.ToMM(t.GetPosition())).buffer(p.ToMM(t.GetDrillValue())/2+.15+.251))
@@ -30,14 +36,14 @@ def route_pair(b,net,start,end,start_layer,end_layer):
     # treat its drill keepout as a barrier to traversing the existing route.
     for t in b.GetTracks():
         if isinstance(t,p.PCB_VIA) and t.GetNetname()==net:
-            vx,vy=p.ToMM(t.GetPosition());i,j=round(vx/STEP),round(vy/STEP)
-            blocked_via[j,i]=False
-    def point(i,j):return (round(i*STEP,6),round(j*STEP,6))
-    def clear(a,c,l):return not ready[l].intersects(LineString([a,c]))
+            vx,vy=p.ToMM(t.GetPosition());i,j=round((vx-x0)/STEP),round((vy-y0)/STEP)
+            if 0<=i<nx and 0<=j<ny:blocked_via[j,i]=False
+    def point(i,j):return (round(x0+i*STEP,6),round(y0+j*STEP,6))
+    def clear(a,c,l):return interior.covers(LineString([a,c])) and not ready[l].intersects(LineString([a,c]))
     def key(i,j,l):return (l*ny+j)*nx+i
     def decode(k):i=k%nx;k//=nx;return i,k%ny,k//ny
     starts=[]
-    si,sj=round(start[0]/STEP),round(start[1]/STEP)
+    si,sj=round((start[0]-x0)/STEP),round((start[1]-y0)/STEP)
     for i in range(si-3,si+4):
         for j in range(sj-3,sj+4):
             if 0<i<nx-1 and 0<j<ny-1 and not blocked[start_layer,j,i] and clear(start,point(i,j),start_layer):starts.append((i,j,start_layer))
@@ -89,7 +95,7 @@ def add_path(b,net,path):
     for (a,la),(c,lc) in zip(path,path[1:]):
         if la!=lc:
             assert math.dist(a,c)<1e-7
-            existing=next((v for v in b.GetTracks() if isinstance(v,p.PCB_VIA) and v.GetNetname()==net and math.dist(a,p.ToMM(v.GetPosition()))<.04),None)
+            existing=next((v for v in b.GetTracks() if isinstance(v,p.PCB_VIA) and v.GetNetname()==net and math.dist(a,p.ToMM(v.GetPosition()))<STEP*.8),None)
             if existing:
                 for layer in (p.F_Cu,p.B_Cu):track(b,net,[a,tuple(p.ToMM(existing.GetPosition()))],.127,layer)
             else:via(b,net,a,.45,.3)

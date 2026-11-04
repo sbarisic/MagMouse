@@ -3,24 +3,24 @@
     "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
     "width_mm": 70.0,
     "height_mm": 100.0,
-    "sha256": "56eab133684987761f44f6f9bd5e2b1ee5f68dcf32f885bb96677f84ba207fc9"
+    "sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8"
   },
   "Upper Main": {
     "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\upper\\Upper.kicad_pcb",
     "width_mm": 70.0,
     "height_mm": 100.0,
-    "sha256": "d4d27bc7af9d56e48d121891a64a06dc27e1a87a6be7cdbb890ead8d87dfc342"
+    "sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f"
   },
   "Wheel": {
     "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\wheel\\Wheel.kicad_pcb",
-    "width_mm": 55.0,
-    "height_mm": 60.0,
-    "sha256": "9e7150fda115fb7c8100407e570c7de7513492a0e23ead481cae0383eeb7d49a"
+    "width_mm": 70.0,
+    "height_mm": 67.0,
+    "sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5"
   },
   "Encoder": {
     "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\encoder\\Encoder.kicad_pcb",
     "width_mm": 14.0,
     "height_mm": 18.0,
-    "sha256": "501c026cf5e2079d9f46a1d3991ef0e7398919a08909b0dd4ede6c799e101065"
+    "sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2"
   }
 }

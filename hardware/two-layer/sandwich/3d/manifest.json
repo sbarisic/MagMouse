@@ -1,0 +1,301 @@
+{
+  "Lower": {
+    "source": "hardware/two-layer/sandwich/lower/Lower.kicad_pcb",
+    "source_sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8",
+    "configured_board_thickness_mm": 1.578,
+    "exported_substrate_expected_mm": 1.488,
+    "available_model_instances": 81,
+    "unmodeled_footprints": [
+      {
+        "reference": "D5",
+        "value": "SK6805-EC15"
+      },
+      {
+        "reference": "L1",
+        "value": "SRP4020CC-3R3M"
+      },
+      {
+        "reference": "J8",
+        "value": "Wheel 17-wire signals / 2 GND"
+      },
+      {
+        "reference": "J6",
+        "value": "Soldered wires Signal_2x04"
+      },
+      {
+        "reference": "J101",
+        "value": "Stack signals / 14 wires"
+      },
+      {
+        "reference": "U35",
+        "value": "PMW3360DM-T2QU"
+      },
+      {
+        "reference": "J103",
+        "value": "Stack power / 5 wires"
+      }
+    ],
+    "missing_model_files": [
+      {
+        "reference": "U2",
+        "value": "TPS62162DSGR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+      },
+      {
+        "reference": "U11",
+        "value": "TUSB320LAIRWBR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.step"
+      },
+      {
+        "reference": "J1",
+        "value": "TYPE-C-31-M-12",
+        "model": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+      },
+      {
+        "reference": "U3",
+        "value": "ESP32-S3-MINI-1-N8",
+        "model": "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S2-MINI-1.step"
+      }
+    ],
+    "source_unchanged": true,
+    "glb_contour_warning": true,
+    "exports": {
+      "Lower-bare.step": "27d8a82c198cb7c84f972ce0f8505f6a81331317b2f43687b4de09ea12213be5",
+      "Lower-preview.png": "67bb66a32f76d06f9b79c6d1a5edcc6481b4730d43bbaa9660a4ee92f6e6fb62",
+      "Lower.glb": "32d76702511c27083b0b89345a748002b85bf5b0be593dd0a2819a73ccea5ac7",
+      "Lower.step": "5a7c8bd0b611da23f1e5346ec67b45685e6441a6ae98837c884d485873391c2f"
+    }
+  },
+  "Upper": {
+    "source": "hardware/two-layer/sandwich/upper/Upper.kicad_pcb",
+    "source_sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f",
+    "configured_board_thickness_mm": 1.578,
+    "exported_substrate_expected_mm": 1.488,
+    "available_model_instances": 73,
+    "unmodeled_footprints": [
+      {
+        "reference": "J10",
+        "value": "Soldered wires Power_1x02"
+      },
+      {
+        "reference": "J104",
+        "value": "Stack power / 5 wires"
+      },
+      {
+        "reference": "U12",
+        "value": "TPS259470LRPWR"
+      },
+      {
+        "reference": "U13",
+        "value": "TPS259470LRPWR"
+      },
+      {
+        "reference": "J102",
+        "value": "Stack signals / 14 wires"
+      }
+    ],
+    "missing_model_files": [
+      {
+        "reference": "U7",
+        "value": "TMAG5253BA2IQDMRR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm.step"
+      },
+      {
+        "reference": "U9",
+        "value": "TMAG5253BA2IQDMRR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm.step"
+      },
+      {
+        "reference": "U8",
+        "value": "TMAG5253BA2IQDMRR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm.step"
+      }
+    ],
+    "source_unchanged": true,
+    "glb_contour_warning": false,
+    "exports": {
+      "Upper-bare.step": "b4ee823e4c90a5890c6c7ca7dba616b03d60ad8873a24014a160a8ff80568421",
+      "Upper-preview.png": "8c2fee95ad2c364eba57198a62f197f292e185eb38301a910a1f291354d0add4",
+      "Upper.glb": "9da9ba45e69c7de43321ac38bb95a765223b395fa169ba8772d7fcde641be5b1",
+      "Upper.step": "6033d4c06844e53e18b98ae8ca1e4fc0a021ad25364c9a69a678cb06a8f4aae1"
+    }
+  },
+  "Wheel": {
+    "source": "hardware/two-layer/sandwich/wheel/Wheel.kicad_pcb",
+    "source_sha256": "cf3108b9e353fb73672738755ef4b6f9d0263398986eef41888ba2ae3a8e07d5",
+    "configured_board_thickness_mm": 1.6,
+    "exported_substrate_expected_mm": 1.51,
+    "available_model_instances": 79,
+    "unmodeled_footprints": [
+      {
+        "reference": "J9",
+        "value": "Wheel 17-wire signals / 2 GND"
+      },
+      {
+        "reference": "U21",
+        "value": "DRV8316RRGFR"
+      },
+      {
+        "reference": "J11",
+        "value": "Soldered wires Power_1x02"
+      }
+    ],
+    "missing_model_files": [],
+    "source_unchanged": true,
+    "glb_contour_warning": false,
+    "exports": {
+      "Wheel-bare.step": "b4d7e24c4ae9b1e01e8afd141faf1545bf1a1be9623cf3bcd8fa07e703d46367",
+      "Wheel-preview.png": "9d8c3273442f20e2c704e4c85099a6b75a242c6a184713e293e56218a340f87f",
+      "Wheel.glb": "ade6fdbd4e6bbcfb5af1d28d73a8ba727d75011171236f18f00ea2bb7c21c588",
+      "Wheel.step": "83a3d8cc9955cc45be232446c93d8f3b22ec222159455f058ef1c1c5d6e7a38d"
+    }
+  },
+  "Encoder": {
+    "source": "hardware/two-layer/encoder/Encoder.kicad_pcb",
+    "source_sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+    "configured_board_thickness_mm": 1.6,
+    "exported_substrate_expected_mm": 1.51,
+    "available_model_instances": 1,
+    "unmodeled_footprints": [
+      {
+        "reference": "U27",
+        "value": "MA735GGU-P"
+      },
+      {
+        "reference": "J7",
+        "value": "Soldered wires Signal_2x04"
+      }
+    ],
+    "missing_model_files": [],
+    "source_unchanged": true,
+    "glb_contour_warning": false,
+    "exports": {
+      "Encoder-bare.step": "91c4f3cc5aa8e0323eb797f6e3a17139993eb9ed5e61a193f2bf41d0869b96ad",
+      "Encoder-preview.png": "b24873ea5ca93f67fa8ca5990297b0124bed3ced162304565cf433f92c2bcc55",
+      "Encoder.glb": "8c321b6fbb695a9d36466551c57bf21a03dc8f18fa96fc52e10c4b4727e8f5c0",
+      "Encoder.step": "f06f098f38093add761823fed66e5b73b6427d4aff62d4b771ed3bd9ff135d01"
+    }
+  },
+  "Panel": {
+    "source": "hardware/two-layer/sandwich/panel/Panel.kicad_pcb",
+    "source_sha256": "abe588958c592fae9800ff71a67168982efb68ff9a9b48e571ed46d01cb48ef4",
+    "configured_board_thickness_mm": 1.578,
+    "exported_substrate_expected_mm": 1.488,
+    "available_model_instances": 234,
+    "unmodeled_footprints": [
+      {
+        "reference": "L_J103",
+        "value": "Stack power / 5 wires"
+      },
+      {
+        "reference": "L_U35",
+        "value": "PMW3360DM-T2QU"
+      },
+      {
+        "reference": "W_J9",
+        "value": "Wheel 17-wire signals / 2 GND"
+      },
+      {
+        "reference": "U_U13",
+        "value": "TPS259470LRPWR"
+      },
+      {
+        "reference": "U_J104",
+        "value": "Stack power / 5 wires"
+      },
+      {
+        "reference": "E_U27",
+        "value": "MA735GGU-P"
+      },
+      {
+        "reference": "L_D5",
+        "value": "SK6805-EC15"
+      },
+      {
+        "reference": "W_U21",
+        "value": "DRV8316RRGFR"
+      },
+      {
+        "reference": "E_J7",
+        "value": "Soldered wires Signal_2x04"
+      },
+      {
+        "reference": "U_U12",
+        "value": "TPS259470LRPWR"
+      },
+      {
+        "reference": "L_J6",
+        "value": "Soldered wires Signal_2x04"
+      },
+      {
+        "reference": "W_J11",
+        "value": "Soldered wires Power_1x02"
+      },
+      {
+        "reference": "U_J102",
+        "value": "Stack signals / 14 wires"
+      },
+      {
+        "reference": "L_J101",
+        "value": "Stack signals / 14 wires"
+      },
+      {
+        "reference": "L_L1",
+        "value": "SRP4020CC-3R3M"
+      },
+      {
+        "reference": "U_J10",
+        "value": "Soldered wires Power_1x02"
+      },
+      {
+        "reference": "L_J8",
+        "value": "Wheel 17-wire signals / 2 GND"
+      }
+    ],
+    "missing_model_files": [
+      {
+        "reference": "U_U9",
+        "value": "TMAG5253BA2IQDMRR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm.step"
+      },
+      {
+        "reference": "U_U7",
+        "value": "TMAG5253BA2IQDMRR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm.step"
+      },
+      {
+        "reference": "U_U8",
+        "value": "TMAG5253BA2IQDMRR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm.step"
+      },
+      {
+        "reference": "L_U11",
+        "value": "TUSB320LAIRWBR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.step"
+      },
+      {
+        "reference": "L_U3",
+        "value": "ESP32-S3-MINI-1-N8",
+        "model": "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S2-MINI-1.step"
+      },
+      {
+        "reference": "L_U2",
+        "value": "TPS62162DSGR",
+        "model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+      },
+      {
+        "reference": "L_J1",
+        "value": "TYPE-C-31-M-12",
+        "model": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+      }
+    ],
+    "source_unchanged": true,
+    "glb_contour_warning": true,
+    "exports": {
+      "Panel-bare.step": "45f9d82b4874cb5a068203af82d8e2fd57834a930096a4cb035aa1fac6b1eb7d",
+      "Panel-preview.png": "6cf73d81d5a87022ae28198099a244ba0b3a3997f55507955ebec77819cbea98",
+      "Panel.glb": "9a9c450b9488623bc4801090601ab6dc88aae88765a76c222830e7f05bd03e8a",
+      "Panel.step": "956fdcd3db3162aaceaf0daa0d21b90ea4b8a93b53051b8d15913ee6647839f3"
+    }
+  }
+}

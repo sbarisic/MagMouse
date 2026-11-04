@@ -563,14 +563,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 60.96 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
       (at 60.96 142.24 0)
       (hide yes)
       (effects
@@ -584,42 +584,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL21A106KAYNNNE"
+    (property "MPN" "CL31A106KAHNNNE"
       (at 60.96 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15850"
+    (property "LCSC" ""
       (at 60.96 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15850"
+    (property "JLCPCB Part #" ""
       (at 60.96 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 60.96 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 60.96 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+    (property "Supplier URL" ""
       (at 60.96 142.24 0)
       (hide yes)
       (effects
@@ -630,7 +630,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/eb4158a7-f345-513c-bf55-64544b1ee44b"
           (reference "C37")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
+      (at 60.96 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "25 V, X5R, 10%"
+      (at 60.96 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 60.96 138.43)
@@ -683,14 +697,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 142.24 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
       (at 142.24 142.24 0)
       (hide yes)
       (effects
@@ -704,42 +718,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL21A106KAYNNNE"
+    (property "MPN" "CL31A106KAHNNNE"
       (at 142.24 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15850"
+    (property "LCSC" ""
       (at 142.24 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15850"
+    (property "JLCPCB Part #" ""
       (at 142.24 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 142.24 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 142.24 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+    (property "Supplier URL" ""
       (at 142.24 142.24 0)
       (hide yes)
       (effects
@@ -750,7 +764,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/eb4158a7-f345-513c-bf55-64544b1ee44b"
           (reference "C38")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
+      (at 142.24 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "25 V, X5R, 10%"
+      (at 142.24 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 142.24 138.43)
@@ -803,14 +831,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 223.52 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
       (at 223.52 142.24 0)
       (hide yes)
       (effects
@@ -824,42 +852,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL21A106KAYNNNE"
+    (property "MPN" "CL31A106KAHNNNE"
       (at 223.52 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15850"
+    (property "LCSC" ""
       (at 223.52 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15850"
+    (property "JLCPCB Part #" ""
       (at 223.52 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 223.52 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 223.52 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+    (property "Supplier URL" ""
       (at 223.52 142.24 0)
       (hide yes)
       (effects
@@ -870,7 +898,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/eb4158a7-f345-513c-bf55-64544b1ee44b"
           (reference "C39")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
+      (at 223.52 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "25 V, X5R, 10%"
+      (at 223.52 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 223.52 138.43)
@@ -923,14 +965,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 304.8 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
       (at 304.8 142.24 0)
       (hide yes)
       (effects
@@ -944,42 +986,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL21A106KAYNNNE"
+    (property "MPN" "CL31A106KAHNNNE"
       (at 304.8 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15850"
+    (property "LCSC" ""
       (at 304.8 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15850"
+    (property "JLCPCB Part #" ""
       (at 304.8 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 304.8 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 304.8 142.24 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+    (property "Supplier URL" ""
       (at 304.8 142.24 0)
       (hide yes)
       (effects
@@ -990,7 +1032,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/eb4158a7-f345-513c-bf55-64544b1ee44b"
           (reference "C40")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
+      (at 304.8 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "25 V, X5R, 10%"
+      (at 304.8 142.24 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 304.8 138.43)
@@ -1043,63 +1099,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1001T5E"
+    (property "MPN" "RC1206FR-071KL"
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C21190"
+    (property "LCSC" ""
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C21190"
+    (property "JLCPCB Part #" ""
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 264.16 71.12 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C21190.html"
+    (property "Supplier URL" ""
       (at 264.16 71.12 0)
       (hide yes)
       (effects
@@ -1110,7 +1166,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/eb4158a7-f345-513c-bf55-64544b1ee44b"
           (reference "R69")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 264.16 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 264.16 71.12 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 264.16 67.31)

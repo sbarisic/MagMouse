@@ -1226,63 +1226,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1002T5E"
+    (property "MPN" "RC1206FR-0710KL"
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C25804"
+    (property "LCSC" ""
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C25804"
+    (property "JLCPCB Part #" ""
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 30.48 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+    (property "Supplier URL" ""
       (at 30.48 160.02 0)
       (hide yes)
       (effects
@@ -1293,7 +1293,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R111")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 30.48 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 30.48 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 30.48 156.21)
@@ -1346,63 +1360,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1003T5E"
+    (property "MPN" "RC1206FR-07100KL"
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C25803"
+    (property "LCSC" ""
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C25803"
+    (property "JLCPCB Part #" ""
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 106.68 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+    (property "Supplier URL" ""
       (at 106.68 160.02 0)
       (hide yes)
       (effects
@@ -1413,7 +1427,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R112")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 106.68 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 106.68 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 106.68 156.21)
@@ -1466,63 +1494,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF3482T5E"
+    (property "MPN" "RC1206FR-0734K8L"
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C23141"
+    (property "LCSC" ""
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C23141"
+    (property "JLCPCB Part #" ""
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 182.88 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/C23141"
+    (property "Supplier URL" ""
       (at 182.88 160.02 0)
       (hide yes)
       (effects
@@ -1533,7 +1561,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R113")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 182.88 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 182.88 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 182.88 156.21)
@@ -1586,63 +1628,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1003T5E"
+    (property "MPN" "RC1206FR-07100KL"
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C25803"
+    (property "LCSC" ""
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C25803"
+    (property "JLCPCB Part #" ""
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 259.08 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+    (property "Supplier URL" ""
       (at 259.08 160.02 0)
       (hide yes)
       (effects
@@ -1653,7 +1695,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R114")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 259.08 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 259.08 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 259.08 156.21)
@@ -1706,63 +1762,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1004T5E"
+    (property "MPN" "RC1206FR-071ML"
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C22935"
+    (property "LCSC" ""
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C22935"
+    (property "JLCPCB Part #" ""
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 335.28 160.02 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C22935.html"
+    (property "Supplier URL" ""
       (at 335.28 160.02 0)
       (hide yes)
       (effects
@@ -1773,7 +1829,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R115")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 335.28 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 335.28 160.02 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 335.28 156.21)
@@ -1826,63 +1896,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1004T5E"
+    (property "MPN" "RC1206FR-071ML"
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C22935"
+    (property "LCSC" ""
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C22935"
+    (property "JLCPCB Part #" ""
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 30.48 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C22935.html"
+    (property "Supplier URL" ""
       (at 30.48 203.2 0)
       (hide yes)
       (effects
@@ -1893,7 +1963,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R116")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 30.48 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 30.48 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 30.48 199.39)
@@ -1946,63 +2030,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1004T5E"
+    (property "MPN" "RC1206FR-071ML"
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C22935"
+    (property "LCSC" ""
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C22935"
+    (property "JLCPCB Part #" ""
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 106.68 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C22935.html"
+    (property "Supplier URL" ""
       (at 106.68 203.2 0)
       (hide yes)
       (effects
@@ -2013,7 +2097,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R117")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 106.68 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 106.68 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 106.68 199.39)
@@ -2066,63 +2164,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1000T5E"
+    (property "MPN" "RC1206FR-07100RL"
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C22775"
+    (property "LCSC" ""
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C22775"
+    (property "JLCPCB Part #" ""
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C22775.html"
+    (property "Supplier URL" ""
       (at 259.08000000000004 203.2 0)
       (hide yes)
       (effects
@@ -2133,7 +2231,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R119")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 259.08000000000004 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 259.08000000000004 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 259.08 199.39)
@@ -2186,63 +2298,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "UNI-ROYAL"
+    (property "Manufacturer" "YAGEO"
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "0603WAF1003T5E"
+    (property "MPN" "RC1206FR-07100KL"
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C25803"
+    (property "LCSC" ""
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C25803"
+    (property "JLCPCB Part #" ""
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh stock/quote before order"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25803.html"
+    (property "Supplier URL" ""
       (at 335.28000000000003 203.2 0)
       (hide yes)
       (effects
@@ -2253,7 +2365,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "R120")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 335.28000000000003 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "0.25 W, 1%"
+      (at 335.28000000000003 203.2 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 335.28 199.39)
@@ -2786,14 +2912,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 30.48 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
       (at 30.48 245.11 0)
       (hide yes)
       (effects
@@ -2807,42 +2933,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CC0603KRX7R9BB104"
+    (property "MPN" "CC1206KRX7R9BB104"
       (at 30.48 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C14663"
+    (property "LCSC" ""
       (at 30.48 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C14663"
+    (property "JLCPCB Part #" ""
       (at 30.48 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 30.48 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 30.48 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+    (property "Supplier URL" ""
       (at 30.48 245.11 0)
       (hide yes)
       (effects
@@ -2853,7 +2979,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "C65")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
+      (at 30.48 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 30.48 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 30.48 241.3)
@@ -2906,14 +3046,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 106.68 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
       (at 106.68 245.11 0)
       (hide yes)
       (effects
@@ -2927,42 +3067,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CC0603KRX7R9BB104"
+    (property "MPN" "CC1206KRX7R9BB104"
       (at 106.68 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C14663"
+    (property "LCSC" ""
       (at 106.68 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C14663"
+    (property "JLCPCB Part #" ""
       (at 106.68 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 106.68 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 106.68 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+    (property "Supplier URL" ""
       (at 106.68 245.11 0)
       (hide yes)
       (effects
@@ -2973,7 +3113,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "C66")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
+      (at 106.68 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 106.68 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 106.68 241.3)
@@ -3026,63 +3180,63 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC1206JRNPO9BN220"
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "Samsung Electro-Mechanics"
+    (property "Manufacturer" "YAGEO"
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL10C220JB8NNNC"
+    (property "MPN" "CC1206JRNPO9BN220"
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C1653"
+    (property "LCSC" ""
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C1653"
+    (property "JLCPCB Part #" ""
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 182.88 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C1653.html"
+    (property "Supplier URL" ""
       (at 182.88 245.11 0)
       (hide yes)
       (effects
@@ -3093,7 +3247,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "C67")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://www.yageogroup.com/download/specsheet/CC1206JRNPO9BN220"
+      (at 182.88 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, C0G/NP0, 5%"
+      (at 182.88 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 182.88 241.3)
@@ -3146,14 +3314,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 259.08 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
       (at 259.08 245.11 0)
       (hide yes)
       (effects
@@ -3167,42 +3335,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL21A106KAYNNNE"
+    (property "MPN" "CL31A106KAHNNNE"
       (at 259.08 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15850"
+    (property "LCSC" ""
       (at 259.08 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15850"
+    (property "JLCPCB Part #" ""
       (at 259.08 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 259.08 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 259.08 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+    (property "Supplier URL" ""
       (at 259.08 245.11 0)
       (hide yes)
       (effects
@@ -3213,7 +3381,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "C68")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
+      (at 259.08 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "25 V, X5R, 10%"
+      (at 259.08 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 259.08 241.3)
@@ -3266,14 +3448,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 289.56 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
       (at 289.56 245.11 0)
       (hide yes)
       (effects
@@ -3287,42 +3469,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL21A106KAYNNNE"
+    (property "MPN" "CL31A106KAHNNNE"
       (at 289.56 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15850"
+    (property "LCSC" ""
       (at 289.56 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15850"
+    (property "JLCPCB Part #" ""
       (at 289.56 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 289.56 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-04"
       (at 289.56 245.11 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C15850.html"
+    (property "Supplier URL" ""
       (at 289.56 245.11 0)
       (hide yes)
       (effects
@@ -3333,7 +3515,21 @@
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/461c1184-3fdc-571c-978e-4cebba646124"
           (reference "C69")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31A106KAHNNN.do"
+      (at 289.56 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "25 V, X5R, 10%"
+      (at 289.56 245.11 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 289.56 241.3)

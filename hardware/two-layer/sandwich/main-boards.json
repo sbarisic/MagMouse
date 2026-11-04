@@ -3,12 +3,12 @@
     "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
     "width_mm": 70.0,
     "height_mm": 100.0,
-    "sha256": "56eab133684987761f44f6f9bd5e2b1ee5f68dcf32f885bb96677f84ba207fc9"
+    "sha256": "82d4e57740d2ef789ece210a08692b6f1fa3497688f96870ba5aa76b0f164aa8"
   },
   "Upper Main": {
     "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\upper\\Upper.kicad_pcb",
     "width_mm": 70.0,
     "height_mm": 100.0,
-    "sha256": "d4d27bc7af9d56e48d121891a64a06dc27e1a87a6be7cdbb890ead8d87dfc342"
+    "sha256": "25ad9c263126fd30f0745d507d15c9e7b15a38f42117a798e71bcb944d37f69f"
   }
 }

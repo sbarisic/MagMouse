@@ -648,14 +648,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 53.34 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
       (at 53.34 111.76 0)
       (hide yes)
       (effects
@@ -669,42 +669,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CC0603KRX7R9BB104"
+    (property "MPN" "CC1206KRX7R9BB104"
       (at 53.34 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C14663"
+    (property "LCSC" ""
       (at 53.34 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C14663"
+    (property "JLCPCB Part #" ""
       (at 53.34 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 53.34 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 53.34 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+    (property "Supplier URL" ""
       (at 53.34 111.76 0)
       (hide yes)
       (effects
@@ -715,7 +715,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C16")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 53.34 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 53.34 107.95)
@@ -943,14 +957,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 162.56 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
       (at 162.56 111.76 0)
       (hide yes)
       (effects
@@ -964,42 +978,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CC0603KRX7R9BB104"
+    (property "MPN" "CC1206KRX7R9BB104"
       (at 162.56 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C14663"
+    (property "LCSC" ""
       (at 162.56 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C14663"
+    (property "JLCPCB Part #" ""
       (at 162.56 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 162.56 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 162.56 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+    (property "Supplier URL" ""
       (at 162.56 111.76 0)
       (hide yes)
       (effects
@@ -1010,7 +1024,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C17")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 162.56 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 162.56 107.95)
@@ -1238,14 +1266,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 271.78 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
       (at 271.78 111.76 0)
       (hide yes)
       (effects
@@ -1259,42 +1287,42 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CC0603KRX7R9BB104"
+    (property "MPN" "CC1206KRX7R9BB104"
       (at 271.78 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C14663"
+    (property "LCSC" ""
       (at 271.78 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C14663"
+    (property "JLCPCB Part #" ""
       (at 271.78 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "LCSC listing verified; JLC stock check pending"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 271.78 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 271.78 111.76 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+    (property "Supplier URL" ""
       (at 271.78 111.76 0)
       (hide yes)
       (effects
@@ -1305,7 +1333,21 @@
       (project "Upper"
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C18")
-          (unit 1)))))
+          (unit 1))))
+    (property "Source URL" "https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 271.78 111.76 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left))))
   (wire
     (pts
       (xy 271.78 107.95)
@@ -1645,14 +1687,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
@@ -1666,35 +1708,35 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL10A105KB8NNNC"
+    (property "MPN" "CL31B105KBHNNNE"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15849"
+    (property "LCSC" ""
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15849"
+    (property "JLCPCB Part #" ""
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 215.9 175.26 0)
       (hide yes)
       (effects
@@ -1706,7 +1748,7 @@
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C19")
           (unit 1))))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+    (property "Supplier URL" ""
       (at 215.9 175.26 0)
       (hide yes)
       (effects
@@ -1719,6 +1761,20 @@
       (effects
         (font
           (size 1 1))
+        (justify left)))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 215.9 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
         (justify left))))
   (wire
     (pts
@@ -1772,14 +1828,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
@@ -1793,35 +1849,35 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL10A105KB8NNNC"
+    (property "MPN" "CL31B105KBHNNNE"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15849"
+    (property "LCSC" ""
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15849"
+    (property "JLCPCB Part #" ""
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 266.7 175.26 0)
       (hide yes)
       (effects
@@ -1833,7 +1889,7 @@
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C20")
           (unit 1))))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+    (property "Supplier URL" ""
       (at 266.7 175.26 0)
       (hide yes)
       (effects
@@ -1846,6 +1902,20 @@
       (effects
         (font
           (size 1 1))
+        (justify left)))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 266.7 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
         (justify left))))
   (wire
     (pts
@@ -1899,14 +1969,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
@@ -1920,35 +1990,35 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CL10A105KB8NNNC"
+    (property "MPN" "CL31B105KBHNNNE"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C15849"
+    (property "LCSC" ""
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C15849"
+    (property "JLCPCB Part #" ""
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "JLCPCB catalog verified; stock/quote refresh required"
+    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-08"
+    (property "Checked" "2026-11-04"
       (at 317.5 175.26 0)
       (hide yes)
       (effects
@@ -1960,7 +2030,7 @@
         (path "/ee65dac6-4668-53e5-b9ad-34f5b36446b5/53ef1b2e-2214-5252-a341-e013ba33a7d8"
           (reference "C21")
           (unit 1))))
-    (property "Supplier URL" "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849"
+    (property "Supplier URL" ""
       (at 317.5 175.26 0)
       (hide yes)
       (effects
@@ -1973,6 +2043,20 @@
       (effects
         (font
           (size 1 1))
+        (justify left)))
+    (property "Source URL" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Rating" "50 V, X7R, 10%"
+      (at 317.5 175.26 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
         (justify left))))
   (wire
     (pts

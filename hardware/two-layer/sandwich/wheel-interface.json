@@ -112,13 +112,13 @@
       "net": "GND"
     }
   ],
-  "wheel_other_components_unchanged": true,
+  "wheel_component_values_and_pad_nets_unchanged": true,
   "wheel_drc_findings": 0,
   "wheel_unconnected": 0,
   "wheel_schematic_parity_findings": 0,
   "board_sha256": {
-    "Lower": "56eab133684987761f44f6f9bd5e2b1ee5f68dcf32f885bb96677f84ba207fc9",
-    "Upper": "d4d27bc7af9d56e48d121891a64a06dc27e1a87a6be7cdbb890ead8d87dfc342",
-    "Wheel": "9e7150fda115fb7c8100407e570c7de7513492a0e23ead481cae0383eeb7d49a"
+    "Lower": "c53e1acd957cb302135ef7940544b57acc7ebd5c5a63fc7372293c7a785685d0",
+    "Upper": "7ebc53a79864a6771f392ecc057025ce0a30a81c468e9b376adffabe57d5f727",
+    "Wheel": "65e37a75a84059839c621cbf1b1efd922d286f5e01d45a2de76e51adbb2cb8dc"
   }
 }

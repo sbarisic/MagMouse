@@ -246,8 +246,11 @@ def verify():
     assert len(wires)==19 and sum(w['net']=='GND' for w in wires)==3
     source=p.LoadBoard(str(BASE/'wheel/Wheel.kicad_pcb'))
     def inventory(board):
-        return {f.GetReference():(f.GetValue(),tuple(p.ToMM(f.GetPosition())),f.GetOrientationDegrees(),
-                sorted((pad.GetNumber(),pad.GetNetname(),tuple(p.ToMM(pad.GetSize())),tuple(p.ToMM(pad.GetDrillSize()))) for pad in f.Pads()))
+        # The 1206 revision changes passive land sizes and placement. The harness
+        # verifier checks circuit identity; large_passives.py verifies that only
+        # the approved passive placements changed and checks current native DRC.
+        return {f.GetReference():(f.GetValue(),
+                sorted((pad.GetNumber(),pad.GetNetname()) for pad in f.Pads()))
                 for f in board.GetFootprints() if f.GetReference()!='J9'}
     assert inventory(source)==inventory(boards['Wheel'])
     outline=p.SHAPE_POLY_SET()
@@ -256,7 +259,7 @@ def verify():
     data={'wire_count':19,'ground_wire_count':3,'signal_array_pad_count':17,
           'wheel_dimensions_mm':p.ToMM(outline.BBox().GetSize()),'wheel_copper_layers':2,
           'signal_array_copper_envelope_mm':[22.12,4.34],'previous_array_copper_envelope_mm':[37.36,4.34],
-          'wires':wires,'wheel_other_components_unchanged':True,
+          'wires':wires,'wheel_component_values_and_pad_nets_unchanged':True,
           'wheel_drc_findings':0,'wheel_unconnected':0,'wheel_schematic_parity_findings':0,
           'board_sha256':{name:hashlib.sha256((HERE/('wheel' if name=='Wheel' else name.lower())/(name+'.kicad_pcb')).read_bytes()).hexdigest() for name in boards}}
     (HERE/'wheel-interface.json').write_text(json.dumps(data,indent=2)+'\n')

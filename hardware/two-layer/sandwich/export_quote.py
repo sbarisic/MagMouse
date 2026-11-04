@@ -41,7 +41,7 @@ def main():
         board=p.LoadBoard(str(path));assert board.GetCopperLayerCount()==2
         outline=p.SHAPE_POLY_SET();assert board.GetBoardPolygonOutlines(outline,False)
         dimensions=tuple(p.ToMM(outline.BBox().GetSize()))
-        assert dimensions==({'Lower':(70.,100.),'Upper':(70.,100.),'Wheel':(55.,60.),'Encoder':(14.,18.)}[name])
+        assert dimensions==({'Lower':(70.,100.),'Upper':(70.,100.),'Wheel':(70.,67.),'Encoder':(14.,18.)}[name])
         run('pcb','export','gerbers','-l','F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts','--subtract-soldermask','-o',str(folder/'gerbers')+'/',path)
         run('pcb','export','drill','--format','excellon','--excellon-units','mm','--excellon-separate-th','--excellon-oval-format','route','--generate-report','-o',str(folder/'gerbers')+'/',path)
         groups=collections.defaultdict(list);positions=[];manual=[]

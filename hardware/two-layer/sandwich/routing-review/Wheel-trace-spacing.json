@@ -1,0 +1,14 @@
+{
+  "Before": {
+    "sha256": "82a01207874aad86b13bf61d187cb3012c6a9def41c14f316bf55d65376d3405",
+    "cross_section_y_mm": 48,
+    "brake_gate_to_phase_b_gap_mm": 0.151,
+    "phase_b_to_phase_c_gap_mm": 0.167
+  },
+  "After": {
+    "sha256": "d28c0e0bc2b243e14562efa6e953bd4caf0b5c7ad2e4e49985fc6aa2912393c9",
+    "cross_section_y_mm": 48,
+    "brake_gate_to_phase_b_gap_mm": 0.925,
+    "phase_b_to_phase_c_gap_mm": 0.685
+  }
+}

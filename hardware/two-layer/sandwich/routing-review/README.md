@@ -23,19 +23,27 @@ hole-to-hole clearances. Power escapes
 were widened where other copper and keepouts allow. Ground was filled and
 stitched on both faces, and unused fanout vias were removed.
 
-TP28 moved to (34,69.5) mm and TP29 to (38,78) mm to clear the USB corridor.
-All other component origins and angles retain the approved placement, allowing
-Specctra coordinate rounding of at most 0.000051 mm. The
-70 × 100 mm tapered outlines, optical and 5 mm antenna reserves, fixed Hall
-positions, four mounting positions and both 19-wire harnesses are retained.
+The later assembly-spacing revision moves components to obtain at least 2 mm
+between separate body-and-land envelopes. `../assembly-spacing-review.json`
+records the checked gaps, source hashes, moved origins and rotations. USB,
+optical, Hall, antenna and mounting datums remain fixed. The matching five-pad
+stack power arrays move from y = 11 to 12.25 mm. Both 19-wire pin maps remain.
+Encoder has two 4 mm upper chamfers; Lower has the specified 17.26 × 8.60 mm
+optical opening. The outer Main dimensions and 5 mm antenna reserves remain.
 
 The front/back copper SVGs are native KiCad exports. Lower front/back and Upper
 front/combined copper views were visually screened; the generated Main routing
 overview was also inspected. Per-net track-width/length tables are provided for
 electrical review; lengths include all branches and are not propagation-delay
-measurements. The long USB trunks are 58.987 mm (DP) and 58.991 mm (DM), excluding
+measurements. The retained 1.10 mm USB trunks are 58.673 mm (DP) and 58.991 mm (DM), excluding
 fanouts and series-resistor-to-MCU routing. No impedance or signal-quality
 measurement is claimed.
+
+On Wheel's front copper, the two motor phases and the brake gate take separate
+paths into J5. At y = 48 mm, 5 mm above the connector center, the phase B to C
+edge gap measures 0.685 mm (previously 0.167 mm). The brake gate to phase B gap
+measures 0.925 mm (previously 0.151 mm). These measurements apply to that
+cross-section. See the [before and after drawing](Wheel-trace-spacing.svg).
 
 The quote package contains 248 fitted BOM components per mouse, plus listed
 manual wire-pad features and separately priced mechanics. Lower/Upper/Encoder
@@ -43,7 +51,7 @@ have no detected via-hole intersections with SMD lands. The standard-via Wheel
 also has no detected intersections; the exporter rejects any remaining overlap.
 All via drills are at least 0.30 mm. L1 has a purchasing MPN but no saved LCSC ID.
 
-Routing is complete. Physical fit, the final optical aperture, supplier CAM and
+Routing is complete. Physical optical/lens fit, supplier CAM and
 assembly review, and electrical/thermal/radio validation remain open before a
 manufacturing release. The files support supplier pricing without claiming
 hardware acceptance or an order.

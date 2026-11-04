@@ -4,12 +4,20 @@ This package requests pricing, not production authorization. It describes the
 current passive-plastic-button design, not the older three-board coil design.
 One complete mouse needs one of each board:
 
+This revision replaces 193 small resistors and ceramic capacitors with 1206
+parts. Electrical values are retained. The later spacing revision provides
+2 mm between separate component envelopes, chamfers Encoder's two upper corners,
+and adds Lower's 17.26 × 8.60 mm optical opening. Replacement MPNs
+are in the BOM; their supplier stock and assembly availability have not been
+checked, so superseded small-package supplier IDs are blank. The saved JLCPCB
+prices predate this revision.
+
 | Board | Size | Copper layers |
 | --- | --- | ---: |
 | Lower | 70 × 100 mm, tapered | 2 |
 | Upper | 70 × 100 mm, tapered | 2 |
-| Wheel | 55 × 60 mm | 2 |
-| Encoder | 14 × 18 mm | 2 |
+| Wheel | 70 × 67 mm, clipped Main profile | 2 |
+| Encoder | 14 × 18 mm, two 4 mm upper chamfers | 2 |
 
 For comparison with the earlier project budget, request five of each PCB and
 one complete component population. Quote assembly separately if desired; the
@@ -53,9 +61,10 @@ The via-hole/pad intersection lists must be empty on all four boards; the
 exporter rejects overlaps or via drills smaller than 0.30 mm. Ground returns
 and heat spreading use copper pours and off-pad stitching; assembled motor
 driver thermal performance still requires measurement.
-Lower's optical region is currently a copper-free reserve, not a final milled
-lens aperture. Confirm the opening and lens fit before fabrication; additional
-internal milling may change the final quote.
+Lower's Edge.Cuts includes the 17.26 × 8.60 mm optical opening from PixArt's
+PMW3360 R1.50 Figure 3, rotated with the sensor. Include this internal milling
+in pricing. Internal corners are R1 mm for the nominal 2 mm router. Confirm
+physical lens fit with these corners and the separate lens retention.
 
 Include setup, stencil, panelization if needed, freight and destination taxes
 in a delivered total. Sensing magnets, plastic click mechanisms, shell, optical
