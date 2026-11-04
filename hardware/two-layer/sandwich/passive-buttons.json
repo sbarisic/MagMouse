@@ -1,0 +1,70 @@
+{
+  "removed_references": [
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C30",
+    "C7",
+    "C8",
+    "C9",
+    "J2",
+    "J3",
+    "J4",
+    "R10",
+    "R11",
+    "R12",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R50",
+    "R51",
+    "R52",
+    "R53",
+    "R54",
+    "R55",
+    "R8",
+    "R9",
+    "U17",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "removed_count": 38,
+  "retained_main_components": 208,
+  "hall_sensing_retained": true,
+  "shared_sensor_enable_and_wheel_interlock_retained": true,
+  "unrelated_pin_connections_unchanged": true,
+  "rewired_pins": {
+    "U3": {
+      "10": "unconnected-(U3-IO6-Pad10)",
+      "11": "unconnected-(U3-IO7-Pad11)",
+      "12": "unconnected-(U3-IO8-Pad12)",
+      "13": "unconnected-(U3-IO9-Pad13)",
+      "8": "unconnected-(U3-IO4-Pad8)",
+      "9": "unconnected-(U3-IO5-Pad9)"
+    },
+    "U10": {
+      "2": "GND",
+      "3": "GND",
+      "4": "GND"
+    },
+    "U18": {
+      "1": "GND",
+      "2": "GND",
+      "3": "unconnected-(U18-1Y-Pad3)",
+      "4": "GND",
+      "5": "GND",
+      "6": "unconnected-(U18-2Y-Pad6)"
+    }
+  }
+}

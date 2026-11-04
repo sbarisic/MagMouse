@@ -1,0 +1,1469 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "793e30da-b5e0-568a-8c06-a46ea4e2fed4")
+  (paper "A3")
+  (title_block
+    (title "Modular wheel harness - circuit draft")
+    (date "2026-09-10")
+    (rev "0.1 DRAFT"))
+  (lib_symbols
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector_Generic:Conn_01x17"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 22.86 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x17"
+        (at 0 -22.86 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x17, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x17_1_1"
+        (rectangle
+          (start -1.27 21.59)
+          (end 1.27 -21.59)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 20.447)
+          (end 0 20.193)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 17.907)
+          (end 0 17.653)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 15.367)
+          (end 0 15.113)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 12.827)
+          (end 0 12.573)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 10.287)
+          (end 0 10.033)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 7.747)
+          (end 0 7.493)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 5.207)
+          (end 0 4.953)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -4.953)
+          (end 0 -5.207)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -7.493)
+          (end 0 -7.747)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -10.033)
+          (end 0 -10.287)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -12.573)
+          (end 0 -12.827)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -15.113)
+          (end 0 -15.367)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -17.653)
+          (end 0 -17.907)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -20.193)
+          (end 0 -20.447)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 20.32 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 17.78 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 15.24 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 12.7 0)
+          (length 3.81)
+          (name "Pin_4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 10.16 0)
+          (length 3.81)
+          (name "Pin_5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 7.62 0)
+          (length 3.81)
+          (name "Pin_6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 5.08 0)
+          (length 3.81)
+          (name "Pin_7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_10"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -5.08 0)
+          (length 3.81)
+          (name "Pin_11"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -7.62 0)
+          (length 3.81)
+          (name "Pin_12"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -10.16 0)
+          (length 3.81)
+          (name "Pin_13"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -12.7 0)
+          (length 3.81)
+          (name "Pin_14"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -15.24 0)
+          (length 3.81)
+          (name "Pin_15"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -17.78 0)
+          (length 3.81)
+          (name "Pin_16"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -20.32 0)
+          (length 3.81)
+          (name "Pin_17"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "17"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (embedded_fonts no)
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 198.12 55.88 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "52f7b278-3e5f-596e-be2f-123ed9d96458")
+    (property "Reference" "J10"
+      (at 203.12 52.88 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "Soldered wires Power_1x02"
+      (at 203.12 55.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "MagMouseModular:Wire_Power_1x02_P2.54mm"
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-09-10"
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Supplier URL" ""
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
+      (at 203.12 55.88 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/f0572d70-f163-5775-a2dd-b62394b9c2b9"
+          (reference "J10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 193.04 55.88)
+      (xy 187.96 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4b8727ea-8556-5589-968f-758605d81a9c"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 187.96 55.88 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "feb87b31-221e-5ce7-aa34-63748839692f"))
+  (wire
+    (pts
+      (xy 193.04 58.42)
+      (xy 187.96 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a9b44881-d711-5726-b9fa-3b89ee5f98af"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 187.96 58.42 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "5624acb2-4803-52ad-a6f6-32eadd02ddcb"))
+  (symbol
+    (lib_id "Device:R")
+    (at 205.74 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bda08ae9-a038-57e9-b4d3-3fb3d5a7c6a5")
+    (property "Reference" "R141"
+      (at 210.74 98.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "33k"
+      (at 210.74 101.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "0603WAF3302T5E"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" "C4216"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" "C4216"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-09-10"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C4216"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; stock and assembly quote not reserved"
+      (at 210.74 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/f0572d70-f163-5775-a2dd-b62394b9c2b9"
+          (reference "R141")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 205.74 97.79)
+      (xy 205.74 92.71))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c1a1b9eb-34b9-58b4-af1e-e43b2ef9cf1d"))
+  (global_label "DRV_FAULT_LOCAL_N"
+    (shape bidirectional)
+    (at 205.74 92.71 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "cd5544ac-2a92-5ef1-a247-9aad1401d4c9"))
+  (wire
+    (pts
+      (xy 205.74 105.41)
+      (xy 205.74 110.49))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c30b85a-a6d5-5e6c-8190-112840826dba"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 205.74 110.49 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "9098cdc7-6de0-5e45-a9fa-b39866b5bd42"))
+  (symbol
+    (lib_id "Device:R")
+    (at 266.7 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5df29314-729c-5d74-9618-3cd990d51256")
+    (property "Reference" "R142"
+      (at 271.7 98.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "33k"
+      (at 271.7 101.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "0603WAF3302T5E"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" "C4216"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" "C4216"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-09-10"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C4216"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; stock and assembly quote not reserved"
+      (at 271.7 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/f0572d70-f163-5775-a2dd-b62394b9c2b9"
+          (reference "R142")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 266.7 97.79)
+      (xy 266.7 92.71))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e796885c-0b1d-5c61-a261-c8b8787ac060"))
+  (global_label "DRV_MISO_LOCAL"
+    (shape bidirectional)
+    (at 266.7 92.71 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "fa2df512-cf56-50d0-a3bb-a96ec81f62e1"))
+  (wire
+    (pts
+      (xy 266.7 105.41)
+      (xy 266.7 110.49))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e86306a4-256b-59e5-9aba-fc40e4382d85"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 266.7 110.49 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "8cb8730a-a800-5c9c-86a2-321ec2749aa6"))
+  (symbol
+    (lib_id "Device:R")
+    (at 327.66 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6c837c56-dc9d-5e39-967b-2db106b3bc38")
+    (property "Reference" "R143"
+      (at 332.66 98.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "33k"
+      (at 332.66 101.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "0603WAF3302T5E"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" "C4216"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" "C4216"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-09-10"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Supplier URL" "https://jlcpcb.com/partdetail/C4216"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Catalog identity checked; stock and assembly quote not reserved"
+      (at 332.66 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/f0572d70-f163-5775-a2dd-b62394b9c2b9"
+          (reference "R143")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 327.66 97.79)
+      (xy 327.66 92.71))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6bbade4c-6bf0-58b0-b107-c79f58141497"))
+  (global_label "ADC2_MISO_LOCAL"
+    (shape bidirectional)
+    (at 327.66 92.71 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "ed97c8b0-9b72-5e1c-980b-685ec2142085"))
+  (wire
+    (pts
+      (xy 327.66 105.41)
+      (xy 327.66 110.49))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dff9e76f-ece4-5d9f-89e5-3f9e0bf1d3ea"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 327.66 110.49 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "b4db1588-18c0-5891-8108-bc92fed135de"))
+  (text "19-wire wheel harness: J8.N to J9.N (17 wires).\nPins 1 and 17 are shared GND; pin 16 is +3V3.\nPower J10/J11: 1 ACT_5V, 2 GND. Three shared grounds total."
+    (at 20 22 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "06604a64-5963-5348-ae6b-6f79999ea369"))
+  (text "Unplugged wheel fault return defaults LOW through R141.\nMISO inputs have local idle bias; select signals retain main-side pullups.\nEncoder stays on main J6 directly to J7; it does not cross this harness.\nNo power is carried across breakaway tabs. Do not hot plug."
+    (at 20 238 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "bfec5523-9f8d-54a0-ba2c-28141be4f46d"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x17")
+    (at 91.44 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "20fa58b1-45f8-5e0a-aa18-c4f1f2f55a3c")
+    (property "Reference" "J8"
+      (at 96.44 98.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "Wheel 17-wire signals / 2 GND"
+      (at 96.44 101.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" ""
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "MagMouseSandwich:Wire_Wheel_17_P2.54mm"
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-09-10"
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Supplier URL" ""
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Hand-soldered wire termination; no connector fitted; do not fill these holes"
+      (at 96.44 101.6 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/f0572d70-f163-5775-a2dd-b62394b9c2b9"
+          (reference "J8")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 86.36 81.28)
+      (xy 81.28 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "06a8b3f6-9bae-5b65-bd9c-c0561439d67c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 81.28 81.28 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "3705c849-98e8-53dd-a1ce-4d02793ef2fc"))
+  (wire
+    (pts
+      (xy 86.36 83.82)
+      (xy 81.28 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e84ea211-c77e-5b03-b355-edf8f32a427f"))
+  (global_label "SPI_SCLK"
+    (shape bidirectional)
+    (at 81.28 83.82 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "16ce993e-8747-5b27-8ab1-3bb58edbf290"))
+  (wire
+    (pts
+      (xy 86.36 86.36)
+      (xy 81.28 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fb8bee3e-fb2b-5a50-8c4b-02bc8c302390"))
+  (global_label "SPI_MOSI"
+    (shape bidirectional)
+    (at 81.28 86.36 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "33917ac4-1496-5206-89ce-39df1ea95df1"))
+  (wire
+    (pts
+      (xy 86.36 88.9)
+      (xy 81.28 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "35175fd6-7526-5ba5-8e92-6ab3737af551"))
+  (global_label "CS_DRV8316"
+    (shape bidirectional)
+    (at 81.28 88.9 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "8a872cbd-15a4-5628-a3de-4507f0b10c1b"))
+  (wire
+    (pts
+      (xy 86.36 91.44)
+      (xy 81.28 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c60ca5ad-eb49-57f6-8daf-d0ab49150e52"))
+  (global_label "DRV_MISO_LOCAL"
+    (shape bidirectional)
+    (at 81.28 91.44 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "689f2739-b620-5a87-8e22-ce7789bf6441"))
+  (wire
+    (pts
+      (xy 86.36 93.98)
+      (xy 81.28 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0834521d-12b4-5a05-abf6-d88bc25ea82b"))
+  (global_label "MOTOR_SPI_SCLK"
+    (shape bidirectional)
+    (at 81.28 93.98 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "1c54fdee-6aad-548c-8d1e-6ebb1cb31d28"))
+  (wire
+    (pts
+      (xy 86.36 96.52)
+      (xy 81.28 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eb2d46ef-95a4-50f4-b67d-3c89ba66b14f"))
+  (global_label "MOTOR_SPI_MOSI"
+    (shape bidirectional)
+    (at 81.28 96.52 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "68b86624-64d5-5bea-b751-1a9edba5b88f"))
+  (wire
+    (pts
+      (xy 86.36 99.06)
+      (xy 81.28 99.06))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "741e97e0-4cef-573e-b116-a67bc0a3f0ce"))
+  (global_label "CS_ADC2"
+    (shape bidirectional)
+    (at 81.28 99.06 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "d2d027f5-d053-5519-9ec4-f3325dd74c9a"))
+  (wire
+    (pts
+      (xy 86.36 101.6)
+      (xy 81.28 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "30a43955-a320-568d-9cb5-f9ed50ad1b59"))
+  (global_label "ADC2_MISO_LOCAL"
+    (shape bidirectional)
+    (at 81.28 101.6 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "d0de8ef8-4d26-55fd-9b1d-b2167941b557"))
+  (wire
+    (pts
+      (xy 86.36 104.14)
+      (xy 81.28 104.14))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "073a6bfa-35ef-5197-92b9-a979c5ff652d"))
+  (global_label "WHEEL_PWM_A"
+    (shape bidirectional)
+    (at 81.28 104.14 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "53849ccb-56bf-5acf-8e50-1033d5ecf7d2"))
+  (wire
+    (pts
+      (xy 86.36 106.68)
+      (xy 81.28 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fe6b22bd-d579-5797-be24-ea1b6ad0aa82"))
+  (global_label "WHEEL_PWM_B"
+    (shape bidirectional)
+    (at 81.28 106.68 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "5de62b81-b9f8-5e38-99ba-d25bd97d1bc5"))
+  (wire
+    (pts
+      (xy 86.36 109.22)
+      (xy 81.28 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c451de30-37d6-584f-bde4-f2afa057e045"))
+  (global_label "WHEEL_PWM_C"
+    (shape bidirectional)
+    (at 81.28 109.22 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "695914ca-7e9b-5890-bd74-48cfaa4268f6"))
+  (wire
+    (pts
+      (xy 86.36 111.76)
+      (xy 81.28 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6be2a0a8-ba8b-577c-b5dd-11b892d35bb6"))
+  (global_label "ACT_DRIVE_EN"
+    (shape bidirectional)
+    (at 81.28 111.76 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f24f1d2a-dc04-5a5a-966b-a1dbb6346ef0"))
+  (wire
+    (pts
+      (xy 86.36 114.3)
+      (xy 81.28 114.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e8f9b338-beca-58d0-8284-24efc7be86a6"))
+  (global_label "WHEEL_RUN_REQ"
+    (shape bidirectional)
+    (at 81.28 114.3 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "4330777a-ae1f-520b-8366-3854ff0a56ae"))
+  (wire
+    (pts
+      (xy 86.36 116.84)
+      (xy 81.28 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c42d24cc-9b06-5b0a-9e78-49570e076198"))
+  (global_label "DRV_FAULT_LOCAL_N"
+    (shape bidirectional)
+    (at 81.28 116.84 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "4b1a85b1-205e-588a-bb78-c51d61f3ce5b"))
+  (wire
+    (pts
+      (xy 86.36 119.38)
+      (xy 81.28 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d419030c-7944-5344-8c63-c132a435c4b4"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 81.28 119.38 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "8cc1d3d5-6939-52be-98cd-48539a54f7e7"))
+  (wire
+    (pts
+      (xy 86.36 121.92)
+      (xy 81.28 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0be594d4-3a24-5fc9-85de-ea102a2eacc2"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 81.28 121.92 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ec3a1557-dc24-57de-bc52-a7daf14fd3a1")))

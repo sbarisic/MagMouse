@@ -1,11 +1,13 @@
-# GPIO and peripheral allocation — revision 0.7 (pin map unchanged)
+# GPIO and peripheral allocation — passive-button revision (2026-11-04)
 
-The ESP32-S3-MINI-1-N8 fits V1 with **38 assigned GPIOs and one boot-low spare,
+The ESP32-S3-MINI-1-N8 fits V1 with **32 assigned GPIOs, six unused GPIOs (4–9), and one boot-low spare,
 GPIO46**. The user selected a single-data-pin addressable RGB LED on 2026-09-08.
 Wheel control uses 3-PWM; ADC2 gets a dedicated SPI host. USB, recovery UART,
-button commands and existing power-control pins stay put.
+and existing power-control pins stay put. Button command outputs are removed.
 
-The allocation is checked, but runtime timing is **not yet proven**.
+This allocation describes the active [stacked Main circuit](../hardware/two-layer/sandwich/main-circuit/Main.kicad_sch).
+The original allocation files and schematics linked below retain the historical
+coil revision. Runtime timing is **not yet proven**.
 The [machine-readable allocation](../hardware/kicad/gpio-allocation.json) and
 [MCU schematic](../hardware/kicad/02_MCU.kicad_sch) use the same net names.
 [Sheet 09](../hardware/kicad/09_Interface_Reservations.kicad_sch) exposes new
@@ -29,12 +31,12 @@ See [optical design and timing](../hardware/kicad/OPTICAL_DESIGN.md).
 | 1 | 5 | VBUS_PRESENT_N | power |
 | 2 | 6 | CS_PAW | SPI2 |
 | 3 | 7 | WHEEL_RUN_REQ | wheel |
-| 4 | 8 | BTN_L_CMD1 | MCPWM1 |
-| 5 | 9 | BTN_L_CMD2 | MCPWM1 |
-| 6 | 10 | BTN_M_CMD1 | MCPWM1 |
-| 7 | 11 | BTN_M_CMD2 | MCPWM1 |
-| 8 | 12 | BTN_R_CMD1 | MCPWM1 |
-| 9 | 13 | BTN_R_CMD2 | MCPWM1 |
+| 4 | 8 | NC | Unused; former button command |
+| 5 | 9 | NC | Unused; former button command |
+| 6 | 10 | NC | Unused; former button command |
+| 7 | 11 | NC | Unused; former button command |
+| 8 | 12 | NC | Unused; former button command |
+| 9 | 13 | NC | Unused; former button command |
 | 10 | 14 | ADC_CS | SPI2 |
 | 11 | 15 | SPI_MOSI | SPI2 |
 | 12 | 16 | SPI_SCLK | SPI2 |
@@ -129,7 +131,7 @@ short transfers can perform better without it.
 | Resource | Allocation |
 | --- | --- |
 | MCPWM group 0 | Wheel: timer 0, operators 0/1/2, generator A from each; three center-aligned PWM outputs |
-| MCPWM group 1 | Buttons: timer 0, operators 0/1/2, generators A/B per button; six independent outputs |
+| MCPWM group 1 | Unallocated; plastic buttons require no PWM |
 | RMT | One TX channel for SK6805-EC15 via U34; enabled RGB_5V rail |
 | GPIO interrupts | PAW_MOTION_N, IMU_INT1, DRV_FAULT_N; CC/VBUS changes as needed |
 | MCPWM fault | DRV_FAULT_N to group 0; firmware setup does not replace external disable gates |
@@ -138,10 +140,9 @@ short transfers can perform better without it.
 | Heartbeat | GPIO17, software refresh only after a valid control iteration |
 
 Each of the S3's two MCPWM groups has three timers, three operators and two
-comparators/generators per operator. Both groups use all three operators,
-but only timer 0 initially. Start with a 20 kHz carrier as a bring-up target.
-Button A/B outputs are independent, not complementary; follow DRV8231A
-drive/decay requirements. Update wheel comparators together at a timer boundary.
+comparators/generators per operator. The wheel uses all three operators in
+group 0 and only timer 0 initially; group 1 is free. Start with a 20 kHz
+carrier as a bring-up target. Update wheel comparators together at a timer boundary.
 Do not allocate these operators again through another library. LEDC is unused.
 
 MA735 uses SPI absolute angle; A/B/Z, PWM and magnetic-status output pins have
@@ -165,13 +166,13 @@ Independent always-on RGB/encoder operation would require a new resource review.
 | CH0 | Left Hall | Phase A current, conditioned SOA |
 | CH1 | Middle Hall | Phase B current, conditioned SOB |
 | CH2 | Right Hall | Phase C current, conditioned SOC |
-| CH3 | Left coil current | Grounded spare via R105; bus-current sensor unselected |
-| CH4 | Middle coil current | Grounded spare via R106 |
-| CH5 | Right coil current | Grounded spare via R107 |
+| CH3 | Grounded spare | Grounded spare via R105; bus-current sensor unselected |
+| CH4 | Grounded spare | Grounded spare via R106 |
+| CH5 | Grounded spare | Grounded spare via R107 |
 | CH6 | Input current | Grounded spare via R108 |
 | CH7 | ACT_5V | Grounded spare via R109 |
 
-ADC1 inputs stay unchanged. ADC2 needs no CONVST/DRDY GPIO: host-mode conversions
+ADC1 CH3–5 are grounded after removal of button current sensing. ADC2 needs no CONVST/DRDY GPIO: host-mode conversions
 start on CS rising edges. It is multiplexed, not simultaneous-sampling.
 Account for channel switching and its result pipeline. Do not copy ADC1's slow
 power-telemetry filter onto motor-current inputs.

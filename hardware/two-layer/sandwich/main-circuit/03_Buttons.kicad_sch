@@ -1,0 +1,35 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "578afcf5-1061-59bd-b003-f0dfcdbfe00b")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - passive plastic buttons")
+    (date "2026-09-08")
+    (rev "0.4 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols)
+  (junction
+    (at 190.5 64.77)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "4977f677-fab4-57ee-9ff0-afb94a54ce93"))
+  (junction
+    (at 190.5 135.89)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "0f82a722-50be-547f-8dd7-9dba6509edbb"))
+  (junction
+    (at 190.5 207.01)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "15ffb546-050d-5765-83f1-5e3f10ae7360"))
+  (embedded_fonts no)
+  (text "Plastic click mechanism and passive return.\nOne sensing magnet per button; Hall sensors U7/U8/U9 remain on sheet 04.\nNo button coils, actuator magnets, driver ICs or coil wiring."
+    (at 20 30 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "3108e9f7-bc87-5c36-8bec-67e8a8c9c21b")))

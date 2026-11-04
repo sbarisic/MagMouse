@@ -1,6 +1,6 @@
 # USB-C and actuator power control
 
-The [KiCad circuit](../hardware/kicad/README.md) connects USB-C to protected logic
+The active [stacked Main circuit](../hardware/two-layer/sandwich/main-circuit/Main.kicad_sch) connects USB-C to protected logic
 and actuator supplies. Source detection, current limits, soft-start, reverse
 blocking, telemetry, sensor shutdown and the hardware heartbeat interlock are
 implemented. Firmware and bench acceptance remain open; this is not a USB
@@ -48,7 +48,8 @@ during final electrical review.
 ## Power paths
 
 VBUS_USB → U12 → PWR_5V → U2 → +3V3 powers logic.
-PWR_5V → U13 → ACT_5V powers the button bridges, wheel driver and autonomous brake.
+PWR_5V → U13 → ACT_5V powers the wheel driver and autonomous brake. Buttons use Hall sensing
+and passive plastic clicks; they draw no actuator-rail power.
 U12/U13 are TPS259470LRPWR active-current-limit eFuses with adjustable OVLO
 and reverse blocking. The 472 and 474 variants are not equivalent substitutes.
 
@@ -60,7 +61,7 @@ and reverse blocking. The 472 and 474 variants are not equivalent substitutes.
 | Actuator input OVLO | R40/R41 | 6.63 V rising |
 | Actuator branch current limit | R42 || R43 | 2.02 A |
 | Both rail ramps | C25/C26, 10 nF | 0.2 V/ms; about 25 ms to 5 V |
-| ACT capacitor-only inrush | 110.7 uF nominal direct rail capacitance | About 22.14 mA; active loads and secondary rail charging are additional |
+| ACT capacitor-only inrush | 80.4 uF nominal direct rail capacitance | About 16.08 mA; active loads and secondary rail charging are additional |
 
 D3 clamps U13 EN low when ACT_DRIVE_EN is low. High-value EN/OVLO dividers
 reduce standby demand. The driver still has its own undervoltage protection:
@@ -106,18 +107,17 @@ freshness, USB state and effect limits. Do not use autonomous PWM for heartbeat.
 A continuing heartbeat does not independently enforce each effect's duration
 or detect every possible firmware error.
 
-ACT_DRIVE_EN = monostable Q AND ARM_VALID. It controls U13 and gates all six
-button inputs through U17/U18. Driver-side pulldowns remain; command-side
-pulldowns prevent floating logic inputs during reset. Drive stops even while
-the ACT capacitors retain energy.
+ACT_DRIVE_EN = monostable Q AND ARM_VALID. It controls U13 and the wheel
+permit circuitry. U17 and the button-command gates have been removed. U18
+remains for HALL_EN = SENS_REQ AND MCU_EN; its unused inputs are grounded.
+Wheel drive stops even while the ACT capacitors retain energy.
 
 For bring-up: hold commands low, enable sensors, obtain valid readings, check
 CC status/VBUS presence, then start heartbeat and arm. Hold commands low for
 at least 50 ms and require ACT voltage at least 4.7 V before pulsing.
 Stop on droop, stale data, source downgrade, USB deconfiguration or fault.
 Validate final voltage hysteresis with the actual cable and load.
-Coil current, force and duty-cycle limits depend on the
-[button experiment](../mechanical/button-mechanisms/README.md).
+Wheel current, torque and duty limits still require motor characterization.
 
 ## Suspend, resume and telemetry
 
@@ -153,7 +153,7 @@ VACT = VADC × 122.1 / 22.1; nominal filter time constant 1.81 ms.
 D4 shunts residual monitor voltage to the ADC supply during power loss.
 The 100 kOhm resistor limits this alternate path to about 100 uA at a 10.3 V
 rail. Verify ADC pin voltage/injection and logic discharge on unplug/regeneration.
-These are supervisory signals. All eight ADC1 channels are allocated. A second
+These are supervisory signals. ADC1 channels 3–5 are grounded spares; the three Hall channels remain. A second
 ADS7038 on dedicated SPI3 provides wheel-current acquisition. Its front-end
 circuit is drawn; sampling timing and accuracy still need validation. See
 [interfaces](interfaces.md) and [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
@@ -161,11 +161,12 @@ circuit is drawn; sampling timing and accuracy still need validation. See
 ## Regeneration and actuator acceptance
 
 U13 blocks regenerative power into PWR_5V; U12 blocks return to the host.
-C8/C11/C14, C37-C40, C44/C45 and C68/C69 provide eleven 10 uF capacitors:
-110 uF nominal bulk storage. Seven 100 nF bypass capacitors bring the direct
-rail total to 110.7 uF. This corrects earlier 70/80 uF counts that omitted some
-driver/wheel storage. Charge-pump and secondary-rail capacitors are excluded.
-R69, 1 kOhm, gives a nominal 110.7 ms discharge constant and about 30 mW at 5.5 V.
+C37-C40, C44/C45 and C68/C69 provide eight 10 uF capacitors:
+80 uF nominal bulk storage. Four retained 100 nF bypass capacitors bring the
+direct rail total to 80.4 uF. Removing the button drivers removed C8/C11/C14
+and three rail bypass capacitors. Charge-pump and secondary-rail capacitors
+are excluded. R69, 1 kOhm, gives a nominal 80.4 ms discharge constant and
+about 30 mW at 5.5 V.
 Hardware command gating does not wait for that discharge.
 
 D2, SMBJ6.0A, absorbs excess pulse energy locally. At 25 C its standoff is 6 V,
@@ -189,10 +190,8 @@ Record oscilloscope/current measurements for both orientations and default,
 1.5 A and 3 A sources: startup/enumeration, inrush, source transitions,
 suspend/resume, missing/stuck heartbeat, reset, short circuit, UVLO/OVLO,
 disconnect under load, reverse current and regeneration. Start with a
-current-limited supply and one characterized coil. Calculate winding energy
-from measured L and I, and integrate actual returned power. Validate overshoot,
-pulse/thermal ratings, capacitor bias, passive return, cable drop and repeated
-clicks. These physical tests remain open.
+current-limited supply and the wheel motor. Measure returned power and
+validate overshoot, pulse/thermal ratings, capacitor bias and cable drop. These physical tests remain open.
 
 Revision 0.7 gates PMW3360 power behind HALL_EN. Keep SENS_REQ low until USB
 configuration and sufficient total current budget; optical startup alone has a

@@ -9,7 +9,7 @@
           "F.Cu"
         ],
         "projected_track_area_mm2": 10.652358,
-        "area_without_opposite_layer_gnd_mm2": 3.3541
+        "area_without_opposite_layer_gnd_mm2": 3.288142
       },
       "HALL_M": {
         "track_length_mm": 76.3186,
@@ -36,7 +36,7 @@
           "F.Cu"
         ],
         "projected_track_area_mm2": 11.634667,
-        "area_without_opposite_layer_gnd_mm2": 3.283676
+        "area_without_opposite_layer_gnd_mm2": 3.201026
       },
       "BTN_M_ISENSE": {
         "track_length_mm": 81.8937,
@@ -45,7 +45,7 @@
           "F.Cu"
         ],
         "projected_track_area_mm2": 12.354069,
-        "area_without_opposite_layer_gnd_mm2": 3.568151
+        "area_without_opposite_layer_gnd_mm2": 3.485501
       },
       "BTN_R_ISENSE": {
         "track_length_mm": 46.0624,

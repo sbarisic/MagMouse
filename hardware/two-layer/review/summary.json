@@ -1,7 +1,7 @@
 {
   "Main": {
     "source_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
-    "variant_sha256": "d630c15ac69353692b6ae5418d2748dcd58beea47f1e826cd243baeb0b93be38",
+    "variant_sha256": "991611c7d10ef17bccaa74acd1ffe80b8f1ef1580623d36f9628d2a9b0ce972c",
     "source_board_unchanged": true,
     "schematics_unchanged": true,
     "component_and_pad_net_identity": true,
@@ -10,18 +10,22 @@
     "vias": 1835,
     "routing": {
       "F.Cu": {
-        "segments": 3104,
-        "length_mm": 8666.843810492452
+        "segments": 3101,
+        "length_mm": 8639.593861758134
       },
       "B.Cu": {
         "segments": 3682,
-        "length_mm": 8993.557157676853
+        "length_mm": 8991.807157676853
       }
     },
-    "drc_findings": {
-      "track_dangling": 4,
-      "copper_sliver": 1
-    },
+    "drc_findings": {},
+    "ignored_checks": [
+      "missing_courtyard",
+      "track_not_centered_on_via",
+      "tuning_profile_track_geometries",
+      "footprint_filters_mismatch",
+      "footprint_type_mismatch"
+    ],
     "unconnected": 0,
     "schematic_parity": 0,
     "cad_pass": true
@@ -46,6 +50,13 @@
       }
     },
     "drc_findings": {},
+    "ignored_checks": [
+      "missing_courtyard",
+      "track_not_centered_on_via",
+      "tuning_profile_track_geometries",
+      "footprint_filters_mismatch",
+      "footprint_type_mismatch"
+    ],
     "unconnected": 0,
     "schematic_parity": 0,
     "cad_pass": true
@@ -70,6 +81,13 @@
       }
     },
     "drc_findings": {},
+    "ignored_checks": [
+      "missing_courtyard",
+      "track_not_centered_on_via",
+      "tuning_profile_track_geometries",
+      "footprint_filters_mismatch",
+      "footprint_type_mismatch"
+    ],
     "unconnected": 0,
     "schematic_parity": 0,
     "cad_pass": true

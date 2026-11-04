@@ -1,0 +1,31 @@
+{
+  "old_dimensions_mm": [
+    80.0,
+    75.0
+  ],
+  "dimensions_mm": [
+    55.0,
+    60.0
+  ],
+  "area_reduction_percent": 45,
+  "copper_layers": 2,
+  "removed_margin_ground_vias": [
+    {
+      "uuid": "243a53ab-ce9d-46e4-8c9a-de574c16fec0",
+      "position_mm": [
+        62.9144,
+        31.2798
+      ]
+    },
+    {
+      "uuid": "7313c547-741b-46b3-940f-96264266a004",
+      "position_mm": [
+        62.9144,
+        29.0
+      ]
+    }
+  ],
+  "all_remaining_tracks_and_vias_unchanged": true,
+  "before_sha256": "6c073137e5ab30fcc250f3032b505366092ea0a4ed993f43037c88e11f6d1a8a",
+  "board_sha256": "a19e6108abb645093c2e647687e612fdc60775742144613f0a196dd0dc9e9a8b"
+}

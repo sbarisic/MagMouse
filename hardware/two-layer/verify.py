@@ -2,6 +2,7 @@
 SPDX-License-Identifier: GPL-3.0-or-later
 """
 from pathlib import Path
+import argparse
 import collections
 import hashlib
 import json
@@ -15,7 +16,17 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def schematic_content(path):
+    # Git may check out the source and copied sheets with different line endings.
+    # Normalize only CRLF; retain every other byte for the identity check.
+    return path.read_bytes().replace(b'\r\n', b'\n')
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--strict-warnings', action='store_true',
+                        help='Also fail on reported native DRC warnings')
+    args = parser.parse_args()
     evidence = DEST/'review'
     evidence.mkdir(exist_ok=True)
     baseline = json.loads((DEST/'baseline.json').read_text())
@@ -26,7 +37,8 @@ def main():
         dst = DEST/name.lower()/(name+'.kicad_pcb')
         a,b = p.LoadBoard(str(src)),p.LoadBoard(str(dst))
         invariant = signature(a)==signature(b)
-        schematics = all(sha(x)==sha(dst.parent/x.name) for x in folder.glob('*.kicad_sch'))
+        schematics = all(schematic_content(x)==schematic_content(dst.parent/x.name)
+                         for x in folder.glob('*.kicad_sch'))
         original_unchanged = sha(src)==baseline[name]['source_sha256']
         drc = evidence/(name+'-drc.json')
         subprocess.run([str(cli),'pcb','drc','--format','json','--schematic-parity',
@@ -47,6 +59,7 @@ def main():
             'component_and_pad_net_identity':invariant,'copper_layers':b.GetCopperLayerCount(),
             'footprints':len(list(b.GetFootprints())),'vias':via_count,'routing':dict(routing),
             'drc_findings':dict(collections.Counter(v['type'] for v in result['violations'])),
+            'ignored_checks':[v['key'] for v in result.get('ignored_checks',[])],
             'unconnected':len(result['unconnected_items']),
             'schematic_parity':len(result.get('schematic_parity',[])),
             'cad_pass':invariant and schematics and original_unchanged
@@ -54,7 +67,8 @@ def main():
                 and not result['unconnected_items'] and not result.get('schematic_parity',[])}
     (evidence/'summary.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))
-    return 0 if all(v['cad_pass'] for v in report.values()) else 1
+    return 0 if all(v['cad_pass'] and (not args.strict_warnings or not v['drc_findings'])
+                    for v in report.values()) else 1
 
 
 if __name__=='__main__':

@@ -1,0 +1,14 @@
+{
+  "Lower Main": {
+    "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
+    "width_mm": 70.0,
+    "height_mm": 100.0,
+    "sha256": "3d9e43898fbdd453f22d54660ecba0eaab128090563e86d84f58e41f15188238"
+  },
+  "Upper Main": {
+    "path": "E:\\Projects\\MagMouse\\hardware\\two-layer\\sandwich\\upper\\Upper.kicad_pcb",
+    "width_mm": 70.0,
+    "height_mm": 100.0,
+    "sha256": "33651b7770e9676a4bc6de9ec4f1afdface66346e9253737f73af6f18f30dda7"
+  }
+}

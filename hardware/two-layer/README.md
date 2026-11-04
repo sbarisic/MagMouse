@@ -6,7 +6,7 @@ manufacturing package are not modified. This directory is not an ordering packag
 
 | Project | Outline | Status |
 | --- | --- | --- |
-| [Main](main/Main.kicad_pro) | 180 x 295 mm, USB access notch | Routed checkpoint; five cleanup warnings remain |
+| [Main](main/Main.kicad_pro) | 180 x 295 mm, USB access notch | Routed; native CAD checks pass |
 | [Wheel](wheel/Wheel.kicad_pro) | 80 x 75 mm | Routed; native CAD checks pass |
 | [Encoder](encoder/Encoder.kicad_pro) | 14 x 18 mm | Routed; native CAD checks pass |
 
@@ -15,17 +15,34 @@ retained, including the IMU. No feature has been deliberately removed. The copie
 use the existing shared symbol/footprint libraries with corrected relative paths.
 Keep this directory inside the repository when opening a project.
 
+The [stacked Main placement study](sandwich/README.md) explores replacing Main
+with two smaller two-layer boards connected by soldered wires. It includes a
+19-wire map with three shared grounds and two editable boards with matching
+70 × 100 mm tapered outlines (38.5 mm front edge).
+The active study uses passive plastic clicks with Hall sensing; 38 button-coil
+parts and six control wires have been removed. The routed checkpoints above
+retain the earlier coil circuitry.
+Those separate study boards are unrouted and do not replace this routed checkpoint.
+The study also includes a matching Wheel variant with a 19-wire harness, three
+shared grounds, and shorter 17-pad signal arrays on Lower and Wheel. See its
+[wheel wire map](sandwich/WHEEL_WIRE_MAP.md); the routed checkpoints in the table
+above retain the earlier 32-wire interface.
+That matching Wheel variant is now 55 × 60 mm and retains two copper layers.
+
 ## Checkpoint — 2026-11-03
 
-Work paused at the user's request. Main has zero unrouted connections, zero DRC
-errors and zero schematic-parity issues. Its remaining native warnings are four
-track-end warnings and one copper-sliver warning. Wheel and Encoder have no
-reported DRC findings or unrouted connections. The fresh reports below record
-the saved state; these boards have not been electrically validated.
+Main's four track overruns have been trimmed at their connected junctions. A
+redundant WHEEL_PWM_A branch that formed a copper sliver has been removed, and
+the retained left-hand branch now ends at the MCU pad center. Main, Wheel and
+Encoder all have zero reported DRC findings, zero unrouted connections and zero
+schematic-parity issues under the saved rule settings. Five inherited ignored
+check categories remain explicitly listed in the reports.
 
-Resume with Main's five cleanup warnings, then complete visual review and the
-electrical checks listed below. Final board resizing and manufacturing release
-remain future work. The original four-layer projects are unchanged.
+The [layout review](review/LAYOUT_REVIEW.md) records the cleanup, visual screening
+and routing measurements. Next address Main's long SPI/PWM routes and power-path
+review, then the electrical checks below. Final board resizing and manufacturing
+release remain future work. These boards have not been electrically validated.
+The original four-layer projects are unchanged.
 
 The larger outlines are deliberately provisional. They are not compatible with
 the existing three-board panel or the original edge-support fixture. Wire lengths
@@ -69,6 +86,10 @@ hashes, source preservation, circuit identity, layer counts and native DRC resul
 Reports must be regenerated after editing a board. Treat any nonzero unrouted count
 as unfinished work, regardless of this summary text.
 
+[review/routing.json](review/routing.json) records per-net copper lengths, widths,
+layers and via counts, with hashes of the measured boards. Length includes all
+branches; it is not an endpoint delay or an impedance measurement.
+
 ## Tools and reproduction
 
 Use KiCad 10.0.6's bundled Python and CLI. `prepare.py` copies schematic/project
@@ -87,6 +108,10 @@ session with `route.py BOARD import`; then run `finish_copper.py BOARD`, native 
 and the reviewed `cleanup.py` repairs as needed. All imports must retain the
 component/pad-net signature. Preserve session inputs/results locally when iterating.
 
+`trim_main_stubs.py` applies the reviewed 2026-11-03 track cleanup using UUID and
+geometry guards. It is idempotent on the repaired checkpoint. It does not replace
+native DRC or perform general automatic track deletion.
+
 The saved KiCad boards are the editable design sources. These construction helpers
 are not a one-command reproduction of the final routing and cleanup. The Main
 routing process removed inherited ground traces and unnecessary ground vias to
@@ -100,14 +125,18 @@ logs remain under ignored `build/`; they are not project deliverables.
 Routine validation with KiCad Python:
 
 ```powershell
-& '<KiCad>/bin/python.exe' hardware/two-layer/verify.py
+& '<KiCad>/bin/python.exe' hardware/two-layer/verify.py --strict-warnings
 & '<KiCad>/bin/python.exe' hardware/two-layer/review_geometry.py
+& '<KiCad>/bin/python.exe' hardware/two-layer/review_routing.py
 & '<KiCad>/bin/python.exe' hardware/two-layer/export_views.py
 ```
 
 `verify.py` fails if a board is unrouted, has physical errors, differs from its
 schematic, changes component/pad-net identity, has more than two copper layers,
 or the original PCB hashes differ from the recorded source baseline.
+`--strict-warnings` also fails on reported warnings; it does not enable ignored
+checks. Schematic identity normalizes CRLF to LF before comparison, retaining
+all other bytes so Windows checkout line endings cannot cause false failures.
 
 Hardware files: CERN-OHL-S-2.0, as in [../LICENSE](../LICENSE).
 Automation scripts: GPL-3.0-or-later, identified in their source headers.

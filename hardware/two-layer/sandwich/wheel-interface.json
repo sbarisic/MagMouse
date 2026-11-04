@@ -1,0 +1,124 @@
+{
+  "wire_count": 19,
+  "ground_wire_count": 3,
+  "signal_array_pad_count": 17,
+  "wheel_dimensions_mm": [
+    55.0,
+    60.0
+  ],
+  "wheel_copper_layers": 2,
+  "signal_array_copper_envelope_mm": [
+    22.12,
+    4.34
+  ],
+  "previous_array_copper_envelope_mm": [
+    37.36,
+    4.34
+  ],
+  "wires": [
+    {
+      "main": "J8.1",
+      "wheel": "J9.1",
+      "net": "GND"
+    },
+    {
+      "main": "J8.2",
+      "wheel": "J9.2",
+      "net": "SPI_SCLK"
+    },
+    {
+      "main": "J8.3",
+      "wheel": "J9.3",
+      "net": "SPI_MOSI"
+    },
+    {
+      "main": "J8.4",
+      "wheel": "J9.4",
+      "net": "CS_DRV8316"
+    },
+    {
+      "main": "J8.5",
+      "wheel": "J9.5",
+      "net": "DRV_MISO_LOCAL"
+    },
+    {
+      "main": "J8.6",
+      "wheel": "J9.6",
+      "net": "MOTOR_SPI_SCLK"
+    },
+    {
+      "main": "J8.7",
+      "wheel": "J9.7",
+      "net": "MOTOR_SPI_MOSI"
+    },
+    {
+      "main": "J8.8",
+      "wheel": "J9.8",
+      "net": "CS_ADC2"
+    },
+    {
+      "main": "J8.9",
+      "wheel": "J9.9",
+      "net": "ADC2_MISO_LOCAL"
+    },
+    {
+      "main": "J8.10",
+      "wheel": "J9.10",
+      "net": "WHEEL_PWM_A"
+    },
+    {
+      "main": "J8.11",
+      "wheel": "J9.11",
+      "net": "WHEEL_PWM_B"
+    },
+    {
+      "main": "J8.12",
+      "wheel": "J9.12",
+      "net": "WHEEL_PWM_C"
+    },
+    {
+      "main": "J8.13",
+      "wheel": "J9.13",
+      "net": "ACT_DRIVE_EN"
+    },
+    {
+      "main": "J8.14",
+      "wheel": "J9.14",
+      "net": "WHEEL_RUN_REQ"
+    },
+    {
+      "main": "J8.15",
+      "wheel": "J9.15",
+      "net": "DRV_FAULT_LOCAL_N"
+    },
+    {
+      "main": "J8.16",
+      "wheel": "J9.16",
+      "net": "+3V3"
+    },
+    {
+      "main": "J8.17",
+      "wheel": "J9.17",
+      "net": "GND"
+    },
+    {
+      "main": "J10.1",
+      "wheel": "J11.1",
+      "net": "ACT_5V"
+    },
+    {
+      "main": "J10.2",
+      "wheel": "J11.2",
+      "net": "GND"
+    }
+  ],
+  "wheel_other_components_unchanged": true,
+  "wheel_drc_findings": 0,
+  "wheel_unconnected": 0,
+  "wheel_schematic_parity_findings": 0,
+  "board_sha256": {
+    "Lower": "3d9e43898fbdd453f22d54660ecba0eaab128090563e86d84f58e41f15188238",
+    "Upper": "33651b7770e9676a4bc6de9ec4f1afdface66346e9253737f73af6f18f30dda7",
+    "Wheel": "a19e6108abb645093c2e647687e612fdc60775742144613f0a196dd0dc9e9a8b"
+  }
+}

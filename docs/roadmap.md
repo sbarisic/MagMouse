@@ -1,6 +1,19 @@
 # Development roadmap
 
-## Current Rev-A bench checklist
+## Active stacked-board revision — 2026-11-04
+
+- [x] Use two 70 × 100 mm tapered two-layer Main boards, a 55 × 60 mm
+  two-layer Wheel board and the 14 × 18 mm two-layer Encoder.
+- [x] Replace button actuation with passive plastic clicks and Hall sensing;
+  remove 38 parts and reduce the Main stack to 19 wires with three grounds.
+- [ ] Model and fit the plastic click mechanism, sensing magnets and stops.
+- [ ] Split the Main reference schematic into board projects and route Main.
+- [ ] Validate the assembled mechanics, Hall thresholds and wheel operation.
+
+See the [active design](../hardware/two-layer/sandwich/README.md). Historical
+routed-board and purchasing checkpoints below do not describe the active stack.
+
+## Earlier Rev-A bench checklist
 
 Five bare three-board panels, one component population and one stencil.
 U32 remains unpopulated; all other core functions and the four-layer stack remain.
@@ -113,7 +126,7 @@ interfaces.** The existing nesting study is historical planning only.
 1. Resolve mechanical interfaces across main, wheel and upright encoder: mounts,
    GB1806 support, wheel shaft/bearings, middle-click movement, cable bends and
    strain relief, optical lens/baseplate/feet, USB opening, paddles, Hall magnets
-   and actuator gaps. Keep the old Hall positions provisional until this work
+   and plastic click travel. Keep the old Hall positions provisional until this work
    establishes them. The user has no parts/CAD yet and explicitly chose to keep
    mechanics provisional. Preserve the [interface register](../hardware/modular/MECHANICAL_INTERFACES.md)
    while routing fixed circuitry; no mounting dimensions are frozen.
@@ -133,7 +146,7 @@ interfaces.** The existing nesting study is historical planning only.
   connector interference and parts covered by future wheel/button structures.
 - [ ] Before ordering the final board, start a minimal firmware bring-up branch:
   actuator-off boot, USB HID, source detection, ADC1/Hall, optical X/Y, MA735,
-  ADC2 phase readings, low-current commutation, then one bounded button pulse.
+  ADC2 phase readings and low-current wheel commutation.
   Hardware behavior must be demonstrated on suitable development/prototype
   hardware; compilation alone is not architecture validation.
 
@@ -143,7 +156,8 @@ interfaces.** The existing nesting study is historical planning only.
 - [x] Establish electronics, mechanical, firmware and host-software areas.
 - [x] Record preliminary components, interfaces, power questions and license scope.
 - [x] Select custom moving-magnet button actuators, elastic paddle return and
-  DRV8231A drive in place of industrial actuators (2026-09-08; validation pending).
+  DRV8231A drive in place of industrial actuators (2026-09-08; superseded by
+  passive plastic clicks on 2026-11-04).
 
 ## 1. Schematic-level feasibility (next)
 
@@ -158,13 +172,12 @@ interfaces.** The existing nesting study is historical planning only.
   (revision 0.3); see [power review](../hardware/kicad/POWER_REVIEW.md).
 - [ ] Validate USB startup/configuration/suspend, source transitions, inrush,
   voltage/current limits, timeout/reset, reverse current and regeneration on hardware.
-- [ ] Build one elastic-paddle/custom-coil fixture using the
+- [ ] Build one passive plastic click mechanism using the
   [button prototype plan](../mechanical/button-mechanisms/README.md).
-- [ ] Measure passive return, bidirectional force/travel/current, winding properties,
-  pulse response, heating and sensor crosstalk on a current-limited 5 V supply.
+- [ ] Measure click force/travel, passive return, repeatability and Hall response.
 - [ ] Characterize the wheel motor at 5 V and validate its feedback acquisition.
-- [ ] Demonstrate bounded button pulses and driver-off reset/timeout on development
-  hardware before freezing the button schematic and magnetic placement.
+- [ ] Demonstrate calibrated Hall transitions through the plastic click and release
+  before freezing the button mechanics and magnet placement.
 - [x] Allocate all V1 GPIOs and static SPI/PWM/interrupt resources (revision 0.4):
   3-PWM wheel, dedicated second-ADC SPI and one-data-pin RGB; see [interfaces](interfaces.md).
 - [ ] Prove PWM-to-ADC timing, valid low-side sampling windows, angle age and
@@ -261,8 +274,8 @@ that the actuators can operate within the intended power and thermal envelope.
 - [ ] Refine complete-board placement for routing, thermal paths and analog/SPI
   return paths; verify physical assemblies and allocate mounting holes.
 - [ ] Fit optical samples/coupon and freeze lens retention, base/feet, PCB opening
-  and mounting heights; model button travel/stops and actuator mounting.
-- [ ] Validate separate sensing/actuator magnets and separation from wheel/coil fields.
+  and mounting heights; model plastic button travel, clicks and stops.
+- [ ] Validate sensing magnets and separation from wheel fields.
 - [ ] Select flexure material/print process and measure creep, fatigue and stop loads.
 - [ ] Design shaft, bearings, encoder alignment and middle-click mechanism.
 - [ ] Produce reviewed layout, ERC/DRC results, BOM and fabrication exports.
@@ -273,9 +286,8 @@ Exit: editable designs and a documented assembly/inspection procedure.
 
 - [ ] Establish build, tests and CI; verify recovery and actuator-off boot.
 - [ ] Enumerate USB HID and validate optical X/Y and all three button inputs.
-- [ ] Calibrate Hall sensing and coil current measurement one channel at a time.
-- [ ] Calibrate force/current mapping by position and polarity; implement bounded
-  press/release effects with no holding current and measured sleep/wake latency.
+- [ ] Calibrate Hall sensing one button at a time.
+- [ ] Align press/release thresholds and hysteresis with the plastic click mechanism.
 - [ ] Bring up wheel sensing, commutation and bounded torque control.
 - [ ] Integrate source-aware power allocation and fault/suspend paths.
 - [ ] Measure report timing and control latency under combined load.

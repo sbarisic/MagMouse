@@ -1,0 +1,13 @@
+{
+  "main_erc_findings": 0,
+  "baseline_main_erc_findings": 0,
+  "main_unconnected_items": {
+    "Lower": 343,
+    "Upper": 204
+  },
+  "main_placement_drc_findings": 0,
+  "wheel_drc_findings": 0,
+  "wheel_unconnected_items": 0,
+  "wheel_schematic_parity_findings": 0,
+  "wheel_sha256": "a19e6108abb645093c2e647687e612fdc60775742144613f0a196dd0dc9e9a8b"
+}

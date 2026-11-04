@@ -7,8 +7,8 @@ configuration protocol is defined.
 Planned functions:
 
 - Discover the mouse and display firmware/protocol compatibility.
-- Configure button actuation thresholds and bounded haptic profiles.
-- Configure wheel detent behavior and profile selection.
+- Configure button Hall thresholds, hysteresis and calibration. Plastic click feel is mechanical.
+- Configure wheel detent behavior, bounded haptic profiles and profile selection.
 - Guide calibration and display power/fault state.
 - Import/export versioned profiles with validation and explicit device writes.
 

@@ -1,0 +1,3051 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "852f7d5e-5965-56a0-9139-9ac9cb086453")
+  (paper "A3")
+  (title_block
+    (title "MagMouse - 09_Interface_Reservations")
+    (date "2026-09-08")
+    (rev "0.4 DRAFT")
+    (company "MagMouse")
+    (comment 1 "NOT FOR FABRICATION - unresolved circuits listed in README.md"))
+  (lib_symbols
+    (symbol "Connector:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "09 / Allocated interfaces and boot defaults"
+    (at 20 18 0)
+    (effects
+      (font
+        (size 2.5 2.5))
+      (justify left top))
+    (uuid "d7bd4fb0-d65a-501f-8772-90a0b4c548d0"))
+  (text "DRAFT 0.4 - CIRCUIT DEVELOPMENT ONLY - NOT FOR FABRICATION"
+    (at 20 24 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "7406a9b6-26c1-5db1-be20-e4243c00b739"))
+  (text "MCU connections and test pads retain the approved GPIO map.\nSheets 10-13 implement wheel drive, ADC2, encoder, SPI isolation and autonomous braking. Optical, IMU and RGB remain open."
+    (at 20 31 0)
+    (effects
+      (font
+        (size 1.3 1.3))
+      (justify left top))
+    (uuid "da864992-0769-5fe2-9385-cd75defa970d"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 35.56 58.42 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "1be3ebf6-b229-5e3f-afb4-e11ae976fdad")
+    (property "Reference" "TP16"
+      (at 39.56 56.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "CS_PAW"
+      (at 39.56 59.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 35.56 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP16")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 58.42)
+      (xy 35.56 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4f4d6eb4-7d39-5f9d-b3e1-301b1e4e1bd9"))
+  (global_label "CS_PAW"
+    (shape bidirectional)
+    (at 35.56 63.5 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "d4ccecff-1f5a-5e5d-b2ce-745d38d147d0"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 124.46000000000001 58.42 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "237d8911-f78c-5b06-bd1b-57929c3b7aaa")
+    (property "Reference" "TP17"
+      (at 128.46 56.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "WHEEL_RUN_REQ"
+      (at 128.46 59.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 124.46000000000001 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP17")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 124.46 58.42)
+      (xy 124.46 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "11aec557-e0af-562e-bb01-aa748ec1b4db"))
+  (global_label "WHEEL_RUN_REQ"
+    (shape bidirectional)
+    (at 124.46 63.5 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "c4b69c15-c741-54ed-9c16-5b47f688ef84"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 213.36 58.42 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "40cdfeb7-90c4-5cc5-a727-e50c3239ac5c")
+    (property "Reference" "TP18"
+      (at 217.36 56.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "CS_IMU"
+      (at 217.36 59.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 213.36 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP18")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 213.36 58.42)
+      (xy 213.36 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cac8ff86-c1bd-5f08-8194-4f370ad6835f"))
+  (global_label "CS_IMU"
+    (shape bidirectional)
+    (at 213.36 63.5 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "10d58325-e78f-5069-9036-6282edfc8875"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 302.26000000000005 58.42 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "31ab72dd-4fd9-554c-8724-e1f28dd3ece2")
+    (property "Reference" "TP19"
+      (at 306.26000000000005 56.92 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "OPT_CTRL"
+      (at 306.26000000000005 59.42 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 302.26000000000005 58.42 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP19")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 302.26 58.42)
+      (xy 302.26 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d6484d6d-ad66-50e0-874b-e4d996e53710"))
+  (global_label "OPT_CTRL"
+    (shape bidirectional)
+    (at 302.26 63.5 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "00cf80fc-4048-5625-8656-901ac827b84e"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 35.56 88.9 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "35c10a05-5562-5c94-82d1-7bc620f47671")
+    (property "Reference" "TP20"
+      (at 39.56 87.4 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "MOTOR_SPI_MOSI"
+      (at 39.56 89.9 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 35.56 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP20")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 88.9)
+      (xy 35.56 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d28c0934-e377-5cc1-bc0a-d2b608c9be38"))
+  (global_label "MOTOR_SPI_MOSI"
+    (shape bidirectional)
+    (at 35.56 93.98 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "45ca2628-8c28-5478-8107-86f442038580"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 124.46000000000001 88.9 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "04c67d8a-fd3b-576f-a874-1b23e460c167")
+    (property "Reference" "TP21"
+      (at 128.46 87.4 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "MOTOR_SPI_SCLK"
+      (at 128.46 89.9 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 124.46000000000001 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP21")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 124.46 88.9)
+      (xy 124.46 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f54c6027-9e61-54fc-827e-c4ddda4d5fcf"))
+  (global_label "MOTOR_SPI_SCLK"
+    (shape bidirectional)
+    (at 124.46 93.98 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "a263b9e3-af21-52c8-8a10-c660e5f59a5f"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 213.36 88.9 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "ae36139c-a70f-5e98-bc74-c2925d20c690")
+    (property "Reference" "TP22"
+      (at 217.36 87.4 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "MOTOR_SPI_MISO"
+      (at 217.36 89.9 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 213.36 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP22")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 213.36 88.9)
+      (xy 213.36 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b7c928ae-9626-50c6-9213-d897f1219247"))
+  (global_label "MOTOR_SPI_MISO"
+    (shape bidirectional)
+    (at 213.36 93.98 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "e04e0b84-356c-5c6d-9776-cdf28dfe3d28"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 302.26000000000005 88.9 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "7536e6cb-186f-5926-9e9a-888fd9b9c9e5")
+    (property "Reference" "TP23"
+      (at 306.26000000000005 87.4 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "CS_ADC2"
+      (at 306.26000000000005 89.9 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 302.26000000000005 88.9 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP23")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 302.26 88.9)
+      (xy 302.26 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "50b6283a-3f43-514b-be13-199de107d102"))
+  (global_label "CS_ADC2"
+    (shape bidirectional)
+    (at 302.26 93.98 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "74ba6896-9483-5870-bcf6-770e4e8677b5"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 35.56 119.38 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "c2f58312-fcc5-5726-a03a-cf4e4c1f9f08")
+    (property "Reference" "TP24"
+      (at 39.56 117.88 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "CS_MA735"
+      (at 39.56 120.38 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 35.56 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP24")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 119.38)
+      (xy 35.56 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6fb6c939-52a4-5c92-baac-76ddda8ac32f"))
+  (global_label "CS_MA735"
+    (shape bidirectional)
+    (at 35.56 124.46 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "855be763-07f3-50d6-bb84-fb2572a4c972"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 124.46000000000001 119.38 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "829d7605-971c-538b-86ad-33c3d85b806f")
+    (property "Reference" "TP25"
+      (at 128.46 117.88 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "CS_DRV8316"
+      (at 128.46 120.38 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 124.46000000000001 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP25")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 124.46 119.38)
+      (xy 124.46 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2e17e4e7-449f-59bd-85c9-8113a0886251"))
+  (global_label "CS_DRV8316"
+    (shape bidirectional)
+    (at 124.46 124.46 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "fe9f3e7d-5e57-5343-b306-58e8027fd2c4"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 213.36 119.38 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "a6011582-53e0-50fe-b55c-f404f87606ef")
+    (property "Reference" "TP26"
+      (at 217.36 117.88 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "PAW_MOTION_N"
+      (at 217.36 120.38 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 213.36 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP26")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 213.36 119.38)
+      (xy 213.36 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fac7ee13-6fa1-5de5-8fb0-5f6c4af031a3"))
+  (global_label "PAW_MOTION_N"
+    (shape bidirectional)
+    (at 213.36 124.46 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "326a89f1-be7f-5953-9ce2-1baa4caa5388"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 302.26000000000005 119.38 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "1ebe293d-b712-525a-8fb4-af04e45cc7eb")
+    (property "Reference" "TP27"
+      (at 306.26000000000005 117.88 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "IMU_INT1"
+      (at 306.26000000000005 120.38 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 302.26000000000005 119.38 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP27")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 302.26 119.38)
+      (xy 302.26 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4424e486-946e-539f-a427-00b8bcbb87a4"))
+  (global_label "IMU_INT1"
+    (shape bidirectional)
+    (at 302.26 124.46 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "3b97a5d0-b420-5dbb-9464-437a944531ce"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 35.56 149.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "463ca9a2-d69d-5735-a732-7b9fd4c6bebc")
+    (property "Reference" "TP28"
+      (at 39.56 148.36 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "DRV_FAULT_N"
+      (at 39.56 150.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 35.56 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP28")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 149.86)
+      (xy 35.56 154.94))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0d75a085-0354-5a73-b99a-2010167765cb"))
+  (global_label "DRV_FAULT_N"
+    (shape bidirectional)
+    (at 35.56 154.94 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "c9057dce-ce07-51d2-a394-023ad2bd47cf"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 124.46000000000001 149.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "d48c9a5a-22bf-5ca6-a8a9-e44c441a75bf")
+    (property "Reference" "TP29"
+      (at 128.46 148.36 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "WHEEL_PWM_A"
+      (at 128.46 150.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 124.46000000000001 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP29")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 124.46 149.86)
+      (xy 124.46 154.94))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b50de811-b69f-597a-a8bf-a9753e1f3372"))
+  (global_label "WHEEL_PWM_A"
+    (shape bidirectional)
+    (at 124.46 154.94 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b1e3815b-10c0-516a-b4c7-0b6ea5dd411b"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 213.36 149.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "05189b8a-3346-564d-b835-34c8db128e7a")
+    (property "Reference" "TP30"
+      (at 217.36 148.36 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "RGB_DATA"
+      (at 217.36 150.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 213.36 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP30")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 213.36 149.86)
+      (xy 213.36 154.94))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8f9b843b-388f-58db-988b-3a00fe5ee335"))
+  (global_label "RGB_DATA"
+    (shape bidirectional)
+    (at 213.36 154.94 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "754cc9e5-b4a5-5095-8312-55feecb58e3b"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 302.26000000000005 149.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "0b69cf71-8b90-522e-9e4e-364843ef6aac")
+    (property "Reference" "TP31"
+      (at 306.26000000000005 148.36 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "BOOT_SAFE_SPARE"
+      (at 306.26000000000005 150.86 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 302.26000000000005 149.86 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP31")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 302.26 149.86)
+      (xy 302.26 154.94))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b6554481-78cd-5e03-8606-6a80b8cc7f62"))
+  (global_label "BOOT_SAFE_SPARE"
+    (shape bidirectional)
+    (at 302.26 154.94 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "cc09d7dc-9a31-5ade-9a83-9c61c7f75255"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 35.56 180.34 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "549ffd00-0a89-572b-95ba-250cdf2a2ea3")
+    (property "Reference" "TP32"
+      (at 39.56 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "WHEEL_PWM_B"
+      (at 39.56 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 35.56 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP32")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 180.34)
+      (xy 35.56 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "698f7925-2143-58fe-ad01-30c0d95e1ddf"))
+  (global_label "WHEEL_PWM_B"
+    (shape bidirectional)
+    (at 35.56 185.42 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "18d72506-81c9-5bfe-96df-35b702b566a1"))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 124.46000000000001 180.34 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "ca3dfeed-da4c-5e4b-a5f8-28b0f9ca444c")
+    (property "Reference" "TP33"
+      (at 128.46 178.84 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "WHEEL_PWM_C"
+      (at 128.46 181.34 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" ""
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" ""
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" ""
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "PCB copper; no assembly part"
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" ""
+      (at 124.46000000000001 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "TP33")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 124.46 180.34)
+      (xy 124.46 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "966fe1e0-7d34-522a-a7cb-db4ef3092efe"))
+  (global_label "WHEEL_PWM_C"
+    (shape bidirectional)
+    (at 124.46 185.42 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "5b1738d9-b175-5026-9459-68b5c5d864fd"))
+  (symbol
+    (lib_id "Device:R")
+    (at 25.4 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "684d8552-4599-5cb8-9ae8-2ab7434bd09d")
+    (property "Reference" "R72"
+      (at 29.4 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 29.4 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 25.4 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R72")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 25.4 219.71)
+      (xy 25.4 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "264eebdc-d625-5c1f-bd65-df8fc41bb606"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 25.4 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "82076fc3-2c77-5d86-8861-a610f7946005"))
+  (wire
+    (pts
+      (xy 25.4 227.33)
+      (xy 25.4 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2c3591d9-9637-59de-8068-f08568f311cc"))
+  (global_label "CS_PAW"
+    (shape bidirectional)
+    (at 25.4 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "efe5354c-f8b0-583e-902b-f3900c5f72b5"))
+  (symbol
+    (lib_id "Device:R")
+    (at 66.03999999999999 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "84d2c64c-d242-50b1-95c6-8470cf7a33b1")
+    (property "Reference" "R77"
+      (at 70.03999999999999 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 70.03999999999999 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 66.03999999999999 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R77")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 66.04 219.71)
+      (xy 66.04 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6af5c9d3-8718-52d0-854d-a8d30b795421"))
+  (global_label "WHEEL_RUN_REQ"
+    (shape bidirectional)
+    (at 66.04 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "d9fbef8e-2852-5b96-8f88-52353993fbda"))
+  (wire
+    (pts
+      (xy 66.04 227.33)
+      (xy 66.04 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "88ac797a-711f-5d7a-a4f2-515acf7bf5ed"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 66.04 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b0d3f471-1b2e-5894-8ea4-f5e08f2612ca"))
+  (symbol
+    (lib_id "Device:R")
+    (at 106.68 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cda8a896-4ec7-586b-85d3-676783e5bb1e")
+    (property "Reference" "R73"
+      (at 110.68 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 110.68 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 106.68 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R73")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 106.68 219.71)
+      (xy 106.68 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "466c09dc-2b23-581e-86e4-fac80da5ae6a"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 106.68 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "103a7b65-e03e-50f2-a66a-7abdb0d5f8eb"))
+  (wire
+    (pts
+      (xy 106.68 227.33)
+      (xy 106.68 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5791882f-9ea1-53ea-8495-d0d65e904fa3"))
+  (global_label "CS_IMU"
+    (shape bidirectional)
+    (at 106.68 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "9882af35-0528-5b53-bc4b-4e5075745dbe"))
+  (symbol
+    (lib_id "Device:R")
+    (at 147.32 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6143a763-a00e-5a02-9a39-c8000ff1b539")
+    (property "Reference" "R79"
+      (at 151.32 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 151.32 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 147.32 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R79")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 147.32 219.71)
+      (xy 147.32 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "713873ba-298d-5884-bb3d-2b27f77c1e2c"))
+  (global_label "OPT_CTRL"
+    (shape bidirectional)
+    (at 147.32 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "205a84c8-2fc5-5c3a-8484-c027a6fbb6d4"))
+  (wire
+    (pts
+      (xy 147.32 227.33)
+      (xy 147.32 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2353e3c3-d9d9-57fa-a910-37354d741b63"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 147.32 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "840af4de-0bd0-5c42-8fe0-b386eb8b972f"))
+  (symbol
+    (lib_id "Device:R")
+    (at 187.96 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a2d7e483-a7b9-5cf8-a8b6-c19d7e790cb7")
+    (property "Reference" "R74"
+      (at 191.96 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 191.96 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 187.96 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R74")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 187.96 219.71)
+      (xy 187.96 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e6c683b5-b6fd-5384-93ba-da084c1f6b20"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 187.96 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "c71fa154-59da-5e57-8611-6c2590ecd1c2"))
+  (wire
+    (pts
+      (xy 187.96 227.33)
+      (xy 187.96 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "70500eb8-bb37-579b-bf81-2e3e9443c289"))
+  (global_label "CS_ADC2"
+    (shape bidirectional)
+    (at 187.96 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "5eec4b2e-2f01-5ef7-9a17-aca988e3a3d1"))
+  (symbol
+    (lib_id "Device:R")
+    (at 228.6 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b6a3decf-69e4-55a0-9fed-ddb751570486")
+    (property "Reference" "R75"
+      (at 232.6 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 232.6 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 228.6 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R75")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 228.6 219.71)
+      (xy 228.6 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bc034358-4cbe-58c7-b24f-7cfd2a74b61e"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 228.6 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "b83d1ee1-fac3-5927-84af-9b4b50f8881c"))
+  (wire
+    (pts
+      (xy 228.6 227.33)
+      (xy 228.6 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bc4954e2-9ef8-5033-8e64-da1d530feff9"))
+  (global_label "CS_MA735"
+    (shape bidirectional)
+    (at 228.6 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "8cef6c93-4c89-55b4-8697-fffa471aef3d"))
+  (symbol
+    (lib_id "Device:R")
+    (at 269.24 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8002af3a-0e82-502c-afa9-9863ad178877")
+    (property "Reference" "R76"
+      (at 273.24 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 273.24 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 269.24 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R76")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 269.24 219.71)
+      (xy 269.24 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1ae297e4-4cdb-5e4c-93c0-e907f014e247"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 269.24 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "b73257f2-0d92-5b71-a8ce-f6d9e9f3c27a"))
+  (wire
+    (pts
+      (xy 269.24 227.33)
+      (xy 269.24 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "10a043e7-f857-5c12-9ef6-ca46253e7f5a"))
+  (global_label "CS_DRV8316"
+    (shape bidirectional)
+    (at 269.24 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "24e94894-ad51-5bfa-8e65-513305bb9a26"))
+  (symbol
+    (lib_id "Device:R")
+    (at 309.88 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2a76a3bf-ec2e-51f8-82aa-68ac0ec87b63")
+    (property "Reference" "R78"
+      (at 313.88 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 313.88 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 309.88 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R78")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 309.88 219.71)
+      (xy 309.88 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "28f3e27a-8386-5c03-b880-aaf5c6fe5cb7"))
+  (global_label "RGB_DATA"
+    (shape bidirectional)
+    (at 309.88 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "e7ec0137-8786-5d8d-8c62-e1ba64e3b627"))
+  (wire
+    (pts
+      (xy 309.88 227.33)
+      (xy 309.88 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "95903b78-1728-5dc6-826d-991167164c15"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 309.88 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "b3b5ce1d-4b60-5253-9015-8032991f78b3"))
+  (symbol
+    (lib_id "Device:R")
+    (at 350.52 223.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9ae1b829-f55e-5f04-9d1b-059688a4d78d")
+    (property "Reference" "R80"
+      (at 354.52 222.02 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Value" "10k"
+      (at 354.52 224.52 0)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Datasheet" ""
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "MPN" "0603WAF1002T5E"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "LCSC" "C25804"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "JLCPCB Part #" "C25804"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Sourcing Status" "Reuses catalog selection verified 2026-09-08; refresh stock before order"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Checked" "2026-09-08"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C25804.html"
+      (at 350.52 223.52 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.0 1.0))
+        (justify left)))
+    (instances
+      (project "Main"
+        (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/56122003-a52d-598a-a125-cd0e2f54c82a"
+          (reference "R80")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 350.52 219.71)
+      (xy 350.52 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6bbb9df1-289f-53ed-a658-0b70fc41067c"))
+  (global_label "BOOT_SAFE_SPARE"
+    (shape bidirectional)
+    (at 350.52 214.63 90)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify left))
+    (uuid "efee2407-1eee-5d21-b5a4-a504b3bf7dc0"))
+  (wire
+    (pts
+      (xy 350.52 227.33)
+      (xy 350.52 232.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "be2d3323-392c-58a8-9810-9301f6c1c147"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 350.52 232.41 270)
+    (effects
+      (font
+        (size 1.0 1.0))
+      (justify right))
+    (uuid "dc40c04a-09be-5586-a0b8-0b9aece4429d"))
+  (text "Only the N8 module is covered. Wheel voltage-domain isolation and hardware-qualified RUN are on sheets 10-12.\nOptical/IMU/RGB circuits must still respect their voltage and power-off requirements.\nGPIO46 stays LOW for download recovery. GPIO45 RGB interface must not pull the strap high during reset."
+    (at 20 261 0)
+    (effects
+      (font
+        (size 1.05 1.05))
+      (justify left top))
+    (uuid "71d3d389-0189-5b11-8009-2071bee03ed0"))
+  (embedded_fonts no))

@@ -1,10 +1,16 @@
 # MagMouse
 
-An open-source wired mouse exploring contactless magnetic buttons, programmable
-electromagnetic click feedback, and a motorized haptic scroll wheel.
+An open-source wired mouse exploring contactless Hall-sensed buttons with plastic
+click mechanisms, and a motorized haptic scroll wheel.
 
-**Status: three Rev-A bench PCBs routed; supplier/CAM and hardware approval pending.**
-Open the active [Main project](hardware/modular/main/Main.kicad_pro) or
+**Active development: [four two-layer boards](hardware/two-layer/sandwich/README.md),
+with two 70 × 100 mm stacked Main boards and passive plastic button clicks.**
+Main placement is unrouted; the 55 × 60 mm Wheel and 14 × 18 mm Encoder are routed.
+The Main stack and Wheel harness each use 19 wires with three shared grounds.
+
+The earlier three-board Rev-A bench design below retains button coils and is a
+historical checkpoint, not the current button design.
+Open the earlier [Main project](hardware/modular/main/Main.kicad_pro) or
 [Wheel project](hardware/modular/wheel/Wheel.kicad_pro). Both have zero unrouted
 connections and zero physical DRC/parity issues. See the
 [routing review](hardware/modular/MAIN_SIGNAL_ROUTING.md) and
@@ -13,7 +19,7 @@ project is retained as a reference. These are not fabrication-ready designs;
 mechanics, manufacturing and hardware qualification remain open. Contactless sensing removes
 electrical switch contacts; it does not eliminate mechanical wear or other failures.
 
-The current [Rev-A bench package](hardware/bench/README.md) targets five bare
+The earlier [Rev-A bench package](hardware/bench/README.md) targets five bare
 three-board panels, one self-assembled population and one stencil, with U32
 unpopulated. Encoder now uses the common four-layer construction. The
 [cost checkpoint](hardware/bench/COST_CHECKPOINT.md) records historical delivered
@@ -24,7 +30,7 @@ The files are for quote/review only, pending supplier, assembly, bench-fit and
 CAM checks. Earlier [PCBA quote packages](hardware/quotes/README.md) remain as
 historical comparisons, not the selected purchasing plan.
 
-Nine internal connectors now use labelled soldered-wire arrays. The
+In that earlier package, nine internal connectors use labelled soldered-wire arrays. The
 [wire map](hardware/bench/package/wire-map.svg) retains all conductors and grounds;
 [printable PETG fixtures](mechanical/bench/README.md) include editable build123d,
 STEP/STL parts and assembly drawings. Fixed button magnets use
@@ -36,9 +42,9 @@ one set, excluding optics, freight/taxes and unpriced fixture/wire materials.
 
 - ESP32-S3 with native USB Full-Speed HID; target report interval: 1 ms.
 - PMW3360DM-T2QU + LM19-LSI optical sensor for cursor movement; ICM-42688-P for supplementary motion.
-- Three elastic button paddles provide passive return. Each uses a TMAG5253
-  position sensor with its own magnet, plus a custom moving-magnet actuator with
-  a stationary wound coil, ADS7038 feedback, and a DRV8231A bidirectional driver.
+- Three plastic click mechanisms provide tactile feedback and passive return.
+  Each uses a TMAG5253 Hall sensor and a sensing magnet, read through ADS7038.
+  Buttons have no coils or powered force feedback.
 - MA735 angle sensing and a GB1806 motor driven by DRV8316R for scroll haptics.
 - One USB-C cable for data and 5 V power, with force limits based on detected
   source capability. A powered Type-C hub/adapter is the intended full-power source.
