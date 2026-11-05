@@ -1,0 +1,60 @@
+[
+  {
+    "method": "64 text FedEx Express （DDP) 10-12 business days",
+    "observed": [
+      "\t\t\t\t65 text Notes: You will enjoy a waiver of Duty & Tax Disbursement Fee with minimun charge of EUR 15 when selecting FedEx Express DDP",
+      "\t\t\t28 text $539.32",
+      "\t\t\t29 text Shipping Estimate",
+      "\t\t\t30 text $99.46",
+      "\t\t\t72 text Customs duties & taxes $162.47",
+      "\t\t\t31 text Grand Total",
+      "\t\t\t32 text $801.25"
+    ]
+  },
+  {
+    "method": "51 text DHL Express 2-4 business days",
+    "observed": [
+      "\t\t\t\t65 text Notes: You will enjoy a waiver of Duty & Tax Disbursement Fee with minimun charge of EUR 15 when selecting FedEx Express DDP",
+      "\t\t\t28 text $539.32",
+      "\t\t\t29 text Shipping Estimate",
+      "\t\t\t30 text $34.62",
+      "\t\t\t31 text Grand Total",
+      "\t\t\t32 text $573.94"
+    ]
+  },
+  {
+    "method": "54 text UPS Worldwide Express Saver 6-8 business days",
+    "observed": [
+      "\t\t\t\t65 text Notes: You will enjoy a waiver of Duty & Tax Disbursement Fee with minimun charge of EUR 15 when selecting FedEx Express DDP",
+      "\t\t\t28 text $539.32",
+      "\t\t\t29 text Shipping Estimate",
+      "\t\t\t30 text $92.84",
+      "\t\t\t31 text Grand Total",
+      "\t\t\t32 text $632.16"
+    ]
+  },
+  {
+    "method": "57 text FedEx Express 10-12 business days",
+    "observed": [
+      "\t\t\t\t65 text Notes: You will enjoy a waiver of Duty & Tax Disbursement Fee with minimun charge of EUR 15 when selecting FedEx Express DDP",
+      "\t\t\t28 text $539.32",
+      "\t\t\t29 text Shipping Estimate",
+      "\t\t\t30 text $90.46",
+      "\t\t\t31 text Grand Total",
+      "\t\t\t32 text $629.78"
+    ]
+  },
+  {
+    "method": "73 text DHL Express (DDP) 2-4 business days",
+    "observed": [
+      "\t\t\t\t65 text Notes: You will enjoy a waiver of Duty & Tax Disbursement Fee with minimun charge of EUR 15 when selecting FedEx Express DDP",
+      "\t\t\t28 text $539.32",
+      "\t\t\t29 text Shipping Estimate",
+      "\t\t\t30 text $40.39",
+      "\t\t\t84 text Customs duties & taxes $147.71 Duty & Tax Disbursement Fee",
+      "\t\t\t86 text $8.27",
+      "\t\t\t31 text Grand Total",
+      "\t\t\t32 text $735.69"
+    ]
+  }
+]

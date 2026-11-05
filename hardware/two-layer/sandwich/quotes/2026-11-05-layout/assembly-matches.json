@@ -1,0 +1,1181 @@
+[
+  {
+    "cells": [
+      "L_C1,L_C2,L_C23,L_C3,L_C5,L_C73,L_C74,L_C77,L_C78,U_C37,U_C38,U_C39,U_C40,U_C88,W_C44,W_C45,W_C68,W_C69",
+      "CL31A106KAHNNNE",
+      "C_1206_3216Metric",
+      "CL31A106KAHNNNE\nC9807\n10uF 25V X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "100",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€3.8344",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_C4,L_C63,U_C19,U_C20,U_C21,U_C24,U_C27,U_C89,W_C46,W_C48,W_C56,W_C57,W_C58,E_C62",
+      "CL31B105KBHNNNE",
+      "C_1206_3216Metric",
+      "CL31B105KBHNNNE\nC1848\n1uF 50V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "74",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Basic",
+      "€4.0723",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_C22,L_C53,L_C55,L_C6,L_C64,L_C70,L_C75,L_C76,L_C80,L_C83,L_C85,L_C86,L_C87,U_C16,U_C17,U_C18,U_C28,U_C29,U_C31,U_C32,U_C33,U_C34,U_C35,U_C36,W_C41,W_C42,W_C43,W_C49,W_C51,W_C52,W_C54,W_C65,W_C66",
+      "CC1206KRX7R9BB104",
+      "C_1206_3216Metric",
+      "CC1206KRX7R9BB104\nC82601\n100nF 50V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "175",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€3.7435",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_C71,L_C81,L_C82",
+      "CL31B225KAHNNNE",
+      "C_1206_3216Metric",
+      "CL31B225KAHNNNE\nC170102\n2.2uF 25V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "23",
+      "5",
+      "3",
+      "0",
+      "/",
+      "15",
+      "JLCPCB",
+      "Extended",
+      "$1.6330",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_C72",
+      "CC1206KRX7R9BB103",
+      "C_1206_3216Metric_OneSideSilk",
+      "CC1206KRX7R9BB103\nC106239\n10nF 50V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "23",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.7758",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_C25,U_C26",
+      "CC1206KRX7R9BB103",
+      "C_1206_3216Metric",
+      "CC1206KRX7R9BB103\nC106239\n10nF 50V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_C79",
+      "CC1206KRX7R9BB102",
+      "C_1206_3216Metric",
+      "CC1206KRX7R9BB102\nC107207\n1nF 50V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.4110",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_C84",
+      "CL31A475KAHNNNE",
+      "C_1206_3216Metric",
+      "CL31A475KAHNNNE\nC11044\n25V 4.7uF X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$1.6992",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_D1",
+      "SMBJ12A",
+      "D_SMB",
+      "SMBJ12A\nC151251\n-65℃~+150℃ 13V 15.9V 1uA 21.5V 28A@10/1000us 600W@10/1000us IEC 61000-4-2、IEC 61000-4-4 TVS Unidirectional DO-214AA ESD and Surge Protection (TVS/ESD) ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.7399",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_D5",
+      "SK6805-EC15",
+      "OPSCO_SK6805_EC15",
+      "SK6805-EC15\nC2890035\n-40℃~+80℃ 0.5mA 0.65mm 1.5mm 1.5mm 120mcd~240mcd 160° 1kHz 2000V 20mcd~40mcd 3.5V~5.5V 460nm~470nm 50mcd~100mcd 520nm~530nm 620nm~625nm 800Kbit/s Built-in power-on reset circuit、Built-in one-way transmission function Semi-transparent lens SMD-4P,1.5x1.5mm RGB LEDs(Built-in IC) ROHS",
+      "7",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.6779",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_J1",
+      "TYPE-C-31-M-12",
+      "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "TYPE-C-31-M-12\nC165948\n-30℃~+80℃ 1 10,000 cycles 16P 20V 5A 7.35mm Female Surface Mount, Right Angle Type-C SMD USB Connectors ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.9340",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R5,L_R6,U_R58",
+      "RC1206FR-0733RL",
+      "R_1206_3216Metric",
+      "RC1206FR-0733RL\nC137308\n-55℃~+155℃ 200V 250mW 33Ω Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "25",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.1931",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R25",
+      "RC1206FR-07887KL",
+      "R_1206_3216Metric",
+      "RC1206FR-07887KL\nC488997\n-55℃~+155℃ 200V 250mW 887kΩ Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.0555",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R28,U_R44,U_R45,U_R64,U_R69",
+      "RC1206FR-071KL",
+      "R_1206_3216Metric",
+      "RC1206FR-071KL\nC131398\n-55℃~+155℃ 1kΩ 200V 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "35",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.2672",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R101,L_R110,L_R129,L_R133,L_R134,L_R136,L_R26,L_R27,U_R31,U_R32,U_R33,U_R34,U_R35,U_R36,U_R37,U_R38,U_R39,U_R40,U_R62,U_R63,U_R66,U_R67,U_R71,W_R100,W_R112,W_R114,W_R120,W_R83,W_R89,W_R90,W_R91,W_R92,W_R94,W_R95,W_R96,W_R97",
+      "RC1206FR-07100KL",
+      "R_1206_3216Metric",
+      "RC1206FR-07100KL\nC137393\n-55℃~+155℃ 100kΩ 200V 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "190",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€1.6527",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R125,W_R105,W_R106,W_R107,W_R108,W_R109",
+      "RC1206JR-070RL",
+      "R_1206_3216Metric",
+      "RC1206JR-070RL\nC108081\n-55℃~+155℃ 0Ω 200V 250mW Thick Film Resistor ±5% 1206 Chip Resistor - Surface Mount ROHS",
+      "40",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.2201",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R126,L_R127,L_R130,L_R131,L_R135,L_R3,L_R4,L_R7,L_R72,L_R73,L_R74,L_R75,L_R76,L_R77,L_R78,L_R79,L_R80,L_R99,U_R30,U_R46,U_R47,U_R48,U_R49,U_R61,U_R70,W_R111,W_R137,W_R138,W_R139,W_R140,W_R82,W_R84,W_R86,W_R98",
+      "RC1206FR-0710KL",
+      "R_1206_3216Metric",
+      "RC1206FR-0710KL\nC132649\n-55℃~+155℃ 10kΩ 200V 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "180",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€1.4060",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R128,W_R102,W_R103,W_R104",
+      "RC1206FR-07330RL",
+      "R_1206_3216Metric",
+      "RC1206FR-07330RL\nC114944\n-55℃~+155℃ 200V 250mW 330Ω Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "30",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.2157",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R132",
+      "RC1206FR-0739RL",
+      "R_1206_3216Metric",
+      "RC1206FR-0739RL\nC137295\n-55℃~+155℃ 200V 250mW 39Ω Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.0915",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_R141,L_R142,L_R143,W_R144,W_R145",
+      "RC1206FR-0733KL",
+      "R_1206_3216Metric",
+      "RC1206FR-0733KL\nC137309\n-55℃~+155℃ 200V 250mW 33kΩ Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "35",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.3324",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_SW1,L_SW2",
+      "TS-1088-AR02016",
+      "SW_SPST_TS-1088-xR020",
+      "TS-1088-AR02016\nC720477\n-30℃~+80℃ 1.6N 100,000 cycles 12V 2mm 3.9mm 3mm 50mA Black Round Button SMD(SMT) Tab SPST Surface Mount,Vertical Without Bracket SMD,4x3mm Tactile Switches ROHS",
+      "14",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "JLCPCB",
+      "Basic",
+      "$0.7378",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U1",
+      "TPD2EUSB30DRTR",
+      "Texas_DRT-3",
+      "TPD2EUSB30DRTR\nC97502\n-40℃~+85℃ 0.7pF 2 45W 5.5V 5A@8/20us 7V 8V ESD IEC 61000-4-2、IEC 61000-4-5 Unidirectional SOT(9x3) ESD and Surge Protection (TVS/ESD) ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$3.4180",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U2",
+      "TPS62162DSGR",
+      "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "TPS62162DSGR\nC40256\n-40℃~+125℃@(TJ) 1 17uA 1A 2.25MHz 3.3V 3V~17V Buck Buck Built-in Fixed Yes WSON-8-EP(2x2) DC-DC Converters ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$5.7155",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U3",
+      "ESP32-S3-MINI-1-N8",
+      "ESP32-S2-MINI-1",
+      "ESP32-S3-MINI-1-N8\nC2913206\n-104.5dBm -40℃~+85℃ 2.4GHz 20.5dBm 330mA 3V~3.6V 97mA Bluetooth5.0 ESP32-S3FN8 Chip On-board PCB Antenna UART、SPI、I2C、I2S、USB SMD WiFi Modules ROHS",
+      "5",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€21.0037",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U11",
+      "TUSB320LAIRWBR",
+      "Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "TUSB320LAIRWBR\nC132554\n-40℃~+85℃ 2.7V~5V 3A 70uA I2C Not supported Not supported Programmable charging current X2-QFN-12(1.6x1.6) USB Converters ROHS",
+      "5",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€5.9296",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U25,L_U29,L_U37,W_U26",
+      "SN74LVC125APWR",
+      "TSSOP-14_4.4x5mm_P0.65mm",
+      "SN74LVC125APWR\nC7813\n-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers ROHS",
+      "25",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€7.8575",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_U24",
+      "SN74LVC125APWR",
+      "TSSOP-14_4.4x5mm_P0.65mm_InsetPin1",
+      "SN74LVC125APWR\nC7813\n-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers ROHS",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U28",
+      "TPS22919DCKR",
+      "SOT-363_SC-70-6",
+      "TPS22919DCKR\nC2149796\n-40℃~+125℃ 1 1.5A 1.6V~5.5V 89mΩ Active High Load Switch Output discharge function、Soft-start、Overcurrent Protection、Over temperature protection、Short-Circuit Protection SC-70-6 Power Distribution Switches ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.8554",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U32",
+      "ICM-42688-P",
+      "LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y",
+      "ICM-42688-P\nC1850418\n-40℃~+85℃ 1.71V~3.6V 16bit 2KB 7.5uA IMU (accelerometer + gyroscope) SPI、I2C X,Y,Z X,Y,Z ±16g ±2000dps Motion Event Detection, Synchronization, Timestamp Support LGA-14(2.5x3) Accelerometers ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$99.9030",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U33",
+      "TPS7A2450DBVR",
+      "SOT-23-5",
+      "TPS7A2450DBVR\nC2864436\n-40℃~+125℃@(Tj) 1 18V 200mA 250mV@(200mA) 2uA 300uVrms 5V 70dB@(100Hz) Fixed Over Current Protection、Thermal Shutdown Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$1.4820",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U34",
+      "SN74LV1T34DBVR",
+      "SOT-23-5",
+      "SN74LV1T34DBVR\nC100024\n-40℃~+125℃ 1 1 1.6V~5.5V 10uA 5.5ns@5V,15pF 74LV 8mA 8mA Level shifting Push-pull Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$2.4983",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U36",
+      "TLV75519PDBVR",
+      "SOT-23-5",
+      "TLV75519PDBVR\nC2865381\n-40℃~+125℃@(Tj) 1 1.9V 25uA 400mV@(500mA) 46dB@(100kHz) 5.5V 500mA 71.5uVrms Fixed Positive Under Voltage Lockout、Over Current Protection、Over Temperature Protection、Soft Start、Enable SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$1.3818",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U38",
+      "TPS22918DBVR",
+      "SOT-23-6",
+      "TPS22918DBVR\nC131941\n-40℃~+105℃ 1 1V~5.5V 2A 53mΩ Active High Load Switch Output discharge function、Soft-start、Integrated charge pump SOT-23-6 Power Distribution Switches ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$1.7100",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "L_U39",
+      "SN74LVC1G125DBVR",
+      "SOT-23-5",
+      "SN74LVC1G125DBVR\nC23654\n-40℃~+125℃ 1 1 1.65V~5.5V 10uA 3.7ns@3.3V,15pF 32mA 32mA 74LVC Tri-State Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.5994",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_D2,W_D6",
+      "SMBJ6.0A",
+      "D_SMB",
+      "SMBJ6.0A\nC83270\n-65℃~+150℃ 10.3V 46nA 58.3A 6.67V 600W 6V IEC 61000-4-2 TVS Unidirectional DO-214AA ESD and Surge Protection (TVS/ESD) ROHS",
+      "12",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€1.6222",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_D3,U_D4",
+      "BAT54-7-F",
+      "SOT-23",
+      "BAT54-7-F\nC106920\n-65℃~+150℃ 1 Independent 200mA 2uA@25V 30V 600mA 800mV@100mA SOT-23 Schottky Diodes ROHS",
+      "15",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "JLCPCB",
+      "Extended",
+      "$0.5355",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_Q1,U_Q2,U_Q3,W_Q4",
+      "2N7002",
+      "SOT-23",
+      "2N7002\nC8545\n1 N-channel 115mA 2.5V 225mW 25pF 50pF 5pF 5Ω@10V 60V N-Channel ±20V SOT-23 MOSFETs ROHS",
+      "28",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Basic",
+      "€0.4275",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_R42,U_R43,U_R56,U_R57,U_R60",
+      "RC1206FR-073K3L",
+      "R_1206_3216Metric",
+      "RC1206FR-073K3L\nC137292\n-55℃~+155℃ 200V 250mW 3.3kΩ Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "35",
+      "5",
+      "5",
+      "0",
+      "/",
+      "25",
+      "JLCPCB",
+      "Extended",
+      "$0.3430",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_R59,W_R146,W_R87,W_R88",
+      "RC1206FR-074K7L",
+      "R_1206_3216Metric",
+      "RC1206FR-074K7L\nC137262\n-55℃~+155℃ 200V 250mW 4.7kΩ Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "30",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€0.1917",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_U7,U_U8,U_U9",
+      "TMAG5253BA2IQDMRR",
+      "Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm",
+      "TMAG5253BA2IQDMRR\nC35414983\nBuilt-in temperature sensor X2SON-4-EP(1.1x1.4) Linear Hall Sensors ROHS",
+      "15",
+      "5",
+      "3",
+      "0",
+      "/",
+      "15",
+      "JLCPCB",
+      "Extended",
+      "$13.3455",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_U12,U_U13",
+      "TPS259470LRPWR",
+      "Texas_RPW0010A",
+      "TPS259470LRPWR\nC3662793\n-40℃~+125℃ 1 1mm 2.7V~23V 28.3mΩ 2mm 2mm 500mA~6A Integrated FET Overcurrent Protection、Short-Circuit Protection、Under-voltage lockout、Thermal Protection、Overvoltage clamping protection Surface Mount VQFN-10-HR(2x2) Surge Protection Devices (SPDs) ROHS",
+      "10",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "JLCPCB",
+      "Extended",
+      "$11.4480",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_U14",
+      "SN74LVC2G04DCKR",
+      "SOT-363_SC-70-6",
+      "SN74LVC2G04DCKR\nC105251\n-40℃~+125℃ 1.65V~5.5V 1.7V~2V 10uA 2 2 3.2ns@5V,50pF 32mA 32mA 700mV~800mV 74LVC Power shutdown protection SOT-363-6 Inverters ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$1.4714",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_U15",
+      "SN74LVC1G123DCUR",
+      "VSSOP-8_2.3x2mm_P0.5mm",
+      "SN74LVC1G123DCUR\nC352969\n-40℃~+125℃ 1 1.65V~5.5V 18.5ns 20uA 32mA 32mA 74LVC Monostable Reset input、Adjustable pulse width、Retriggerable function Schmitt trigger VSSOP-8-0.5mm Monostable Multivibrators ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$9.1255",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_U16,U_U18,W_U22",
+      "SN74LVC08APWR",
+      "TSSOP-14_4.4x5mm_P0.65mm",
+      "SN74LVC08APWR\nC465737\n-40℃~+125℃ 1.65V~3.6V 1.7V~2V 1uA 2 200mV、240mV、300mV、400mV、550mV、600mV、750mV、800mV 24mA 24mA 3.9ns@3.3V,50pF 4 700mV~800mV 74LVC Series AND Gate TSSOP-14 Logic Gates ROHS",
+      "16",
+      "5",
+      "0",
+      "0",
+      "/",
+      "0",
+      "JLCPCB",
+      "Extended",
+      "€6.8594",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U_U19",
+      "TLV9001IDBVR",
+      "SOT-23-5",
+      "TLV9001IDBVR\nC398363\n-2.75V~-900mV、900mV~2.75V -40℃~+125℃ 1 1.6mV 1.8V~5.5V 1MHz 2V/us 2pA 4.7nV/√Hz@1kHz 40mA 5pA 600nV/℃ 60uA 86dB Enable/shutdown function、EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output SOT-23-5 Operational Amplifier ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.5845",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_C47",
+      "CC1206KRX7R9BB473",
+      "C_1206_3216Metric",
+      "CC1206KRX7R9BB473\nC107209\n47nF 50V X7R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.5520",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_C50",
+      "CL31A226KAHNNNE",
+      "C_1206_3216Metric",
+      "CL31A226KAHNNNE\nC12891\n22uF 25V X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Basic",
+      "$1.0539",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_C59,W_C60,W_C61,W_C67",
+      "CC1206JRNPO9BN220",
+      "C_1206_3216Metric",
+      "CC1206JRNPO9BN220\nC327061\n22pF 50V NP0 ±5% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "28",
+      "5",
+      "4",
+      "0",
+      "/",
+      "20",
+      "JLCPCB",
+      "Extended",
+      "$1.3440",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_C90",
+      "16SVPC100M",
+      "CP_Elec_6.3x5.9",
+      "16SVPC100M\nC136275\n-55℃~+105℃ 100uF 16V 2.49A@100kHz 2000hrs@105℃ 24mΩ@100kHz 5.9mm 6.3mm Polarized Polymer ±20% SMD,D6.3xL5.9mm Polymer Aluminum Capacitors ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$3.5160",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_Q5",
+      "AO3400A",
+      "SOT-23",
+      "AO3400A\nC20917\n-55℃~+150℃ 1 N-channel 1.45V 1.4W 30V 48mΩ@2.5V 5.7A 50pF 630pF 75pF 7nC@10V N-Channel SOT-23 MOSFETs ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Basic",
+      "$0.7992",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_R81",
+      "RC1206FR-0722RL",
+      "R_1206_3216Metric",
+      "RC1206FR-0722RL\nC114943\n-55℃~+155℃ 200V 22Ω 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.1095",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_R113",
+      "RC1206FR-0734K8L",
+      "R_1206_3216Metric",
+      "RC1206FR-0734K8L\nC274050\n-55℃~+155℃ 200V 250mW 34.8kΩ Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.0555",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_R115,W_R116,W_R117",
+      "RC1206FR-071ML",
+      "R_1206_3216Metric",
+      "RC1206FR-071ML\nC108083\n-55℃~+155℃ 1MΩ 200V 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "25",
+      "5",
+      "3",
+      "0",
+      "/",
+      "15",
+      "JLCPCB",
+      "Extended",
+      "$0.2725",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_R119",
+      "RC1206FR-07100RL",
+      "R_1206_3216Metric",
+      "RC1206FR-07100RL\nC137392\n-55℃~+155℃ 100Ω 200V 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "15",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.1380",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_R121,W_R122,W_R123,W_R124",
+      "RC2512JK-7W47RL",
+      "R_2512_6332Metric",
+      "RC2512JK-7W47RL\nC136992\n-55℃~+155℃ 200V 2W 47Ω Thick Film Resistor ±200ppm/℃ ±5% 2512 Chip Resistor - Surface Mount ROHS",
+      "24",
+      "5",
+      "4",
+      "0",
+      "/",
+      "20",
+      "JLCPCB",
+      "Extended",
+      "$3.6720",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_U21",
+      "DRV8316RRGFR",
+      "Texas_RGF0040E",
+      "DRV8316RRGFR\nC5218861\n-40℃~+125℃ 1.5uA 3 8A 8A 95mΩ SPI Three Phase Yes VQFN-40(5x7) Brushless DC (BLDC) Motor Driver ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$22.7805",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "W_U30",
+      "TLV1811DBVR",
+      "SOT-23-5",
+      "TLV1811DBVR\nC5373003\n-40℃~+125℃ 0.01pA 0.15pA 1 1.2uV/℃ 2.4V~40V 40V 420ns 500uV 5uA ESD protection、Fail-safe function Push-pull Rail-to-rail input TTL、CMOS SOT-23-5 Comparators ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$3.4180",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "E_U27",
+      "MA735GGU-P",
+      "MPS_UTQFN14_2x2",
+      "MA735GGU-P\nC17233427\n-40℃~+125℃ 11.7mA 2mm 2mm 3V~3.6V Hall-effect position sensor SPI Zero position programming、Fault diagnosis、Multi-axis magnetic field detection、Signal filtering processing UTQFN-14(2x2) Position Sensors ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "",
+      "Extended",
+      "$7.0565",
+      "5 shortfall"
+    ],
+    "selected": false
+  },
+  {
+    "cells": [
+      "L_L1",
+      "SRP4020CC-3R3M",
+      "L_Bourns_SRP4020CC",
+      "SRP4020CC-3R3M\nC27524037\n3.3uH 3.5A 4A 69mΩ Molded Inductor ±20% SMD,4x4mm Molding Power Inductors ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "",
+      "Extended",
+      "$3.8105",
+      "5 shortfall"
+    ],
+    "selected": false
+  },
+  {
+    "cells": [
+      "L_U20",
+      "TPD2E2U06DCKR",
+      "SOT-323_SC-70",
+      "TPD2E2U06DCKR\nC1855726\n-40℃~+125℃ 1.5pF 10nA 12.4V 2 5.5A@8/20us 5.5V 6.5V 75W@8/20us Bidirectional IEC 61000-4-2、IEC 61000-4-5 TVS SC-70-3 ESD and Surge Protection (TVS/ESD) ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "",
+      "Extended",
+      "$0.8750",
+      "7 shortfall"
+    ],
+    "selected": false
+  },
+  {
+    "cells": [
+      "U_R29,U_R41,U_R65,U_R68",
+      "RC1206FR-0722K1L",
+      "R_1206_3216Metric",
+      "RC1206FR-0722K1L\nC488737\n-55℃~+155℃ 200V 22.1kΩ 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS",
+      "30",
+      "5",
+      "4",
+      "0",
+      "/",
+      "20",
+      "",
+      "Extended",
+      "$0.1830",
+      "30 shortfall"
+    ],
+    "selected": false
+  },
+  {
+    "cells": [
+      "U_U10,W_U23",
+      "ADS7038IRTER",
+      "WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "ADS7038IRTER\nC2871580\n-40℃~+125℃ 0.5LSB 12 1MHz 2.35V~5.5V 600uA 60MHz 73.1dB 8 Built-in Built-in No Not supported SAR SPI WQFN-16-EP(3x3) Analog to Digital Converters (ADC) ROHS",
+      "10",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "",
+      "Extended",
+      "$59.8860",
+      "10 shortfall"
+    ],
+    "selected": false
+  },
+  {
+    "cells": [
+      "W_U31",
+      "LM4040AIM3-2.5/NOPB",
+      "SOT-23",
+      "LM4040AIM3-2.5/NOPB\nC139302\n-40℃~+85℃@(Ta) 100ppm/℃ 15mA 2.5V 35uVrms 65uA Fixed Parallel ±0.1% SOT-23 Voltage Reference ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "",
+      "Extended",
+      "$9.1745",
+      "5 shortfall"
+    ],
+    "selected": false
+  }
+]

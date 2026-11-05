@@ -1,0 +1,59 @@
+{
+  "quote_date": "2026-11-05",
+  "jlc_job": "MagMouse-238x114-layout_Y20",
+  "jlc_pcba_job": "SMT026110561173-6515285A",
+  "service": "Standard PCBA, top side",
+  "quantity_panels": 5,
+  "mouse_sets": 5,
+  "designs_per_panel": 4,
+  "source_panel_mm": [238, 114],
+  "quoted_panel_with_supplier_rails_mm": [238, 124],
+  "gerber_sha256": "6052d2e240f1948fddc3952e6de54e4c3088a380dde3449c948c060b57858439",
+  "requested_positions_per_panel": 247,
+  "selected_BOM_rows": 57,
+  "unique_selected_catalog_parts": 55,
+  "placed_positions_per_panel": 237,
+  "total_placed_positions": 1185,
+  "factory_EUR": {
+    "bare_panels": 44.81,
+    "components_including_attrition": 237.41,
+    "setup": 22.86,
+    "stencil": 7.34,
+    "panel_assembly": 68.57,
+    "feeders": 75.67,
+    "SMT_assembly": 6.93,
+    "X_ray": 14.65,
+    "packaging": 0.48,
+    "supplier_displayed_assembly_subtotal": 433.89,
+    "supplier_displayed_total": 478.70,
+    "note": "Displayed rounded assembly line items sum to 433.91; supplier displayed subtotal is 433.89."
+  },
+  "shipping_weight_kg": 1.91,
+  "destination_country": "Croatia",
+  "checkout_USD": {
+    "merchandise": 539.32,
+    "cheapest_shipping_method": "DHL Express",
+    "transit_business_days": [2, 4],
+    "shipping": 34.62,
+    "total_before_import_charges": 573.94,
+    "duties_taxes_prepaid": false
+  },
+  "DHL_DDP_alternative_USD": {
+    "shipping": 40.39,
+    "duties_taxes": 147.71,
+    "disbursement_fee": 8.27,
+    "total": 735.69
+  },
+  "stock_shortage_omissions": [
+    {"references": ["E_U27"], "MPN": "MA735GGU-P", "LCSC": "C17233427"},
+    {"references": ["L_L1"], "MPN": "SRP4020CC-3R3M", "LCSC": "C27524037"},
+    {"references": ["L_U20"], "MPN": "TPD2E2U06DCKR", "LCSC": "C1855726"},
+    {"references": ["U_R29", "U_R41", "U_R65", "U_R68"], "MPN": "RC1206FR-0722K1L", "LCSC": "C488737"},
+    {"references": ["U_U10", "W_U23"], "MPN": "ADS7038IRTER", "LCSC": "C2871580"},
+    {"references": ["W_U31"], "MPN": "LM4040AIM3-2.5/NOPB", "LCSC": "C139302"}
+  ],
+  "intentionally_manual": ["L_U35"],
+  "production_placement_approval": false,
+  "order_submitted": false,
+  "payment_submitted": false
+}
