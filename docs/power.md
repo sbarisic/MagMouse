@@ -5,7 +5,7 @@ and [Lower Main circuit](../hardware/two-layer/sandwich/lower/Lower.kicad_sch) c
 and actuator supplies. Source detection, current limits, soft-start, reverse
 blocking, telemetry, sensor shutdown and the hardware heartbeat interlock are
 implemented. Firmware and bench acceptance remain open; this is not a USB
-compliance result. See [component and package evidence](../hardware/kicad/POWER_REVIEW.md).
+compliance result. See [component and package evidence](history/electronics/POWER_REVIEW.md).
 
 ## Source capability and operating budgets
 
@@ -157,7 +157,7 @@ rail. Verify ADC pin voltage/injection and logic discharge on unplug/regeneratio
 These are supervisory signals. ADC1 channels 3–5 are grounded spares; the three Hall channels remain. A second
 ADS7038 on dedicated SPI3 provides wheel-current acquisition. Its front-end
 circuit is drawn; sampling timing and accuracy still need validation. See
-[interfaces](interfaces.md) and [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
+[interfaces](interfaces.md) and [wheel review](history/electronics/WHEEL_REVIEW.md).
 
 ## Regeneration and actuator acceptance
 
@@ -199,4 +199,4 @@ configuration and sufficient total current budget; optical startup alone has a
 provisional 150mA allocation. Account for encoder/RGB startup at the same enable
 edge. Before clearing SENS_REQ, deselect optical SPI and assert OPT_CTRL low;
 mask PAW_MOTION_N and disable its host pull-up. Full optical initialization and
-authorized SROM reload are required on resume. See [optical design](../hardware/kicad/OPTICAL_DESIGN.md).
+authorized SROM reload are required on resume. See [optical design](history/electronics/OPTICAL_DESIGN.md).

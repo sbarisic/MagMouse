@@ -7,7 +7,7 @@ import copy,json,shutil,sys,subprocess,collections,hashlib
 from pathlib import Path
 import pcbnew as p
 from export_quote import BOARDS,HERE,ROOT,CLI
-sys.path.insert(0,str(ROOT/'hardware/modular'))
+sys.path.insert(0,str(ROOT/'hardware/common'))
 import schematic_io as s
 SCRATCH=ROOT/'build/sandwich/1206'
 LIB=Path(sys.executable).parents[1]/'share/kicad/footprints'

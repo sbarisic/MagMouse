@@ -1,7 +1,7 @@
 # Upright wheel encoder board
 
 The user selected a separate upright MA735 board on 2026-09-09. Its
-[KiCad project, routed PCB and harness specification](../../hardware/encoder/README.md)
+[KiCad project, routed PCB and harness specification](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/encoder/README.md)
 are now implemented. The provisional board measures **14 x 18 mm**, nominal
 1.6 mm thick. Design the wheel/shaft support and shell around the motherboard
 and this interface after checking the purchased mechanical parts.
@@ -22,7 +22,7 @@ J6 and J7 use matching eight-pin JST SH right-angle headers, C160407. Their
 pin-to-pin harness carries switched power, four buffered SPI signals and three
 separate ground conductors. No new GPIO or index output is allocated.
 
-The [electrical README](../../hardware/encoder/README.md) gives the complete
+The [electrical README](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/encoder/README.md) gives the complete
 pin table, connector/harness parts and board coordinates. The proposed 50 mm
 wire length is a prototype target, not a verified signal-integrity limit.
 Verify operation at the planned 10 MHz clock; add source termination only if

@@ -112,7 +112,7 @@ The provisional wheel test envelope remains: returned peak current at most
 47 uF, brake response at most 10 us and measured rail peak below 6.5 V.
 Four parallel 47-ohm resistors give 11.75 ohms; at 6 V they dissipate about
 3.06 W total. These are bench gates, not demonstrated performance. See
-[wheel review](../kicad/WHEEL_REVIEW.md) and [power review](../kicad/POWER_REVIEW.md).
+[wheel review](../../docs/history/electronics/WHEEL_REVIEW.md) and [power review](../../docs/history/electronics/POWER_REVIEW.md).
 
 Enclosure fit, optical height, magnetic separation, cable clearance and mounting
 holes remain open. No fabrication or assembly package is released by this pass.

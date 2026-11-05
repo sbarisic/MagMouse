@@ -1,7 +1,7 @@
 # USB data routing and compact input-current limit
 
 2026-09-10, KiCad 10.0.6. This review covers saved copper in
-[MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb). The motherboard still has
+[MagMouse.kicad_pcb](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/MagMouse.kicad_pcb). The motherboard still has
 204 unrouted connections and is not ready for fabrication.
 
 ## USB route

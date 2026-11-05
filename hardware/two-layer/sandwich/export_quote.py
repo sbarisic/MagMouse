@@ -5,10 +5,10 @@ from pathlib import Path
 import collections,csv,hashlib,json,subprocess,sys,zipfile,xml.etree.ElementTree as ET
 import pcbnew as p
 from route_main import HERE,ROOT,CLI
-from split_main import export
+from netlist import export
 sys.path.insert(0,str(ROOT/'build/two-layer/python'))
-sys.path.insert(0,str(HERE.parent))
-from finish_copper import polygons
+sys.path.insert(0,str(ROOT/'hardware/common'))
+from board_geometry import polygons
 from shapely.geometry import Point
 
 BOARDS={'Lower':HERE/'lower/Lower.kicad_pcb','Upper':HERE/'upper/Upper.kicad_pcb',

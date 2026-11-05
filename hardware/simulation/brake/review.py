@@ -44,18 +44,16 @@ def main():
     assert ramp['observed_on_V'] and ramp['observed_off_V'], 'Missing threshold transitions'
     assert abs(ramp['observed_on_V'][0]-report['thresholds']['ideal_on_V'])<.02
     assert abs(ramp['observed_off_V'][0]-report['thresholds']['ideal_off_V'])<.02
-    # Changes are confined to this simulation directory. Compare exact bytes with saved commit.
+    # Verify the archived baseline in Git; it is not the current PCB design.
+    import hashlib
+    baseline=json.loads((HERE/'inputs/baseline.json').read_text())
     preserved={}
-    for path in [ROOT/'hardware/modular/main/Main.kicad_pcb', ROOT/'hardware/modular/wheel/Wheel.kicad_pcb',
-                 ROOT/'hardware/encoder/Encoder.kicad_pcb', ROOT/'hardware/bench/Panel.kicad_pcb',
-                 ROOT/'hardware/bench/submissions/2026-09-12-jlc-cam/CAM-review-attachments.zip']:
-        if not path.exists():
-            if 'encoder' in str(path).lower():
-                path=ROOT/'hardware/kicad/encoder/Encoder.kicad_pcb'
-        relative=path.relative_to(ROOT).as_posix()
-        old=subprocess.check_output(['git','show',f'145d2be:{relative}'],cwd=ROOT)
-        assert old==path.read_bytes(), f'Production file changed: {relative}'
-        preserved[relative]=sha(path)
+    for relative, expected in baseline['files'].items():
+        old=subprocess.check_output(['git','show',f"{baseline['commit']}:{relative}"],cwd=ROOT)
+        assert hashlib.sha256(old).hexdigest()==expected, f'Archived baseline mismatch: {relative}'
+        if '/submissions/' in relative:
+            assert sha(ROOT/relative)==expected, 'Supplier submission changed'
+        preserved[relative]=expected
     sources={'TLV1811':{'url':'https://www.ti.com/lit/zip/snom762','file':'models/tlv1811.lib','use':'Original convergence attempt only; not used in accepted sweep'},
              'LM4040':{'url':'https://www.ti.com/lit/zip/snom526','file':'models/lm4040.lib','use':'Unmodified TI reference subcircuit; native psa compatibility'},
              'AO3400A':{'url':'https://www.aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a','use':'No manufacturer model located; Rds and gate-load approximation'}}
@@ -64,7 +62,7 @@ def main():
     failures=[c['configuration']['name'] for c in ordinary if not c['response_within_10us']]
     (dest/'validation.json').write_text(json.dumps({'numerical_checks':'PASS','rail_target':'PASS',
         'response_target':'FAIL in delay-stress cases' if failures else 'PASS',
-        'response_failures':failures,'production_files_unchanged':preserved,'model_sources':sources},indent=2)+'\n')
+        'response_failures':failures,'archived_baseline_files':preserved,'model_sources':sources},indent=2)+'\n')
     fields=['name','peak_rail_V','max_brake_response_us','peak_brake_current_A','peak_resistor_bank_W',
             'resistor_bank_energy_J','average_regeneration_W','energy_balance_relative_error',
             'peak_timestep_delta_V','energy_timestep_relative_delta','below_6p5V','response_within_10us']
@@ -105,7 +103,7 @@ def main():
     rows+=['','Bank energy is integrated over the full listed scenario, not necessarily one switching pulse. Per-resistor power and energy are one quarter of the bank values for equal resistors. No resistor temperature or pulse-rating acceptance is inferred.', '',
            'Repeated pulses are 1 ms on / 6 ms period and have measured average input power below 0.5 W. The single-pulse window average can exceed 0.5 W; it is not a sustained operating point. Unplug occurs 50 us after regeneration starts, when the one-way upstream source is already blocked by the rising rail.', '',
            'The disabled/excess controls deliberately exceed the target. Because the TVS is omitted, their high voltages indicate inadequate brake absorption, not predicted hardware clamp voltages.', '',
-           'See README.md for model assumptions, provenance, limitations and reproduction instructions. Production boards, panel and the submitted archive remain byte-identical to commit 145d2be.']
+           'See README.md for model assumptions, provenance, limitations and reproduction instructions. Archived PCB and panel inputs are verified against commit 145d2be. The submitted archive is preserved locally. This study does not validate the current boards.']
     (HERE/'RESULTS.md').write_text('\n'.join(rows)+'\n')
     paths=[p for p in HERE.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='file-sha256.json']
     (dest/'file-sha256.json').write_text(json.dumps({p.relative_to(HERE).as_posix():sha(p) for p in sorted(paths)},indent=2)+'\n')

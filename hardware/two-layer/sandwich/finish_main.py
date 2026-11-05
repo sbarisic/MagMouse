@@ -5,8 +5,8 @@ import argparse,json,sys
 import pcbnew as p
 from route_main import HERE,ROOT,xy,via,check
 sys.path.insert(0,str(ROOT/'build/two-layer/python'))
-sys.path.insert(0,str(HERE.parent))
-from finish_copper import polygons
+sys.path.insert(0,str(ROOT/'hardware/common'))
+from board_geometry import polygons
 from shapely.geometry import Point
 from shapely.ops import unary_union
 

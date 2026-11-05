@@ -15,12 +15,8 @@ LICENSE text eol=lf
 *.stl binary
 *.FCStd binary
 
-# Preserve the exact bytes covered by bench CAD and package SHA-256 evidence.
-hardware/modular/main/Main.kicad_pcb -text
-hardware/modular/wheel/Wheel.kicad_pcb -text
-hardware/encoder/Encoder.kicad_pcb -text
-hardware/bench/Panel.kicad_pcb -text
-hardware/bench/package/** -text
+# Frozen netlists retain the exact bytes used by the historical simulation.
+hardware/simulation/brake/inputs/*.xml -text
 # Simulation evidence has byte-level hashes; preserve it across Windows checkouts.
 hardware/simulation/brake/results/** -text
 hardware/simulation/brake/RESULTS.md -text

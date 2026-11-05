@@ -11,7 +11,7 @@ import pcbnew as p
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
-sys.path.insert(0,str(ROOT/'hardware/modular'))
+sys.path.insert(0,str(ROOT/'hardware/common'))
 import schematic_io as s
 
 DRIVER_REFS={'U4','U5','U6','J2','J3','J4',

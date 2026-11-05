@@ -10,8 +10,8 @@ import pcbnew as p
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
 sys.path.insert(0,str(ROOT/'build/two-layer/python'))
-sys.path.insert(0,str(HERE.parent))
-from finish_copper import polygons
+sys.path.insert(0,str(ROOT/'hardware/common'))
+from board_geometry import polygons
 import resvg_py
 
 SPECS=[('Lower Main',HERE/'lower/Lower.kicad_pcb',8,'#59b4c5','Routed'),

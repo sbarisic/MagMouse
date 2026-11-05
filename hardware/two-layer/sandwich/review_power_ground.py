@@ -6,8 +6,8 @@ from pathlib import Path
 import pcbnew as p
 from export_quote import BOARDS, HERE, ROOT, polygons, sha
 from shapely.ops import unary_union
-sys.path.insert(0,str(ROOT/'hardware/kicad'))
-from verify_high_current_layout import CopperGraph, RHO, uid
+sys.path.insert(0,str(ROOT/'hardware/common'))
+from copper_graph import CopperGraph, RHO, uid
 
 # Currents are explicit calculation cases. Input/supply rows exercise the 2 A
 # total USB ceiling; a phase-current limit is a separate operating condition.

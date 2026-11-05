@@ -146,9 +146,10 @@ evidence; their old board hashes and airwire counts are not current route result
 
 ## Reproduction
 
-Use KiCad 10 Python. `split_main.py` is a guarded one-time extraction;
-`build_study.py` now refuses to overwrite the independent projects. Edit the
-independent KiCad projects for future circuit or layout changes.
+Use KiCad 10 Python. Edit the independent KiCad projects for future circuit or
+layout changes. The one-time split and obsolete placement generators are now
+in [Git history](../../../docs/history/README.md). Shared libraries and helper
+functions live in [hardware/common](../../common/README.md).
 
 `route_main.py` exports/imports Specctra sessions, `route_usb.py` defines the
 initial USB corridor, `finish_main.py` fills and stitches ground, and
@@ -161,8 +162,8 @@ binaries and logs stay in ignored `build/sandwich/main-routing`.
 `export_quote.py` rechecks all four boards before exporting the package and
 compares Main pins against the retained migration reference. `overview.py`
 renders placement views; add `--main-only --copper` for the routed Main image.
-`wheel_interface.py verify` refreshes the Wheel harness check. Its `prepare`
-action is a destructive rebuild of that variant and is not routine validation.
+The netlist and schematic-parity checks cover the current Wheel harness.
+The obsolete harness conversion script is retained in Git history.
 
 `standard_vias.py` records the one-time drill migration and assists local via
 relocation; `repair_wheel.py` and `continuous_routes.py` provide local path repairs.

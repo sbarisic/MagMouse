@@ -8,8 +8,8 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
 SCRATCH=ROOT/'build/sandwich/main-routing'
 CLI=Path(sys.executable).with_name('kicad-cli.exe')
-sys.path.insert(0,str(HERE.parent))
-from prepare import signature
+sys.path.insert(0,str(ROOT/'hardware/common'))
+from board_geometry import signature
 
 def xy(x,y):return p.VECTOR2I(p.FromMM(x),p.FromMM(y))
 def track(board,net,points,width=.15,layer=p.F_Cu):

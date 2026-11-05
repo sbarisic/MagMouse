@@ -30,9 +30,9 @@ ENIG is recorded as the prototype finish choice; manufacturing approval remains 
 The earlier monolithic USB review identified six 0.60/0.30 mm filled,
 copper-capped vias: four in U21's exposed pad, one in U1's ESD ground land
 and one in C32's supply land. That is a historical subset, not the current
-modular-board inventory. The [current quote via maps](../quotes/2026-09-11/MANUFACTURING_NOTES.md)
+modular-board inventory. The [current quote via maps](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/2026-09-11/MANUFACTURING_NOTES.md)
 identify 102 Main and 36 Wheel vias whose drill disks intersect SMD copper.
-The [cost audit](../quotes/cost-reduction-2026-09-11/fabrication-audit.json)
+The [cost audit](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/cost-reduction-2026-09-11/fabrication-audit.json)
 distinguishes 90 Main component-land overlaps from 12 overlaps limited to
 DNP/BOM-excluded pads; all 36 Wheel overlaps involve populated components.
 Obtain fabricator/assembler acceptance of the fill/cap process and affected

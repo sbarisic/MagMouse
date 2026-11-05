@@ -1,0 +1,10 @@
+{
+  "commit": "145d2be",
+  "files": {
+    "hardware/modular/main/Main.kicad_pcb": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
+    "hardware/modular/wheel/Wheel.kicad_pcb": "e2eaaa13c60e927eda6a78a53b652d990d05912e8c81b4055f2f000fcd0efe01",
+    "hardware/encoder/Encoder.kicad_pcb": "32b3366d89d79553631b1844215c93fad6a26620202338399ce5a8f57ae62170",
+    "hardware/bench/Panel.kicad_pcb": "6ce26abbf629e5592f26f47651ea0b0219b7810e1122b6fbaca9ea3bea7f399e",
+    "hardware/bench/submissions/2026-09-12-jlc-cam/CAM-review-attachments.zip": "200002eda55b0db4513de96e1de92435af1634ce5469944b2865e1fe72803dcf"
+  }
+}

@@ -1,9 +1,13 @@
 # Development roadmap
 
-## Active stacked-board revision — 2026-11-04
+> Historical progress record: superseded packages linked below are in Git history.
+> Use the [active board overview](../hardware/two-layer/sandwich/README.md) for current CAD,
+> and [repository contents](repository-contents.md) for the cleanup policy.
 
-- [x] Use two 70 × 100 mm tapered two-layer Main boards, a 55 × 60 mm
-  two-layer Wheel board and the 14 × 18 mm two-layer Encoder.
+## Active stacked-board revision â€” 2026-11-04
+
+- [x] Use two 70 Ã— 100 mm tapered two-layer Main boards, a 55 Ã— 60 mm
+  two-layer Wheel board and the 14 Ã— 18 mm two-layer Encoder.
 - [x] Replace button actuation with passive plastic clicks and Hall sensing;
   remove 38 parts and reduce the Main stack to 19 wires with three grounds.
 - [ ] Model and fit the plastic click mechanism, sensing magnets and stops.
@@ -18,7 +22,7 @@ routed-board and purchasing checkpoints below do not describe the active stack.
 
 Five bare three-board panels, one component population and one stencil.
 U32 remains unpopulated; all other core functions and the four-layer stack remain.
-Current status is [pending supplier/CAM approval](../hardware/bench/ORDER_READINESS.md).
+Current status is [pending supplier/CAM approval](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/bench/ORDER_READINESS.md).
 
 - [x] Replace internal connectors with soldered-wire arrays; retain all grounds
   and the original electrical mappings. All three boards have zero unrouted,
@@ -50,7 +54,7 @@ The requested manufacturing target is an assembled panel whose modules can
 be separated at prepared tabs after delivery. See the
 [modular panel brief](../hardware/pcb/MODULAR_PANEL_PLAN.md).
 
-The [modular planning package](../hardware/modular/README.md) now contains native
+The [modular planning package](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/README.md) now contains native
 125/80/44 mm main-board and daughterboard envelopes, a 147 x 135 mm provisional
 panel nesting study, complete proposed reference ownership and a logical cable
 pin map. Fresh netlists account for 241 main, 76 wheel and 3 encoder footprints;
@@ -58,15 +62,15 @@ all 17 main/wheel boundary nets are covered. The requested quote is for five
 assembled sets delivered to Croatia 43000. Separate-board live PCBA quotes now
 total EUR 779.84 in merchandise. Address-specific DHL DDP checkout is
 USD 1,187.35 including shipping/duties/taxes, excluding three unavailable parts
-and the optical/mechanical items. See the [quote scope](../hardware/quotes/README.md).
+and the optical/mechanical items. See the [quote scope](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/README.md).
 
-Independent [main and wheel schematics](../hardware/modular/INTERFACE_REVIEW.md)
+Independent [main and wheel schematics](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/INTERFACE_REVIEW.md)
 now include JLCPCB-listed signal/power headers and local disconnect bias. Both
 pass ERC; the migration preserves 988 baseline pin connections and checks all
 32 cable contacts. Counts including the added interface/local power are 246 main and 87
 wheel footprints, plus the existing 3 encoder footprints.
 
-Wheel-local [bulk storage, secondary TVS and discharge](../hardware/modular/LOCAL_POWER_REVIEW.md)
+Wheel-local [bulk storage, secondary TVS and discharge](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/LOCAL_POWER_REVIEW.md)
 are now added: 140.4 uF nominal locally, with the 47 uF effective requirement
 still subject to measured qualification. Nominal connected capacitor-only
 startup load is 42.14 mA. Ten circuit regression tests pass.
@@ -74,19 +78,19 @@ The user accepts child-board damage after an internal cable disconnect for this
 prototype. Assume fully connected internal cables; disconnect, partial-insertion
 and open-return survival are outside acceptance. No extra wheel-feed protection
 is required solely for these cases.
-The [cable review](../hardware/modular/CABLE_REVIEW.md) corrected the physical
+The [cable review](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/CABLE_REVIEW.md) corrected the physical
 contact order: J8.N to J9.(31-N) for facing bottom-contact headers and a flat
 same-side FFC. The candidate's mating tolerances still need closure before order.
-The [wheel PCB](../hardware/modular/WHEEL_ROUTING.md) is now fully routed:
+The [wheel PCB](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/WHEEL_ROUTING.md) is now fully routed:
 zero native unrouted connections, physical DRC violations and schematic-parity
 issues. Current-sense channels remain front-only with complete saved In1
-shadows. The [new shaped main PCB](../hardware/modular/MAIN_PLACEMENT.md) contains
+shadows. The [new shaped main PCB](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/MAIN_PLACEMENT.md) contains
 all 246 footprints, with zero physical DRC/parity issues. Its first
-[input-power pass](../hardware/modular/MAIN_POWER_ROUTING.md) routes USB VBUS,
+[input-power pass](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/MAIN_POWER_ROUTING.md) routes USB VBUS,
 U12 passive protection/current-limit circuitry and the local buck/buffer supply;
-the subsequent [source/actuator/interlock pass](../hardware/modular/MAIN_CONTROLS_ROUTING.md)
+the subsequent [source/actuator/interlock pass](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/MAIN_CONTROLS_ROUTING.md)
 reduced main native unrouted count to 257. The
-[completed signal/return pass](../hardware/modular/MAIN_SIGNAL_ROUTING.md) now
+[completed signal/return pass](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/MAIN_SIGNAL_ROUTING.md) now
 brings the main to **zero unrouted**, with zero physical DRC/parity issues.
 ADC1/Hall/button sensing, USB, SPI3, SPI2/optical, controls, RGB and board-wide
 supplies are connected. Strict analog and signal-return screening gates pass.
@@ -99,22 +103,22 @@ interfaces.** The existing nesting study is historical planning only.
 
 ## Current execution order
 
-- [x] Generate [quote-only Main/Wheel/Encoder packages](../hardware/quotes/README.md)
+- [x] Generate [quote-only Main/Wheel/Encoder packages](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/README.md)
   with Gerbers/drills, matched BOM/CPL references, source/output hashes and exact
   via-fill inventories. CAD unchanged; Encoder remains two-layer; no panelization.
 - [x] Upload three five-board jobs, enter fill/cap and impedance settings, price
   available components/assembly and record address-specific DHL DDP shipping and
   duties/taxes. Drafts saved to cart; no order submitted.
-- [x] Obtain [two-assembled-set pricing](../hardware/quotes/cost-reduction-2026-09-11/TWO_SET_QUOTE.md):
+- [x] Obtain [two-assembled-set pricing](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/cost-reduction-2026-09-11/TWO_SET_QUOTE.md):
   USD 859.98 DHL DDP delivered (about EUR 739.32), omitting optional U32; five
   PCBs/design fabricated, two assembled. Stock exclusions remain. Audit
   larger-via/fill-cap cost reductions against actual CAD without modifying it.
   Cash outlay falls about 28%; the requested 50% reduction is not achieved.
 - [x] Correct the Main/Wheel small-via pricing tier without changing CAD.
-  [Fresh two-set checkout](../hardware/quotes/cost-reduction-2026-09-11/CORRECTED_QUOTE.md)
+  [Fresh two-set checkout](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/cost-reduction-2026-09-11/CORRECTED_QUOTE.md)
   is USD 774.51 DHL DDP (approximately EUR 665.85), about EUR 73.47 less than
   the preceding two-set quote. Fill/cap, stack and Main USB impedance remain.
-- [x] Screen [combined Main/Wheel placement](../hardware/quotes/cost-reduction-2026-09-11/COMBINED_BOARD_ASSESSMENT.md)
+- [x] Screen [combined Main/Wheel placement](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/cost-reduction-2026-09-11/COMBINED_BOARD_ASSESSMENT.md)
   without modifying either board. The intact Wheel group does not fit an empty
   Main-board rectangle; consolidation needs new placement and rerouting.
 - [ ] Develop and validate combined placement if pursuing consolidation, keeping
@@ -129,7 +133,7 @@ interfaces.** The existing nesting study is historical planning only.
    strain relief, optical lens/baseplate/feet, USB opening, paddles, Hall magnets
    and plastic click travel. Keep the old Hall positions provisional until this work
    establishes them. The user has no parts/CAD yet and explicitly chose to keep
-   mechanics provisional. Preserve the [interface register](../hardware/modular/MECHANICAL_INTERFACES.md)
+   mechanics provisional. Preserve the [interface register](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/MECHANICAL_INTERFACES.md)
    while routing fixed circuitry; no mounting dimensions are frozen.
 2. Apply mechanical-interface CAD changes to the PCBs, then review both boards'
    return paths, power transitions, thermal copper, test access and component
@@ -163,14 +167,14 @@ interfaces.** The existing nesting study is historical planning only.
 ## 1. Schematic-level feasibility (next)
 
 - [x] Start a KiCad 10.0.6 schematic with MCU, buck, button drivers, Hall/ADC
-  circuits and catalog sourcing fields; see [the draft](../hardware/kicad/README.md).
+  circuits and catalog sourcing fields; see [the draft](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/README.md).
 - [x] Resolve the starter's 17 missing catalog selections and six missing
   footprints; all 60 present BOM components now have MPNs, catalog IDs and
   footprints (revision 0.2; stock refresh and final circuit review remain).
 - [ ] Obtain exact datasheets/reference circuits and confirm part availability.
 - [ ] Validate selected PMW3360/LM19-LSI optics, circuit, initialization and SROM usage rights.
 - [x] Implement Type-C detection and input/actuator power-control schematic
-  (revision 0.3); see [power review](../hardware/kicad/POWER_REVIEW.md).
+  (revision 0.3); see [power review](history/electronics/POWER_REVIEW.md).
 - [ ] Validate USB startup/configuration/suspend, source transitions, inrush,
   voltage/current limits, timeout/reset, reverse current and regeneration on hardware.
 - [ ] Build one passive plastic click mechanism using the
@@ -185,21 +189,21 @@ interfaces.** The existing nesting study is historical planning only.
   concurrent USB/button/optical operation on the selected firmware path.
 - [x] Draw DRV8316 + ADC2 + MA735 + GB1806 wire interface, hardware output-disable,
   power-domain SPI isolation and a provisional autonomous brake (revision 0.5);
-  see [wheel review](../hardware/kicad/WHEEL_REVIEW.md).
+  see [wheel review](history/electronics/WHEEL_REVIEW.md).
 - [ ] Measure returned wheel energy and brake startup/overshoot/temperatures;
   validate or revise the resistor, capacitance and threshold selections.
 - [x] Compare alternative optical sensors and identify retail sample leads;
-  [selection review](../hardware/kicad/OPTICAL_SELECTION.md) recommends
+  [selection review](history/electronics/OPTICAL_SELECTION.md) recommends
   PMW3360DM-T2QU + LM19-LSI, with PAW3395 as a higher-performance alternative.
 - [x] Implement PMW3360 local supplies, buffered SPI/reset and custom footprint
   (revision 0.7); document lens stack and startup/scheduling requirements in
-  [optical design](../hardware/kicad/OPTICAL_DESIGN.md).
+  [optical design](history/electronics/OPTICAL_DESIGN.md).
 - [ ] Confirm sample delivery, sensor/lens identity, authorized SROM and assembly
   acceptance; [supplier inquiry](optical-sample-inquiry.md) is prepared but not sent.
 - [ ] Measure optical supply ramps, startup/suspend current, power-off isolation,
   tracking and bounded motion-burst scheduling between encoder reads.
 - [x] Draw ICM-42688-P and addressable RGB with enabled supply and level buffer
-  (revision 0.6); see [peripheral review](../hardware/kicad/PERIPHERAL_REVIEW.md).
+  (revision 0.6); see [peripheral review](history/electronics/PERIPHERAL_REVIEW.md).
 - [ ] Qualify IMU shared-SPI/vibration and RGB voltage, timing and USB suspend current.
 - [x] Select KiCad and add a reproducible schematic review-export workflow.
 - [ ] Choose firmware tools and document versions and reproducible workflows.
@@ -226,7 +230,7 @@ that the actuators can operate within the intended power and thermal envelope.
   motherboard electronics (314 footprints); retain U27/C62 as encoder-board
   planning parts. See [placement review](../hardware/pcb/PLACEMENT_60MM.md).
 - [x] Select a separate upright MA735 encoder board for the horizontal wheel axle.
-- [x] Implement the [encoder board/interconnect](../hardware/encoder/README.md):
+- [x] Implement the [encoder board/interconnect](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/encoder/README.md):
   JST SH headers, separate schematic/BOM, checked harness and fully routed
   provisional 14 x 18 mm board; ERC/DRC/parity and connectivity pass.
 - [ ] Verify encoder support, shaft/magnet alignment, connector/cable clearances,

@@ -4,7 +4,7 @@ Historical buck-only pass; see [current input routing status](INPUT_POWER_LAYOUT
 for later changes and the current unconnected count.
 
 2026-09-09, KiCad 10.0.6. U2 and its local power components now have routed
-copper in [MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb). The motherboard is
+copper in [MagMouse.kicad_pcb](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/MagMouse.kicad_pcb). The motherboard is
 partially routed; this is not a fabrication release or a powered validation.
 
 ## Placement and copper

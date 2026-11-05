@@ -7,14 +7,14 @@
 mechanical interfaces.** The nesting study below remains unchanged; no final
 panel, tabs or tooling were created in the layout-completion pass.
 
-The [implementation planning package](../modular/README.md) now contains the
+The [implementation planning package](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/README.md) now contains the
 native board envelopes, complete proposed component ownership, logical harness
 pin map and a live provisional bare-panel price. Target quantity/destination:
-five assembled sets, Croatia 43000. [Separate-job assembly and delivery quotes](../quotes/README.md)
+five assembled sets, Croatia 43000. [Separate-job assembly and delivery quotes](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/quotes/README.md)
 are now available, including a completed two-assembled-set cost comparison.
 Independent split schematics and connector/bias additions are now implemented;
-see [the current interface review](../modular/INTERFACE_REVIEW.md). The finished
-breakaway panel remains open. The [mechanical-interface register](../modular/MECHANICAL_INTERFACES.md)
+see [the current interface review](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/INTERFACE_REVIEW.md). The finished
+breakaway panel remains open. The [mechanical-interface register](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/MECHANICAL_INTERFACES.md)
 is the authority for unfrozen mounts, cable paths and optical/button geometry.
 
 ## Confirmed dimensions and requested delivery

@@ -1,13 +1,14 @@
 # Mechanical design
 
-Status: editable Rev-A bench fixture CAD and optical datums; final shell and
-in-mouse mechanisms remain provisional.
+Status: optical datums and mechanism plans are retained; final shell and
+in-mouse mechanisms remain provisional. The superseded Rev-A fixture CAD and
+exports are available through the historical link below.
 
 - [housing](housing/README.md): enclosure, optics and component packaging.
 - [scroll-wheel](scroll-wheel/README.md): wheel, shaft, motor and encoder alignment.
 - [button-mechanisms](button-mechanisms/README.md): three plastic click mechanisms with Hall sensing.
 - [optical](optical/README.md): PMW3360/LM19-LSI stack and aperture reference dimensions.
-- [bench](bench/README.md): build123d source, 19 printable PETG part designs,
+- [bench](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/mechanical/bench/README.md): build123d source, 19 printable PETG part designs,
   STEP/STL exports, removable supports, wire clamps and dimensioned assembly views.
 
 The bench fixture uses build123d 0.11.1. Optical and motor dimensions that lack

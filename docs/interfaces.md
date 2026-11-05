@@ -9,14 +9,14 @@ This allocation describes the active [Lower](../hardware/two-layer/sandwich/lowe
 and [Upper](../hardware/two-layer/sandwich/upper/Upper.kicad_sch) Main circuits.
 The original allocation files and schematics linked below retain the historical
 coil revision. Runtime timing is **not yet proven**.
-The [machine-readable allocation](../hardware/kicad/gpio-allocation.json) and
-[MCU schematic](../hardware/kicad/02_MCU.kicad_sch) use the same net names.
-[Sheet 09](../hardware/kicad/09_Interface_Reservations.kicad_sch) exposes new
+The [machine-readable allocation](../hardware/common/gpio-allocation.json) and
+[MCU schematic](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/02_MCU.kicad_sch) use the same net names.
+[Sheet 09](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/09_Interface_Reservations.kicad_sch) exposes new
 signals on test pads and adds boot/control bias resistors. These are real MCU
 connections. Revision 0.5 adds ADC2, wheel driver, encoder, SPI isolation and
 autonomous brake sheets. Revision 0.6 adds IMU/RGB; revision 0.7 connects PMW3360 on sheets 16/17.
-See [wheel review](../hardware/kicad/WHEEL_REVIEW.md) and
-[peripheral review](../hardware/kicad/PERIPHERAL_REVIEW.md).
+See [wheel review](history/electronics/WHEEL_REVIEW.md) and
+[peripheral review](history/electronics/PERIPHERAL_REVIEW.md).
 
 ## Complete module pin map
 
@@ -24,7 +24,7 @@ The second column contains module land numbers, not bare-chip pins.
 ADC_CS is CS_ADC1; SPI_SCLK/MOSI/MISO are bus A. MOTOR_SPI_* are bus B.
 OPT_CTRL drives buffered PMW3360 reset (low = asserted). HALL_EN also enables
 the optical supplies. CS_PAW and PAW_MOTION_N retain their historical net names.
-See [optical design and timing](../hardware/kicad/OPTICAL_DESIGN.md).
+See [optical design and timing](history/electronics/OPTICAL_DESIGN.md).
 
 | GPIO | Module pad | Net | Peripheral / role |
 | --- | --- | --- | --- |

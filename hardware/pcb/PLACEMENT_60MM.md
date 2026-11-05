@@ -69,7 +69,7 @@ feedback timing, optical samples and final mechanics remain acceptance gates.
 
 ## Encoder split follow-up, revision 0.8
 
-U27 and C62 have moved into the [separate encoder project](../encoder/README.md).
+U27 and C62 have moved into the [separate encoder project](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/encoder/README.md).
 J6 was added at (113,103.5) mm, rotation 0 degrees, on the front. C24 moved to
 (106.75,108.5) mm and R110 to (118.75,109.5) mm, both at 90 degrees. TP34 moved
 to B.Cu at its existing (118,103) mm position to clear the connector. The other

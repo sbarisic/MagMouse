@@ -2,7 +2,7 @@
 
 Revision 0.5 implements DRV8316R, a second ADS7038, MA735, GB1806 phase-wire
 pads, hardware shutdown and an autonomous brake in sheets 10–13. Firmware and
-motor validation remain open. See [the circuit review](../hardware/kicad/WHEEL_REVIEW.md)
+motor validation remain open. See [the circuit review](history/electronics/WHEEL_REVIEW.md)
 for exact parts, power domains, calculations and bench limits, and [interfaces](interfaces.md)
 for the unchanged GPIO map.
 
@@ -75,7 +75,7 @@ Firmware must also bound commanded torque and temperature.
 
 ## Remaining schematic order
 
-1. Qualify PMW3360 optics and initialization; schedule its >=87us burst between encoder slots. See [optical design](../hardware/kicad/OPTICAL_DESIGN.md).
+1. Qualify PMW3360 optics and initialization; schedule its >=87us burst between encoder slots. See [optical design](history/electronics/OPTICAL_DESIGN.md).
 2. ICM-42688-P, INT1 and internal clock.
 3. Addressable RGB with suitable supply/data interface; preserve GPIO45's low
    boot strap and the USB suspend budget.

@@ -7,8 +7,8 @@ import pcbnew as p
 from route_main import HERE, ROOT, CLI, xy
 from export_quote import BOARDS
 sys.path.insert(0,str(ROOT/'build/two-layer/python'))
-sys.path.insert(0,str(ROOT/'hardware/bench'))
-import build_panel as bp
+sys.path.insert(0,str(ROOT/'hardware/common'))
+import panel_helpers as bp
 from router_geometry import make_routable, verify_panel as verify_router, verify_material_tab
 from shapely.geometry import Point, Polygon, box
 from shapely.affinity import translate

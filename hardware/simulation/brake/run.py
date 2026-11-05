@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Run a bounded ACT_5V regeneration study using the current exported netlists."""
+"""Run a bounded ACT_5V regeneration study using frozen historical netlists."""
 import argparse
 import hashlib
 import json
@@ -28,9 +28,10 @@ def value(text):
 def inventory():
     result = {'sources': {}, 'capacitors': [], 'brake': {}, 'pins': {}, 'bleeders': []}
     for board in ('Main', 'Wheel', 'Encoder'):
-        path = ROOT / f'hardware/bench/package/{board}-netlist.xml'
+        path = HERE / 'inputs' / f'{board}-netlist.xml'
         tree = ET.parse(path).getroot()
-        result['sources'][str(path.relative_to(ROOT))] = sha(path)
+        # Preserve the original provenance labels used by the saved results.
+        result['sources'][str(Path(f'hardware/bench/package/{board}-netlist.xml'))] = sha(path)
         pins = {(n.get('ref'), n.get('pin')): net.get('name')
                 for net in tree.findall('./nets/net') for n in net.findall('node')}
         for comp in tree.findall('./components/comp'):

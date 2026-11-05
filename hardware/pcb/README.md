@@ -1,13 +1,13 @@
 # Motherboard PCB
 
-The active shaped [Main PCB](../modular/main/Main.kicad_pcb) and separate
-[Wheel PCB](../modular/wheel/Wheel.kicad_pcb) are now routed. See the
-[current modular package](../modular/README.md). The rest of this document
+The active shaped [Main PCB](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/main/Main.kicad_pcb) and separate
+[Wheel PCB](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/wheel/Wheel.kicad_pcb) are now routed. See the
+[current modular package](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/modular/README.md). The rest of this document
 describes the retained monolithic routing baseline.
 
 Routing draft, 2026-09-09, KiCad 10.0.6. Open the editable
-[MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb) from the
-[KiCad project](../kicad/MagMouse.kicad_pro).
+[MagMouse.kicad_pcb](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/MagMouse.kicad_pcb) from the
+[KiCad project](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/MagMouse.kicad_pro).
 **This is a partially routed prototype draft, not a fabrication release.**
 
 The [new modular-panel brief](MODULAR_PANEL_PLAN.md) records the user's
@@ -25,7 +25,7 @@ from a measured enclosure. No mounting holes or optical aperture have been cut.
 
 All **317 motherboard footprints** are inside the outline: 273 BOM components,
 43 test pads and J5 motor wire pads. The [60 mm placement pass](PLACEMENT_60MM.md)
-was followed by the [separate encoder project](../encoder/README.md): U27/C62
+was followed by the [separate encoder project](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/encoder/README.md): U27/C62
 moved to that board and J6 was added here. The input-power pass added local
 output bypass C88; the U13 pass added input bypass C89 and moved C40 beside
 U13 OUT. No off-board staging parts remain.
@@ -144,10 +144,10 @@ separation, heat dissipation, signal integrity or enclosure fit.
 1. Fit the implemented upright encoder board, its harness and the complete wheel
    assembly; allocate paddle magnets, mounting holes and connector access.
    Design the shell/base around the board and verified optical height.
-2. Qualify [PMW3360 samples, SROM and optical fit](../kicad/OPTICAL_DESIGN.md).
-   Optical, [IMU and RGB](../kicad/PERIPHERAL_REVIEW.md) circuits are drawn.
+2. Qualify [PMW3360 samples, SROM and optical fit](../../docs/history/electronics/OPTICAL_DESIGN.md).
+   Optical, [IMU and RGB](../../docs/history/electronics/PERIPHERAL_REVIEW.md) circuits are drawn.
    The wheel/ADC2/encoder and provisional brake circuits are drawn; their
-   [timing and energy measurements](../kicad/WHEEL_REVIEW.md) remain open.
+   [timing and energy measurements](../../docs/history/electronics/WHEEL_REVIEW.md) remain open.
 3. Qualify the reviewed actuator current paths, effective decoupling and analog
    returns on hardware; measure driver/brake heating and confirm the
    filled/capped U1/C32/U21 vias. Static resistance and local ground-area checks

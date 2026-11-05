@@ -1,6 +1,6 @@
 # Schematics
 
-Editable sources now live in [the KiCad project](../kicad/README.md), using
+Editable sources now live in [the KiCad project](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/README.md), using
 KiCad 10.0.6. It contains an overview plus power/USB, MCU, button-driver and
 Hall/ADC sheets. USB input power and several subsystems remain incomplete.
 The intended full schematic will cover:

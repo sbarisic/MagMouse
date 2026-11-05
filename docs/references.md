@@ -28,14 +28,14 @@ allowances come from the supplied analysis and remain unmeasured/unquoted.
 maintained architecture and BOM for the current selection.
 
 Optical sourcing and the pinned public reference comparison are in
-[OPTICAL_REVIEW.md](../hardware/kicad/OPTICAL_REVIEW.md). Manufacturer revisions
+[OPTICAL_REVIEW.md](history/electronics/OPTICAL_REVIEW.md). Manufacturer revisions
 and catalog links for IMU/RGB are in
-[PERIPHERAL_REVIEW.md](../hardware/kicad/PERIPHERAL_REVIEW.md).
+[PERIPHERAL_REVIEW.md](history/electronics/PERIPHERAL_REVIEW.md).
 
-The [optical selection review](../hardware/kicad/OPTICAL_SELECTION.md) compares
+The [optical selection review](history/electronics/OPTICAL_SELECTION.md) compares
 PMW3360/LM19-LSI, PAW3395, PMW3389 and PMW3610 using manufacturer specifications,
 live supplier listings and the PMW3360 revision 1.50 assembly drawings.
 
 Revision 0.7 implementation and checked primary references are collected in
-[OPTICAL_DESIGN.md](../hardware/kicad/OPTICAL_DESIGN.md); the
+[OPTICAL_DESIGN.md](history/electronics/OPTICAL_DESIGN.md); the
 [mechanical datum drawing](../mechanical/optical/README.md) uses the exact PMW3360/LM19-LSI pair.

@@ -5,7 +5,7 @@ For the latest completed scope and remaining work, see the
 
 
 2026-09-09, KiCad 10.0.6. This is a checked routing subset in
-[MagMouse.kicad_pcb](../kicad/MagMouse.kicad_pcb), not a complete or qualified PCB.
+[MagMouse.kicad_pcb](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/MagMouse.kicad_pcb), not a complete or qualified PCB.
 
 The subsequent [Type-C pass](TYPEC_LAYOUT.md) completes the detector input and
 source-selection supply connections. See that review for five further placement

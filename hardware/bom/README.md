@@ -5,10 +5,10 @@ on 2026-09-08; not a purchasing or assembly BOM. `ideas.md` is historical.
 Quantities are per mouse; alternatives are not additive. Confirm exact orderable
 parts, packages, footprints, ratings and availability before procurement.
 
-The [KiCad starter BOM](../kicad/README.md) is the source of truth for circuits
+The [KiCad starter BOM](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/kicad/README.md) is the source of truth for circuits
 already drawn: revision 0.7 has 272 component instances with complete MPN,
 catalog ID and footprint fields. The broader inventory below also includes
-subsystems that have not been implemented. See [sourcing evidence](../kicad/SOURCING.md).
+subsystems that have not been implemented. See [sourcing evidence](../../docs/history/electronics/SOURCING.md).
 
 | Qty | Candidate | Purpose / unresolved detail |
 | --- | --- | --- |

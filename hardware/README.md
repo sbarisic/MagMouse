@@ -1,30 +1,22 @@
 # Electronics
 
-Active development: [stacked two-layer boards](two-layer/sandwich/README.md),
-with passive plastic clicks and Hall sensing. The two 70 × 100 mm Main boards
-have independent schematics and completed routing; Wheel and Encoder are also
-routed. A [four-board quote package](two-layer/sandwich/quote-package/README.md)
-is available. Mechanical integration,
-manufacturing review and hardware qualification remain open. Earlier routed
-checkpoints and manufacturing packages below retain the superseded button coils.
+The [active four-board design](two-layer/sandwich/README.md) uses two copper
+layers on each board, passive plastic button clicks and Hall sensing.
+Lower and Upper are 70 x 100 mm; Wheel is 70 x 67 mm; Encoder is 14 x 18 mm
+with chamfered top corners. All four have independent schematics and routing.
 
-- [Main project](modular/main/Main.kicad_pro) and [Wheel project](modular/wheel/Wheel.kicad_pro): earlier routed designs.
-- [Experimental two-layer boards](two-layer/README.md): separate Main, Wheel and
-  Encoder variants with clean reported native CAD checks; electrical, routing
-  optimization and manufacturing review remain open.
-- [Rev-A bench panel and assembly package](bench/README.md): earlier cost-reduction
-  variant, four-layer Encoder, one-population purchasing list and quote-only
-  manufacturing files. The derived panel does not replace the source boards.
-- [Modular package and reviews](modular/README.md): earlier routing, cable and mechanical status.
-- [Original KiCad project](kicad/README.md): retained monolithic reference and circuit documentation.
+- [Editable projects and reviews](two-layer/sandwich/README.md)
+- [Manufacturing quote package](two-layer/sandwich/quote-package/README.md)
+- [Combined panel](two-layer/sandwich/panel/Panel.kicad_pcb)
+- [3D models](two-layer/sandwich/3d/README.md)
+- [Shared libraries and helpers](common/README.md)
+- [Historical brake simulation](simulation/brake/README.md)
+- [Previous revisions in Git](../docs/history/README.md)
 
-- [schematics](schematics/README.md): circuit partition and review requirements.
-- [pcb](pcb/README.md): layout and release requirements.
-- [bom](bom/README.md): candidate component inventory.
-
-Use the [interface allocation](../docs/interfaces.md) and
-[power plan](../docs/power.md) as design inputs. Exact package variants, GPIOs,
-passive values, protection circuitry and connectors remain to be validated.
+Mechanical integration, supplier acceptance, firmware and physical electronics
+qualification remain open. The legacy BOM and circuit/layout notes outside the
+active projects contain historical material; use the active schematics and
+quote-package BOM for the current fitted components.
 
 License: CERN-OHL-S-2.0; see [LICENSE](LICENSE).
 Source location: <https://github.com/sbarisic/MagMouse>.
