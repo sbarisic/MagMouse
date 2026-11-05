@@ -23,3 +23,28 @@ intentional provenance.
 Use narrow ignore rules. Do not blanket-ignore CAD exports, ZIPs, JSON, CSV,
 SVG or logs: some are required deliverables and evidence. Removing a revision
 requires checking consumers, library paths, documentation and source hashes.
+
+## Local build cleanup, 2026-11-05
+
+Removed 16,935 ignored scratch files (2,415 MiB), reducing the local workspace
+from about 3.04 GiB to 695 MiB, excluding the root `.git` directory. These were
+old routing attempts, repeated PCB snapshots, panel staging, obsolete helper
+scripts, logs, old router downloads and unused Python dependency copies.
+
+Retained local inputs and tools:
+
+- `build/two-layer/python` and `build/simulation-python`: CAD and simulation dependencies.
+- `build/sandwich/java25` and `freerouting-2.5.0.jar`: current router runtime.
+- `build/sandwich/1206/original` and `baseline.json`: passive-package comparison inputs.
+- `build/sandwich/assembly-spacing/original` and `baseline.json`: spacing and component identity checks.
+- `build/sandwich/cost-reduction/*-before.kicad_pcb`, matching projects and `conversion.json`: via migration snapshots and guards.
+- `build/revision-cleanup` and `build/local-cleanup`: cleanup manifests and verification evidence.
+- Historical simulation waveforms, decks and vendor models: retained for result review without a new simulation run.
+
+The `build/quote-cost/node_modules` junction was not traversed or deleted; its
+target is excluded from these sizes. No tracked CAD, manufacturing output or
+supplier record changed during the scratch cleanup. Retained files were checked
+against pre-cleanup hashes. CAD helper imports, nine router geometry tests,
+assembly spacing/outline/net/via checks, model hashes and simulation inventory
+passed. Routing export now creates its output directory when it is missing;
+this was checked with a new scratch directory.

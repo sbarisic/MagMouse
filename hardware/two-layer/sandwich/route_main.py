@@ -54,6 +54,7 @@ def prepare(name):
     p.SaveBoard(str(path),board)
     export(name)
 def export(name):
+    SCRATCH.mkdir(parents=True,exist_ok=True)
     path=HERE/name.lower()/(name+'.kicad_pcb');board=p.LoadBoard(str(path))
     assert p.ExportSpecctraDSN(board,str(SCRATCH/(name+'.dsn')))
     # Specctra uses a single width for a net; preserve pre-routed USB trunks and
