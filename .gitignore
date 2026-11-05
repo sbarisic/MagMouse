@@ -53,3 +53,6 @@ sdkconfig.old
 /hardware/simulation/brake/models/*.lib
 /hardware/simulation/brake/models/*.zip
 /hardware/simulation/brake/model-checks/*.cir
+
+# Local hardware snapshot; source files and release exports are tracked separately.
+/hardware/two-layer.zip
