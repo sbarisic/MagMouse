@@ -20,6 +20,14 @@ See [wheel review](history/electronics/WHEEL_REVIEW.md) and
 
 ## Complete module pin map
 
+The November 2026 circuit correction adds Wheel-local WHEEL_RUN_REQUESTED,
+WHEEL_VM_SENSE and WHEEL_VM_OK. These consume no connector pins or GPIOs.
+The final WHEEL_RUN_EN now includes the local undervoltage supervisor.
+Lower U25/U29/U37 and Wheel U24/U26 use Nexperia 74LVC125APW,118 for
+specified powered-off input/output isolation. Keep the existing optical
+shutdown and initialization sequence; see the
+[circuit correction review](../hardware/two-layer/sandwich/circuit-review/README.md).
+
 The second column contains module land numbers, not bare-chip pins.
 ADC_CS is CS_ADC1; SPI_SCLK/MOSI/MISO are bus A. MOTOR_SPI_* are bus B.
 OPT_CTRL drives buffered PMW3360 reset (low = asserted). HALL_EN also enables

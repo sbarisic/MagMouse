@@ -1,0 +1,32 @@
+{
+  "tap": "Dedicated sense branch joins the wide local driver feed near x=19.94,y=29.13 mm; driver VM pad 10 is x=25.1,y=29.75 mm.",
+  "resistor": "R147.1",
+  "route_items": [
+    "9afe0736-1098-413c-a346-c0acaf659997",
+    "c979d898-bbdc-4e31-b1a4-096f12873cc6",
+    "4a18369d-0472-44db-9841-39962cb84881",
+    "8dc55b7e-2c2f-4929-9cae-b52a0ede5149",
+    "9cdf54d9-2623-46d4-89a5-a7cb175ae7af",
+    "fc2c852a-8517-4690-a795-ddedd4e9e366",
+    "ce858b9e-e1da-4645-899c-2cc0b3c27fb6",
+    "3ac4d2d7-2806-48d8-a0b6-fab64933f718",
+    "f360cc3e-8f50-4df4-a0a8-0bd5030c8cee",
+    "11cadfef-c54a-4247-a2e2-f206e79f3582",
+    "6cef459d-5833-427e-a44c-c555224367e5",
+    "e9413558-b229-46d0-b461-08ccdad676b4",
+    "213bbb3f-2537-424d-8e35-8d2fac50388f",
+    "7026f083-5838-4ea2-8d05-d57c78ba0ec6",
+    "fcb30ca8-3f71-4e04-bba8-e9f31fcdf3a8",
+    "9fa9e5a9-53aa-4746-88fa-5c5e8e6adc67"
+  ],
+  "purpose": "Dedicated low-current sense branch; avoids other ACT_5V copper except driver-local tap",
+  "tap_error_screen": {
+    "tap_location_description": "Dedicated sense branch joins the wide local driver feed near x=19.94,y=29.13 mm; driver VM pad 10 is x=25.1,y=29.75 mm.",
+    "contact_graph_tap_to_driver_mohm_at_80C_upper_whole_segment_screen": 7.231616756575034,
+    "scale_to_125C": 1.1431056805308302,
+    "max_current_A": 2,
+    "estimated_max_positive_sense_error_mV": 16.53300438772572,
+    "minimum_driver_voltage_at_static_trip_V": 4.516130779524831,
+    "limitations": "A screening estimate, not a guaranteed Kelvin connection at the IC land. Excludes ground bounce and dynamic droop; verify voltage directly across U21 VM/GND on hardware."
+  }
+}

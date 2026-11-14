@@ -68,6 +68,7 @@ def inventory():
 def verify():
     """Audit saved sources, independently of the placement/routing algorithms."""
     from standard_vias import intersections
+    from circuit_review_rules import VALUE_CHANGES, PIN_CHANGES, NEW_COMPONENTS
     baseline=json.loads((WORK/'baseline.json').read_text()) if (WORK/'baseline.json').exists() else None
     result={'definition':'Minimum 2 mm between front component body-and-land convex envelopes; pins within a component and copper-only test access excluded.',
             'boards':{}}
@@ -99,13 +100,22 @@ def verify():
             assert tuple(p.ToMM(fs['U27'].GetPosition()))==(57,55.5)
         moved={}
         if baseline:
-            old=baseline[name]['components'];assert set(fs)==set(old)
+            old=baseline[name]['components']
+            added=NEW_COMPONENTS if name=='Wheel' else {}
+            assert set(fs)==set(old)|set(added)
             previous=p.LoadBoard(str(WORK/'original'/name/path.name))
             ids={f.GetReference():(str(f.GetFPID().GetLibNickname()),str(f.GetFPID().GetLibItemName())) for f in previous.GetFootprints()}
             for r,f in fs.items():
-                assert f.GetValue()==old[r]['value']
+                if r in added:
+                    val,footprint,pins=added[r]
+                    assert f.GetValue()==val
+                    assert str(f.GetFPID().GetLibNickname())+':'+str(f.GetFPID().GetLibItemName())==footprint
+                    assert sorted((q.GetNumber(),q.GetNetname()) for q in f.Pads() if q.GetNumber())==sorted(pins.items())
+                    continue
+                assert f.GetValue()==VALUE_CHANGES.get(name,{}).get(r,old[r]['value'])
                 assert (str(f.GetFPID().GetLibNickname()),str(f.GetFPID().GetLibItemName()))==ids[r],r
-                assert sorted([q.GetNumber(),q.GetNetname()] for q in f.Pads())==old[r]['pads'],r
+                expected=sorted([pin,PIN_CHANGES.get(name,{}).get((r,pin),net)] for pin,net in old[r]['pads'])
+                assert sorted([q.GetNumber(),q.GetNetname()] for q in f.Pads())==expected,r
                 pos=list(p.ToMM(f.GetPosition()))
                 if pos!=old[r]['xy'] or f.GetOrientationDegrees()!=old[r]['angle']:
                     moved[r]={'before_xy_mm':old[r]['xy'],'after_xy_mm':pos,'before_angle':old[r]['angle'],'after_angle':f.GetOrientationDegrees()}
@@ -114,7 +124,7 @@ def verify():
             'measured_component_envelopes':len(env),'board_area_mm2':material.area,
             'edge_cut_holes_mm':[list(q.bounds) for q in holes],
             'via_drill_mm':.3,'via_hole_smd_overlaps':0,'copper_layers':2,
-            'component_values_and_pin_nets_preserved':bool(baseline),'moved_footprints':moved}
+            'values_and_pin_nets_match_reviewed_allowlist':bool(baseline),'moved_footprints':moved}
         result['boards'][name]['footprint_library_ids_preserved']=bool(baseline)
         if name=='Upper':
             boundary=material.boundary

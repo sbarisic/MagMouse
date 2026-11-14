@@ -1,0 +1,7 @@
+(version 1)
+
+# Preserve the reviewed optical sensor footprint and internal aperture.
+# All outer edges retain the board-wide 0.5 mm copper clearance.
+(rule "Optical aperture clearance"
+    (condition "B.memberOf('Optical aperture')")
+    (constraint edge_clearance (min 0.4mm)))

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\sandwich\upper\Upper.kicad_sch</source>
-    <date>2026-11-05T00:33:17</date>
+    <date>2026-11-06T12:59:40</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">TWO-LAYER STACK / PROTOTYPE</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -1151,16 +1151,16 @@
       </units>
     </comp>
     <comp ref="R36">
-      <value>100k</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="MPN">RC1206FR-0710KL</field>
         <field name="LCSC"/>
         <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
-        <field name="Checked">2026-11-04</field>
+        <field name="Sourcing Status">1206 1% UVLO correction; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
         <field name="Supplier URL"/>
         <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Rating">0.25 W, 1%</field>
@@ -1170,11 +1170,11 @@
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
       <property name="LCSC" value=""/>
       <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
-      <property name="Checked" value="2026-11-04"/>
+      <property name="Sourcing Status" value="1206 1% UVLO correction; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
       <property name="Supplier URL" value=""/>
       <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
       <property name="Rating" value="0.25 W, 1%"/>
@@ -1194,16 +1194,16 @@
       </units>
     </comp>
     <comp ref="R37">
-      <value>100k</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="MPN">RC1206FR-0710KL</field>
         <field name="LCSC"/>
         <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
-        <field name="Checked">2026-11-04</field>
+        <field name="Sourcing Status">1206 1% UVLO correction; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
         <field name="Supplier URL"/>
         <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Rating">0.25 W, 1%</field>
@@ -1213,11 +1213,11 @@
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
       <property name="LCSC" value=""/>
       <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
-      <property name="Checked" value="2026-11-04"/>
+      <property name="Sourcing Status" value="1206 1% UVLO correction; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
       <property name="Supplier URL" value=""/>
       <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
       <property name="Rating" value="0.25 W, 1%"/>
@@ -1237,16 +1237,16 @@
       </units>
     </comp>
     <comp ref="R38">
-      <value>100k</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="MPN">RC1206FR-0710KL</field>
         <field name="LCSC"/>
         <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
-        <field name="Checked">2026-11-04</field>
+        <field name="Sourcing Status">1206 1% UVLO correction; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
         <field name="Supplier URL"/>
         <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Rating">0.25 W, 1%</field>
@@ -1256,11 +1256,11 @@
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
       <property name="LCSC" value=""/>
       <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
-      <property name="Checked" value="2026-11-04"/>
+      <property name="Sourcing Status" value="1206 1% UVLO correction; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
       <property name="Supplier URL" value=""/>
       <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
       <property name="Rating" value="0.25 W, 1%"/>
@@ -1280,16 +1280,16 @@
       </units>
     </comp>
     <comp ref="R39">
-      <value>100k</value>
+      <value>11k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
       <fields>
         <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="MPN">RC1206FR-0711KL</field>
         <field name="LCSC"/>
         <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
-        <field name="Checked">2026-11-04</field>
+        <field name="Sourcing Status">1206 1% UVLO correction; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
         <field name="Supplier URL"/>
         <field name="Source URL">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
         <field name="Rating">0.25 W, 1%</field>
@@ -1299,11 +1299,11 @@
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="MPN" value="RC1206FR-0711KL"/>
       <property name="LCSC" value=""/>
       <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
-      <property name="Checked" value="2026-11-04"/>
+      <property name="Sourcing Status" value="1206 1% UVLO correction; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
       <property name="Supplier URL" value=""/>
       <property name="Source URL" value="https://pccomponents.com/datasheets/yageo-rc.pdf"/>
       <property name="Rating" value="0.25 W, 1%"/>
@@ -4303,7 +4303,7 @@
       <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
     </library>
     <library logical="MagMouse">
-      <uri>${KIPRJMOD}/../../../kicad/MagMouse.kicad_sym</uri>
+      <uri>${KIPRJMOD}/../../../common/MagMouse.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
       <uri>${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym</uri>

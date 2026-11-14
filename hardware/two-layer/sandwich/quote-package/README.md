@@ -12,6 +12,12 @@ are in the BOM; their supplier stock and assembly availability have not been
 checked, so superseded small-package supplier IDs are blank. The saved JLCPCB
 prices predate this revision.
 
+The November circuit correction also changes Upper R36–R39, replaces five
+switched-domain buffers with Nexperia 74LVC125APW,118, and adds nine Wheel
+supervisor/gate components. Their exact MPNs and sourcing status are in the
+active BOMs. See the [circuit review](../circuit-review/README.md); no new
+supplier quote, stock reservation or order is implied by these exports.
+
 | Board | Size | Copper layers |
 | --- | --- | ---: |
 | Lower | 70 × 100 mm, tapered | 2 |

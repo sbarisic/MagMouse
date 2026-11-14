@@ -1,0 +1,427 @@
+{
+  "model": "Native-contact copper resistance screen: 35 um copper, 20 um via plating, 80 C, actual board thickness. Ignores connector, harness, cable and semiconductor losses. Not measured ampacity or a thermal solver. Whole-object contacts can shorten inferred paths through overlapping copper.",
+  "boards": {
+    "Lower": {
+      "source_sha256": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+      "paths": [
+        {
+          "source": "J1.A4",
+          "destination": "J103.2",
+          "case_A": 2.0,
+          "before_mohm": 8.986,
+          "after_mohm": 11.781,
+          "drop_mV": 23.563,
+          "loss_mW": 47.125,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 2,
+          "length_below_uniform_screen_mm": 1.5
+        },
+        {
+          "source": "J1.A9",
+          "destination": "J103.2",
+          "case_A": 2.0,
+          "before_mohm": 3.378,
+          "after_mohm": 5.779,
+          "drop_mV": 11.557,
+          "loss_mW": 23.115,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.5
+        },
+        {
+          "source": "J1.B4",
+          "destination": "J103.2",
+          "case_A": 2.0,
+          "before_mohm": 3.378,
+          "after_mohm": 5.779,
+          "drop_mV": 11.557,
+          "loss_mW": 23.115,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.5
+        },
+        {
+          "source": "J1.B9",
+          "destination": "J103.2",
+          "case_A": 2.0,
+          "before_mohm": 8.986,
+          "after_mohm": 11.781,
+          "drop_mV": 23.563,
+          "loss_mW": 47.125,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 2,
+          "length_below_uniform_screen_mm": 1.5
+        },
+        {
+          "source": "J103.3",
+          "destination": "U2.2",
+          "case_A": 1.0,
+          "before_mohm": 48.573,
+          "after_mohm": 27.701,
+          "drop_mV": 27.701,
+          "loss_mW": 27.701,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 1,
+          "length_below_uniform_screen_mm": 0.95
+        },
+        {
+          "source": "J103.3",
+          "destination": "U2.3",
+          "case_A": 1.0,
+          "before_mohm": 47.701,
+          "after_mohm": 28.919,
+          "drop_mV": 28.919,
+          "loss_mW": 28.919,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 1,
+          "length_below_uniform_screen_mm": 1.45
+        },
+        {
+          "source": "U2.7",
+          "destination": "L1.1",
+          "case_A": 1.0,
+          "before_mohm": 4.279,
+          "after_mohm": 6.819,
+          "drop_mV": 6.819,
+          "loss_mW": 6.819,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.781
+        },
+        {
+          "source": "L1.2",
+          "destination": "J103.4",
+          "case_A": 1.0,
+          "before_mohm": 43.764,
+          "after_mohm": 33.844,
+          "drop_mV": 33.844,
+          "loss_mW": 33.844,
+          "minimum_width_mm": 0.5,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        }
+      ],
+      "ground": {
+        "F.Cu": {
+          "filled_mm2": 2604.477,
+          "percent": 44.57
+        },
+        "B.Cu": {
+          "filled_mm2": 2230.864,
+          "percent": 38.17
+        }
+      },
+      "stitches": 206
+    },
+    "Upper": {
+      "source_sha256": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+      "paths": [
+        {
+          "source": "J104.2",
+          "destination": "U12.5",
+          "case_A": 2.0,
+          "before_mohm": 5.782,
+          "after_mohm": 7.6,
+          "drop_mV": 15.199,
+          "loss_mW": 30.399,
+          "minimum_width_mm": 0.15,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0.919
+        },
+        {
+          "source": "U12.6",
+          "destination": "J104.3",
+          "case_A": 2.0,
+          "before_mohm": 8.052,
+          "after_mohm": 14.098,
+          "drop_mV": 28.196,
+          "loss_mW": 56.392,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.75
+        },
+        {
+          "source": "U12.6",
+          "destination": "U13.5",
+          "case_A": 2.0,
+          "before_mohm": 48.421,
+          "after_mohm": 46.819,
+          "drop_mV": 93.637,
+          "loss_mW": 187.274,
+          "minimum_width_mm": 0.15,
+          "vias_in_selected_path": 2,
+          "length_below_uniform_screen_mm": 2.669
+        },
+        {
+          "source": "U13.6",
+          "destination": "J10.1",
+          "case_A": 2.0,
+          "before_mohm": 18.251,
+          "after_mohm": 35.732,
+          "drop_mV": 71.463,
+          "loss_mW": 142.926,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.75
+        }
+      ],
+      "ground": {
+        "F.Cu": {
+          "filled_mm2": 4211.691,
+          "percent": 70.29
+        },
+        "B.Cu": {
+          "filled_mm2": 4579.435,
+          "percent": 76.43
+        }
+      },
+      "stitches": 30
+    },
+    "Wheel": {
+      "source_sha256": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+      "paths": [
+        {
+          "source": "J11.1",
+          "destination": "U21.9",
+          "case_A": 2.0,
+          "before_mohm": 33.665,
+          "after_mohm": 36.235,
+          "drop_mV": 72.47,
+          "loss_mW": 144.941,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.5
+        },
+        {
+          "source": "J11.1",
+          "destination": "U21.10",
+          "case_A": 2.0,
+          "before_mohm": 33.462,
+          "after_mohm": 36.235,
+          "drop_mV": 72.47,
+          "loss_mW": 144.941,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 1.5
+        },
+        {
+          "source": "J11.1",
+          "destination": "U21.11",
+          "case_A": 2.0,
+          "before_mohm": 33.259,
+          "after_mohm": 37.453,
+          "drop_mV": 74.905,
+          "loss_mW": 149.81,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 2.0
+        },
+        {
+          "source": "U21.13",
+          "destination": "J5.1",
+          "case_A": 0.5,
+          "before_mohm": 38.119,
+          "after_mohm": 19.71,
+          "drop_mV": 9.855,
+          "loss_mW": 4.928,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "U21.14",
+          "destination": "J5.1",
+          "case_A": 0.5,
+          "before_mohm": 37.779,
+          "after_mohm": 20.928,
+          "drop_mV": 10.464,
+          "loss_mW": 5.232,
+          "minimum_width_mm": 0.25,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "U21.16",
+          "destination": "J5.2",
+          "case_A": 0.5,
+          "before_mohm": 30.58,
+          "after_mohm": 23.088,
+          "drop_mV": 11.544,
+          "loss_mW": 5.772,
+          "minimum_width_mm": 0.15,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "U21.17",
+          "destination": "J5.2",
+          "case_A": 0.5,
+          "before_mohm": 29.899,
+          "after_mohm": 24.305,
+          "drop_mV": 12.153,
+          "loss_mW": 6.076,
+          "minimum_width_mm": 0.15,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "U21.19",
+          "destination": "J5.3",
+          "case_A": 0.5,
+          "before_mohm": 22.953,
+          "after_mohm": 26.805,
+          "drop_mV": 13.402,
+          "loss_mW": 6.701,
+          "minimum_width_mm": 0.15,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "U21.20",
+          "destination": "J5.3",
+          "case_A": 0.5,
+          "before_mohm": 22.75,
+          "after_mohm": 28.022,
+          "drop_mV": 14.011,
+          "loss_mW": 7.006,
+          "minimum_width_mm": 0.15,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "J11.1",
+          "destination": "R121.1",
+          "case_A": 0.5532,
+          "before_mohm": 37.063,
+          "after_mohm": 45.991,
+          "drop_mV": 25.442,
+          "loss_mW": 14.074,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "J11.1",
+          "destination": "R122.1",
+          "case_A": 0.5532,
+          "before_mohm": 51.644,
+          "after_mohm": 38.481,
+          "drop_mV": 21.287,
+          "loss_mW": 11.776,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "J11.1",
+          "destination": "R123.1",
+          "case_A": 0.5532,
+          "before_mohm": 41.932,
+          "after_mohm": 49.643,
+          "drop_mV": 27.462,
+          "loss_mW": 15.192,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "J11.1",
+          "destination": "R124.1",
+          "case_A": 0.5532,
+          "before_mohm": 56.514,
+          "after_mohm": 42.133,
+          "drop_mV": 23.308,
+          "loss_mW": 12.894,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "Q5.3",
+          "destination": "R121.2",
+          "case_A": 0.5532,
+          "before_mohm": 21.896,
+          "after_mohm": 20.096,
+          "drop_mV": 11.117,
+          "loss_mW": 6.15,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "Q5.3",
+          "destination": "R122.2",
+          "case_A": 0.5532,
+          "before_mohm": 13.403,
+          "after_mohm": 5.725,
+          "drop_mV": 3.167,
+          "loss_mW": 1.752,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "Q5.3",
+          "destination": "R123.2",
+          "case_A": 0.5532,
+          "before_mohm": 21.556,
+          "after_mohm": 16.444,
+          "drop_mV": 9.097,
+          "loss_mW": 5.032,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        },
+        {
+          "source": "Q5.3",
+          "destination": "R124.2",
+          "case_A": 0.5532,
+          "before_mohm": 13.063,
+          "after_mohm": 9.377,
+          "drop_mV": 5.187,
+          "loss_mW": 2.87,
+          "minimum_width_mm": 1.0,
+          "vias_in_selected_path": 0,
+          "length_below_uniform_screen_mm": 0
+        }
+      ],
+      "ground": {
+        "F.Cu": {
+          "filled_mm2": 2760.834,
+          "percent": 62.06
+        },
+        "B.Cu": {
+          "filled_mm2": 2911.598,
+          "percent": 65.45
+        }
+      },
+      "stitches": 66
+    },
+    "Encoder": {
+      "source_sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+      "paths": [],
+      "ground": {
+        "F.Cu": {
+          "filled_mm2": 125.471,
+          "percent": 53.17
+        },
+        "B.Cu": {
+          "filled_mm2": 135.988,
+          "percent": 57.62
+        }
+      },
+      "stitches": 0
+    }
+  },
+  "operating_budget_note": "The 1 A logic and 2 A actuator rows are separate conservative screening cases, not permission to exceed the 2 A total input operating budget.",
+  "full_temperature_sense_error_bound": {
+    "tap_location_description": "R147 branch joins the local VM feed at approximately (24.04,30.31) mm; shared copper is the short 0.25 mm driver pin escape.",
+    "contact_graph_tap_to_driver_mohm_at_80C_upper_whole_segment_screen": 3.6530644943905464,
+    "shared_whole_segment_length_mm": 1.5010563256091418,
+    "scale_to_125C": 1.1431056805308302,
+    "max_current_A": 2,
+    "estimated_max_positive_sense_error_mV": 8.351677549766636,
+    "minimum_driver_voltage_at_static_trip_V": 4.52431210636279,
+    "limitations": "Static copper screening only, not a Kelvin connection at the IC land. Ground bounce, shutdown delay and transient droop require measurements across U21 VM/GND."
+  }
+}

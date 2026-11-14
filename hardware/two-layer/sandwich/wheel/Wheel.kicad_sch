@@ -168,4 +168,29 @@
     (instances
       (project "Wheel"
         (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
+          (page "7")))))
+  (sheet
+    (at 160 50)
+    (size 110 17)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "31efff31-0015-5a5c-8da5-8b5f3ed969ff")
+    (property "Sheetname" "15_Wheel_Undervoltage"
+      (at 160 48.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left bottom)))
+    (property "Sheetfile" "15_Wheel_Undervoltage.kicad_sch"
+      (at 160 68.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404"
           (page "7"))))))

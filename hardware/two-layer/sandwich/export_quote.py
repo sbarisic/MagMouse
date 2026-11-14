@@ -6,19 +6,23 @@ import collections,csv,hashlib,json,subprocess,sys,zipfile,xml.etree.ElementTree
 import pcbnew as p
 from route_main import HERE,ROOT,CLI
 from netlist import export
+from circuit_review_rules import VALUE_CHANGES
 sys.path.insert(0,str(ROOT/'build/two-layer/python'))
 sys.path.insert(0,str(ROOT/'hardware/common'))
 from board_geometry import polygons
+from kicad_output import run as run_atomic
 from shapely.geometry import Point
 
 BOARDS={'Lower':HERE/'lower/Lower.kicad_pcb','Upper':HERE/'upper/Upper.kicad_pcb',
         'Wheel':HERE/'wheel/Wheel.kicad_pcb','Encoder':HERE.parent/'encoder/Encoder.kicad_pcb'}
 OUT=HERE/'quote-package'
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
-def run(*args):subprocess.run([str(CLI),*map(str,args)],check=True)
+def run(*args):run_atomic(CLI,args,check=True)
 def write_csv(path,fields,rows):
-    with path.open('w',encoding='utf-8-sig',newline='') as stream:
+    temporary=path.with_suffix(path.suffix+'.tmp')
+    with temporary.open('w',encoding='utf-8-sig',newline='') as stream:
         writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(rows)
+    temporary.replace(path)
 def main():
     OUT.mkdir(exist_ok=True);review=HERE/'routing-review';review.mkdir(exist_ok=True)
     reference,reference_pins=export(HERE/'main-circuit/Main.kicad_sch',review/'Main-reference.xml')
@@ -36,7 +40,7 @@ def main():
             owned={r for r,o in ownership.items() if o==name}
             assert owned<=set(comps)
             for ref in owned:
-                assert comps[ref].findtext('value')==reference[ref].findtext('value')
+                assert comps[ref].findtext('value')==VALUE_CHANGES.get(name,{}).get(ref,reference[ref].findtext('value'))
                 assert {k:v for k,v in pins.items() if k[0]==ref}=={k:v for k,v in reference_pins.items() if k[0]==ref},ref
         board=p.LoadBoard(str(path));assert board.GetCopperLayerCount()==2
         outline=p.SHAPE_POLY_SET();assert board.GetBoardPolygonOutlines(outline,False)
@@ -64,8 +68,11 @@ def main():
         write_csv(folder/(name+'-BOM.csv'),bomfields,bom)
         write_csv(folder/(name+'-CPL.csv'),['Designator','Mid X','Mid Y','Layer','Rotation'],positions)
         write_csv(folder/(name+'-manual-items.csv'),['Reference','Value','Footprint','Reason'],manual)
-        with zipfile.ZipFile(OUT/(name+'-gerbers.zip'),'w',zipfile.ZIP_DEFLATED) as archive:
+        archive_path=OUT/(name+'-gerbers.zip')
+        temporary_archive=archive_path.with_suffix('.zip.tmp')
+        with zipfile.ZipFile(temporary_archive,'w',zipfile.ZIP_DEFLATED) as archive:
             for f in sorted((folder/'gerbers').iterdir()):archive.write(f,f.name)
+        temporary_archive.replace(archive_path)
         for side,layers in [('front','F.Cu,F.Silkscreen,Edge.Cuts'),('back','B.Cu,B.Silkscreen,Edge.Cuts')]:
             run('pcb','export','svg','--mode-single','--fit-page-to-board','--exclude-drawing-sheet','-l',layers,'-o',review/(name+'-'+side+'.svg'),path)
             svg=review/(name+'-'+side+'.svg')
@@ -97,7 +104,10 @@ def main():
             'smallest_drill_mm':min(p.ToMM(t.GetDrill()) for t in board.GetTracks() if isinstance(t,p.PCB_VIA)),
             'minimum_track_mm':min(p.ToMM(t.GetWidth()) for t in board.GetTracks() if not isinstance(t,p.PCB_VIA))}
         rules=json.loads(path.with_suffix('.kicad_pro').read_text())['board']['design_settings']['rules']
-        report[name]['fabrication_rules']={k:rules[k] for k in ('min_through_hole_diameter','min_via_diameter','min_via_annular_width','min_hole_clearance','min_hole_to_hole','min_clearance')}
+        report[name]['fabrication_rules']={k:rules[k] for k in ('min_through_hole_diameter','min_via_diameter','min_via_annular_width','min_hole_clearance','min_hole_to_hole','min_clearance','min_copper_edge_clearance')}
+        assert rules['min_copper_edge_clearance'] == 0.5, name+' copper-to-edge rule'
+        if name == 'Lower':
+            report[name]['optical_aperture_exception_mm'] = 0.4
     for wire in json.loads((HERE/'partition.json').read_text())['wires']:
         for side in ('Lower','Upper'):
             ref,pin=wire[side.lower()].split('.');assert allpins[side][ref,pin]==wire['net']
@@ -107,9 +117,8 @@ def main():
     (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
     files={f.relative_to(OUT).as_posix():sha(f) for f in OUT.rglob('*') if f.is_file() and f.name not in ('SHA256SUMS.json','MagMouse-quote-package.zip')}
     (OUT/'SHA256SUMS.json').write_text(json.dumps(files,indent=2)+'\n')
-    with zipfile.ZipFile(HERE/'MagMouse-quote-package.zip','w',zipfile.ZIP_DEFLATED) as archive:
-        for f in sorted(OUT.rglob('*')):
-            if f.is_file():archive.write(f,f.relative_to(OUT).as_posix())
+    # The per-board/panel fabrication archives are sufficient for suppliers.
+    # Do not recreate the redundant whole-package archive removed by the user.
     print(json.dumps(report,indent=2))
 
 if __name__=='__main__':main()

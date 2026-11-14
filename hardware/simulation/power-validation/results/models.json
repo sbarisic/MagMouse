@@ -1,0 +1,20 @@
+{
+  "tps3808": {
+    "url": "https://www.ti.com/lit/zip/slim038b",
+    "archive_sha256": "bff858dc6a43f7de7b9983d598ae501a835da00a2c89c89270dc9530cbd340af",
+    "library_sha256": "f9d87b389c93bfc4c87c7b7d79c31df2a51045bc69b382fdb123c1dad456b651",
+    "status": "TI transistor macro-model with documented syntax adaptation; not independently validated against PSpice.",
+    "adapted_sha256": "2d532de27e30a52155907ca85c29494d0a7d4ba982d63ccfb3d9ae2da9da6183",
+    "adaptation": "Remove nine always-false ERROR annotations; replace ten unity Cbreak capacitor models with plain capacitors. No component values changed."
+  },
+  "tps25947": {
+    "url": "https://www.ti.com/lit/zip/slvmdj6a",
+    "archive_sha256": "9bfd3f61435af48179c56bf8c4d9911471154511db272241a9b4c2a9c9c28a2b",
+    "library_sha256": "54586d04715478c3094dc1be645a36d44f014a321b9e655a95034f34ce7c4d69",
+    "status": "Encrypted PSpice model; NOT executed by ngspice."
+  },
+  "engine": {
+    "path": "C:\\Users\\cartm\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\ngspice.dll",
+    "sha256": "3238d82f02b6d08d8703a28ea894bcfdf59906dd4a59ad2e93eeec532a0454a3"
+  }
+}

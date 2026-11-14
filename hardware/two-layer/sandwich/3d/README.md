@@ -1,6 +1,6 @@
 # PCB 3D models
 
-Models exported directly from the routed 1206 / 2 mm spacing revision. `manifest.json`
+Models exported directly from the routed optical-isolation / local-undervoltage revision, retaining 1206 passives and 2 mm spacing. `manifest.json`
 records the exact PCB source hashes. Exporting does not modify the KiCad files.
 
 | File prefix | Board size |
@@ -32,7 +32,7 @@ U35 body does not fill this opening in the populated previews.
 
 ## Component coverage
 
-The exports include 234 available component bodies. Fourteen fitted parts have
+The exports include 243 available component bodies. Fourteen fitted parts have
 no available body in the installed project libraries:
 
 | Board | Missing bodies |

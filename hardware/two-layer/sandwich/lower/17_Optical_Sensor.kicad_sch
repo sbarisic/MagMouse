@@ -1112,7 +1112,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "SN74LVC125APWR"
+    (property "Value" "74LVC125APW,118"
       (at 297.1 58.53999999999999 0)
       (effects
         (font
@@ -1125,56 +1125,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "Texas Instruments"
+    (property "Manufacturer" "Nexperia"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "SN74LVC125APWR"
+    (property "MPN" "74LVC125APW,118"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C7813"
+    (property "LCSC" "C6059"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C7813"
+    (property "JLCPCB Part #" "C6059"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; refresh JLC stock/service before order"
+    (property "Sourcing Status" "Ioff and package checked; current assembly stock unverified"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-05"
       (at 292.1 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C7813.html"
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C6059.html"
       (at 292.1 83.82 0)
       (hide yes)
       (effects

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\sandwich\wheel\Wheel.kicad_sch</source>
-    <date>2026-11-05T00:33:35</date>
+    <date>2026-11-06T12:59:54</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">MODULAR DRAFT - NOT FOR FABRICATION</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -120,6 +120,24 @@
         <rev>0.2 DRAFT</rev>
         <date>2026-09-10</date>
         <source>19_Local_Power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/">
+      <title_block>
+        <title>Wheel local undervoltage inhibit</title>
+        <company/>
+        <rev>0.8</rev>
+        <date>2026-11-05</date>
+        <source>15_Wheel_Undervoltage.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -1627,29 +1645,29 @@
       </units>
     </comp>
     <comp ref="U24">
-      <value>SN74LVC125APWR</value>
+      <value>74LVC125APW,118</value>
       <footprint>MagMouseSandwich:TSSOP-14_4.4x5mm_P0.65mm_InsetPin1</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">SN74LVC125APWR</field>
-        <field name="LCSC">C7813</field>
-        <field name="JLCPCB Part #">C7813</field>
-        <field name="Sourcing Status">Catalog identity checked; stock/assembly eligibility refresh required</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C7813.html</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC125APW,118</field>
+        <field name="LCSC">C6059</field>
+        <field name="JLCPCB Part #">C6059</field>
+        <field name="Sourcing Status">Powered-off interface audit: explicit Ioff; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C6059.html</field>
         <field name="Footprint">MagMouseSandwich:TSSOP-14_4.4x5mm_P0.65mm_InsetPin1</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="MagMouse" part="SN74LVC125APWR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="SN74LVC125APWR"/>
-      <property name="LCSC" value="C7813"/>
-      <property name="JLCPCB Part #" value="C7813"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock/assembly eligibility refresh required"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C7813.html"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC125APW,118"/>
+      <property name="LCSC" value="C6059"/>
+      <property name="JLCPCB Part #" value="C6059"/>
+      <property name="Sourcing Status" value="Powered-off interface audit: explicit Ioff; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C6059.html"/>
       <property name="Sheetname" value="11_Wheel_SPI"/>
       <property name="Sheetfile" value="11_Wheel_SPI.kicad_sch"/>
       <sheetpath names="/11_Wheel_SPI/" tstamps="/6314463c-8d57-5fea-a888-921d0788386a/"/>
@@ -1676,29 +1694,29 @@
       </units>
     </comp>
     <comp ref="U26">
-      <value>SN74LVC125APWR</value>
+      <value>74LVC125APW,118</value>
       <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">SN74LVC125APWR</field>
-        <field name="LCSC">C7813</field>
-        <field name="JLCPCB Part #">C7813</field>
-        <field name="Sourcing Status">Catalog identity checked; stock/assembly eligibility refresh required</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C7813.html</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC125APW,118</field>
+        <field name="LCSC">C6059</field>
+        <field name="JLCPCB Part #">C6059</field>
+        <field name="Sourcing Status">Powered-off interface audit: explicit Ioff; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C6059.html</field>
         <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="MagMouse" part="SN74LVC125APWR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="SN74LVC125APWR"/>
-      <property name="LCSC" value="C7813"/>
-      <property name="JLCPCB Part #" value="C7813"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock/assembly eligibility refresh required"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C7813.html"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC125APW,118"/>
+      <property name="LCSC" value="C6059"/>
+      <property name="JLCPCB Part #" value="C6059"/>
+      <property name="Sourcing Status" value="Powered-off interface audit: explicit Ioff; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C6059.html"/>
       <property name="Sheetname" value="11_Wheel_SPI"/>
       <property name="Sheetfile" value="11_Wheel_SPI.kicad_sch"/>
       <sheetpath names="/11_Wheel_SPI/" tstamps="/6314463c-8d57-5fea-a888-921d0788386a/"/>
@@ -3856,8 +3874,390 @@
         </unit>
       </units>
     </comp>
+    <comp ref="C102">
+      <value>1nF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31C102JBCNNN.do</datasheet>
+      <fields>
+        <field name="MPN">CL31C102JBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Rating">C0G, 5%, 50 V</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31C102JBCNNN.do</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL31C102JBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Rating" value="C0G, 5%, 50 V"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>6d972b95-91a7-5154-b49f-76bd0136c34e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C103">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B104KBCNNN.do</datasheet>
+      <fields>
+        <field name="MPN">CL31B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Rating">X7R, 10%, 50 V</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B104KBCNNN.do</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL31B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Rating" value="X7R, 10%, 50 V"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>a4425996-2e28-5b9d-a1b3-e6f49fade78f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C104">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B104KBCNNN.do</datasheet>
+      <fields>
+        <field name="MPN">CL31B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Rating">X7R, 10%, 50 V</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B104KBCNNN.do</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL31B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Rating" value="X7R, 10%, 50 V"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>190f3f0e-29cf-5989-b183-279e11cb9127</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R147">
+      <value>105k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <fields>
+        <field name="MPN">TNPW1206105KBEEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">0.1%, 25 ppm/K</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="TNPW1206105KBEEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="0.1%, 25 ppm/K"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>a68b234a-d4bb-595b-8667-c6df6dc5d5cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R148">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <fields>
+        <field name="MPN">TNPW120610K0BEEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">0.1%, 25 ppm/K</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="TNPW120610K0BEEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="0.1%, 25 ppm/K"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>1d49a1e7-adaf-5f8c-9eac-7d30565c2546</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R149">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
+      <fields>
+        <field name="MPN">RC1206FR-0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Rating">1%, 0.25 W</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC1206FR-0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Rating" value="1%, 0.25 W"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>4a1df298-894c-59c4-bd46-bd69eafc9261</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R150">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://pccomponents.com/datasheets/yageo-rc.pdf</datasheet>
+      <fields>
+        <field name="MPN">RC1206FR-07100KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Rating">1%, 0.25 W</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet">https://pccomponents.com/datasheets/yageo-rc.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC1206FR-07100KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Rating" value="1%, 0.25 W"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>8bf7bfa4-5ee2-505e-9e45-b6960505e094</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U40">
+      <value>TPS3808G01DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps3808.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS3808G01DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Rating"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Supervisor" part="TPS3808DBV" description="Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6"/>
+      <property name="MPN" value="TPS3808G01DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Rating" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="supply voltage supervisor"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>19aa0485-ae15-5495-8e95-dc4325a4986b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U41">
+      <value>SN74LVC1G08DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</datasheet>
+      <fields>
+        <field name="MPN">SN74LVC1G08DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Rating"/>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-05</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="74xGxx" part="74LVC1G08" description="Single AND Gate, Low-Voltage CMOS"/>
+      <property name="MPN" value="SN74LVC1G08DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Rating" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="15_Wheel_Undervoltage"/>
+      <property name="Sheetfile" value="15_Wheel_Undervoltage.kicad_sch"/>
+      <property name="ki_keywords" value="Single Gate AND LVC CMOS"/>
+      <property name="ki_fp_filters" value="SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"/>
+      <sheetpath names="/15_Wheel_Undervoltage/" tstamps="/31efff31-0015-5a5c-8da5-8b5f3ed969ff/"/>
+      <tstamps>04affae8-d324-5263-b65b-f1683cebb6d2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
   </components>
   <libparts>
+    <libpart lib="74xGxx" part="74LVC1G08">
+      <description>Single AND Gate, Low-Voltage CMOS</description>
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+        <fp>Texas?R-PDSO-G5?DCK*</fp>
+        <fp>Texas?R-PDSO-N5?DRL*</fp>
+        <fp>Texas?X2SON*0.8x0.8mm*P0.48mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf</field>
+        <field name="Description">Single AND Gate, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Connector" part="TestPoint">
       <description>test point</description>
       <footprints>
@@ -4164,6 +4564,28 @@
         <pin num="5" name="V+" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="Power_Supervisor" part="TPS3808DBV">
+      <description>Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tps3808.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3808DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description">Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RESET}" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="~{MR}" type="input"/>
+        <pin num="4" name="CT" type="input"/>
+        <pin num="5" name="SENSE" type="input"/>
+        <pin num="6" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Reference_Voltage" part="LM4040DBZ-2.5">
       <description>2.500V Precision Micropower Shunt Voltage Reference, SOT-23</description>
       <docs>http://www.ti.com/lit/ds/symlink/lm4040-n.pdf</docs>
@@ -4223,6 +4645,9 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="74xGxx">
+      <uri>${KICAD10_SYMBOL_DIR}/74xGxx.kicad_sym</uri>
+    </library>
     <library logical="Connector">
       <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
     </library>
@@ -4233,7 +4658,10 @@
       <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
     </library>
     <library logical="MagMouse">
-      <uri>${KIPRJMOD}/../../../kicad/MagMouse.kicad_sym</uri>
+      <uri>${KIPRJMOD}/../../../common/MagMouse.kicad_sym</uri>
+    </library>
+    <library logical="Power_Supervisor">
+      <uri>${KICAD10_SYMBOL_DIR}/Power_Supervisor.kicad_sym</uri>
     </library>
     <library logical="Reference_Voltage">
       <uri>${KICAD10_SYMBOL_DIR}/Reference_Voltage.kicad_sym</uri>
@@ -4244,9 +4672,14 @@
   </libraries>
   <nets>
     <net code="1" name="+3V3" class="Power">
+      <node ref="C103" pin="1" pintype="passive"/>
+      <node ref="C104" pin="1" pintype="passive"/>
       <node ref="C51" pin="1" pintype="passive"/>
       <node ref="J9" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="R149" pin="1" pintype="passive"/>
       <node ref="U22" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U40" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U41" pin="5" pinfunction="VCC_5" pintype="power_in"/>
     </net>
     <net code="2" name="ACT_5V" class="Power">
       <node ref="C41" pin="1" pintype="passive"/>
@@ -4268,6 +4701,7 @@
       <node ref="R123" pin="1" pintype="passive"/>
       <node ref="R124" pin="1" pintype="passive"/>
       <node ref="R146" pin="1" pintype="passive"/>
+      <node ref="R147" pin="1" pintype="passive"/>
       <node ref="TP34" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U21" pin="10" pinfunction="VM_2_10" pintype="power_in"/>
       <node ref="U21" pin="11" pinfunction="VM_3_11" pintype="power_in"/>
@@ -4279,6 +4713,7 @@
       <node ref="R84" pin="1" pintype="passive"/>
       <node ref="U21" pin="23" pinfunction="nSLEEP_23" pintype="input"/>
       <node ref="U22" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U40" pin="3" pinfunction="~{MR}_3" pintype="input"/>
     </net>
     <net code="4" name="ADC2_CS_LOCAL" class="Default">
       <node ref="R98" pin="2" pintype="passive"/>
@@ -4437,6 +4872,9 @@
       <node ref="U24" pin="3" pinfunction="1Y_3" pintype="tri_state"/>
     </net>
     <net code="33" name="GND" class="Default">
+      <node ref="C102" pin="2" pintype="passive"/>
+      <node ref="C103" pin="2" pintype="passive"/>
+      <node ref="C104" pin="2" pintype="passive"/>
       <node ref="C41" pin="2" pintype="passive"/>
       <node ref="C42" pin="2" pintype="passive"/>
       <node ref="C43" pin="2" pintype="passive"/>
@@ -4481,6 +4919,8 @@
       <node ref="R144" pin="2" pintype="passive"/>
       <node ref="R145" pin="2" pintype="passive"/>
       <node ref="R146" pin="2" pintype="passive"/>
+      <node ref="R148" pin="2" pintype="passive"/>
+      <node ref="R150" pin="2" pintype="passive"/>
       <node ref="R83" pin="2" pintype="passive"/>
       <node ref="R84" pin="2" pintype="passive"/>
       <node ref="R89" pin="2" pintype="passive"/>
@@ -4514,6 +4954,8 @@
       <node ref="U26" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U30" pin="2" pinfunction="V-_2" pintype="power_in"/>
       <node ref="U31" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U40" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U41" pin="3" pinfunction="GND_3" pintype="power_in"/>
     </net>
     <net code="34" name="MOTOR_SPI_MOSI" class="Default">
       <node ref="J9" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
@@ -4608,46 +5050,65 @@
     </net>
     <net code="53" name="WHEEL_RUN_EN" class="Default">
       <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R150" pin="1" pintype="passive"/>
       <node ref="R83" pin="1" pintype="passive"/>
       <node ref="U21" pin="28" pinfunction="INLA_28" pintype="input"/>
       <node ref="U21" pin="30" pinfunction="INLB_30" pintype="input"/>
       <node ref="U21" pin="32" pinfunction="INLC_32" pintype="input"/>
       <node ref="U22" pin="10" pinfunction="3B_10" pintype="input"/>
       <node ref="U22" pin="13" pinfunction="4B_13" pintype="input"/>
-      <node ref="U22" pin="3" pinfunction="1Y_3" pintype="output"/>
       <node ref="U22" pin="5" pinfunction="2B_5" pintype="input"/>
+      <node ref="U41" pin="4" pintype="output"/>
     </net>
     <net code="54" name="WHEEL_RUN_REQ" class="Default">
       <node ref="J9" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
       <node ref="R137" pin="1" pintype="passive"/>
       <node ref="U22" pin="2" pinfunction="1B_2" pintype="input"/>
     </net>
-    <net code="55" name="WHEEL_SOA" class="Default">
+    <net code="55" name="WHEEL_RUN_REQUESTED" class="Default">
+      <node ref="U22" pin="3" pinfunction="1Y_3" pintype="output"/>
+      <node ref="U41" pin="1" pintype="input"/>
+    </net>
+    <net code="56" name="WHEEL_SOA" class="Default">
       <node ref="R102" pin="1" pintype="passive"/>
       <node ref="U21" pin="40" pinfunction="SOA_40" pintype="output"/>
     </net>
-    <net code="56" name="WHEEL_SOB" class="Default">
+    <net code="57" name="WHEEL_SOB" class="Default">
       <node ref="R103" pin="1" pintype="passive"/>
       <node ref="U21" pin="39" pinfunction="SOB_39" pintype="output"/>
     </net>
-    <net code="57" name="WHEEL_SOC" class="Default">
+    <net code="58" name="WHEEL_SOC" class="Default">
       <node ref="R104" pin="1" pintype="passive"/>
       <node ref="U21" pin="38" pinfunction="SOC_38" pintype="output"/>
     </net>
-    <net code="58" name="unconnected-(U21-NC-Pad1)" class="Default">
+    <net code="59" name="WHEEL_VM_OK" class="Default">
+      <node ref="R149" pin="2" pintype="passive"/>
+      <node ref="U40" pin="1" pinfunction="~{RESET}_1" pintype="output"/>
+      <node ref="U41" pin="2" pintype="input"/>
+    </net>
+    <net code="60" name="WHEEL_VM_SENSE" class="Default">
+      <node ref="C102" pin="1" pintype="passive"/>
+      <node ref="R147" pin="2" pintype="passive"/>
+      <node ref="R148" pin="1" pintype="passive"/>
+      <node ref="U40" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="61" name="unconnected-(U21-NC-Pad1)" class="Default">
       <node ref="U21" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="59" name="unconnected-(U21-NC-Pad24)" class="Default">
+    <net code="62" name="unconnected-(U21-NC-Pad24)" class="Default">
       <node ref="U21" pin="24" pinfunction="NC_24" pintype="no_connect"/>
     </net>
-    <net code="60" name="unconnected-(U24-4Y-Pad11)" class="Default">
+    <net code="63" name="unconnected-(U24-4Y-Pad11)" class="Default">
       <node ref="U24" pin="11" pinfunction="4Y_11" pintype="tri_state+no_connect"/>
     </net>
-    <net code="61" name="unconnected-(U26-4Y-Pad11)" class="Default">
+    <net code="64" name="unconnected-(U26-4Y-Pad11)" class="Default">
       <node ref="U26" pin="11" pinfunction="4Y_11" pintype="tri_state+no_connect"/>
     </net>
-    <net code="62" name="unconnected-(U31-NC-Pad3)" class="Default">
+    <net code="65" name="unconnected-(U31-NC-Pad3)" class="Default">
       <node ref="U31" pin="3" pinfunction="NC_3" pintype="no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U40-CT-Pad4)" class="Default">
+      <node ref="U40" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
     </net>
   </nets>
 </export>

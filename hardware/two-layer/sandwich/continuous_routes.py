@@ -17,8 +17,8 @@ def board_interior(b,margin=.4):
  assert b.GetBoardPolygonOutlines(outline,False)
  return unary_union(polygons(outline)).buffer(-margin)
 
-def continuous(b,net,start,end,layer):
- avoid=obstacles(b,net,layer).buffer(.2145);interior=board_interior(b);free=interior.difference(avoid)
+def continuous(b,net,start,end,layer,width=.15):
+ avoid=obstacles(b,net,layer).buffer(width/2+.151);interior=board_interior(b);free=interior.difference(avoid)
  regions=list(free.geoms) if hasattr(free,'geoms') else [free]
  region=next((q for q in regions if q.covers(Point(start)) and q.covers(Point(end))),None)
  if region is None:return None
@@ -52,7 +52,7 @@ def continuous(b,net,start,end,layer):
 
 def fanout(b,ref,num):
  pad=next(q for f in b.GetFootprints() if f.GetReference()==ref for q in f.Pads() if q.GetNumber()==num);net=pad.GetNetname();start=tuple(p.ToMM(pad.GetPosition()))
- foreign={l:obstacles(b,net,l) for l in (p.F_Cu,p.B_Cu)};favoid=foreign[p.F_Cu].buffer(.2145)
+ foreign={l:obstacles(b,net,l) for l in (p.F_Cu,p.B_Cu)};favoid=foreign[p.F_Cu].buffer(.2251)
  drilled=[Point(p.ToMM(q.GetPosition())).buffer(p.ToMM(max(q.GetDrillSize().x,q.GetDrillSize().y))/2+.401) for f in b.GetFootprints() for q in f.Pads() if q.GetDrillSize().x]
  avoid=unary_union([unary_union([s for *_,s in smd_shapes(b)]).buffer(.151),*[s.buffer(.376) for s in foreign.values()],*[Point(p.ToMM(q.GetPosition())).buffer(.551) for q in b.GetTracks() if isinstance(q,p.PCB_VIA)],*drilled])
  interior=board_interior(b)

@@ -18,6 +18,11 @@ lands. All four boards are checked for via-hole/SMD-land overlaps. The derived
 2 mm routed gaps and 5 mm mouse-bite tabs. Source copper is copied exactly,
 with isolated net names for each board; individual outlines remain unchanged.
 
+All four boards now require 0.5 mm copper clearance to their outer edges.
+Lower's internal optical aperture retains a reviewed 0.4 mm clearance, enforced
+by a custom rule for the `Optical aperture` edge group; the panel carries the same
+exception. Component positions, outlines and the 2 mm assembly spacing remain unchanged.
+
 ![Routed Main boards](main-routing.png)
 
 | Board/project | Dimensions | Copper layers | Original circuit footprints | Added interface/mount footprints |
@@ -129,9 +134,10 @@ The native reports, exported netlists, front/back copper SVGs and track-width
 measurements are alongside it. Inherited ignored categories remain explicit in
 the reports; no new DRC or ERC exclusions were added for routing.
 
-[MagMouse-quote-package.zip](MagMouse-quote-package.zip) includes four separate
-Gerber/drill ZIPs, per-board BOM/CPL CSVs, combined purchasing inventory, manual
-items and via-in-pad intersection lists. Read its [quotation notes](quote-package/README.md)
+[quote-package](quote-package/) contains four separate Gerber/drill ZIPs,
+per-board BOM/CPL CSVs, combined purchasing inventory, manual items and
+via-in-pad intersection lists. The redundant whole-package archive is removed;
+the individual fabrication ZIPs and [panel](panel/) remain. Read the [quotation notes](quote-package/README.md)
 for stack, assembly, stock, shipping/tax and mechanical assumptions. This is a
 pricing package. The [first live quote](quotes/2026-11-04-jlcpcb/QUOTE.md) records
 the superseded 0.20 mm, separate-board version. The [standard-via panel quote](quotes/2026-11-04-panel-standard-vias/QUOTE.md)
@@ -145,6 +151,12 @@ been refreshed for these files. No fabrication order is placed.
 evidence; their old board hashes and airwire counts are not current route results.
 
 ## Reproduction
+
+The [November circuit correction review](circuit-review/README.md) records the
+powered-off buffer substitutions, local motor undervoltage inhibit and capacitor
+placement changes. `validate_circuit_fixes.py` checks their explicit allowlist,
+all five harness pairs, spacing and via constraints. The historical combined
+schematic is deliberately unchanged. Firmware and bench acceptance remain open.
 
 Use KiCad 10 Python. Edit the independent KiCad projects for future circuit or
 layout changes. The one-time split and obsolete placement generators are now

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\sandwich\lower\Lower.kicad_sch</source>
-    <date>2026-11-05T00:32:54</date>
+    <date>2026-11-06T12:59:09</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">TWO-LAYER STACK / PROTOTYPE</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -2953,29 +2953,29 @@
       </units>
     </comp>
     <comp ref="U25">
-      <value>SN74LVC125APWR</value>
+      <value>74LVC125APW,118</value>
       <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">SN74LVC125APWR</field>
-        <field name="LCSC">C7813</field>
-        <field name="JLCPCB Part #">C7813</field>
-        <field name="Sourcing Status">Catalog identity checked; stock/assembly eligibility refresh required</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C7813.html</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC125APW,118</field>
+        <field name="LCSC">C6059</field>
+        <field name="JLCPCB Part #">C6059</field>
+        <field name="Sourcing Status">Powered-off interface audit: explicit Ioff; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C6059.html</field>
         <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="MagMouse" part="SN74LVC125APWR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="SN74LVC125APWR"/>
-      <property name="LCSC" value="C7813"/>
-      <property name="JLCPCB Part #" value="C7813"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock/assembly eligibility refresh required"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C7813.html"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC125APW,118"/>
+      <property name="LCSC" value="C6059"/>
+      <property name="JLCPCB Part #" value="C6059"/>
+      <property name="Sourcing Status" value="Powered-off interface audit: explicit Ioff; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C6059.html"/>
       <property name="Sheetname" value="11_Wheel_SPI"/>
       <property name="Sheetfile" value="11_Wheel_SPI.kicad_sch"/>
       <sheetpath names="/11_Wheel_SPI/" tstamps="/6314463c-8d57-5fea-a888-921d0788386a/"/>
@@ -3002,29 +3002,29 @@
       </units>
     </comp>
     <comp ref="U29">
-      <value>SN74LVC125APWR</value>
+      <value>74LVC125APW,118</value>
       <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">SN74LVC125APWR</field>
-        <field name="LCSC">C7813</field>
-        <field name="JLCPCB Part #">C7813</field>
-        <field name="Sourcing Status">Catalog identity checked; stock/assembly eligibility refresh required</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C7813.html</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC125APW,118</field>
+        <field name="LCSC">C6059</field>
+        <field name="JLCPCB Part #">C6059</field>
+        <field name="Sourcing Status">Powered-off interface audit: explicit Ioff; assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C6059.html</field>
         <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="MagMouse" part="SN74LVC125APWR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="SN74LVC125APWR"/>
-      <property name="LCSC" value="C7813"/>
-      <property name="JLCPCB Part #" value="C7813"/>
-      <property name="Sourcing Status" value="Catalog identity checked; stock/assembly eligibility refresh required"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C7813.html"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC125APW,118"/>
+      <property name="LCSC" value="C6059"/>
+      <property name="JLCPCB Part #" value="C6059"/>
+      <property name="Sourcing Status" value="Powered-off interface audit: explicit Ioff; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C6059.html"/>
       <property name="Sheetname" value="11_Wheel_SPI"/>
       <property name="Sheetfile" value="11_Wheel_SPI.kicad_sch"/>
       <sheetpath names="/11_Wheel_SPI/" tstamps="/6314463c-8d57-5fea-a888-921d0788386a/"/>
@@ -5073,29 +5073,29 @@
       </units>
     </comp>
     <comp ref="U37">
-      <value>SN74LVC125APWR</value>
+      <value>74LVC125APW,118</value>
       <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</datasheet>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="MPN">SN74LVC125APWR</field>
-        <field name="LCSC">C7813</field>
-        <field name="JLCPCB Part #">C7813</field>
-        <field name="Sourcing Status">Catalog identity checked; refresh JLC stock/service before order</field>
-        <field name="Checked">2026-09-09</field>
-        <field name="Supplier URL">https://www.lcsc.com/product-detail/C7813.html</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC125APW,118</field>
+        <field name="LCSC">C6059</field>
+        <field name="JLCPCB Part #">C6059</field>
+        <field name="Sourcing Status">Ioff and package checked; current assembly stock unverified</field>
+        <field name="Checked">2026-11-05</field>
+        <field name="Supplier URL">https://www.lcsc.com/product-detail/C6059.html</field>
         <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="MagMouse" part="SN74LVC125APWR" description=""/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="MPN" value="SN74LVC125APWR"/>
-      <property name="LCSC" value="C7813"/>
-      <property name="JLCPCB Part #" value="C7813"/>
-      <property name="Sourcing Status" value="Catalog identity checked; refresh JLC stock/service before order"/>
-      <property name="Checked" value="2026-09-09"/>
-      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C7813.html"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC125APW,118"/>
+      <property name="LCSC" value="C6059"/>
+      <property name="JLCPCB Part #" value="C6059"/>
+      <property name="Sourcing Status" value="Ioff and package checked; current assembly stock unverified"/>
+      <property name="Checked" value="2026-11-05"/>
+      <property name="Supplier URL" value="https://www.lcsc.com/product-detail/C6059.html"/>
       <property name="Sheetname" value="17_Optical_Sensor"/>
       <property name="Sheetfile" value="17_Optical_Sensor.kicad_sch"/>
       <sheetpath names="/17_Optical_Sensor/" tstamps="/3851210f-9beb-5086-821b-f8606e2597ad/"/>
@@ -6127,7 +6127,7 @@
       <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
     </library>
     <library logical="MagMouse">
-      <uri>${KIPRJMOD}/../../../kicad/MagMouse.kicad_sym</uri>
+      <uri>${KIPRJMOD}/../../../common/MagMouse.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
       <uri>${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym</uri>

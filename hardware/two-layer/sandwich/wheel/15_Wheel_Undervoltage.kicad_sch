@@ -1,0 +1,1680 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (uuid "60727d7d-f0a7-5cec-8154-c5195de86e1d")
+  (paper "A3")
+  (title_block
+    (title "Wheel local undervoltage inhibit")
+    (date "2026-11-05")
+    (rev "0.8"))
+  (lib_symbols
+    (symbol "Power_Supervisor:TPS3808DBV"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at 0 8.89 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "TPS3808DBV"
+        (at 0 6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+        (at -2.54 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps3808.pdf"
+        (at -2.54 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "supply voltage supervisor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT?23*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TPS3808DBV_0_1"
+        (rectangle
+          (start -7.62 5.08)
+          (end 7.62 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS3808DBV_1_1"
+        (pin output line
+          (at 10.16 0 180)
+          (length 2.54)
+          (name "~{RESET}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -7.62 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 0 0)
+          (length 2.54)
+          (name "~{MR}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 -2.54 0)
+          (length 2.54)
+          (name "CT"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 2.54 0)
+          (length 2.54)
+          (name "SENSE"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 7.62 270)
+          (length 2.54)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "74xGxx:74LVC1G08"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -5.08 7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "74LVC1G08"
+        (at 7.62 -7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Single AND Gate, Low-Voltage CMOS"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "Single Gate AND LVC CMOS"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "74LVC1G08_0_1"
+        (arc
+          (start 0 5.08)
+          (mid 5.0579 0)
+          (end 0 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy 0 -5.08)
+            (xy -7.62 -5.08)
+            (xy -7.62 5.08)
+            (xy 0 5.08))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "74LVC1G08_1_1"
+        (pin input line
+          (at -15.24 2.54 0)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -15.24 -2.54 0)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -10.16 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 0 180)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 10.16 270)
+          (length 5.08)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (embedded_fonts no)
+  (symbol
+    (lib_id "Power_Supervisor:TPS3808DBV")
+    (at 64.77 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "19aa0485-ae15-5495-8e95-dc4325a4986b")
+    (property "Reference" "U40"
+      (at 69.77 66.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "TPS3808G01DBVR"
+      (at 69.77 69.35 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3808.pdf"
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "TPS3808G01DBVR"
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" ""
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 69.77 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "U40")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 74.93 69.85)
+      (xy 80.01 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "da41188c-bbcd-5043-8950-228599b4f9f8"))
+  (global_label "WHEEL_VM_OK"
+    (shape bidirectional)
+    (at 80.01 69.85 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "463d7612-06c7-5cf2-99c1-db218136b107"))
+  (wire
+    (pts
+      (xy 64.77 77.47)
+      (xy 64.77 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "73049caf-b8cb-5c7e-82c6-e1eeea561927"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 64.77 82.55 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "a849cfc6-425f-58a5-a1ce-81bedb9308df"))
+  (wire
+    (pts
+      (xy 54.61 69.85)
+      (xy 49.53 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0dd7402b-c5a1-5190-b236-92034554e990"))
+  (global_label "ACT_DRIVE_EN"
+    (shape bidirectional)
+    (at 49.53 69.85 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "769eaa69-7163-50cc-80bc-6dbb93ac77bd"))
+  (no_connect
+    (at 54.61 72.39)
+    (uuid "a88c8fd0-a4fe-5f6e-b45a-51e41422265f"))
+  (wire
+    (pts
+      (xy 54.61 67.31)
+      (xy 49.53 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c34d8337-6454-586a-a789-039518390190"))
+  (global_label "WHEEL_VM_SENSE"
+    (shape bidirectional)
+    (at 49.53 67.31 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2e36ea08-23c2-59aa-80b1-399161a1962e"))
+  (wire
+    (pts
+      (xy 64.77 62.23)
+      (xy 64.77 57.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b6a708b4-f235-5a31-a46d-84474a0d2e0c"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 64.77 57.15 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a3b1f936-e6ee-537e-b1e4-3d0335bea11e"))
+  (symbol
+    (lib_id "74xGxx:74LVC1G08")
+    (at 170.18 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "04affae8-d324-5263-b65b-f1683cebb6d2")
+    (property "Reference" "U41"
+      (at 175.18 66.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "SN74LVC1G08DBVR"
+      (at 175.18 69.35 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "SN74LVC1G08DBVR"
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" ""
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 175.18 69.85 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "U41")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 154.94 67.31)
+      (xy 149.86 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8db433f7-b73d-5b8f-8117-84277b77356b"))
+  (global_label "WHEEL_RUN_REQUESTED"
+    (shape bidirectional)
+    (at 149.86 67.31 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "e4679d7f-a30d-5254-963b-22bc643eab5f"))
+  (wire
+    (pts
+      (xy 154.94 72.39)
+      (xy 149.86 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3d0ed5ad-8ed7-5622-a1f9-d0a567cec5a1"))
+  (global_label "WHEEL_VM_OK"
+    (shape bidirectional)
+    (at 149.86 72.39 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ca45ecca-cf13-5827-abc9-3c7168e77f35"))
+  (wire
+    (pts
+      (xy 170.18 80.01)
+      (xy 170.18 85.09))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "79ceba59-aee1-59d4-b521-9dd123eae8bf"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 170.18 85.09 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2dd1c99d-bef2-5dae-9b91-d10823408996"))
+  (wire
+    (pts
+      (xy 182.88 69.85)
+      (xy 187.96 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5f52a265-ddbf-5a4a-b7ac-3fc406267213"))
+  (global_label "WHEEL_RUN_EN"
+    (shape bidirectional)
+    (at 187.96 69.85 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "1fd36eeb-2004-5d0f-bfbf-4b902c38a99e"))
+  (wire
+    (pts
+      (xy 170.18 59.69)
+      (xy 170.18 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "52ec133c-7bdf-52b0-be0e-bfada724b055"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 170.18 54.61 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "1250869b-f33f-5fe8-b094-4946fb6c713c"))
+  (symbol
+    (lib_id "Device:R")
+    (at 44.45 124.46 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a68b234a-d4bb-595b-8667-c6df6dc5d5cd")
+    (property "Reference" "R147"
+      (at 49.45 121.46 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "105k"
+      (at 49.45 123.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "TNPW1206105KBEEA"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Vishay"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "0.1%, 25 ppm/K"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 49.45 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "R147")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 44.45 120.65)
+      (xy 44.45 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0c678975-bed0-5009-ab66-17a76cbf55e7"))
+  (global_label "ACT_5V"
+    (shape bidirectional)
+    (at 44.45 115.57 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a13a812d-766a-5673-b5e7-c8ee18fcaea0"))
+  (wire
+    (pts
+      (xy 44.45 128.27)
+      (xy 44.45 133.35))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "69e629d0-5a7c-5ecf-9c73-b45002eecd9e"))
+  (global_label "WHEEL_VM_SENSE"
+    (shape bidirectional)
+    (at 44.45 133.35 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "9781aeb4-2cc7-5b13-bc22-a416979ef8f9"))
+  (symbol
+    (lib_id "Device:R")
+    (at 90.17 124.46 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1d49a1e7-adaf-5f8c-9eac-7d30565c2546")
+    (property "Reference" "R148"
+      (at 95.17 121.46 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "10k"
+      (at 95.17 123.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "TNPW120610K0BEEA"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Vishay"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "0.1%, 25 ppm/K"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 95.17 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "R148")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 90.17 120.65)
+      (xy 90.17 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e2dc4b0b-c8dc-551e-b1ea-10c0747440ab"))
+  (global_label "WHEEL_VM_SENSE"
+    (shape bidirectional)
+    (at 90.17 115.57 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "8b970035-6d5b-55b8-be4d-8499335be54c"))
+  (wire
+    (pts
+      (xy 90.17 128.27)
+      (xy 90.17 133.35))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "428da817-bdf7-5f34-9966-56a2e521c519"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 90.17 133.35 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "b8a30f59-dc12-5898-9ce0-d6270e8955ed"))
+  (symbol
+    (lib_id "Device:R")
+    (at 134.62 124.46 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4a1df298-894c-59c4-bd46-bd69eafc9261")
+    (property "Reference" "R149"
+      (at 139.62 121.46 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "10k"
+      (at 139.62 123.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "RC1206FR-0710KL"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "1%, 0.25 W"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 139.62 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "R149")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 134.62 120.65)
+      (xy 134.62 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "907c7793-ecb6-5bd8-8a66-0f1d5df8a742"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 134.62 115.57 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e80cec3c-a73a-5753-a00f-e6e9bb75b044"))
+  (wire
+    (pts
+      (xy 134.62 128.27)
+      (xy 134.62 133.35))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f6d78f9-9312-598a-963d-819545141431"))
+  (global_label "WHEEL_VM_OK"
+    (shape bidirectional)
+    (at 134.62 133.35 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "7cd1a24e-28e4-52dc-ab98-60dd8cef1bed"))
+  (symbol
+    (lib_id "Device:R")
+    (at 180.34 124.46 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8bf7bfa4-5ee2-505e-9e45-b6960505e094")
+    (property "Reference" "R150"
+      (at 185.34 121.46 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "100k"
+      (at 185.34 123.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://pccomponents.com/datasheets/yageo-rc.pdf"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "RC1206FR-07100KL"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "YAGEO"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "1%, 0.25 W"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 185.34 124.46 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "R150")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 180.34 120.65)
+      (xy 180.34 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6609de31-b530-5aad-882b-53de477d82e8"))
+  (global_label "WHEEL_RUN_EN"
+    (shape bidirectional)
+    (at 180.34 115.57 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "92b55296-95c4-52cc-b931-c9bd1436f96f"))
+  (wire
+    (pts
+      (xy 180.34 128.27)
+      (xy 180.34 133.35))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c29bcfd4-7b3f-5517-be98-e49a6c4fd69e"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 180.34 133.35 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "a89ec4c0-7a82-51ff-a0f8-48893733af17"))
+  (symbol
+    (lib_id "Device:C")
+    (at 44.45 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6d972b95-91a7-5154-b49f-76bd0136c34e")
+    (property "Reference" "C102"
+      (at 49.45 177.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "1nF/50V"
+      (at 49.45 179.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31C102JBCNNN.do"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "CL31C102JBCNNNC"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "C0G, 5%, 50 V"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 49.45 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "C102")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 44.45 176.53)
+      (xy 44.45 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7241b3ff-70ce-5836-87a2-191409aca8e1"))
+  (global_label "WHEEL_VM_SENSE"
+    (shape bidirectional)
+    (at 44.45 171.45 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "4c3cbe65-d447-5fbd-8e6d-9443e058078a"))
+  (wire
+    (pts
+      (xy 44.45 184.15)
+      (xy 44.45 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "71f68f13-b789-56d5-9597-d0aee3e0d8ed"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 44.45 189.23 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "c0e41438-0b97-54c4-81d7-ca826c7fc9cd"))
+  (symbol
+    (lib_id "Device:C")
+    (at 100.33 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a4425996-2e28-5b9d-a1b3-e6f49fade78f")
+    (property "Reference" "C103"
+      (at 105.33 177.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "100nF/50V"
+      (at 105.33 179.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B104KBCNNN.do"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "CL31B104KBCNNNC"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "X7R, 10%, 50 V"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 105.33 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "C103")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 100.33 176.53)
+      (xy 100.33 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f45f004-e353-5f3c-acf4-5f3584113aec"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 100.33 171.45 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "74e521f8-0786-5758-ac7d-2a805c1d45cf"))
+  (wire
+    (pts
+      (xy 100.33 184.15)
+      (xy 100.33 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9e9141aa-c83f-5270-ae9c-0f66d4fb9fe4"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 100.33 189.23 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "4dcf1022-4f35-530e-9145-462dbde55bd1"))
+  (symbol
+    (lib_id "Device:C")
+    (at 154.94 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "190f3f0e-29cf-5989-b183-279e11cb9127")
+    (property "Reference" "C104"
+      (at 159.94 177.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "100nF/50V"
+      (at 159.94 179.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B104KBCNNN.do"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "MPN" "CL31B104KBCNNNC"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Rating" "X7R, 10%, 50 V"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "LCSC" ""
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "JLCPCB Part #" ""
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Checked" "2026-11-05"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Sourcing Status" "Manufacturer specification checked; assembly stock unverified"
+      (at 159.94 180.34 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (instances
+      (project "Wheel"
+        (path "/0ca4ecab-b8ea-54d3-becb-5e1404c0d404/31efff31-0015-5a5c-8da5-8b5f3ed969ff"
+          (reference "C104")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 154.94 176.53)
+      (xy 154.94 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "69fe461d-fd6a-564e-b531-805d706ddfd2"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 154.94 171.45 90)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "4dd5f6ba-9f34-5518-ba36-9f0db142c631"))
+  (wire
+    (pts
+      (xy 154.94 184.15)
+      (xy 154.94 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "388c1541-eaab-5433-a7e7-99e1d074e0c9"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 154.94 189.23 270)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "92c2072b-2a75-54b8-8473-ad0264439d70"))
+  (text "U40 senses local driver VM-to-GND; power from the existing host +3V3.\nCT is deliberately open: 12-28 ms recovery qualification. MR follows ACT_DRIVE_EN.\nU41 qualifies motor drive only; the supervisor does not gate U13 startup.\nNominal falling threshold: 0.405 V x (1 + 105k/10k) = 4.6575 V.\nThreshold/delay corners and physical validation are recorded in circuit-review."
+    (at 20 215 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "b44b43e5-c2ec-504e-93e8-82fcfc18380c")))

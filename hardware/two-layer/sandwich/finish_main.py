@@ -54,4 +54,4 @@ def finish(name):
     print(name,'ground stitches added',count,'unused vias removed',removed)
     return report
 if __name__=='__main__':
-    a=argparse.ArgumentParser();a.add_argument('board',choices=['Lower','Upper']);finish(a.parse_args().board)
+    a=argparse.ArgumentParser();a.add_argument('board',choices=['Lower','Upper','Wheel']);finish(a.parse_args().board)

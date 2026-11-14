@@ -11,8 +11,12 @@ from shapely.geometry import LineString,Point
 from shapely.ops import unary_union
 from export_quote import BOARDS
 
-def widen(name):
+def widen(name,changed_since=None):
     path=BOARDS[name];board=p.LoadBoard(str(path));changed=collections.Counter()
+    preserved=set()
+    if changed_since:
+        baseline=p.LoadBoard(str(changed_since))
+        preserved={t.m_Uuid.AsString() for t in baseline.GetTracks()}
     outline=p.SHAPE_POLY_SET();assert board.GetBoardPolygonOutlines(outline,False)
     edge=unary_union(polygons(outline)).boundary
     for net in ('VBUS_USB','PWR_5V','ACT_5V','+3V3','BUCK_SW','OPT_3V3','OPT_1V9','MA735_3V3','RGB_5V',
@@ -38,6 +42,7 @@ def widen(name):
                 elif t.GetLayer()==layer:obstacles.append(LineString([p.ToMM(t.GetStart()),p.ToMM(t.GetEnd())]).buffer(p.ToMM(t.GetWidth())/2))
             forbidden=unary_union(obstacles)
             for t in list(board.GetTracks()):
+                if t.m_Uuid.AsString() in preserved:continue
                 if isinstance(t,p.PCB_VIA) or t.GetNetname()!=net or t.GetLayer()!=layer or p.ToMM(t.GetWidth())>=.749:continue
                 start,end=map(lambda q:tuple(p.ToMM(q)),(t.GetStart(),t.GetEnd()));length=math.dist(start,end)
                 old=p.ToMM(t.GetWidth());count=max(1,math.ceil(length/.3))
@@ -61,4 +66,4 @@ def widen(name):
     board.BuildConnectivity();p.ZONE_FILLER(board).Fill(board.Zones());p.SaveBoard(str(path),board)
     print('Widened',dict(changed));check(name)
 if __name__=='__main__':
-    a=argparse.ArgumentParser();a.add_argument('board',choices=list(BOARDS));widen(a.parse_args().board)
+    a=argparse.ArgumentParser();a.add_argument('board',choices=list(BOARDS));a.add_argument('--changed-since');args=a.parse_args();widen(args.board,args.changed_since)

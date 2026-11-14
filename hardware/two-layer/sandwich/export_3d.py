@@ -69,9 +69,11 @@ def main(names=None):
         # Complete mechanical substrate even when a component has no 3D body.
         run(name + '-bare-step', ['pcb', 'export', 'step', '--force', '--board-only',
                                  '--cut-vias-in-body', '-o', OUT / (name + '-bare.step'), source])
-        run(name + '-render', ['pcb', 'render', '--width', '1600', '--height', '1000',
-                              '--rotate', '35,0,20', '--quality', 'high', '--background',
-                              'opaque', '--floor', '-o', OUT / (name + '-preview.png'), source])
+        run(name + '-render', ['pcb', 'render', '--width', '1600', '--height', '1400',
+                              '--side', 'top', '--rotate', '-25,0,0', '--quality', 'high',
+                              '--background', 'opaque', '--floor', '--light-top', '0.8',
+                              '--light-camera', '0.3', '--light-side', '0.5',
+                              '-o', OUT / (name + '-preview.png'), source])
         assert sha(source) == before, '3D exporter changed PCB source'
         report[name] = {
             'source': source.relative_to(ROOT).as_posix(), 'source_sha256': before,

@@ -16,12 +16,12 @@ RIP_HISTORY=collections.Counter()
 def parts(shape):
  return [g for g in (shape.geoms if hasattr(shape,'geoms') else [shape]) if g.geom_type=='Polygon' and not g.is_empty]
 
-def connect(b,net,start,end,start_layer,end_layer,ripup=False):
+def connect(b,net,start,end,start_layer,end_layer,ripup=False,width=.15):
  start_shapes=start if isinstance(start,dict) else None;end_shapes=end if isinstance(end,dict) else None
  if start_shapes:start=tuple(unary_union(list(start_shapes.values())).centroid.coords[0])
  if end_shapes:end=tuple(unary_union(list(end_shapes.values())).centroid.coords[0])
  layers=(p.F_Cu,p.B_Cu);foreign={l:obstacles(b,net,l) for l in layers};inside=board_interior(b)
- regions={l:parts(inside.difference(foreign[l].buffer(.2145))) for l in layers}
+ regions={l:parts(inside.difference(foreign[l].buffer(width/2+.151))) for l in layers}
  trees={l:STRtree(regions[l]) for l in layers}
  def owner(pt,l):
   matches=trees[l].query(Point(pt),predicate='intersects')
@@ -70,10 +70,10 @@ def connect(b,net,start,end,start_layer,end_layer,ripup=False):
     for l in layers:fixed[l].append(Point(p.ToMM(t.GetPosition())).buffer(p.ToMM(t.GetWidth(l))/2))
    else:
     l=t.GetLayer();sh=LineString([p.ToMM(t.GetStart()),p.ToMM(t.GetEnd())]).buffer(p.ToMM(t.GetWidth())/2)
-    if t.GetNetname() in ('USB_DP','USB_DM','GND') or p.ToMM(t.GetWidth())>.3:fixed[l].append(sh)
+    if t.GetNetname() in ('USB_DP','USB_DM','GND','ACT_5V','PWR_5V','VBUS_USB','+3V3','BUCK_SW','OPT_3V3','OPT_1V9','RGB_5V','WHEEL_PHASE_A','WHEEL_PHASE_B','WHEEL_PHASE_C','BRAKE_DRAIN','DRV_AVDD','WHEEL_BUCK_SW','WHEEL_BUCK_OUT','WHEEL_CP','WHEEL_CPH','WHEEL_CPL','ADC2_DECAP') or p.ToMM(t.GetWidth())>.3:fixed[l].append(sh)
     else:movable[l].append((t,sh))
   for l in layers:
-   avoid=unary_union(fixed[l]).buffer(.2145);mt=STRtree([sh for t,sh in movable[l]])
+   avoid=unary_union(fixed[l]).buffer(width/2+.151);mt=STRtree([sh for t,sh in movable[l]])
    for t,sh in movable[l]:
     a,c=map(lambda q:tuple(p.ToMM(q)),(t.GetStart(),t.GetEnd()));length=math.dist(a,c)
     if length<.05:continue
@@ -85,7 +85,7 @@ def connect(b,net,start,end,start_layer,end_layer,ripup=False):
      if an is None or cn is None or an==cn:continue
      line=LineString([aa,cc])
      if avoid.intersects(line) or not inside.covers(line):continue
-     cuts=tuple(int(j) for j in mt.query(line.buffer(.2145),predicate='intersects'))
+     cuts=tuple(int(j) for j in mt.query(line.buffer(width/2+.151),predicate='intersects'))
      victims=tuple(movable[l][j][0] for j in cuts)
      weight=100*len(victims)+sum(p.ToMM(v.GetLength())+1000*RIP_HISTORY[v.GetNetname()] for v in victims)
      graph[an].append((cn,victims,'rip',weight));graph[cn].append((an,victims,'rip',weight))
@@ -109,17 +109,17 @@ def connect(b,net,start,end,start_layer,end_layer,ripup=False):
   for t in victims.values():b.Remove(t);t.thisown=False
   RIP_HISTORY.update(t.GetNetname() for t in victims.values())
   print('Negotiated ripup',net,[(t.GetNetname(),t.m_Uuid.AsString()) for t in victims.values()],flush=True)
-  if connect(b,net,start,end,start_layer,end_layer):return True
+  if connect(b,net,start,end,start_layer,end_layer,width=width):return True
   for t in victims.values():b.Add(t)
   return False
  for old,new,pt,existing in transitions:
-  route=continuous(b,net,at,pt,layer) if at!=pt else [(at,layer)]
+  route=continuous(b,net,at,pt,layer,width) if at!=pt else [(at,layer)]
   if route is None:return False
   pending.append((route,pt,existing));at=pt;layer=new
- route=continuous(b,net,at,end,layer) if at!=end else [(at,layer)]
+ route=continuous(b,net,at,end,layer,width) if at!=end else [(at,layer)]
  if route is None:return False
  pending.append((route,None,True))
  for route,pt,existing in pending:
-  for (a,l),(c,_) in zip(route,route[1:]):track(b,net,[a,c],.127,l)
+  for (a,l),(c,_) in zip(route,route[1:]):track(b,net,[a,c],width,l)
   if pt is not None and not existing:via(b,net,pt,.45,.3)
  print('Region route',net,'layer changes',len(transitions),flush=True);return True

@@ -423,7 +423,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "SN74LVC125APWR"
+    (property "Value" "74LVC125APW,118"
       (at 261.54 61.53999999999999 0)
       (effects
         (font
@@ -436,56 +436,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "Texas Instruments"
+    (property "Manufacturer" "Nexperia"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "SN74LVC125APWR"
+    (property "MPN" "74LVC125APW,118"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C7813"
+    (property "LCSC" "C6059"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C7813"
+    (property "JLCPCB Part #" "C6059"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; stock/assembly eligibility refresh required"
+    (property "Sourcing Status" "Powered-off interface audit: explicit Ioff; assembly stock unverified"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-05"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C7813.html"
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C6059.html"
       (at 256.54 83.82 0)
       (hide yes)
       (effects
@@ -722,7 +722,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "SN74LVC125APWR"
+    (property "Value" "74LVC125APW,118"
       (at 358.06 61.53999999999999 0)
       (effects
         (font
@@ -735,56 +735,56 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "Texas Instruments"
+    (property "Manufacturer" "Nexperia"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "SN74LVC125APWR"
+    (property "MPN" "74LVC125APW,118"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C7813"
+    (property "LCSC" "C6059"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C7813"
+    (property "JLCPCB Part #" "C6059"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; stock/assembly eligibility refresh required"
+    (property "Sourcing Status" "Powered-off interface audit: explicit Ioff; assembly stock unverified"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-05"
       (at 353.06 83.82 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Supplier URL" "https://www.lcsc.com/product-detail/C7813.html"
+    (property "Supplier URL" "https://www.lcsc.com/product-detail/C6059.html"
       (at 353.06 83.82 0)
       (hide yes)
       (effects

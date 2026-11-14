@@ -1,0 +1,1058 @@
+{
+  "status": "Simulation screening completed; bench acceptance remains UNVERIFIED",
+  "gate_combinations": 256,
+  "heartbeat_cases": [
+    {
+      "case": "healthy",
+      "assumed_timeout_ms": 6.999999999999999,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          87.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "missing",
+      "assumed_timeout_ms": 6.999999999999999,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          47.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "stuck_high",
+      "assumed_timeout_ms": 6.999999999999999,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          8.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "stuck_low",
+      "assumed_timeout_ms": 6.999999999999999,
+      "edges_ms": []
+    },
+    {
+      "case": "clear",
+      "assumed_timeout_ms": 6.999999999999999,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          20.5,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "rearm_high",
+      "assumed_timeout_ms": 6.999999999999999,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          5.0,
+          false
+        ],
+        [
+          20.0,
+          true
+        ],
+        [
+          27.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "healthy",
+      "assumed_timeout_ms": 10.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          90.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "missing",
+      "assumed_timeout_ms": 10.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          50.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "stuck_high",
+      "assumed_timeout_ms": 10.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          11.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "stuck_low",
+      "assumed_timeout_ms": 10.0,
+      "edges_ms": []
+    },
+    {
+      "case": "clear",
+      "assumed_timeout_ms": 10.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          20.5,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "rearm_high",
+      "assumed_timeout_ms": 10.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          5.0,
+          false
+        ],
+        [
+          20.0,
+          true
+        ],
+        [
+          30.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "healthy",
+      "assumed_timeout_ms": 15.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          95.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "missing",
+      "assumed_timeout_ms": 15.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          55.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "stuck_high",
+      "assumed_timeout_ms": 15.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          16.0,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "stuck_low",
+      "assumed_timeout_ms": 15.0,
+      "edges_ms": []
+    },
+    {
+      "case": "clear",
+      "assumed_timeout_ms": 15.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          20.5,
+          false
+        ]
+      ]
+    },
+    {
+      "case": "rearm_high",
+      "assumed_timeout_ms": 15.0,
+      "edges_ms": [
+        [
+          1.0,
+          true
+        ],
+        [
+          5.0,
+          false
+        ],
+        [
+          20.0,
+          true
+        ],
+        [
+          35.0,
+          false
+        ]
+      ]
+    }
+  ],
+  "supervisor": [
+    {
+      "case": "startup",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            43.55021113805864
+          ],
+          "fall_ms": [],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            43.55045329960537
+          ],
+          "fall_ms": [],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "abrupt_droop",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654,
+            104.97245235965892
+          ],
+          "fall_ms": [
+            60.01412421204974
+          ],
+          "dip_to_disable_us": 14.124212049736185
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545,
+            104.97245436584458
+          ],
+          "fall_ms": [
+            60.01414782865121
+          ],
+          "dip_to_disable_us": 14.147828651216166
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "slow_droop",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654,
+            132.94910503797516
+          ],
+          "fall_ms": [
+            69.29136690271156
+          ],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545,
+            132.94945329793188
+          ],
+          "fall_ms": [
+            69.29183945649763
+          ],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "repeated_crossings",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654,
+            101.19178082016757
+          ],
+          "fall_ms": [
+            60.01954809238808
+          ],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545,
+            101.19208939017523
+          ],
+          "fall_ms": [
+            60.019903250145525
+          ],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "manual_reset",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654,
+            104.95798410528869
+          ],
+          "fall_ms": [
+            60.00065
+          ],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545,
+            104.95789288495905
+          ],
+          "fall_ms": [
+            60.00065
+          ],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "no_permission",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [],
+          "fall_ms": [],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [],
+          "fall_ms": [],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "recovery_without_heartbeat",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654
+          ],
+          "fall_ms": [
+            60.01412421204974
+          ],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545
+          ],
+          "fall_ms": [
+            60.01414782865121
+          ],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "recovery_without_run",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654
+          ],
+          "fall_ms": [
+            60.01412421204974
+          ],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545
+          ],
+          "fall_ms": [
+            60.01414782865121
+          ],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    },
+    {
+      "case": "short_5us_dip",
+      "runs": [
+        {
+          "max_step_us": 2.0,
+          "rise_ms": [
+            20.976061908117654
+          ],
+          "fall_ms": [],
+          "dip_to_disable_us": null
+        },
+        {
+          "max_step_us": 1.0,
+          "rise_ms": [
+            20.976379749639545
+          ],
+          "fall_ms": [],
+          "dip_to_disable_us": null
+        }
+      ],
+      "timestep_check": "edge times agree within 20 us"
+    }
+  ],
+  "startup": [
+    {
+      "case": "default_boot_assumed_80mA",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.08,
+        "motor_equivalent_A": 0,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.08766191198959916,
+          "settled_USB_A": 0.08033678561879992,
+          "final_PWR_5V_V": 4.984608017464413,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 3.7059720131007653e-10,
+          "U12_nominal_limit_A": 0.5026383235338459
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.08766227354144007,
+          "settled_USB_A": 0.08033678561883306,
+          "final_PWR_5V_V": 4.98460801746441,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 2.877892114341255e-10,
+          "U12_nominal_limit_A": 0.5026383235338459
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "default_configured_assumed_400mA",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.4,
+        "motor_equivalent_A": 0,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.4065329866016043,
+          "settled_USB_A": 0.4003330849282136,
+          "final_PWR_5V_V": 4.923271380484932,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 3.364463256063342e-10,
+          "U12_nominal_limit_A": 0.5026383235338459
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.4065329900440773,
+          "settled_USB_A": 0.40033308492824526,
+          "final_PWR_5V_V": 4.923271380484927,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 2.9299647818083023e-10,
+          "U12_nominal_limit_A": 0.5026383235338459
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "default_overload_control_600mA",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.6,
+        "motor_equivalent_A": 0,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.502802314330026,
+          "settled_USB_A": 0.5028015863892747,
+          "final_PWR_5V_V": 3.7688153478821,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 3.4044594148462635e-10,
+          "U12_nominal_limit_A": 0.5026383235338459
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.5028026145915163,
+          "settled_USB_A": 0.5028015863892819,
+          "final_PWR_5V_V": 3.768815347881794,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 2.8007578005938283e-10,
+          "U12_nominal_limit_A": 0.5026383235338459
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "typec_1A5_logic250mA_motor500mA",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.25,
+        "motor_equivalent_A": 0.5,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.78645608291027,
+          "settled_USB_A": 0.7503767129850516,
+          "final_PWR_5V_V": 4.856175295350699,
+          "final_ACT_5V_V": 4.76762385255632,
+          "PWR_charge_balance_error_C": 7.065949147674628e-10,
+          "U12_nominal_limit_A": 1.2120000256615056
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.7864560872171324,
+          "settled_USB_A": 0.7503767129851155,
+          "final_PWR_5V_V": 4.856175295350689,
+          "final_ACT_5V_V": 4.767623852556305,
+          "PWR_charge_balance_error_C": 2.8723178078626094e-10,
+          "U12_nominal_limit_A": 1.2120000256615056
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "typec_3A_logic250mA_motor1A",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.25,
+        "motor_equivalent_A": 1.0,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 1.286448425556074,
+          "settled_USB_A": 1.2503690868691422,
+          "final_PWR_5V_V": 4.760337153485857,
+          "final_ACT_5V_V": 4.583243037204087,
+          "PWR_charge_balance_error_C": 6.985787954507348e-10,
+          "U12_nominal_limit_A": 2.5557030559645355
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 1.2864484307348363,
+          "settled_USB_A": 1.2503690868691706,
+          "final_PWR_5V_V": 4.760337153485858,
+          "final_ACT_5V_V": 4.583243037204088,
+          "PWR_charge_balance_error_C": 3.972213189341704e-10,
+          "U12_nominal_limit_A": 2.5557030559645355
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "weak_source_logic250mA_motor500mA",
+      "assumptions": {
+        "source_V": 4.75,
+        "cable_loop_ohm": 0.5,
+        "logic_equivalent_A": 0.25,
+        "motor_equivalent_A": 0.5,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.7493720282193124,
+          "settled_USB_A": 0.7178474376747933,
+          "final_PWR_5V_V": 4.361163185261784,
+          "final_ACT_5V_V": 4.277000400959041,
+          "PWR_charge_balance_error_C": 1.7986411296173985e-09,
+          "U12_nominal_limit_A": 1.2120000256615056
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.749375275328287,
+          "settled_USB_A": 0.7178474376747666,
+          "final_PWR_5V_V": 4.361163185261797,
+          "final_ACT_5V_V": 4.277000400959058,
+          "PWR_charge_balance_error_C": 2.489933577517426e-10,
+          "U12_nominal_limit_A": 1.2120000256615056
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "low_effective_capacitance",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.25,
+        "motor_equivalent_A": 0.5,
+        "capacitance_factor": 0.4
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.7648084547674898,
+          "settled_USB_A": 0.7503767129850303,
+          "final_PWR_5V_V": 4.856175295350699,
+          "final_ACT_5V_V": 4.767623852556323,
+          "PWR_charge_balance_error_C": 1.752818377706686e-10,
+          "U12_nominal_limit_A": 1.2120000256615056
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.7648084590751054,
+          "settled_USB_A": 0.7503767129850161,
+          "final_PWR_5V_V": 4.856175295350703,
+          "final_ACT_5V_V": 4.767623852556325,
+          "PWR_charge_balance_error_C": 7.83663131335619e-11,
+          "U12_nominal_limit_A": 1.2120000256615056
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    },
+    {
+      "case": "missing_R35_fault_control",
+      "assumptions": {
+        "source_V": 5.0,
+        "cable_loop_ohm": 0.15,
+        "logic_equivalent_A": 0.08,
+        "motor_equivalent_A": 0,
+        "capacitance_factor": 1
+      },
+      "runs": [
+        {
+          "max_step_us": 4.0,
+          "peak_USB_A": 0.005155715788369264,
+          "settled_USB_A": 0.0001557625170107741,
+          "final_PWR_5V_V": 0.0,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 0.0,
+          "U12_nominal_limit_A": 0.5026383235338459
+        },
+        {
+          "max_step_us": 2.0,
+          "peak_USB_A": 0.005155715788369264,
+          "settled_USB_A": 0.00015576251701077267,
+          "final_PWR_5V_V": 0.0,
+          "final_ACT_5V_V": 0.0,
+          "PWR_charge_balance_error_C": 0.0,
+          "U12_nominal_limit_A": 0.5026383235338459
+        }
+      ],
+      "qualification": "Load envelope only; actual ROM/application boot current not simulated."
+    }
+  ],
+  "coupled_supply_supervisor": [
+    {
+      "case": "held_request",
+      "runs": [
+        {
+          "max_step_us": 1.0,
+          "enable_rises_ms": [
+            103.81784289316761
+          ],
+          "enable_falls_ms": [
+            103.99230991922238
+          ],
+          "minimum_VM_while_enabled_V": 4.613506745723483
+        },
+        {
+          "max_step_us": 0.5,
+          "enable_rises_ms": [
+            103.81774921760176
+          ],
+          "enable_falls_ms": [
+            103.99225809626763
+          ],
+          "minimum_VM_while_enabled_V": 4.613479841637537
+        }
+      ],
+      "recovery_observed": false,
+      "numerically_converged": true,
+      "datasheet_recovery_contract_met": false,
+      "accepted_as_hardware_prediction": false,
+      "finding": "UNRESOLVED model/datasheet short-dip recovery discrepancy; absence of retries is not evidence of a physical latch. Coarse 4/2 us runs did not agree. Do not use this case to qualify automatic recovery."
+    },
+    {
+      "case": "request_cleared_110ms",
+      "runs": [
+        {
+          "max_step_us": 1.0,
+          "enable_rises_ms": [
+            103.81784289316761
+          ],
+          "enable_falls_ms": [
+            103.99230991922238
+          ],
+          "minimum_VM_while_enabled_V": 4.613506745723483
+        },
+        {
+          "max_step_us": 0.5,
+          "enable_rises_ms": [
+            103.81774921760176
+          ],
+          "enable_falls_ms": [
+            103.99225809626763
+          ],
+          "minimum_VM_while_enabled_V": 4.613479841637537
+        }
+      ],
+      "recovery_observed": false,
+      "numerically_converged": true,
+      "datasheet_recovery_contract_met": null,
+      "accepted_as_hardware_prediction": false,
+      "finding": "UNRESOLVED model/datasheet short-dip recovery discrepancy; absence of retries is not evidence of a physical latch. Coarse 4/2 us runs did not agree. Do not use this case to qualify automatic recovery."
+    }
+  ],
+  "behavioral_recovery": [
+    {
+      "case": "held_request",
+      "assumed_assertion_us": 20.0,
+      "step_us": 2.0,
+      "rise_ms": [
+        20.0,
+        40.172,
+        60.343999999999994,
+        80.51599999999999
+      ],
+      "fall_ms": [
+        20.137999999999998,
+        40.309999999999995,
+        60.48199999999999,
+        80.654
+      ],
+      "min_VM_while_enabled_V": 4.632749709637468
+    },
+    {
+      "case": "held_request",
+      "assumed_assertion_us": 20.0,
+      "step_us": 1.0,
+      "rise_ms": [
+        20.0,
+        40.174,
+        60.348,
+        80.52199999999999
+      ],
+      "fall_ms": [
+        20.139999999999997,
+        40.31399999999999,
+        60.488,
+        80.66199999999999
+      ],
+      "min_VM_while_enabled_V": 4.6320487316513175
+    },
+    {
+      "case": "held_request",
+      "assumed_assertion_us": 100.0,
+      "step_us": 2.0,
+      "rise_ms": [
+        20.0,
+        40.26,
+        60.519999999999996,
+        80.77999999999999
+      ],
+      "fall_ms": [
+        20.22,
+        40.48,
+        60.739999999999995,
+        81.0
+      ],
+      "min_VM_while_enabled_V": 4.59831088541537
+    },
+    {
+      "case": "held_request",
+      "assumed_assertion_us": 100.0,
+      "step_us": 1.0,
+      "rise_ms": [
+        20.0,
+        40.262,
+        60.523999999999994,
+        80.786
+      ],
+      "fall_ms": [
+        20.221,
+        40.483,
+        60.745,
+        81.00699999999999
+      ],
+      "min_VM_while_enabled_V": 4.598443982884435
+    },
+    {
+      "case": "request_cleared_35ms",
+      "assumed_assertion_us": 20.0,
+      "step_us": 2.0,
+      "rise_ms": [
+        20.0
+      ],
+      "fall_ms": [
+        20.137999999999998
+      ],
+      "min_VM_while_enabled_V": 4.63274970963747
+    },
+    {
+      "case": "request_cleared_35ms",
+      "assumed_assertion_us": 20.0,
+      "step_us": 1.0,
+      "rise_ms": [
+        20.0
+      ],
+      "fall_ms": [
+        20.139999999999997
+      ],
+      "min_VM_while_enabled_V": 4.63204873165132
+    },
+    {
+      "case": "request_cleared_35ms",
+      "assumed_assertion_us": 100.0,
+      "step_us": 2.0,
+      "rise_ms": [
+        20.0
+      ],
+      "fall_ms": [
+        20.22
+      ],
+      "min_VM_while_enabled_V": 4.598310885415371
+    },
+    {
+      "case": "request_cleared_35ms",
+      "assumed_assertion_us": 100.0,
+      "step_us": 1.0,
+      "rise_ms": [
+        20.0
+      ],
+      "fall_ms": [
+        20.221
+      ],
+      "min_VM_while_enabled_V": 4.598443982884436
+    }
+  ],
+  "analytical": {
+    "threshold_corner_count": 128,
+    "minimum_falling_V": 4.5326637839125565,
+    "maximum_recovery_threshold_V": 4.927187265523082,
+    "filter_nominal_tau_us": 9.130434782608697,
+    "droop_sensitivity": [
+      {
+        "slope_V_per_s": 1,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.524283566521252,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 1,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.524281740434295,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 1,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.524203566521252,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 1,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.524201740434295,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 100,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.521490044782121,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 100,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.521307436086469,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 100,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.513490044782121,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 100,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.513307436086469,
+        "above_4V5": true
+      },
+      {
+        "slope_V_per_s": 1000,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.496094392608208,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 1000,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.494268305651687,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 1000,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.416094392608208,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 1000,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.414268305651687,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 10000,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 4.242137870869078,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 10000,
+        "assumed_delay_us": 20.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 4.22387700130386,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 10000,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 0.9,
+        "screened_VM_at_disable_V": 3.4421378708690784,
+        "above_4V5": false
+      },
+      {
+        "slope_V_per_s": 10000,
+        "assumed_delay_us": 100.0,
+        "cap_factor": 1.1,
+        "screened_VM_at_disable_V": 3.4238770013038606,
+        "above_4V5": false
+      }
+    ],
+    "CS_bias": [
+      {
+        "net": "CS_DRV8316",
+        "up_ref": "R76",
+        "down_ref": "R144",
+        "nominal_V": 2.5325581395348835,
+        "min_V": 2.31753051204115,
+        "margin_over_2V_V": 0.31753051204115,
+        "assumptions": "3V3 +/-5%, resistors +/-1%, aggregate input leakage +/-10 uA; leakage is selected screening allowance."
+      },
+      {
+        "net": "CS_ADC2",
+        "up_ref": "R74",
+        "down_ref": "R145",
+        "nominal_V": 2.5325581395348835,
+        "min_V": 2.31753051204115,
+        "margin_over_2V_V": 0.31753051204115,
+        "assumptions": "3V3 +/-5%, resistors +/-1%, aggregate input leakage +/-10 uA; leakage is selected screening allowance."
+      }
+    ],
+    "nSLEEP": "UNVERIFIED: no applicable transistor/powered-off leakage model located. Ground-referenced absolute maximum is not an Ioff guarantee."
+  }
+}

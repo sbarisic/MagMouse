@@ -2213,22 +2213,6 @@
     (uuid "a337880f-9699-54e0-a550-a0c0f90466da"))
   (wire
     (pts
-      (xy 287.02 58.42)
-      (xy 292.1 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "e77941d5-a05e-5043-9802-e86f343edfcb"))
-  (global_label "WHEEL_RUN_EN"
-    (shape bidirectional)
-    (at 292.1 58.42 0)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify left))
-    (uuid "2a4a8c78-220b-5bdc-a9d9-51efdc3230be"))
-  (wire
-    (pts
       (xy 287.02 63.5)
       (xy 292.1 63.5))
     (stroke
@@ -4998,4 +4982,19 @@
         (size 1.05 1.05))
       (justify left top))
     (uuid "6b7241ed-521a-560e-8b34-9b6f63fc2d48"))
-  (embedded_fonts no))
+  (embedded_fonts no)
+  (global_label "WHEEL_RUN_REQUESTED"
+    (shape bidirectional)
+    (at 287.02 58.42 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "f4814f83-b928-5890-87b7-3c013fbb4c9e"))
+  (text "U22 gate 1 produces WHEEL_RUN_REQUESTED. Sheet 15 qualifies it with local VM voltage.\nWHEEL_RUN_EN drives Q4, the three PWM gates and INLA/INLB/INLC.\nUndervoltage disables drive without preventing ACT_5V from starting."
+    (at 20 270 0)
+    (effects
+      (font
+        (size 1.2 1.2))
+      (justify left top))
+    (uuid "69eab628-6ae0-5a55-9b2b-420b93fcdc85")))

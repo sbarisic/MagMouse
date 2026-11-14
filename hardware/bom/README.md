@@ -1,5 +1,12 @@
 # Preliminary V1 component inventory
 
+This page retains the September planning inventory. The current purchasing
+and assembly lists are the [four-board BOMs](../two-layer/sandwich/quote-package/)
+and [combined BOM](../two-layer/sandwich/quote-package/combined-BOM.csv).
+The current design uses passive plastic clicks with Hall sensing, without
+button actuator coils. See the [November circuit review](../two-layer/sandwich/circuit-review/README.md)
+for the latest buffer, undervoltage and sourcing changes.
+
 Planning inventory updated for the elastic-paddle/custom-coil direction selected
 on 2026-09-08; not a purchasing or assembly BOM. `ideas.md` is historical.
 Quantities are per mouse; alternatives are not additive. Confirm exact orderable

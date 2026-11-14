@@ -1,0 +1,101 @@
+{
+  "status": "Digital checks passed; bench acceptance UNVERIFIED; not production release",
+  "baseline_git_revision": "7674089ca8481ceb03476ed3986a8816dfb864b0",
+  "boards": {
+    "Lower": {
+      "sha256": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_findings": 0,
+      "minimum_component_gap_mm": 2.0027649819397175,
+      "via_hole_smd_overlaps": 0,
+      "copper_layers": 2,
+      "geometry_and_keepouts_unchanged": true
+    },
+    "Upper": {
+      "sha256": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_findings": 0,
+      "minimum_component_gap_mm": 2.025,
+      "via_hole_smd_overlaps": 0,
+      "copper_layers": 2,
+      "geometry_and_keepouts_unchanged": true
+    },
+    "Wheel": {
+      "sha256": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_findings": 0,
+      "minimum_component_gap_mm": 2.0099999999999976,
+      "via_hole_smd_overlaps": 0,
+      "copper_layers": 2,
+      "geometry_and_keepouts_unchanged": true
+    },
+    "Encoder": {
+      "sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_findings": 0,
+      "minimum_component_gap_mm": 2.5,
+      "via_hole_smd_overlaps": 0,
+      "copper_layers": 2,
+      "geometry_and_keepouts_unchanged": true
+    }
+  },
+  "checked_schematic_pins": 1028,
+  "harness_pairs": 5,
+  "capacitor_connections_at_or_below_5_mm": 6,
+  "capacitor_connections_component_layer_without_vias": 6,
+  "interlock_combinations": 128,
+  "supply_transient_cases": 60,
+  "SPI_power_contract_cases": 16,
+  "panel": {
+    "sha256": "aa2bf298fcc83218e9a1f331b92a5853deeb4b5de3d49ec0611cc5837b5496a0",
+    "drc_findings": 0,
+    "unconnected_items": 0,
+    "copied_copper_geometry_matches_sources": true
+  },
+  "models": {
+    "Lower": {
+      "source_sha256": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+      "bare_step_valid": true,
+      "source_hash_matches": true
+    },
+    "Upper": {
+      "source_sha256": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+      "bare_step_valid": true,
+      "source_hash_matches": true
+    },
+    "Wheel": {
+      "source_sha256": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+      "bare_step_valid": true,
+      "source_hash_matches": true
+    },
+    "Encoder": {
+      "source_sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+      "bare_step_valid": true,
+      "source_hash_matches": true
+    },
+    "Panel": {
+      "source_sha256": "aa2bf298fcc83218e9a1f331b92a5853deeb4b5de3d49ec0611cc5837b5496a0",
+      "bare_step_valid": true,
+      "source_hash_matches": true
+    }
+  },
+  "fabrication_archives": "CRC checked; every archived Gerber/drill byte matches its exported source file",
+  "encoder_design_unchanged": true,
+  "temporary_PCB_routing_copies_remaining": 0,
+  "limitations": [
+    "Local wheel voltage-sense tap shares approximately 1.50 mm of driver pin-escape copper; 8.35 mV screened error at 2 A and 125 C, not a direct land Kelvin connection.",
+    "Lower input feed screens at 27.7 mOhm; Wheel input-to-driver path at 36.2 mOhm (increased from 18.5 mOhm immediately before rerouting). Thermal/current acceptance remains unverified.",
+    "Transient shutdown delay, SPI back-powering, ripple, motor transients and all bench acceptance remain UNVERIFIED.",
+    "U34 retains its data-low-before-power-off contract; arbitrary live-high powered-off isolation is not claimed.",
+    "3D assemblies retain the documented 14 missing component bodies; substrate geometry is validated."
+  ],
+  "routing_review": "../routing-review/routing-rebuild.md"
+}

@@ -1,0 +1,54 @@
+{
+  "Lower": {
+    "source_sha256": "f676bc3f9a5318437a969277bd8ae346abea25f975e1210cfe48101cd869214f",
+    "previous_source_sha256": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+    "footprints_pads_geometry_usb_unchanged": true,
+    "existing_trace_widths_preserved": true,
+    "previous_vias": 615,
+    "vias": 617,
+    "critical_capacitor_paths_unchanged": true,
+    "measured_outer_edge_clearance_mm": 0.5004976698221468,
+    "outer_edge_rule_mm": 0.5,
+    "internal_optical_aperture_rule_mm": 0.4,
+    "drc_violations": 0,
+    "unconnected_items": 0
+  },
+  "Upper": {
+    "source_sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
+    "previous_source_sha256": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+    "footprints_pads_geometry_usb_unchanged": true,
+    "existing_trace_widths_preserved": true,
+    "previous_vias": 143,
+    "vias": 143,
+    "measured_outer_edge_clearance_mm": 0.500497651389779,
+    "outer_edge_rule_mm": 0.5,
+    "drc_violations": 0,
+    "unconnected_items": 0
+  },
+  "Wheel": {
+    "source_sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
+    "previous_source_sha256": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+    "footprints_pads_geometry_usb_unchanged": true,
+    "existing_trace_widths_preserved": true,
+    "previous_vias": 264,
+    "vias": 264,
+    "critical_capacitor_paths_unchanged": true,
+    "measured_outer_edge_clearance_mm": 0.500499397005322,
+    "outer_edge_rule_mm": 0.5,
+    "drc_violations": 0,
+    "unconnected_items": 0
+  },
+  "Encoder": {
+    "source_sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
+    "previous_source_sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+    "footprints_pads_geometry_usb_unchanged": true,
+    "existing_trace_widths_preserved": true,
+    "previous_vias": 3,
+    "vias": 3,
+    "non_ground_copper_sha256": "de035c1b5d7cd708c01971b3326cd20525d6d834d2b87c43800bc7d3523220a0",
+    "measured_outer_edge_clearance_mm": 0.5004986650052156,
+    "outer_edge_rule_mm": 0.5,
+    "drc_violations": 0,
+    "unconnected_items": 0
+  }
+}

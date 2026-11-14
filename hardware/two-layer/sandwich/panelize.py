@@ -10,6 +10,7 @@ sys.path.insert(0,str(ROOT/'build/two-layer/python'))
 sys.path.insert(0,str(ROOT/'hardware/common'))
 import panel_helpers as bp
 from router_geometry import make_routable, verify_panel as verify_router, verify_material_tab
+from kicad_output import run as run_atomic
 from shapely.geometry import Point, Polygon, box
 from shapely.affinity import translate
 from shapely.ops import unary_union
@@ -20,7 +21,9 @@ SIZE=(238,114)
 ORIGINS={'Lower':(7,7),'Upper':(84,7),'Wheel':(161,7),'Encoder':(161,81)}
 TARGETS={'Lower':[(24.75,0),(48.75,0),(0,63),(70,63)],
          'Upper':[(24.75,0),(45.75,0),(0,63),(70,63)],
-         'Wheel':[(4.765331,-3),(62.5,35),(13.207003,64),(43.207003,64)],
+         # The local undervoltage revision uses the right edge for routed
+         # copper. Use two clear top/bottom tab sites without changing the unit.
+         'Wheel':[(4.765331,-3),(52.765331,-3),(13.207003,64),(49.207003,64)],
          'Encoder':[(57,50),(64,57)]}
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -54,6 +57,9 @@ def build():
     dest=OUT/'Panel.kicad_pcb';dest.write_text('(kicad_pcb\n'+'\n'.join(sections)+'\n)\n')
     project=json.loads(BOARDS['Lower'].with_suffix('.kicad_pro').read_text());project['meta']['filename']='Panel.kicad_pro'
     dest.with_suffix('.kicad_pro').write_text(json.dumps(project,indent=2)+'\n')
+    # Carry the reviewed internal-aperture exception into the translated unit.
+    rules = BOARDS['Lower'].with_suffix('.kicad_dru').read_text()
+    dest.with_suffix('.kicad_dru').write_text(rules)
     panel=p.LoadBoard(str(dest));units={};tabs=[];manifest={};expected_tracks=collections.Counter();expected_fill=collections.Counter();expected_pads={}
     for name,path in BOARDS.items():
         b=p.LoadBoard(str(path));assert b.GetCopperLayerCount()==2
@@ -66,6 +72,7 @@ def build():
                 n=p.NETINFO_ITEM(panel,name+'/'+net.GetNetname());panel.Add(n);netmap[code]=n
         for f in b.GetFootprints():
             ref=name[0]+'_'+f.GetReference();item=bp.duplicate(f);item.SetParent(panel);panel.Add(item);item.Move(offset);item.SetReference(ref);stable(item,name+'/'+f.GetReference())
+            if ref=='W_U41':item.Reference().Move(xy(0,-.2))
             for i,(old,pad) in enumerate(zip(f.Pads(),item.Pads())):pad.SetNet(netmap[old.GetNetCode()]);stable(pad,ref+'/pad/'+str(i))
             for kind,children in [('graphic',item.GraphicalItems()),('field',item.GetFields()),('zone',item.Zones())]:
                 for i,child in enumerate(children):stable(child,ref+'/'+kind+'/'+str(i))
@@ -109,7 +116,15 @@ def build():
     # Existing helper-generated outline/hole IDs are normalized as well.
     panel.BuildConnectivity();p.SaveBoard(str(dest),panel)
     raw=dest.read_text();raw=re.sub(r'\(uuid "([^"]+)"\)',lambda m:'(uuid "'+bp.UUID_REPLACEMENTS.get(m[1],m[1])+'")',raw);dest.write_text(raw)
-    panel=p.LoadBoard(str(dest));p.SaveBoard(str(dest),panel)
+    panel=p.LoadBoard(str(dest))
+    optical = Polygon(list(units['Lower'].interiors)[0]).envelope.buffer(.01)
+    group = p.PCB_GROUP(panel);group.SetName('Optical aperture');panel.Add(group)
+    for edge in panel.GetDrawings():
+        if edge.GetLayer() == p.Edge_Cuts and all(optical.covers(Point(p.ToMM(q)))
+                                                for q in (edge.GetStart(), edge.GetEnd())):
+            group.AddItem(edge)
+    assert len(group.GetItems()) >= 8, 'Missing panel optical aperture rule group'
+    p.SaveBoard(str(dest),panel)
     # Check exact translated pads, drills, tracks and saved zone vertices.
     assert expected_tracks==collections.Counter(track_key(t) for t in panel.GetTracks()),'Panel track/drill translation differs'
     assert expected_fill==fill_vertices(panel),'Panel copper fill differs from sources'
@@ -140,10 +155,11 @@ def build():
     for args in [('drc','--format','json','-o',OUT/'Panel-drc.json',dest),
                  ('export','gerbers','-l','F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts','--subtract-soldermask','-o',str(OUT/'gerbers')+'/',dest),
                  ('export','drill','--format','excellon','--excellon-units','mm','--excellon-separate-th','--excellon-oval-format','route','--generate-report','-o',str(OUT/'gerbers')+'/',dest)]:
-        subprocess.run([str(CLI),'pcb',*map(str,args)],check=True)
+        run_atomic(CLI,['pcb',*args],check=True)
     drc=json.loads((OUT/'Panel-drc.json').read_text());assert not drc['violations'] and not drc['unconnected_items'],'Panel native DRC'
-    with zipfile.ZipFile(OUT/'MagMouse-panel-gerbers.zip','w',zipfile.ZIP_DEFLATED) as archive:
+    with zipfile.ZipFile(OUT/'MagMouse-panel-gerbers.zip.tmp','w',zipfile.ZIP_DEFLATED) as archive:
         for f in sorted((OUT/'gerbers').iterdir()):archive.write(f,f.name)
+    (OUT/'MagMouse-panel-gerbers.zip.tmp').replace(OUT/'MagMouse-panel-gerbers.zip')
     print('Panel complete',SIZE,sha(OUT/'MagMouse-panel-gerbers.zip'))
 
 if __name__=='__main__':build()

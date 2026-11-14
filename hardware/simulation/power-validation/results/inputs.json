@@ -1,0 +1,340 @@
+{
+  "source_sha256": {
+    "hardware/two-layer/sandwich/lower/01_Power_USB.kicad_sch": "c853bc51038328dc6f4816bc01127b6eeeee03dde00c58a0cd42be45817bc5de",
+    "hardware/two-layer/sandwich/lower/02_MCU.kicad_sch": "f45251f83314f22bd47dc2cd6561a851bb1507373463efc5ef82bb36157d5ad2",
+    "hardware/two-layer/sandwich/lower/08_Actuator_Rail.kicad_sch": "cc91644af828b494d700fe1c81805240d049e26e2f41cdcd48e4a5de77be6b64",
+    "hardware/two-layer/sandwich/lower/09_Interface_Reservations.kicad_sch": "fe9dfb57a42a40f3f37e1ca27ac1186c8fec404926a68eb78e1da2605e803f07",
+    "hardware/two-layer/sandwich/lower/11_Wheel_SPI.kicad_sch": "334c9f3ee3064bdefab2f5620629c6adf4cc98bca44254e4d53325f8ab700008",
+    "hardware/two-layer/sandwich/lower/12_Wheel_Feedback.kicad_sch": "c1245597ca91aeb631cfef1e62f0e0f9946ceeee6beaeeafaa0afacfc66d2c84",
+    "hardware/two-layer/sandwich/lower/14_IMU.kicad_sch": "33ca02f66ab2f427ca00e72b68b879e2dbd340601172401cf852a3af986fe3ad",
+    "hardware/two-layer/sandwich/lower/15_RGB_Status.kicad_sch": "5af088c304c83205168a4740591ff318343a48854ca4a0797c6ed2371e0e90b8",
+    "hardware/two-layer/sandwich/lower/16_Optical_Power.kicad_sch": "4a70cc05aa91a876507c56324fc180fc30b01d8bf60e5a34382b191f087c6f7f",
+    "hardware/two-layer/sandwich/lower/17_Optical_Sensor.kicad_sch": "7081f35725f242a19653ef5397a931460a2cdcc5be975270b43115ebece3d5d4",
+    "hardware/two-layer/sandwich/lower/18_Wheel_Harness.kicad_sch": "dc81ea5f8be13d3f500bd0c587d8a79a2fa6bf81c8ea8073190269dcaa1e1623",
+    "hardware/two-layer/sandwich/lower/20_Stack_Harness.kicad_sch": "87dcf3afa014f7db3b39c4556356e6c492284376c255a9ff2014f5b78781542f",
+    "hardware/two-layer/sandwich/lower/Lower.kicad_sch": "11fec7ac64fe6c55fc9844e4a151d0d3e6693f2a9c96d276649d48f5a62a522f",
+    "hardware/two-layer/sandwich/lower/Lower.kicad_pcb": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+    "hardware/two-layer/sandwich/upper/04_Sensing.kicad_sch": "c312ed34770b1f31dcd17028909b3f7e77a584c013d3617f9859ac408fc27de1",
+    "hardware/two-layer/sandwich/upper/05_Protected_Power.kicad_sch": "dae33d26d7b3083b52c507df123b251b17b4ea7421a800d83085401cf1dc4f0f",
+    "hardware/two-layer/sandwich/upper/06_Actuator_Interlock.kicad_sch": "d5c0b3d772e4a51d99d2412fbcfa801f1408e4b942e391a3a2129494c73a8825",
+    "hardware/two-layer/sandwich/upper/07_Power_Monitor.kicad_sch": "25ac7be5d3d8011939f681b5a963dd5deb71ac3d86905dcd9f7843c6e6c8cc65",
+    "hardware/two-layer/sandwich/upper/08_Actuator_Rail.kicad_sch": "5cf6940754419d3c92a1c752cb94969ea13607bb75550aa3708a8aa4f948f9c8",
+    "hardware/two-layer/sandwich/upper/18_Wheel_Harness.kicad_sch": "19c32cc2a6691d9483387f26c45c717dd902bf2b82bfb8fc67f318f0040df860",
+    "hardware/two-layer/sandwich/upper/20_Stack_Harness.kicad_sch": "432e62f13fa5e3a9ef081f61c6ebb84fca921fada49015a7fe357721060a7afc",
+    "hardware/two-layer/sandwich/upper/Upper.kicad_sch": "89b74163087530c301bdf0ebaa1916f286f7b659760152f327e73cca19561acf",
+    "hardware/two-layer/sandwich/upper/Upper.kicad_pcb": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+    "hardware/two-layer/sandwich/wheel/10_Wheel_Driver.kicad_sch": "47c93cb61ab7fe7ab7482b5ad738e62179246fc47db06b4d0dfa46c447903f8e",
+    "hardware/two-layer/sandwich/wheel/11_Wheel_SPI.kicad_sch": "f1306136b32754710654b2208bb1afddf44f07da3cb4792677282d2c2e9cdd9d",
+    "hardware/two-layer/sandwich/wheel/12_Wheel_Feedback.kicad_sch": "855559dcd9ce7e96b0528469d2c1de09978192b3a40747bbab99b60a7a49f134",
+    "hardware/two-layer/sandwich/wheel/13_Regeneration_Brake.kicad_sch": "4d56f685ec5e6d30dd98ef342ca4f8530bd2eefc92d917eb6b13528eafa83e70",
+    "hardware/two-layer/sandwich/wheel/15_Wheel_Undervoltage.kicad_sch": "2a6b8120981c85d76f4b175e93d2b21f5a0a592520f2845ae6cee6bc6546ec85",
+    "hardware/two-layer/sandwich/wheel/18_Wheel_Harness.kicad_sch": "7921a37a9ce41c8b92320368910eeeb42590a75535365f973698cc11865e0d97",
+    "hardware/two-layer/sandwich/wheel/19_Local_Power.kicad_sch": "cc6a947371ab59c87a1471cf8939463a836d780adfbf84e4e50e53e7e82c8672",
+    "hardware/two-layer/sandwich/wheel/Wheel.kicad_sch": "9cf532a53233877cdc1eb8b9e87b47f2447eab26ac77b2a3557e76e73c915bbc",
+    "hardware/two-layer/sandwich/wheel/Wheel.kicad_pcb": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+    "hardware/two-layer/encoder/Encoder.kicad_sch": "373ada321a0db4bc0a6a11809fbbbbdd88646fb11c5730bd30f8d0f7a6eabbe7",
+    "hardware/two-layer/encoder/Encoder.kicad_pcb": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+    "hardware/common/MagMouse.kicad_sym": "a91da223771f806bfa0266d451c903aaad8f99de4cdcd5b7d7eb3d0b2debf16c",
+    "hardware/two-layer/sandwich/circuit-review/power-paths.json": "3dc5f6fa63d1f0df436390360572ddba24ea861d6fef1b020f9b8241f30aa285"
+  },
+  "capacitors": {
+    "VBUS_USB": {
+      "nominal_F": 1e-06,
+      "parts": [
+        {
+          "board": "Upper",
+          "ref": "C24",
+          "F": 1e-06
+        }
+      ]
+    },
+    "PWR_5V": {
+      "nominal_F": 3.0999999999999995e-05,
+      "parts": [
+        {
+          "board": "Lower",
+          "ref": "C1",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C73",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C88",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C89",
+          "F": 1e-06
+        }
+      ]
+    },
+    "+3V3": {
+      "nominal_F": 6.670999999999999e-05,
+      "parts": [
+        {
+          "board": "Lower",
+          "ref": "C2",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C3",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C22",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Lower",
+          "ref": "C23",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C5",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C6",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Lower",
+          "ref": "C53",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Lower",
+          "ref": "C63",
+          "F": 1e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C70",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Lower",
+          "ref": "C71",
+          "F": 2.2e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C72",
+          "F": 1e-08
+        },
+        {
+          "board": "Lower",
+          "ref": "C77",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Lower",
+          "ref": "C78",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C16",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C17",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C18",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C19",
+          "F": 1e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C20",
+          "F": 1e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C28",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C29",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C31",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C32",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Upper",
+          "ref": "C34",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C51",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C103",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C104",
+          "F": 1.0000000000000001e-07
+        }
+      ]
+    },
+    "ACT_5V": {
+      "nominal_F": 0.0001804,
+      "parts": [
+        {
+          "board": "Upper",
+          "ref": "C37",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C38",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C39",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Upper",
+          "ref": "C40",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Wheel",
+          "ref": "C41",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C42",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C43",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C44",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Wheel",
+          "ref": "C45",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Wheel",
+          "ref": "C65",
+          "F": 1.0000000000000001e-07
+        },
+        {
+          "board": "Wheel",
+          "ref": "C68",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Wheel",
+          "ref": "C69",
+          "F": 9.999999999999999e-06
+        },
+        {
+          "board": "Wheel",
+          "ref": "C90",
+          "F": 9.999999999999999e-05
+        }
+      ]
+    }
+  },
+  "topology_assertions": {
+    "Upper": {
+      "R35": {
+        "1": "USB_OVLO",
+        "2": "GND"
+      },
+      "D3": {
+        "1": "ACT_UVLO",
+        "3": "ACT_DRIVE_EN"
+      },
+      "U15": {
+        "1": "GND",
+        "2": "ACT_HEARTBEAT",
+        "3": "ARM_VALID",
+        "5": "ACT_PERMIT"
+      },
+      "Q1": {
+        "1": "SOURCE_OK"
+      },
+      "Q2": {
+        "1": "SOURCE_3A"
+      }
+    },
+    "Wheel": {
+      "U40": {
+        "1": "WHEEL_VM_OK",
+        "2": "GND",
+        "3": "ACT_DRIVE_EN",
+        "5": "WHEEL_VM_SENSE",
+        "6": "+3V3"
+      },
+      "R147": {
+        "1": "ACT_5V",
+        "2": "WHEEL_VM_SENSE"
+      },
+      "R148": {
+        "1": "WHEEL_VM_SENSE",
+        "2": "GND"
+      },
+      "C102": {
+        "1": "WHEEL_VM_SENSE",
+        "2": "GND"
+      },
+      "R149": {
+        "1": "+3V3",
+        "2": "WHEEL_VM_OK"
+      },
+      "U21": {
+        "23": "ACT_DRIVE_EN",
+        "28": "WHEEL_RUN_EN",
+        "30": "WHEEL_RUN_EN",
+        "32": "WHEEL_RUN_EN"
+      },
+      "Q4": {
+        "1": "WHEEL_RUN_EN"
+      }
+    }
+  }
+}

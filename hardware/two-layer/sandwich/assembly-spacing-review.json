@@ -2,7 +2,7 @@
   "definition": "Minimum 2 mm between front component body-and-land convex envelopes; pins within a component and copper-only test access excluded.",
   "boards": {
     "Lower": {
-      "sha256": "8327a22102bdce8ee914699546b593a52598a20f2d57180056fb8f993808199c",
+      "sha256": "f676bc3f9a5318437a969277bd8ae346abea25f975e1210cfe48101cd869214f",
       "minimum_component_gap_mm": 2.0027649819397175,
       "closest_pairs_mm": [
         [
@@ -14,6 +14,26 @@
           2.0086592522568387,
           "R136",
           "U36"
+        ],
+        [
+          2.009999999999998,
+          "C83",
+          "C85"
+        ],
+        [
+          2.009999999999998,
+          "C84",
+          "C85"
+        ],
+        [
+          2.009999999999998,
+          "C86",
+          "U25"
+        ],
+        [
+          2.010000000000005,
+          "C83",
+          "C86"
         ],
         [
           2.0174999999999983,
@@ -31,11 +51,6 @@
           "U2"
         ],
         [
-          2.037005393498242,
-          "C85",
-          "C86"
-        ],
-        [
           2.0375006567772433,
           "C53",
           "R101"
@@ -49,21 +64,6 @@
           2.046471935017924,
           "R101",
           "U25"
-        ],
-        [
-          2.0549999999999997,
-          "C79",
-          "R132"
-        ],
-        [
-          2.0578813077386156,
-          "C83",
-          "C86"
-        ],
-        [
-          2.0584474967168864,
-          "C1",
-          "R101"
         ]
       ],
       "measured_component_envelopes": 92,
@@ -79,7 +79,7 @@
       "via_drill_mm": 0.3,
       "via_hole_smd_overlaps": 0,
       "copper_layers": 2,
-      "component_values_and_pin_nets_preserved": true,
+      "values_and_pin_nets_match_reviewed_allowlist": true,
       "moved_footprints": {
         "D5": {
           "before_xy_mm": [
@@ -100,7 +100,7 @@
           ],
           "after_xy_mm": [
             46.5,
-            54.5
+            57.13
           ],
           "before_angle": 0.0,
           "after_angle": 0.0
@@ -328,7 +328,7 @@
           ],
           "after_xy_mm": [
             46.5,
-            58.5
+            60.94
           ],
           "before_angle": 0.0,
           "after_angle": 0.0
@@ -387,11 +387,11 @@
             27.6
           ],
           "after_xy_mm": [
-            57.725,
-            33.1
+            51.25,
+            23.91
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "C77": {
           "before_xy_mm": [
@@ -495,11 +495,11 @@
             30.41
           ],
           "after_xy_mm": [
-            51.25,
-            23.91
+            57.725,
+            33.1
           ],
           "before_angle": 0.0,
-          "after_angle": 0.0
+          "after_angle": 90.0
         },
         "R74": {
           "before_xy_mm": [
@@ -796,10 +796,10 @@
           ],
           "after_xy_mm": [
             45.125,
-            63.6
+            64.85
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "C86": {
           "before_xy_mm": [
@@ -807,8 +807,8 @@
             51.04
           ],
           "after_xy_mm": [
-            52.55,
-            52.54
+            46.5,
+            49.51
           ],
           "before_angle": 0.0,
           "after_angle": 0.0
@@ -844,7 +844,7 @@
           ],
           "after_xy_mm": [
             46.5,
-            50.5
+            53.32
           ],
           "before_angle": 0.0,
           "after_angle": 0.0
@@ -879,8 +879,8 @@
             69.6
           ],
           "after_xy_mm": [
-            49.125,
-            63.6
+            51.625,
+            62.85
           ],
           "before_angle": 90.0,
           "after_angle": 90.0
@@ -949,7 +949,7 @@
       "footprint_library_ids_preserved": true
     },
     "Upper": {
-      "sha256": "2900acdb530d296800e87672e2db2da2a0dabbcd413a25573d266ca89de6f6fb",
+      "sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
       "minimum_component_gap_mm": 2.025,
       "closest_pairs_mm": [
         [
@@ -1019,7 +1019,7 @@
       "via_drill_mm": 0.3,
       "via_hole_smd_overlaps": 0,
       "copper_layers": 2,
-      "component_values_and_pin_nets_preserved": true,
+      "values_and_pin_nets_match_reviewed_allowlist": true,
       "moved_footprints": {
         "C33": {
           "before_xy_mm": [
@@ -1756,7 +1756,7 @@
       }
     },
     "Wheel": {
-      "sha256": "5745466ca9c6af6227ce4b658abae1e5648866572bd3cbee6be54b85489600bd",
+      "sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
       "minimum_component_gap_mm": 2.0099999999999976,
       "closest_pairs_mm": [
         [
@@ -1791,18 +1791,8 @@
         ],
         [
           2.0099999999999976,
-          "R146",
-          "R90"
-        ],
-        [
-          2.0099999999999976,
           "R83",
           "R94"
-        ],
-        [
-          2.009999999999998,
-          "C52",
-          "R144"
         ],
         [
           2.009999999999998,
@@ -1818,15 +1808,25 @@
           2.009999999999998,
           "R103",
           "R104"
+        ],
+        [
+          2.009999999999998,
+          "R95",
+          "U24"
+        ],
+        [
+          2.0099999999999985,
+          "C44",
+          "C67"
         ]
       ],
-      "measured_component_envelopes": 83,
+      "measured_component_envelopes": 92,
       "board_area_mm2": 4448.296840928459,
       "edge_cut_holes_mm": [],
       "via_drill_mm": 0.3,
       "via_hole_smd_overlaps": 0,
       "copper_layers": 2,
-      "component_values_and_pin_nets_preserved": true,
+      "values_and_pin_nets_match_reviewed_allowlist": true,
       "moved_footprints": {
         "R102": {
           "before_xy_mm": [
@@ -1846,8 +1846,8 @@
             38.25
           ],
           "after_xy_mm": [
-            22.25,
-            39.31
+            29.0,
+            47.06
           ],
           "before_angle": 90.0,
           "after_angle": 90.0
@@ -1906,11 +1906,11 @@
             20.5
           ],
           "after_xy_mm": [
-            50.595,
+            51.845,
             20.5
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "R100": {
           "before_xy_mm": [
@@ -1947,6 +1947,18 @@
           ],
           "before_angle": 0.0,
           "after_angle": 0.0
+        },
+        "C46": {
+          "before_xy_mm": [
+            19.75,
+            26.0
+          ],
+          "after_xy_mm": [
+            21.99,
+            34.11
+          ],
+          "before_angle": 90.0,
+          "after_angle": -90.0
         },
         "R87": {
           "before_xy_mm": [
@@ -2002,8 +2014,8 @@
             29.5
           ],
           "after_xy_mm": [
-            33.0,
-            36.32
+            33.11,
+            28.8
           ],
           "before_angle": 90.0,
           "after_angle": 90.0
@@ -2098,11 +2110,11 @@
             26.0
           ],
           "after_xy_mm": [
-            22.89,
-            21.04
+            21.88,
+            28.0
           ],
           "before_angle": 90.0,
-          "after_angle": 180.0
+          "after_angle": 90.0
         },
         "C49": {
           "before_xy_mm": [
@@ -2110,8 +2122,8 @@
             29.5
           ],
           "after_xy_mm": [
-            35.4,
-            30.21
+            33.11,
+            35.0
           ],
           "before_angle": 90.0,
           "after_angle": 90.0
@@ -2134,11 +2146,11 @@
             30.0
           ],
           "after_xy_mm": [
-            41.64,
-            56.12
+            37.39,
+            59.37
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "R114": {
           "before_xy_mm": [
@@ -2222,7 +2234,7 @@
             16.08
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": -90.0
         },
         "R92": {
           "before_xy_mm": [
@@ -2302,8 +2314,8 @@
             11.75
           ],
           "after_xy_mm": [
-            23.15,
-            10.6
+            20.88,
+            11.12
           ],
           "before_angle": 90.0,
           "after_angle": 180.0
@@ -2314,11 +2326,11 @@
             23.5
           ],
           "after_xy_mm": [
-            45.035,
-            50.06
+            37.285,
+            51.81
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "R83": {
           "before_xy_mm": [
@@ -2410,8 +2422,8 @@
             26.5
           ],
           "after_xy_mm": [
-            51.395,
-            26.5
+            58.145,
+            21.0
           ],
           "before_angle": 0.0,
           "after_angle": 0.0
@@ -2494,11 +2506,11 @@
             21.25
           ],
           "after_xy_mm": [
-            17.405,
-            13.78
+            22.405,
+            21.28
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "C58": {
           "before_xy_mm": [
@@ -2506,11 +2518,11 @@
             11.25
           ],
           "after_xy_mm": [
-            29.26,
-            10.1
+            27.0,
+            11.2
           ],
           "before_angle": 90.0,
-          "after_angle": 180.0
+          "after_angle": 0.0
         },
         "R119": {
           "before_xy_mm": [
@@ -2535,6 +2547,18 @@
           ],
           "before_angle": 90.0,
           "after_angle": 180.0
+        },
+        "TP36": {
+          "before_xy_mm": [
+            20.0,
+            41.0
+          ],
+          "after_xy_mm": [
+            20.0,
+            43.0
+          ],
+          "before_angle": 0.0,
+          "after_angle": 0.0
         },
         "C65": {
           "before_xy_mm": [
@@ -2578,11 +2602,11 @@
             17.75
           ],
           "after_xy_mm": [
-            45.4,
-            56.83
+            49.65,
+            59.58
           ],
           "before_angle": 90.0,
-          "after_angle": 90.0
+          "after_angle": 0.0
         },
         "R94": {
           "before_xy_mm": [
@@ -2626,11 +2650,11 @@
             32.05
           ],
           "after_xy_mm": [
-            20.85,
-            33.2
+            22.1,
+            39.2
           ],
           "before_angle": 180.0,
-          "after_angle": -90.0
+          "after_angle": 0.0
         },
         "R108": {
           "before_xy_mm": [
@@ -2660,7 +2684,7 @@
       "footprint_library_ids_preserved": true
     },
     "Encoder": {
-      "sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+      "sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
       "minimum_component_gap_mm": 2.5,
       "closest_pairs_mm": [
         [
@@ -2685,7 +2709,7 @@
       "via_drill_mm": 0.3,
       "via_hole_smd_overlaps": 0,
       "copper_layers": 2,
-      "component_values_and_pin_nets_preserved": true,
+      "values_and_pin_nets_match_reviewed_allowlist": true,
       "moved_footprints": {
         "C62": {
           "before_xy_mm": [

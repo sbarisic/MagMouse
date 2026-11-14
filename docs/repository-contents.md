@@ -48,3 +48,21 @@ against pre-cleanup hashes. CAD helper imports, nine router geometry tests,
 assembly spacing/outline/net/via checks, model hashes and simulation inventory
 passed. Routing export now creates its output directory when it is missing;
 this was checked with a new scratch directory.
+
+## Local scratch cleanup, 2026-11-14
+
+Removed the untracked `hardware/pcb.zip`, temporary PDF renders, obsolete
+routing logs and circuit-fix rollback copies, Python caches, and reproducible
+simulation waveforms/decks/logs. This supersedes the November 5 decision to
+retain those waveforms. Compact simulation results, model provenance and
+downloaded vendor models remain available; rerun the simulation to recreate
+the deleted intermediates.
+
+Removed 523 files totaling 189,029,351 bytes. Verified that all 465 retained
+project files checked by the cleanup kept their original hashes. Required
+router/Python tools and the passive-package, spacing and via-migration
+baselines remain local. Cleanup manifests remain in ignored
+`build/local-cleanup`. No project sources or release exports were removed.
+
+The current PCB and fabrication files preserve their exact bytes in Git so
+release manifests remain valid after checkout on another machine.

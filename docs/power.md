@@ -58,16 +58,21 @@ and reverse blocking. The 472 and 474 variants are not equivalent substitutes.
 | --- | --- | --- |
 | Input UVLO | R29/R30 | 3.852 V rising / 3.499 V falling |
 | Input OVLO | R31-R35 | 6.0 V rising; approximately 5.8-6.3 V with threshold/resistor/leakage tolerances |
-| Actuator UVLO | R36-R39 | 4.80 V rising / 4.36 V falling |
+| Actuator rail UVLO | R36-R38 = 10 kOhm each; R39 = 11 kOhm, 1% | 4.473 V rising / 4.063 V falling |
+| Local motor-drive inhibit | U40; 105 kOhm / 10 kOhm, 0.1%, 25 ppm/K | 4.658 V falling; 12-28 ms recovery delay |
 | Actuator input OVLO | R40/R41 | 6.63 V rising |
 | Actuator branch current limit | R42 || R43 | 2.02 A |
 | Both rail ramps | C25/C26, 10 nF | 0.2 V/ms; about 25 ms to 5 V |
-| ACT capacitor-only inrush | 80.4 uF nominal direct rail capacitance | About 16.08 mA; active loads and secondary rail charging are additional |
+| ACT capacitor-only inrush | 180.4 uF nominal direct rail capacitance | About 36.08 mA; active loads and secondary rail charging are additional |
 
-D3 clamps U13 EN low when ACT_DRIVE_EN is low. High-value EN/OVLO dividers
-reduce standby demand. The driver still has its own undervoltage protection:
-4.36 V is below its 4.5 V minimum operating supply, so firmware must stop effects
-on droop instead of attempting force regulation through undervoltage.
+D3 clamps U13 EN low when ACT_DRIVE_EN is low. U13 enables the rail;
+it does not establish sufficient local voltage for motor operation. U40
+TPS3808G01DBVR senses ACT_5V on Wheel and U41 qualifies the existing drive
+request. Low local voltage inhibits haptics without resetting the mouse.
+The supervisor does not control U13, so rail startup has no dependency loop.
+See the [circuit correction review](../hardware/two-layer/sandwich/circuit-review/README.md)
+for tolerance, delay and transient limits. Firmware must still stop effects
+on droop rather than attempting force regulation through undervoltage.
 
 The eFuse fault outputs and U2 power-good pull MCU_EN low through separate
 1 kOhm resistors, limiting reset-capacitor discharge current. Overcurrent causes
@@ -77,7 +82,7 @@ firmware must always boot with actuator requests low.
 
 U2 is now **TPS62162DSGR**, fixed 3.3 V, 3-17 V input, 1 A output. It replaces
 the TLV62569, whose 5.5 V input ceiling left insufficient transient margin, and
-removes its R1/R2 feedback divider. L1 is SWPA4020S3R3MT, 3.3 uH; C2/C3/C23
+removes its R1/R2 feedback divider. L1 is Bourns SRP4020CC-3R3M, 3.3 uH; C2/C3/C23
 provide 30 uF nominal local output capacitance. The 1 A logic target remains
 subject to thermal, effective-capacitance and transient validation. Route VOS
 to the regulated output and follow TI's AGND/PGND guidance.
@@ -89,6 +94,12 @@ overshoot before the eFuse opens. This remains a 5 V sink, not a general-purpose
 high-voltage input.
 
 ## Hardware interlock and startup
+
+The [2026-11-06 simulation review](../hardware/simulation/power-validation/RESULTS.md)
+checks current-netlist permissions, selected heartbeat timing, supply headroom
+and supervisor transients. It retains an unresolved supplier-model discrepancy
+for short-dip recovery. Actual boot current, nSLEEP leakage and bench acceptance
+remain unverified; simulation does not replace the tests listed below.
 
 GPIO16 ACT_REQ, GPIO17 ACT_HEARTBEAT and GPIO18 SENS_REQ default low through
 external resistors. HALL_EN = SENS_REQ AND MCU_EN enables the Hall sensors, MA735, RGB and optical supplies.
@@ -164,9 +175,10 @@ circuit is drawn; sampling timing and accuracy still need validation. See
 U13 blocks regenerative power into PWR_5V; U12 blocks return to the host.
 C37-C40, C44/C45 and C68/C69 provide eight 10 uF capacitors:
 80 uF nominal bulk storage. Four retained 100 nF bypass capacitors bring the
-direct rail total to 80.4 uF. Removing the button drivers removed C8/C11/C14
+direct rail subtotal to 80.4 uF. C90 adds 100 uF, giving 180.4 uF nominal.
+Removing the button drivers removed C8/C11/C14
 and three rail bypass capacitors. Charge-pump and secondary-rail capacitors
-are excluded. R69, 1 kOhm, gives a nominal 80.4 ms discharge constant and
+are excluded. R69, 1 kOhm, alone gives a nominal 180.4 ms discharge constant and
 about 30 mW at 5.5 V.
 Hardware command gating does not wait for that discharge.
 

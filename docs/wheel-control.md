@@ -12,8 +12,11 @@ Select 3-PWM with analog current outputs: PWM_MODE = 10b. The 11b current-limit
 mode does not expose the SOx signals required by this architecture. Configure
 and read back the mode while disabled; power-up defaults to 6-PWM.
 
-WHEEL_PWM_A/B/C feed INHA/B/C through external gates. Derive WHEEL_RUN_EN from
-WHEEL_RUN_REQ AND ACT_DRIVE_EN; use it for INLA/B/C and PWM gating. Assert
+WHEEL_PWM_A/B/C feed INHA/B/C through external gates. U22 derives
+WHEEL_RUN_REQUESTED = WHEEL_RUN_REQ AND ACT_DRIVE_EN. U41 derives
+WHEEL_RUN_EN = WHEEL_RUN_REQUESTED AND WHEEL_VM_OK; use the qualified
+signal for INLA/B/C, PWM gating and Q4. U40 asserts WHEEL_VM_OK only after
+the local supply passes its threshold and recovery delay. Assert
 DRVOFF whenever running is not permitted. Three low PWM commands alone are
 not high-impedance shutdown. Derive nSLEEP from the actuator permit so SPI
 configuration is possible with DRVOFF asserted. This separates wake/configure
@@ -46,10 +49,20 @@ Bound angle age in the shared-bus scheduler. Check magnet alignment,
 interference, filtering and electrical-angle calibration on the actual motor.
 The dedicated ADC bus still needs [sampling-deadline validation](interfaces.md#wheel-acquisition-timing-gate).
 
-Bring up with WHEEL_RUN_REQ low: obtain a stable ACT rail of at least 4.5 V,
+Bring up with WHEEL_RUN_REQ low: obtain a stable ACT rail sufficient to release
+U40 (nominal falling threshold 4.658 V, hysteresis and 12-28 ms release delay),
 wait for driver startup, configure/read back mode and gain, establish valid angle/current samples,
 initialize bounded PWM, then request run. Reset, timeout and lost permit must
 remove drive without another SPI transaction.
+
+U40 runs from host +3V3, senses the driver-local ACT_5V supply, and receives
+ACT_DRIVE_EN on manual reset. CT is open. Its 105 kOhm / 10 kOhm divider
+and 1 nF capacitor filter brief sense disturbances. It gates drive only;
+U13 can charge the rail while WHEEL_VM_OK is low. Recovery cannot bypass
+the existing source, request, sensor, reset or heartbeat permissions.
+No MCU GPIO or harness pin is added. Actual shutdown delay and ripple
+immunity remain bench tests; see the
+[circuit correction review](../hardware/two-layer/sandwich/circuit-review/README.md).
 
 ## Regenerative-energy path
 

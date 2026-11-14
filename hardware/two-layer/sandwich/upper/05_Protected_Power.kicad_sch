@@ -1908,7 +1908,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "100k"
+    (property "Value" "10k"
       (at 227.52 122.92 0)
       (effects
         (font
@@ -1935,7 +1935,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "RC1206FR-07100KL"
+    (property "MPN" "RC1206FR-0710KL"
       (at 223.52 121.92 0)
       (hide yes)
       (effects
@@ -1956,14 +1956,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
+    (property "Sourcing Status" "1206 1% UVLO correction; assembly stock unverified"
       (at 223.52 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-11-04"
+    (property "Checked" "2026-11-05"
       (at 223.52 121.92 0)
       (hide yes)
       (effects
@@ -2042,7 +2042,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "100k"
+    (property "Value" "10k"
       (at 252.92000000000002 122.92 0)
       (effects
         (font
@@ -2069,7 +2069,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "RC1206FR-07100KL"
+    (property "MPN" "RC1206FR-0710KL"
       (at 248.92000000000002 121.92 0)
       (hide yes)
       (effects
@@ -2090,14 +2090,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
+    (property "Sourcing Status" "1206 1% UVLO correction; assembly stock unverified"
       (at 248.92000000000002 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-11-04"
+    (property "Checked" "2026-11-05"
       (at 248.92000000000002 121.92 0)
       (hide yes)
       (effects
@@ -2176,7 +2176,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "100k"
+    (property "Value" "10k"
       (at 278.32 122.92 0)
       (effects
         (font
@@ -2203,7 +2203,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "RC1206FR-07100KL"
+    (property "MPN" "RC1206FR-0710KL"
       (at 274.32 121.92 0)
       (hide yes)
       (effects
@@ -2224,14 +2224,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
+    (property "Sourcing Status" "1206 1% UVLO correction; assembly stock unverified"
       (at 274.32 121.92 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-11-04"
+    (property "Checked" "2026-11-05"
       (at 274.32 121.92 0)
       (hide yes)
       (effects
@@ -2294,7 +2294,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "100k"
+    (property "Value" "11k"
       (at 278.32 158.48 0)
       (effects
         (font
@@ -2321,7 +2321,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "RC1206FR-07100KL"
+    (property "MPN" "RC1206FR-0711KL"
       (at 274.32 157.48 0)
       (hide yes)
       (effects
@@ -2342,14 +2342,14 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "1206 replacement; supplier stock and assembly availability not checked"
+    (property "Sourcing Status" "1206 1% UVLO correction; assembly stock unverified"
       (at 274.32 157.48 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-11-04"
+    (property "Checked" "2026-11-05"
       (at 274.32 157.48 0)
       (hide yes)
       (effects

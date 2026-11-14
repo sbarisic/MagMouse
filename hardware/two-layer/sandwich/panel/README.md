@@ -6,6 +6,10 @@ component positions and copper are preserved by translation; nets are isolated
 between boards. The panel uses 2 mm routed gaps, 5 mm tabs and 0.6 mm mousebites
 on 0.9 mm pitch. The drill row lies outside each finished board outline.
 
+The November circuit correction moves two Wheel tabs to clear the revised
+copper: Wheel now has two tabs on its top edge and two on its bottom edge.
+The individual board geometry, mounting holes and harness positions are unchanged.
+
 Upload `MagMouse-panel-gerbers.zip` as **Panel by Customer**, **4 designs**,
 **5 panels**, FR4, 1.6 mm, 1 oz, green/white, ENIG 1 µin, 0.30 mm minimum via
 drill and tented vias. Components, assembly and stencil are separate.

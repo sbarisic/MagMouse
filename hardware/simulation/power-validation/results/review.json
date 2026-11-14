@@ -1,0 +1,21 @@
+{
+  "status": "Evidence consistent; hardware acceptance remains UNVERIFIED",
+  "production_sources_unchanged": true,
+  "waveform_runs_recomputed": 38,
+  "supplier_model_cases_excluded_from_hardware_prediction": [
+    "held_request",
+    "request_cleared_110ms"
+  ],
+  "unresolved_supplier_model_recovery_discrepancies": [
+    "held_request"
+  ],
+  "abrupt_droop_enabled_below_4V5_duration_us": 13.58977027464056,
+  "all_expected_fault_controls_detected": true,
+  "nSLEEP_powered_off_leakage": "UNVERIFIED; no applicable leakage model",
+  "actual_ROM_boot_and_USB_startup_current": "UNVERIFIED; prescribed loads only",
+  "study_code_sha256": {
+    "review.py": "01915edee2cb5788262be4d80cbbdd387eac7b7baf0590d446a9f147c2889cf0",
+    "run.py": "7e48b959d3d97a5b7d14e16e3e5f9567471e1aef9adc4fbe7ee9697b3de3b461",
+    "startup.py": "e9cab7728b0afd1461de3ff58d4ae075181e5dd7385179da6f2e6bfead214660"
+  }
+}

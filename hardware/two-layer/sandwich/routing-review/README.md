@@ -1,5 +1,12 @@
 # Split Main routing review — 2026-11-04
 
+The current source hashes and native reports include the November 5
+[circuit correction](../circuit-review/README.md). That review supersedes the
+old value-for-value comparison for the explicitly allowlisted buffers and
+UVLO resistors, adds nine Wheel components, and records the new local routing
+and before/after power-path screening. The account below describes the earlier
+routing stages; its component count and cross-section measurements are historical.
+
 Lower and Upper now have independent schematic projects and completed two-layer
 routing. All four boards pass native KiCad 10.0.6 ERC, DRC, connectivity and
 schematic-parity checks under the saved rules. `summary.json` records the source
