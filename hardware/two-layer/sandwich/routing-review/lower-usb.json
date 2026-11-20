@@ -1,0 +1,831 @@
+{
+  "previous_board_sha256": "f676bc3f9a5318437a969277bd8ae346abea25f975e1210cfe48101cd869214f",
+  "board_sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
+  "copper_layers": 2,
+  "changed_placements": {
+    "C53": {
+      "before": [
+        [
+          46.8125,
+          36.05
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          41.4,
+          34.9
+        ],
+        90.0
+      ]
+    },
+    "C73": {
+      "before": [
+        [
+          37.5625,
+          23.55
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          44.05,
+          27.5
+        ],
+        180.0
+      ]
+    },
+    "C74": {
+      "before": [
+        [
+          37.8438,
+          27.8
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          46.8125,
+          36.05
+        ],
+        180.0
+      ]
+    },
+    "C76": {
+      "before": [
+        [
+          14.25,
+          21.6
+        ],
+        90.0
+      ],
+      "after": [
+        [
+          43.5,
+          41.2
+        ],
+        -90.0
+      ]
+    },
+    "C80": {
+      "before": [
+        [
+          44.05,
+          27.5
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          29.425,
+          28.302
+        ],
+        90.0
+      ]
+    },
+    "C87": {
+      "before": [
+        [
+          46.25,
+          31.8
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          34.7,
+          29.5
+        ],
+        180.0
+      ]
+    },
+    "D5": {
+      "before": [
+        [
+          27.5,
+          24.0
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          52.925,
+          36.48
+        ],
+        180.0
+      ]
+    },
+    "R101": {
+      "before": [
+        [
+          52.925,
+          36.48
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          20.5,
+          11.3
+        ],
+        90.0
+      ]
+    },
+    "R128": {
+      "before": [
+        [
+          9.875,
+          34.75
+        ],
+        90.0
+      ],
+      "after": [
+        [
+          46.9,
+          6.1
+        ],
+        0.0
+      ]
+    },
+    "R130": {
+      "before": [
+        [
+          10.2375,
+          21.99
+        ],
+        90.0
+      ],
+      "after": [
+        [
+          52.0,
+          50.7
+        ],
+        90.0
+      ]
+    },
+    "R25": {
+      "before": [
+        [
+          31.425,
+          29.802
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          33.5,
+          23.8
+        ],
+        0.0
+      ]
+    },
+    "TP17": {
+      "before": [
+        [
+          50.4875,
+          63.08
+        ],
+        180.0
+      ],
+      "after": [
+        [
+          51.037,
+          62.73
+        ],
+        180.0
+      ]
+    },
+    "TP40": {
+      "before": [
+        [
+          56.8,
+          55.0
+        ],
+        180.0
+      ],
+      "after": [
+        [
+          45.0,
+          50.5
+        ],
+        180.0
+      ]
+    },
+    "TP41": {
+      "before": [
+        [
+          52.8,
+          55.0
+        ],
+        180.0
+      ],
+      "after": [
+        [
+          46.5,
+          53.5
+        ],
+        180.0
+      ]
+    },
+    "TP43": {
+      "before": [
+        [
+          48.5,
+          37.5
+        ],
+        180.0
+      ],
+      "after": [
+        [
+          35.0,
+          29.9
+        ],
+        180.0
+      ]
+    },
+    "U33": {
+      "before": [
+        [
+          32.0,
+          25.0
+        ],
+        90.0
+      ],
+      "after": [
+        [
+          46.25,
+          31.8
+        ],
+        0.0
+      ]
+    },
+    "U37": {
+      "before": [
+        [
+          39.0,
+          36.0
+        ],
+        0.0
+      ],
+      "after": [
+        [
+          35.0,
+          36.0
+        ],
+        90.0
+      ]
+    }
+  },
+  "usb": {
+    "coverage": {
+      "MCU_USB_DM F.Cu": {
+        "trace_mm": 4.727,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "MCU_USB_DP F.Cu": {
+        "trace_mm": 3.8571,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DM F.Cu": {
+        "trace_mm": 20.2483,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DM B.Cu": {
+        "trace_mm": 65.7096,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DP F.Cu": {
+        "trace_mm": 22.3891,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DP B.Cu": {
+        "trace_mm": 62.4979,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      }
+    },
+    "via_coordinates_mm": {
+      "USB_DP": [
+        [
+          36.95,
+          21.55
+        ],
+        [
+          35.85,
+          71.26
+        ]
+      ],
+      "USB_DM": [
+        [
+          36.95,
+          20.875
+        ],
+        [
+          35.85,
+          71.94
+        ]
+      ]
+    },
+    "paired_via_spacing_mm": [
+      0.6750000000000007,
+      0.6799999999999926
+    ],
+    "connector_paths": {
+      "J1.A6 to R6.2": {
+        "whole_track_length_mm": 82.16,
+        "layer_changes": 2
+      },
+      "J1.B6 to R6.2": {
+        "whole_track_length_mm": 80.941,
+        "layer_changes": 2
+      },
+      "J1.A7 to R5.2": {
+        "whole_track_length_mm": 82.424,
+        "layer_changes": 2
+      },
+      "J1.B7 to R5.2": {
+        "whole_track_length_mm": 81.783,
+        "layer_changes": 2
+      }
+    }
+  },
+  "reference_check": "Clipped imported ground zones, lands and tracks on the opposite layer against every hole and the full USB copper width. The only allowed loss is within a signal via land plus 0.215 mm clearance and polygon tolerance.",
+  "original_reference_gaps_wide_centerline_mm": {
+    "USB_DP": 35.4538,
+    "USB_DM": 42.3433
+  },
+  "power_and_usb_paths": {
+    "original": {
+      "J103.3 to U2.2": {
+        "mm": 37.08,
+        "vias": 1,
+        "mohm": 27.7
+      },
+      "J103.3 to U33.1": {
+        "mm": 20.63,
+        "vias": 1,
+        "mohm": 17.08
+      },
+      "U33.1 to C73.1": {
+        "mm": 8.37,
+        "vias": 0,
+        "mohm": 7.83
+      },
+      "U33.5 to C74.1": {
+        "mm": 5.31,
+        "vias": 2,
+        "mohm": 10.03
+      },
+      "U33.5 to D5.2": {
+        "mm": 2.25,
+        "vias": 2,
+        "mohm": 6.31
+      },
+      "U38.6 to U35.5": {
+        "mm": 40.39,
+        "vias": 2,
+        "mohm": 73.81
+      },
+      "U38.6 to U37.14": {
+        "mm": 50.91,
+        "vias": 2,
+        "mohm": 92.12
+      },
+      "U38.6 to U39.5": {
+        "mm": 38.78,
+        "vias": 2,
+        "mohm": 71.01
+      },
+      "U37.14 to C87.1": {
+        "mm": 3.18,
+        "vias": 0,
+        "mohm": 5.53
+      },
+      "U39.5 to C80.1": {
+        "mm": 20.53,
+        "vias": 0,
+        "mohm": 35.71
+      },
+      "J1.A4 to J103.2": {
+        "mm": 8.99,
+        "vias": 2,
+        "mohm": 11.78
+      },
+      "J1.A9 to J103.2": {
+        "mm": 4.99,
+        "vias": 0,
+        "mohm": 5.78
+      },
+      "J1.B4 to J103.2": {
+        "mm": 4.99,
+        "vias": 0,
+        "mohm": 5.78
+      },
+      "J1.B9 to J103.2": {
+        "mm": 8.99,
+        "vias": 2,
+        "mohm": 11.78
+      },
+      "J1.A6 to R6.2": {
+        "mm": 76.14,
+        "vias": 2,
+        "mohm": 108.03
+      },
+      "J1.A7 to R5.2": {
+        "mm": 75.05,
+        "vias": 2,
+        "mohm": 101.59
+      },
+      "J1.B6 to R6.2": {
+        "mm": 74.92,
+        "vias": 2,
+        "mohm": 103.09
+      },
+      "J1.B7 to R5.2": {
+        "mm": 74.41,
+        "vias": 2,
+        "mohm": 98.77
+      }
+    },
+    "placement": {
+      "J103.3 to U2.2": {
+        "mm": 23.85,
+        "vias": 1,
+        "mohm": 19.65
+      },
+      "J103.3 to U33.1": {
+        "mm": 24.27,
+        "vias": 3,
+        "mohm": 20.12
+      },
+      "U33.1 to C73.1": {
+        "mm": 2.5,
+        "vias": 0,
+        "mohm": 1.52
+      },
+      "U33.5 to C74.1": {
+        "mm": 6.92,
+        "vias": 0,
+        "mohm": 8.43
+      },
+      "U33.5 to D5.2": {
+        "mm": 11.04,
+        "vias": 0,
+        "mohm": 13.44
+      },
+      "U38.6 to U35.5": {
+        "mm": 36.16,
+        "vias": 5,
+        "mohm": 71.81
+      },
+      "U38.6 to U37.14": {
+        "mm": 39.18,
+        "vias": 2,
+        "mohm": 71.7
+      },
+      "U38.6 to U39.5": {
+        "mm": 38.78,
+        "vias": 2,
+        "mohm": 71.01
+      },
+      "U37.14 to C87.1": {
+        "mm": 3.78,
+        "vias": 0,
+        "mohm": 6.57
+      },
+      "U39.5 to C80.1": {
+        "mm": 2.5,
+        "vias": 0,
+        "mohm": 4.35
+      },
+      "J1.A4 to J103.2": {
+        "mm": 12.87,
+        "vias": 0,
+        "mohm": 15.54
+      },
+      "J1.A9 to J103.2": {
+        "mm": 4.99,
+        "vias": 0,
+        "mohm": 5.78
+      },
+      "J1.B4 to J103.2": {
+        "mm": 4.99,
+        "vias": 0,
+        "mohm": 5.78
+      },
+      "J1.B9 to J103.2": {
+        "mm": 12.87,
+        "vias": 0,
+        "mohm": 15.54
+      },
+      "J1.A6 to R6.2": {
+        "mm": 82.16,
+        "vias": 2,
+        "mohm": 136.85
+      },
+      "J1.A7 to R5.2": {
+        "mm": 82.42,
+        "vias": 2,
+        "mohm": 131.01
+      },
+      "J1.B6 to R6.2": {
+        "mm": 80.94,
+        "vias": 2,
+        "mohm": 131.91
+      },
+      "J1.B7 to R5.2": {
+        "mm": 81.78,
+        "vias": 2,
+        "mohm": 128.19
+      }
+    }
+  },
+  "net_copper_lengths_mm": {
+    "+3V3": [
+      297.77,
+      309.5
+    ],
+    "ACT_DRIVE_EN": [
+      88.34,
+      132.58
+    ],
+    "ACT_HEARTBEAT": [
+      52.44,
+      75.31
+    ],
+    "ACT_REQ": [
+      57.56,
+      77.07
+    ],
+    "ADC2_MISO_LOCAL": [
+      36.96,
+      38.43
+    ],
+    "ADC_CS": [
+      68.23,
+      104.74
+    ],
+    "BOOT": [
+      52.88,
+      56.07
+    ],
+    "BOOT_SAFE_SPARE": [
+      66.04,
+      65.13
+    ],
+    "BUCK_SW": [
+      5.44,
+      5.44
+    ],
+    "CC_OUT1": [
+      173.24,
+      213.56
+    ],
+    "CC_OUT2": [
+      232.06,
+      224.31
+    ],
+    "CC_VBUS_DET": [
+      16.83,
+      55.77
+    ],
+    "CS_ADC2": [
+      135.31,
+      212.61
+    ],
+    "CS_DRV8316": [
+      206.25,
+      109.67
+    ],
+    "CS_IMU": [
+      72.42,
+      86.97
+    ],
+    "CS_MA735": [
+      132.11,
+      180.02
+    ],
+    "CS_PAW": [
+      142.47,
+      115.36
+    ],
+    "DRV_FAULT_LOCAL_N": [
+      30.47,
+      35.36
+    ],
+    "DRV_FAULT_N": [
+      295.74,
+      105.83
+    ],
+    "DRV_MISO_LOCAL": [
+      25.1,
+      20.39
+    ],
+    "ENC_3V3": [
+      53.2,
+      53.32
+    ],
+    "ENC_CS_LOCAL": [
+      26.5,
+      64.23
+    ],
+    "ENC_MISO_LOCAL": [
+      67.19,
+      88.91
+    ],
+    "ENC_MOSI_LOCAL": [
+      16.23,
+      19.52
+    ],
+    "ENC_QOD": [
+      9.46,
+      12.24
+    ],
+    "ENC_SCLK_LOCAL": [
+      17.11,
+      20.77
+    ],
+    "GND": [
+      376.29,
+      180.93
+    ],
+    "HALL_EN": [
+      62.24,
+      142.98
+    ],
+    "IMU_INT1": [
+      150.16,
+      43.04
+    ],
+    "IMU_PIN9": [
+      13.88,
+      13.24
+    ],
+    "LOGIC_PG": [
+      8.86,
+      11.26
+    ],
+    "MCU_EN": [
+      173.2,
+      174.18
+    ],
+    "MCU_USB_DM": [
+      4.73,
+      4.73
+    ],
+    "MCU_USB_DP": [
+      3.86,
+      3.86
+    ],
+    "MOTOR_SPI_MISO": [
+      71.25,
+      84.98
+    ],
+    "MOTOR_SPI_MOSI": [
+      65.85,
+      81.94
+    ],
+    "MOTOR_SPI_SCLK": [
+      93.43,
+      72.12
+    ],
+    "OPT_1V9": [
+      76.06,
+      69.14
+    ],
+    "OPT_3V3": [
+      142.02,
+      134.3
+    ],
+    "OPT_CS_N": [
+      46.26,
+      32.26
+    ],
+    "OPT_CTRL": [
+      304.37,
+      116.69
+    ],
+    "OPT_LED_P": [
+      21.95,
+      23.66
+    ],
+    "OPT_MISO": [
+      41.91,
+      52.47
+    ],
+    "OPT_MOSI": [
+      33.91,
+      33.6
+    ],
+    "OPT_RAMP_CT": [
+      5.94,
+      7.74
+    ],
+    "OPT_RESET_N": [
+      20.97,
+      81.93
+    ],
+    "OPT_SCLK": [
+      23.18,
+      27.8
+    ],
+    "OPT_VDDPIX": [
+      14.03,
+      14.03
+    ],
+    "PAW_MOTION_N": [
+      102.79,
+      72.61
+    ],
+    "PWR_5V": [
+      48.12,
+      36.57
+    ],
+    "RGB_5V": [
+      54.52,
+      66.21
+    ],
+    "RGB_BUFFER_OUT": [
+      71.26,
+      19.07
+    ],
+    "RGB_DATA": [
+      337.16,
+      139.95
+    ],
+    "RGB_DIN": [
+      69.07,
+      59.5
+    ],
+    "SENS_REQ": [
+      75.49,
+      62.98
+    ],
+    "SPI_MISO": [
+      96.03,
+      157.81
+    ],
+    "SPI_MOSI": [
+      149.52,
+      229.0
+    ],
+    "SPI_SCLK": [
+      120.8,
+      176.79
+    ],
+    "UART_RX": [
+      46.13,
+      22.88
+    ],
+    "UART_TX": [
+      3.27,
+      3.82
+    ],
+    "USB_CC1": [
+      28.16,
+      28.27
+    ],
+    "USB_CC2": [
+      35.59,
+      46.32
+    ],
+    "USB_DM": [
+      80.97,
+      85.96
+    ],
+    "USB_DP": [
+      79.8,
+      84.89
+    ],
+    "VBUS_PRESENT_N": [
+      59.74,
+      79.89
+    ],
+    "VBUS_USB": [
+      95.89,
+      96.31
+    ],
+    "WHEEL_PWM_A": [
+      75.49,
+      83.71
+    ],
+    "WHEEL_PWM_B": [
+      82.97,
+      67.4
+    ],
+    "WHEEL_PWM_C": [
+      327.58,
+      77.35
+    ],
+    "WHEEL_RUN_REQ": [
+      285.56,
+      90.7
+    ]
+  },
+  "path_measurement": "Native-contact copper paths. Power is selected by least estimated DC resistance at 80 C with 35 um copper, 1.578 mm barrels and 20 um plating. Segment lengths count complete selected segments. Net totals include every branch."
+}

@@ -1,6 +1,12 @@
 # Routing rebuild review — 2026-11-06
 
-The table below records the routing-rebuild checkpoint. The subsequent
+The 2026-11-20 lower-board update moved 17 footprints and test points to
+give the USB pair continuous opposite-layer GND while keeping the buck and
+optical-buffer feeds short. The lower buck feed now screens at 19.65 mΩ.
+See the [USB comparison](lower-usb-placement.png), [ground coverage](lower-usb-ground.png)
+and [measured before/after paths](lower-usb.json).
+
+The remaining narrative and table below record the routing-rebuild checkpoint. The subsequent
 [0.5 mm edge-clearance revision](edge-clearance.md) changes local Lower routing
 and Encoder ground routing; the accompanying JSON now contains those current
 measurements. Encoder is no longer byte-identical to this earlier checkpoint.

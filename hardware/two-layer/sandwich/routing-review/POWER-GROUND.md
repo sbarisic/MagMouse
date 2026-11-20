@@ -29,6 +29,9 @@ motor-driver temperature still require measurements on the assembled stack.
 
 ## DC path screening
 
+The table records the earlier power-routing checkpoint. The lower buck feed now
+screens at 19.65 mΩ after the [USB placement change](lower-usb.json).
+
 The table uses direct KiCad copper contacts with 35 µm outer copper, copper
 resistivity at 80 °C and an assumed 20 µm of barrel plating. Each path charges
 the full traversed segment or barrel and takes no credit for current sharing.

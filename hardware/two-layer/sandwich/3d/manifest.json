@@ -1,7 +1,7 @@
 {
   "Lower": {
     "source": "hardware/two-layer/sandwich/lower/Lower.kicad_pcb",
-    "source_sha256": "f676bc3f9a5318437a969277bd8ae346abea25f975e1210cfe48101cd869214f",
+    "source_sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
     "configured_board_thickness_mm": 1.578,
     "exported_substrate_expected_mm": 1.488,
     "available_model_instances": 81,
@@ -60,10 +60,10 @@
     "source_unchanged": true,
     "glb_contour_warning": true,
     "exports": {
-      "Lower-bare.step": "8078fb64f7778b808efea730d606304b83ee6fe00ede84aa86bd92fc8fc86279",
-      "Lower-preview.png": "8605595f16ae245f42ec2c552d1341be16aad88f5828b0ba00b6af4a4e009815",
-      "Lower.glb": "87fbc9c3b07e15f2dd4ac07bca9c2e73fd6ab400e16a8b30ea6b75ce854b34a8",
-      "Lower.step": "777ac72f1d67e8063b1f5b9226f6f7dd59e039e27c1468a25f3f91484973b759"
+      "Lower-bare.step": "7616d4f9de9577416fcea82d1ab4944465505a2b6712112e8a532a0ff9928b9a",
+      "Lower-preview.png": "626a876aace71c4da486f8bd7bb8d3e6340a43a7db814f7682c0e58ca542ae01",
+      "Lower.glb": "31016623a3f725b69f88077d7a85227ff95a1bcbe00ea2f808027dbecfc94c09",
+      "Lower.step": "4343a3d53478b96b471e64fa93bd27e9f8547b11583393253413c2cb217fe1fe"
     }
   },
   "Upper": {
@@ -178,7 +178,7 @@
   },
   "Panel": {
     "source": "hardware/two-layer/sandwich/panel/Panel.kicad_pcb",
-    "source_sha256": "dc1ae6817c21705215ae60b71ff1aa7251cd56313ce226916447b30613f79ccd",
+    "source_sha256": "b14d4fd7d6d6d2962af346b3f60c0f03ccd09353cd94ee126cd9551b3e4fb0d0",
     "configured_board_thickness_mm": 1.578,
     "exported_substrate_expected_mm": 1.488,
     "available_model_instances": 243,
@@ -292,10 +292,10 @@
     "source_unchanged": true,
     "glb_contour_warning": true,
     "exports": {
-      "Panel-bare.step": "8fe84c5e59e2751ac7c5c3249de98710031edbc67ac779279ffef3d101d5df5b",
-      "Panel-preview.png": "b11ffff54b5c86f49a33b428dd5e4be3b4d72239d696f8d311fafb4962d4b797",
-      "Panel.glb": "947f58b9446168d6425fb56b065852caeca1c9f6c95bf67b67a910436ea18329",
-      "Panel.step": "b208aa555a1604742c2c1674d883be641bf6df8bb21813b6d606529fbc9a9bba"
+      "Panel-bare.step": "246fd444765a7bfc65c8b14aee13704afb5b6a7635b259103f01b5e35979ce11",
+      "Panel-preview.png": "b52033e2e94c99cedb8ea7be8aa2abf7454895d9f9b4ac6f76cea314f128508f",
+      "Panel.glb": "50aad33cf7d152a20b335868a44ee635532ded2f2e144d328a27480154c3b446",
+      "Panel.step": "96e0400e2f064020626eaed9d440482400557351578735eda0588ccbb9263940"
     }
   }
 }

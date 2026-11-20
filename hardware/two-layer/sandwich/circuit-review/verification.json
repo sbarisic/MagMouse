@@ -1,9 +1,9 @@
 {
   "boards": {
     "Lower": {
-      "sha256": "f676bc3f9a5318437a969277bd8ae346abea25f975e1210cfe48101cd869214f",
+      "sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
       "checked_pins": 433,
-      "minimum_component_gap_mm": 2.0027649819397175,
+      "minimum_component_gap_mm": 1.9999999999999996,
       "via_in_pad": 0,
       "copper_layers": 2,
       "geometry_and_keepouts_unchanged": true,
@@ -1956,6 +1956,84 @@
       }
     ],
     "model_limit": "Functional abstraction. Delays and board voltages require bench confirmation; no firmware or full IC simulation."
+  },
+  "lower_usb": {
+    "coverage": {
+      "MCU_USB_DM F.Cu": {
+        "trace_mm": 4.727,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "MCU_USB_DP F.Cu": {
+        "trace_mm": 3.8571,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DM F.Cu": {
+        "trace_mm": 20.2483,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DM B.Cu": {
+        "trace_mm": 65.7096,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DP F.Cu": {
+        "trace_mm": 22.3891,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DP B.Cu": {
+        "trace_mm": 62.4979,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      }
+    },
+    "via_coordinates_mm": {
+      "USB_DP": [
+        [
+          36.95,
+          21.55
+        ],
+        [
+          35.85,
+          71.26
+        ]
+      ],
+      "USB_DM": [
+        [
+          36.95,
+          20.875
+        ],
+        [
+          35.85,
+          71.94
+        ]
+      ]
+    },
+    "paired_via_spacing_mm": [
+      0.6750000000000007,
+      0.6799999999999926
+    ],
+    "connector_paths": {
+      "J1.A6 to R6.2": {
+        "whole_track_length_mm": 82.16,
+        "layer_changes": 2
+      },
+      "J1.B6 to R6.2": {
+        "whole_track_length_mm": 80.941,
+        "layer_changes": 2
+      },
+      "J1.A7 to R5.2": {
+        "whole_track_length_mm": 82.424,
+        "layer_changes": 2
+      },
+      "J1.B7 to R5.2": {
+        "whole_track_length_mm": 81.783,
+        "layer_changes": 2
+      }
+    }
   },
   "harness": [
     {

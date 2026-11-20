@@ -1,7 +1,7 @@
 {
   "Lower": {
     "source": "hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
-    "sha256": "f676bc3f9a5318437a969277bd8ae346abea25f975e1210cfe48101cd869214f",
+    "sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
     "dimensions_mm": [
       70.0,
       100.0
@@ -37,7 +37,7 @@
     "unique_bom_lines": 36,
     "placement_entries": 88,
     "via_hole_pad_intersections": 0,
-    "vias": 617,
+    "vias": 542,
     "smallest_drill_mm": 0.3,
     "minimum_track_mm": 0.127,
     "fabrication_rules": {

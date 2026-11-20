@@ -6,6 +6,7 @@ import rebuild_routes as r
 from review_power_ground import inspect
 from validate_circuit_fixes import geometry, usb_copper, encoder_signal_copper_digest
 from circuit_routes import shapes
+from usb_return import check_usb
 
 
 def measure(name,path):
@@ -37,9 +38,16 @@ def main():
         assert json.dumps(baseline['geometry'],sort_keys=True)==json.dumps(geometry(after),sort_keys=True)
         aa,zz=baseline['placement_mm'],placement(after)
         assert aa.keys()==zz.keys()
-        assert all(math.dist(aa[k][0],zz[k][0])<=.000002 and aa[k][1]==zz[k][1] for k in aa)
-        if name=='Lower':assert json.dumps(baseline['usb_copper'])==json.dumps(usb_copper(after))
-        out[name]={'baseline':baseline,'before':before_data,'after':measure(name,new),'placement_and_geometry_unchanged':True,'placement_serialization_tolerance_mm':.000002}
+        expected=dict(aa)
+        if name=='Lower':
+            moves=json.loads((r.HERE/'routing-review/lower-usb.json').read_text())['changed_placements']
+            for ref,move in moves.items():
+                assert math.dist(aa[ref][0],move['before'][0])<=.000002 and aa[ref][1]==move['before'][1],ref
+                expected[ref]=move['after']
+            check_usb(after)
+        assert all(math.dist(expected[k][0],zz[k][0])<=.000002 and expected[k][1]==zz[k][1] for k in expected)
+        out[name]={'baseline':baseline,'before':before_data,'after':measure(name,new),'placement_and_geometry_unchanged':name!='Lower','placement_serialization_tolerance_mm':.000002}
+        if name=='Lower':out[name]['placement_changes']=moves
     out['Encoder']={'sha256':hashlib.sha256(r.BOARDS['Encoder'].read_bytes()).hexdigest(),
         'non_ground_copper_sha256':encoder_signal_copper_digest(r.p.LoadBoard(str(r.BOARDS['Encoder']))),
         'signal_routing_unchanged':True,'ground_routing_revision':'0.5 mm outer-edge clearance'}

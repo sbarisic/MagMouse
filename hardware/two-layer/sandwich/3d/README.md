@@ -1,6 +1,6 @@
 # PCB 3D models
 
-Models exported directly from the routed optical-isolation / local-undervoltage revision, retaining 1206 passives and 2 mm spacing. `manifest.json`
+The Lower and Panel models include the revised USB routing and component placement. All models retain the optical-isolation and local-undervoltage circuit revision. `manifest.json`
 records the exact PCB source hashes. Exporting does not modify the KiCad files.
 
 | File prefix | Board size |

@@ -15,6 +15,7 @@ from circuit_review_rules import VALUE_CHANGES, PIN_CHANGES, NEW_COMPONENTS
 from assembly_spacing import envelope, active
 from standard_vias import intersections
 from copper_graph import CopperGraph, uid
+from usb_return import check_usb
 from export_quote import polygons
 from shapely.ops import unary_union
 
@@ -188,7 +189,8 @@ def main():
         comps,pins=export(name);allpins[name]=pins
         b=p.LoadBoard(str(path));fs={f.GetReference():f for f in b.GetFootprints()}
         assert json.loads(json.dumps(geometry(b)))==prior[name]['geometry'],(name,'outline, aperture or keepout changed')
-        if name=='Lower':assert json.loads(json.dumps(usb_copper(b)))==prior[name]['usb_copper'],'USB routes changed'
+        if name=='Lower':
+            report['lower_usb']=check_usb(b)
         old=baseline[name]['components'];new=NEW_COMPONENTS if name=='Wheel' else {}
         assert set(fs)==set(old)|set(new)
         for ref,f in fs.items():

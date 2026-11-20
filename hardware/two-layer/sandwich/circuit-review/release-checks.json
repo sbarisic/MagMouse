@@ -3,18 +3,18 @@
   "baseline_git_revision": "7674089ca8481ceb03476ed3986a8816dfb864b0",
   "boards": {
     "Lower": {
-      "sha256": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+      "sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
       "erc_findings": 0,
       "drc_findings": 0,
       "unconnected_items": 0,
       "schematic_parity_findings": 0,
-      "minimum_component_gap_mm": 2.0027649819397175,
+      "minimum_component_gap_mm": 1.9999999999999996,
       "via_hole_smd_overlaps": 0,
       "copper_layers": 2,
       "geometry_and_keepouts_unchanged": true
     },
     "Upper": {
-      "sha256": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+      "sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
       "erc_findings": 0,
       "drc_findings": 0,
       "unconnected_items": 0,
@@ -25,7 +25,7 @@
       "geometry_and_keepouts_unchanged": true
     },
     "Wheel": {
-      "sha256": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+      "sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
       "erc_findings": 0,
       "drc_findings": 0,
       "unconnected_items": 0,
@@ -36,7 +36,7 @@
       "geometry_and_keepouts_unchanged": true
     },
     "Encoder": {
-      "sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+      "sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
       "erc_findings": 0,
       "drc_findings": 0,
       "unconnected_items": 0,
@@ -55,47 +55,51 @@
   "supply_transient_cases": 60,
   "SPI_power_contract_cases": 16,
   "panel": {
-    "sha256": "aa2bf298fcc83218e9a1f331b92a5853deeb4b5de3d49ec0611cc5837b5496a0",
+    "sha256": "b14d4fd7d6d6d2962af346b3f60c0f03ccd09353cd94ee126cd9551b3e4fb0d0",
     "drc_findings": 0,
     "unconnected_items": 0,
     "copied_copper_geometry_matches_sources": true
   },
   "models": {
     "Lower": {
-      "source_sha256": "f3b2c58153deb2ca8da5297766319d81ca82eaa864df7e2ffcff4235037e529d",
+      "source_sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
       "bare_step_valid": true,
       "source_hash_matches": true
     },
     "Upper": {
-      "source_sha256": "b006e2127a5fe310e98b7b38ddb6d54f5c15f8cbb09626ed321b03b1ab2c75d4",
+      "source_sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
       "bare_step_valid": true,
       "source_hash_matches": true
     },
     "Wheel": {
-      "source_sha256": "8bfaf3767d94bba4063a7f06dde902df2402c8262901f9be2f63b9b0750fafc1",
+      "source_sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
       "bare_step_valid": true,
       "source_hash_matches": true
     },
     "Encoder": {
-      "source_sha256": "cc9d1f4c95c94aab9b1f111d3e5c3c215efc4256a293ff8d3d5ef056c557b8a2",
+      "source_sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
       "bare_step_valid": true,
       "source_hash_matches": true
     },
     "Panel": {
-      "source_sha256": "aa2bf298fcc83218e9a1f331b92a5853deeb4b5de3d49ec0611cc5837b5496a0",
+      "source_sha256": "b14d4fd7d6d6d2962af346b3f60c0f03ccd09353cd94ee126cd9551b3e4fb0d0",
       "bare_step_valid": true,
       "source_hash_matches": true
     }
   },
   "fabrication_archives": "CRC checked; every archived Gerber/drill byte matches its exported source file",
-  "encoder_design_unchanged": true,
-  "temporary_PCB_routing_copies_remaining": 0,
   "limitations": [
     "Local wheel voltage-sense tap shares approximately 1.50 mm of driver pin-escape copper; 8.35 mV screened error at 2 A and 125 C, not a direct land Kelvin connection.",
-    "Lower input feed screens at 27.7 mOhm; Wheel input-to-driver path at 36.2 mOhm (increased from 18.5 mOhm immediately before rerouting). Thermal/current acceptance remains unverified.",
+    "Lower input feed screens at 19.65 mOhm; Wheel input-to-driver path at 36.2 mOhm (increased from 18.5 mOhm immediately before rerouting). Thermal/current acceptance remains unverified.",
     "Transient shutdown delay, SPI back-powering, ripple, motor transients and all bench acceptance remain UNVERIFIED.",
     "U34 retains its data-low-before-power-off contract; arbitrary live-high powered-off isolation is not claimed.",
-    "3D assemblies retain the documented 14 missing component bodies; substrate geometry is validated."
+    "3D assemblies retain the documented 14 missing component bodies; substrate geometry is validated.",
+    "The USB impedance target requires confirmation using the fabricator's stackup. Verify both connector orientations on hardware.",
+    "Status LED D5 moved to (52.925, 36.48) mm. Verify the housing/light-pipe alignment.",
+    "Host SPI clock and data branches are longer. Verify waveforms and transfers at the intended clock rate."
   ],
-  "routing_review": "../routing-review/routing-rebuild.md"
+  "routing_review": "../routing-review/routing-rebuild.md",
+  "temporary_PCB_routing_copies_in_fabrication_archives": 0,
+  "encoder_signal_routing_unchanged": true,
+  "lower_usb_review": "../routing-review/lower-usb.json"
 }

@@ -125,8 +125,8 @@ The subsequent routing rebuild uses fixed-width power trunks and short,
 explicit pin escapes. See [the routing review](../routing-review/routing-rebuild.md)
 for the comparison against the routing before this rebuild.
 
-Lower J103.3 to U2.2 now screens at 27.7 mOhm (27.7 mV and 27.7 mW at the
-separate 1 A case), versus 82.9 mOhm before the routing rebuild. Its minimum
+Lower J103.3 to U2.2 now screens at 19.65 mOhm (19.65 mV and 19.65 mW at
+1 A), down from 27.7 mOhm before the USB placement change. Its minimum
 width is the short 0.25 mm IC escape. The input capacitor retains a direct
 component-side route with no vias.
 

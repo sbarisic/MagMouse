@@ -102,15 +102,23 @@ Fitted electronic parts remain on the front; several diagnostic test pads are
 on the back. Encoder retains its sensor and wire-array positions; its two
 4 × 4 mm chamfers remove 16 mm², reducing outline area from 252 to 236 mm².
 
-The long USB pair was placed before routing, around the right side of the
-optical reserve, using the inherited 1.10 mm trunk width and 0.15 mm nominal
-gap with narrow land escapes. The 1206 revision retains that corridor and adapts
-the resistor-end escape. Freerouting 2.5.0 and local geometric routing helpers
-rebuilt connections affected by the larger packages. KiCad then checked minimum
-track/via sizes, filled and stitched ground copper,
-removed unused fanout vias, and checked actual connectivity and clearances.
-Power escapes were widened where geometry permits. The fabricator's stack and
-physical USB, power, thermal and analog performance still need verification.
+The lower USB pair runs just to the right of the optical opening. Both USB-C
+orientations use two paired layer changes with nearby GND stitching. A check
+against filled copper found GND opposite the full trace width from the connector
+through the MCU escapes, outside the signal vias' own clearances. The previous
+wide traces crossed 35.45 mm (D+) and 42.34 mm (D−) without GND beneath their
+centerlines. Connector-to-series-resistor lengths are now 80.94–82.42 mm.
+See the [USB and power comparison](routing-review/lower-usb-placement.png),
+[layer-by-layer GND view](routing-review/lower-usb-ground.png) and
+[measured paths and placement changes](routing-review/lower-usb.json).
+
+Repositioning the RGB regulator, optical buffer and nearby parts shortened the
+5 V buck feed to 23.85 mm and the optical-buffer feed to 39.18 mm. The RGB
+regulator feed gained 3.64 mm and two vias. The status LED D5 moved to
+(52.925, 36.48) mm. Check its case/light-pipe alignment and confirm USB
+differential impedance against the fabricator's stackup before ordering.
+Host SPI clock and data nets grew in total branched length. Check their
+waveforms at the intended clock rate on the first assembly.
 
 Aligned M2 mounting candidates remain at (18,6), (52,6), (7,76), (63,76) mm:
 2.2 mm holes and 5 mm support envelopes. Lower now has a real 17.26 × 8.60 mm

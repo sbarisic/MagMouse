@@ -7,8 +7,8 @@
       100.0,
       1.488
     ],
-    "substrate_volume_mm3": 8556.158539552205,
-    "glb_meshes": 8712,
+    "substrate_volume_mm3": 8564.047078705338,
+    "glb_meshes": 8650,
     "glb_bounds_m": [
       [
         0.0,
@@ -111,8 +111,8 @@
       114.0,
       1.488
     ],
-    "substrate_volume_mm3": 37358.50758902105,
-    "glb_meshes": 26967,
+    "substrate_volume_mm3": 37366.39612817388,
+    "glb_meshes": 26905,
     "glb_bounds_m": [
       [
         -5.551115386789603e-20,
