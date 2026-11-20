@@ -1,5 +1,10 @@
 # Split Main routing review — 2026-11-04
 
+The [trace-loop audit](trace-loop-review.json) compares all four boards before
+and after the November 20 cleanup. The [before/after view](wheel-lower-trace-cleanup.png)
+uses the two panel Gerber archives. Run `../review_trace_loops.py` with KiCad
+Python to repeat the planar track check on the current boards.
+
 The current source hashes and native reports include the November 5
 [circuit correction](../circuit-review/README.md). That review supersedes the
 old value-for-value comparison for the explicitly allowlisted buffers and

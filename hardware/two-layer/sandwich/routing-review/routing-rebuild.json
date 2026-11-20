@@ -3743,16 +3743,16 @@
       "copper_items_outside_board": 0
     },
     "after": {
-      "sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
+      "sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
       "outline_area_mm2": 5844.18,
       "gnd_fill": {
         "F.Cu": {
-          "filled_mm2": 3321.43,
-          "percent": 56.83
+          "filled_mm2": 3320.734,
+          "percent": 56.82
         },
         "B.Cu": {
-          "filled_mm2": 3089.005,
-          "percent": 52.86
+          "filled_mm2": 3091.934,
+          "percent": 52.91
         }
       },
       "gnd_vias": 139,
@@ -4592,9 +4592,9 @@
           "destination": "U2.2",
           "net": "PWR_5V",
           "case_A": 1.0,
-          "path_mohm": 19.65,
-          "drop_mV": 19.65,
-          "path_loss_mW": 19.65,
+          "path_mohm": 19.555,
+          "drop_mV": 19.555,
+          "path_loss_mW": 19.555,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.3004,
           "length_below_screen_mm": 0.95,
@@ -4632,9 +4632,9 @@
           "destination": "U2.3",
           "net": "PWR_5V",
           "case_A": 1.0,
-          "path_mohm": 20.867,
-          "drop_mV": 20.867,
-          "path_loss_mW": 20.867,
+          "path_mohm": 20.773,
+          "drop_mV": 20.773,
+          "path_loss_mW": 20.773,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.3004,
           "length_below_screen_mm": 1.45,
@@ -4738,24 +4738,24 @@
           "via_sections": []
         }
       ],
-      "track_length_mm": 5678.0,
+      "track_length_mm": 5585.95,
       "via_count": 542,
       "width_length_mm": {
         "0.127": 0.425,
-        "0.15": 4662.22,
+        "0.15": 4601.475,
         "0.22": 6.804,
         "0.25": 172.867,
         "0.32": 2.901,
-        "0.35": 212.475,
+        "0.35": 186.121,
         "0.38": 14.088,
         "0.5": 369.707,
         "0.54": 8.162,
         "0.6": 10.635,
         "0.72": 1.697,
-        "1.0": 118.56,
+        "1.0": 113.615,
         "1.1": 97.457
       },
-      "non_octilinear_segments_over_0_1mm": 306,
+      "non_octilinear_segments_over_0_1mm": 419,
       "copper_items_outside_board": 0
     },
     "placement_and_geometry_unchanged": false,
@@ -6196,7 +6196,7 @@
       "copper_items_outside_board": 0
     },
     "after": {
-      "sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
+      "sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
       "outline_area_mm2": 5991.753,
       "gnd_fill": {
         "F.Cu": {
@@ -6483,14 +6483,14 @@
           "via_sections": []
         }
       ],
-      "track_length_mm": 2334.95,
+      "track_length_mm": 2327.79,
       "via_count": 143,
       "width_length_mm": {
         "0.127": 1.462,
-        "0.15": 1787.834,
+        "0.15": 1785.749,
         "0.25": 16.002,
-        "0.5": 224.76,
-        "1.0": 304.893
+        "0.5": 219.82,
+        "1.0": 304.752
       },
       "non_octilinear_segments_over_0_1mm": 0,
       "copper_items_outside_board": 0
@@ -9321,16 +9321,16 @@
       "copper_items_outside_board": 0
     },
     "after": {
-      "sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
+      "sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
       "outline_area_mm2": 4448.297,
       "gnd_fill": {
         "F.Cu": {
-          "filled_mm2": 2711.489,
-          "percent": 60.96
+          "filled_mm2": 2712.212,
+          "percent": 60.97
         },
         "B.Cu": {
-          "filled_mm2": 2862.253,
-          "percent": 64.34
+          "filled_mm2": 2920.729,
+          "percent": 65.66
         }
       },
       "gnd_vias": 66,
@@ -9912,17 +9912,17 @@
           "via_sections": []
         }
       ],
-      "track_length_mm": 3305.15,
+      "track_length_mm": 3122.92,
       "via_count": 264,
       "width_length_mm": {
-        "0.15": 2643.146,
+        "0.15": 2463.591,
         "0.25": 68.806,
-        "0.35": 187.719,
+        "0.35": 185.046,
         "0.5": 109.511,
         "0.75": 69.056,
         "1.0": 226.913
       },
-      "non_octilinear_segments_over_0_1mm": 53,
+      "non_octilinear_segments_over_0_1mm": 58,
       "copper_items_outside_board": 0
     },
     "placement_and_geometry_unchanged": true,

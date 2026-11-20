@@ -113,12 +113,17 @@ See the [USB and power comparison](routing-review/lower-usb-placement.png),
 [measured paths and placement changes](routing-review/lower-usb.json).
 
 Repositioning the RGB regulator, optical buffer and nearby parts shortened the
-5 V buck feed to 23.85 mm and the optical-buffer feed to 39.18 mm. The RGB
-regulator feed gained 3.64 mm and two vias. The status LED D5 moved to
+5 V buck feed to 23.70 mm and the optical-buffer feed to 32.15 mm. The RGB
+regulator feed gained 2.21 mm and two vias. The status LED D5 moved to
 (52.925, 36.48) mm. Check its case/light-pipe alignment and confirm USB
 differential impedance against the fabricator's stackup before ordering.
 Host SPI clock and data nets grew in total branched length. Check their
 waveforms at the intended clock rate on the first assembly.
+
+The subsequent four-board routing check removed same-layer loops and duplicate
+tracks on Lower, Upper and Wheel. The pictured Lower SPI MOSI run is now a
+single diagonal. See the [panel Gerber comparison](routing-review/wheel-lower-trace-cleanup.png)
+and the [board-by-board results](routing-review/trace-loop-review.json).
 
 Aligned M2 mounting candidates remain at (18,6), (52,6), (7,76), (63,76) mm:
 2.2 mm holes and 5 mm support envelopes. Lower now has a real 17.26 × 8.60 mm

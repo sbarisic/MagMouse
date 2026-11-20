@@ -1,0 +1,673 @@
+{
+  "scope": "Same-net straight tracks on each copper layer. Independent centerline and finite-width copper checks. The copper-hole area reporting threshold is 0.0001 mm2. Pours and cross-layer paths are excluded.",
+  "boards": {
+    "Lower": {
+      "before": {
+        "board_sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
+        "non_ground": {
+          "centerline_loops": 4,
+          "holes_in_track_copper": 1,
+          "interior_crossings": 4,
+          "overlapping_segment_pairs": 2
+        },
+        "findings": [
+          {
+            "net": "GND",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                64.36,
+                40.61
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "GND",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                61.25,
+                37.5
+              ],
+              [
+                44.4267,
+                65.8233
+              ],
+              [
+                38.73216,
+                37.76784
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "OPT_1V9",
+            "layer": "F.Cu",
+            "centerline_loops": 1,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                44.705,
+                53.0
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "OPT_3V3",
+            "layer": "F.Cu",
+            "centerline_loops": 2,
+            "holes_in_track_copper_mm2": [
+              23.188414
+            ],
+            "interior_crossings_mm": [
+              [
+                30.3575,
+                43.1425
+              ],
+              [
+                43.535,
+                51.0
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "PAW_MOTION_N",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          },
+          {
+            "net": "PWR_5V",
+            "layer": "F.Cu",
+            "centerline_loops": 1,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                47.65,
+                22.9
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "SPI_MISO",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          }
+        ],
+        "track_segments": 3540,
+        "vias": 542
+      },
+      "after": {
+        "board_sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
+        "non_ground": {
+          "centerline_loops": 0,
+          "holes_in_track_copper": 0,
+          "interior_crossings": 0,
+          "overlapping_segment_pairs": 0
+        },
+        "findings": [
+          {
+            "net": "GND",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                64.36,
+                40.61
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "GND",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                61.25,
+                37.5
+              ],
+              [
+                44.4267,
+                65.8233
+              ],
+              [
+                38.73216,
+                37.76784
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          }
+        ],
+        "track_segments": 2680,
+        "vias": 542
+      },
+      "straightened_runs_by_net": {
+        "ACT_DRIVE_EN B.Cu": 2,
+        "ACT_DRIVE_EN F.Cu": 2,
+        "ACT_HEARTBEAT B.Cu": 2,
+        "ACT_REQ B.Cu": 1,
+        "ADC2_MISO_LOCAL F.Cu": 3,
+        "ADC_CS F.Cu": 2,
+        "BOOT B.Cu": 2,
+        "CC_OUT1 B.Cu": 2,
+        "CC_OUT1 F.Cu": 2,
+        "CC_OUT2 B.Cu": 3,
+        "CC_OUT2 F.Cu": 3,
+        "CC_VBUS_DET B.Cu": 6,
+        "CS_ADC2 B.Cu": 3,
+        "CS_ADC2 F.Cu": 2,
+        "CS_DRV8316 B.Cu": 1,
+        "CS_DRV8316 F.Cu": 1,
+        "CS_IMU B.Cu": 3,
+        "CS_IMU F.Cu": 1,
+        "CS_MA735 B.Cu": 3,
+        "CS_MA735 F.Cu": 3,
+        "CS_PAW B.Cu": 5,
+        "DRV_FAULT_LOCAL_N F.Cu": 1,
+        "DRV_FAULT_N B.Cu": 7,
+        "ENC_3V3 F.Cu": 1,
+        "ENC_CS_LOCAL B.Cu": 1,
+        "ENC_CS_LOCAL F.Cu": 3,
+        "ENC_MISO_LOCAL B.Cu": 1,
+        "ENC_QOD F.Cu": 2,
+        "ENC_SCLK_LOCAL B.Cu": 1,
+        "HALL_EN B.Cu": 5,
+        "HALL_EN F.Cu": 2,
+        "IMU_INT1 B.Cu": 1,
+        "IMU_INT1 F.Cu": 2,
+        "IMU_PIN9 F.Cu": 1,
+        "MCU_EN B.Cu": 1,
+        "MCU_EN F.Cu": 2,
+        "MOTOR_SPI_MISO B.Cu": 3,
+        "MOTOR_SPI_MOSI B.Cu": 1,
+        "MOTOR_SPI_MOSI F.Cu": 1,
+        "MOTOR_SPI_SCLK F.Cu": 2,
+        "OPT_CTRL B.Cu": 7,
+        "OPT_CTRL F.Cu": 2,
+        "OPT_LED_P F.Cu": 1,
+        "OPT_MISO B.Cu": 2,
+        "OPT_MOSI B.Cu": 1,
+        "OPT_RESET_N B.Cu": 2,
+        "OPT_RESET_N F.Cu": 2,
+        "OPT_SCLK B.Cu": 1,
+        "OPT_SCLK F.Cu": 2,
+        "PAW_MOTION_N B.Cu": 1,
+        "RGB_BUFFER_OUT F.Cu": 1,
+        "RGB_DATA B.Cu": 3,
+        "RGB_DATA F.Cu": 4,
+        "RGB_DIN F.Cu": 6,
+        "SENS_REQ B.Cu": 1,
+        "SENS_REQ F.Cu": 1,
+        "SPI_MISO B.Cu": 8,
+        "SPI_MOSI B.Cu": 4,
+        "SPI_MOSI F.Cu": 2,
+        "SPI_SCLK B.Cu": 2,
+        "SPI_SCLK F.Cu": 10,
+        "USB_CC2 F.Cu": 1,
+        "VBUS_PRESENT_N B.Cu": 2,
+        "WHEEL_PWM_A B.Cu": 1,
+        "WHEEL_PWM_A F.Cu": 1,
+        "WHEEL_PWM_B F.Cu": 4,
+        "WHEEL_PWM_C B.Cu": 3,
+        "WHEEL_PWM_C F.Cu": 1,
+        "WHEEL_RUN_REQ B.Cu": 3
+      },
+      "pictured_SPI_MOSI_B_Cu": {
+        "from_mm": [
+          58.24,
+          8.64
+        ],
+        "to_mm": [
+          59.84,
+          14.08
+        ],
+        "old_segments": 19,
+        "old_centerline_mm": 7.04,
+        "new_segments": 1,
+        "new_centerline_mm": 5.67
+      }
+    },
+    "Upper": {
+      "before": {
+        "board_sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
+        "non_ground": {
+          "centerline_loops": 0,
+          "holes_in_track_copper": 0,
+          "interior_crossings": 0,
+          "overlapping_segment_pairs": 11
+        },
+        "findings": [
+          {
+            "net": "+3V3",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 8
+          },
+          {
+            "net": "ACT_ILM",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          },
+          {
+            "net": "PWR_5V",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          },
+          {
+            "net": "SOURCE_OK",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          }
+        ],
+        "track_segments": 715,
+        "vias": 143
+      },
+      "after": {
+        "board_sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
+        "non_ground": {
+          "centerline_loops": 0,
+          "holes_in_track_copper": 0,
+          "interior_crossings": 0,
+          "overlapping_segment_pairs": 0
+        },
+        "findings": [],
+        "track_segments": 715,
+        "vias": 143
+      },
+      "straightened_runs_by_net": {}
+    },
+    "Wheel": {
+      "before": {
+        "board_sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
+        "non_ground": {
+          "centerline_loops": 14,
+          "holes_in_track_copper": 13,
+          "interior_crossings": 24,
+          "overlapping_segment_pairs": 25
+        },
+        "findings": [
+          {
+            "net": "ACT_DRIVE_EN",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                30.4837,
+                20.0163
+              ]
+            ],
+            "overlapping_segment_pairs": 4
+          },
+          {
+            "net": "ACT_DRIVE_EN",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                36.42483,
+                40.42483
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "ADC2_MISO_LOCAL",
+            "layer": "F.Cu",
+            "centerline_loops": 2,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                35.01486,
+                1.60044
+              ],
+              [
+                34.66841,
+                1.94689
+              ],
+              [
+                34.3288,
+                2.38638
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "DRV_AVDD",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 2
+          },
+          {
+            "net": "DRV_CS_LOCAL",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 2
+          },
+          {
+            "net": "DRV_INHA",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          },
+          {
+            "net": "DRV_INHC",
+            "layer": "B.Cu",
+            "centerline_loops": 4,
+            "holes_in_track_copper_mm2": [
+              1.247392,
+              0.051203,
+              0.115309,
+              1.355583,
+              6.979041
+            ],
+            "interior_crossings_mm": [
+              [
+                50.23706,
+                24.95916
+              ],
+              [
+                46.02779,
+                25.72041
+              ],
+              [
+                41.40825,
+                29.0543
+              ],
+              [
+                47.68737,
+                24.5227
+              ],
+              [
+                39.91191,
+                29.0543
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "DRV_SCLK_LOCAL",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 2
+          },
+          {
+            "net": "SPI_SCLK",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                29.82458,
+                19.67542
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "SPI_SCLK",
+            "layer": "F.Cu",
+            "centerline_loops": 1,
+            "holes_in_track_copper_mm2": [
+              0.015835
+            ],
+            "interior_crossings_mm": [
+              [
+                32.2061,
+                19.7061
+              ]
+            ],
+            "overlapping_segment_pairs": 2
+          },
+          {
+            "net": "WHEEL_I_A",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [
+              0.357635
+            ],
+            "interior_crossings_mm": [
+              [
+                21.37533,
+                18.8057
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "WHEEL_I_C",
+            "layer": "F.Cu",
+            "centerline_loops": 1,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [
+              [
+                27.525,
+                20.25
+              ]
+            ],
+            "overlapping_segment_pairs": 1
+          },
+          {
+            "net": "WHEEL_RUN_EN",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 2
+          },
+          {
+            "net": "WHEEL_RUN_EN",
+            "layer": "F.Cu",
+            "centerline_loops": 3,
+            "holes_in_track_copper_mm2": [
+              0.000527,
+              0.270065
+            ],
+            "interior_crossings_mm": [
+              [
+                34.36927,
+                28.10592
+              ],
+              [
+                40.65,
+                36.04707
+              ],
+              [
+                31.29108,
+                25.25
+              ],
+              [
+                31.5151,
+                23.32899
+              ],
+              [
+                31.28638,
+                25.29028
+              ],
+              [
+                30.66833,
+                27.25
+              ]
+            ],
+            "overlapping_segment_pairs": 8
+          },
+          {
+            "net": "WHEEL_SOA",
+            "layer": "B.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [
+              38.465519
+            ],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 1
+          },
+          {
+            "net": "WHEEL_SOB",
+            "layer": "B.Cu",
+            "centerline_loops": 3,
+            "holes_in_track_copper_mm2": [
+              0.003274,
+              0.435918
+            ],
+            "interior_crossings_mm": [
+              [
+                22.75,
+                37.64662
+              ],
+              [
+                22.64104,
+                37.53504
+              ],
+              [
+                22.61967,
+                35.0911
+              ],
+              [
+                24.19201,
+                39.19201
+              ]
+            ],
+            "overlapping_segment_pairs": 0
+          },
+          {
+            "net": "WHEEL_SOC",
+            "layer": "F.Cu",
+            "centerline_loops": 0,
+            "holes_in_track_copper_mm2": [
+              0.004874
+            ],
+            "interior_crossings_mm": [],
+            "overlapping_segment_pairs": 0
+          }
+        ],
+        "track_segments": 1169,
+        "vias": 264,
+        "DRV_INHC_B_Cu_mm": 72.146,
+        "DRV_INHC_pins": [
+          "R92.1",
+          "U21.31",
+          "U22.11"
+        ],
+        "DRV_INHC_verified_pin_paths": [
+          [
+            "R92.1",
+            "U21.31"
+          ],
+          [
+            "R92.1",
+            "U22.11"
+          ],
+          [
+            "U21.31",
+            "U22.11"
+          ]
+        ]
+      },
+      "after": {
+        "board_sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
+        "non_ground": {
+          "centerline_loops": 0,
+          "holes_in_track_copper": 0,
+          "interior_crossings": 0,
+          "overlapping_segment_pairs": 0
+        },
+        "findings": [],
+        "track_segments": 1087,
+        "vias": 264,
+        "DRV_INHC_B_Cu_mm": 38.516,
+        "DRV_INHC_pins": [
+          "R92.1",
+          "U21.31",
+          "U22.11"
+        ],
+        "DRV_INHC_verified_pin_paths": [
+          [
+            "R92.1",
+            "U21.31"
+          ],
+          [
+            "R92.1",
+            "U22.11"
+          ],
+          [
+            "U21.31",
+            "U22.11"
+          ]
+        ]
+      },
+      "straightened_runs_by_net": {
+        "ACT_DRIVE_EN B.Cu": 1,
+        "ADC2_SCLK_LOCAL B.Cu": 1,
+        "DRV_CS_LOCAL B.Cu": 1,
+        "DRV_INHC B.Cu": 2,
+        "WHEEL_PWM_A F.Cu": 1,
+        "WHEEL_RUN_EN F.Cu": 1,
+        "WHEEL_SOB B.Cu": 2
+      }
+    },
+    "Encoder": {
+      "before": {
+        "board_sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
+        "non_ground": {
+          "centerline_loops": 0,
+          "holes_in_track_copper": 0,
+          "interior_crossings": 0,
+          "overlapping_segment_pairs": 0
+        },
+        "findings": [],
+        "track_segments": 53,
+        "vias": 3
+      },
+      "after": {
+        "board_sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
+        "non_ground": {
+          "centerline_loops": 0,
+          "holes_in_track_copper": 0,
+          "interior_crossings": 0,
+          "overlapping_segment_pairs": 0
+        },
+        "findings": [],
+        "track_segments": 53,
+        "vias": 3
+      },
+      "straightened_runs_by_net": {}
+    }
+  },
+  "panel_zip_sha256": "6431e4a30d5a08a72b1275ed9e8b33f8c33ab26bd5ce361d7c9d899639aebf19"
+}

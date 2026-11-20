@@ -2,7 +2,7 @@
 
 The 2026-11-20 lower-board update moved 17 footprints and test points to
 give the USB pair continuous opposite-layer GND while keeping the buck and
-optical-buffer feeds short. The lower buck feed now screens at 19.65 mΩ.
+optical-buffer feeds short. The lower buck feed now screens at 19.56 mΩ after trace cleanup.
 See the [USB comparison](lower-usb-placement.png), [ground coverage](lower-usb-ground.png)
 and [measured before/after paths](lower-usb.json).
 

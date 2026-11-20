@@ -1,7 +1,7 @@
 {
   "boards": {
     "Lower": {
-      "sha256": "e04bec9ec5358f817c6d41b0612e93fb03ba487bd14a672d7c9e0b44a799f772",
+      "sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
       "checked_pins": 433,
       "minimum_component_gap_mm": 1.9999999999999996,
       "via_in_pad": 0,
@@ -11,7 +11,7 @@
       "encoder_signal_routing_unchanged": false
     },
     "Upper": {
-      "sha256": "6370364a1ab258735017b2f7f9b9e6febb14f45809491c0a362432698578708d",
+      "sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
       "checked_pins": 264,
       "minimum_component_gap_mm": 2.025,
       "via_in_pad": 0,
@@ -21,7 +21,7 @@
       "encoder_signal_routing_unchanged": false
     },
     "Wheel": {
-      "sha256": "5e33eda6264d37f9caceeadddaf1a72778adee3be5d54d345e9c81bb851a0d98",
+      "sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
       "checked_pins": 307,
       "minimum_component_gap_mm": 2.0099999999999976,
       "via_in_pad": 0,
@@ -402,29 +402,29 @@
         {
           "connection": "U35.5 to C86.1",
           "pad_center_distance_mm": 4.446518300873165,
-          "whole_segment_sum_mm": 4.808746750430835,
+          "whole_segment_sum_mm": 4.752178207935912,
           "vias": 0,
           "layers": [
             "F.Cu"
           ],
-          "contact_graph_resistance_mohm": 8.363369207943267,
+          "contact_graph_resistance_mohm": 8.264985235778818,
           "route_objects": [
             {
               "start_mm": [
-                40.85,
-                51.04
+                40.89,
+                51.0
               ],
               "end_mm": [
-                43.495,
-                51.04
+                43.535,
+                51.0
               ],
               "layer": "F.Cu",
               "width_mm": 0.35
             },
             {
               "start_mm": [
-                43.495,
-                51.04
+                43.535,
+                51.0
               ],
               "end_mm": [
                 45.025,

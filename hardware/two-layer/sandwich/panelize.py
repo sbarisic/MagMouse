@@ -118,13 +118,16 @@ def build():
     raw=dest.read_text();raw=re.sub(r'\(uuid "([^"]+)"\)',lambda m:'(uuid "'+bp.UUID_REPLACEMENTS.get(m[1],m[1])+'")',raw);dest.write_text(raw)
     panel=p.LoadBoard(str(dest))
     optical = Polygon(list(units['Lower'].interiors)[0]).envelope.buffer(.01)
-    group = p.PCB_GROUP(panel);group.SetName('Optical aperture');panel.Add(group)
+    group = p.PCB_GROUP(panel);group.SetName('Optical aperture')
     for edge in panel.GetDrawings():
         if edge.GetLayer() == p.Edge_Cuts and all(optical.covers(Point(p.ToMM(q)))
                                                 for q in (edge.GetStart(), edge.GetEnd())):
             group.AddItem(edge)
     assert len(group.GetItems()) >= 8, 'Missing panel optical aperture rule group'
-    p.SaveBoard(str(dest),panel)
+    panel.Add(group)
+    assert p.SaveBoard(str(dest),panel), 'Could not save the grouped panel'
+    panel=p.LoadBoard(str(dest))
+    assert any(g.GetName()=='Optical aperture' and len(g.GetItems())>=8 for g in panel.Groups()), 'Missing saved optical aperture group'
     # Check exact translated pads, drills, tracks and saved zone vertices.
     assert expected_tracks==collections.Counter(track_key(t) for t in panel.GetTracks()),'Panel track/drill translation differs'
     assert expected_fill==fill_vertices(panel),'Panel copper fill differs from sources'
