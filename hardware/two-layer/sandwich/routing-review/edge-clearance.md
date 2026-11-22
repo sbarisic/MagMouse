@@ -1,5 +1,10 @@
 # Copper-to-edge clearance revision — 2026-11-06
 
+The integrated-encoder revision removes the Encoder board and bottom test pads.
+See [current encoder design](../ENCODER_INTEGRATION.md) and
+[current acceptance checks](../encoder-review.json). Earlier measurements below
+describe their recorded source revisions.
+
 All four active boards and the derived panel use a 0.5 mm minimum copper
 clearance to outer board edges. Lower's internal optical aperture retains
 0.4 mm clearance, as explicitly approved. A custom rule identifies only the

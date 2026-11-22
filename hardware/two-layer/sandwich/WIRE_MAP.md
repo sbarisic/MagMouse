@@ -34,8 +34,10 @@ There are three shared GND wires: one in the signal array and two in the power a
 - Signal arrays J101/J102: 14 pins in two columns. Odd pins at x = 6.00 mm,
   even pins at x = 8.54 mm. Rows start at y = 42.00 mm with 2.54 mm pitch.
   Row 1 is pins 1/2; row 7 is pins 13/14 at y = 57.24 mm. Only pin 1 is GND.
-- Power arrays J103/J104: five pins at y = 12.25 mm and x = 25.00, 30.08,
-  35.16, 40.24 and 45.32 mm. Pins 1 and 5 are shared power grounds.
+- Power arrays J103/J104: pins 1, 2, 4 and 5 remain at y = 12.25 mm and
+  x = 25.00, 30.08, 40.24 and 45.32 mm respectively. Pin 3 is at
+  (43.00, 2.00) mm on both boards, clear of the centre Hall sensor.
+  Pins 1 and 5 are shared power grounds. Follow pad numbers, not left-to-right order.
 - Signal pads: 1.8 mm copper diameter / 0.8 mm finished-hole design value.
   Power pads: 2.4 mm copper diameter / 1.2 mm finished-hole design value.
   These are candidate geometries; verify actual wire fit and fabrication tolerances.

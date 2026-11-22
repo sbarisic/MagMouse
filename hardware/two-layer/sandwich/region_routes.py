@@ -20,7 +20,7 @@ def connect(b,net,start,end,start_layer,end_layer,ripup=False,width=.15):
  start_shapes=start if isinstance(start,dict) else None;end_shapes=end if isinstance(end,dict) else None
  if start_shapes:start=tuple(unary_union(list(start_shapes.values())).centroid.coords[0])
  if end_shapes:end=tuple(unary_union(list(end_shapes.values())).centroid.coords[0])
- layers=(p.F_Cu,p.B_Cu);foreign={l:obstacles(b,net,l) for l in layers};inside=board_interior(b)
+ layers=(p.F_Cu,p.B_Cu);foreign={l:obstacles(b,net,l) for l in layers};inside=board_interior(b,.501+width/2)
  regions={l:parts(inside.difference(foreign[l].buffer(width/2+.151))) for l in layers}
  trees={l:STRtree(regions[l]) for l in layers}
  def owner(pt,l):
@@ -39,8 +39,8 @@ def connect(b,net,start,end,start_layer,end_layer,ripup=False,width=.15):
  if not firsts or not lasts:return False
  holes=[Point(p.ToMM(t.GetPosition())).buffer(p.ToMM(t.GetDrillValue())/2+.401) for t in b.GetTracks() if isinstance(t,p.PCB_VIA)]
  holes += [Point(p.ToMM(q.GetPosition())).buffer(p.ToMM(max(q.GetDrillSize().x,q.GetDrillSize().y))/2+.401) for f in b.GetFootprints() for q in f.Pads() if q.GetDrillSize().x]
- blocked=unary_union([unary_union([s for *_,s in smd_shapes(b)]).buffer(.151),*holes,*[f.buffer(.376) for f in foreign.values()]])
- allowed=board_interior(b,.526).difference(blocked)
+ blocked=unary_union([unary_union([s for *_,s in smd_shapes(b)]).buffer(.151),*holes,*[f.buffer(max(.376,width/2+.151)) for f in foreign.values()]])
+ allowed=board_interior(b,.726).difference(blocked)
  graph=collections.defaultdict(list);guide=LineString([start,end]) if start!=end else Point(start)
  def edge(pt,existing):
   a,c=[owner(pt,l) for l in layers]
@@ -70,14 +70,14 @@ def connect(b,net,start,end,start_layer,end_layer,ripup=False,width=.15):
     for l in layers:fixed[l].append(Point(p.ToMM(t.GetPosition())).buffer(p.ToMM(t.GetWidth(l))/2))
    else:
     l=t.GetLayer();sh=LineString([p.ToMM(t.GetStart()),p.ToMM(t.GetEnd())]).buffer(p.ToMM(t.GetWidth())/2)
-    if t.GetNetname() in ('USB_DP','USB_DM','GND','ACT_5V','PWR_5V','VBUS_USB','+3V3','BUCK_SW','OPT_3V3','OPT_1V9','RGB_5V','WHEEL_PHASE_A','WHEEL_PHASE_B','WHEEL_PHASE_C','BRAKE_DRAIN','DRV_AVDD','WHEEL_BUCK_SW','WHEEL_BUCK_OUT','WHEEL_CP','WHEEL_CPH','WHEEL_CPL','ADC2_DECAP') or p.ToMM(t.GetWidth())>.3:fixed[l].append(sh)
+    if t.GetNetname() in ('USB_DP','USB_DM','MCU_USB_DP','MCU_USB_DM','GND','ACT_5V','PWR_5V','VBUS_USB','+3V3','BUCK_SW','OPT_3V3','OPT_1V9','RGB_5V','WHEEL_PHASE_A','WHEEL_PHASE_B','WHEEL_PHASE_C','BRAKE_DRAIN','DRV_AVDD','WHEEL_BUCK_SW','WHEEL_BUCK_OUT','WHEEL_CP','WHEEL_CPH','WHEEL_CPL','ADC2_DECAP') or p.ToMM(t.GetWidth())>.3:fixed[l].append(sh)
     else:movable[l].append((t,sh))
   for l in layers:
    avoid=unary_union(fixed[l]).buffer(width/2+.151);mt=STRtree([sh for t,sh in movable[l]])
    for t,sh in movable[l]:
     a,c=map(lambda q:tuple(p.ToMM(q)),(t.GetStart(),t.GetEnd()));length=math.dist(a,c)
     if length<.05:continue
-    nx,ny=-(c[1]-a[1])/length,(c[0]-a[0])/length;offset=p.ToMM(t.GetWidth())/2+.23
+    nx,ny=-(c[1]-a[1])/length,(c[0]-a[0])/length;offset=p.ToMM(t.GetWidth())/2+width/2+.155
     count=max(1,math.ceil(length/.7))
     for i in range(count):
      x,y=(a[k]+(c[k]-a[k])*(i+.5)/count for k in (0,1));aa=(x+nx*offset,y+ny*offset);cc=(x-nx*offset,y-ny*offset)

@@ -1,5 +1,10 @@
 # Routing rebuild review — 2026-11-06
 
+The integrated-encoder revision removes the Encoder board and bottom test pads.
+See [current encoder design](../ENCODER_INTEGRATION.md) and
+[current acceptance checks](../encoder-review.json). Earlier measurements below
+describe their recorded source revisions.
+
 The 2026-11-20 lower-board update moved 17 footprints and test points to
 give the USB pair continuous opposite-layer GND while keeping the buck and
 optical-buffer feeds short. The lower buck feed now screens at 19.56 mΩ after trace cleanup.

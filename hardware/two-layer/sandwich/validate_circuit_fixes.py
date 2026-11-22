@@ -11,7 +11,7 @@ import math
 import sys
 
 from circuit_fixes import BOARDS, WORK, EVIDENCE, export, sha, p
-from circuit_review_rules import VALUE_CHANGES, PIN_CHANGES, NEW_COMPONENTS
+from circuit_review_rules import VALUE_CHANGES, REMOVED_COMPONENTS, additions, expected_net
 from assembly_spacing import envelope, active
 from standard_vias import intersections
 from copper_graph import CopperGraph, uid
@@ -191,7 +191,7 @@ def main():
         assert json.loads(json.dumps(geometry(b)))==prior[name]['geometry'],(name,'outline, aperture or keepout changed')
         if name=='Lower':
             report['lower_usb']=check_usb(b)
-        old=baseline[name]['components'];new=NEW_COMPONENTS if name=='Wheel' else {}
+        old={r:v for r,v in baseline[name]['components'].items() if r not in REMOVED_COMPONENTS[name]};new=additions(name)
         assert set(fs)==set(old)|set(new)
         for ref,f in fs.items():
             actual={q.GetNumber():q.GetNetname() for q in f.Pads() if q.GetNumber()}
@@ -207,7 +207,7 @@ def main():
             else:
                 assert f.GetValue()==VALUE_CHANGES[name].get(ref,old[ref]['value']),ref
                 assert fp==old[ref]['footprint'],ref
-                expected={pin:PIN_CHANGES.get(name,{}).get((ref,pin),net) for pin,net in old[ref]['pads'] if pin}
+                expected={pin:expected_net(name,ref,pin,net) for pin,net in old[ref]['pads'] if pin}
                 assert actual==expected,(name,ref)
             if ref.startswith(('J','H')) or ref=='U35':
                 assert list(p.ToMM(f.GetPosition()))==old[ref]['xy'],ref
@@ -235,7 +235,7 @@ def main():
             'encoder_signal_routing_unchanged':name=='Encoder'}
     harness=[]
     for a,ar,b,br in [('Lower','J101','Upper','J102'),('Lower','J103','Upper','J104'),
-                     ('Lower','J8','Wheel','J9'),('Upper','J10','Wheel','J11'),('Lower','J6','Encoder','J7')]:
+                     ('Lower','J8','Wheel','J9'),('Upper','J10','Wheel','J11')]:
         ap={pin:net for (ref,pin),net in allpins[a].items() if ref==ar}
         bp={pin:net for (ref,pin),net in allpins[b].items() if ref==br}
         assert ap==bp

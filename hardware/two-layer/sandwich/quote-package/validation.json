@@ -1,7 +1,7 @@
 {
   "Lower": {
     "source": "hardware\\two-layer\\sandwich\\lower\\Lower.kicad_pcb",
-    "sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
+    "sha256": "88876b389b2005abbfd40bf2f942ae58d854c5ba931ec2528e12b0156908f6a0",
     "dimensions_mm": [
       70.0,
       100.0
@@ -33,11 +33,11 @@
         "key": "footprint_type_mismatch"
       }
     ],
-    "fitted_bom_components": 88,
-    "unique_bom_lines": 36,
-    "placement_entries": 88,
+    "fitted_bom_components": 90,
+    "unique_bom_lines": 38,
+    "placement_entries": 90,
     "via_hole_pad_intersections": 0,
-    "vias": 542,
+    "vias": 529,
     "smallest_drill_mm": 0.3,
     "minimum_track_mm": 0.127,
     "fabrication_rules": {
@@ -53,7 +53,7 @@
   },
   "Upper": {
     "source": "hardware\\two-layer\\sandwich\\upper\\Upper.kicad_pcb",
-    "sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
+    "sha256": "3f799cc3ea051b6f456c81369d51269c021ac2552ed1fa4bfaf85bd1a7a7a131",
     "dimensions_mm": [
       70.0,
       100.0
@@ -89,7 +89,7 @@
     "unique_bom_lines": 22,
     "placement_entries": 78,
     "via_hole_pad_intersections": 0,
-    "vias": 143,
+    "vias": 152,
     "smallest_drill_mm": 0.3,
     "minimum_track_mm": 0.127,
     "fabrication_rules": {
@@ -104,7 +104,7 @@
   },
   "Wheel": {
     "source": "hardware\\two-layer\\sandwich\\wheel\\Wheel.kicad_pcb",
-    "sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
+    "sha256": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973",
     "dimensions_mm": [
       70.0,
       67.0
@@ -146,57 +146,6 @@
     "fabrication_rules": {
       "min_through_hole_diameter": 0.3,
       "min_via_diameter": 0.45,
-      "min_via_annular_width": 0.075,
-      "min_hole_clearance": 0.2,
-      "min_hole_to_hole": 0.25,
-      "min_clearance": 0.127,
-      "min_copper_edge_clearance": 0.5
-    }
-  },
-  "Encoder": {
-    "source": "hardware\\two-layer\\encoder\\Encoder.kicad_pcb",
-    "sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
-    "dimensions_mm": [
-      14.0,
-      18.0
-    ],
-    "copper_layers": 2,
-    "erc_findings": 0,
-    "drc_findings": 0,
-    "unconnected_items": 0,
-    "schematic_parity_findings": 0,
-    "ignored_checks": [
-      {
-        "description": "Footprint has no courtyard defined",
-        "key": "missing_courtyard"
-      },
-      {
-        "description": "Track endpoint not centered on via",
-        "key": "track_not_centered_on_via"
-      },
-      {
-        "description": "Tuning profile track geometries",
-        "key": "tuning_profile_track_geometries"
-      },
-      {
-        "description": "Footprint doesn't match symbol's footprint filters",
-        "key": "footprint_filters_mismatch"
-      },
-      {
-        "description": "Footprint component type doesn't match footprint pads",
-        "key": "footprint_type_mismatch"
-      }
-    ],
-    "fitted_bom_components": 2,
-    "unique_bom_lines": 2,
-    "placement_entries": 2,
-    "via_hole_pad_intersections": 0,
-    "vias": 3,
-    "smallest_drill_mm": 0.3,
-    "minimum_track_mm": 0.1874,
-    "fabrication_rules": {
-      "min_through_hole_diameter": 0.3,
-      "min_via_diameter": 0.6,
       "min_via_annular_width": 0.075,
       "min_hole_clearance": 0.2,
       "min_hole_to_hole": 0.25,

@@ -1,6 +1,6 @@
 # Wheel control implementation contract
 
-Revision 0.5 implements DRV8316R, a second ADS7038, MA735, GB1806 phase-wire
+Revision 0.5 implements DRV8316R, a second ADS7038, AS5048A, GB1806 phase-wire
 pads, hardware shutdown and an autonomous brake in sheets 10–13. Firmware and
 motor validation remain open. See [the circuit review](history/electronics/WHEEL_REVIEW.md)
 for exact parts, power domains, calculations and bench limits, and [interfaces](interfaces.md)
@@ -44,7 +44,9 @@ small wheel currents. CH3 stays optional until a bus-current sensor is chosen;
 CH3–7 are presently grounded through removable zero-ohm links. Do not put slower housekeeping conversions inside the
 time-critical three-phase acquisition burst.
 
-Use MA735 SPI absolute angle; no ABZ/index/PWM connection is required in V1.
+Use the motor-integrated AS5048A SPI absolute angle; its PWM output is unused.
+The [encoder contract](../hardware/two-layer/sandwich/ENCODER_INTEGRATION.md)
+defines mode-1 command/response sequencing, parity/error checks and wraparound.
 Bound angle age in the shared-bus scheduler. Check magnet alignment,
 interference, filtering and electrical-angle calibration on the actual motor.
 The dedicated ADC bus still needs [sampling-deadline validation](interfaces.md#wheel-acquisition-timing-gate).

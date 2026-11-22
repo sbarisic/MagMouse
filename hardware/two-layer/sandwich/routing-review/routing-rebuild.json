@@ -3743,19 +3743,19 @@
       "copper_items_outside_board": 0
     },
     "after": {
-      "sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
+      "sha256": "88876b389b2005abbfd40bf2f942ae58d854c5ba931ec2528e12b0156908f6a0",
       "outline_area_mm2": 5844.18,
       "gnd_fill": {
         "F.Cu": {
-          "filled_mm2": 3320.734,
-          "percent": 56.82
+          "filled_mm2": 2873.982,
+          "percent": 49.18
         },
         "B.Cu": {
-          "filled_mm2": 3091.934,
-          "percent": 52.91
+          "filled_mm2": 2814.487,
+          "percent": 48.16
         }
       },
-      "gnd_vias": 139,
+      "gnd_vias": 143,
       "gnd_via_positions_mm": [
         [
           51.35,
@@ -3768,6 +3768,10 @@
         [
           35.841874,
           17.83809
+        ],
+        [
+          17.279999,
+          10.575
         ],
         [
           37.95,
@@ -3790,6 +3794,10 @@
           22.9
         ],
         [
+          35.0,
+          2.900942
+        ],
+        [
           52.0,
           68.3
         ],
@@ -3810,12 +3818,12 @@
           32.5375
         ],
         [
-          49.1,
-          71.4625
+          53.831849,
+          45.04
         ],
         [
-          6.0,
-          67.75
+          49.1,
+          71.4625
         ],
         [
           31.2,
@@ -3828,10 +3836,6 @@
         [
           22.08,
           44.48
-        ],
-        [
-          7.75,
-          60.5
         ],
         [
           21.8,
@@ -3866,12 +3870,20 @@
           93.7
         ],
         [
+          19.349482,
+          35.620697
+        ],
+        [
           57.5,
           66.3
         ],
         [
           67.5,
           43.75
+        ],
+        [
+          16.103997,
+          43.44
         ],
         [
           48.8,
@@ -3896,10 +3908,6 @@
         [
           30.3,
           93.7
-        ],
-        [
-          17.8,
-          72.0
         ],
         [
           37.05,
@@ -3942,14 +3950,6 @@
           86.3
         ],
         [
-          5.5,
-          61.0
-        ],
-        [
-          8.0,
-          64.25
-        ],
-        [
           55.45,
           18.1375
         ],
@@ -3964,6 +3964,10 @@
         [
           43.0,
           21.725
+        ],
+        [
+          27.307435,
+          62.96
         ],
         [
           27.8625,
@@ -3998,16 +4002,16 @@
           42.0
         ],
         [
-          17.8,
-          74.8
-        ],
-        [
           41.222,
           80.837833
         ],
         [
           34.55,
           93.7
+        ],
+        [
+          11.1,
+          31.5
         ],
         [
           53.75,
@@ -4026,12 +4030,16 @@
           50.8
         ],
         [
-          43.36,
-          76.8
+          26.760228,
+          13.576653
         ],
         [
-          6.0,
-          61.5
+          19.91775,
+          72.499999
+        ],
+        [
+          43.36,
+          76.8
         ],
         [
           51.5,
@@ -4090,16 +4098,8 @@
           17.0
         ],
         [
-          19.0,
-          75.7
-        ],
-        [
           52.8,
           13.4
-        ],
-        [
-          8.989269,
-          37.720018
         ],
         [
           57.3535,
@@ -4108,6 +4108,14 @@
         [
           31.15,
           93.7
+        ],
+        [
+          33.5,
+          25.087134
+        ],
+        [
+          36.0293,
+          31.340902
         ],
         [
           62.5,
@@ -4146,6 +4154,10 @@
           40.5
         ],
         [
+          19.145371,
+          91.919999
+        ],
+        [
           29.45,
           93.7
         ],
@@ -4178,6 +4190,10 @@
           38.003785
         ],
         [
+          26.5,
+          18.0
+        ],
+        [
           42.6,
           93.7
         ],
@@ -4204,6 +4220,10 @@
         [
           21.0,
           14.25
+        ],
+        [
+          16.146749,
+          25.072893
         ],
         [
           16.5,
@@ -4280,10 +4300,6 @@
         [
           41.35,
           93.7
-        ],
-        [
-          6.5,
-          60.5
         ],
         [
           31.3,
@@ -4592,9 +4608,9 @@
           "destination": "U2.2",
           "net": "PWR_5V",
           "case_A": 1.0,
-          "path_mohm": 19.555,
-          "drop_mV": 19.555,
-          "path_loss_mW": 19.555,
+          "path_mohm": 23.241,
+          "drop_mV": 23.241,
+          "path_loss_mW": 23.241,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.3004,
           "length_below_screen_mm": 0.95,
@@ -4617,11 +4633,11 @@
           "via_sections": [
             {
               "xy_mm": [
-                39.7,
-                17.7
+                46.433648,
+                17.549735
               ],
               "drill_mm": 0.3,
-              "land_mm": 0.6,
+              "land_mm": 0.45,
               "single_barrel_mohm": 1.784,
               "single_barrel_mW_at_case": 1.784
             }
@@ -4632,9 +4648,9 @@
           "destination": "U2.3",
           "net": "PWR_5V",
           "case_A": 1.0,
-          "path_mohm": 20.773,
-          "drop_mV": 20.773,
-          "path_loss_mW": 20.773,
+          "path_mohm": 24.459,
+          "drop_mV": 24.459,
+          "path_loss_mW": 24.459,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.3004,
           "length_below_screen_mm": 1.45,
@@ -4670,11 +4686,11 @@
           "via_sections": [
             {
               "xy_mm": [
-                39.7,
-                17.7
+                46.433648,
+                17.549735
               ],
               "drill_mm": 0.3,
-              "land_mm": 0.6,
+              "land_mm": 0.45,
               "single_barrel_mohm": 1.784,
               "single_barrel_mW_at_case": 1.784
             }
@@ -4736,26 +4752,173 @@
           "counted_vias": 0,
           "neck_sections": [],
           "via_sections": []
+        },
+        {
+          "source": "U33.5",
+          "destination": "U28.1",
+          "net": "RGB_5V",
+          "case_A": 0.025,
+          "path_mohm": 389.074,
+          "drop_mV": 9.727,
+          "path_loss_mW": 0.243,
+          "min_width_mm": 0.15,
+          "uniform_10C_screen_width_mm": 0.0019,
+          "length_below_screen_mm": 0,
+          "counted_vias": 8,
+          "neck_sections": [],
+          "via_sections": [
+            {
+              "xy_mm": [
+                46.9,
+                30.3
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.6,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                43.4,
+                25.8
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.6,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                45.2,
+                23.0
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.6,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                47.140742,
+                9.159311
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                42.874579,
+                9.093
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                24.865425,
+                18.667211
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                15.493,
+                22.384656
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                15.493,
+                33.760444
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            }
+          ]
+        },
+        {
+          "source": "U28.6",
+          "destination": "J6.1",
+          "net": "ENC_5V",
+          "case_A": 0.025,
+          "path_mohm": 341.039,
+          "drop_mV": 8.526,
+          "path_loss_mW": 0.213,
+          "min_width_mm": 0.15,
+          "uniform_10C_screen_width_mm": 0.0019,
+          "length_below_screen_mm": 0,
+          "counted_vias": 2,
+          "neck_sections": [],
+          "via_sections": [
+            {
+              "xy_mm": [
+                11.356725,
+                30.024175
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            },
+            {
+              "xy_mm": [
+                20.525984,
+                21.458409
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 0.001
+            }
+          ]
+        },
+        {
+          "source": "U42.5",
+          "destination": "U29.14",
+          "net": "ENC_3V3",
+          "case_A": 0.005,
+          "path_mohm": 134.566,
+          "drop_mV": 0.673,
+          "path_loss_mW": 0.003,
+          "min_width_mm": 0.15,
+          "uniform_10C_screen_width_mm": 0.0002,
+          "length_below_screen_mm": 0,
+          "counted_vias": 0,
+          "neck_sections": [],
+          "via_sections": []
         }
       ],
-      "track_length_mm": 5585.95,
-      "via_count": 542,
+      "track_length_mm": 5673.53,
+      "via_count": 529,
       "width_length_mm": {
         "0.127": 0.425,
-        "0.15": 4601.475,
-        "0.22": 6.804,
-        "0.25": 172.867,
+        "0.15": 4766.957,
+        "0.22": 6.472,
+        "0.25": 164.476,
         "0.32": 2.901,
-        "0.35": 186.121,
-        "0.38": 14.088,
-        "0.5": 369.707,
+        "0.35": 181.646,
+        "0.38": 13.844,
+        "0.5": 340.425,
         "0.54": 8.162,
         "0.6": 10.635,
         "0.72": 1.697,
-        "1.0": 113.615,
+        "1.0": 78.431,
         "1.1": 97.457
       },
-      "non_octilinear_segments_over_0_1mm": 419,
+      "non_octilinear_segments_over_0_1mm": 745,
       "copper_items_outside_board": 0
     },
     "placement_and_geometry_unchanged": false,
@@ -4935,70 +5098,6 @@
             23.8
           ],
           0.0
-        ]
-      },
-      "TP17": {
-        "before": [
-          [
-            50.4875,
-            63.08
-          ],
-          180.0
-        ],
-        "after": [
-          [
-            51.037,
-            62.73
-          ],
-          180.0
-        ]
-      },
-      "TP40": {
-        "before": [
-          [
-            56.8,
-            55.0
-          ],
-          180.0
-        ],
-        "after": [
-          [
-            45.0,
-            50.5
-          ],
-          180.0
-        ]
-      },
-      "TP41": {
-        "before": [
-          [
-            52.8,
-            55.0
-          ],
-          180.0
-        ],
-        "after": [
-          [
-            46.5,
-            53.5
-          ],
-          180.0
-        ]
-      },
-      "TP43": {
-        "before": [
-          [
-            48.5,
-            37.5
-          ],
-          180.0
-        ],
-        "after": [
-          [
-            35.0,
-            29.9
-          ],
-          180.0
         ]
       },
       "U33": {
@@ -6196,20 +6295,28 @@
       "copper_items_outside_board": 0
     },
     "after": {
-      "sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
+      "sha256": "3f799cc3ea051b6f456c81369d51269c021ac2552ed1fa4bfaf85bd1a7a7a131",
       "outline_area_mm2": 5991.753,
       "gnd_fill": {
         "F.Cu": {
-          "filled_mm2": 4159.351,
-          "percent": 69.42
+          "filled_mm2": 4104.916,
+          "percent": 68.51
         },
         "B.Cu": {
-          "filled_mm2": 4527.095,
-          "percent": 75.56
+          "filled_mm2": 4567.201,
+          "percent": 76.22
         }
       },
-      "gnd_vias": 30,
+      "gnd_vias": 41,
       "gnd_via_positions_mm": [
+        [
+          47.102824,
+          29.762246
+        ],
+        [
+          58.469178,
+          54.079304
+        ],
         [
           25.09773,
           21.664247
@@ -6229,6 +6336,10 @@
         [
           41.5075,
           40.05
+        ],
+        [
+          16.061823,
+          11.784412
         ],
         [
           52.6,
@@ -6267,6 +6378,10 @@
           61.225518
         ],
         [
+          42.417381,
+          21.20489
+        ],
+        [
           45.9875,
           73.4
         ],
@@ -6287,12 +6402,24 @@
           39.0
         ],
         [
+          51.818037,
+          15.537186
+        ],
+        [
+          36.729968,
+          46.760571
+        ],
+        [
           38.5425,
           40.05
         ],
         [
           45.1375,
           77.35
+        ],
+        [
+          35.889598,
+          29.323639
         ],
         [
           16.1375,
@@ -6323,8 +6450,24 @@
           24.0
         ],
         [
+          41.064215,
+          28.566562
+        ],
+        [
+          37.769312,
+          14.382524
+        ],
+        [
+          49.84697,
+          51.152052
+        ],
+        [
           28.8625,
           32.0
+        ],
+        [
+          37.23479,
+          19.084049
         ],
         [
           34.723114,
@@ -6366,13 +6509,13 @@
           "destination": "J104.3",
           "net": "PWR_5V",
           "case_A": 2.0,
-          "path_mohm": 14.098,
-          "drop_mV": 28.196,
-          "path_loss_mW": 56.392,
+          "path_mohm": 20.631,
+          "drop_mV": 41.263,
+          "path_loss_mW": 82.525,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.7814,
           "length_below_screen_mm": 1.75,
-          "counted_vias": 0,
+          "counted_vias": 1,
           "neck_sections": [
             {
               "start_mm": [
@@ -6388,16 +6531,27 @@
               "length_mm": 1.75
             }
           ],
-          "via_sections": []
+          "via_sections": [
+            {
+              "xy_mm": [
+                34.650977,
+                9.680524
+              ],
+              "drill_mm": 0.3,
+              "land_mm": 0.45,
+              "single_barrel_mohm": 1.784,
+              "single_barrel_mW_at_case": 7.134
+            }
+          ]
         },
         {
           "source": "U12.6",
           "destination": "U13.5",
           "net": "PWR_5V",
           "case_A": 2.0,
-          "path_mohm": 46.819,
-          "drop_mV": 93.637,
-          "path_loss_mW": 187.274,
+          "path_mohm": 45.486,
+          "drop_mV": 90.972,
+          "path_loss_mW": 181.944,
           "min_width_mm": 0.15,
           "uniform_10C_screen_width_mm": 0.7814,
           "length_below_screen_mm": 2.669,
@@ -6458,12 +6612,12 @@
           "destination": "J10.1",
           "net": "ACT_5V",
           "case_A": 2.0,
-          "path_mohm": 35.732,
-          "drop_mV": 71.463,
-          "path_loss_mW": 142.926,
+          "path_mohm": 37.58,
+          "drop_mV": 75.159,
+          "path_loss_mW": 150.318,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.7814,
-          "length_below_screen_mm": 1.75,
+          "length_below_screen_mm": 3.784,
           "counted_vias": 0,
           "neck_sections": [
             {
@@ -6478,25 +6632,88 @@
               "layer": "F.Cu",
               "width_mm": 0.25,
               "length_mm": 1.75
+            },
+            {
+              "start_mm": [
+                51.151951,
+                60.946685
+              ],
+              "end_mm": [
+                51.151951,
+                60.769503
+              ],
+              "layer": "F.Cu",
+              "width_mm": 0.25,
+              "length_mm": 0.1772
+            },
+            {
+              "start_mm": [
+                49.150158,
+                61.091652
+              ],
+              "end_mm": [
+                51.006984,
+                61.091652
+              ],
+              "layer": "F.Cu",
+              "width_mm": 0.25,
+              "length_mm": 1.8568
             }
           ],
           "via_sections": []
         }
       ],
-      "track_length_mm": 2327.79,
-      "via_count": 143,
+      "track_length_mm": 2647.38,
+      "via_count": 152,
       "width_length_mm": {
         "0.127": 1.462,
-        "0.15": 1785.749,
-        "0.25": 16.002,
-        "0.5": 219.82,
-        "1.0": 304.752
+        "0.15": 2146.568,
+        "0.25": 13.777,
+        "0.5": 202.812,
+        "1.0": 282.759
       },
-      "non_octilinear_segments_over_0_1mm": 0,
+      "non_octilinear_segments_over_0_1mm": 130,
       "copper_items_outside_board": 0
     },
-    "placement_and_geometry_unchanged": true,
-    "placement_serialization_tolerance_mm": 2e-06
+    "placement_and_geometry_unchanged": false,
+    "placement_serialization_tolerance_mm": 2e-06,
+    "hall_placement_changes": {
+      "U7": [
+        17.5,
+        11,
+        0
+      ],
+      "U8": [
+        35.5,
+        12.25,
+        180
+      ],
+      "U9": [
+        54.25,
+        11.75,
+        0
+      ],
+      "C16": [
+        12.85,
+        13.75,
+        -90
+      ],
+      "C17": [
+        36.85,
+        16.25,
+        0
+      ],
+      "C18": [
+        50.75,
+        12.5,
+        -90
+      ],
+      "C88": [
+        31.8,
+        4,
+        0
+      ]
+    }
   },
   "Wheel": {
     "baseline": {
@@ -9321,16 +9538,16 @@
       "copper_items_outside_board": 0
     },
     "after": {
-      "sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
+      "sha256": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973",
       "outline_area_mm2": 4448.297,
       "gnd_fill": {
         "F.Cu": {
-          "filled_mm2": 2712.212,
-          "percent": 60.97
+          "filled_mm2": 2722.401,
+          "percent": 61.2
         },
         "B.Cu": {
-          "filled_mm2": 2920.729,
-          "percent": 65.66
+          "filled_mm2": 2931.105,
+          "percent": 65.89
         }
       },
       "gnd_vias": 66,
@@ -9606,9 +9823,9 @@
           "destination": "U21.9",
           "net": "ACT_5V",
           "case_A": 2.0,
-          "path_mohm": 36.235,
-          "drop_mV": 72.47,
-          "path_loss_mW": 144.941,
+          "path_mohm": 35.552,
+          "drop_mV": 71.105,
+          "path_loss_mW": 142.209,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.7814,
           "length_below_screen_mm": 1.5,
@@ -9635,9 +9852,9 @@
           "destination": "U21.10",
           "net": "ACT_5V",
           "case_A": 2.0,
-          "path_mohm": 36.235,
-          "drop_mV": 72.47,
-          "path_loss_mW": 144.941,
+          "path_mohm": 35.552,
+          "drop_mV": 71.105,
+          "path_loss_mW": 142.209,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.7814,
           "length_below_screen_mm": 1.5,
@@ -9664,9 +9881,9 @@
           "destination": "U21.11",
           "net": "ACT_5V",
           "case_A": 2.0,
-          "path_mohm": 37.453,
-          "drop_mV": 74.905,
-          "path_loss_mW": 149.81,
+          "path_mohm": 36.77,
+          "drop_mV": 73.539,
+          "path_loss_mW": 147.079,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.7814,
           "length_below_screen_mm": 2.0,
@@ -9706,9 +9923,9 @@
           "destination": "J5.1",
           "net": "WHEEL_PHASE_A",
           "case_A": 0.5,
-          "path_mohm": 19.71,
-          "drop_mV": 9.855,
-          "path_loss_mW": 4.928,
+          "path_mohm": 19.869,
+          "drop_mV": 9.934,
+          "path_loss_mW": 4.967,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.1155,
           "length_below_screen_mm": 0,
@@ -9721,9 +9938,9 @@
           "destination": "J5.1",
           "net": "WHEEL_PHASE_A",
           "case_A": 0.5,
-          "path_mohm": 20.928,
-          "drop_mV": 10.464,
-          "path_loss_mW": 5.232,
+          "path_mohm": 21.086,
+          "drop_mV": 10.543,
+          "path_loss_mW": 5.272,
           "min_width_mm": 0.25,
           "uniform_10C_screen_width_mm": 0.1155,
           "length_below_screen_mm": 0,
@@ -9766,9 +9983,9 @@
           "destination": "J5.3",
           "net": "WHEEL_PHASE_C",
           "case_A": 0.5,
-          "path_mohm": 26.805,
-          "drop_mV": 13.402,
-          "path_loss_mW": 6.701,
+          "path_mohm": 27.011,
+          "drop_mV": 13.506,
+          "path_loss_mW": 6.753,
           "min_width_mm": 0.15,
           "uniform_10C_screen_width_mm": 0.1155,
           "length_below_screen_mm": 0,
@@ -9781,9 +9998,9 @@
           "destination": "J5.3",
           "net": "WHEEL_PHASE_C",
           "case_A": 0.5,
-          "path_mohm": 28.022,
-          "drop_mV": 14.011,
-          "path_loss_mW": 7.006,
+          "path_mohm": 28.228,
+          "drop_mV": 14.114,
+          "path_loss_mW": 7.057,
           "min_width_mm": 0.15,
           "uniform_10C_screen_width_mm": 0.1155,
           "length_below_screen_mm": 0,
@@ -9796,9 +10013,9 @@
           "destination": "R121.1",
           "net": "ACT_5V",
           "case_A": 0.5532,
-          "path_mohm": 45.991,
-          "drop_mV": 25.442,
-          "path_loss_mW": 14.074,
+          "path_mohm": 45.116,
+          "drop_mV": 24.958,
+          "path_loss_mW": 13.806,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9811,9 +10028,9 @@
           "destination": "R122.1",
           "net": "ACT_5V",
           "case_A": 0.5532,
-          "path_mohm": 38.481,
-          "drop_mV": 21.287,
-          "path_loss_mW": 11.776,
+          "path_mohm": 37.606,
+          "drop_mV": 20.803,
+          "path_loss_mW": 11.508,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9826,9 +10043,9 @@
           "destination": "R123.1",
           "net": "ACT_5V",
           "case_A": 0.5532,
-          "path_mohm": 49.643,
-          "drop_mV": 27.462,
-          "path_loss_mW": 15.192,
+          "path_mohm": 48.768,
+          "drop_mV": 26.978,
+          "path_loss_mW": 14.924,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9841,9 +10058,9 @@
           "destination": "R124.1",
           "net": "ACT_5V",
           "case_A": 0.5532,
-          "path_mohm": 42.133,
-          "drop_mV": 23.308,
-          "path_loss_mW": 12.894,
+          "path_mohm": 41.258,
+          "drop_mV": 22.824,
+          "path_loss_mW": 12.626,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9856,9 +10073,9 @@
           "destination": "R121.2",
           "net": "BRAKE_DRAIN",
           "case_A": 0.5532,
-          "path_mohm": 20.096,
-          "drop_mV": 11.117,
-          "path_loss_mW": 6.15,
+          "path_mohm": 19.411,
+          "drop_mV": 10.738,
+          "path_loss_mW": 5.94,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9871,9 +10088,9 @@
           "destination": "R122.2",
           "net": "BRAKE_DRAIN",
           "case_A": 0.5532,
-          "path_mohm": 5.725,
-          "drop_mV": 3.167,
-          "path_loss_mW": 1.752,
+          "path_mohm": 5.04,
+          "drop_mV": 2.788,
+          "path_loss_mW": 1.542,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9886,9 +10103,9 @@
           "destination": "R123.2",
           "net": "BRAKE_DRAIN",
           "case_A": 0.5532,
-          "path_mohm": 16.444,
-          "drop_mV": 9.097,
-          "path_loss_mW": 5.032,
+          "path_mohm": 15.759,
+          "drop_mV": 8.718,
+          "path_loss_mW": 4.822,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9901,9 +10118,9 @@
           "destination": "R124.2",
           "net": "BRAKE_DRAIN",
           "case_A": 0.5532,
-          "path_mohm": 9.377,
-          "drop_mV": 5.187,
-          "path_loss_mW": 2.87,
+          "path_mohm": 8.692,
+          "drop_mV": 4.808,
+          "path_loss_mW": 2.66,
           "min_width_mm": 1.0,
           "uniform_10C_screen_width_mm": 0.1327,
           "length_below_screen_mm": 0,
@@ -9912,27 +10129,21 @@
           "via_sections": []
         }
       ],
-      "track_length_mm": 3122.92,
+      "track_length_mm": 3077.98,
       "via_count": 264,
       "width_length_mm": {
-        "0.15": 2463.591,
+        "0.15": 2430.381,
         "0.25": 68.806,
-        "0.35": 185.046,
-        "0.5": 109.511,
-        "0.75": 69.056,
-        "1.0": 226.913
+        "0.35": 180.247,
+        "0.5": 107.423,
+        "0.75": 67.84,
+        "1.0": 223.277
       },
-      "non_octilinear_segments_over_0_1mm": 58,
+      "non_octilinear_segments_over_0_1mm": 113,
       "copper_items_outside_board": 0
     },
     "placement_and_geometry_unchanged": true,
     "placement_serialization_tolerance_mm": 2e-06
-  },
-  "Encoder": {
-    "sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
-    "non_ground_copper_sha256": "de035c1b5d7cd708c01971b3326cd20525d6d834d2b87c43800bc7d3523220a0",
-    "signal_routing_unchanged": true,
-    "ground_routing_revision": "0.5 mm outer-edge clearance"
   },
   "model_limits": "Native-contact resistance screen at 80 C, 35 um copper, 20 um via plating; not measured ampacity, SI, EMI or thermal acceptance."
 }

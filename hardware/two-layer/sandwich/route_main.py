@@ -45,7 +45,7 @@ def prepare(name):
     groundclass=dict(default);groundclass['name']='Ground';groundclass['priority']=3
     settings['classes'].append(groundclass);settings['netclass_patterns'].append({'netclass':'Ground','pattern':'GND'})
     # Short regulator/optical rails need the same current-carrying width as power.
-    for net in ('BUCK_SW','OPT_3V3','OPT_1V9','MA735_3V3','RGB_5V'):
+    for net in ('BUCK_SW','OPT_3V3','OPT_1V9','ENC_3V3','ENC_5V','RGB_5V'):
         settings['netclass_patterns'].append({'netclass':'Power','pattern':net})
     path.with_suffix('.kicad_pro').write_text(json.dumps(project,indent=2)+'\n')
     ground(board)

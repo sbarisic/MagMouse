@@ -1100,7 +1100,7 @@
         (size 1.2 1.2))
       (justify left top))
     (uuid "06604a64-5963-5348-ae6b-6f79999ea369"))
-  (text "Unplugged wheel fault return defaults LOW through R141.\nMISO inputs have local idle bias; select signals retain main-side pullups.\nEncoder stays on main J6 directly to J7; it does not cross this harness.\nNo power is carried across breakaway tabs. Do not hot plug."
+  (text "Unplugged wheel fault return defaults LOW through R141.\nMISO inputs have local idle bias; select signals retain main-side pullups.\nIntegrated GB1806 AS5048A encoder connects directly to Lower J6; no encoder PCB.\nNo power is carried across breakaway tabs. Do not hot plug."
     (at 20 238 0)
     (effects
       (font

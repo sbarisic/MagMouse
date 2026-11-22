@@ -1,4 +1,4 @@
-"""Derive a four-design, two-layer quotation panel without changing unit copper.
+"""Derive a three-design, two-layer quotation panel without changing unit copper.
 SPDX-License-Identifier: GPL-3.0-or-later
 """
 import collections, hashlib, json, re, subprocess, sys, uuid, zipfile
@@ -10,7 +10,7 @@ sys.path.insert(0,str(ROOT/'build/two-layer/python'))
 sys.path.insert(0,str(ROOT/'hardware/common'))
 import panel_helpers as bp
 from router_geometry import make_routable, verify_panel as verify_router, verify_material_tab
-from kicad_output import run as run_atomic
+from kicad_output import run as run_atomic, write as write_atomic
 from shapely.geometry import Point, Polygon, box
 from shapely.affinity import translate
 from shapely.ops import unary_union
@@ -18,13 +18,13 @@ from shapely import set_precision
 
 OUT=HERE/'panel'
 SIZE=(238,114)
-ORIGINS={'Lower':(7,7),'Upper':(84,7),'Wheel':(161,7),'Encoder':(161,81)}
+ORIGINS={'Lower':(7,7),'Upper':(84,7),'Wheel':(161,7)}
 TARGETS={'Lower':[(24.75,0),(48.75,0),(0,63),(70,63)],
-         'Upper':[(24.75,0),(45.75,0),(0,63),(70,63)],
+         # Keep the front-right tab clear of the relocated PWR_5V wire pad.
+         'Upper':[(24.75,0),(48.75,0),(0,63),(70,63)],
          # The local undervoltage revision uses the right edge for routed
          # copper. Use two clear top/bottom tab sites without changing the unit.
-         'Wheel':[(4.765331,-3),(52.765331,-3),(13.207003,64),(49.207003,64)],
-         'Encoder':[(57,50),(64,57)]}
+         'Wheel':[(4.765331,-3),(52.765331,-3),(13.207003,64),(49.207003,64)]}
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def stable(item,key):bp.UUID_REPLACEMENTS[item.m_Uuid.AsString()]=str(uuid.uuid5(uuid.NAMESPACE_URL,'MagMouse/sandwich-panel/'+key))
@@ -50,11 +50,12 @@ def pad_key(pad,offset=(0,0),prefix=''):
             pad.GetDrillSize().x,pad.GetDrillSize().y,pad.GetLayerSet().FmtHex(),prefix+pad.GetNetname() if pad.GetNetCode() else '')
 
 def build():
+    from routing_corners import corners, staircases
     OUT.mkdir(exist_ok=True)
     (OUT/'fp-lib-table').write_text((BOARDS['Lower'].parent/'fp-lib-table').read_text())
     sections=[s for s in bp.root_sections(BOARDS['Lower'].read_text())
               if s.split()[0] in ('(version','(generator','(generator_version','(general','(paper','(layers','(setup')]
-    dest=OUT/'Panel.kicad_pcb';dest.write_text('(kicad_pcb\n'+'\n'.join(sections)+'\n)\n')
+    dest=OUT/'Panel.kicad_pcb';write_atomic(dest,'(kicad_pcb\n'+'\n'.join(sections)+'\n)\n')
     project=json.loads(BOARDS['Lower'].with_suffix('.kicad_pro').read_text());project['meta']['filename']='Panel.kicad_pro'
     dest.with_suffix('.kicad_pro').write_text(json.dumps(project,indent=2)+'\n')
     # Carry the reviewed internal-aperture exception into the translated unit.
@@ -63,6 +64,8 @@ def build():
     panel=p.LoadBoard(str(dest));units={};tabs=[];manifest={};expected_tracks=collections.Counter();expected_fill=collections.Counter();expected_pads={}
     for name,path in BOARDS.items():
         b=p.LoadBoard(str(path));assert b.GetCopperLayerCount()==2
+        assert not corners(b),name+' sharp routing bends'
+        assert not staircases(b),name+' repeated routing staircases'
         unit=bp.outline(b);ox=ORIGINS[name][0]-unit.bounds[0];oy=ORIGINS[name][1]-unit.bounds[1];offset=xy(ox,oy)
         units[name]=translate(unit,ox,oy)
         assert box(0,0,*SIZE).buffer(-5).covers(units[name])
@@ -136,7 +139,7 @@ def build():
     panel.BuildConnectivity();assert panel.GetConnectivity().GetUnconnectedCount(False)==0,'Panel connectivity'
     verify_router(bp.outline(panel),router)
     for name,path in BOARDS.items():assert sha(path)==manifest[name]['sha256']
-    data=dict(status='QUOTATION PANEL / NOT PRODUCTION RELEASE',size_mm=SIZE,designs=4,units=manifest,tabs=tabs,
+    data=dict(status='QUOTATION PANEL / NOT PRODUCTION RELEASE',size_mm=SIZE,designs=len(BOARDS),units=manifest,tabs=tabs,
               routing_gap_mm=2,mousebite_diameter_mm=.6,mousebite_pitch_mm=.9,tab_width_mm=5,router=router,
               exact_translated_pads_tracks_drills_and_zone_copper=True,native_unconnected=0,sha256=sha(dest))
     (OUT/'panel-manifest.json').write_text(json.dumps(data,indent=2)+'\n')
@@ -144,7 +147,7 @@ def build():
     paths=['M '+' L '.join(f'{x:.5f},{y:.5f}' for x,y in ring.coords)+' Z' for ring in [material.exterior,*material.interiors]]
     svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="1904" height="912" viewBox="0 0 {SIZE[0]} {SIZE[1]}">',
          '<rect width="100%" height="100%" fill="#101822"/>','<path d="'+' '.join(paths)+'" fill="#24404a" fill-rule="evenodd" stroke="#c4d7dd" stroke-width=".12"/>']
-    colors={'Lower':'#59b4c5','Upper':'#dd9d43','Wheel':'#82c993','Encoder':'#bc9fe2'}
+    colors={'Lower':'#59b4c5','Upper':'#dd9d43','Wheel':'#82c993'}
     for name,q in units.items():
         unitpath=' '.join('M '+' L '.join(f'{a:.4f},{b:.4f}' for a,b in ring.coords)+' Z' for ring in [q.exterior,*q.interiors])
         x,y,*_=q.bounds;svg.append(f'<path d="{unitpath}" fill-rule="evenodd" fill="{colors[name]}" fill-opacity=".18" stroke="{colors[name]}" stroke-width=".15"/>')

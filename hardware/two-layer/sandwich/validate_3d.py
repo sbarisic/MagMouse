@@ -12,7 +12,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 OUT = HERE / '3d'
 DIMENSIONS = {'Lower': (70, 100), 'Upper': (70, 100), 'Wheel': (70, 67),
-              'Encoder': (14, 18), 'Panel': (238, 114)}
+              'Panel': (238, 114)}
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
         expected = [*dimensions, entry['exported_substrate_expected_mm']]
         assert all(abs(a - b) < .002 for a, b in zip(actual, expected)), (name, actual, expected)
         # Probe the actual STEP solid, so a valid bounding box cannot conceal
-        # a missing optical aperture or uncut encoder corner.
+        # a missing optical aperture.
         bounds=board.bounding_box();z=(bounds.min.Z+bounds.max.Z)/2
         opening_check=None
         if name in ('Lower','Panel'):
@@ -39,10 +39,6 @@ def main():
             assert not solids[0].is_inside((35.5+ox,-52.31-oy,z))
             assert solids[0].is_inside((35.5+ox,-40-oy,z))
             opening_check=True
-        if name=='Encoder':
-            assert not solids[0].is_inside((50.5,-50.5,z))
-            assert not solids[0].is_inside((63.5,-50.5,z))
-            assert solids[0].is_inside((57,-64.5,z))
         scene = trimesh.load(OUT / (name + '.glb'), force='scene')
         assert scene.geometry and scene.bounds is not None
         assert all(mesh.vertices.size and mesh.faces.size for mesh in scene.geometry.values())
@@ -50,8 +46,7 @@ def main():
                         'substrate_bounds_mm': actual, 'substrate_volume_mm3': board.volume,
                         'glb_meshes': len(scene.geometry), 'glb_bounds_m': scene.bounds.tolist(),
                         'source_hash_matches': True,
-                        'optical_aperture_open_in_step':opening_check,
-                        'encoder_corner_cuts_verified':True if name=='Encoder' else None}
+                        'optical_aperture_open_in_step':opening_check}
         print(name, 'valid solid', [round(x, 4) for x in actual], 'GLB meshes', len(scene.geometry), flush=True)
     (OUT / 'validation.json').write_text(json.dumps(result, indent=2) + '\n')
 

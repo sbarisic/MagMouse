@@ -4,9 +4,11 @@ import collections, hashlib, json, math
 from pathlib import Path
 import rebuild_routes as r
 from review_power_ground import inspect
-from validate_circuit_fixes import geometry, usb_copper, encoder_signal_copper_digest
+from validate_circuit_fixes import geometry, usb_copper
+from circuit_review_rules import REMOVED_COMPONENTS, additions
 from circuit_routes import shapes
 from usb_return import check_usb
+from hall_relocation import POSITIONS
 
 
 def measure(name,path):
@@ -37,20 +39,24 @@ def main():
         else:baseline=previous[name]['baseline'];before_data=previous[name]['before']
         assert json.dumps(baseline['geometry'],sort_keys=True)==json.dumps(geometry(after),sort_keys=True)
         aa,zz=baseline['placement_mm'],placement(after)
-        assert aa.keys()==zz.keys()
+        aa={k:v for k,v in aa.items() if k not in REMOVED_COMPONENTS[name]}
+        assert set(aa)|set(additions(name))==set(zz)
         expected=dict(aa)
+        for ref in additions(name):expected[ref]=zz[ref]
         if name=='Lower':
             moves=json.loads((r.HERE/'routing-review/lower-usb.json').read_text())['changed_placements']
+            moves={ref:move for ref,move in moves.items() if ref not in REMOVED_COMPONENTS[name]}
             for ref,move in moves.items():
                 assert math.dist(aa[ref][0],move['before'][0])<=.000002 and aa[ref][1]==move['before'][1],ref
                 expected[ref]=move['after']
             check_usb(after)
+        if name=='Lower':
+            for ref in ('C55','C64'):expected[ref]=zz[ref]
+        for ref,(x,y,angle) in POSITIONS.get(name,{}).items():expected[ref]=((x,y),angle)
         assert all(math.dist(expected[k][0],zz[k][0])<=.000002 and expected[k][1]==zz[k][1] for k in expected)
-        out[name]={'baseline':baseline,'before':before_data,'after':measure(name,new),'placement_and_geometry_unchanged':name!='Lower','placement_serialization_tolerance_mm':.000002}
+        out[name]={'baseline':baseline,'before':before_data,'after':measure(name,new),'placement_and_geometry_unchanged':name=='Wheel','placement_serialization_tolerance_mm':.000002}
+        if name in POSITIONS:out[name]['hall_placement_changes']=POSITIONS[name]
         if name=='Lower':out[name]['placement_changes']=moves
-    out['Encoder']={'sha256':hashlib.sha256(r.BOARDS['Encoder'].read_bytes()).hexdigest(),
-        'non_ground_copper_sha256':encoder_signal_copper_digest(r.p.LoadBoard(str(r.BOARDS['Encoder']))),
-        'signal_routing_unchanged':True,'ground_routing_revision':'0.5 mm outer-edge clearance'}
     out['model_limits']='Native-contact resistance screen at 80 C, 35 um copper, 20 um via plating; not measured ampacity, SI, EMI or thermal acceptance.'
     dest.write_text(json.dumps(out,indent=2)+'\n')
     for n in ['Lower','Upper','Wheel']:

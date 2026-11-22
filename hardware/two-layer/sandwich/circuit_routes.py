@@ -104,7 +104,8 @@ def direct(board,net,a,b):
     for layer in (p.F_Cu,p.B_Cu):
         if not a.IsOnLayer(layer) or not b.IsOnLayer(layer):continue
         foreign=obstacles(board,net,layer)
-        for width in ([.5,.3,.15] if power else [.15,.127]):
+        for width in ([.5,.25,.15] if power else [.15]):
+            inner=board_interior(board,.501+width/2)
             avoid=foreign.buffer(.151+width/2)
             for points in paths:
                 line=LineString(points)
@@ -205,18 +206,29 @@ def stitch(name):
     return check(name,board)
 
 
-def repair(name,limit=150):
+def repair(name,limit=150,trim_first=False):
     board=p.LoadBoard(str(BOARDS[name]));report=check(name,board)
     for iteration in range(limit):
         # Old dangling stubs are removed only when native DRC identifies them.
         copper_ids={uid(t) for t in board.GetTracks()} | {uid(q) for f in board.GetFootprints() for q in f.Pads()}
         pending_copper=any(all(i['uuid'] in copper_ids for i in v['items']) for v in report['unconnected_items'])
-        ids={i['uuid'] for v in report['violations'] if v['type'] in ('track_dangling','via_dangling') for i in v['items']} if not pending_copper else set()
+        ids={i['uuid'] for v in report['violations'] if v['type'] in ('track_dangling','via_dangling') for i in v['items']} if trim_first or not pending_copper else set()
         removed=0
         trim_graph=CopperGraph(board)
         for t in list(board.GetTracks()):
             if t.m_Uuid.AsString() not in ids:continue
             contacts=[trim_graph.items[k] for k in trim_graph.adj.get(uid(t),())]
+            # A flagged branch can touch the same conductor twice. Removing
+            # such a redundant loop is safer than repeatedly shortening it.
+            neighbors=set(trim_graph.adj.get(uid(t),()))
+            seen=set();todo=list(neighbors)[:1]
+            while todo:
+                key=todo.pop()
+                if key in seen or key==uid(t):continue
+                seen.add(key);todo.extend(trim_graph.adj.get(key,set())-seen-{uid(t)})
+            if len(neighbors)<=1 or neighbors<=seen:
+                board.Remove(t);t.thisown=False;removed+=1
+                continue
             if not isinstance(t,p.PCB_VIA) and p.ToMM(t.GetLength())>.4 and len(contacts)>1:
                 line=LineString([p.ToMM(t.GetStart()),p.ToMM(t.GetEnd())])
                 distances=[]
@@ -224,9 +236,16 @@ def repair(name,limit=150):
                     area=shapes(other).get(t.GetLayer())
                     if area is None:continue
                     hit=line.intersection(area)
-                    if not hit.is_empty:distances.append(line.project(hit.centroid))
+                    if not hit.is_empty:
+                        if isinstance(other,p.PCB_TRACK) and not isinstance(other,p.PCB_VIA):
+                            center=line.intersection(LineString([p.ToMM(other.GetStart()),p.ToMM(other.GetEnd())]))
+                            distances.append(line.project(center.centroid if not center.is_empty else hit.centroid))
+                        else:
+                            distances.append(line.project(Point(p.ToMM(other.GetPosition()))))
                 if len(distances)>1 and max(distances)-min(distances)>.001:
                     a=line.interpolate(min(distances));c=line.interpolate(max(distances))
+                    # Trim along the original centreline. Snapping sideways
+                    # to a neighbouring trace can reduce foreign-net clearance.
                     t.SetStart(xy(a.x,a.y));t.SetEnd(xy(c.x,c.y));removed+=1
                     continue
             board.Remove(t);t.thisown=False;removed+=1

@@ -15,7 +15,7 @@ Precision matching of button magnets is not a Rev-A fabrication prerequisite.
 | Subsystem | Responsibility |
 | --- | --- |
 | Board support | Validated pin map, rails, safe boot and recovery |
-| Device drivers | PMW3360, ICM-42688-P, two ADS7038 devices, MA735 and DRV8316R |
+| Device drivers | PMW3360, ICM-42688-P, two ADS7038 devices, AS5048A and DRV8316R |
 | Input processing | Optical reports, calibrated Hall thresholds/hysteresis and wheel movement |
 | Button control | Calibrated Hall thresholds and hysteresis; plastic mechanism supplies click and return |
 | Wheel control | Encoder calibration, commutation/FOC and bounded detent torque |

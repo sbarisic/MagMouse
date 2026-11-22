@@ -33,6 +33,11 @@ def envelope(f):
             if g.GetShape()==p.SHAPE_T_RECT: points.extend([(a[0],b[1]),(b[0],a[1])])
         elif g.GetShape()==p.SHAPE_T_CIRCLE:
             parts.append(Point(p.ToMM(g.GetCenter())).buffer(p.ToMM(g.GetRadius())))
+    # These footprints are separate solder-wire lands, with no connector body
+    # spanning the space between them. Keep the same 2 mm clearance to each
+    # actual land rather than reserving the empty convex hull between wires.
+    if str(f.GetFPID().GetLibItemName())=='Wire_Stack_Power_5':
+        return unary_union(parts)
     if points: parts.append(MultiPoint(points).convex_hull)
     return unary_union(parts).convex_hull
 
@@ -68,9 +73,9 @@ def inventory():
 def verify():
     """Audit saved sources, independently of the placement/routing algorithms."""
     from standard_vias import intersections
-    from circuit_review_rules import VALUE_CHANGES, PIN_CHANGES, NEW_COMPONENTS
+    from circuit_review_rules import VALUE_CHANGES, REMOVED_COMPONENTS, additions, expected_net
     baseline=json.loads((WORK/'baseline.json').read_text()) if (WORK/'baseline.json').exists() else None
-    result={'definition':'Minimum 2 mm between front component body-and-land convex envelopes; pins within a component and copper-only test access excluded.',
+    result={'definition':'Minimum 2 mm between front component body-and-land envelopes. Separate wire-array lands have no intervening body; pins within one component and copper-only test access are excluded.',
             'boards':{}}
     for name,path in BOARDS.items():
         b=p.LoadBoard(str(path));fs={f.GetReference():f for f in b.GetFootprints()}
@@ -100,8 +105,8 @@ def verify():
             assert tuple(p.ToMM(fs['U27'].GetPosition()))==(57,55.5)
         moved={}
         if baseline:
-            old=baseline[name]['components']
-            added=NEW_COMPONENTS if name=='Wheel' else {}
+            old={r:v for r,v in baseline[name]['components'].items() if r not in REMOVED_COMPONENTS[name]}
+            added=additions(name)
             assert set(fs)==set(old)|set(added)
             previous=p.LoadBoard(str(WORK/'original'/name/path.name))
             ids={f.GetReference():(str(f.GetFPID().GetLibNickname()),str(f.GetFPID().GetLibItemName())) for f in previous.GetFootprints()}
@@ -114,7 +119,7 @@ def verify():
                     continue
                 assert f.GetValue()==VALUE_CHANGES.get(name,{}).get(r,old[r]['value'])
                 assert (str(f.GetFPID().GetLibNickname()),str(f.GetFPID().GetLibItemName()))==ids[r],r
-                expected=sorted([pin,PIN_CHANGES.get(name,{}).get((r,pin),net)] for pin,net in old[r]['pads'])
+                expected=sorted([pin,expected_net(name,r,pin,net)] for pin,net in old[r]['pads'])
                 assert sorted([q.GetNumber(),q.GetNetname()] for q in f.Pads())==expected,r
                 pos=list(p.ToMM(f.GetPosition()))
                 if pos!=old[r]['xy'] or f.GetOrientationDegrees()!=old[r]['angle']:
@@ -171,6 +176,7 @@ def optical_opening(b):
         g.SetArcGeometry(xy(*a),xy(*m),xy(*c));g.SetWidth(p.FromMM(.05));b.Add(g)
 
 def place(name):
+    assert not (HERE/'hall-relocation.json').exists(),'Historical placement migration superseded by hall_relocation.py; use the authoritative routed boards.'
     snapshot();path=BOARDS[name]
     b=p.LoadBoard(str(WORK/'original'/name/path.name));outlines(b,name)
     fs={f.GetReference():f for f in b.GetFootprints()}

@@ -12,7 +12,7 @@ is drawn; remaining peripheral circuitry and physical validation are open.
 | Buttons | Left, middle, right; magnetic position sensing without switch contacts |
 | Button return | Plastic mechanism supplies passive return |
 | Button feedback | Mechanical plastic click; no button coils or powered force feedback |
-| Scroll | MA735 absolute angle, programmable BLDC detents/torque |
+| Scroll | AS5048A absolute angle, programmable BLDC detents/torque |
 | Host connection | USB 2.0 Full-Speed HID, target 1 ms report interval |
 | Power | 5 V USB-C, source-aware limits; intended 3 A advertised source for full effects |
 | Indicator | One RGB status/profile LED |
@@ -32,7 +32,7 @@ flowchart TD
     ADC --> MCU
     Paddles[Plastic click mechanisms] -->|Sensing magnets| Hall
     MCU --> Wheel[DRV8316R and GB1806]
-    Angle[MA735 wheel angle] --> MCU
+    Angle[AS5048A wheel angle] --> MCU
     Wheel -->|Phase current| ADC2[ADS7038 #2, dedicated SPI3]
     ADC2 --> MCU
     Power --> Wheel

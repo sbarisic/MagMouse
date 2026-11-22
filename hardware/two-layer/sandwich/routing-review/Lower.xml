@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\sandwich\lower\Lower.kicad_sch</source>
-    <date>2026-11-06T12:59:09</date>
+    <date>2026-11-22T02:36:55</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">TWO-LAYER STACK / PROTOTYPE</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -1316,222 +1316,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="TP4">
-      <value>UART_TX</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="02_MCU"/>
-      <property name="Sheetfile" value="02_MCU.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/02_MCU/" tstamps="/d5629ffc-c70c-5a32-8660-d50043bd3c4c/"/>
-      <tstamps>8793df5b-ee1f-5b9c-ad9a-3c45ea879ff8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP5">
-      <value>UART_RX</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="02_MCU"/>
-      <property name="Sheetfile" value="02_MCU.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/02_MCU/" tstamps="/d5629ffc-c70c-5a32-8660-d50043bd3c4c/"/>
-      <tstamps>859e8dd5-9a32-52a7-a843-54f3674f95d6</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP6">
-      <value>MCU_EN</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="02_MCU"/>
-      <property name="Sheetfile" value="02_MCU.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/02_MCU/" tstamps="/d5629ffc-c70c-5a32-8660-d50043bd3c4c/"/>
-      <tstamps>c1175b40-1faf-5e90-9f6e-abe42901718e</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP7">
-      <value>BOOT</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="02_MCU"/>
-      <property name="Sheetfile" value="02_MCU.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/02_MCU/" tstamps="/d5629ffc-c70c-5a32-8660-d50043bd3c4c/"/>
-      <tstamps>3f4bea64-375d-54dc-9382-daa0e09e4ae1</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP8">
-      <value>+3V3</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="02_MCU"/>
-      <property name="Sheetfile" value="02_MCU.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/02_MCU/" tstamps="/d5629ffc-c70c-5a32-8660-d50043bd3c4c/"/>
-      <tstamps>0bbb96d6-a975-5cf2-aa60-9bf577707675</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP9">
-      <value>GND</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="02_MCU"/>
-      <property name="Sheetfile" value="02_MCU.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/02_MCU/" tstamps="/d5629ffc-c70c-5a32-8660-d50043bd3c4c/"/>
-      <tstamps>7f4baf4a-4a1e-5c2d-9d17-860b326b31ed</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="U3">
       <value>ESP32-S3-MINI-1-N8</value>
       <footprint>MagMouseSandwich:ESP32-S2-MINI-1</footprint>
@@ -1669,78 +1453,6 @@
           <pins>
             <pin num="1"/>
             <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP1">
-      <value>VBUS_USB</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>06b369cb-469e-539b-a6fc-7c03c47e9137</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP10">
-      <value>VBUS_USB</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>1c9af1cb-a20e-5d9c-a383-b02611de3084</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
           </pins>
         </unit>
       </units>
@@ -2132,654 +1844,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="TP16">
-      <value>CS_PAW</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>1be3ebf6-b229-5e3f-afb4-e11ae976fdad</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP17">
-      <value>WHEEL_RUN_REQ</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>237d8911-f78c-5b06-bd1b-57929c3b7aaa</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP18">
-      <value>CS_IMU</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>40cdfeb7-90c4-5cc5-a727-e50c3239ac5c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP19">
-      <value>OPT_CTRL</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>31ab72dd-4fd9-554c-8724-e1f28dd3ece2</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP20">
-      <value>MOTOR_SPI_MOSI</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>35c10a05-5562-5c94-82d1-7bc620f47671</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP21">
-      <value>MOTOR_SPI_SCLK</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>04c67d8a-fd3b-576f-a874-1b23e460c167</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP22">
-      <value>MOTOR_SPI_MISO</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>ae36139c-a70f-5e98-bc74-c2925d20c690</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP23">
-      <value>CS_ADC2</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>7536e6cb-186f-5926-9e9a-888fd9b9c9e5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP24">
-      <value>CS_MA735</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>c2f58312-fcc5-5726-a03a-cf4e4c1f9f08</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP25">
-      <value>CS_DRV8316</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>829d7605-971c-538b-86ad-33c3d85b806f</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP26">
-      <value>PAW_MOTION_N</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>a6011582-53e0-50fe-b55c-f404f87606ef</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP27">
-      <value>IMU_INT1</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>1ebe293d-b712-525a-8fb4-af04e45cc7eb</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP28">
-      <value>DRV_FAULT_N</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>463ca9a2-d69d-5735-a732-7b9fd4c6bebc</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP29">
-      <value>WHEEL_PWM_A</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>d48c9a5a-22bf-5ca6-a8a9-e44c441a75bf</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP30">
-      <value>RGB_DATA</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>05189b8a-3346-564d-b835-34c8db128e7a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP31">
-      <value>BOOT_SAFE_SPARE</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>0b69cf71-8b90-522e-9e4e-364843ef6aac</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP32">
-      <value>WHEEL_PWM_B</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>549ffd00-0a89-572b-95ba-250cdf2a2ea3</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP33">
-      <value>WHEEL_PWM_C</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="09_Interface_Reservations"/>
-      <property name="Sheetfile" value="09_Interface_Reservations.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/09_Interface_Reservations/" tstamps="/56122003-a52d-598a-a125-cd0e2f54c82a/"/>
-      <tstamps>ca3dfeed-da4c-5e4b-a5f8-28b0f9ca444c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="C53">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
@@ -2824,30 +1888,30 @@
       </units>
     </comp>
     <comp ref="C55">
-      <value>100nF</value>
+      <value>1uF/50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
       <fields>
-        <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC1206KRX7R9BB104</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31B105KBHNNNE</field>
         <field name="LCSC"/>
         <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">1206 replacement; supplier stock and assembly availability not checked</field>
-        <field name="Checked">2026-11-04</field>
+        <field name="Sourcing Status">1 uF 50 V X7R 1206; assembly stock unverified</field>
+        <field name="Checked">2026-11-22</field>
         <field name="Supplier URL"/>
         <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
         <field name="Rating">50 V, X7R, 10%</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC1206KRX7R9BB104"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
       <property name="LCSC" value=""/>
       <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="1206 replacement; supplier stock and assembly availability not checked"/>
-      <property name="Checked" value="2026-11-04"/>
+      <property name="Sourcing Status" value="1 uF 50 V X7R 1206; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-22"/>
       <property name="Supplier URL" value=""/>
       <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
       <property name="Rating" value="50 V, X7R, 10%"/>
@@ -3094,7 +2158,50 @@
       </units>
     </comp>
     <comp ref="C64">
-      <value>100nF</value>
+      <value>1uF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31B105KBHNNNE</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Sourcing Status">1 uF 50 V X7R 1206; assembly stock unverified</field>
+        <field name="Checked">2026-11-22</field>
+        <field name="Supplier URL"/>
+        <field name="Source URL">https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</field>
+        <field name="Rating">50 V, X7R, 10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31B105KBHNNNE"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sourcing Status" value="1 uF 50 V X7R 1206; assembly stock unverified"/>
+      <property name="Checked" value="2026-11-22"/>
+      <property name="Supplier URL" value=""/>
+      <property name="Source URL" value="https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104"/>
+      <property name="Rating" value="50 V, X7R, 10%"/>
+      <property name="Sheetname" value="12_Wheel_Feedback"/>
+      <property name="Sheetfile" value="12_Wheel_Feedback.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/12_Wheel_Feedback/" tstamps="/6bb26027-e36c-5149-93b0-61be9c808734/"/>
+      <tstamps>593980b2-5d23-582b-ac93-d374e1885abd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C105">
+      <value>100nF/50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <datasheet>https://www.yageogroup.com/download/specsheet/CC1206KRX7R9BB104</datasheet>
       <fields>
@@ -3126,7 +2233,7 @@
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/12_Wheel_Feedback/" tstamps="/6bb26027-e36c-5149-93b0-61be9c808734/"/>
-      <tstamps>593980b2-5d23-582b-ac93-d374e1885abd</tstamps>
+      <tstamps>04e3702c-0362-51e7-a1ce-daf6e84518f0</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -3137,7 +2244,7 @@
       </units>
     </comp>
     <comp ref="J6">
-      <value>Soldered wires Signal_2x04</value>
+      <value>GB1806 AS5048A encoder wires</value>
       <footprint>MagMouseModular:Wire_Signal_2x04_P2.54mm</footprint>
       <fields>
         <field name="Manufacturer"/>
@@ -3304,6 +2411,46 @@
             <pin num="4"/>
             <pin num="2"/>
             <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U42">
+      <value>TLV75533PDBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
+      <fields>
+        <field name="MPN">TLV75533PDBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC"/>
+        <field name="JLCPCB Part #"/>
+        <field name="Checked">2026-11-22</field>
+        <field name="Sourcing Status">Manufacturer specification checked; assembly stock unverified</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Regulator_Linear" part="TLV75533PDBV" description="500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
+      <property name="MPN" value="TLV75533PDBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value=""/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Checked" value="2026-11-22"/>
+      <property name="Sourcing Status" value="Manufacturer specification checked; assembly stock unverified"/>
+      <property name="Sheetname" value="12_Wheel_Feedback"/>
+      <property name="Sheetfile" value="12_Wheel_Feedback.kicad_sch"/>
+      <property name="ki_keywords" value="LDO Regulator Fixed Positive"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/12_Wheel_Feedback/" tstamps="/6bb26027-e36c-5149-93b0-61be9c808734/"/>
+      <tstamps>24becac9-aad4-53f8-914a-8356f09c38d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="4"/>
             <pin num="5"/>
           </pins>
         </unit>
@@ -4452,114 +3599,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="TP40">
-      <value>OPT_3V3</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="16_Optical_Power"/>
-      <property name="Sheetfile" value="16_Optical_Power.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/16_Optical_Power/" tstamps="/002e0bb0-41a6-5a6c-91e5-2465c2fb5e03/"/>
-      <tstamps>66d8b1ed-cfd5-5ddd-9b45-b62a3d62403f</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP41">
-      <value>OPT_1V9</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="16_Optical_Power"/>
-      <property name="Sheetfile" value="16_Optical_Power.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/16_Optical_Power/" tstamps="/002e0bb0-41a6-5a6c-91e5-2465c2fb5e03/"/>
-      <tstamps>d4dc9aa7-a292-531f-92f2-9c12ae01e0bc</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP42">
-      <value>OPT_VDDPIX</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="16_Optical_Power"/>
-      <property name="Sheetfile" value="16_Optical_Power.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/16_Optical_Power/" tstamps="/002e0bb0-41a6-5a6c-91e5-2465c2fb5e03/"/>
-      <tstamps>2b6b5830-4b8c-5ae3-a0e3-29033be22b8b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="U36">
       <value>TLV75519PDBVR</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
@@ -4981,42 +4020,6 @@
           <pins>
             <pin num="1"/>
             <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP43">
-      <value>OPT_RESET_N</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="17_Optical_Sensor"/>
-      <property name="Sheetfile" value="17_Optical_Sensor.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/17_Optical_Sensor/" tstamps="/3851210f-9beb-5086-821b-f8606e2597ad/"/>
-      <tstamps>6922a6cc-1814-5a0b-b8ee-05bccdb325f9</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
           </pins>
         </unit>
       </units>
@@ -6101,6 +5104,27 @@
         <pin num="65" name="GND" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Regulator_Linear" part="TLV75533PDBV">
+      <description>500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV75533PDBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description">500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
     <libpart lib="Switch" part="SW_Push">
       <description>Push button switch, generic, two pins</description>
       <fields>
@@ -6141,6 +5165,9 @@
     <library logical="RF_Module">
       <uri>${KICAD10_SYMBOL_DIR}/RF_Module.kicad_sym</uri>
     </library>
+    <library logical="Regulator_Linear">
+      <uri>${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym</uri>
+    </library>
     <library logical="Switch">
       <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
     </library>
@@ -6154,7 +5181,6 @@
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C53" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
-      <node ref="C63" pin="1" pintype="passive"/>
       <node ref="C70" pin="1" pintype="passive"/>
       <node ref="C71" pin="1" pintype="passive"/>
       <node ref="C72" pin="1" pintype="passive"/>
@@ -6174,11 +5200,9 @@
       <node ref="R74" pin="1" pintype="passive"/>
       <node ref="R75" pin="1" pintype="passive"/>
       <node ref="R76" pin="1" pintype="passive"/>
-      <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U11" pin="12" pinfunction="VDD_12" pintype="power_in"/>
       <node ref="U2" pin="6" pinfunction="VOS_6" pintype="input"/>
       <node ref="U25" pin="14" pinfunction="VCC_14" pintype="power_in"/>
-      <node ref="U28" pin="1" pinfunction="IN_1" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="3V3_3" pintype="power_in"/>
       <node ref="U32" pin="5" pinfunction="VDDIO_5" pintype="power_in"/>
       <node ref="U32" pin="8" pinfunction="VDD_8" pintype="power_in"/>
@@ -6209,12 +5233,10 @@
     <net code="7" name="BOOT" class="Default">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="4" pinfunction="IO0_4" pintype="bidirectional"/>
     </net>
     <net code="8" name="BOOT_SAFE_SPARE" class="Default">
       <node ref="R80" pin="1" pintype="passive"/>
-      <node ref="TP31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="44" pinfunction="IO46_44" pintype="bidirectional"/>
     </net>
     <net code="9" name="BUCK_SW" class="Default">
@@ -6240,33 +5262,28 @@
     <net code="13" name="CS_ADC2" class="Default">
       <node ref="J8" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
       <node ref="R74" pin="2" pintype="passive"/>
-      <node ref="TP23" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U25" pin="10" pinfunction="3OE_N_10" pintype="input"/>
       <node ref="U3" pin="32" pinfunction="IO36_32" pintype="bidirectional"/>
     </net>
     <net code="14" name="CS_DRV8316" class="Default">
       <node ref="J8" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="R76" pin="2" pintype="passive"/>
-      <node ref="TP25" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U25" pin="1" pinfunction="1OE_N_1" pintype="input"/>
       <node ref="U3" pin="34" pinfunction="IO38_34" pintype="bidirectional"/>
     </net>
-    <net code="15" name="CS_IMU" class="Default">
-      <node ref="R73" pin="2" pintype="passive"/>
-      <node ref="TP18" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U3" pin="25" pinfunction="IO21_25" pintype="bidirectional"/>
-      <node ref="U32" pin="12" pinfunction="AP_CS_12" pintype="input"/>
-    </net>
-    <net code="16" name="CS_MA735" class="Default">
+    <net code="15" name="CS_ENCODER" class="Default">
       <node ref="R75" pin="2" pintype="passive"/>
-      <node ref="TP24" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U25" pin="4" pinfunction="2OE_N_4" pintype="input"/>
       <node ref="U29" pin="9" pinfunction="3A_9" pintype="input"/>
       <node ref="U3" pin="33" pinfunction="IO37_33" pintype="bidirectional"/>
     </net>
+    <net code="16" name="CS_IMU" class="Default">
+      <node ref="R73" pin="2" pintype="passive"/>
+      <node ref="U3" pin="25" pinfunction="IO21_25" pintype="bidirectional"/>
+      <node ref="U32" pin="12" pinfunction="AP_CS_12" pintype="input"/>
+    </net>
     <net code="17" name="CS_PAW" class="Default">
       <node ref="R72" pin="2" pintype="passive"/>
-      <node ref="TP16" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="IO2_6" pintype="bidirectional"/>
       <node ref="U37" pin="1" pinfunction="1OE_N_1" pintype="input"/>
       <node ref="U37" pin="10" pinfunction="3OE_N_10" pintype="input"/>
@@ -6279,7 +5296,6 @@
       <node ref="U25" pin="12" pinfunction="4A_12" pintype="input"/>
     </net>
     <net code="19" name="DRV_FAULT_N" class="Default">
-      <node ref="TP28" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U25" pin="11" pinfunction="4Y_11" pintype="tri_state"/>
       <node ref="U3" pin="37" pinfunction="IO41_37" pintype="bidirectional"/>
     </net>
@@ -6289,39 +5305,46 @@
       <node ref="U25" pin="2" pinfunction="1A_2" pintype="input"/>
     </net>
     <net code="21" name="ENC_3V3" class="Default">
-      <node ref="C55" pin="1" pintype="passive"/>
+      <node ref="C105" pin="1" pintype="passive"/>
       <node ref="C64" pin="1" pintype="passive"/>
-      <node ref="J6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
-      <node ref="R125" pin="2" pintype="passive"/>
       <node ref="R99" pin="1" pintype="passive"/>
-      <node ref="U28" pin="6" pinfunction="OUT_6" pintype="power_out"/>
       <node ref="U29" pin="13" pinfunction="4OE_N_13" pintype="input"/>
       <node ref="U29" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U42" pin="5" pinfunction="OUT_5" pintype="power_out"/>
     </net>
-    <net code="22" name="ENC_CS_LOCAL" class="Default">
+    <net code="22" name="ENC_5V" class="Default">
+      <node ref="C55" pin="1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R125" pin="2" pintype="passive"/>
+      <node ref="U28" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+      <node ref="U42" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U42" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="23" name="ENC_CS_LOCAL" class="Default">
       <node ref="J6" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
       <node ref="R99" pin="2" pintype="passive"/>
       <node ref="U29" pin="8" pinfunction="3Y_8" pintype="tri_state"/>
     </net>
-    <net code="23" name="ENC_MISO_LOCAL" class="Default">
+    <net code="24" name="ENC_MISO_LOCAL" class="Default">
       <node ref="J6" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
       <node ref="R101" pin="1" pintype="passive"/>
       <node ref="U25" pin="5" pinfunction="2A_5" pintype="input"/>
     </net>
-    <net code="24" name="ENC_MOSI_LOCAL" class="Default">
+    <net code="25" name="ENC_MOSI_LOCAL" class="Default">
       <node ref="J6" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="U29" pin="6" pinfunction="2Y_6" pintype="tri_state"/>
     </net>
-    <net code="25" name="ENC_QOD" class="Default">
+    <net code="26" name="ENC_QOD" class="Default">
       <node ref="R125" pin="1" pintype="passive"/>
       <node ref="U28" pin="5" pinfunction="QOD_5" pintype="open_collector"/>
     </net>
-    <net code="26" name="ENC_SCLK_LOCAL" class="Default">
+    <net code="27" name="ENC_SCLK_LOCAL" class="Default">
       <node ref="J6" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="U29" pin="3" pinfunction="1Y_3" pintype="tri_state"/>
     </net>
-    <net code="27" name="GND" class="Default">
+    <net code="28" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C105" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C22" pin="2" pintype="passive"/>
       <node ref="C23" pin="2" pintype="passive"/>
@@ -6381,7 +5404,6 @@
       <node ref="R80" pin="2" pintype="passive"/>
       <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="GND_3" pintype="passive"/>
       <node ref="U11" pin="10" pinfunction="GND_10" pintype="power_in"/>
       <node ref="U11" pin="11" pinfunction="EN_N_11" pintype="input"/>
@@ -6434,69 +5456,64 @@
       <node ref="U38" pin="2" pinfunction="GND_2" pintype="power_in"/>
       <node ref="U39" pin="1" pinfunction="OE_N_1" pintype="input"/>
       <node ref="U39" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U42" pin="2" pinfunction="GND_2" pintype="power_in"/>
     </net>
-    <net code="28" name="HALL_EN" class="Default">
+    <net code="29" name="HALL_EN" class="Default">
       <node ref="J101" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
       <node ref="R110" pin="1" pintype="passive"/>
       <node ref="U28" pin="3" pinfunction="ON_3" pintype="input"/>
       <node ref="U33" pin="3" pinfunction="EN_3" pintype="input"/>
       <node ref="U38" pin="3" pinfunction="ON_3" pintype="input"/>
     </net>
-    <net code="29" name="IMU_INT1" class="Default">
+    <net code="30" name="IMU_INT1" class="Default">
       <node ref="R127" pin="2" pintype="passive"/>
-      <node ref="TP27" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="36" pinfunction="IO40_36" pintype="bidirectional"/>
       <node ref="U32" pin="4" pinfunction="INT1_4" pintype="output"/>
     </net>
-    <net code="30" name="IMU_PIN9" class="Default">
+    <net code="31" name="IMU_PIN9" class="Default">
       <node ref="R126" pin="1" pintype="passive"/>
       <node ref="U32" pin="9" pinfunction="INT2_FSYNC_CLKIN_9" pintype="bidirectional"/>
     </net>
-    <net code="31" name="LOGIC_PG" class="Default">
+    <net code="32" name="LOGIC_PG" class="Default">
       <node ref="R28" pin="1" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="PG_8" pintype="open_collector"/>
     </net>
-    <net code="32" name="MCU_EN" class="Default">
+    <net code="33" name="MCU_EN" class="Default">
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="J101" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
       <node ref="R28" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="45" pinfunction="EN_45" pintype="input"/>
     </net>
-    <net code="33" name="MCU_USB_DM" class="USB_Breakout">
+    <net code="34" name="MCU_USB_DM" class="USB_Breakout">
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U3" pin="23" pinfunction="USB_D-_23" pintype="bidirectional"/>
     </net>
-    <net code="34" name="MCU_USB_DP" class="USB_Breakout">
+    <net code="35" name="MCU_USB_DP" class="USB_Breakout">
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="U3" pin="24" pinfunction="USB_D+_24" pintype="bidirectional"/>
     </net>
-    <net code="35" name="MOTOR_SPI_MISO" class="Default">
-      <node ref="TP22" pin="1" pinfunction="1_1" pintype="passive"/>
+    <net code="36" name="MOTOR_SPI_MISO" class="Default">
       <node ref="U25" pin="8" pinfunction="3Y_8" pintype="tri_state"/>
       <node ref="U3" pin="31" pinfunction="IO35_31" pintype="bidirectional"/>
     </net>
-    <net code="36" name="MOTOR_SPI_MOSI" class="Default">
+    <net code="37" name="MOTOR_SPI_MOSI" class="Default">
       <node ref="J8" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
-      <node ref="TP20" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="28" pinfunction="IO33_28" pintype="bidirectional"/>
     </net>
-    <net code="37" name="MOTOR_SPI_SCLK" class="Default">
+    <net code="38" name="MOTOR_SPI_SCLK" class="Default">
       <node ref="J8" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
-      <node ref="TP21" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="29" pinfunction="IO34_29" pintype="bidirectional"/>
     </net>
-    <net code="38" name="OPT_1V9" class="Default">
+    <net code="39" name="OPT_1V9" class="Default">
       <node ref="C82" pin="1" pintype="passive"/>
       <node ref="C83" pin="1" pintype="passive"/>
       <node ref="R132" pin="1" pintype="passive"/>
-      <node ref="TP41" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U35" pin="4" pinfunction="VDD_1V9_4" pintype="power_in"/>
       <node ref="U36" pin="5" pinfunction="OUT_5" pintype="power_out"/>
     </net>
-    <net code="39" name="OPT_3V3" class="Default">
+    <net code="40" name="OPT_3V3" class="Default">
       <node ref="C80" pin="1" pintype="passive"/>
       <node ref="C81" pin="1" pintype="passive"/>
       <node ref="C86" pin="1" pintype="passive"/>
@@ -6505,7 +5522,6 @@
       <node ref="R133" pin="1" pintype="passive"/>
       <node ref="R135" pin="1" pintype="passive"/>
       <node ref="R136" pin="1" pintype="passive"/>
-      <node ref="TP40" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U35" pin="5" pinfunction="VDDIO_5" pintype="power_in"/>
       <node ref="U36" pin="1" pinfunction="IN_1" pintype="power_in"/>
       <node ref="U36" pin="3" pinfunction="EN_3" pintype="input"/>
@@ -6513,58 +5529,54 @@
       <node ref="U38" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
       <node ref="U39" pin="5" pinfunction="VCC_5" pintype="power_in"/>
     </net>
-    <net code="40" name="OPT_CS_N" class="Default">
+    <net code="41" name="OPT_CS_N" class="Default">
       <node ref="R131" pin="2" pintype="passive"/>
       <node ref="U35" pin="13" pinfunction="NCS_13" pintype="input"/>
       <node ref="U39" pin="4" pinfunction="Y_4" pintype="tri_state"/>
     </net>
-    <net code="41" name="OPT_CTRL" class="Default">
+    <net code="42" name="OPT_CTRL" class="Default">
       <node ref="R79" pin="1" pintype="passive"/>
-      <node ref="TP19" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="26" pinfunction="IO26_26" pintype="bidirectional"/>
       <node ref="U37" pin="12" pinfunction="4A_12" pintype="input"/>
     </net>
-    <net code="42" name="OPT_LED_P" class="Default">
+    <net code="43" name="OPT_LED_P" class="Default">
       <node ref="R132" pin="2" pintype="passive"/>
       <node ref="U35" pin="15" pinfunction="LED_P_15" pintype="power_in"/>
     </net>
-    <net code="43" name="OPT_MISO" class="Default">
+    <net code="44" name="OPT_MISO" class="Default">
       <node ref="R135" pin="2" pintype="passive"/>
       <node ref="U35" pin="12" pinfunction="MISO_12" pintype="tri_state"/>
       <node ref="U37" pin="9" pinfunction="3A_9" pintype="input"/>
     </net>
-    <net code="44" name="OPT_MOSI" class="Default">
+    <net code="45" name="OPT_MOSI" class="Default">
       <node ref="R134" pin="1" pintype="passive"/>
       <node ref="U35" pin="11" pinfunction="MOSI_11" pintype="input"/>
       <node ref="U37" pin="3" pinfunction="1Y_3" pintype="tri_state"/>
     </net>
-    <net code="45" name="OPT_RAMP_CT" class="Default">
+    <net code="46" name="OPT_RAMP_CT" class="Default">
       <node ref="C79" pin="1" pintype="passive"/>
       <node ref="U38" pin="4" pinfunction="CT_4" pintype="passive"/>
     </net>
-    <net code="46" name="OPT_RESET_N" class="Default">
-      <node ref="TP43" pin="1" pinfunction="1_1" pintype="passive"/>
+    <net code="47" name="OPT_RESET_N" class="Default">
       <node ref="U35" pin="7" pinfunction="NRESET_7" pintype="input"/>
       <node ref="U37" pin="11" pinfunction="4Y_11" pintype="tri_state"/>
     </net>
-    <net code="47" name="OPT_SCLK" class="Default">
+    <net code="48" name="OPT_SCLK" class="Default">
       <node ref="R133" pin="2" pintype="passive"/>
       <node ref="U35" pin="10" pinfunction="SCLK_10" pintype="input"/>
       <node ref="U37" pin="6" pinfunction="2Y_6" pintype="tri_state"/>
     </net>
-    <net code="48" name="OPT_VDDPIX" class="Default">
+    <net code="49" name="OPT_VDDPIX" class="Default">
       <node ref="C84" pin="1" pintype="passive"/>
       <node ref="C85" pin="1" pintype="passive"/>
-      <node ref="TP42" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U35" pin="3" pinfunction="VDDPIX_OUT_3" pintype="power_out"/>
     </net>
-    <net code="49" name="PAW_MOTION_N" class="Default">
+    <net code="50" name="PAW_MOTION_N" class="Default">
       <node ref="R136" pin="2" pintype="passive"/>
-      <node ref="TP26" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="35" pinfunction="IO39_35" pintype="bidirectional"/>
       <node ref="U35" pin="9" pinfunction="MOTION_9" pintype="output"/>
     </net>
-    <net code="50" name="PWR_5V" class="Power">
+    <net code="51" name="PWR_5V" class="Power">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C73" pin="1" pintype="passive"/>
       <node ref="J103" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
@@ -6572,37 +5584,38 @@
       <node ref="U2" pin="3" pinfunction="EN_3" pintype="input"/>
       <node ref="U33" pin="1" pinfunction="IN_1" pintype="power_in"/>
     </net>
-    <net code="51" name="RGB_5V" class="Default">
+    <net code="52" name="RGB_5V" class="Default">
+      <node ref="C63" pin="1" pintype="passive"/>
       <node ref="C74" pin="1" pintype="passive"/>
       <node ref="C75" pin="1" pintype="passive"/>
       <node ref="C76" pin="1" pintype="passive"/>
       <node ref="D5" pin="2" pinfunction="VDD_2" pintype="power_in"/>
       <node ref="R130" pin="1" pintype="passive"/>
       <node ref="TP38" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U28" pin="1" pinfunction="IN_1" pintype="power_in"/>
       <node ref="U33" pin="5" pinfunction="OUT_5" pintype="power_out"/>
       <node ref="U34" pin="5" pinfunction="VCC_5" pintype="power_in"/>
     </net>
-    <net code="52" name="RGB_BUFFER_OUT" class="Default">
+    <net code="53" name="RGB_BUFFER_OUT" class="Default">
       <node ref="R128" pin="1" pintype="passive"/>
       <node ref="U34" pin="4" pinfunction="Y_4" pintype="output"/>
     </net>
-    <net code="53" name="RGB_DATA" class="Default">
+    <net code="54" name="RGB_DATA" class="Default">
       <node ref="R78" pin="1" pintype="passive"/>
-      <node ref="TP30" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="41" pinfunction="IO45_41" pintype="bidirectional"/>
       <node ref="U34" pin="2" pinfunction="A_2" pintype="input"/>
     </net>
-    <net code="54" name="RGB_DIN" class="Default">
+    <net code="55" name="RGB_DIN" class="Default">
       <node ref="D5" pin="1" pinfunction="DIN_1" pintype="input"/>
       <node ref="R128" pin="2" pintype="passive"/>
       <node ref="R129" pin="1" pintype="passive"/>
       <node ref="TP39" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="55" name="SENS_REQ" class="Default">
+    <net code="56" name="SENS_REQ" class="Default">
       <node ref="J101" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
       <node ref="U3" pin="22" pinfunction="IO18_22" pintype="bidirectional"/>
     </net>
-    <net code="56" name="SPI_MISO" class="Default">
+    <net code="57" name="SPI_MISO" class="Default">
       <node ref="J101" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="U25" pin="3" pinfunction="1Y_3" pintype="tri_state"/>
       <node ref="U25" pin="6" pinfunction="2Y_6" pintype="tri_state"/>
@@ -6610,7 +5623,7 @@
       <node ref="U32" pin="1" pinfunction="AP_SDO_1" pintype="tri_state"/>
       <node ref="U37" pin="8" pinfunction="3Y_8" pintype="tri_state"/>
     </net>
-    <net code="57" name="SPI_MOSI" class="Default">
+    <net code="58" name="SPI_MOSI" class="Default">
       <node ref="J101" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="J8" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="U29" pin="5" pinfunction="2A_5" pintype="input"/>
@@ -6618,7 +5631,7 @@
       <node ref="U32" pin="14" pinfunction="AP_SDI_14" pintype="input"/>
       <node ref="U37" pin="2" pinfunction="1A_2" pintype="input"/>
     </net>
-    <net code="58" name="SPI_SCLK" class="Default">
+    <net code="59" name="SPI_SCLK" class="Default">
       <node ref="J101" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="J8" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="U29" pin="2" pinfunction="1A_2" pintype="input"/>
@@ -6626,41 +5639,33 @@
       <node ref="U32" pin="13" pinfunction="AP_SCLK_13" pintype="input"/>
       <node ref="U37" pin="5" pinfunction="2A_5" pintype="input"/>
     </net>
-    <net code="59" name="UART_RX" class="Default">
-      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U3" pin="40" pinfunction="RXD0_40" pintype="bidirectional"/>
-    </net>
-    <net code="60" name="UART_TX" class="Default">
-      <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U3" pin="39" pinfunction="TXD0_39" pintype="bidirectional"/>
-    </net>
-    <net code="61" name="USB_CC1" class="Default">
+    <net code="60" name="USB_CC1" class="Default">
       <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
       <node ref="U11" pin="1" pinfunction="CC1_1" pintype="bidirectional"/>
       <node ref="U20" pin="1" pinfunction="IO1_1" pintype="passive"/>
     </net>
-    <net code="62" name="USB_CC2" class="Default">
+    <net code="61" name="USB_CC2" class="Default">
       <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
       <node ref="U11" pin="2" pinfunction="CC2_2" pintype="bidirectional"/>
       <node ref="U20" pin="2" pinfunction="IO2_2" pintype="passive"/>
     </net>
-    <net code="63" name="USB_DM" class="USB">
+    <net code="62" name="USB_DM" class="USB">
       <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="D-_2" pintype="passive"/>
     </net>
-    <net code="64" name="USB_DP" class="USB">
+    <net code="63" name="USB_DP" class="USB">
       <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="D+_1" pintype="passive"/>
     </net>
-    <net code="65" name="VBUS_PRESENT_N" class="Default">
+    <net code="64" name="VBUS_PRESENT_N" class="Default">
       <node ref="J101" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="IO1_5" pintype="bidirectional"/>
     </net>
-    <net code="66" name="VBUS_USB" class="Power">
+    <net code="65" name="VBUS_USB" class="Power">
       <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
       <node ref="J1" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
@@ -6668,110 +5673,113 @@
       <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
       <node ref="J103" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R25" pin="1" pintype="passive"/>
-      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="TP10" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="67" name="WHEEL_PWM_A" class="Default">
+    <net code="66" name="WHEEL_PWM_A" class="Default">
       <node ref="J8" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
-      <node ref="TP29" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="38" pinfunction="IO42_38" pintype="bidirectional"/>
     </net>
-    <net code="68" name="WHEEL_PWM_B" class="Default">
+    <net code="67" name="WHEEL_PWM_B" class="Default">
       <node ref="J8" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
-      <node ref="TP32" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="27" pinfunction="IO47_27" pintype="bidirectional"/>
     </net>
-    <net code="69" name="WHEEL_PWM_C" class="Default">
+    <net code="68" name="WHEEL_PWM_C" class="Default">
       <node ref="J8" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
-      <node ref="TP33" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="30" pinfunction="IO48_30" pintype="bidirectional"/>
     </net>
-    <net code="70" name="WHEEL_RUN_REQ" class="Default">
+    <net code="69" name="WHEEL_RUN_REQ" class="Default">
       <node ref="J8" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
       <node ref="R77" pin="1" pintype="passive"/>
-      <node ref="TP17" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="7" pinfunction="IO3_7" pintype="bidirectional"/>
     </net>
-    <net code="71" name="unconnected-(D5-DOUT-Pad3)" class="Default">
+    <net code="70" name="unconnected-(D5-DOUT-Pad3)" class="Default">
       <node ref="D5" pin="3" pinfunction="DOUT_3" pintype="output+no_connect"/>
     </net>
-    <net code="72" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+    <net code="71" name="unconnected-(J1-SBU1-PadA8)" class="Default">
       <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="73" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+    <net code="72" name="unconnected-(J1-SBU2-PadB8)" class="Default">
       <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="74" name="unconnected-(U3-IO4-Pad8)" class="Default">
+    <net code="73" name="unconnected-(U3-IO4-Pad8)" class="Default">
       <node ref="U3" pin="8" pinfunction="IO4_8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="75" name="unconnected-(U3-IO5-Pad9)" class="Default">
+    <net code="74" name="unconnected-(U3-IO5-Pad9)" class="Default">
       <node ref="U3" pin="9" pinfunction="IO5_9" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="76" name="unconnected-(U3-IO6-Pad10)" class="Default">
+    <net code="75" name="unconnected-(U3-IO6-Pad10)" class="Default">
       <node ref="U3" pin="10" pinfunction="IO6_10" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="77" name="unconnected-(U3-IO7-Pad11)" class="Default">
+    <net code="76" name="unconnected-(U3-IO7-Pad11)" class="Default">
       <node ref="U3" pin="11" pinfunction="IO7_11" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="78" name="unconnected-(U3-IO8-Pad12)" class="Default">
+    <net code="77" name="unconnected-(U3-IO8-Pad12)" class="Default">
       <node ref="U3" pin="12" pinfunction="IO8_12" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="79" name="unconnected-(U3-IO9-Pad13)" class="Default">
+    <net code="78" name="unconnected-(U3-IO9-Pad13)" class="Default">
       <node ref="U3" pin="13" pinfunction="IO9_13" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="80" name="unconnected-(U11-ADDR-Pad5)" class="Default">
+    <net code="79" name="unconnected-(U3-RXD0-Pad40)" class="Default">
+      <node ref="U3" pin="40" pinfunction="RXD0_40" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U3-TXD0-Pad39)" class="Default">
+      <node ref="U3" pin="39" pinfunction="TXD0_39" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U11-ADDR-Pad5)" class="Default">
       <node ref="U11" pin="5" pinfunction="ADDR_5" pintype="input+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(U11-ID-Pad9)" class="Default">
+    <net code="82" name="unconnected-(U11-ID-Pad9)" class="Default">
       <node ref="U11" pin="9" pinfunction="ID_9" pintype="open_collector+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(U11-OUT3-Pad6)" class="Default">
+    <net code="83" name="unconnected-(U11-OUT3-Pad6)" class="Default">
       <node ref="U11" pin="6" pinfunction="OUT3_6" pintype="open_collector+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(U28-NC-Pad4)" class="Default">
+    <net code="84" name="unconnected-(U28-NC-Pad4)" class="Default">
       <node ref="U28" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="84" name="unconnected-(U29-4Y-Pad11)" class="Default">
+    <net code="85" name="unconnected-(U29-4Y-Pad11)" class="Default">
       <node ref="U29" pin="11" pinfunction="4Y_11" pintype="tri_state+no_connect"/>
     </net>
-    <net code="85" name="unconnected-(U32-RESV-Pad2)" class="Default">
+    <net code="86" name="unconnected-(U32-RESV-Pad2)" class="Default">
       <node ref="U32" pin="2" pinfunction="RESV_2" pintype="passive+no_connect"/>
     </net>
-    <net code="86" name="unconnected-(U32-RESV-Pad3)" class="Default">
+    <net code="87" name="unconnected-(U32-RESV-Pad3)" class="Default">
       <node ref="U32" pin="3" pinfunction="RESV_3" pintype="passive+no_connect"/>
     </net>
-    <net code="87" name="unconnected-(U32-RESV-Pad10)" class="Default">
+    <net code="88" name="unconnected-(U32-RESV-Pad10)" class="Default">
       <node ref="U32" pin="10" pinfunction="RESV_10" pintype="passive+no_connect"/>
     </net>
-    <net code="88" name="unconnected-(U32-RESV-Pad11)" class="Default">
+    <net code="89" name="unconnected-(U32-RESV-Pad11)" class="Default">
       <node ref="U32" pin="11" pinfunction="RESV_11" pintype="passive+no_connect"/>
     </net>
-    <net code="89" name="unconnected-(U33-NC-Pad4)" class="Default">
+    <net code="90" name="unconnected-(U33-NC-Pad4)" class="Default">
       <node ref="U33" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="90" name="unconnected-(U34-NC-Pad1)" class="Default">
+    <net code="91" name="unconnected-(U34-NC-Pad1)" class="Default">
       <node ref="U34" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="91" name="unconnected-(U35-NC-Pad1)" class="Default">
+    <net code="92" name="unconnected-(U35-NC-Pad1)" class="Default">
       <node ref="U35" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="92" name="unconnected-(U35-NC-Pad2)" class="Default">
+    <net code="93" name="unconnected-(U35-NC-Pad2)" class="Default">
       <node ref="U35" pin="2" pinfunction="NC_2" pintype="no_connect"/>
     </net>
-    <net code="93" name="unconnected-(U35-NC-Pad6)" class="Default">
+    <net code="94" name="unconnected-(U35-NC-Pad6)" class="Default">
       <node ref="U35" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
-    <net code="94" name="unconnected-(U35-NC-Pad14)" class="Default">
+    <net code="95" name="unconnected-(U35-NC-Pad14)" class="Default">
       <node ref="U35" pin="14" pinfunction="NC_14" pintype="no_connect"/>
     </net>
-    <net code="95" name="unconnected-(U35-NC-Pad16)" class="Default">
+    <net code="96" name="unconnected-(U35-NC-Pad16)" class="Default">
       <node ref="U35" pin="16" pinfunction="NC_16" pintype="no_connect"/>
     </net>
-    <net code="96" name="unconnected-(U36-NC-Pad4)" class="Default">
+    <net code="97" name="unconnected-(U36-NC-Pad4)" class="Default">
       <node ref="U36" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="97" name="unconnected-(U38-QOD-Pad5)" class="Default">
+    <net code="98" name="unconnected-(U38-QOD-Pad5)" class="Default">
       <node ref="U38" pin="5" pinfunction="QOD_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U42-NC-Pad4)" class="Default">
+      <node ref="U42" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
   </nets>
 </export>

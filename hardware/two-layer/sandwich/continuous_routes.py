@@ -12,13 +12,13 @@ from shapely.geometry import box
 from export_quote import polygons
 
 
-def board_interior(b,margin=.4):
+def board_interior(b,margin=.601):
  outline=p.SHAPE_POLY_SET()
  assert b.GetBoardPolygonOutlines(outline,False)
  return unary_union(polygons(outline)).buffer(-margin)
 
 def continuous(b,net,start,end,layer,width=.15):
- avoid=obstacles(b,net,layer).buffer(width/2+.151);interior=board_interior(b);free=interior.difference(avoid)
+ avoid=obstacles(b,net,layer).buffer(width/2+.151);interior=board_interior(b,.501+width/2);free=interior.difference(avoid)
  regions=list(free.geoms) if hasattr(free,'geoms') else [free]
  region=next((q for q in regions if q.covers(Point(start)) and q.covers(Point(end))),None)
  if region is None:return None

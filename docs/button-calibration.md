@@ -2,8 +2,9 @@
 
 This is the bring-up contract, not implemented firmware. Magnets are secured
 to their moving levers; their exact field strengths do not need to match.
-Plastic mechanisms supply the click and return. Keep the Hall IC positions
-and physical end stops. Optical
+Plastic mechanisms supply the click and return. Align the three moving magnets
+with the revised [Upper Hall locations](../hardware/two-layer/sandwich/HALL_PLACEMENT.md)
+and retain repeatable physical end stops. Optical
 height and wheel encoder alignment are independent mechanical requirements.
 
 ## Capture and conversion

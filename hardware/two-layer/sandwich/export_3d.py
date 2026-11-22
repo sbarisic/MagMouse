@@ -40,6 +40,7 @@ def main(names=None):
         sources = {name: sources[name] for name in names}
         if (OUT / 'manifest.json').exists():
             report = json.loads((OUT / 'manifest.json').read_text())
+            report.pop('Encoder', None)
     for name, source in sources.items():
         before = sha(source)
         board = p.LoadBoard(str(source))

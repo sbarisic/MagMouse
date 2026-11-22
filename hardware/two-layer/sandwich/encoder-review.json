@@ -1,0 +1,267 @@
+{
+  "motor": "TSL GB1806 with integrated AS5048A",
+  "boards": {
+    "Lower": {
+      "sha256": "88876b389b2005abbfd40bf2f942ae58d854c5ba931ec2528e12b0156908f6a0",
+      "removed_bottom_test_pads": [
+        "TP1",
+        "TP10",
+        "TP16",
+        "TP17",
+        "TP18",
+        "TP19",
+        "TP20",
+        "TP21",
+        "TP22",
+        "TP23",
+        "TP24",
+        "TP25",
+        "TP26",
+        "TP27",
+        "TP28",
+        "TP29",
+        "TP30",
+        "TP31",
+        "TP32",
+        "TP33",
+        "TP4",
+        "TP40",
+        "TP41",
+        "TP42",
+        "TP43",
+        "TP5",
+        "TP6",
+        "TP7",
+        "TP8",
+        "TP9"
+      ],
+      "remaining_bottom_test_pads": 0,
+      "minimum_component_gap_mm": 1.9999999999999996,
+      "erc": 0,
+      "drc": 0,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "rules_unchanged": true,
+      "geometry_unchanged": true,
+      "via_hole_smd_overlaps": 0,
+      "non_ground_planar_trace_findings": 0
+    },
+    "Upper": {
+      "sha256": "3f799cc3ea051b6f456c81369d51269c021ac2552ed1fa4bfaf85bd1a7a7a131",
+      "removed_bottom_test_pads": [
+        "TP11",
+        "TP12",
+        "TP13",
+        "TP14",
+        "TP15",
+        "TP2",
+        "TP3"
+      ],
+      "remaining_bottom_test_pads": 0,
+      "minimum_component_gap_mm": 2.025,
+      "erc": 0,
+      "drc": 0,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "rules_unchanged": true,
+      "geometry_unchanged": true,
+      "via_hole_smd_overlaps": 0,
+      "non_ground_planar_trace_findings": 0
+    },
+    "Wheel": {
+      "sha256": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973",
+      "removed_bottom_test_pads": [],
+      "remaining_bottom_test_pads": 0,
+      "minimum_component_gap_mm": 2.0099999999999976,
+      "erc": 0,
+      "drc": 0,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "rules_unchanged": true,
+      "geometry_unchanged": true,
+      "via_hole_smd_overlaps": 0,
+      "non_ground_planar_trace_findings": 0
+    }
+  },
+  "hardware_validated": false,
+  "usb_return": {
+    "coverage": {
+      "MCU_USB_DM F.Cu": {
+        "trace_mm": 4.727,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "MCU_USB_DP F.Cu": {
+        "trace_mm": 3.8571,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DM F.Cu": {
+        "trace_mm": 19.9985,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DM B.Cu": {
+        "trace_mm": 65.3247,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DP F.Cu": {
+        "trace_mm": 21.919,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      },
+      "USB_DP B.Cu": {
+        "trace_mm": 62.3065,
+        "unreferenced_centerline_outside_vias_mm": 0.0,
+        "unreferenced_area_outside_vias_mm2": 0.0
+      }
+    },
+    "via_coordinates_mm": {
+      "USB_DP": [
+        [
+          36.95,
+          21.55
+        ],
+        [
+          35.85,
+          71.26
+        ]
+      ],
+      "USB_DM": [
+        [
+          36.95,
+          20.875
+        ],
+        [
+          35.85,
+          71.94
+        ]
+      ]
+    },
+    "paired_via_spacing_mm": [
+      0.6750000000000007,
+      0.6799999999999926
+    ],
+    "connector_paths": {
+      "J1.A6 to R6.2": {
+        "whole_track_length_mm": 81.499,
+        "layer_changes": 2
+      },
+      "J1.B6 to R6.2": {
+        "whole_track_length_mm": 80.28,
+        "layer_changes": 2
+      },
+      "J1.A7 to R5.2": {
+        "whole_track_length_mm": 81.2,
+        "layer_changes": 2
+      },
+      "J1.B7 to R5.2": {
+        "whole_track_length_mm": 80.559,
+        "layer_changes": 2
+      }
+    }
+  },
+  "local_decoupling": [
+    {
+      "connection": "U42.1 to C55.1",
+      "pad_center_distance_mm": 3.1403871178566463,
+      "whole_segment_sum_mm": 2.8033927559419904,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "contact_graph_resistance_mohm": 11.376537317476808,
+      "route_objects": [
+        {
+          "start_mm": [
+            9.338849,
+            32.557386
+          ],
+          "end_mm": [
+            10.413291,
+            34.02003
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        },
+        {
+          "start_mm": [
+            10.185203,
+            34.976837
+          ],
+          "end_mm": [
+            10.408816,
+            34.013938
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        }
+      ],
+      "length_model": "Sum of selected contact-graph objects; excludes travel within pads and overlapping copper. Not an exact centreline length."
+    },
+    {
+      "connection": "U42.5 to C64.1",
+      "pad_center_distance_mm": 3.8502637896642846,
+      "whole_segment_sum_mm": 2.350126310507161,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "contact_graph_resistance_mohm": 9.537122337067938,
+      "route_objects": [
+        {
+          "start_mm": [
+            7.271942,
+            32.698718
+          ],
+          "end_mm": [
+            5.794779,
+            34.526581
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        }
+      ],
+      "length_model": "Sum of selected contact-graph objects; excludes travel within pads and overlapping copper. Not an exact centreline length."
+    },
+    {
+      "connection": "U29.14 to C105.1",
+      "pad_center_distance_mm": 3.348063806142291,
+      "whole_segment_sum_mm": 2.8663938751387605,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "contact_graph_resistance_mohm": 4.985230355710637,
+      "route_objects": [
+        {
+          "start_mm": [
+            20.8,
+            29.3375
+          ],
+          "end_mm": [
+            18.081772,
+            28.427857
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.35
+        }
+      ],
+      "length_model": "Sum of selected contact-graph objects; excludes travel within pads and overlapping copper. Not an exact centreline length."
+    }
+  ],
+  "top_test_pads": [
+    "Lower.TP38",
+    "Lower.TP39",
+    "Wheel.TP34",
+    "Wheel.TP35",
+    "Wheel.TP36",
+    "Wheel.TP37"
+  ],
+  "panel_designs": 3,
+  "standalone_encoder_removed": true,
+  "encoder_branch_budget_mA": 25,
+  "encoder_supply": "PWR_5V -> U33/RGB_5V -> U28/ENC_5V; U42/ENC_3V3 for U29",
+  "limits": "CAD and datasheet review only; module supply, shutdown, signal integrity, angle timing and mechanical fit require bench validation."
+}

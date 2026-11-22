@@ -1,4 +1,4 @@
-"""Validate all four boards and export a reproducible supplier-quote package.
+"""Validate all three boards and export a reproducible supplier-quote package.
 SPDX-License-Identifier: GPL-3.0-or-later
 """
 from pathlib import Path
@@ -14,7 +14,7 @@ from kicad_output import run as run_atomic
 from shapely.geometry import Point
 
 BOARDS={'Lower':HERE/'lower/Lower.kicad_pcb','Upper':HERE/'upper/Upper.kicad_pcb',
-        'Wheel':HERE/'wheel/Wheel.kicad_pcb','Encoder':HERE.parent/'encoder/Encoder.kicad_pcb'}
+        'Wheel':HERE/'wheel/Wheel.kicad_pcb'}
 OUT=HERE/'quote-package'
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def run(*args):run_atomic(CLI,args,check=True)
@@ -24,6 +24,7 @@ def write_csv(path,fields,rows):
         writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(rows)
     temporary.replace(path)
 def main():
+    from routing_corners import corners, staircases
     OUT.mkdir(exist_ok=True);review=HERE/'routing-review';review.mkdir(exist_ok=True)
     reference,reference_pins=export(HERE/'main-circuit/Main.kicad_sch',review/'Main-reference.xml')
     ownership=json.loads((HERE/'partition.json').read_text())['component_ownership']
@@ -43,9 +44,11 @@ def main():
                 assert comps[ref].findtext('value')==VALUE_CHANGES.get(name,{}).get(ref,reference[ref].findtext('value'))
                 assert {k:v for k,v in pins.items() if k[0]==ref}=={k:v for k,v in reference_pins.items() if k[0]==ref},ref
         board=p.LoadBoard(str(path));assert board.GetCopperLayerCount()==2
+        assert not corners(board),name+' sharp routing bends'
+        assert not staircases(board),name+' repeated routing staircases'
         outline=p.SHAPE_POLY_SET();assert board.GetBoardPolygonOutlines(outline,False)
         dimensions=tuple(p.ToMM(outline.BBox().GetSize()))
-        assert dimensions==({'Lower':(70.,100.),'Upper':(70.,100.),'Wheel':(70.,67.),'Encoder':(14.,18.)}[name])
+        assert dimensions==({'Lower':(70.,100.),'Upper':(70.,100.),'Wheel':(70.,67.)}[name])
         run('pcb','export','gerbers','-l','F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts','--subtract-soldermask','-o',str(folder/'gerbers')+'/',path)
         run('pcb','export','drill','--format','excellon','--excellon-units','mm','--excellon-separate-th','--excellon-oval-format','route','--generate-report','-o',str(folder/'gerbers')+'/',path)
         groups=collections.defaultdict(list);positions=[];manual=[]

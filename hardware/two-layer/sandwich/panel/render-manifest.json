@@ -1,0 +1,17 @@
+{
+  "source_sha256": "a208857ee61916528f1de905d55deb3ebf0230da545a0974a8b3d6443ea16825",
+  "views": {
+    "top": {
+      "layers": "F.Cu,F.SilkS,Edge.Cuts",
+      "mirrored": false,
+      "svg_sha256": "626c7e5e283dd16d7a07475da73c6ad9c6b90b0cb26fd3830c0953667b003218",
+      "png_sha256": "c5f5da3c2109060136be2ee1e8c015960b25a0820f0a658022401b1ca44c9818"
+    },
+    "bottom": {
+      "layers": "B.Cu,B.SilkS,Edge.Cuts",
+      "mirrored": true,
+      "svg_sha256": "5be95c0afff0e594bd98bc80e7d97f7a2a13b93507075ef89819cb797a0c268a",
+      "png_sha256": "e72034bf1f289c282b1f2e314b27b59924043559550929f52e32137c9634b650"
+    }
+  }
+}

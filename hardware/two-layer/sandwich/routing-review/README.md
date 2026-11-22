@@ -1,5 +1,10 @@
 # Split Main routing review — 2026-11-04
 
+The integrated-encoder revision removes the Encoder board and bottom test pads.
+See [current encoder design](../ENCODER_INTEGRATION.md) and
+[current acceptance checks](../encoder-review.json). Earlier measurements below
+describe their recorded source revisions.
+
 The [trace-loop audit](trace-loop-review.json) compares all four boards before
 and after the November 20 cleanup. The [before/after view](wheel-lower-trace-cleanup.png)
 uses the two panel Gerber archives. Run `../review_trace_loops.py` with KiCad
@@ -38,7 +43,8 @@ stitched on both faces, and unused fanout vias were removed.
 The later assembly-spacing revision moves components to obtain at least 2 mm
 between separate body-and-land envelopes. `../assembly-spacing-review.json`
 records the checked gaps, source hashes, moved origins and rotations. USB,
-optical, Hall, antenna and mounting datums remain fixed. The matching five-pad
+optical, antenna and mounting datums remain fixed. The later Hall relocation is
+recorded in [Hall placement](../HALL_PLACEMENT.md). The matching five-pad
 stack power arrays move from y = 11 to 12.25 mm. Both 19-wire pin maps remain.
 Encoder has two 4 mm upper chamfers; Lower has the specified 17.26 × 8.60 mm
 optical opening. The outer Main dimensions and 5 mm antenna reserves remain.

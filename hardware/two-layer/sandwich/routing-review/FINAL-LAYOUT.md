@@ -1,5 +1,10 @@
 # Lower, Upper and Wheel routing review
 
+The integrated-encoder revision removes the Encoder board and bottom test pads.
+See [current encoder design](../ENCODER_INTEGRATION.md) and
+[current acceptance checks](../encoder-review.json). Earlier measurements below
+describe their recorded source revisions.
+
 Baseline commit `3212e2d` was pushed before this revision. The Lower layout
 moves C77, R131 and R28. Upper moves R37, R45, R57 and R70. Wheel groups the
 ADC spare-input resistors R105 and R106 at the front. Their signal routes total

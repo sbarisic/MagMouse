@@ -39,7 +39,7 @@ def symbol(tree,ref):
 
 
 def disconnect(tree,position):
-    ends=set()
+    ends={position}
     for wire in list(s.allof(tree,'wire')):
         pts={tuple(map(float,n[1:])) for n in s.allof(s.get(wire,'pts'),'xy')}
         if position in pts:ends.update(pts);tree.remove(wire)

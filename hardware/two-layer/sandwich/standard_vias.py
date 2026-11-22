@@ -78,6 +78,11 @@ def obstacles(board,net,layer):
         if t.GetNetname()==net:continue
         if isinstance(t,p.PCB_VIA): result.append(Point(p.ToMM(t.GetPosition())).buffer(p.ToMM(t.GetWidth(layer))/2))
         elif t.GetLayer()==layer:result.append(LineString([p.ToMM(t.GetStart()),p.ToMM(t.GetEnd())]).buffer(p.ToMM(t.GetWidth())/2))
+        elif net not in ('GND','USB_DP','USB_DM','MCU_USB_DP','MCU_USB_DM') and t.GetNetname() in ('USB_DP','USB_DM','MCU_USB_DP','MCU_USB_DM'):
+            # Reserve opposite-layer ground under the full USB trace width.
+            # The router adds >=0.151 mm clearance; this extra 0.06 mm keeps
+            # the 0.20 mm zone clearance from cutting into the reference strip.
+            result.append(LineString([p.ToMM(t.GetStart()),p.ToMM(t.GetEnd())]).buffer(p.ToMM(t.GetWidth())/2+.06))
     for z in list(board.Zones())+[z for f in board.GetFootprints() for z in f.Zones()]:
         if z.GetIsRuleArea() and z.GetDoNotAllowTracks() and z.GetLayerSet().Contains(layer):result.extend(polygons(z.Outline()))
     return unary_union(result)

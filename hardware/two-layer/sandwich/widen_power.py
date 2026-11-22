@@ -19,7 +19,7 @@ def widen(name,changed_since=None):
         preserved={t.m_Uuid.AsString() for t in baseline.GetTracks()}
     outline=p.SHAPE_POLY_SET();assert board.GetBoardPolygonOutlines(outline,False)
     edge=unary_union(polygons(outline)).boundary
-    for net in ('VBUS_USB','PWR_5V','ACT_5V','+3V3','BUCK_SW','OPT_3V3','OPT_1V9','MA735_3V3','RGB_5V',
+    for net in ('VBUS_USB','PWR_5V','ACT_5V','+3V3','BUCK_SW','OPT_3V3','OPT_1V9','ENC_3V3','ENC_5V','RGB_5V',
                 'WHEEL_PHASE_A','WHEEL_PHASE_B','WHEEL_PHASE_C','BRAKE_DRAIN','DRV_AVDD','DRV_DVDD',
                 'WHEEL_BUCK_OUT','WHEEL_BUCK_SW','WHEEL_CP','WHEEL_CPH','WHEEL_CPL'):
         for layer in (p.F_Cu,p.B_Cu):

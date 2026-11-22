@@ -1,4 +1,4 @@
-"""Render all four current boards at one scale from their saved KiCad geometry."""
+"""Render all three current boards at one scale from their saved KiCad geometry."""
 from pathlib import Path
 import hashlib
 import html
@@ -12,12 +12,12 @@ ROOT=HERE.parents[2]
 sys.path.insert(0,str(ROOT/'build/two-layer/python'))
 sys.path.insert(0,str(ROOT/'hardware/common'))
 from board_geometry import polygons
+from kicad_output import write as write_atomic
 import resvg_py
 
 SPECS=[('Lower Main',HERE/'lower/Lower.kicad_pcb',8,'#59b4c5','Routed'),
        ('Upper Main',HERE/'upper/Upper.kicad_pcb',87,'#dd9d43','Routed'),
-       ('Wheel',HERE/'wheel/Wheel.kicad_pcb',166,'#82c993','Routed'),
-       ('Encoder',HERE.parent/'encoder/Encoder.kicad_pcb',245,'#bc9fe2','Routed')]
+       ('Wheel',HERE/'wheel/Wheel.kicad_pcb',166,'#82c993','Routed')]
 
 
 def coords(poly):
@@ -29,8 +29,8 @@ def contour(poly):
 
 
 def main(main_only=False,copper=False,side=None,ground_fills=False):
-    page_width=164 if main_only else 268
-    title='MagMouse — Main boards with passive plastic buttons' if main_only else 'MagMouse — all four boards'
+    page_width=164 if main_only else 244
+    title='MagMouse — Main boards with passive plastic buttons' if main_only else 'MagMouse — all three boards'
     legend='front tracks in board colour; back tracks blue; ground fills hidden' if copper else 'component-side placement views; traces hidden'
     pad_layer=p.B_Cu if side=='bottom' else p.F_Cu
     layers=(p.B_Cu,p.F_Cu)
@@ -58,7 +58,7 @@ def main(main_only=False,copper=False,side=None,ground_fills=False):
         x0,y0=p.ToMM(bounds.GetPosition());width,height=p.ToMM(bounds.GetSize())
         board_shapes=polygons(outline)
         summary=HERE/'routing-review/summary.json'
-        checked=json.loads(summary.read_text()).get(['Lower','Upper','Wheel','Encoder'][index],{}) if summary.exists() else {}
+        checked=json.loads(summary.read_text()).get(['Lower','Upper','Wheel'][index],{}) if summary.exists() else {}
         status='Routed' if checked.get('sha256')==hashlib.sha256(before).hexdigest() else 'Routing update'
         svg += [f'<text x="{tx}" y="23" font-size="3.2">{name}</text>',
                 f'<text x="{tx}" y="28" font-size="2">{width:g} × {height:g} mm · {status}</text>',
@@ -133,9 +133,9 @@ def main(main_only=False,copper=False,side=None,ground_fills=False):
             f'<text x="{page_width-20}" y="144" text-anchor="middle" font-size="2">20 mm</text>','</svg>']
     stem=('main' if main_only else 'all')+('-routing' if copper else '-boards')
     out=HERE/(stem+(('-'+side) if side else '')+('-ground' if ground_fills else '')+'.svg')
-    out.write_text('\n'.join(svg),encoding='utf-8')
-    out.with_suffix('.png').write_bytes(resvg_py.svg_to_bytes(svg_path=str(out)))
-    out.with_suffix('.json').write_text(json.dumps(evidence,indent=2)+'\n')
+    write_atomic(out,'\n'.join(svg))
+    write_atomic(out.with_suffix('.png'),resvg_py.svg_to_bytes(svg_path=str(out)))
+    write_atomic(out.with_suffix('.json'),json.dumps(evidence,indent=2)+'\n')
     print(json.dumps({name:[v['width_mm'],v['height_mm']] for name,v in evidence.items()}))
 
 

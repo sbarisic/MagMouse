@@ -585,7 +585,7 @@
       (width 0)
       (type default))
     (uuid "8880775f-f565-55f0-ae5d-143b05537acd"))
-  (global_label "CS_MA735"
+  (global_label "CS_ENCODER"
     (shape bidirectional)
     (at 228.6 91.44 180)
     (effects
@@ -836,7 +836,7 @@
       (width 0)
       (type default))
     (uuid "4fb71329-8777-5910-992f-080fa7c4dec0"))
-  (global_label "CS_MA735"
+  (global_label "CS_ENCODER"
     (shape bidirectional)
     (at 325.12 76.2 180)
     (effects
@@ -1034,7 +1034,7 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Value" "100nF"
+    (property "Value" "1uF/50V"
       (at 242.76 133.08 0)
       (effects
         (font
@@ -1047,49 +1047,49 @@
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B105KBHNNN.do"
       (at 238.76 132.08 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Manufacturer" "YAGEO"
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 238.76 132.08 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "MPN" "CC0603KRX7R9BB104"
+    (property "MPN" "CL31B105KBHNNNE"
       (at 238.76 132.08 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "LCSC" "C14663"
+    (property "LCSC" ""
       (at 238.76 132.08 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "JLCPCB Part #" "C14663"
+    (property "JLCPCB Part #" ""
       (at 238.76 132.08 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Sourcing Status" "Catalog identity checked; capacitance under bias needs validation"
+    (property "Sourcing Status" "1 uF 50 V X7R 1206; assembly stock unverified"
       (at 238.76 132.08 0)
       (hide yes)
       (effects
         (font
           (size 1.0 1.0))
         (justify left)))
-    (property "Checked" "2026-09-09"
+    (property "Checked" "2026-11-22"
       (at 238.76 132.08 0)
       (hide yes)
       (effects
@@ -1108,22 +1108,6 @@
         (path "/426250dd-6ae7-5a98-8e38-90bc300c8140/6314463c-8d57-5fea-a888-921d0788386a"
           (reference "C55")
           (unit 1)))))
-  (wire
-    (pts
-      (xy 238.76 128.27)
-      (xy 238.76 123.19))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "de60b473-5fc4-5022-ade8-c4e870ce3d94"))
-  (global_label "ENC_3V3"
-    (shape bidirectional)
-    (at 238.76 123.19 90)
-    (effects
-      (font
-        (size 0.85 0.85))
-      (justify left))
-    (uuid "46fe1b7b-4881-5054-b4d9-00c148e6bfcc"))
   (wire
     (pts
       (xy 238.76 135.89)
@@ -1507,4 +1491,12 @@
       (font
         (size 1.2 1.2))
       (justify left top))
-    (uuid "50e1e6ab-2c75-531a-a304-c3f6027e6f4d")))
+    (uuid "50e1e6ab-2c75-531a-a304-c3f6027e6f4d"))
+  (global_label "ENC_5V"
+    (shape bidirectional)
+    (at 238.76 128.27 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "beaf155b-fe7c-57a6-aaa8-b7054dd3264b")))

@@ -1,5 +1,10 @@
 # Circuit correction review — 2026-11-05
 
+The integrated-encoder revision removes the Encoder board and bottom test pads.
+See [current encoder design](../ENCODER_INTEGRATION.md) and
+[current acceptance checks](../encoder-review.json). Earlier measurements below
+describe their recorded source revisions.
+
 This revision addresses optical isolation, motor undervoltage handling and
 six capacitor-placement findings. The active independent schematics are the
 electrical source. The combined migration schematic remains historical.

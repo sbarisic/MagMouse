@@ -1,8 +1,7 @@
 {
   "status": "Independent Lower/Upper schematics; fully routed two-layer prototype; quote package exported; physical and supplier acceptance pending",
   "source_placement_sha256": "8409ba354f256351a7f6ae7d5e3897e9345be9f27948c99535ff4d7b8af19223",
-  "current_main_sha256": "991611c7d10ef17bccaa74acd1ffe80b8f1ef1580623d36f9628d2a9b0ce972c",
-  "netlist_sha256": "a299f99e5b15f47977b2ed7a75954046d7670d1d03b6b4359055c8301b1d2f0f",
+  "netlist_sha256": "ba8c4e3375c0387b082df1d52c970610071fffb3d81bb167f0d1a1eb1dc1d95e",
   "component_ownership": {
     "C1": "Lower",
     "C2": "Lower",
@@ -29,12 +28,6 @@
     "R7": "Lower",
     "SW1": "Lower",
     "SW2": "Lower",
-    "TP4": "Lower",
-    "TP5": "Lower",
-    "TP6": "Lower",
-    "TP7": "Lower",
-    "TP8": "Lower",
-    "TP9": "Lower",
     "U3": "Lower",
     "C16": "Upper",
     "C17": "Upper",
@@ -115,15 +108,6 @@
     "D1": "Lower",
     "D2": "Upper",
     "R69": "Upper",
-    "TP1": "Lower",
-    "TP2": "Upper",
-    "TP3": "Upper",
-    "TP10": "Lower",
-    "TP11": "Upper",
-    "TP12": "Upper",
-    "TP13": "Upper",
-    "TP14": "Upper",
-    "TP15": "Upper",
     "R72": "Lower",
     "R73": "Lower",
     "R74": "Lower",
@@ -133,24 +117,6 @@
     "R78": "Lower",
     "R79": "Lower",
     "R80": "Lower",
-    "TP16": "Lower",
-    "TP17": "Lower",
-    "TP18": "Lower",
-    "TP19": "Lower",
-    "TP20": "Lower",
-    "TP21": "Lower",
-    "TP22": "Lower",
-    "TP23": "Lower",
-    "TP24": "Lower",
-    "TP25": "Lower",
-    "TP26": "Lower",
-    "TP27": "Lower",
-    "TP28": "Lower",
-    "TP29": "Lower",
-    "TP30": "Lower",
-    "TP31": "Lower",
-    "TP32": "Lower",
-    "TP33": "Lower",
     "C53": "Lower",
     "C55": "Lower",
     "R99": "Lower",
@@ -190,9 +156,6 @@
     "C84": "Lower",
     "C85": "Lower",
     "R132": "Lower",
-    "TP40": "Lower",
-    "TP41": "Lower",
-    "TP42": "Lower",
     "U36": "Lower",
     "U38": "Lower",
     "C80": "Lower",
@@ -203,7 +166,6 @@
     "R134": "Lower",
     "R135": "Lower",
     "R136": "Lower",
-    "TP43": "Lower",
     "U35": "Lower",
     "U37": "Lower",
     "U39": "Lower",
@@ -211,7 +173,9 @@
     "J10": "Upper",
     "R141": "Lower",
     "R142": "Lower",
-    "R143": "Lower"
+    "R143": "Lower",
+    "U42": "Lower",
+    "C105": "Lower"
   },
   "component_sheets": {
     "C1": "01_Power_USB",
@@ -239,12 +203,6 @@
     "R7": "02_MCU",
     "SW1": "02_MCU",
     "SW2": "02_MCU",
-    "TP4": "02_MCU",
-    "TP5": "02_MCU",
-    "TP6": "02_MCU",
-    "TP7": "02_MCU",
-    "TP8": "02_MCU",
-    "TP9": "02_MCU",
     "U3": "02_MCU",
     "C16": "04_Sensing",
     "C17": "04_Sensing",
@@ -325,15 +283,6 @@
     "D1": "08_Actuator_Rail",
     "D2": "08_Actuator_Rail",
     "R69": "08_Actuator_Rail",
-    "TP1": "08_Actuator_Rail",
-    "TP2": "08_Actuator_Rail",
-    "TP3": "08_Actuator_Rail",
-    "TP10": "08_Actuator_Rail",
-    "TP11": "08_Actuator_Rail",
-    "TP12": "08_Actuator_Rail",
-    "TP13": "08_Actuator_Rail",
-    "TP14": "08_Actuator_Rail",
-    "TP15": "08_Actuator_Rail",
     "R72": "09_Interface_Reservations",
     "R73": "09_Interface_Reservations",
     "R74": "09_Interface_Reservations",
@@ -343,24 +292,6 @@
     "R78": "09_Interface_Reservations",
     "R79": "09_Interface_Reservations",
     "R80": "09_Interface_Reservations",
-    "TP16": "09_Interface_Reservations",
-    "TP17": "09_Interface_Reservations",
-    "TP18": "09_Interface_Reservations",
-    "TP19": "09_Interface_Reservations",
-    "TP20": "09_Interface_Reservations",
-    "TP21": "09_Interface_Reservations",
-    "TP22": "09_Interface_Reservations",
-    "TP23": "09_Interface_Reservations",
-    "TP24": "09_Interface_Reservations",
-    "TP25": "09_Interface_Reservations",
-    "TP26": "09_Interface_Reservations",
-    "TP27": "09_Interface_Reservations",
-    "TP28": "09_Interface_Reservations",
-    "TP29": "09_Interface_Reservations",
-    "TP30": "09_Interface_Reservations",
-    "TP31": "09_Interface_Reservations",
-    "TP32": "09_Interface_Reservations",
-    "TP33": "09_Interface_Reservations",
     "C53": "11_Wheel_SPI",
     "C55": "11_Wheel_SPI",
     "R99": "11_Wheel_SPI",
@@ -400,9 +331,6 @@
     "C84": "16_Optical_Power",
     "C85": "16_Optical_Power",
     "R132": "16_Optical_Power",
-    "TP40": "16_Optical_Power",
-    "TP41": "16_Optical_Power",
-    "TP42": "16_Optical_Power",
     "U36": "16_Optical_Power",
     "U38": "16_Optical_Power",
     "C80": "17_Optical_Sensor",
@@ -413,7 +341,6 @@
     "R134": "17_Optical_Sensor",
     "R135": "17_Optical_Sensor",
     "R136": "17_Optical_Sensor",
-    "TP43": "17_Optical_Sensor",
     "U35": "17_Optical_Sensor",
     "U37": "17_Optical_Sensor",
     "U39": "17_Optical_Sensor",
@@ -421,47 +348,12 @@
     "J10": "18_Wheel_Harness",
     "R141": "18_Wheel_Harness",
     "R142": "18_Wheel_Harness",
-    "R143": "18_Wheel_Harness"
+    "R143": "18_Wheel_Harness",
+    "U42": "12_Wheel_Feedback",
+    "C105": "12_Wheel_Feedback"
   },
   "boundary_nets": {
     "+3V3": {
-      "Lower": [
-        "C2.1",
-        "C22.1",
-        "C23.1",
-        "C3.1",
-        "C5.1",
-        "C53.1",
-        "C6.1",
-        "C63.1",
-        "C70.1",
-        "C71.1",
-        "C72.1",
-        "C77.1",
-        "C78.1",
-        "J8.16",
-        "L1.2",
-        "R127.1",
-        "R26.1",
-        "R27.1",
-        "R3.1",
-        "R4.1",
-        "R7.1",
-        "R72.1",
-        "R73.1",
-        "R74.1",
-        "R75.1",
-        "R76.1",
-        "TP8.1",
-        "U11.12",
-        "U2.6",
-        "U25.14",
-        "U28.1",
-        "U3.3",
-        "U32.5",
-        "U32.8",
-        "U38.1"
-      ],
       "Upper": [
         "C16.1",
         "C17.1",
@@ -486,35 +378,68 @@
         "U7.1",
         "U8.1",
         "U9.1"
+      ],
+      "Lower": [
+        "C2.1",
+        "C22.1",
+        "C23.1",
+        "C3.1",
+        "C5.1",
+        "C53.1",
+        "C6.1",
+        "C70.1",
+        "C71.1",
+        "C72.1",
+        "C77.1",
+        "C78.1",
+        "J8.16",
+        "L1.2",
+        "R127.1",
+        "R26.1",
+        "R27.1",
+        "R3.1",
+        "R4.1",
+        "R7.1",
+        "R72.1",
+        "R73.1",
+        "R74.1",
+        "R75.1",
+        "R76.1",
+        "U11.12",
+        "U2.6",
+        "U25.14",
+        "U3.3",
+        "U32.5",
+        "U32.8",
+        "U38.1"
       ]
     },
     "ACT_DRIVE_EN": {
-      "Lower": [
-        "J8.13"
-      ],
       "Upper": [
         "D3.3",
         "R49.1",
-        "TP13.1",
         "U16.11"
+      ],
+      "Lower": [
+        "J8.13"
       ]
     },
     "ACT_HEARTBEAT": {
-      "Lower": [
-        "U3.21"
-      ],
       "Upper": [
         "R47.1",
         "U15.2"
+      ],
+      "Lower": [
+        "U3.21"
       ]
     },
     "ACT_REQ": {
-      "Lower": [
-        "U3.20"
-      ],
       "Upper": [
         "R48.1",
         "U16.2"
+      ],
+      "Lower": [
+        "U3.20"
       ]
     },
     "ADC_CS": {
@@ -549,6 +474,7 @@
     "GND": {
       "Lower": [
         "C1.2",
+        "C105.2",
         "C2.2",
         "C22.2",
         "C23.2",
@@ -605,7 +531,6 @@
         "R80.2",
         "SW1.2",
         "SW2.2",
-        "TP9.1",
         "U1.3",
         "U11.10",
         "U11.11",
@@ -657,7 +582,8 @@
         "U37.7",
         "U38.2",
         "U39.1",
-        "U39.3"
+        "U39.3",
+        "U42.2"
       ],
       "Upper": [
         "C16.2",
@@ -704,7 +630,6 @@
         "R68.2",
         "R69.2",
         "R70.2",
-        "TP15.1",
         "U10.17",
         "U10.2",
         "U10.3",
@@ -753,7 +678,6 @@
         "R28.2",
         "R3.2",
         "SW1.1",
-        "TP6.1",
         "U3.45"
       ],
       "Upper": [
@@ -775,31 +699,29 @@
         "C89.1",
         "R36.1",
         "R40.1",
-        "TP11.1",
-        "TP2.1",
         "U12.6",
         "U13.5"
       ]
     },
     "SENS_REQ": {
-      "Lower": [
-        "U3.22"
-      ],
       "Upper": [
         "R70.1",
         "U18.9"
+      ],
+      "Lower": [
+        "U3.22"
       ]
     },
     "SPI_MISO": {
+      "Upper": [
+        "U10.12"
+      ],
       "Lower": [
         "U25.3",
         "U25.6",
         "U3.17",
         "U32.1",
         "U37.8"
-      ],
-      "Upper": [
-        "U10.12"
       ]
     },
     "SPI_MOSI": {
@@ -827,31 +749,29 @@
       ]
     },
     "VBUS_PRESENT_N": {
-      "Lower": [
-        "U3.5"
-      ],
       "Upper": [
         "Q3.3",
         "R71.2"
+      ],
+      "Lower": [
+        "U3.5"
       ]
     },
     "VBUS_USB": {
-      "Lower": [
-        "D1.1",
-        "J1.A4",
-        "J1.A9",
-        "J1.B4",
-        "J1.B9",
-        "R25.1",
-        "TP1.1",
-        "TP10.1"
-      ],
       "Upper": [
         "C24.1",
         "R29.1",
         "R31.1",
         "R65.1",
         "U12.5"
+      ],
+      "Lower": [
+        "D1.1",
+        "J1.A4",
+        "J1.A9",
+        "J1.B4",
+        "J1.B9",
+        "R25.1"
       ]
     }
   },
@@ -997,30 +917,28 @@
       "height_mm": 100,
       "front_edge_width_mm": 38.5,
       "outline_matches_scaled_original": true,
-      "original_footprints": 122,
-      "added_footprints": 6,
       "unconnected_items": 0,
       "drc_findings": {},
-      "board_sha256": "56eab133684987761f44f6f9bd5e2b1ee5f68dcf32f885bb96677f84ba207fc9",
+      "board_sha256": "a5a1cf0f578c752471d29d682a1b64ffd1c41d78e1e76f1689c9927ddd994b1b",
       "antenna_body_to_outline_mm": 0.4321,
       "minimum_new_wire_pad_to_outline_mm": 4.0504,
       "mount_support_envelopes_inside_outline": true,
-      "outline_area_mm2": 5991.7532
+      "outline_area_mm2": 5991.7532,
+      "current_footprints": 100
     },
     "Upper": {
       "width_mm": 70,
       "height_mm": 100,
       "front_edge_width_mm": 38.5,
       "outline_matches_scaled_original": true,
-      "original_footprints": 86,
-      "added_footprints": 6,
       "unconnected_items": 0,
       "drc_findings": {},
-      "board_sha256": "d4d27bc7af9d56e48d121891a64a06dc27e1a87a6be7cdbb890ead8d87dfc342",
+      "board_sha256": "f809e155ad34ff3849884e1da252ae1e8c3ff635354883f1247af5382e0c7ec0",
       "antenna_body_to_outline_mm": 0.4321,
       "minimum_new_wire_pad_to_outline_mm": 4.0504,
       "mount_support_envelopes_inside_outline": true,
-      "outline_area_mm2": 5991.7532
+      "outline_area_mm2": 5991.7532,
+      "current_footprints": 85
     }
   },
   "removed_button_actuator_components": [
@@ -1071,12 +989,31 @@
     104.0
   ],
   "validation": {
-    "all_208_retained_components_present_once": true,
-    "component_and_pad_net_identity_except_revised_J8_and_passive_button_pins": true,
     "all_boundary_nets_have_wire_assignments": true,
     "all_19_saved_pad_pairs_match_net_and_xy": true,
     "both_outlines_match_70x100_taper": true,
     "split_schematic_parity_checked": true,
-    "both_boards_two_layers_and_fully_routed": true
+    "both_boards_two_layers_and_fully_routed": true,
+    "owned_reference_components": 173,
+    "component_and_pad_net_identity_with_documented_circuit_and_encoder_revisions": true
+  },
+  "reference_schematic_sha256": {
+    "01_Power_USB.kicad_sch": "dd2a60f76b7c6885c130bb47e31fdfd1ae8d9e18ac81250127c2e18a08345caf",
+    "02_MCU.kicad_sch": "43ae70d497344dad3ab9d4e98a8023a4399fb242360ba1e7666b18e49f6f8566",
+    "03_Buttons.kicad_sch": "73d261b2163f3ab25ba3fd44328cfb6823cb0c2f307568ee551d4c49015972a6",
+    "04_Sensing.kicad_sch": "6b4c2b36ad24448cb2be916c98f738f248471b9f29863fd5b582a59556184e73",
+    "05_Protected_Power.kicad_sch": "5f974ac0a49bdd5d4db881a40db07d902dc2a8561a2071b5a7b5d6e8cb40511c",
+    "06_Actuator_Interlock.kicad_sch": "4531f0b0ddf98225dbe6cfbe94b658294cfb7e7eedd0f8d6e39236140b32c9c1",
+    "07_Power_Monitor.kicad_sch": "6ce8ce0dd9f058bf865e17bd20d94e6b9a05832baaf8aec7a3e85be17b4a6b93",
+    "08_Actuator_Rail.kicad_sch": "5d4c1496ab1ec077364d84f25e77079abdc1ff425b0dc4e1ba70fac5e9b5a7cb",
+    "09_Interface_Reservations.kicad_sch": "6caa7d999f778d8e05b94dd12fc69a780f833acc3d53abe226afbfced0d24b47",
+    "11_Wheel_SPI.kicad_sch": "7887f20a874907dc1e6dcab0456e6f72d146cb1bcb2f99971f5feee4bd48e13d",
+    "12_Wheel_Feedback.kicad_sch": "fd660ada7086ea975e12e860a799e07f6d2a092d2f66aee9510782247f979bd0",
+    "14_IMU.kicad_sch": "8e88ac68f0791d5fab4f23b96c30b62231e3e935f33c9bbd50ff5a087e286038",
+    "15_RGB_Status.kicad_sch": "a35ccbac154f266a6fd5a9b08547a9d6018aebaf0b21bab12a5822ae595da86b",
+    "16_Optical_Power.kicad_sch": "cb09f21c703d0a543430b03414b3e047861d670b0ed0629334df0746381d5b4a",
+    "17_Optical_Sensor.kicad_sch": "a63777a790c5451cc09b0adce64f283f960bac68ab99e239ca568bfc69b65d81",
+    "18_Wheel_Harness.kicad_sch": "695bf0dc60b5b3052849fd2635e32584da2596db735f9e9c22d63b5d6e8c3f8e",
+    "Main.kicad_sch": "62baf019e06ac37acc08ffa14124c8b391c1662413ed64c7e0a12797f9301ad0"
   }
 }

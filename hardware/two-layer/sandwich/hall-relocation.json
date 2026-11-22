@@ -1,0 +1,131 @@
+{
+  "reason": "Hall sensor centres placed inside the three user-marked regions on Upper.",
+  "coordinates": "Individual-board millimetres; component side, same orientation as the panel top view.",
+  "boards": {
+    "Lower": {
+      "before_sha256": "6a5b1cf64b4961f141543c3c761581f61ad2253ef9bdcd9131d4e57ac4ebdf56",
+      "placements": {},
+      "pads": {
+        "J103.3": {
+          "before": [
+            35.16,
+            12.25
+          ],
+          "after": [
+            43,
+            2
+          ],
+          "net": "PWR_5V"
+        }
+      }
+    },
+    "Upper": {
+      "before_sha256": "f62c8cabfc002ed89d9a860a473472bfa6a9f28781ebe082f633e29db3d56db6",
+      "placements": {
+        "U7": {
+          "before": [
+            16.0,
+            31.5,
+            0.0
+          ],
+          "after": [
+            17.5,
+            11,
+            0
+          ]
+        },
+        "U8": {
+          "before": [
+            23.0,
+            50.0,
+            0.0
+          ],
+          "after": [
+            35.5,
+            12.25,
+            180
+          ]
+        },
+        "U9": {
+          "before": [
+            53.0,
+            31.5,
+            0.0
+          ],
+          "after": [
+            54.25,
+            11.75,
+            0
+          ]
+        },
+        "C16": {
+          "before": [
+            11.25,
+            31.5,
+            0.0
+          ],
+          "after": [
+            12.85,
+            13.75,
+            -90
+          ]
+        },
+        "C17": {
+          "before": [
+            25.0,
+            54.0,
+            0.0
+          ],
+          "after": [
+            36.85,
+            16.25,
+            0
+          ]
+        },
+        "C18": {
+          "before": [
+            51.25,
+            27.5,
+            0.0
+          ],
+          "after": [
+            50.75,
+            12.5,
+            -90
+          ]
+        },
+        "C88": {
+          "before": [
+            37.1,
+            16.65,
+            0.0
+          ],
+          "after": [
+            31.8,
+            4,
+            0
+          ]
+        }
+      },
+      "pads": {
+        "J104.3": {
+          "before": [
+            35.16,
+            12.25
+          ],
+          "after": [
+            43,
+            2
+          ],
+          "net": "PWR_5V"
+        }
+      }
+    },
+    "Wheel": {
+      "before_sha256": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973",
+      "placements": {},
+      "pads": {}
+    }
+  },
+  "power_pad_note": "Move J103/J104 pad 3 together to free the middle Hall location; pin number/net unchanged."
+}

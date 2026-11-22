@@ -12,7 +12,7 @@ Manufacturer datasheets take precedence over brainstorming estimates.
 | ADC | [TI ADS7038](https://www.ti.com/product/ADS7038) |
 | Hall sensor | [TI TMAG5253](https://www.ti.com/product/TMAG5253) |
 | Wheel driver | [TI DRV8316](https://www.ti.com/product/DRV8316) |
-| Wheel motor | [Micronix TSL-GB1806](https://micronixmotor.com/shop/bldc-gimbal-motor-tsl-gb1806/) (confirm encoder-free variant) |
+| Wheel motor | [Micronix TSL-GB1806](https://micronixmotor.com/shop/bldc-gimbal-motor-tsl-gb1806/) (select integrated AS5048A variant) |
 | ESP32-S3 hardware | [Espressif schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html) |
 | Type-C background | [USB-IF Type-C release 2.0](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf) (historical; verify current requirements before sign-off) |
 | Hardware license | [CERN OHL](https://cern-ohl.web.cern.ch/home) |

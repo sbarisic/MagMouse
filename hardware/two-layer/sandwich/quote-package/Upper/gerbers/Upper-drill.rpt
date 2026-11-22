@@ -1,5 +1,5 @@
 Drill report for Upper.kicad_pcb
-Created on 2026-11-20T21:33:44
+Created on 2026-11-22T02:37:39
 
 Copper Layer Stackup:
     =============================================================
@@ -10,12 +10,12 @@ Copper Layer Stackup:
 Drill file 'Upper-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (143 holes))
+    T1  0.300mm  0.0118"  (152 holes))
     T2  0.800mm  0.0315"  (14 holes))
     T3  1.100mm  0.0433"  (2 holes))
     T4  1.200mm  0.0472"  (5 holes))
 
-    Total plated holes count 164
+    Total plated holes count 173
 
 
 Drill file 'Upper-NPTH.drl' contains

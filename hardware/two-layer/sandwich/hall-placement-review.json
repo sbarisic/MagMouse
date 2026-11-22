@@ -1,0 +1,916 @@
+{
+  "placements_mm": {
+    "Upper": {
+      "U7": [
+        17.5,
+        11,
+        0
+      ],
+      "U8": [
+        35.5,
+        12.25,
+        180
+      ],
+      "U9": [
+        54.25,
+        11.75,
+        0
+      ],
+      "C16": [
+        12.85,
+        13.75,
+        -90
+      ],
+      "C17": [
+        36.85,
+        16.25,
+        0
+      ],
+      "C18": [
+        50.75,
+        12.5,
+        -90
+      ],
+      "C88": [
+        31.8,
+        4,
+        0
+      ]
+    }
+  },
+  "matched_power_pad_mm": [
+    43,
+    2
+  ],
+  "local_bypass": [
+    {
+      "connection": "U7.1 to C16.1",
+      "pad_center_distance_mm": 4.854121959736901,
+      "whole_segment_sum_mm": 4.8541219597369,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "contact_graph_resistance_mohm": 19.698666732116365,
+      "route_objects": [
+        {
+          "start_mm": [
+            17.25,
+            10.225
+          ],
+          "end_mm": [
+            12.85,
+            12.275
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        }
+      ],
+      "length_model": "Sum of selected contact-graph objects; excludes travel within pads and overlapping copper. Not an exact centreline length."
+    },
+    {
+      "connection": "U8.1 to C17.1",
+      "pad_center_distance_mm": 3.246729123287004,
+      "whole_segment_sum_mm": 3.2467291232870075,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "contact_graph_resistance_mohm": 13.175654732118351,
+      "route_objects": [
+        {
+          "start_mm": [
+            35.75,
+            13.025
+          ],
+          "end_mm": [
+            35.598864,
+            14.324769
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        },
+        {
+          "start_mm": [
+            35.598864,
+            14.324769
+          ],
+          "end_mm": [
+            35.375,
+            16.25
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        }
+      ],
+      "length_model": "Sum of selected contact-graph objects; excludes travel within pads and overlapping copper. Not an exact centreline length."
+    },
+    {
+      "connection": "U9.1 to C18.1",
+      "pad_center_distance_mm": 3.2503845926290014,
+      "whole_segment_sum_mm": 3.250384592629453,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "contact_graph_resistance_mohm": 13.19048910853567,
+      "route_objects": [
+        {
+          "start_mm": [
+            54.0,
+            10.975
+          ],
+          "end_mm": [
+            51.975781,
+            11.006141
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        },
+        {
+          "start_mm": [
+            51.975781,
+            11.006141
+          ],
+          "end_mm": [
+            50.75,
+            11.025
+          ],
+          "layer": "F.Cu",
+          "width_mm": 0.15
+        }
+      ],
+      "length_model": "Sum of selected contact-graph objects; excludes travel within pads and overlapping copper. Not an exact centreline length."
+    }
+  ],
+  "power_paths": {
+    "Lower": [
+      {
+        "source": "J1.A4",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 15.545,
+        "drop_mV": 31.089,
+        "path_loss_mW": 62.179,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 7.4,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              37.45,
+              8.045
+            ],
+            "end_mm": [
+              37.45,
+              7.16
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.885
+          },
+          {
+            "start_mm": [
+              37.45,
+              7.16
+            ],
+            "end_mm": [
+              37.05,
+              6.76
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.5657
+          },
+          {
+            "start_mm": [
+              37.05,
+              6.76
+            ],
+            "end_mm": [
+              35.99,
+              5.7
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.6,
+            "length_mm": 1.4991
+          },
+          {
+            "start_mm": [
+              32.949999,
+              6.76
+            ],
+            "end_mm": [
+              34.01,
+              5.7
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.6,
+            "length_mm": 1.4991
+          },
+          {
+            "start_mm": [
+              32.549999,
+              7.16
+            ],
+            "end_mm": [
+              32.949999,
+              6.76
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.5657
+          },
+          {
+            "start_mm": [
+              32.549999,
+              8.045
+            ],
+            "end_mm": [
+              32.549999,
+              7.16
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.885
+          },
+          {
+            "start_mm": [
+              32.55,
+              8.045
+            ],
+            "end_mm": [
+              32.55,
+              9.545
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.5
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J1.A9",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 5.779,
+        "drop_mV": 11.557,
+        "path_loss_mW": 23.115,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 1.5,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              32.55,
+              8.045
+            ],
+            "end_mm": [
+              32.55,
+              9.545
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.5
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J1.B4",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 5.779,
+        "drop_mV": 11.557,
+        "path_loss_mW": 23.115,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 1.5,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              32.55,
+              8.045
+            ],
+            "end_mm": [
+              32.55,
+              9.545
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.5
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J1.B9",
+        "destination": "J103.2",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 15.545,
+        "drop_mV": 31.089,
+        "path_loss_mW": 62.179,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 7.4,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              37.45,
+              8.045
+            ],
+            "end_mm": [
+              37.45,
+              7.16
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.885
+          },
+          {
+            "start_mm": [
+              37.45,
+              7.16
+            ],
+            "end_mm": [
+              37.05,
+              6.76
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.5657
+          },
+          {
+            "start_mm": [
+              37.05,
+              6.76
+            ],
+            "end_mm": [
+              35.99,
+              5.7
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.6,
+            "length_mm": 1.4991
+          },
+          {
+            "start_mm": [
+              32.949999,
+              6.76
+            ],
+            "end_mm": [
+              34.01,
+              5.7
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.6,
+            "length_mm": 1.4991
+          },
+          {
+            "start_mm": [
+              32.549999,
+              7.16
+            ],
+            "end_mm": [
+              32.949999,
+              6.76
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.5657
+          },
+          {
+            "start_mm": [
+              32.549999,
+              8.045
+            ],
+            "end_mm": [
+              32.549999,
+              7.16
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.32,
+            "length_mm": 0.885
+          },
+          {
+            "start_mm": [
+              32.55,
+              8.045
+            ],
+            "end_mm": [
+              32.55,
+              9.545
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.5
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "J103.3",
+        "destination": "U2.2",
+        "net": "PWR_5V",
+        "case_A": 1.0,
+        "path_mohm": 23.241,
+        "drop_mV": 23.241,
+        "path_loss_mW": 23.241,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 0.95,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              51.05,
+              27.75
+            ],
+            "end_mm": [
+              50.1,
+              27.75
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 0.95
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              46.433648,
+              17.549735
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          }
+        ]
+      },
+      {
+        "source": "J103.3",
+        "destination": "U2.3",
+        "net": "PWR_5V",
+        "case_A": 1.0,
+        "path_mohm": 24.459,
+        "drop_mV": 24.459,
+        "path_loss_mW": 24.459,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 1.45,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              51.05,
+              27.75
+            ],
+            "end_mm": [
+              50.1,
+              27.75
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 0.95
+          },
+          {
+            "start_mm": [
+              51.05,
+              27.75
+            ],
+            "end_mm": [
+              51.05,
+              28.25
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 0.5
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              46.433648,
+              17.549735
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 1.784
+          }
+        ]
+      },
+      {
+        "source": "U2.7",
+        "destination": "L1.1",
+        "net": "BUCK_SW",
+        "case_A": 1.0,
+        "path_mohm": 6.819,
+        "drop_mV": 6.819,
+        "path_loss_mW": 6.819,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 1.781,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              52.95,
+              27.75
+            ],
+            "end_mm": [
+              53.6,
+              27.75
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 0.65
+          },
+          {
+            "start_mm": [
+              53.6,
+              27.75
+            ],
+            "end_mm": [
+              54.4,
+              26.95
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.1314
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "L1.2",
+        "destination": "J103.4",
+        "net": "+3V3",
+        "case_A": 1.0,
+        "path_mohm": 33.844,
+        "drop_mV": 33.844,
+        "path_loss_mW": 33.844,
+        "min_width_mm": 0.5,
+        "uniform_10C_screen_width_mm": 0.3004,
+        "length_below_screen_mm": 0,
+        "counted_vias": 0,
+        "neck_sections": [],
+        "via_sections": []
+      },
+      {
+        "source": "U33.5",
+        "destination": "U28.1",
+        "net": "RGB_5V",
+        "case_A": 0.025,
+        "path_mohm": 389.074,
+        "drop_mV": 9.727,
+        "path_loss_mW": 0.243,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.0019,
+        "length_below_screen_mm": 0,
+        "counted_vias": 8,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              46.9,
+              30.3
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              43.4,
+              25.8
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              45.2,
+              23.0
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              47.140742,
+              9.159311
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              42.874579,
+              9.093
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              24.865425,
+              18.667211
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              15.493,
+              22.384656
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              15.493,
+              33.760444
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          }
+        ]
+      },
+      {
+        "source": "U28.6",
+        "destination": "J6.1",
+        "net": "ENC_5V",
+        "case_A": 0.025,
+        "path_mohm": 341.039,
+        "drop_mV": 8.526,
+        "path_loss_mW": 0.213,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.0019,
+        "length_below_screen_mm": 0,
+        "counted_vias": 2,
+        "neck_sections": [],
+        "via_sections": [
+          {
+            "xy_mm": [
+              11.356725,
+              30.024175
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          },
+          {
+            "xy_mm": [
+              20.525984,
+              21.458409
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 0.001
+          }
+        ]
+      },
+      {
+        "source": "U42.5",
+        "destination": "U29.14",
+        "net": "ENC_3V3",
+        "case_A": 0.005,
+        "path_mohm": 134.566,
+        "drop_mV": 0.673,
+        "path_loss_mW": 0.003,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.0002,
+        "length_below_screen_mm": 0,
+        "counted_vias": 0,
+        "neck_sections": [],
+        "via_sections": []
+      }
+    ],
+    "Upper": [
+      {
+        "source": "J104.2",
+        "destination": "U12.5",
+        "net": "VBUS_USB",
+        "case_A": 2.0,
+        "path_mohm": 7.6,
+        "drop_mV": 15.199,
+        "path_loss_mW": 30.399,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 0.919,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              27.0,
+              18.25
+            ],
+            "end_mm": [
+              27.65,
+              17.6
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.15,
+            "length_mm": 0.9192
+          }
+        ],
+        "via_sections": []
+      },
+      {
+        "source": "U12.6",
+        "destination": "J104.3",
+        "net": "PWR_5V",
+        "case_A": 2.0,
+        "path_mohm": 20.631,
+        "drop_mV": 41.263,
+        "path_loss_mW": 82.525,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 1.75,
+        "counted_vias": 1,
+        "neck_sections": [
+          {
+            "start_mm": [
+              27.5,
+              19.5
+            ],
+            "end_mm": [
+              27.5,
+              21.25
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.75
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              34.650977,
+              9.680524
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.45,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          }
+        ]
+      },
+      {
+        "source": "U12.6",
+        "destination": "U13.5",
+        "net": "PWR_5V",
+        "case_A": 2.0,
+        "path_mohm": 45.486,
+        "drop_mV": 90.972,
+        "path_loss_mW": 181.944,
+        "min_width_mm": 0.15,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 2.669,
+        "counted_vias": 2,
+        "neck_sections": [
+          {
+            "start_mm": [
+              27.5,
+              19.5
+            ],
+            "end_mm": [
+              27.5,
+              21.25
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.75
+          },
+          {
+            "start_mm": [
+              50.75,
+              57.75
+            ],
+            "end_mm": [
+              51.4,
+              57.1
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.15,
+            "length_mm": 0.9192
+          }
+        ],
+        "via_sections": [
+          {
+            "xy_mm": [
+              45.0,
+              55.0
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          },
+          {
+            "xy_mm": [
+              47.5,
+              54.5
+            ],
+            "drill_mm": 0.3,
+            "land_mm": 0.6,
+            "single_barrel_mohm": 1.784,
+            "single_barrel_mW_at_case": 7.134
+          }
+        ]
+      },
+      {
+        "source": "U13.6",
+        "destination": "J10.1",
+        "net": "ACT_5V",
+        "case_A": 2.0,
+        "path_mohm": 37.58,
+        "drop_mV": 75.159,
+        "path_loss_mW": 150.318,
+        "min_width_mm": 0.25,
+        "uniform_10C_screen_width_mm": 0.7814,
+        "length_below_screen_mm": 3.784,
+        "counted_vias": 0,
+        "neck_sections": [
+          {
+            "start_mm": [
+              51.25,
+              59.0
+            ],
+            "end_mm": [
+              51.25,
+              60.75
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.75
+          },
+          {
+            "start_mm": [
+              51.151951,
+              60.946685
+            ],
+            "end_mm": [
+              51.151951,
+              60.769503
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 0.1772
+          },
+          {
+            "start_mm": [
+              49.150158,
+              61.091652
+            ],
+            "end_mm": [
+              51.006984,
+              61.091652
+            ],
+            "layer": "F.Cu",
+            "width_mm": 0.25,
+            "length_mm": 1.8568
+          }
+        ],
+        "via_sections": []
+      }
+    ]
+  },
+  "sources": {
+    "Lower": "88876b389b2005abbfd40bf2f942ae58d854c5ba931ec2528e12b0156908f6a0",
+    "Upper": "3f799cc3ea051b6f456c81369d51269c021ac2552ed1fa4bfaf85bd1a7a7a131",
+    "Wheel": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973"
+  },
+  "channel_mapping_unchanged": true,
+  "hardware_validated": false,
+  "physical_followup": "Align the moving magnets with the revised sensor centres; check travel, polarity and calibrated endpoints."
+}

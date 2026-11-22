@@ -5,6 +5,18 @@ import subprocess
 import tempfile
 
 
+def write(path, data):
+    """Replace a complete generated file, including files mapped by a viewer."""
+    path=Path(path)
+    if isinstance(data,str):data=data.encode('utf-8')
+    with tempfile.NamedTemporaryFile(prefix='.'+path.name+'-',dir=path.parent,delete=False) as stream:
+        temporary=Path(stream.name)
+        stream.write(data)
+    try:temporary.replace(path)
+    finally:
+        if temporary.exists():temporary.unlink()
+
+
 def run(cli, args, **kwargs):
     args=list(map(str,args))
     if '-o' not in args:

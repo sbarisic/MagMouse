@@ -1,0 +1,469 @@
+{
+  "Lower": {
+    "source_sha256": "88876b389b2005abbfd40bf2f942ae58d854c5ba931ec2528e12b0156908f6a0",
+    "before_sharp_bends": 703,
+    "after_sharp_bends": 0,
+    "before_staircases": 61,
+    "after_staircases": 0,
+    "before_tracks": 2484,
+    "after_tracks": 2301,
+    "before_total_trace_mm": 5781.32118074823,
+    "after_total_trace_mm": 5673.528629740964,
+    "added_vias_since_cleanup_baseline": [
+      [
+        "RGB_5V",
+        [
+          47.140742,
+          9.159311
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "RGB_5V",
+        [
+          42.874579,
+          9.093
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          53.831849,
+          45.04
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          26.760228,
+          13.576653
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          26.5,
+          18.0
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "HALL_EN",
+        [
+          45.535841,
+          9.872
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "PWR_5V",
+        [
+          46.433648,
+          17.549735
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "CS_ADC2",
+        [
+          44.487538,
+          7.547
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "CS_ADC2",
+        [
+          49.467,
+          5.667065
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "CC_OUT1",
+        [
+          28.187,
+          12.898355
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "CC_OUT1",
+        [
+          50.315776,
+          6.956414
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "CC_OUT1",
+        [
+          18.452945,
+          18.542074
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "CC_OUT1",
+        [
+          41.639564,
+          4.507505
+        ],
+        0.45,
+        0.3
+      ]
+    ],
+    "outlines_and_rules_unchanged": true,
+    "placement_and_via_changes": "hall-relocation.json and hall-routing-review.json",
+    "trace_widths_match_hall_review": true,
+    "drc": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "usb": {
+      "coverage": {
+        "MCU_USB_DM F.Cu": {
+          "trace_mm": 4.727,
+          "unreferenced_centerline_outside_vias_mm": 0.0,
+          "unreferenced_area_outside_vias_mm2": 0.0
+        },
+        "MCU_USB_DP F.Cu": {
+          "trace_mm": 3.8571,
+          "unreferenced_centerline_outside_vias_mm": 0.0,
+          "unreferenced_area_outside_vias_mm2": 0.0
+        },
+        "USB_DM F.Cu": {
+          "trace_mm": 19.9985,
+          "unreferenced_centerline_outside_vias_mm": 0.0,
+          "unreferenced_area_outside_vias_mm2": 0.0
+        },
+        "USB_DM B.Cu": {
+          "trace_mm": 65.3247,
+          "unreferenced_centerline_outside_vias_mm": 0.0,
+          "unreferenced_area_outside_vias_mm2": 0.0
+        },
+        "USB_DP F.Cu": {
+          "trace_mm": 21.919,
+          "unreferenced_centerline_outside_vias_mm": 0.0,
+          "unreferenced_area_outside_vias_mm2": 0.0
+        },
+        "USB_DP B.Cu": {
+          "trace_mm": 62.3065,
+          "unreferenced_centerline_outside_vias_mm": 0.0,
+          "unreferenced_area_outside_vias_mm2": 0.0
+        }
+      },
+      "via_coordinates_mm": {
+        "USB_DP": [
+          [
+            36.95,
+            21.55
+          ],
+          [
+            35.85,
+            71.26
+          ]
+        ],
+        "USB_DM": [
+          [
+            36.95,
+            20.875
+          ],
+          [
+            35.85,
+            71.94
+          ]
+        ]
+      },
+      "paired_via_spacing_mm": [
+        0.6750000000000007,
+        0.6799999999999926
+      ],
+      "connector_paths": {
+        "J1.A6 to R6.2": {
+          "whole_track_length_mm": 81.499,
+          "layer_changes": 2
+        },
+        "J1.B6 to R6.2": {
+          "whole_track_length_mm": 80.28,
+          "layer_changes": 2
+        },
+        "J1.A7 to R5.2": {
+          "whole_track_length_mm": 81.2,
+          "layer_changes": 2
+        },
+        "J1.B7 to R5.2": {
+          "whole_track_length_mm": 80.559,
+          "layer_changes": 2
+        }
+      }
+    }
+  },
+  "Upper": {
+    "source_sha256": "3f799cc3ea051b6f456c81369d51269c021ac2552ed1fa4bfaf85bd1a7a7a131",
+    "before_sharp_bends": 22,
+    "after_sharp_bends": 0,
+    "before_staircases": 0,
+    "after_staircases": 0,
+    "before_tracks": 703,
+    "after_tracks": 777,
+    "before_total_trace_mm": 2296.6708535441694,
+    "after_total_trace_mm": 2647.3777648033624,
+    "added_vias_since_cleanup_baseline": [
+      [
+        "HALL_EN",
+        [
+          33.538168,
+          17.88198
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          47.102824,
+          29.762246
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          58.469178,
+          54.079304
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          16.061823,
+          11.784412
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          42.417381,
+          21.20489
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          51.818037,
+          15.537186
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          36.729968,
+          46.760571
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          35.889598,
+          29.323639
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          41.064215,
+          28.566562
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          37.769312,
+          14.382524
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          49.84697,
+          51.152052
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "GND",
+        [
+          37.23479,
+          19.084049
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "+3V3",
+        [
+          35.671617,
+          19.444129
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "ACT_5V",
+        [
+          25.0,
+          67.0
+        ],
+        0.6,
+        0.3
+      ],
+      [
+        "ACT_5V",
+        [
+          19.75,
+          80.0
+        ],
+        0.6,
+        0.3
+      ],
+      [
+        "HALL_L",
+        [
+          34.153,
+          30.597474
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "HALL_L",
+        [
+          18.278,
+          10.880774
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "PWR_5V",
+        [
+          47.5,
+          54.5
+        ],
+        0.6,
+        0.3
+      ],
+      [
+        "PWR_5V",
+        [
+          34.650977,
+          9.680524
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "PWR_5V",
+        [
+          45.0,
+          55.0
+        ],
+        0.6,
+        0.3
+      ],
+      [
+        "HALL_R",
+        [
+          49.175848,
+          20.075186
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "HALL_R",
+        [
+          41.853371,
+          32.590967
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "HALL_M",
+        [
+          37.7761,
+          28.508414
+        ],
+        0.45,
+        0.3
+      ],
+      [
+        "HALL_M",
+        [
+          36.489658,
+          19.703922
+        ],
+        0.45,
+        0.3
+      ]
+    ],
+    "outlines_and_rules_unchanged": true,
+    "placement_and_via_changes": "hall-relocation.json and hall-routing-review.json",
+    "trace_widths_match_hall_review": true,
+    "drc": 0,
+    "unconnected": 0,
+    "schematic_parity": 0
+  },
+  "Wheel": {
+    "source_sha256": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973",
+    "before_sharp_bends": 56,
+    "after_sharp_bends": 0,
+    "before_staircases": 0,
+    "after_staircases": 0,
+    "before_tracks": 1087,
+    "after_tracks": 1099,
+    "before_total_trace_mm": 3122.9221594206006,
+    "after_total_trace_mm": 3077.975097660069,
+    "added_vias_since_cleanup_baseline": [],
+    "outlines_and_rules_unchanged": true,
+    "placement_and_via_changes": "hall-relocation.json and hall-routing-review.json",
+    "trace_widths_match_hall_review": true,
+    "drc": 0,
+    "unconnected": 0,
+    "schematic_parity": 0
+  }
+}

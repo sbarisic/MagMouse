@@ -1,9 +1,9 @@
 # Electronics
 
-The [active four-board design](two-layer/sandwich/README.md) uses two copper
+The [active three-board design](two-layer/sandwich/README.md) uses two copper
 layers on each board, passive plastic button clicks and Hall sensing.
-Lower and Upper are 70 x 100 mm; Wheel is 70 x 67 mm; Encoder is 14 x 18 mm
-with chamfered top corners. All four have independent schematics and routing.
+Lower and Upper are 70 x 100 mm; Wheel is 70 x 67 mm
+with chamfered top corners. All three have independent schematics and routing.
 
 - [Editable projects and reviews](two-layer/sandwich/README.md)
 - [Manufacturing quote package](two-layer/sandwich/quote-package/README.md)

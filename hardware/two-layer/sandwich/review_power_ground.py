@@ -58,7 +58,9 @@ def inspect(name,path):
     vias=[t for t in b.GetTracks() if isinstance(t,p.PCB_VIA) and t.GetNetname()=='GND']
     return dict(sha256=sha(path),outline_area_mm2=round(area,3),gnd_fill=layers,gnd_vias=len(vias),
         gnd_via_positions_mm=[list(p.ToMM(t.GetPosition())) for t in vias],
-        power_paths=[route_report(g,*args) for args in loads.get(name,[])])
+        power_paths=[route_report(g,*args) for args in loads.get(name,[])+
+                     ([('U33.5','U28.1',.025),('U28.6','J6.1',.025),('U42.5','U29.14',.005)]
+                      if name=='Lower' and ('U42','1') in g.pads else [])])
 if __name__=='__main__':
     results={n:inspect(n,path) for n,path in BOARDS.items()}
     dest=HERE/'routing-review/power-and-ground.json'

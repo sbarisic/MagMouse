@@ -63,14 +63,14 @@ See [optical design and timing](history/electronics/OPTICAL_DESIGN.md).
 | 34 | 29 | MOTOR_SPI_SCLK | SPI3 |
 | 35 | 31 | MOTOR_SPI_MISO | SPI3 |
 | 36 | 32 | CS_ADC2 | SPI3 |
-| 37 | 33 | CS_MA735 | SPI2 |
+| 37 | 33 | CS_ENCODER | SPI2 |
 | 38 | 34 | CS_DRV8316 | SPI2 |
 | 39 | 35 | PAW_MOTION_N | interrupt |
 | 40 | 36 | IMU_INT1 | interrupt |
 | 41 | 37 | DRV_FAULT_N | MCPWM0_fault |
 | 42 | 38 | WHEEL_PWM_A | MCPWM0 |
-| 43 | 39 | UART_TX | UART0 |
-| 44 | 40 | UART_RX | UART0 |
+| 43 | 39 | Unconnected after TP4 removal | Reserved UART0 TX |
+| 44 | 40 | Unconnected after TP5 removal | Reserved UART0 RX |
 | 45 | 41 | RGB_DATA | RMT |
 | 46 | 44 | BOOT_SAFE_SPARE | Boot-low spare; no peripheral |
 | 47 | 27 | WHEEL_PWM_B | MCPWM0 |
@@ -94,7 +94,7 @@ recovery remains accessible.
 
 | Host | Pins | Devices / CS GPIOs | Resource use |
 | --- | --- | --- | --- |
-| SPI2_HOST / bus A | SCLK12, MOSI11, MISO13 | ADC1/10, PAW/2, IMU/21, MA735/37, DRV8316/38 | Five of six hardware CS slots |
+| SPI2_HOST / bus A | SCLK12, MOSI11, MISO13 | ADC1/10, PAW/2, IMU/21, AS5048A/37, DRV8316/38 | Five of six hardware CS slots |
 | SPI3_HOST / bus B | SCLK34, MOSI33, MISO35 | ADC2/36 only | One of three hardware CS slots |
 
 SPI0/1 remain dedicated to memory. There is no third general-purpose SPI host
@@ -103,16 +103,16 @@ first when using SPI2 CS0 on GPIO10. The slot counts come from S3 capabilities,
 not a generic ESP32 three-device limit.
 
 Use per-device mode, clock and CS timing. Initial clock targets: 20 MHz for
-both ADCs, 10 MHz for MA735/IMU, and 1 MHz for DRV8316. The driver
+both ADCs, 10 MHz for AS5048A/IMU, and 1 MHz for DRV8316. The driver
 clock is reduced for its open-drain SDO pull-up and new return buffer; measure
 edge rate and setup margin before increasing it. PMW3360 uses mode 3 at 2MHz,
 with isolated clock/data/CS and buffered reset on switched OPT_3V3. Use 1us
 CS setup/read-hold/release guards, 35us write hold, 160us ordinary read delay
 and 35us motion-burst delay. Honor device-specific inter-access intervals.
 DRV8316 requires 16-bit, mode-1 SPI timing and at least 400 ns between CS frames.
-Keep both ADS7038 devices in mode 0, including initial configuration. Use mode 3
-for MA735, with at least 80 ns CS setup and 25 ns hold; allow 150 ns between
-angle frames and 750 ns around register accesses. Do not perform encoder NVM
+Keep both ADS7038 devices in mode 0, including initial configuration. Use mode 1
+for AS5048A, with minimum 350 ns CS setup, 50 ns hold and 350 ns CS-high.
+Use 1 us guards and a READ-ANGLE/NOP pair for each fresh sample. Do not perform encoder NVM
 writes during motor control. Its SPI read width does not equal effective angle
 resolution. IMU uses mode 0 at 10MHz with 100ns CS setup/hold/release guards.
 
@@ -127,8 +127,9 @@ measured worst-case burst fits before the next 200us angle slot; otherwise the
 transfers must run outside active haptic control.
 
 Eight ADC1 16-bit reads at 20 MHz use 6.4 us of clock time per 1 ms scan.
-MA735 16-bit reads at 10 MHz use another 8 us/ms at 5 kHz. These calculations
-exclude conversions, CS gaps, optical traffic and software overhead; available
+AS5048A fresh reads use two 16-bit frames: 16 us/ms at 10 MHz and 5 kHz,
+or at least 46 us/ms including three 1 us guards per frame. These calculations
+exclude conversions, optical traffic and software overhead; available
 wire bandwidth is not proof of worst-case latency.
 
 Bus B has one owner and no optical, encoder, configuration or logging traffic.
@@ -154,17 +155,18 @@ group 0 and only timer 0 initially; group 1 is free. Start with a 20 kHz
 carrier as a bring-up target. Update wheel comparators together at a timer boundary.
 Do not allocate these operators again through another library. LEDC is unused.
 
-MA735 uses SPI absolute angle; A/B/Z, PWM and magnetic-status output pins have
-no V1 MCU allocation. Use appropriate SPI diagnostics. IMU uses INT1 and its
+The motor-integrated AS5048A uses SPI absolute angle; its PWM output is unused.
+Check response parity, error flags and magnetic diagnostics. See the
+[encoder contract](../hardware/two-layer/sandwich/ENCODER_INTEGRATION.md). IMU uses INT1 and its
 internal clock; INT2/FSYNC/CLKIN are unassigned. GPIO46 reuse needs a boot-level
 review. The brake chopper must protect the rail independently of an MCU output.
 
 Power-domain controls are included in the allocation: reuse HALL_EN (derived
-from SENS_REQ and MCU_EN) for MA735, RGB and optical supply enables. This keeps
+from SENS_REQ and MCU_EN) for AS5048A, RGB and optical supply enables. This keeps
 them off during reset/suspend without extra GPIOs. RGB power comes from the
 appropriate protected logic supply, not the haptics-only ACT rail. OPT_CTRL
-drives buffered optical reset; IMU uses its software sleep controls. U28/U29
-provide encoder isolation; U33/U34 provide RGB supply/data control. Their
+drives buffered optical reset; IMU uses its software sleep controls. U28/U29/U42
+provide encoder supply switching and isolation; U33/U34 provide RGB supply/data control. Their
 startup and power-down behavior still requires measurement.
 Independent always-on RGB/encoder operation would require a new resource review.
 
@@ -249,5 +251,8 @@ selected firmware toolchain or a claim that they are the latest release.
 - [ESP-IDF v5.5.1 SPI guide](https://docs.espressif.com/projects/esp-idf/en/v5.5.1/esp32s3/api-reference/peripherals/spi_master.html): routing, ownership and transaction overhead.
 - [TI ADS7038, SBAS979C, September 2024](https://www.ti.com/lit/ds/symlink/ads7038.pdf): conversion timing, channel selection and data frames.
 - [TI DRV8316, SLVSF16B, April 2022](https://www.ti.com/lit/ds/symlink/drv8316.pdf): PWM modes, disable behavior, SPI and low-side sensing.
-- [MPS MA735, Rev. 1.0, April 26, 2022](https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA735GGU/): SPI angle readout and optional outputs.
+- [ams OSRAM AS5048A datasheet](https://cdn.sparkfun.com/assets/e/d/e/1/d/AS5048_DS000298_4-00.pdf): SPI absolute angle, supply limits and timing.
 - [TDK ICM-42688-P, DS-000347](https://invensense.tdk.com/wp-content/uploads/2020/04/ds-000347_icm-42688-p-datasheet.pdf): SPI interface; full circuit/package review remains later work.
+
+UART0 GPIO43/44 have no test-pad access after TP4/TP5 removal; the schematic
+marks their module pins unused. USB download and BOOT/RESET buttons remain.

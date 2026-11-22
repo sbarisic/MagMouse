@@ -102,7 +102,7 @@ for short-dip recovery. Actual boot current, nSLEEP leakage and bench acceptance
 remain unverified; simulation does not replace the tests listed below.
 
 GPIO16 ACT_REQ, GPIO17 ACT_HEARTBEAT and GPIO18 SENS_REQ default low through
-external resistors. HALL_EN = SENS_REQ AND MCU_EN enables the Hall sensors, MA735, RGB and optical supplies.
+external resistors. HALL_EN = SENS_REQ AND MCU_EN enables the Hall sensors, AS5048A, RGB and optical supplies.
 ARM_VALID requires SOURCE_OK, ACT_REQ and HALL_EN. Default/unknown source,
 reset, sensor shutdown or request removal clears the monostable immediately.
 
@@ -212,3 +212,13 @@ provisional 150mA allocation. Account for encoder/RGB startup at the same enable
 edge. Before clearing SENS_REQ, deselect optical SPI and assert OPT_CTRL low;
 mask PAW_MOTION_N and disable its host pull-up. Full optical initialization and
 authorized SROM reload are required on resume. See [optical design](history/electronics/OPTICAL_DESIGN.md).
+
+## Integrated encoder supply
+
+Reserve 25 mA at 5 V for the GB1806 AS5048A module and local buffering.
+U33 supplies both RGB and the encoder: PWR_5V → regulated RGB_5V → U28 → ENC_5V.
+U42 derives ENC_3V3 for the SPI buffer. Keep their combined load below 200 mA.
+The approximately 6 V input OVLO does not protect the new 5.5 V-rated parts
+without U33. Verify at least 4.5 V at the module under cable drop and load.
+See [encoder integration](../hardware/two-layer/sandwich/ENCODER_INTEGRATION.md)
+for startup, discharge, interface and physical acceptance checks.

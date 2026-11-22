@@ -1,0 +1,5716 @@
+{
+  "Lower": {
+    "sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
+    "components": {
+      "D5": {
+        "value": "SK6805-EC15",
+        "xy": [
+          52.925,
+          36.48
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "RGB_DIN",
+          "2": "RGB_5V",
+          "3": "unconnected-(D5-DOUT-Pad3)",
+          "4": "GND"
+        }
+      },
+      "C85": {
+        "value": "100nF",
+        "xy": [
+          46.5,
+          57.13
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_VDDPIX",
+          "2": "GND"
+        }
+      },
+      "U38": {
+        "value": "TPS22918DBVR",
+        "xy": [
+          18.0,
+          58.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND",
+          "3": "HALL_EN",
+          "4": "OPT_RAMP_CT",
+          "5": "unconnected-(U38-QOD-Pad5)",
+          "6": "OPT_3V3"
+        }
+      },
+      "R28": {
+        "value": "1k",
+        "xy": [
+          58.4875,
+          19.22
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "LOGIC_PG",
+          "2": "MCU_EN"
+        }
+      },
+      "R110": {
+        "value": "100k",
+        "xy": [
+          22.6875,
+          25.3
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "HALL_EN",
+          "2": "GND"
+        }
+      },
+      "R143": {
+        "value": "33k",
+        "xy": [
+          56.375,
+          57.2
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ADC2_MISO_LOCAL",
+          "2": "GND"
+        }
+      },
+      "R125": {
+        "value": "0R",
+        "xy": [
+          12.5625,
+          27.25
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ENC_QOD",
+          "2": "ENC_3V3"
+        }
+      },
+      "U37": {
+        "value": "74LVC125APW,118",
+        "xy": [
+          35.0,
+          36.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "CS_PAW",
+          "2": "SPI_MOSI",
+          "3": "OPT_MOSI",
+          "4": "CS_PAW",
+          "5": "SPI_SCLK",
+          "6": "OPT_SCLK",
+          "7": "GND",
+          "8": "SPI_MISO",
+          "9": "OPT_MISO",
+          "10": "CS_PAW",
+          "11": "OPT_RESET_N",
+          "12": "OPT_CTRL",
+          "13": "GND",
+          "14": "OPT_3V3"
+        }
+      },
+      "U1": {
+        "value": "TPD2EUSB30DRTR",
+        "xy": [
+          35.0,
+          20.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_DP",
+          "2": "USB_DM",
+          "3": "GND"
+        }
+      },
+      "U2": {
+        "value": "TPS62162DSGR",
+        "xy": [
+          52.0,
+          28.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "GND",
+          "2": "PWR_5V",
+          "3": "PWR_5V",
+          "4": "GND",
+          "5": "GND",
+          "6": "+3V3",
+          "7": "BUCK_SW",
+          "8": "LOGIC_PG",
+          "9": "GND"
+        }
+      },
+      "R25": {
+        "value": "887k",
+        "xy": [
+          33.5,
+          23.8
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "VBUS_USB",
+          "2": "CC_VBUS_DET"
+        }
+      },
+      "R27": {
+        "value": "100k",
+        "xy": [
+          67.875,
+          46.47
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CC_OUT2"
+        }
+      },
+      "L1": {
+        "value": "SRP4020CC-3R3M",
+        "xy": [
+          57.7063,
+          25.96
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BUCK_SW",
+          "2": "+3V3"
+        }
+      },
+      "R4": {
+        "value": "10k",
+        "xy": [
+          24.0,
+          77.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "BOOT"
+        }
+      },
+      "H104": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          63.0,
+          76.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "TP39": {
+        "value": "RGB_DIN",
+        "xy": [
+          40.875,
+          24.6
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "RGB_DIN"
+        }
+      },
+      "J8": {
+        "value": "Wheel 17-wire signals / 2 GND",
+        "xy": [
+          62.0,
+          50.0
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "GND",
+          "2": "SPI_SCLK",
+          "3": "SPI_MOSI",
+          "4": "CS_DRV8316",
+          "5": "DRV_MISO_LOCAL",
+          "6": "MOTOR_SPI_SCLK",
+          "7": "MOTOR_SPI_MOSI",
+          "8": "CS_ADC2",
+          "9": "ADC2_MISO_LOCAL",
+          "10": "WHEEL_PWM_A",
+          "11": "WHEEL_PWM_B",
+          "12": "WHEEL_PWM_C",
+          "13": "ACT_DRIVE_EN",
+          "14": "WHEEL_RUN_REQ",
+          "15": "DRV_FAULT_LOCAL_N",
+          "16": "+3V3",
+          "17": "GND"
+        }
+      },
+      "C74": {
+        "value": "10uF/25V",
+        "xy": [
+          46.8125,
+          36.05
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "RGB_5V",
+          "2": "GND"
+        }
+      },
+      "C87": {
+        "value": "100nF",
+        "xy": [
+          34.7,
+          29.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "GND"
+        }
+      },
+      "U11": {
+        "value": "TUSB320LAIRWBR",
+        "xy": [
+          43.0,
+          23.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_CC1",
+          "2": "USB_CC2",
+          "3": "GND",
+          "4": "CC_VBUS_DET",
+          "5": "unconnected-(U11-ADDR-Pad5)",
+          "6": "unconnected-(U11-OUT3-Pad6)",
+          "7": "CC_OUT1",
+          "8": "CC_OUT2",
+          "9": "unconnected-(U11-ID-Pad9)",
+          "10": "GND",
+          "11": "GND",
+          "12": "+3V3"
+        }
+      },
+      "R126": {
+        "value": "10k",
+        "xy": [
+          60.75,
+          69.3
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "IMU_PIN9",
+          "2": "GND"
+        }
+      },
+      "C73": {
+        "value": "10uF/25V",
+        "xy": [
+          44.05,
+          27.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "GND"
+        }
+      },
+      "J6": {
+        "value": "Soldered wires Signal_2x04",
+        "xy": [
+          24.5,
+          18.3
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ENC_3V3",
+          "2": "GND",
+          "3": "ENC_SCLK_LOCAL",
+          "4": "GND",
+          "5": "ENC_MOSI_LOCAL",
+          "6": "ENC_CS_LOCAL",
+          "7": "GND",
+          "8": "ENC_MISO_LOCAL"
+        }
+      },
+      "C22": {
+        "value": "100nF",
+        "xy": [
+          40.6125,
+          17.69
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "U20": {
+        "value": "TPD2E2U06DCKR",
+        "xy": [
+          45.2375,
+          16.6
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_CC1",
+          "2": "USB_CC2",
+          "3": "GND"
+        }
+      },
+      "U33": {
+        "value": "TPS7A2450DBVR",
+        "xy": [
+          46.25,
+          31.8
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "GND",
+          "3": "HALL_EN",
+          "4": "unconnected-(U33-NC-Pad4)",
+          "5": "RGB_5V"
+        }
+      },
+      "R131": {
+        "value": "10k",
+        "xy": [
+          22.94,
+          41.68
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "OPT_CS_N"
+        }
+      },
+      "C2": {
+        "value": "10uF/25V",
+        "xy": [
+          62.9313,
+          30.6
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C72": {
+        "value": "10nF",
+        "xy": [
+          43.5,
+          70.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "U39": {
+        "value": "SN74LVC1G125DBVR",
+        "xy": [
+          29.0,
+          34.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "CS_PAW",
+          "3": "GND",
+          "4": "OPT_CS_N",
+          "5": "OPT_3V3"
+        }
+      },
+      "SW1": {
+        "value": "RESET",
+        "xy": [
+          53.5,
+          74.75
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "MCU_EN",
+          "2": "GND"
+        }
+      },
+      "H101": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          18.0,
+          6.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "C84": {
+        "value": "4.7uF/10V",
+        "xy": [
+          46.5,
+          60.94
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_VDDPIX",
+          "2": "GND"
+        }
+      },
+      "C4": {
+        "value": "1uF/50V",
+        "xy": [
+          47.5,
+          79.25
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "MCU_EN",
+          "2": "GND"
+        }
+      },
+      "J1": {
+        "value": "TYPE-C-31-M-12",
+        "xy": [
+          35.0,
+          4.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "": "",
+          "A1": "GND",
+          "A4": "VBUS_USB",
+          "A5": "USB_CC1",
+          "A6": "USB_DP",
+          "A7": "USB_DM",
+          "A8": "unconnected-(J1-SBU1-PadA8)",
+          "A9": "VBUS_USB",
+          "A12": "GND",
+          "B1": "GND",
+          "B4": "VBUS_USB",
+          "B5": "USB_CC2",
+          "B6": "USB_DP",
+          "B7": "USB_DM",
+          "B8": "unconnected-(J1-SBU2-PadB8)",
+          "B9": "VBUS_USB",
+          "B12": "GND",
+          "SH": "GND"
+        }
+      },
+      "C70": {
+        "value": "100nF",
+        "xy": [
+          52.5,
+          69.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "H102": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          52.0,
+          6.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "C23": {
+        "value": "10uF/25V",
+        "xy": [
+          52.5063,
+          31.81
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "U36": {
+        "value": "TLV75519PDBVR",
+        "xy": [
+          18.0,
+          46.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "GND",
+          "3": "OPT_3V3",
+          "4": "unconnected-(U36-NC-Pad4)",
+          "5": "OPT_1V9"
+        }
+      },
+      "C53": {
+        "value": "100nF",
+        "xy": [
+          41.4,
+          34.9
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C1": {
+        "value": "10uF/25V",
+        "xy": [
+          51.25,
+          23.91
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "GND"
+        }
+      },
+      "C77": {
+        "value": "10uF/25V",
+        "xy": [
+          24.5,
+          62.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R72": {
+        "value": "10k",
+        "xy": [
+          17.1563,
+          68.9
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CS_PAW"
+        }
+      },
+      "C64": {
+        "value": "100nF",
+        "xy": [
+          17.625,
+          26.8
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ENC_3V3",
+          "2": "GND"
+        }
+      },
+      "R135": {
+        "value": "10k",
+        "xy": [
+          13.1,
+          56.65
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "OPT_MISO"
+        }
+      },
+      "C78": {
+        "value": "10uF/25V",
+        "xy": [
+          21.75,
+          52.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "SW2": {
+        "value": "BOOT",
+        "xy": [
+          53.5,
+          80.25
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BOOT",
+          "2": "GND"
+        }
+      },
+      "R133": {
+        "value": "100k",
+        "xy": [
+          26.17,
+          47.49
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "OPT_SCLK"
+        }
+      },
+      "R99": {
+        "value": "10k",
+        "xy": [
+          33.875,
+          16.4
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ENC_3V3",
+          "2": "ENC_CS_LOCAL"
+        }
+      },
+      "C79": {
+        "value": "1nF/50V",
+        "xy": [
+          17.25,
+          63.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_RAMP_CT",
+          "2": "GND"
+        }
+      },
+      "C3": {
+        "value": "10uF/25V",
+        "xy": [
+          57.725,
+          33.1
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "TP38": {
+        "value": "RGB_5V",
+        "xy": [
+          45.625,
+          24.6
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "RGB_5V"
+        }
+      },
+      "R74": {
+        "value": "10k",
+        "xy": [
+          17.125,
+          75.05
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CS_ADC2"
+        }
+      },
+      "J101": {
+        "value": "Stack signals / 14 wires",
+        "xy": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "SPI_SCLK",
+          "3": "SPI_MOSI",
+          "4": "SPI_MISO",
+          "5": "ADC_CS",
+          "6": "ACT_REQ",
+          "7": "ACT_HEARTBEAT",
+          "8": "SENS_REQ",
+          "9": "CC_OUT1",
+          "10": "CC_OUT2",
+          "11": "VBUS_PRESENT_N",
+          "12": "HALL_EN",
+          "13": "ACT_DRIVE_EN",
+          "14": "MCU_EN"
+        }
+      },
+      "R134": {
+        "value": "100k",
+        "xy": [
+          19.1,
+          40.35
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_MOSI",
+          "2": "GND"
+        }
+      },
+      "R76": {
+        "value": "10k",
+        "xy": [
+          28.625,
+          72.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CS_DRV8316"
+        }
+      },
+      "C6": {
+        "value": "100nF",
+        "xy": [
+          50.0,
+          89.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R130": {
+        "value": "10k",
+        "xy": [
+          52.0,
+          50.7
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "RGB_5V",
+          "2": "GND"
+        }
+      },
+      "R5": {
+        "value": "33R",
+        "xy": [
+          37.6,
+          74.75
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "MCU_USB_DM",
+          "2": "USB_DM"
+        }
+      },
+      "R3": {
+        "value": "10k",
+        "xy": [
+          54.0,
+          86.25
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "MCU_EN"
+        }
+      },
+      "U34": {
+        "value": "SN74LV1T34DBVR",
+        "xy": [
+          54.0,
+          17.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "unconnected-(U34-NC-Pad1)",
+          "2": "RGB_DATA",
+          "3": "GND",
+          "4": "RGB_BUFFER_OUT",
+          "5": "RGB_5V"
+        }
+      },
+      "C76": {
+        "value": "100nF",
+        "xy": [
+          43.5,
+          41.2
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "RGB_5V",
+          "2": "GND"
+        }
+      },
+      "U3": {
+        "value": "ESP32-S3-MINI-1-N8",
+        "xy": [
+          35.0,
+          89.25
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "GND",
+          "2": "GND",
+          "3": "+3V3",
+          "4": "BOOT",
+          "5": "VBUS_PRESENT_N",
+          "6": "CS_PAW",
+          "7": "WHEEL_RUN_REQ",
+          "8": "unconnected-(U3-IO4-Pad8)",
+          "9": "unconnected-(U3-IO5-Pad9)",
+          "10": "unconnected-(U3-IO6-Pad10)",
+          "11": "unconnected-(U3-IO7-Pad11)",
+          "12": "unconnected-(U3-IO8-Pad12)",
+          "13": "unconnected-(U3-IO9-Pad13)",
+          "14": "ADC_CS",
+          "15": "SPI_MOSI",
+          "16": "SPI_SCLK",
+          "17": "SPI_MISO",
+          "18": "CC_OUT1",
+          "19": "CC_OUT2",
+          "20": "ACT_REQ",
+          "21": "ACT_HEARTBEAT",
+          "22": "SENS_REQ",
+          "23": "MCU_USB_DM",
+          "24": "MCU_USB_DP",
+          "25": "CS_IMU",
+          "26": "OPT_CTRL",
+          "27": "WHEEL_PWM_B",
+          "28": "MOTOR_SPI_MOSI",
+          "29": "MOTOR_SPI_SCLK",
+          "30": "WHEEL_PWM_C",
+          "31": "MOTOR_SPI_MISO",
+          "32": "CS_ADC2",
+          "33": "CS_MA735",
+          "34": "CS_DRV8316",
+          "35": "PAW_MOTION_N",
+          "36": "IMU_INT1",
+          "37": "DRV_FAULT_N",
+          "38": "WHEEL_PWM_A",
+          "39": "UART_TX",
+          "40": "UART_RX",
+          "41": "RGB_DATA",
+          "42": "GND",
+          "43": "GND",
+          "44": "BOOT_SAFE_SPARE",
+          "45": "MCU_EN",
+          "46": "GND",
+          "47": "GND",
+          "48": "GND",
+          "49": "GND",
+          "50": "GND",
+          "51": "GND",
+          "52": "GND",
+          "53": "GND",
+          "54": "GND",
+          "55": "GND",
+          "56": "GND",
+          "57": "GND",
+          "58": "GND",
+          "59": "GND",
+          "60": "GND",
+          "61": "GND",
+          "62": "GND",
+          "63": "GND",
+          "64": "GND",
+          "65": "GND"
+        }
+      },
+      "R132": {
+        "value": "39R",
+        "xy": [
+          12.27,
+          63.04
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_1V9",
+          "2": "OPT_LED_P"
+        }
+      },
+      "R73": {
+        "value": "10k",
+        "xy": [
+          12.0,
+          68.3
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CS_IMU"
+        }
+      },
+      "R6": {
+        "value": "33R",
+        "xy": [
+          33.65,
+          74.75
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "MCU_USB_DP",
+          "2": "USB_DP"
+        }
+      },
+      "C55": {
+        "value": "100nF",
+        "xy": [
+          28.2188,
+          38.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ENC_3V3",
+          "2": "GND"
+        }
+      },
+      "R101": {
+        "value": "100k",
+        "xy": [
+          20.5,
+          11.3
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ENC_MISO_LOCAL",
+          "2": "GND"
+        }
+      },
+      "R77": {
+        "value": "10k",
+        "xy": [
+          22.125,
+          72.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_RUN_REQ",
+          "2": "GND"
+        }
+      },
+      "R26": {
+        "value": "100k",
+        "xy": [
+          54.875,
+          12.156
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CC_OUT1"
+        }
+      },
+      "U25": {
+        "value": "74LVC125APW,118",
+        "xy": [
+          49.0,
+          43.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "CS_DRV8316",
+          "2": "DRV_MISO_LOCAL",
+          "3": "SPI_MISO",
+          "4": "CS_MA735",
+          "5": "ENC_MISO_LOCAL",
+          "6": "SPI_MISO",
+          "7": "GND",
+          "8": "MOTOR_SPI_MISO",
+          "9": "ADC2_MISO_LOCAL",
+          "10": "CS_ADC2",
+          "11": "DRV_FAULT_N",
+          "12": "DRV_FAULT_LOCAL_N",
+          "13": "GND",
+          "14": "+3V3"
+        }
+      },
+      "C82": {
+        "value": "2.2uF/10V",
+        "xy": [
+          16.5,
+          51.75
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_1V9",
+          "2": "GND"
+        }
+      },
+      "R136": {
+        "value": "100k",
+        "xy": [
+          15.17,
+          40.78
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "PAW_MOTION_N"
+        }
+      },
+      "D1": {
+        "value": "SMBJ12A",
+        "xy": [
+          13.875,
+          15.2
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "VBUS_USB",
+          "2": "GND"
+        }
+      },
+      "H103": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          7.0,
+          76.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "R141": {
+        "value": "33k",
+        "xy": [
+          56.0,
+          47.7
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_FAULT_LOCAL_N",
+          "2": "GND"
+        }
+      },
+      "U35": {
+        "value": "PMW3360DM-T2QU",
+        "xy": [
+          35.5,
+          52.5
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "unconnected-(U35-NC-Pad1)",
+          "2": "unconnected-(U35-NC-Pad2)",
+          "3": "OPT_VDDPIX",
+          "4": "OPT_1V9",
+          "5": "OPT_3V3",
+          "6": "unconnected-(U35-NC-Pad6)",
+          "7": "OPT_RESET_N",
+          "8": "GND",
+          "9": "PAW_MOTION_N",
+          "10": "OPT_SCLK",
+          "11": "OPT_MOSI",
+          "12": "OPT_MISO",
+          "13": "OPT_CS_N",
+          "14": "unconnected-(U35-NC-Pad14)",
+          "15": "OPT_LED_P",
+          "16": "unconnected-(U35-NC-Pad16)"
+        }
+      },
+      "R128": {
+        "value": "330R",
+        "xy": [
+          46.9,
+          6.1
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "RGB_BUFFER_OUT",
+          "2": "RGB_DIN"
+        }
+      },
+      "U28": {
+        "value": "TPS22919DCKR",
+        "xy": [
+          17.75,
+          32.4
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND",
+          "3": "HALL_EN",
+          "4": "unconnected-(U28-NC-Pad4)",
+          "5": "ENC_QOD",
+          "6": "ENC_3V3"
+        }
+      },
+      "R78": {
+        "value": "10k",
+        "xy": [
+          37.625,
+          68.6
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "RGB_DATA",
+          "2": "GND"
+        }
+      },
+      "U32": {
+        "value": "ICM-42688-P",
+        "xy": [
+          48.0,
+          70.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "SPI_MISO",
+          "2": "unconnected-(U32-RESV-Pad2)",
+          "3": "unconnected-(U32-RESV-Pad3)",
+          "4": "IMU_INT1",
+          "5": "+3V3",
+          "6": "GND",
+          "7": "GND",
+          "8": "+3V3",
+          "9": "IMU_PIN9",
+          "10": "unconnected-(U32-RESV-Pad10)",
+          "11": "unconnected-(U32-RESV-Pad11)",
+          "12": "CS_IMU",
+          "13": "SPI_SCLK",
+          "14": "SPI_MOSI"
+        }
+      },
+      "C71": {
+        "value": "2.2uF/10V",
+        "xy": [
+          56.75,
+          69.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C81": {
+        "value": "2.2uF/10V",
+        "xy": [
+          24.0,
+          56.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "GND"
+        }
+      },
+      "R79": {
+        "value": "10k",
+        "xy": [
+          45.125,
+          64.85
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_CTRL",
+          "2": "GND"
+        }
+      },
+      "C86": {
+        "value": "100nF",
+        "xy": [
+          46.5,
+          49.51
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "GND"
+        }
+      },
+      "R129": {
+        "value": "100k",
+        "xy": [
+          49.525,
+          14.65
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "RGB_DIN",
+          "2": "GND"
+        }
+      },
+      "C75": {
+        "value": "100nF",
+        "xy": [
+          48.6875,
+          20.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "RGB_5V",
+          "2": "GND"
+        }
+      },
+      "C83": {
+        "value": "100nF",
+        "xy": [
+          46.5,
+          53.32
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "OPT_1V9",
+          "2": "GND"
+        }
+      },
+      "C80": {
+        "value": "100nF",
+        "xy": [
+          29.425,
+          28.302
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "OPT_3V3",
+          "2": "GND"
+        }
+      },
+      "C63": {
+        "value": "1uF/50V",
+        "xy": [
+          13.75,
+          32.4
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R80": {
+        "value": "10k",
+        "xy": [
+          51.625,
+          62.85
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BOOT_SAFE_SPARE",
+          "2": "GND"
+        }
+      },
+      "U29": {
+        "value": "74LVC125APW,118",
+        "xy": [
+          22.75,
+          32.2
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "GND",
+          "2": "SPI_SCLK",
+          "3": "ENC_SCLK_LOCAL",
+          "4": "GND",
+          "5": "SPI_MOSI",
+          "6": "ENC_MOSI_LOCAL",
+          "7": "GND",
+          "8": "ENC_CS_LOCAL",
+          "9": "CS_MA735",
+          "10": "GND",
+          "11": "unconnected-(U29-4Y-Pad11)",
+          "12": "GND",
+          "13": "ENC_3V3",
+          "14": "ENC_3V3"
+        }
+      },
+      "C5": {
+        "value": "10uF/25V",
+        "xy": [
+          46.0,
+          87.75
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R7": {
+        "value": "10k",
+        "xy": [
+          25.75,
+          68.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "ADC_CS"
+        }
+      },
+      "R75": {
+        "value": "10k",
+        "xy": [
+          31.0,
+          66.3
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "CS_MA735"
+        }
+      },
+      "R127": {
+        "value": "10k",
+        "xy": [
+          42.6,
+          75.15
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "IMU_INT1"
+        }
+      },
+      "R142": {
+        "value": "33k",
+        "xy": [
+          56.4375,
+          41.45
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_MISO_LOCAL",
+          "2": "GND"
+        }
+      },
+      "J103": {
+        "value": "Stack power / 5 wires",
+        "xy": [
+          0.0,
+          1.25
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "VBUS_USB",
+          "3": "PWR_5V",
+          "4": "+3V3",
+          "5": "GND"
+        }
+      },
+      "TP19": {
+        "value": "OPT_CTRL",
+        "xy": [
+          43.35,
+          72.9
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_CTRL"
+        }
+      },
+      "TP7": {
+        "value": "BOOT",
+        "xy": [
+          47.45,
+          92.8
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "BOOT"
+        }
+      },
+      "TP41": {
+        "value": "OPT_1V9",
+        "xy": [
+          46.5,
+          53.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_1V9"
+        }
+      },
+      "TP1": {
+        "value": "VBUS_USB",
+        "xy": [
+          53.475,
+          47.2
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "VBUS_USB"
+        }
+      },
+      "TP9": {
+        "value": "GND",
+        "xy": [
+          42.6,
+          77.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "GND"
+        }
+      },
+      "TP17": {
+        "value": "WHEEL_RUN_REQ",
+        "xy": [
+          51.037,
+          62.73
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_RUN_REQ"
+        }
+      },
+      "TP16": {
+        "value": "CS_PAW",
+        "xy": [
+          25.1563,
+          62.22
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "CS_PAW"
+        }
+      },
+      "TP5": {
+        "value": "UART_RX",
+        "xy": [
+          29.55,
+          75.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "UART_RX"
+        }
+      },
+      "TP8": {
+        "value": "+3V3",
+        "xy": [
+          47.7197,
+          86.2197
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "+3V3"
+        }
+      },
+      "TP43": {
+        "value": "OPT_RESET_N",
+        "xy": [
+          35.0,
+          29.9
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_RESET_N"
+        }
+      },
+      "TP20": {
+        "value": "MOTOR_SPI_MOSI",
+        "xy": [
+          46.025,
+          73.15
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "MOTOR_SPI_MOSI"
+        }
+      },
+      "TP40": {
+        "value": "OPT_3V3",
+        "xy": [
+          45.0,
+          50.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_3V3"
+        }
+      },
+      "TP22": {
+        "value": "MOTOR_SPI_MISO",
+        "xy": [
+          53.375,
+          67.9
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "MOTOR_SPI_MISO"
+        }
+      },
+      "TP28": {
+        "value": "DRV_FAULT_N",
+        "xy": [
+          34.0,
+          69.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "DRV_FAULT_N"
+        }
+      },
+      "TP29": {
+        "value": "WHEEL_PWM_A",
+        "xy": [
+          38.0,
+          78.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_PWM_A"
+        }
+      },
+      "TP24": {
+        "value": "CS_MA735",
+        "xy": [
+          30.1875,
+          41.52
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "CS_MA735"
+        }
+      },
+      "TP23": {
+        "value": "CS_ADC2",
+        "xy": [
+          29.6198,
+          70.05
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "CS_ADC2"
+        }
+      },
+      "TP6": {
+        "value": "MCU_EN",
+        "xy": [
+          57.0,
+          85.9
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "MCU_EN"
+        }
+      },
+      "TP30": {
+        "value": "RGB_DATA",
+        "xy": [
+          41.35,
+          74.6
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "RGB_DATA"
+        }
+      },
+      "TP25": {
+        "value": "CS_DRV8316",
+        "xy": [
+          23.225,
+          73.85
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "CS_DRV8316"
+        }
+      },
+      "TP33": {
+        "value": "WHEEL_PWM_C",
+        "xy": [
+          50.875,
+          66.85
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_PWM_C"
+        }
+      },
+      "TP18": {
+        "value": "CS_IMU",
+        "xy": [
+          35.8063,
+          66.76
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "CS_IMU"
+        }
+      },
+      "TP21": {
+        "value": "MOTOR_SPI_SCLK",
+        "xy": [
+          48.7,
+          73.15
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "MOTOR_SPI_SCLK"
+        }
+      },
+      "TP31": {
+        "value": "BOOT_SAFE_SPARE",
+        "xy": [
+          45.025,
+          75.6
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "BOOT_SAFE_SPARE"
+        }
+      },
+      "TP10": {
+        "value": "VBUS_USB",
+        "xy": [
+          48.0813,
+          23.76
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "VBUS_USB"
+        }
+      },
+      "TP4": {
+        "value": "UART_TX",
+        "xy": [
+          25.2553,
+          86.2803
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "UART_TX"
+        }
+      },
+      "TP32": {
+        "value": "WHEEL_PWM_B",
+        "xy": [
+          48.7,
+          75.85
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_PWM_B"
+        }
+      },
+      "TP42": {
+        "value": "OPT_VDDPIX",
+        "xy": [
+          47.0,
+          59.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "OPT_VDDPIX"
+        }
+      },
+      "TP26": {
+        "value": "PAW_MOTION_N",
+        "xy": [
+          27.9,
+          73.35
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "PAW_MOTION_N"
+        }
+      },
+      "TP27": {
+        "value": "IMU_INT1",
+        "xy": [
+          31.325,
+          73.6
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "IMU_INT1"
+        }
+      }
+    },
+    "geometry": {
+      "material_wkt": "POLYGON ((55.090612 0.227775, 55.870324 0.888888, 56.601562 1.95, 57.296312 3.377776, 57.966737 5.138888, 58.625 7.2, 59.283262 9.52776, 59.953687 12.08888, 60.648437 14.85, 61.379675 17.77776, 62.159387 20.83888, 63 24, 64.240575 27.37728, 65.341412 30.35184, 66.30855 32.98752, 67.148112 35.34816, 67.866137 37.49768, 68.46875 39.5, 68.961987 41.41896, 69.351887 43.31856, 69.644575 45.26248, 69.846087 47.3148, 69.96255 49.53936, 70 52, 70 53.1116, 70 54.42592, 70 55.91248, 70 57.54072, 70 59.28008, 70 61.1, 70 62.96992, 70 64.85928, 70 66.73752, 70 68.57408, 70 70.3384, 70 72, 69.7291 76.08008, 68.92655 79.90744, 67.6074 83.4624, 65.787049 86.7256, 63.48055 89.6784, 60.703125 92.3, 57.47 94.572, 53.796312 96.4744, 49.697287 97.9872, 45.188062 99.0928, 40.28395 99.7696, 35 100, 29.71605 99.7696, 24.811937 99.0928, 20.302712 97.9872, 16.203687 96.4744, 12.53 94.572, 9.296875 92.3, 6.519458 89.6784, 4.212958 86.7256, 2.392582 83.4624, 1.073493 79.90744, 0.270908 76.08008, 0 72, 0 70.3384, 0 68.57408, 0 66.73752, 0 64.85928, 0 62.96992, 0 61.1, 0 59.28008, 0 57.54072, 0 55.91248, 0 54.42592, 0 53.1116, 0 52, 0.037467 49.53936, 0.153938 47.3148, 0.355468 45.26248, 0.648147 43.31856, 1.038047 41.41896, 1.53125 39.5, 2.133827 37.49768, 2.851852 35.34816, 3.691406 32.98752, 4.658561 30.35184, 5.759407 27.37728, 7 24, 7.840568 20.83888, 8.620368 17.77776, 9.351562 14.85, 10.046312 12.08888, 10.716737 9.52776, 11.375 7.2, 12.033262 5.138888, 12.703687 3.377776, 13.398437 1.95, 14.129674 0.888888, 14.909387 0.227775, 15.75 0, 54.25 0, 55.090612 0.227775), (32.101746 43.682407, 31.909013 43.720744, 31.727463 43.795945, 31.564072 43.905119, 31.425119 44.044072, 31.315945 44.207463, 31.240744 44.389013, 31.202407 44.581746, 31.2 44.68, 31.2 59.94, 31.202407 60.038254, 31.240744 60.230987, 31.315945 60.412537, 31.425119 60.575928, 31.564072 60.714881, 31.727463 60.824055, 31.909013 60.899256, 32.101746 60.937593, 32.2 60.94, 38.8 60.94, 38.898254 60.937593, 39.090987 60.899256, 39.272537 60.824055, 39.435928 60.714881, 39.574881 60.575928, 39.684055 60.412537, 39.759256 60.230987, 39.797593 60.038254, 39.8 59.94, 39.8 44.68, 39.797593 44.581746, 39.759256 44.389013, 39.684055 44.207463, 39.574881 44.044072, 39.435928 43.905119, 39.272537 43.795945, 39.090987 43.720744, 38.898254 43.682407, 38.8 43.68, 32.2 43.68, 32.101746 43.682407))",
+      "rule_areas": [
+        [
+          "Antenna",
+          "00000000_00000000_00000000_00000005",
+          "POLYGON ((22.3 94.5, 47.7 94.5, 47.7 104, 22.3 104, 22.3 94.5))",
+          true,
+          true,
+          true
+        ],
+        [
+          "PMW3360 APERTURE RESERVE - SAMPLE FIT PENDING",
+          "00000000_00000000_00000000_00000005",
+          "POLYGON ((31.2 43.68, 39.8 43.68, 39.8 60.94, 31.2 60.94, 31.2 43.68))",
+          true,
+          true,
+          true
+        ]
+      ],
+      "thickness_iu": 1578000
+    },
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": true,
+          "text_position": 0,
+          "units_format": 0
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.1,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 1.27
+        },
+        "silk_line_width": 0.1,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.1,
+        "silk_text_upright": false,
+        "zones": {
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
+        }
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "meta": {
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "creepage": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
+        "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
+        "npth_inside_courtyard": "error",
+        "padstack": "warning",
+        "pth_inside_courtyard": "error",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_on_edge_cuts": "error",
+        "text_thickness": "warning",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_angle": "error",
+        "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
+        "track_segment_length": "error",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.127,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 2,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.45,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpthpad": true,
+          "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
+          "td_ontrackend": false,
+          "td_onvia": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
+      "zones_allow_external_fillets": false
+    },
+    "usb_copper": [
+      [
+        "USB_DM",
+        33350000,
+        11403500,
+        33350000,
+        13663600,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        33350000,
+        13663600,
+        34050000,
+        14363600,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        34050000,
+        14363600,
+        34050000,
+        17483600,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        34050000,
+        17483600,
+        35600000,
+        19033600,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        34750000,
+        8045000,
+        34750000,
+        8452900,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        34750000,
+        8452900,
+        34770100,
+        8473000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        34770100,
+        8473000,
+        34859500,
+        8562400,
+        0,
+        127000,
+        0
+      ],
+      [
+        "USB_DM",
+        34859500,
+        8562400,
+        34859500,
+        8860500,
+        0,
+        127000,
+        0
+      ],
+      [
+        "USB_DM",
+        34859500,
+        8860500,
+        35015500,
+        9016500,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35015500,
+        9016500,
+        35496500,
+        9016500,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35350000,
+        20425000,
+        35800000,
+        20875000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35496500,
+        9016500,
+        35496500,
+        9257000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35496500,
+        9016500,
+        35750000,
+        8763000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35496500,
+        9257000,
+        33350000,
+        11403500,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35600000,
+        19033600,
+        35600000,
+        20175000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35600000,
+        20175000,
+        35350000,
+        20425000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35750000,
+        8763000,
+        35750000,
+        8045000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35800000,
+        20875000,
+        36950000,
+        20875000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35850000,
+        71940000,
+        35850000,
+        71940000,
+        0,
+        450000,
+        300000
+      ],
+      [
+        "USB_DM",
+        35850000,
+        71940000,
+        35850000,
+        72250000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        35850000,
+        72250000,
+        36887500,
+        73287500,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        36887500,
+        73287500,
+        37600000,
+        73287500,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DM",
+        36950000,
+        20875000,
+        36950000,
+        20875000,
+        0,
+        450000,
+        300000
+      ],
+      [
+        "USB_DM",
+        36950000,
+        20875000,
+        37350000,
+        20875000,
+        2,
+        220000,
+        0
+      ],
+      [
+        "USB_DM",
+        37350000,
+        20875000,
+        39385000,
+        22049474,
+        2,
+        220000,
+        0
+      ],
+      [
+        "USB_DM",
+        39385000,
+        22049474,
+        39385000,
+        23500000,
+        2,
+        220000,
+        0
+      ],
+      [
+        "USB_DM",
+        39385000,
+        23500000,
+        39385000,
+        39886974,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DM",
+        39385000,
+        39886974,
+        45199012,
+        45700987,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DM",
+        40490832,
+        71940000,
+        35850000,
+        71940000,
+        2,
+        380000,
+        0
+      ],
+      [
+        "USB_DM",
+        41920416,
+        70510416,
+        40490832,
+        71940000,
+        2,
+        380000,
+        0
+      ],
+      [
+        "USB_DM",
+        42549012,
+        70299012,
+        41920416,
+        70510416,
+        2,
+        380000,
+        0
+      ],
+      [
+        "USB_DM",
+        43149012,
+        69699012,
+        42549012,
+        70299012,
+        2,
+        720000,
+        0
+      ],
+      [
+        "USB_DM",
+        45199012,
+        45700987,
+        45365165,
+        46234834,
+        2,
+        540000,
+        0
+      ],
+      [
+        "USB_DM",
+        45365165,
+        46234834,
+        47415165,
+        48284834,
+        2,
+        540000,
+        0
+      ],
+      [
+        "USB_DM",
+        47415165,
+        48284834,
+        47999012,
+        48500987,
+        2,
+        540000,
+        0
+      ],
+      [
+        "USB_DM",
+        47999012,
+        48500987,
+        49735000,
+        50236974,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DM",
+        49735000,
+        50236974,
+        49735000,
+        63113025,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DM",
+        49735000,
+        63113025,
+        43149012,
+        69699012,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DP",
+        32900000,
+        10550000,
+        32900000,
+        13850000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        32900000,
+        13850000,
+        33600000,
+        14550000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        33600000,
+        14550000,
+        33600000,
+        17670000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        33600000,
+        17670000,
+        34450000,
+        18520000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        33650000,
+        73160000,
+        33650000,
+        73287500,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34250000,
+        7307800,
+        34250000,
+        8045000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34250000,
+        8045000,
+        34250000,
+        9200000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34250000,
+        9200000,
+        32900000,
+        10550000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34450000,
+        18520000,
+        34450000,
+        20225000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34450000,
+        20225000,
+        34650000,
+        20425000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34485900,
+        7071900,
+        34250000,
+        7307800,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34650000,
+        20425000,
+        34650000,
+        20780000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34650000,
+        20780000,
+        35420000,
+        21550000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        34957300,
+        7071900,
+        34485900,
+        7071900,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        35250000,
+        7364600,
+        34957300,
+        7071900,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        35250000,
+        8045000,
+        35250000,
+        7364600,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        35420000,
+        21550000,
+        36950000,
+        21550000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        35550000,
+        71260000,
+        33650000,
+        73160000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        35850000,
+        71260000,
+        35550000,
+        71260000,
+        0,
+        150000,
+        0
+      ],
+      [
+        "USB_DP",
+        35850000,
+        71260000,
+        35850000,
+        71260000,
+        0,
+        450000,
+        300000
+      ],
+      [
+        "USB_DP",
+        36950000,
+        21550000,
+        36950000,
+        21550000,
+        0,
+        450000,
+        300000
+      ],
+      [
+        "USB_DP",
+        36950000,
+        21550000,
+        37350000,
+        21550000,
+        2,
+        220000,
+        0
+      ],
+      [
+        "USB_DP",
+        37350000,
+        21550000,
+        38115000,
+        22575525,
+        2,
+        220000,
+        0
+      ],
+      [
+        "USB_DP",
+        38115000,
+        22575525,
+        38115000,
+        23500000,
+        2,
+        220000,
+        0
+      ],
+      [
+        "USB_DP",
+        38115000,
+        23500000,
+        38115000,
+        40413025,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DP",
+        38115000,
+        40413025,
+        44300987,
+        46599012,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DP",
+        40209167,
+        71259999,
+        35850000,
+        71260000,
+        2,
+        380000,
+        0
+      ],
+      [
+        "USB_DP",
+        41439583,
+        70029583,
+        40209167,
+        71259999,
+        2,
+        380000,
+        0
+      ],
+      [
+        "USB_DP",
+        41650987,
+        69400987,
+        41439583,
+        70029583,
+        2,
+        380000,
+        0
+      ],
+      [
+        "USB_DP",
+        42250987,
+        68800987,
+        41650987,
+        69400987,
+        2,
+        720000,
+        0
+      ],
+      [
+        "USB_DP",
+        44300987,
+        46599012,
+        44834834,
+        46765165,
+        2,
+        540000,
+        0
+      ],
+      [
+        "USB_DP",
+        44834834,
+        46765165,
+        46884834,
+        48815165,
+        2,
+        540000,
+        0
+      ],
+      [
+        "USB_DP",
+        46884834,
+        48815165,
+        47100987,
+        49399012,
+        2,
+        540000,
+        0
+      ],
+      [
+        "USB_DP",
+        47100987,
+        49399012,
+        48465000,
+        50763025,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DP",
+        48465000,
+        50763025,
+        48465000,
+        62586974,
+        2,
+        1100000,
+        0
+      ],
+      [
+        "USB_DP",
+        48465000,
+        62586974,
+        42250987,
+        68800987,
+        2,
+        1100000,
+        0
+      ]
+    ]
+  },
+  "Upper": {
+    "sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
+    "components": {
+      "U16": {
+        "value": "SN74LVC08APWR",
+        "xy": [
+          19.0,
+          75.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "SOURCE_OK",
+          "2": "ACT_REQ",
+          "3": "ARM_SOURCE",
+          "4": "ARM_SOURCE",
+          "5": "HALL_EN",
+          "6": "ARM_VALID",
+          "7": "GND",
+          "8": "SOURCE_3A",
+          "9": "SOURCE_OK",
+          "10": "CC_OUT2_INV",
+          "11": "ACT_DRIVE_EN",
+          "12": "ACT_PERMIT",
+          "13": "ARM_VALID",
+          "14": "+3V3"
+        }
+      },
+      "U18": {
+        "value": "SN74LVC08APWR",
+        "xy": [
+          48.0,
+          75.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "GND",
+          "3": "unconnected-(U18-1Y-Pad3)",
+          "4": "GND",
+          "5": "GND",
+          "6": "unconnected-(U18-2Y-Pad6)",
+          "7": "GND",
+          "8": "HALL_EN",
+          "9": "SENS_REQ",
+          "10": "MCU_EN",
+          "11": "unconnected-(U18-4Y-Pad11)",
+          "12": "GND",
+          "13": "GND",
+          "14": "+3V3"
+        }
+      },
+      "C33": {
+        "value": "100nF",
+        "xy": [
+          44.75,
+          27.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_IMON_ADC",
+          "2": "GND"
+        }
+      },
+      "C37": {
+        "value": "10uF/25V",
+        "xy": [
+          14.0,
+          58.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "Q2": {
+        "value": "2N7002",
+        "xy": [
+          35.0,
+          22.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "SOURCE_3A",
+          "2": "GND",
+          "3": "ILM_HIGH_D"
+        }
+      },
+      "R65": {
+        "value": "22.1k",
+        "xy": [
+          56.45,
+          26.6
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "VBUS_USB",
+          "2": "VBUS_GATE"
+        }
+      },
+      "R64": {
+        "value": "1k",
+        "xy": [
+          29.8,
+          39.8
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_IMON_BUF",
+          "2": "USB_IMON_ADC"
+        }
+      },
+      "U7": {
+        "value": "TMAG5253BA2IQDMRR",
+        "xy": [
+          16.0,
+          31.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "+3V3",
+          "2": "GND",
+          "3": "HALL_EN",
+          "4": "HALL_L",
+          "5": "GND"
+        }
+      },
+      "Q3": {
+        "value": "2N7002",
+        "xy": [
+          55.2,
+          35.9
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "VBUS_GATE",
+          "2": "GND",
+          "3": "VBUS_PRESENT_N"
+        }
+      },
+      "R63": {
+        "value": "100k",
+        "xy": [
+          39.55,
+          31.15
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "SOURCE_3A",
+          "2": "GND"
+        }
+      },
+      "R42": {
+        "value": "3.3k",
+        "xy": [
+          58.5,
+          51.32
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_ILM",
+          "2": "GND"
+        }
+      },
+      "R49": {
+        "value": "10k",
+        "xy": [
+          40.8,
+          74.55
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_DRIVE_EN",
+          "2": "GND"
+        }
+      },
+      "D3": {
+        "value": "BAT54-7-F",
+        "xy": [
+          57.96,
+          62.72
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_UVLO",
+          "2": "",
+          "3": "ACT_DRIVE_EN"
+        }
+      },
+      "C31": {
+        "value": "100nF",
+        "xy": [
+          43.5,
+          69.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R40": {
+        "value": "100k",
+        "xy": [
+          65.5,
+          55.4
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "ACT_OVLO"
+        }
+      },
+      "R39": {
+        "value": "11k",
+        "xy": [
+          61.5,
+          56.4
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_UVLO",
+          "2": "GND"
+        }
+      },
+      "R62": {
+        "value": "100k",
+        "xy": [
+          12.8,
+          20.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "SOURCE_OK",
+          "2": "GND"
+        }
+      },
+      "R41": {
+        "value": "22.1k",
+        "xy": [
+          57.5,
+          56.7
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_OVLO",
+          "2": "GND"
+        }
+      },
+      "U14": {
+        "value": "SN74LVC2G04DCKR",
+        "xy": [
+          29.0,
+          32.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "CC_OUT1",
+          "2": "GND",
+          "3": "CC_OUT2",
+          "4": "CC_OUT2_INV",
+          "5": "+3V3",
+          "6": "SOURCE_OK"
+        }
+      },
+      "C19": {
+        "value": "1uF/50V",
+        "xy": [
+          35.0,
+          39.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R71": {
+        "value": "100k",
+        "xy": [
+          50.6,
+          22.1
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "VBUS_PRESENT_N"
+        }
+      },
+      "U10": {
+        "value": "ADS7038IRTER",
+        "xy": [
+          40.0,
+          39.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "HALL_R",
+          "2": "GND",
+          "3": "GND",
+          "4": "GND",
+          "5": "USB_IMON_ADC",
+          "6": "ACT_VMON",
+          "7": "+3V3",
+          "8": "ADC_DECAP",
+          "9": "GND",
+          "10": "+3V3",
+          "11": "ADC_CS",
+          "12": "SPI_MISO",
+          "13": "SPI_SCLK",
+          "14": "SPI_MOSI",
+          "15": "HALL_L",
+          "16": "HALL_M",
+          "17": "GND"
+        }
+      },
+      "R43": {
+        "value": "3.3k",
+        "xy": [
+          63.5,
+          61.73
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_ILM",
+          "2": "GND"
+        }
+      },
+      "R29": {
+        "value": "22.1k",
+        "xy": [
+          18.0,
+          19.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "VBUS_USB",
+          "2": "USB_UVLO"
+        }
+      },
+      "C89": {
+        "value": "1uF/50V",
+        "xy": [
+          48.0,
+          54.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "GND"
+        }
+      },
+      "R69": {
+        "value": "1k",
+        "xy": [
+          20.4,
+          80.3
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "J10": {
+        "value": "Soldered wires Power_1x02",
+        "xy": [
+          61.0,
+          32.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "C34": {
+        "value": "100nF",
+        "xy": [
+          35.0,
+          27.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R70": {
+        "value": "10k",
+        "xy": [
+          41.9,
+          81.8
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "SENS_REQ",
+          "2": "GND"
+        }
+      },
+      "U9": {
+        "value": "TMAG5253BA2IQDMRR",
+        "xy": [
+          53.0,
+          31.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "+3V3",
+          "2": "GND",
+          "3": "HALL_EN",
+          "4": "HALL_R",
+          "5": "GND"
+        }
+      },
+      "C18": {
+        "value": "100nF",
+        "xy": [
+          51.25,
+          27.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R47": {
+        "value": "10k",
+        "xy": [
+          28.8,
+          74.4
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_HEARTBEAT",
+          "2": "GND"
+        }
+      },
+      "U8": {
+        "value": "TMAG5253BA2IQDMRR",
+        "xy": [
+          23.0,
+          50.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "+3V3",
+          "2": "GND",
+          "3": "HALL_EN",
+          "4": "HALL_M",
+          "5": "GND"
+        }
+      },
+      "C27": {
+        "value": "1uF/50V",
+        "xy": [
+          48.0,
+          88.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WD_RCEXT",
+          "2": "WD_CEXT"
+        }
+      },
+      "R48": {
+        "value": "10k",
+        "xy": [
+          34.5,
+          71.4
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_REQ",
+          "2": "GND"
+        }
+      },
+      "R66": {
+        "value": "100k",
+        "xy": [
+          60.3,
+          26.15
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "VBUS_GATE",
+          "2": "GND"
+        }
+      },
+      "C38": {
+        "value": "10uF/25V",
+        "xy": [
+          25.75,
+          66.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R44": {
+        "value": "1k",
+        "xy": [
+          27.75,
+          36.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_FAULT_N",
+          "2": "MCU_EN"
+        }
+      },
+      "R38": {
+        "value": "10k",
+        "xy": [
+          49.2,
+          47.8
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_UV_2",
+          "2": "ACT_UVLO"
+        }
+      },
+      "C36": {
+        "value": "100nF",
+        "xy": [
+          50.25,
+          39.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_VMON",
+          "2": "GND"
+        }
+      },
+      "R60": {
+        "value": "3.3k",
+        "xy": [
+          39.9,
+          22.0
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "USB_ILM",
+          "2": "ILM_HIGH_D"
+        }
+      },
+      "R32": {
+        "value": "100k",
+        "xy": [
+          19.9,
+          34.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "USB_OV_1",
+          "2": "USB_OV_2"
+        }
+      },
+      "U15": {
+        "value": "SN74LVC1G123DCUR",
+        "xy": [
+          48.0,
+          84.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "ACT_HEARTBEAT",
+          "3": "ARM_VALID",
+          "4": "GND",
+          "5": "ACT_PERMIT",
+          "6": "WD_CEXT",
+          "7": "WD_RCEXT",
+          "8": "+3V3"
+        }
+      },
+      "C21": {
+        "value": "1uF/50V",
+        "xy": [
+          40.0,
+          44.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ADC_DECAP",
+          "2": "GND"
+        }
+      },
+      "C32": {
+        "value": "100nF",
+        "xy": [
+          24.25,
+          31.25
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C16": {
+        "value": "100nF",
+        "xy": [
+          11.25,
+          31.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "D4": {
+        "value": "BAT54-7-F",
+        "xy": [
+          52.7,
+          52.76
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_VMON",
+          "2": "",
+          "3": "+3V3"
+        }
+      },
+      "R37": {
+        "value": "10k",
+        "xy": [
+          40.3,
+          49.1
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_UV_1",
+          "2": "ACT_UV_2"
+        }
+      },
+      "C35": {
+        "value": "100nF",
+        "xy": [
+          46.0,
+          32.75
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "VBUS_GATE",
+          "2": "GND"
+        }
+      },
+      "J104": {
+        "value": "Stack power / 5 wires",
+        "xy": [
+          0.0,
+          1.25
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "VBUS_USB",
+          "3": "PWR_5V",
+          "4": "+3V3",
+          "5": "GND"
+        }
+      },
+      "R31": {
+        "value": "100k",
+        "xy": [
+          12.0,
+          26.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "VBUS_USB",
+          "2": "USB_OV_1"
+        }
+      },
+      "R68": {
+        "value": "22.1k",
+        "xy": [
+          57.5,
+          45.8
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_VMON",
+          "2": "GND"
+        }
+      },
+      "C29": {
+        "value": "100nF",
+        "xy": [
+          25.5,
+          70.15
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C20": {
+        "value": "1uF/50V",
+        "xy": [
+          45.0,
+          39.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C88": {
+        "value": "10uF/25V",
+        "xy": [
+          37.1,
+          16.65
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "GND"
+        }
+      },
+      "R35": {
+        "value": "100k",
+        "xy": [
+          20.1,
+          27.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "USB_OVLO",
+          "2": "GND"
+        }
+      },
+      "H105": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          18.0,
+          6.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "C28": {
+        "value": "100nF",
+        "xy": [
+          53.25,
+          84.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C17": {
+        "value": "100nF",
+        "xy": [
+          25.0,
+          54.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "H107": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          7.0,
+          76.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "C26": {
+        "value": "10nF",
+        "xy": [
+          53.75,
+          67.25
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_DVDT",
+          "2": "GND"
+        }
+      },
+      "R59": {
+        "value": "4.7k",
+        "xy": [
+          29.4,
+          8.15
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_ILM",
+          "2": "ILM_MED_D"
+        }
+      },
+      "U12": {
+        "value": "TPS259470LRPWR",
+        "xy": [
+          27.25,
+          19.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "USB_UVLO",
+          "2": "USB_OVLO",
+          "3": "unconnected-(U12-AUXOFF-Pad3)",
+          "4": "USB_FAULT_N",
+          "5": "VBUS_USB",
+          "6": "PWR_5V",
+          "7": "USB_DVDT",
+          "8": "GND",
+          "9": "USB_ILM",
+          "10": "unconnected-(U12-ITIMER-Pad10)"
+        }
+      },
+      "H106": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          52.0,
+          6.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "R46": {
+        "value": "10k",
+        "xy": [
+          54.16,
+          89.25
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "WD_RCEXT"
+        }
+      },
+      "R34": {
+        "value": "100k",
+        "xy": [
+          16.2,
+          26.25
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "USB_OV_3",
+          "2": "USB_OVLO"
+        }
+      },
+      "R36": {
+        "value": "10k",
+        "xy": [
+          43.9,
+          53.6
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "PWR_5V",
+          "2": "ACT_UV_1"
+        }
+      },
+      "R45": {
+        "value": "1k",
+        "xy": [
+          42.6,
+          64.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_FAULT_N",
+          "2": "MCU_EN"
+        }
+      },
+      "R58": {
+        "value": "33R",
+        "xy": [
+          43.44,
+          16.78
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ILM_BASE_2",
+          "2": "GND"
+        }
+      },
+      "C25": {
+        "value": "10nF",
+        "xy": [
+          24.25,
+          24.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "USB_DVDT",
+          "2": "GND"
+        }
+      },
+      "H108": {
+        "value": "M2 clearance / 5mm support envelope",
+        "xy": [
+          63.0,
+          76.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": ""
+        }
+      },
+      "C40": {
+        "value": "10uF/25V",
+        "xy": [
+          48.95,
+          63.4
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R30": {
+        "value": "10k",
+        "xy": [
+          18.0,
+          15.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_UVLO",
+          "2": "GND"
+        }
+      },
+      "C39": {
+        "value": "10uF/25V",
+        "xy": [
+          23.75,
+          62.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R57": {
+        "value": "3.3k",
+        "xy": [
+          42.34,
+          7.78
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ILM_BASE_1",
+          "2": "ILM_BASE_2"
+        }
+      },
+      "R56": {
+        "value": "3.3k",
+        "xy": [
+          35.79,
+          8.13
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "USB_ILM",
+          "2": "ILM_BASE_1"
+        }
+      },
+      "Q1": {
+        "value": "2N7002",
+        "xy": [
+          32.2,
+          19.3
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "SOURCE_OK",
+          "2": "GND",
+          "3": "ILM_MED_D"
+        }
+      },
+      "U19": {
+        "value": "TLV9001IDBVR",
+        "xy": [
+          29.0,
+          24.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "USB_IMON_BUF",
+          "2": "GND",
+          "3": "USB_ILM",
+          "4": "USB_IMON_BUF",
+          "5": "+3V3"
+        }
+      },
+      "C24": {
+        "value": "1uF/50V",
+        "xy": [
+          22.95,
+          17.75
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "VBUS_USB",
+          "2": "GND"
+        }
+      },
+      "R67": {
+        "value": "100k",
+        "xy": [
+          45.2,
+          47.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "ACT_VMON"
+        }
+      },
+      "D2": {
+        "value": "SMBJ6.0A",
+        "xy": [
+          18.0,
+          67.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R33": {
+        "value": "100k",
+        "xy": [
+          23.8,
+          7.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "USB_OV_2",
+          "2": "USB_OV_3"
+        }
+      },
+      "R61": {
+        "value": "10k",
+        "xy": [
+          43.75,
+          22.1
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "USB_ILM",
+          "2": "ILM_HIGH_D"
+        }
+      },
+      "U13": {
+        "value": "TPS259470LRPWR",
+        "xy": [
+          51.0,
+          59.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "ACT_UVLO",
+          "2": "ACT_OVLO",
+          "3": "unconnected-(U13-AUXOFF-Pad3)",
+          "4": "ACT_FAULT_N",
+          "5": "PWR_5V",
+          "6": "ACT_5V",
+          "7": "ACT_DVDT",
+          "8": "GND",
+          "9": "ACT_ILM",
+          "10": "unconnected-(U13-ITIMER-Pad10)"
+        }
+      },
+      "J102": {
+        "value": "Stack signals / 14 wires",
+        "xy": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "SPI_SCLK",
+          "3": "SPI_MOSI",
+          "4": "SPI_MISO",
+          "5": "ADC_CS",
+          "6": "ACT_REQ",
+          "7": "ACT_HEARTBEAT",
+          "8": "SENS_REQ",
+          "9": "CC_OUT1",
+          "10": "CC_OUT2",
+          "11": "VBUS_PRESENT_N",
+          "12": "HALL_EN",
+          "13": "ACT_DRIVE_EN",
+          "14": "MCU_EN"
+        }
+      },
+      "TP15": {
+        "value": "GND",
+        "xy": [
+          30.6,
+          78.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "GND"
+        }
+      },
+      "TP11": {
+        "value": "PWR_5V",
+        "xy": [
+          53.5,
+          74.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "PWR_5V"
+        }
+      },
+      "TP3": {
+        "value": "ACT_5V",
+        "xy": [
+          26.4,
+          74.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_5V"
+        }
+      },
+      "TP2": {
+        "value": "PWR_5V",
+        "xy": [
+          53.15,
+          69.6
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "PWR_5V"
+        }
+      },
+      "TP12": {
+        "value": "ACT_5V",
+        "xy": [
+          17.25,
+          79.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_5V"
+        }
+      },
+      "TP13": {
+        "value": "ACT_DRIVE_EN",
+        "xy": [
+          43.8803,
+          84.8303
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_DRIVE_EN"
+        }
+      },
+      "TP14": {
+        "value": "USB_ILM",
+        "xy": [
+          21.5,
+          22.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "USB_ILM"
+        }
+      }
+    },
+    "geometry": {
+      "material_wkt": "POLYGON ((55.090612 0.227775, 55.870324 0.888888, 56.601562 1.95, 57.296312 3.377776, 57.966737 5.138888, 58.625 7.2, 59.283262 9.52776, 59.953687 12.08888, 60.648437 14.85, 61.379675 17.77776, 62.159387 20.83888, 63 24, 64.240575 27.37728, 65.341412 30.35184, 66.30855 32.98752, 67.148112 35.34816, 67.866137 37.49768, 68.46875 39.5, 68.961987 41.41896, 69.351887 43.31856, 69.644575 45.26248, 69.846087 47.3148, 69.96255 49.53936, 70 52, 70 53.1116, 70 54.42592, 70 55.91248, 70 57.54072, 70 59.28008, 70 61.1, 70 62.96992, 70 64.85928, 70 66.73752, 70 68.57408, 70 70.3384, 70 72, 69.7291 76.08008, 68.92655 79.90744, 67.6074 83.4624, 65.787049 86.7256, 63.48055 89.6784, 60.703125 92.3, 57.47 94.572, 53.796312 96.4744, 49.697287 97.9872, 45.188062 99.0928, 40.28395 99.7696, 35 100, 29.71605 99.7696, 24.811937 99.0928, 20.302712 97.9872, 16.203687 96.4744, 12.53 94.572, 9.296875 92.3, 6.519458 89.6784, 4.212958 86.7256, 2.392582 83.4624, 1.073493 79.90744, 0.270908 76.08008, 0 72, 0 70.3384, 0 68.57408, 0 66.73752, 0 64.85928, 0 62.96992, 0 61.1, 0 59.28008, 0 57.54072, 0 55.91248, 0 54.42592, 0 53.1116, 0 52, 0.037467 49.53936, 0.153938 47.3148, 0.355468 45.26248, 0.648147 43.31856, 1.038047 41.41896, 1.53125 39.5, 2.133827 37.49768, 2.851852 35.34816, 3.691406 32.98752, 4.658561 30.35184, 5.759407 27.37728, 7 24, 7.840568 20.83888, 8.620368 17.77776, 9.351562 14.85, 10.046312 12.08888, 10.716737 9.52776, 11.375 7.2, 12.033262 5.138888, 12.703687 3.377776, 13.398437 1.95, 14.129674 0.888888, 14.909387 0.227775, 15.75 0, 54.25 0, 55.090612 0.227775))",
+      "rule_areas": [
+        [
+          "LOWER ESP32 ANTENNA - PROJECTED STACK RESERVE",
+          "00000000_00000000_00000000_00000005",
+          "POLYGON ((22.3 94.5, 47.7 94.5, 47.7 104, 22.3 104, 22.3 94.5))",
+          true,
+          true,
+          true
+        ]
+      ],
+      "thickness_iu": 1578000
+    },
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": true,
+          "text_position": 0,
+          "units_format": 0
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.1,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 1.27
+        },
+        "silk_line_width": 0.1,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.1,
+        "silk_text_upright": false,
+        "zones": {
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
+        }
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "meta": {
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "creepage": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
+        "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
+        "npth_inside_courtyard": "error",
+        "padstack": "warning",
+        "pth_inside_courtyard": "error",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_on_edge_cuts": "error",
+        "text_thickness": "warning",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_angle": "error",
+        "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
+        "track_segment_length": "error",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.127,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 2,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.45,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpthpad": true,
+          "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
+          "td_ontrackend": false,
+          "td_onvia": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
+      "zones_allow_external_fillets": false
+    }
+  },
+  "Wheel": {
+    "sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
+    "components": {
+      "TP34": {
+        "value": "ACT_5V",
+        "xy": [
+          3.0,
+          24.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V"
+        }
+      },
+      "R123": {
+        "value": "47R/2W",
+        "xy": [
+          7.0,
+          55.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "BRAKE_DRAIN"
+        }
+      },
+      "R148": {
+        "value": "10k",
+        "xy": [
+          58.0,
+          34.1
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_VM_SENSE",
+          "2": "GND"
+        }
+      },
+      "C102": {
+        "value": "1nF/50V",
+        "xy": [
+          52.0,
+          29.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_VM_SENSE",
+          "2": "GND"
+        }
+      },
+      "R139": {
+        "value": "10k",
+        "xy": [
+          47.0,
+          37.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_PWM_B",
+          "2": "GND"
+        }
+      },
+      "J5": {
+        "value": "GB1806 phase wires",
+        "xy": [
+          28.0,
+          53.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_PHASE_A",
+          "2": "WHEEL_PHASE_B",
+          "3": "WHEEL_PHASE_C"
+        }
+      },
+      "R102": {
+        "value": "330R",
+        "xy": [
+          8.695,
+          2.255
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_SOA",
+          "2": "WHEEL_I_A"
+        }
+      },
+      "U22": {
+        "value": "SN74LVC08APWR",
+        "xy": [
+          40.0,
+          38.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_DRIVE_EN",
+          "2": "WHEEL_RUN_REQ",
+          "3": "WHEEL_RUN_REQUESTED",
+          "4": "WHEEL_PWM_A",
+          "5": "WHEEL_RUN_EN",
+          "6": "DRV_INHA",
+          "7": "GND",
+          "8": "DRV_INHB",
+          "9": "WHEEL_PWM_B",
+          "10": "WHEEL_RUN_EN",
+          "11": "DRV_INHC",
+          "12": "WHEEL_PWM_C",
+          "13": "WHEEL_RUN_EN",
+          "14": "+3V3"
+        }
+      },
+      "C45": {
+        "value": "10uF/25V",
+        "xy": [
+          29.0,
+          47.06
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R138": {
+        "value": "10k",
+        "xy": [
+          50.205,
+          33.74
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_PWM_A",
+          "2": "GND"
+        }
+      },
+      "TP35": {
+        "value": "BRAKE_REF",
+        "xy": [
+          2.0,
+          35.75
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BRAKE_REF"
+        }
+      },
+      "R97": {
+        "value": "100k",
+        "xy": [
+          8.695,
+          6.015
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "MOTOR_SPI_MOSI",
+          "2": "GND"
+        }
+      },
+      "TP37": {
+        "value": "GND",
+        "xy": [
+          3.5,
+          45.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND"
+        }
+      },
+      "R144": {
+        "value": "33k",
+        "xy": [
+          51.845,
+          20.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "CS_DRV8316",
+          "2": "GND"
+        }
+      },
+      "R100": {
+        "value": "100k",
+        "xy": [
+          51.095,
+          5.74
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ADC2_MISO_LOCAL",
+          "2": "GND"
+        }
+      },
+      "R107": {
+        "value": "0R",
+        "xy": [
+          13.62,
+          13.665
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ADC2_SPARE5",
+          "2": "GND"
+        }
+      },
+      "R96": {
+        "value": "100k",
+        "xy": [
+          51.745,
+          9.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "MOTOR_SPI_SCLK",
+          "2": "GND"
+        }
+      },
+      "C46": {
+        "value": "1uF/50V",
+        "xy": [
+          21.99,
+          34.11
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "WHEEL_CP",
+          "2": "ACT_5V"
+        }
+      },
+      "R87": {
+        "value": "4.7k",
+        "xy": [
+          45.295,
+          30.185
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "DRV_MISO_LOCAL"
+        }
+      },
+      "C60": {
+        "value": "22pF/50V",
+        "xy": [
+          30.785,
+          16.43
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "WHEEL_I_B",
+          "2": "GND"
+        }
+      },
+      "D6": {
+        "value": "SMBJ6.0A",
+        "xy": [
+          14.73,
+          6.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R113": {
+        "value": "34.8k",
+        "xy": [
+          1.89,
+          32.15
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BRAKE_DIV_TOP",
+          "2": "BRAKE_SENSE"
+        }
+      },
+      "C48": {
+        "value": "1uF/50V",
+        "xy": [
+          33.11,
+          28.8
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "GND"
+        }
+      },
+      "R89": {
+        "value": "100k",
+        "xy": [
+          51.91,
+          38.65
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_FAULT_LOCAL_N",
+          "2": "GND"
+        }
+      },
+      "U41": {
+        "value": "SN74LVC1G08DBVR",
+        "xy": [
+          43.5,
+          57.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_RUN_REQUESTED",
+          "2": "WHEEL_VM_OK",
+          "3": "GND",
+          "4": "WHEEL_RUN_EN",
+          "5": "+3V3"
+        }
+      },
+      "R150": {
+        "value": "100k",
+        "xy": [
+          43.5,
+          61.9
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_RUN_EN",
+          "2": "GND"
+        }
+      },
+      "C43": {
+        "value": "100nF",
+        "xy": [
+          27.21,
+          34.61
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R115": {
+        "value": "1M",
+        "xy": [
+          -3.25,
+          39.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BRAKE_OUT",
+          "2": "BRAKE_FB_1"
+        }
+      },
+      "R111": {
+        "value": "10k",
+        "xy": [
+          2.215,
+          42.095
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "BRAKE_REF"
+        }
+      },
+      "U30": {
+        "value": "TLV1811DBVR",
+        "xy": [
+          12.0,
+          36.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "BRAKE_OUT",
+          "2": "GND",
+          "3": "BRAKE_SENSE",
+          "4": "BRAKE_REF",
+          "5": "ACT_5V"
+        }
+      },
+      "R103": {
+        "value": "330R",
+        "xy": [
+          52.555,
+          50.77
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "WHEEL_SOB",
+          "2": "WHEEL_I_B"
+        }
+      },
+      "C61": {
+        "value": "22pF/50V",
+        "xy": [
+          29.0,
+          21.39
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_I_C",
+          "2": "GND"
+        }
+      },
+      "C104": {
+        "value": "100nF/50V",
+        "xy": [
+          43.5,
+          53.1
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "C90": {
+        "value": "100uF/16V",
+        "xy": [
+          8.0,
+          21.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "J9": {
+        "value": "Wheel 17-wire signals / 2 GND",
+        "xy": [
+          35.5,
+          4.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "GND",
+          "2": "SPI_SCLK",
+          "3": "SPI_MOSI",
+          "4": "CS_DRV8316",
+          "5": "DRV_MISO_LOCAL",
+          "6": "MOTOR_SPI_SCLK",
+          "7": "MOTOR_SPI_MOSI",
+          "8": "CS_ADC2",
+          "9": "ADC2_MISO_LOCAL",
+          "10": "WHEEL_PWM_A",
+          "11": "WHEEL_PWM_B",
+          "12": "WHEEL_PWM_C",
+          "13": "ACT_DRIVE_EN",
+          "14": "WHEEL_RUN_REQ",
+          "15": "DRV_FAULT_LOCAL_N",
+          "16": "+3V3",
+          "17": "GND"
+        }
+      },
+      "R105": {
+        "value": "0R",
+        "xy": [
+          21.0,
+          5.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ADC2_SPARE3",
+          "2": "GND"
+        }
+      },
+      "C47": {
+        "value": "47nF/50V",
+        "xy": [
+          21.88,
+          28.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "WHEEL_CPH",
+          "2": "WHEEL_CPL"
+        }
+      },
+      "C49": {
+        "value": "100nF",
+        "xy": [
+          33.11,
+          35.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "GND"
+        }
+      },
+      "R82": {
+        "value": "10k",
+        "xy": [
+          27.44,
+          39.545
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "WHEEL_DRVOFF"
+        }
+      },
+      "R90": {
+        "value": "100k",
+        "xy": [
+          37.39,
+          59.37
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "DRV_INHA",
+          "2": "GND"
+        }
+      },
+      "R121": {
+        "value": "47R/2W",
+        "xy": [
+          7.0,
+          49.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "BRAKE_DRAIN"
+        }
+      },
+      "R114": {
+        "value": "100k",
+        "xy": [
+          2.25,
+          13.665
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BRAKE_SENSE",
+          "2": "GND"
+        }
+      },
+      "R106": {
+        "value": "0R",
+        "xy": [
+          19.5,
+          0.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ADC2_SPARE4",
+          "2": "GND"
+        }
+      },
+      "R98": {
+        "value": "10k",
+        "xy": [
+          51.81,
+          14.44
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "ADC2_CS_LOCAL"
+        }
+      },
+      "R147": {
+        "value": "105k",
+        "xy": [
+          51.9,
+          25.1
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "WHEEL_VM_SENSE"
+        }
+      },
+      "C59": {
+        "value": "22pF/50V",
+        "xy": [
+          17.405,
+          19.89
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "WHEEL_I_A",
+          "2": "GND"
+        }
+      },
+      "R95": {
+        "value": "100k",
+        "xy": [
+          46.485,
+          23.875
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "SPI_MOSI",
+          "2": "GND"
+        }
+      },
+      "R112": {
+        "value": "100k",
+        "xy": [
+          9.565,
+          28.5
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "BRAKE_DIV_TOP"
+        }
+      },
+      "U21": {
+        "value": "DRV8316RRGFR",
+        "xy": [
+          27.5,
+          28.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "": "",
+          "1": "unconnected-(U21-NC-Pad1)",
+          "2": "GND",
+          "3": "WHEEL_BUCK_OUT",
+          "4": "GND",
+          "5": "WHEEL_BUCK_SW",
+          "6": "WHEEL_CPL",
+          "7": "WHEEL_CPH",
+          "8": "WHEEL_CP",
+          "9": "ACT_5V",
+          "10": "ACT_5V",
+          "11": "ACT_5V",
+          "12": "GND",
+          "13": "WHEEL_PHASE_A",
+          "14": "WHEEL_PHASE_A",
+          "15": "GND",
+          "16": "WHEEL_PHASE_B",
+          "17": "WHEEL_PHASE_B",
+          "18": "GND",
+          "19": "WHEEL_PHASE_C",
+          "20": "WHEEL_PHASE_C",
+          "21": "WHEEL_DRVOFF",
+          "22": "DRV_FAULT_LOCAL_N",
+          "23": "ACT_DRIVE_EN",
+          "24": "unconnected-(U21-NC-Pad24)",
+          "25": "DRV_AVDD",
+          "26": "GND",
+          "27": "DRV_INHA",
+          "28": "WHEEL_RUN_EN",
+          "29": "DRV_INHB",
+          "30": "WHEEL_RUN_EN",
+          "31": "DRV_INHC",
+          "32": "WHEEL_RUN_EN",
+          "33": "DRV_MISO_LOCAL",
+          "34": "DRV_MOSI_LOCAL",
+          "35": "DRV_SCLK_LOCAL",
+          "36": "DRV_CS_LOCAL",
+          "37": "DRV_AVDD",
+          "38": "WHEEL_SOC",
+          "39": "WHEEL_SOB",
+          "40": "WHEEL_SOA",
+          "41": "GND"
+        }
+      },
+      "C56": {
+        "value": "1uF/50V",
+        "xy": [
+          21.215,
+          16.08
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "GND"
+        }
+      },
+      "R92": {
+        "value": "100k",
+        "xy": [
+          48.795,
+          44.71
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "DRV_INHC",
+          "2": "GND"
+        }
+      },
+      "U23": {
+        "value": "ADS7038IRTER",
+        "xy": [
+          26.0,
+          16.0
+        ],
+        "angle": 180.0,
+        "pads": {
+          "": "",
+          "1": "WHEEL_I_C",
+          "2": "ADC2_SPARE3",
+          "3": "ADC2_SPARE4",
+          "4": "ADC2_SPARE5",
+          "5": "ADC2_SPARE6",
+          "6": "ADC2_SPARE7",
+          "7": "DRV_AVDD",
+          "8": "ADC2_DECAP",
+          "9": "GND",
+          "10": "DRV_AVDD",
+          "11": "ADC2_CS_LOCAL",
+          "12": "ADC2_MISO_LOCAL",
+          "13": "ADC2_SCLK_LOCAL",
+          "14": "ADC2_MOSI_LOCAL",
+          "15": "WHEEL_I_A",
+          "16": "WHEEL_I_B",
+          "17": "GND"
+        }
+      },
+      "C67": {
+        "value": "22pF/50V",
+        "xy": [
+          15.65,
+          30.96
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "BRAKE_SENSE",
+          "2": "GND"
+        }
+      },
+      "Q5": {
+        "value": "AO3400A",
+        "xy": [
+          24.26,
+          44.83
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BRAKE_GATE",
+          "2": "GND",
+          "3": "BRAKE_DRAIN"
+        }
+      },
+      "J11": {
+        "value": "Soldered wires Power_1x02",
+        "xy": [
+          8.0,
+          10.35
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R120": {
+        "value": "100k",
+        "xy": [
+          24.61,
+          57.135
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "BRAKE_GATE",
+          "2": "GND"
+        }
+      },
+      "C41": {
+        "value": "100nF",
+        "xy": [
+          17.04,
+          35.92
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R81": {
+        "value": "22R",
+        "xy": [
+          3.505,
+          27.185
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_BUCK_SW",
+          "2": "WHEEL_BUCK_OUT"
+        }
+      },
+      "C57": {
+        "value": "1uF/50V",
+        "xy": [
+          20.88,
+          11.12
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "GND"
+        }
+      },
+      "R86": {
+        "value": "10k",
+        "xy": [
+          37.285,
+          51.81
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "DRV_CS_LOCAL"
+        }
+      },
+      "R122": {
+        "value": "47R/2W",
+        "xy": [
+          17.0,
+          49.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "BRAKE_DRAIN"
+        }
+      },
+      "R83": {
+        "value": "100k",
+        "xy": [
+          37.26,
+          45.635
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "WHEEL_RUN_EN",
+          "2": "GND"
+        }
+      },
+      "C52": {
+        "value": "100nF",
+        "xy": [
+          45.66,
+          18.94
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "GND"
+        }
+      },
+      "U40": {
+        "value": "TPS3808G01DBVR",
+        "xy": [
+          58.0,
+          29.5
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "WHEEL_VM_OK",
+          "2": "GND",
+          "3": "ACT_DRIVE_EN",
+          "4": "unconnected-(U40-CT-Pad4)",
+          "5": "WHEEL_VM_SENSE",
+          "6": "+3V3"
+        }
+      },
+      "R104": {
+        "value": "330R",
+        "xy": [
+          48.795,
+          50.77
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "WHEEL_SOC",
+          "2": "WHEEL_I_C"
+        }
+      },
+      "C66": {
+        "value": "100nF",
+        "xy": [
+          5.5,
+          37.16
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BRAKE_REF",
+          "2": "GND"
+        }
+      },
+      "Q4": {
+        "value": "2N7002",
+        "xy": [
+          32.0,
+          41.63
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_RUN_EN",
+          "2": "GND",
+          "3": "WHEEL_DRVOFF"
+        }
+      },
+      "R140": {
+        "value": "10k",
+        "xy": [
+          50.31,
+          55.68
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_PWM_C",
+          "2": "GND"
+        }
+      },
+      "R117": {
+        "value": "1M",
+        "xy": [
+          -3.25,
+          26.5
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BRAKE_FB_2",
+          "2": "BRAKE_SENSE"
+        }
+      },
+      "R88": {
+        "value": "4.7k",
+        "xy": [
+          58.145,
+          21.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "DRV_FAULT_LOCAL_N"
+        }
+      },
+      "R109": {
+        "value": "0R",
+        "xy": [
+          52.555,
+          44.71
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ADC2_SPARE7",
+          "2": "GND"
+        }
+      },
+      "C54": {
+        "value": "100nF",
+        "xy": [
+          45.66,
+          9.58
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "DRV_AVDD",
+          "2": "GND"
+        }
+      },
+      "R137": {
+        "value": "10k",
+        "xy": [
+          45.035,
+          44.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "WHEEL_RUN_REQ",
+          "2": "GND"
+        }
+      },
+      "C103": {
+        "value": "100nF/50V",
+        "xy": [
+          58.0,
+          24.9
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "R145": {
+        "value": "33k",
+        "xy": [
+          46.9,
+          13.365
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "CS_ADC2",
+          "2": "GND"
+        }
+      },
+      "R84": {
+        "value": "10k",
+        "xy": [
+          30.67,
+          57.135
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "ACT_DRIVE_EN",
+          "2": "GND"
+        }
+      },
+      "C69": {
+        "value": "10uF/25V",
+        "xy": [
+          13.19,
+          42.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "C50": {
+        "value": "22uF/25V",
+        "xy": [
+          22.405,
+          21.28
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "WHEEL_BUCK_OUT",
+          "2": "GND"
+        }
+      },
+      "C58": {
+        "value": "1uF/50V",
+        "xy": [
+          27.0,
+          11.2
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ADC2_DECAP",
+          "2": "GND"
+        }
+      },
+      "R124": {
+        "value": "47R/2W",
+        "xy": [
+          17.0,
+          55.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "BRAKE_DRAIN"
+        }
+      },
+      "U26": {
+        "value": "74LVC125APW,118",
+        "xy": [
+          38.0,
+          14.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "MOTOR_SPI_SCLK",
+          "3": "ADC2_SCLK_LOCAL",
+          "4": "GND",
+          "5": "MOTOR_SPI_MOSI",
+          "6": "ADC2_MOSI_LOCAL",
+          "7": "GND",
+          "8": "ADC2_CS_LOCAL",
+          "9": "CS_ADC2",
+          "10": "GND",
+          "11": "unconnected-(U26-4Y-Pad11)",
+          "12": "GND",
+          "13": "DRV_AVDD",
+          "14": "DRV_AVDD"
+        }
+      },
+      "R119": {
+        "value": "100R",
+        "xy": [
+          36.73,
+          55.585
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BRAKE_OUT",
+          "2": "BRAKE_GATE"
+        }
+      },
+      "C51": {
+        "value": "100nF",
+        "xy": [
+          40.36,
+          31.49
+        ],
+        "angle": 180.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "GND"
+        }
+      },
+      "TP36": {
+        "value": "BRAKE_OUT",
+        "xy": [
+          20.0,
+          43.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BRAKE_OUT"
+        }
+      },
+      "C65": {
+        "value": "100nF",
+        "xy": [
+          17.0,
+          42.03
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "C44": {
+        "value": "10uF/25V",
+        "xy": [
+          15.5,
+          26.0
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R149": {
+        "value": "10k",
+        "xy": [
+          58.0,
+          38.3
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "+3V3",
+          "2": "WHEEL_VM_OK"
+        }
+      },
+      "C68": {
+        "value": "10uF/25V",
+        "xy": [
+          6.0,
+          42.12
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R146": {
+        "value": "4.7k",
+        "xy": [
+          49.65,
+          59.58
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R94": {
+        "value": "100k",
+        "xy": [
+          33.5,
+          46.915
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "SPI_SCLK",
+          "2": "GND"
+        }
+      },
+      "U24": {
+        "value": "74LVC125APW,118",
+        "xy": [
+          40.0,
+          24.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "GND",
+          "2": "SPI_SCLK",
+          "3": "DRV_SCLK_LOCAL",
+          "4": "GND",
+          "5": "SPI_MOSI",
+          "6": "DRV_MOSI_LOCAL",
+          "7": "GND",
+          "8": "DRV_CS_LOCAL",
+          "9": "CS_DRV8316",
+          "10": "GND",
+          "11": "unconnected-(U24-4Y-Pad11)",
+          "12": "GND",
+          "13": "DRV_AVDD",
+          "14": "DRV_AVDD"
+        }
+      },
+      "U31": {
+        "value": "LM4040AIM3-2.5/NOPB",
+        "xy": [
+          6.45,
+          33.0
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "BRAKE_REF",
+          "2": "GND",
+          "3": "unconnected-(U31-NC-Pad3)"
+        }
+      },
+      "R116": {
+        "value": "1M",
+        "xy": [
+          -3.25,
+          32.75
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "BRAKE_FB_1",
+          "2": "BRAKE_FB_2"
+        }
+      },
+      "C42": {
+        "value": "100nF",
+        "xy": [
+          22.1,
+          39.2
+        ],
+        "angle": 0.0,
+        "pads": {
+          "1": "ACT_5V",
+          "2": "GND"
+        }
+      },
+      "R108": {
+        "value": "0R",
+        "xy": [
+          2.395,
+          7.605
+        ],
+        "angle": 90.0,
+        "pads": {
+          "1": "ADC2_SPARE6",
+          "2": "GND"
+        }
+      },
+      "R91": {
+        "value": "100k",
+        "xy": [
+          41.02,
+          46.635
+        ],
+        "angle": -90.0,
+        "pads": {
+          "1": "DRV_INHB",
+          "2": "GND"
+        }
+      }
+    },
+    "geometry": {
+      "material_wkt": "POLYGON ((56.740575 -1.62272, 57.841412 1.351839, 58.80855 3.98752, 59.648112 6.34816, 60.366136 8.49768, 60.96875 10.5, 61.461986 12.418959, 61.851887 14.318559, 62.144575 16.262479, 62.346087 18.3148, 62.462549 20.53936, 62.5 23, 62.5 24.1116, 62.5 25.425919, 62.5 26.91248, 62.5 28.54072, 62.5 30.280079, 62.5 32.1, 62.5 33.96992, 62.5 35.85928, 62.5 37.73752, 62.5 39.574079, 62.5 41.338399, 62.5 43, 62.2291 47.080079, 61.42655 50.907439, 60.1074 54.4624, 58.287048 57.7256, 55.98055 60.6784, 53.203125 63.3, 52.207003 64, 2.792996 64, 1.796875 63.3, -0.980541 60.6784, -3.287041 57.7256, -5.107418 54.4624, -6.426507 50.907439, -7.229092 47.080079, -7.5 43, -7.5 41.338399, -7.5 39.574079, -7.5 37.73752, -7.5 35.85928, -7.5 33.96992, -7.5 32.1, -7.5 30.280079, -7.5 28.54072, -7.5 26.91248, -7.5 25.425919, -7.5 24.1116, -7.5 23, -7.462533 20.53936, -7.346062 18.3148, -7.144532 16.262479, -6.851853 14.318559, -6.461953 12.418959, -5.96875 10.5, -5.366173 8.49768, -4.648148 6.34816, -3.808594 3.98752, -2.841439 1.351839, -1.740592 -1.62272, -1.234669 -3, 56.234659 -3, 56.740575 -1.62272))",
+      "rule_areas": [],
+      "thickness_iu": 1600000
+    },
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": true,
+          "text_position": 0,
+          "units_format": 0
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.1,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 1.27
+        },
+        "silk_line_width": 0.1,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.1,
+        "silk_text_upright": false,
+        "zones": {
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
+        }
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "meta": {
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "creepage": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
+        "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
+        "npth_inside_courtyard": "error",
+        "padstack": "warning",
+        "pth_inside_courtyard": "error",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_on_edge_cuts": "error",
+        "text_thickness": "warning",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_angle": "error",
+        "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
+        "track_segment_length": "error",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.127,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 2,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.45,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpthpad": true,
+          "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
+          "td_ontrackend": false,
+          "td_onvia": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
+      "zones_allow_external_fillets": false
+    }
+  }
+}

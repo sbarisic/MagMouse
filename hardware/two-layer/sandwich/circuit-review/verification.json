@@ -1,8 +1,8 @@
 {
   "boards": {
     "Lower": {
-      "sha256": "07ccf649df8a7a2b2bc97a949f4d80f7c210f75f65c1a9c9ebe14e832cbaa790",
-      "checked_pins": 433,
+      "sha256": "88876b389b2005abbfd40bf2f942ae58d854c5ba931ec2528e12b0156908f6a0",
+      "checked_pins": 410,
       "minimum_component_gap_mm": 1.9999999999999996,
       "via_in_pad": 0,
       "copper_layers": 2,
@@ -11,8 +11,8 @@
       "encoder_signal_routing_unchanged": false
     },
     "Upper": {
-      "sha256": "fcc3ec7c38df597e56b6bea094bfc15195f2f9d7f75335bd0d8baa7773d2ef7d",
-      "checked_pins": 264,
+      "sha256": "3f799cc3ea051b6f456c81369d51269c021ac2552ed1fa4bfaf85bd1a7a7a131",
+      "checked_pins": 257,
       "minimum_component_gap_mm": 2.025,
       "via_in_pad": 0,
       "copper_layers": 2,
@@ -21,7 +21,7 @@
       "encoder_signal_routing_unchanged": false
     },
     "Wheel": {
-      "sha256": "a40581ca92cbaaf66215b024e53961feefc4615987a76366535f5966a61a9f2f",
+      "sha256": "c0cf18a9d6483cd498d3ef658a7bd97f0909c938b7f384a99bdef16444959973",
       "checked_pins": 307,
       "minimum_component_gap_mm": 2.0099999999999976,
       "via_in_pad": 0,
@@ -29,16 +29,6 @@
       "geometry_and_keepouts_unchanged": true,
       "encoder_unchanged": false,
       "encoder_signal_routing_unchanged": false
-    },
-    "Encoder": {
-      "sha256": "a62ee30a78f222a83a2b02b04c9d8b00207e991a88385d2a783b7df4ca71bd64",
-      "checked_pins": 24,
-      "minimum_component_gap_mm": 2.5,
-      "via_in_pad": 0,
-      "copper_layers": 2,
-      "geometry_and_keepouts_unchanged": true,
-      "encoder_unchanged": false,
-      "encoder_signal_routing_unchanged": true
     }
   },
   "capacitors": {
@@ -1970,22 +1960,22 @@
         "unreferenced_area_outside_vias_mm2": 0.0
       },
       "USB_DM F.Cu": {
-        "trace_mm": 20.2483,
+        "trace_mm": 19.9985,
         "unreferenced_centerline_outside_vias_mm": 0.0,
         "unreferenced_area_outside_vias_mm2": 0.0
       },
       "USB_DM B.Cu": {
-        "trace_mm": 65.7096,
+        "trace_mm": 65.3247,
         "unreferenced_centerline_outside_vias_mm": 0.0,
         "unreferenced_area_outside_vias_mm2": 0.0
       },
       "USB_DP F.Cu": {
-        "trace_mm": 22.3891,
+        "trace_mm": 21.919,
         "unreferenced_centerline_outside_vias_mm": 0.0,
         "unreferenced_area_outside_vias_mm2": 0.0
       },
       "USB_DP B.Cu": {
-        "trace_mm": 62.4979,
+        "trace_mm": 62.3065,
         "unreferenced_centerline_outside_vias_mm": 0.0,
         "unreferenced_area_outside_vias_mm2": 0.0
       }
@@ -2018,19 +2008,19 @@
     ],
     "connector_paths": {
       "J1.A6 to R6.2": {
-        "whole_track_length_mm": 82.16,
+        "whole_track_length_mm": 81.499,
         "layer_changes": 2
       },
       "J1.B6 to R6.2": {
-        "whole_track_length_mm": 80.941,
+        "whole_track_length_mm": 80.28,
         "layer_changes": 2
       },
       "J1.A7 to R5.2": {
-        "whole_track_length_mm": 82.424,
+        "whole_track_length_mm": 81.2,
         "layer_changes": 2
       },
       "J1.B7 to R5.2": {
-        "whole_track_length_mm": 81.783,
+        "whole_track_length_mm": 80.559,
         "layer_changes": 2
       }
     }
@@ -2066,14 +2056,6 @@
         "Wheel.J11"
       ],
       "pins": 2,
-      "match": true
-    },
-    {
-      "ends": [
-        "Lower.J6",
-        "Encoder.J7"
-      ],
-      "pins": 8,
       "match": true
     }
   ]

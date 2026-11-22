@@ -3,9 +3,9 @@
 An open-source wired mouse exploring contactless Hall-sensed buttons with plastic
 click mechanisms, and a motorized haptic scroll wheel.
 
-**Active development: [four two-layer boards](hardware/two-layer/sandwich/README.md),
+**Active development: [three two-layer boards](hardware/two-layer/sandwich/README.md),
 with two 70 Ã— 100 mm stacked Main boards and passive plastic button clicks.**
-All four boards are routed, with independent schematics and clean native
+All three boards are routed, with independent schematics and clean native
 ERC, DRC, connectivity and schematic-parity checks under the saved rules.
 The [quote package](hardware/two-layer/sandwich/quote-package/README.md) contains
 Gerbers, drills, BOMs and placement files; supplier and physical acceptance remain open.
@@ -22,7 +22,7 @@ designs, shared libraries, current manufacturing exports and retained evidence.
 - Three plastic click mechanisms provide tactile feedback and passive return.
   Each uses a TMAG5253 Hall sensor and a sensing magnet, read through ADS7038.
   Buttons have no coils or powered force feedback.
-- MA735 angle sensing and a GB1806 motor driven by DRV8316R for scroll haptics.
+- GB1806 motor with integrated AS5048A angle sensing driven by DRV8316R for scroll haptics.
 - One USB-C cable for data and 5 V power, with force limits based on detected
   source capability. A powered Type-C hub/adapter is the intended full-power source.
 

@@ -12,7 +12,7 @@
   remove 38 parts and reduce the Main stack to 19 wires with three grounds.
 - [ ] Model and fit the plastic click mechanism, sensing magnets and stops.
 - [x] Split the Main reference schematic into independent Lower/Upper projects,
-  route both boards and export the four-board quote package (2026-11-04).
+  route both boards and export the three-board quote package (2026-11-04).
 - [ ] Validate the assembled mechanics, Hall thresholds and wheel operation.
 
 See the [active design](../hardware/two-layer/sandwich/README.md). Historical
@@ -150,7 +150,7 @@ interfaces.** The existing nesting study is historical planning only.
   count, thermal restrictions, SPI stubs, USB reference continuity, test access,
   connector interference and parts covered by future wheel/button structures.
 - [ ] Before ordering the final board, start a minimal firmware bring-up branch:
-  actuator-off boot, USB HID, source detection, ADC1/Hall, optical X/Y, MA735,
+  actuator-off boot, USB HID, source detection, ADC1/Hall, optical X/Y, AS5048A,
   ADC2 phase readings and low-current wheel commutation.
   Hardware behavior must be demonstrated on suitable development/prototype
   hardware; compilation alone is not architecture validation.
@@ -187,7 +187,7 @@ interfaces.** The existing nesting study is historical planning only.
   3-PWM wheel, dedicated second-ADC SPI and one-data-pin RGB; see [interfaces](interfaces.md).
 - [ ] Prove PWM-to-ADC timing, valid low-side sampling windows, angle age and
   concurrent USB/button/optical operation on the selected firmware path.
-- [x] Draw DRV8316 + ADC2 + MA735 + GB1806 wire interface, hardware output-disable,
+- [x] Draw DRV8316 + ADC2 + AS5048A + GB1806 wire interface, hardware output-disable,
   power-domain SPI isolation and a provisional autonomous brake (revision 0.5);
   see [wheel review](history/electronics/WHEEL_REVIEW.md).
 - [ ] Measure returned wheel energy and brake startup/overshoot/temperatures;
@@ -229,7 +229,7 @@ that the actuators can operate within the intended power and thermal envelope.
 - [x] Widen the provisional motherboard to 60 x 95 mm and place the remaining
   motherboard electronics (314 footprints); retain U27/C62 as encoder-board
   planning parts. See [placement review](../hardware/pcb/PLACEMENT_60MM.md).
-- [x] Select a separate upright MA735 encoder board for the horizontal wheel axle.
+- [x] Select a separate upright AS5048A encoder board for the horizontal wheel axle.
 - [x] Implement the [encoder board/interconnect](https://github.com/sbarisic/MagMouse/blob/f0acacb170f736648a6b5170140de5a96bac91d5/hardware/encoder/README.md):
   JST SH headers, separate schematic/BOM, checked harness and fully routed
   provisional 14 x 18 mm board; ERC/DRC/parity and connectivity pass.

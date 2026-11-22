@@ -1,36 +1,55 @@
 # MagMouse stacked two-layer boards
 
-All four boards are routed and have independent schematics. Native KiCad 10.0.6
+The GB1806 now includes an AS5048A encoder. The separate magnet-axis board and
+37 bottom test pads are removed. See [encoder integration](ENCODER_INTEGRATION.md)
+for the revised power circuit, wiring, timing and bring-up checks.
+
+The subsequent [routing cleanup](routing-cleanup-review.json) covers Lower,
+Upper and Wheel, including USB fanouts. It removes exposed sharp bends and
+repeated stair-step runs, retains the wide USB pair and transition vias, and
+checks full-width opposite-layer ground coverage. `validate_routing_cleanup.py`
+checks this geometry as well as native DRC, connectivity and schematic parity.
+The bend inventory includes width transitions and excludes pad/via interiors
+and branch junctions. Single clearance offsets and the paired USB width
+transitions remain; repeated short alternating turns are rejected. The cleanup
+retains all component positions and original vias and adds one Lower ground stitch.
+
+The three boards are routed and have independent schematics. Native KiCad 10.0.6
 checks report zero ERC findings, DRC findings, unconnected items and schematic
 parity findings under the saved rules. The [quote package](quote-package/README.md)
 contains the files for supplier pricing; physical and supplier acceptance remain open.
 
-The active boards use 1206 packages for all 193 resistors and ceramic capacitors
-that previously used 0603 or 0805. Values and pin/net assignments are unchanged.
+The active boards use 1206 packages for all 205 resistors and ceramic capacitors.
+The encoder revision changes C55/C64 to 1 µF and adds C105; other passive values
+retain the reviewed circuit revisions.
 [1206-PARTS.md](1206-PARTS.md) lists the replacement manufacturer part numbers,
 ratings and sourcing status. [1206-review.json](1206-review.json) records the
 earlier package migration; [assembly-spacing-review.json](assembly-spacing-review.json)
 records the subsequent 2 mm component spacing and outline changes.
 
 The standard-via revision uses 0.30 mm via drills and at least 0.45 mm copper
-lands. All four boards are checked for via-hole/SMD-land overlaps. The derived
+lands. All three boards are checked for via-hole/SMD-land overlaps. The derived
 [238 × 114 mm panel](panel/Panel.kicad_pcb) combines one of each board using
 2 mm routed gaps and 5 mm mouse-bite tabs. Source copper is copied exactly,
 with isolated net names for each board; individual outlines remain unchanged.
 
-All four boards now require 0.5 mm copper clearance to their outer edges.
+All three boards require 0.5 mm copper clearance to their outer edges.
 Lower's internal optical aperture retains a reviewed 0.4 mm clearance, enforced
 by a custom rule for the `Optical aperture` edge group; the panel carries the same
-exception. Component positions, outlines and the 2 mm assembly spacing remain unchanged.
+exception. Outlines and the 2 mm assembly spacing remain unchanged. Only C55/C64
+move to make room for the new local encoder regulator; C105 occupies C64's former location.
 
 ![Routed Main boards](main-routing.png)
 
-| Board/project | Dimensions | Copper layers | Original circuit footprints | Added interface/mount footprints |
-| --- | --- | ---: | ---: | ---: |
-| [Lower](lower/Lower.kicad_pro) | 70 × 100 mm, tapered | 2 | 122 | 6 |
-| [Upper](upper/Upper.kicad_pro) | 70 × 100 mm, tapered | 2 | 86 | 6 |
-| [Wheel](wheel/Wheel.kicad_pro) | 70 × 67 mm, clipped Main profile | 2 | 87 | 0 |
-| [Encoder](../encoder/Encoder.kicad_pro) | 14 × 18 mm, two 4 mm upper chamfers | 2 | 3 | 0 |
+Full manufacturing panel: [top copper](panel/Panel-top.png) and
+[bottom copper, viewed from underneath](panel/Panel-bottom.png).
+Both show traces, filled zones, pads, vias and silkscreen.
+
+| Board/project | Dimensions | Copper layers | Total footprints |
+| --- | --- | ---: | ---: |
+| [Lower](lower/Lower.kicad_pro) | 70 × 100 mm, tapered | 2 | 100 |
+| [Upper](upper/Upper.kicad_pro) | 70 × 100 mm, tapered | 2 | 85 |
+| [Wheel](wheel/Wheel.kicad_pro) | 70 × 67 mm, clipped Main profile | 2 | 96 |
 
 [All-board overview](all-boards.png). Component footprints, pads and drills are
 full size. Both Main outlines retain the approved taper and 38.5 mm front edge.
@@ -40,7 +59,7 @@ Wheel follows the Main sidewalls between y = 26 and 93 mm. Its 4,448 mm² outlin
 
 [3D exports](3d/README.md) include STEP, GLB and angled previews for each board
 and the panel, plus bare substrate STEP files. The populated exports include
-available library models; the coverage report identifies 14 missing component
+available library models; the coverage report identifies 13 missing component
 bodies. These are PCB models, not a mechanically positioned mouse assembly.
 
 ## Circuit and schematic split
@@ -95,12 +114,12 @@ Separate front components have at least 2 mm between their body-and-solder-land
 envelopes. This does not change the pitch of pins within an IC or wire array;
 copper-only test access is excluded from the component spacing measurement.
 The circled Upper passive group has at least 3 mm clearance to the board edge.
-The layouts retain the USB, optical, Hall, antenna and mounting datums. The two
-stack power arrays move together by 1.25 mm; their pitch and pin map are unchanged.
+The layouts retain the USB, optical, antenna and mounting datums. The Hall
+sensors now follow the three user-marked front locations; see
+[Hall placement](HALL_PLACEMENT.md). The two stack power arrays retain their
+pin map; matching pin 3 moves clear of the centre Hall sensor.
 Other parts and colliding front test pads move as recorded in the spacing review.
-Fitted electronic parts remain on the front; several diagnostic test pads are
-on the back. Encoder retains its sensor and wire-array positions; its two
-4 × 4 mm chamfers remove 16 mm², reducing outline area from 252 to 236 mm².
+Fitted electronic parts remain on the front; all 37 underside diagnostic test pads have been removed. Six top-side test pads remain. The standalone Encoder PCB has been removed; the motor supplies its own AS5048A encoder.
 
 The lower USB pair runs just to the right of the optical opening. Both USB-C
 orientations use two paired layer changes with nearby GND stitching. A check
@@ -120,7 +139,7 @@ differential impedance against the fabricator's stackup before ordering.
 Host SPI clock and data nets grew in total branched length. Check their
 waveforms at the intended clock rate on the first assembly.
 
-The subsequent four-board routing check removed same-layer loops and duplicate
+The subsequent three-board routing check removed same-layer loops and duplicate
 tracks on Lower, Upper and Wheel. The pictured Lower SPI MOSI run is now a
 single diagonal. See the [panel Gerber comparison](routing-review/wheel-lower-trace-cleanup.png)
 and the [board-by-board results](routing-review/trace-loop-review.json).
@@ -147,7 +166,7 @@ The native reports, exported netlists, front/back copper SVGs and track-width
 measurements are alongside it. Inherited ignored categories remain explicit in
 the reports; no new DRC or ERC exclusions were added for routing.
 
-[quote-package](quote-package/) contains four separate Gerber/drill ZIPs,
+[quote-package](quote-package/) contains three separate Gerber/drill ZIPs,
 per-board BOM/CPL CSVs, combined purchasing inventory, manual items and
 via-in-pad intersection lists. The redundant whole-package archive is removed;
 the individual fabrication ZIPs and [panel](panel/) remain. Read the [quotation notes](quote-package/README.md)
@@ -162,6 +181,10 @@ been refreshed for these files. No fabrication order is placed.
 `placement-positions.json`, `spacing-review.json`, `spacing-baseline.json`,
 `placement.svg/png` and `passive-validation.json` are historical pre-routing
 evidence; their old board hashes and airwire counts are not current route results.
+`hall-relocation.json` records the later requested sensor and wire-pad moves.
+`hall-placement-review.json` and `hall-routing-review.json` contain their current
+placement, bypass, power-path and routing checks. Run `validate_hall.py` after
+future routing changes; its checks retain the earlier geometry and rule baselines.
 
 ## Reproduction
 
@@ -184,7 +207,7 @@ DSN clearance was increased to 165 µm to leave margin for native minimum-width
 restoration; saved KiCad clearances remain unchanged. Temporary sessions, router
 binaries and logs stay in ignored `build/sandwich/main-routing`.
 
-`export_quote.py` rechecks all four boards before exporting the package and
+`export_quote.py` rechecks all three boards before exporting the package and
 compares Main pins against the retained migration reference. `overview.py`
 renders placement views; add `--main-only --copper` for the routed Main image.
 The netlist and schematic-parity checks cover the current Wheel harness.

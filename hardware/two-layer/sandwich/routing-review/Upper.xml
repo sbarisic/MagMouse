@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Projects\MagMouse\hardware\two-layer\sandwich\upper\Upper.kicad_sch</source>
-    <date>2026-11-06T12:59:40</date>
+    <date>2026-11-22T02:37:37</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="STATUS">TWO-LAYER STACK / PROTOTYPE</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -3509,258 +3509,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="TP2">
-      <value>PWR_5V</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>28b69fcb-2f8a-5f61-b782-7035def7e2d1</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP3">
-      <value>ACT_5V</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>190b10e0-08a9-5f1d-b4a9-a6b6eda0279e</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP11">
-      <value>PWR_5V</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>0fd48e48-a311-5263-953c-c300ce23c4a8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP12">
-      <value>ACT_5V</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>45e0bda1-37e0-5018-b9ab-aa8372f35520</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP13">
-      <value>ACT_DRIVE_EN</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>04d47c32-6ad4-524c-85dd-a1060c69df68</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP14">
-      <value>USB_ILM</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>db2e2197-8f98-5311-a90f-346b9ac51df6</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP15">
-      <value>GND</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <fields>
-        <field name="Manufacturer"/>
-        <field name="MPN"/>
-        <field name="LCSC"/>
-        <field name="JLCPCB Part #"/>
-        <field name="Sourcing Status">PCB copper; no assembly part</field>
-        <field name="Checked"/>
-        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Manufacturer" value=""/>
-      <property name="MPN" value=""/>
-      <property name="LCSC" value=""/>
-      <property name="JLCPCB Part #" value=""/>
-      <property name="Sourcing Status" value="PCB copper; no assembly part"/>
-      <property name="Checked" value=""/>
-      <property name="Sheetname" value="08_Actuator_Rail"/>
-      <property name="Sheetfile" value="08_Actuator_Rail.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/08_Actuator_Rail/" tstamps="/eb4158a7-f345-513c-bf55-64544b1ee44b/"/>
-      <tstamps>341c6aab-2146-536d-bae7-a0579b33cf05</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="J10">
       <value>Soldered wires Power_1x02</value>
       <footprint>MagMouseModular:Wire_Power_1x02_P2.54mm</footprint>
@@ -3952,23 +3700,6 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connector" part="TestPoint">
-      <description>test point</description>
-      <footprints>
-        <fp>Pin*</fp>
-        <fp>Test*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">TP</field>
-        <field name="Value">TestPoint</field>
-        <field name="Footprint"/>
-        <field name="Datasheet"/>
-        <field name="Description">test point</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x02">
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <footprints>
@@ -4293,9 +4024,6 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="Connector">
-      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
-    </library>
     <library logical="Connector_Generic">
       <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
     </library>
@@ -4348,15 +4076,12 @@
       <node ref="J10" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R67" pin="1" pintype="passive"/>
       <node ref="R69" pin="1" pintype="passive"/>
-      <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U13" pin="6" pinfunction="OUT_6" pintype="power_out"/>
     </net>
     <net code="3" name="ACT_DRIVE_EN" class="Default">
       <node ref="D3" pin="3" pinfunction="K_3" pintype="passive"/>
       <node ref="J102" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
       <node ref="R49" pin="1" pintype="passive"/>
-      <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U16" pin="11" pinfunction="4Y_11" pintype="output"/>
     </net>
     <net code="4" name="ACT_DVDT" class="Default">
@@ -4489,7 +4214,6 @@
       <node ref="R68" pin="2" pintype="passive"/>
       <node ref="R69" pin="2" pintype="passive"/>
       <node ref="R70" pin="2" pintype="passive"/>
-      <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="17" pinfunction="EP_17" pintype="passive"/>
       <node ref="U10" pin="2" pinfunction="AIN3_2" pintype="input"/>
       <node ref="U10" pin="3" pinfunction="AIN4_3" pintype="input"/>
@@ -4565,8 +4289,6 @@
       <node ref="J104" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R36" pin="1" pintype="passive"/>
       <node ref="R40" pin="1" pintype="passive"/>
-      <node ref="TP11" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U12" pin="6" pinfunction="OUT_6" pintype="power_out"/>
       <node ref="U13" pin="5" pinfunction="IN_5" pintype="power_in"/>
     </net>
@@ -4612,7 +4334,6 @@
       <node ref="R59" pin="1" pintype="passive"/>
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="R61" pin="1" pintype="passive"/>
-      <node ref="TP14" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U12" pin="9" pinfunction="ILM_9" pintype="passive"/>
       <node ref="U19" pin="3" pinfunction="IN+_3" pintype="input"/>
     </net>
